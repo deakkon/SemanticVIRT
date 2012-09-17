@@ -1,0 +1,194 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:03:11,13:54:04,650,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:03:11,13:54:12,150,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,108,587,596.85,4075.93,0.15, 
+2010:03:11,13:54:12,290,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,108,587,0.00,0.00,0.00, 
+2010:03:11,13:54:13,618,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,108,587,0.00,0.00,0.00, 
+2010:03:11,13:54:36,587,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,182,769,0.00,0.00,1.00,3 Wheel actions
+2010:03:11,13:54:36,587,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,182,769,203.23,211.56,0.96, 
+2010:03:11,13:54:36,697,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,182,769,0.00,0.00,0.00, 
+2010:03:11,13:54:42,290,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Mouse wheel,95,693,115.52,259.47,0.45, 
+2010:03:11,13:55:00,197,"Explorer.EXE","1:54 PM",Mouse wheel stopped,95,693,0.00,0.00,1.00,5 Wheel actions
+2010:03:11,13:55:06,916,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Mouse wheel,95,693,0.00,0.00,0.00, 
+2010:03:11,13:55:19,634,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Mouse wheel stopped,81,741,0.00,0.00,1.00,1 Wheel actions
+2010:03:11,13:55:19,634,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Middle mouse button pressed,81,741,745.41,3112.81,0.24, 
+2010:03:11,13:55:19,916,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Middle mouse button released,81,741,0.00,0.00,0.00, 
+2010:03:11,13:55:35,760,"firefox.exe","<Unknown window>",Middle mouse button pressed,76,742,5.10,66.00,0.08, 
+2010:03:11,13:55:35,994,"firefox.exe","<Unknown window>",Middle mouse button released,76,742,0.00,0.00,0.00, 
+2010:03:11,13:55:44,228,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Mouse wheel,71,742,54.56,162.38,0.34, 
+2010:03:11,13:56:00,197,"Explorer.EXE","1:55 PM",Mouse wheel stopped,71,742,0.00,0.00,1.00,2 Wheel actions
+2010:03:11,13:56:33,650,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Mouse wheel,71,742,0.00,0.00,0.00, 
+2010:03:11,13:56:38,041,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Mouse wheel stopped,71,742,0.00,0.00,1.00,4 Wheel actions
+2010:03:11,13:56:38,041,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Middle mouse button pressed,71,742,5.00,5.00,1.00, 
+2010:03:11,13:56:38,244,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Middle mouse button released,71,742,0.00,0.00,0.00, 
+2010:03:11,13:56:41,854,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Middle mouse button pressed,71,766,24.00,24.00,1.00, 
+2010:03:11,13:56:42,088,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Middle mouse button released,71,766,0.00,0.00,0.00, 
+2010:03:11,13:57:16,979,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Mouse wheel,28,673,81.30,147.10,0.55, 
+2010:03:11,13:57:52,260,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Mouse wheel stopped,88,715,0.00,0.00,1.00,7 Wheel actions
+2010:03:11,13:57:52,260,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Middle mouse button pressed,88,715,53.76,309.68,0.17, 
+2010:03:11,13:57:52,494,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Middle mouse button released,88,715,0.00,0.00,0.00, 
+2010:03:11,13:58:35,182,"firefox.exe","<Unknown window>",Middle mouse button pressed,78,712,10.44,133.83,0.08, 
+2010:03:11,13:58:35,432,"firefox.exe","<Unknown window>",Middle mouse button released,78,712,0.00,0.00,0.00, 
+2010:03:11,13:58:37,557,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Left mouse button pressed,572,836,474.65,693.67,0.68, 
+2010:03:11,13:58:37,650,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Left mouse button released,572,836,0.00,0.00,0.00, 
+2010:03:11,13:58:50,994,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Mouse wheel,107,887,467.79,478.39,0.98, 
+2010:03:11,13:59:00,197,"Explorer.EXE","1:58 PM",Mouse wheel stopped,60,873,0.00,0.00,1.00,5 Wheel actions
+2010:03:11,13:59:02,150,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Mouse wheel,60,873,2.83,4.00,0.71, 
+2010:03:11,13:59:36,697,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Mouse wheel stopped,643,891,0.00,0.00,1.00,13 Wheel actions
+2010:03:11,13:59:36,697,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Left mouse button pressed,643,891,583.28,606.55,0.96, 
+2010:03:11,13:59:36,807,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Left mouse button released,643,891,0.00,0.00,0.00, 
+2010:03:11,13:59:39,338,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Mouse wheel,92,867,551.52,560.19,0.98, 
+2010:03:11,14:00:00,197,"Explorer.EXE","1:59 PM",Mouse wheel stopped,58,868,0.00,0.00,1.00,12 Wheel actions
+2010:03:11,14:00:01,166,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Mouse wheel,58,868,5.00,5.00,1.00, 
+2010:03:11,14:00:04,400,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Mouse wheel stopped,58,868,0.00,0.00,1.00,3 Wheel actions
+2010:03:11,14:00:04,400,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Middle mouse button pressed,58,868,157.28,2274.67,0.07, 
+2010:03:11,14:00:04,650,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Middle mouse button released,58,868,0.00,0.00,0.00, 
+2010:03:11,14:00:14,760,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Middle mouse button pressed,66,646,222.14,294.81,0.75, 
+2010:03:11,14:00:14,947,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Middle mouse button released,66,646,0.00,0.00,0.00, 
+2010:03:11,14:00:15,979,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Left mouse button pressed,39,67,801.23,884.87,0.91, 
+2010:03:11,14:00:16,057,"firefox.exe","Sony unveils Move, its PS3 mo...er - CNN.com - Mozilla Firefox",Left mouse button released,39,67,0.00,0.00,0.00, 
+2010:03:11,14:00:17,729,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,73,447,381.52,403.42,0.95, 
+2010:03:11,14:01:00,197,"Explorer.EXE","2:00 PM",Mouse wheel stopped,82,589,0.00,0.00,1.00,9 Wheel actions
+2010:03:11,14:01:20,729,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,53,601,143.69,265.74,0.54, 
+2010:03:11,14:01:22,682,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,709,679,0.00,0.00,1.00,2 Wheel actions
+2010:03:11,14:01:22,682,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,709,679,660.62,696.73,0.95, 
+2010:03:11,14:01:22,775,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,709,679,0.00,0.00,0.00, 
+2010:03:11,14:01:23,135,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,709,677,2.00,2.00,1.00, 
+2010:03:11,14:01:23,135,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button doubleclick,709,677,643.75,1969.34,0.33, 
+2010:03:11,14:01:23,229,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,709,677,0.00,0.00,0.00, 
+2010:03:11,14:01:28,932,"firefox.exe","5 iPad competitors - Archos 5...1) - FORTUNE - Mozilla Firefox",Left mouse button pressed,333,735,380.45,1238.65,0.31, 
+2010:03:11,14:01:29,072,"firefox.exe","5 iPad competitors - Archos 5...1) - FORTUNE - Mozilla Firefox",Left mouse button released,333,735,0.00,0.00,0.00, 
+2010:03:11,14:01:53,213,"firefox.exe","5 iPad competitors - Archos 5...1) - FORTUNE - Mozilla Firefox",Left mouse button pressed,729,519,451.08,1000.71,0.45, 
+2010:03:11,14:01:53,369,"firefox.exe","5 iPad competitors - Archos 5...1) - FORTUNE - Mozilla Firefox",Left mouse button released,729,519,0.00,0.00,0.00, 
+2010:03:11,14:01:58,838,"firefox.exe","5 iPad competitors - Asus T91...2) - FORTUNE - Mozilla Firefox",Left mouse button pressed,667,486,70.24,91.89,0.76, 
+2010:03:11,14:01:59,010,"firefox.exe","5 iPad competitors - Asus T91...2) - FORTUNE - Mozilla Firefox",Left mouse button released,667,486,0.00,0.00,0.00, 
+2010:03:11,14:02:05,916,"firefox.exe","5 iPad competitors - Archos 5...1) - FORTUNE - Mozilla Firefox",Left mouse button pressed,722,520,64.66,76.62,0.84, 
+2010:03:11,14:02:06,072,"firefox.exe","5 iPad competitors - Archos 5...1) - FORTUNE - Mozilla Firefox",Left mouse button released,722,520,0.00,0.00,0.00, 
+2010:03:11,14:02:26,041,"firefox.exe","5 iPad competitors - Asus T91...2) - FORTUNE - Mozilla Firefox",Left mouse button pressed,716,481,39.46,42.89,0.92, 
+2010:03:11,14:02:26,119,"firefox.exe","5 iPad competitors - Asus T91...2) - FORTUNE - Mozilla Firefox",Left mouse button released,716,481,0.00,0.00,0.00, 
+2010:03:11,14:02:54,385,"firefox.exe","5 iPad competitors - HP Slate (3) - FORTUNE - Mozilla Firefox",Left mouse button pressed,724,485,8.94,463.61,0.02, 
+2010:03:11,14:02:54,525,"firefox.exe","5 iPad competitors - HP Slate (3) - FORTUNE - Mozilla Firefox",Left mouse button released,724,485,0.00,0.00,0.00, 
+2010:03:11,14:03:20,041,"firefox.exe","5 iPad competitors - Panasoni...4) - FORTUNE - Mozilla Firefox",Left mouse button pressed,710,486,14.04,354.65,0.04, 
+2010:03:11,14:03:20,182,"firefox.exe","5 iPad competitors - Panasoni...4) - FORTUNE - Mozilla Firefox",Left mouse button released,710,486,0.00,0.00,0.00, 
+2010:03:11,14:03:43,900,"firefox.exe","5 iPad competitors - Toshiba ...5) - FORTUNE - Mozilla Firefox",Mouse wheel,444,467,266.68,274.14,0.97, 
+2010:03:11,14:03:46,354,"firefox.exe","5 iPad competitors - Toshiba ...5) - FORTUNE - Mozilla Firefox",Mouse wheel stopped,30,59,0.00,0.00,1.00,2 Wheel actions
+2010:03:11,14:03:46,354,"firefox.exe","5 iPad competitors - Toshiba ...5) - FORTUNE - Mozilla Firefox",Left mouse button pressed,30,59,581.26,1575.20,0.37, 
+2010:03:11,14:03:46,494,"firefox.exe","5 iPad competitors - Toshiba ...5) - FORTUNE - Mozilla Firefox",Left mouse button released,30,59,0.00,0.00,0.00, 
+2010:03:11,14:03:47,916,"firefox.exe","5 iPad competitors - Panasoni...4) - FORTUNE - Mozilla Firefox",Left mouse button pressed,32,72,13.15,14.41,0.91, 
+2010:03:11,14:03:48,041,"firefox.exe","5 iPad competitors - Panasoni...4) - FORTUNE - Mozilla Firefox",Left mouse button released,32,74,2.00,2.00,1.00, 
+2010:03:11,14:03:49,947,"firefox.exe","5 iPad competitors - HP Slate (3) - FORTUNE - Mozilla Firefox",Left mouse button pressed,32,74,0.00,0.00,0.00, 
+2010:03:11,14:03:50,057,"firefox.exe","5 iPad competitors - HP Slate (3) - FORTUNE - Mozilla Firefox",Left mouse button released,32,74,0.00,0.00,0.00, 
+2010:03:11,14:03:55,229,"firefox.exe","5 iPad competitors - Asus T91...2) - FORTUNE - Mozilla Firefox",Left mouse button pressed,31,78,4.12,5.00,0.82, 
+2010:03:11,14:03:55,322,"firefox.exe","5 iPad competitors - Asus T91...2) - FORTUNE - Mozilla Firefox",Left mouse button released,31,78,0.00,0.00,0.00, 
+2010:03:11,14:04:07,447,"firefox.exe","5 iPad competitors - Archos 5...1) - FORTUNE - Mozilla Firefox",Left mouse button pressed,46,74,15.52,177.56,0.09, 
+2010:03:11,14:04:07,588,"firefox.exe","5 iPad competitors - Archos 5...1) - FORTUNE - Mozilla Firefox",Left mouse button released,46,74,0.00,0.00,0.00, 
+2010:03:11,14:04:10,838,"firefox.exe","5 iPad competitors - Asus T91...2) - FORTUNE - Mozilla Firefox",Left mouse button pressed,40,78,7.21,402.47,0.02, 
+2010:03:11,14:04:10,979,"firefox.exe","5 iPad competitors - Asus T91...2) - FORTUNE - Mozilla Firefox",Left mouse button released,40,78,0.00,0.00,0.00, 
+2010:03:11,14:04:11,947,"firefox.exe","5 iPad competitors - Archos 5...1) - FORTUNE - Mozilla Firefox",Left mouse button pressed,38,78,2.00,2.00,1.00, 
+2010:03:11,14:04:12,072,"firefox.exe","5 iPad competitors - Archos 5...1) - FORTUNE - Mozilla Firefox",Left mouse button released,37,78,1.00,1.00,1.00, 
+2010:03:11,14:04:18,166,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,26,362,284.21,312.91,0.91, 
+2010:03:11,14:05:00,197,"Explorer.EXE","2:04 PM",Mouse wheel stopped,74,532,0.00,0.00,1.00,3 Wheel actions
+2010:03:11,14:05:23,494,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,43,546,34.93,42.89,0.81, 
+2010:03:11,14:05:36,229,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,170,813,0.00,0.00,1.00,3 Wheel actions
+2010:03:11,14:05:36,229,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,170,813,295.67,308.62,0.96, 
+2010:03:11,14:05:36,338,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,170,813,0.00,0.00,0.00, 
+2010:03:11,14:05:40,979,"firefox.exe","'The Internet' nominated for ...NN.com Blogs - Mozilla Firefox",Middle mouse button pressed,95,659,614.26,6788.60,0.09, 
+2010:03:11,14:05:41,260,"firefox.exe","'The Internet' nominated for ...NN.com Blogs - Mozilla Firefox",Middle mouse button released,95,659,0.00,0.00,0.00, 
+2010:03:11,14:05:44,041,"firefox.exe","'The Internet' nominated for ...NN.com Blogs - Mozilla Firefox",Middle mouse button pressed,93,691,32.06,35.24,0.91, 
+2010:03:11,14:05:44,275,"firefox.exe","'The Internet' nominated for ...NN.com Blogs - Mozilla Firefox",Middle mouse button released,93,691,0.00,0.00,0.00, 
+2010:03:11,14:05:46,150,"firefox.exe","'The Internet' nominated for ...NN.com Blogs - Mozilla Firefox",Mouse wheel,119,390,426.06,560.02,0.76, 
+2010:03:11,14:06:00,197,"Explorer.EXE","2:05 PM",Mouse wheel stopped,111,390,0.00,0.00,1.00,1 Wheel actions
+2010:03:11,14:08:40,010,"Explorer.EXE","Program Manager",Mouse wheel,0,417,122.02,1331.02,0.09, 
+2010:03:11,14:09:00,197,"Explorer.EXE","2:08 PM",Mouse wheel stopped,57,467,0.00,0.00,1.00,4 Wheel actions
+2010:03:11,14:09:04,291,"firefox.exe","'The Internet' nominated for ...NN.com Blogs - Mozilla Firefox",Mouse wheel,57,467,0.00,0.00,0.00, 
+2010:03:11,14:09:32,197,"firefox.exe","'The Internet' nominated for ...NN.com Blogs - Mozilla Firefox",Mouse wheel stopped,54,472,0.00,0.00,1.00,7 Wheel actions
+2010:03:11,14:09:32,197,"firefox.exe","'The Internet' nominated for ...NN.com Blogs - Mozilla Firefox",Middle mouse button pressed,54,472,222.45,1733.92,0.13, 
+2010:03:11,14:09:32,416,"firefox.exe","'The Internet' nominated for ...NN.com Blogs - Mozilla Firefox",Middle mouse button released,54,472,0.00,0.00,0.00, 
+2010:03:11,14:09:33,307,"firefox.exe","'The Internet' nominated for ...NN.com Blogs - Mozilla Firefox",Middle mouse button pressed,52,374,98.02,98.29,1.00, 
+2010:03:11,14:09:33,572,"firefox.exe","'The Internet' nominated for ...NN.com Blogs - Mozilla Firefox",Middle mouse button released,52,374,0.00,0.00,0.00, 
+2010:03:11,14:09:35,588,"firefox.exe","'The Internet' nominated for ...NN.com Blogs - Mozilla Firefox",Left mouse button pressed,559,329,524.86,627.42,0.84, 
+2010:03:11,14:09:35,713,"firefox.exe","'The Internet' nominated for ...NN.com Blogs - Mozilla Firefox",Left mouse button released,559,329,0.00,0.00,0.00, 
+2010:03:11,14:09:51,104,"firefox.exe","Transcript: Vice President Go...arch 9, 1999 - Mozilla Firefox",Mouse wheel,257,362,303.80,325.96,0.93, 
+2010:03:11,14:10:00,197,"Explorer.EXE","2:09 PM",Mouse wheel stopped,257,362,0.00,0.00,1.00,1 Wheel actions
+2010:03:11,14:10:09,744,"firefox.exe","Transcript: Vice President Go...arch 9, 1999 - Mozilla Firefox",Mouse wheel,314,529,176.46,455.10,0.39, 
+2010:03:11,14:11:00,197,"Explorer.EXE","2:10 PM",Mouse wheel stopped,270,536,0.00,0.00,1.00,8 Wheel actions
+2010:03:11,14:11:01,744,"firefox.exe","Transcript: Vice President Go...arch 9, 1999 - Mozilla Firefox",Mouse wheel,270,536,0.00,0.00,0.00, 
+2010:03:11,14:12:00,197,"Explorer.EXE","2:11 PM",Mouse wheel stopped,107,778,0.00,0.00,1.00,11 Wheel actions
+2010:03:11,14:12:07,947,"firefox.exe","Transcript: Vice President Go...arch 9, 1999 - Mozilla Firefox",Mouse wheel,107,778,0.00,0.00,0.00, 
+2010:03:11,14:13:00,197,"Explorer.EXE","2:12 PM",Mouse wheel stopped,107,778,0.00,0.00,1.00,13 Wheel actions
+2010:03:11,14:13:26,791,"firefox.exe","Transcript: Vice President Go...arch 9, 1999 - Mozilla Firefox",Mouse wheel,107,778,0.00,0.00,0.00, 
+2010:03:11,14:13:39,088,"firefox.exe","Transcript: Vice President Go...arch 9, 1999 - Mozilla Firefox",Mouse wheel stopped,51,67,0.00,0.00,1.00,4 Wheel actions
+2010:03:11,14:13:39,088,"firefox.exe","Transcript: Vice President Go...arch 9, 1999 - Mozilla Firefox",Left mouse button pressed,51,67,713.20,964.68,0.74, 
+2010:03:11,14:13:39,197,"firefox.exe","Transcript: Vice President Go...arch 9, 1999 - Mozilla Firefox",Left mouse button released,51,68,1.00,1.00,1.00, 
+2010:03:11,14:13:42,166,"firefox.exe","'The Internet' nominated for ...NN.com Blogs - Mozilla Firefox",Left mouse button pressed,43,72,8.94,10.83,0.83, 
+2010:03:11,14:13:42,291,"firefox.exe","'The Internet' nominated for ...NN.com Blogs - Mozilla Firefox",Left mouse button released,43,72,0.00,0.00,0.00, 
+2010:03:11,14:14:08,041,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,707,761,956.88,1387.48,0.69, 
+2010:03:11,14:14:08,182,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,707,761,0.00,0.00,0.00, 
+2010:03:11,14:14:19,119,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,651,697,85.04,89.60,0.95, 
+2010:03:11,14:14:24,385,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel stopped,613,539,0.00,0.00,1.00,3 Wheel actions
+2010:03:11,14:14:24,385,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Middle mouse button pressed,613,539,584.76,4630.97,0.13, 
+2010:03:11,14:14:24,650,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Middle mouse button released,613,539,0.00,0.00,0.00, 
+2010:03:11,14:14:27,291,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Middle mouse button pressed,599,561,26.08,50.82,0.51, 
+2010:03:11,14:14:27,479,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,599,561,145.60,223.46,0.65, 
+2010:03:11,14:14:27,494,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel stopped,599,561,0.00,0.00,1.00,1 Wheel actions
+2010:03:11,14:14:27,494,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Middle mouse button released,599,561,0.00,0.00,0.00, 
+2010:03:11,14:14:37,885,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,597,567,6.32,8.00,0.79, 
+2010:03:11,14:15:00,197,"Explorer.EXE","2:14 PM",Mouse wheel stopped,597,567,0.00,0.00,1.00,2 Wheel actions
+2010:03:11,14:16:31,979,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,597,567,0.00,0.00,0.00, 
+2010:03:11,14:16:51,885,"agent.exe","<Unknown window>",Mouse wheel stopped,597,567,0.00,0.00,1.00,7 Wheel actions
+2010:03:11,14:17:27,104,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,597,567,0.00,0.00,0.00, 
+2010:03:11,14:18:00,197,"Explorer.EXE","2:17 PM",Mouse wheel stopped,597,567,0.00,0.00,1.00,4 Wheel actions
+2010:03:11,14:18:14,307,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,597,567,0.00,0.00,0.00, 
+2010:03:11,14:19:00,197,"Explorer.EXE","2:18 PM",Mouse wheel stopped,597,567,0.00,0.00,1.00,7 Wheel actions
+2010:03:11,14:19:33,775,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,583,575,16.12,18.71,0.86, 
+2010:03:11,14:20:00,197,"Explorer.EXE","2:19 PM",Mouse wheel stopped,583,575,0.00,0.00,1.00,6 Wheel actions
+2010:03:11,14:20:19,025,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,578,580,7.07,9.41,0.75, 
+2010:03:11,14:20:33,291,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel stopped,617,877,0.00,0.00,1.00,9 Wheel actions
+2010:03:11,14:20:33,291,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Left mouse button pressed,617,877,297.72,519.79,0.57, 
+2010:03:11,14:20:33,400,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Left mouse button released,617,877,0.00,0.00,0.00, 
+2010:03:11,14:20:48,744,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,779,885,162.20,255.96,0.63, 
+2010:03:11,14:21:00,197,"Explorer.EXE","2:20 PM",Mouse wheel stopped,868,821,0.00,0.00,1.00,1 Wheel actions
+2010:03:11,14:21:14,150,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,868,824,107.90,116.39,0.93, 
+2010:03:11,14:21:30,900,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel stopped,645,856,0.00,0.00,1.00,3 Wheel actions
+2010:03:11,14:21:30,900,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Left mouse button pressed,645,856,225.14,250.67,0.90, 
+2010:03:11,14:21:30,979,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Left mouse button released,645,856,0.00,0.00,0.00, 
+2010:03:11,14:21:31,291,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Left mouse button pressed,632,865,15.81,17.72,0.89, 
+2010:03:11,14:21:31,416,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Left mouse button released,631,865,1.00,1.00,1.00, 
+2010:03:11,14:21:31,666,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Left mouse button pressed,621,866,10.05,10.24,0.98, 
+2010:03:11,14:21:31,775,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Left mouse button released,621,866,0.00,0.00,0.00, 
+2010:03:11,14:21:34,619,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,801,864,180.01,182.83,0.98, 
+2010:03:11,14:22:00,197,"Explorer.EXE","2:21 PM",Mouse wheel stopped,801,864,0.00,0.00,1.00,3 Wheel actions
+2010:03:11,14:22:03,885,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,801,864,0.00,0.00,0.00, 
+2010:03:11,14:22:10,244,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel stopped,785,822,0.00,0.00,1.00,6 Wheel actions
+2010:03:11,14:22:10,244,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Middle mouse button pressed,785,822,320.49,1638.37,0.20, 
+2010:03:11,14:22:10,338,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Middle mouse button released,785,822,0.00,0.00,0.00, 
+2010:03:11,14:22:13,682,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Middle mouse button pressed,782,839,17.26,42.24,0.41, 
+2010:03:11,14:22:13,900,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Middle mouse button released,782,839,0.00,0.00,0.00, 
+2010:03:11,14:22:34,416,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Middle mouse button pressed,881,628,233.07,256.15,0.91, 
+2010:03:11,14:22:34,650,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Middle mouse button released,881,628,0.00,0.00,0.00, 
+2010:03:11,14:22:57,354,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Middle mouse button pressed,841,637,41.00,1102.65,0.04, 
+2010:03:11,14:22:57,572,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Middle mouse button released,841,637,0.00,0.00,0.00, 
+2010:03:11,14:23:05,682,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,787,684,180.54,1549.61,0.12, 
+2010:03:11,14:23:08,979,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel stopped,535,711,0.00,0.00,1.00,1 Wheel actions
+2010:03:11,14:23:08,979,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Left mouse button pressed,535,711,253.44,265.99,0.95, 
+2010:03:11,14:23:09,088,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Left mouse button released,535,711,0.00,0.00,0.00, 
+2010:03:11,14:23:23,119,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,798,770,269.54,289.98,0.93, 
+2010:03:11,14:24:00,197,"Explorer.EXE","2:23 PM",Mouse wheel stopped,798,770,0.00,0.00,1.00,2 Wheel actions
+2010:03:11,14:25:26,463,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Left mouse button pressed,609,902,230.53,344.56,0.67, 
+2010:03:11,14:25:26,557,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Left mouse button released,609,902,0.00,0.00,0.00, 
+2010:03:11,14:25:31,135,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,608,895,7.07,102.97,0.07, 
+2010:03:11,14:26:00,197,"Explorer.EXE","2:25 PM",Mouse wheel stopped,580,864,0.00,0.00,1.00,6 Wheel actions
+2010:03:11,14:26:02,400,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,579,864,1.00,1.00,1.00, 
+2010:03:11,14:26:27,666,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel stopped,613,930,0.00,0.00,1.00,6 Wheel actions
+2010:03:11,14:26:27,666,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Left mouse button pressed,613,930,73.43,127.44,0.58, 
+2010:03:11,14:26:27,838,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Left mouse button released,613,930,0.00,0.00,0.00, 
+2010:03:11,14:26:33,150,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,677,870,87.73,97.95,0.90, 
+2010:03:11,14:26:40,400,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel stopped,281,931,0.00,0.00,1.00,3 Wheel actions
+2010:03:11,14:26:40,400,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Left mouse button pressed,281,931,400.67,517.37,0.77, 
+2010:03:11,14:26:40,541,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Left mouse button released,281,931,0.00,0.00,0.00, 
+2010:03:11,14:27:00,822,"firefox.exe","Georgia judge bars release of...dy - CNN.com - Mozilla Firefox",Mouse wheel,131,882,157.80,163.94,0.96, 
+2010:03:11,14:27:16,650,"Explorer.EXE","Notification Area",Mouse wheel stopped,1122,1010,0.00,0.00,1.00,3 Wheel actions
+2010:03:11,14:27:16,650,"Explorer.EXE","Notification Area",Right mouse button pressed,1122,1010,999.23,1342.36,0.74, 
+2010:03:11,14:27:16,760,"Explorer.EXE","Notification Area",Right mouse button released,1122,1010,0.00,0.00,0.00, 
+2010:03:11,14:27:17,854,"uLog.exe","<Unknown window>",Left mouse button pressed,1135,977,35.47,51.06,0.69, 
+2010:03:11,14:27:17,947,"uLog.exe","<Unknown window>",Left mouse button released,1135,977,0.00,0.00,0.00, 
+2010:03:11,14:27:17,963,"uLog.exe"," ",Logging stopped,-1,-1,-1.00,-1.00,-1.00, 

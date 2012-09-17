@@ -1,0 +1,11 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:03:08,18:37:52,476,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:03:08,18:38:03,398,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,350,756,833.09,5251.71,0.16, 
+2010:03:08,18:38:04,398,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,56,700,0.00,0.00,1.00,2 Wheel actions
+2010:03:08,18:38:04,398,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,56,700,299.29,329.65,0.91, 
+2010:03:08,18:38:04,491,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,56,700,0.00,0.00,0.00, 
+2010:03:08,18:38:04,695,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,68,699,12.04,13.00,0.93, 
+2010:03:08,18:38:21,195,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,1088,268,0.00,0.00,1.00,17 Wheel actions
+2010:03:08,18:38:21,195,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1088,268,689.15,3445.71,0.20, 
+2010:03:08,18:38:21,304,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1088,268,0.00,0.00,0.00, 
+2010:03:08,18:38:30,148,"firefox.exe","Breaking news, real-time scor...ted 

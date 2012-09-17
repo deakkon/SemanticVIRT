@@ -1,0 +1,29 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:02:26,15:16:58,809,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:02:26,15:17:18,389,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,448,733,859.07,1961.66,0.44, 
+2010:02:26,15:17:18,514,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,448,733,0.00,0.00,0.00, 
+2010:02:26,15:17:23,499,"firefox.exe","Behind the scenes: A CNN repo...NN.com Blogs - Mozilla Firefox",Mouse wheel,440,719,16.12,22.00,0.73, 
+2010:02:26,15:17:40,313,"firefox.exe","Behind the scenes: A CNN repo...NN.com Blogs - Mozilla Firefox",Mouse wheel stopped,476,479,0.00,0.00,1.00,34 Wheel actions
+2010:02:26,15:17:40,313,"firefox.exe","Behind the scenes: A CNN repo...NN.com Blogs - Mozilla Firefox",Left mouse button pressed,476,479,241.34,548.25,0.44, 
+2010:02:26,15:17:40,407,"firefox.exe","Behind the scenes: A CNN repo...NN.com Blogs - Mozilla Firefox",Left mouse button released,476,479,0.00,0.00,0.00, 
+2010:02:26,15:17:41,766,"firefox.exe","Behind the scenes: A CNN repo...NN.com Blogs - Mozilla Firefox",Left mouse button pressed,442,434,56.40,59.17,0.95, 
+2010:02:26,15:17:41,907,"firefox.exe","Behind the scenes: A CNN repo...NN.com Blogs - Mozilla Firefox",Left mouse button released,442,434,0.00,0.00,0.00, 
+2010:02:26,15:18:14,910,"firefox.exe","Behind the scenes: A CNN repo...NN.com Blogs - Mozilla Firefox",Mouse wheel,457,421,19.85,86.74,0.23, 
+2010:02:26,15:19:00,086,"Explorer.EXE","3:18 PM",Mouse wheel stopped,480,291,0.00,0.00,1.00,12 Wheel actions
+2010:02:26,15:19:00,242,"firefox.exe","Behind the scenes: A CNN repo...NN.com Blogs - Mozilla Firefox",Mouse wheel,480,291,0.00,0.00,0.00, 
+2010:02:26,15:19:00,726,"agent.exe","<Unknown window>",Mouse wheel stopped,480,291,0.00,0.00,1.00,1 Wheel actions
+2010:02:26,15:19:02,539,"firefox.exe","Behind the scenes: A CNN repo...NN.com Blogs - Mozilla Firefox",Mouse wheel,474,282,10.82,33.96,0.32, 
+2010:02:26,15:20:00,091,"Explorer.EXE","3:19 PM",Mouse wheel stopped,458,325,0.00,0.00,1.00,8 Wheel actions
+2010:02:26,15:22:08,064,"firefox.exe","Behind the scenes: A CNN repo...NN.com Blogs - Mozilla Firefox",Right mouse button pressed,455,349,32.57,42.41,0.77, 
+2010:02:26,15:22:08,079,"firefox.exe","Behind the scenes: A CNN repo...NN.com Blogs - Mozilla Firefox",Right mouse button released,455,349,0.00,0.00,0.00, 
+2010:02:26,15:22:08,189,"firefox.exe","Behind the scenes: A CNN repo...NN.com Blogs - Mozilla Firefox",Mouse wheel,441,341,16.12,18.28,0.88, 
+2010:02:26,15:22:08,954,"firefox.exe","Behind the scenes: A CNN repo...NN.com Blogs - Mozilla Firefox",Mouse wheel stopped,409,327,0.00,0.00,1.00,7 Wheel actions
+2010:02:26,15:22:08,954,"firefox.exe","Behind the scenes: A CNN repo...NN.com Blogs - Mozilla Firefox",Left mouse button pressed,409,327,43.93,55.10,0.80, 
+2010:02:26,15:22:09,095,"firefox.exe","Behind the scenes: A CNN repo...NN.com Blogs - Mozilla Firefox",Left mouse button released,409,327,0.00,0.00,0.00, 
+2010:02:26,15:22:10,407,"firefox.exe","Behind the scenes: A CNN repo...NN.com Blogs - Mozilla Firefox",Left mouse button pressed,11,61,478.71,504.85,0.95, 
+2010:02:26,15:22:10,517,"firefox.exe","Behind the scenes: A CNN repo...NN.com Blogs - Mozilla Firefox",Left mouse button released,9,61,2.00,2.00,1.00, 
+2010:02:26,15:22:18,189,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,17,518,457.07,931.30,0.49, 
+2010:02:26,15:22:51,518,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,1099,268,0.00,0.00,1.00,7 Wheel actions
+2010:02:26,15:22:51,518,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1099,268,1067.19,1251.48,0.85, 
+2010:02:26,15:22:51,628,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1099,268,0.00,0.00,0.00, 
+2010:02:26,15:22:56,503,"firefox.exe","Breaking news, real-time scor...ted 

@@ -1,0 +1,178 @@
+                    The real Ajay Bhatt, a co-inventor of USB technology, imitates his television persona. STORY HIGHLIGHTSAjay Bhatt is the co-inventor of USB, the technology that connects gadgets to computersUSB 3.0 debuted on the market last month and is 10 times faster than beforeBhatt was singled out as a &quot;rock star&quot; in an Intel adBut the real inventor is nothing like the ads would have you believe (CNN) -- If you believe the ads, Ajay Bhatt is tech's version of an arrogant rock star. The co-inventor of USB -- the near-ubiquitous technology that connects computers to cameras and other gadgets -- strolls into an office looking nerd-confident in a sweater vest, tie and a puffed-up, game-show-host haircut in a TV commercial for Intel.  Women fawn. Metal music blares. A crazed fan rips his shirt open.  Bhatt acknowledges his fans only with passing glances. &quot;Our rock stars aren't like your rock stars,&quot; the commercial says. The ad was such a success that Conan O'Brien had Bhatt on the &quot;Tonight Show&quot; in October 2009. But there's just one problem: That's not Bhatt. Not the hair. Not the attitude. And, most strikingly, not even the person. In the Intel ad, Bhatt is played by actor Sunil Narkar. To meet the real Ajay Bhatt -- an unassuming and introverted man who's much more Rick Moranis than Roger Daltrey -- is to realize just how outlandish Intel's marketing team was when it decided to pitch Bhatt as a go-it-alone rock star. That's not because of the image, although the real Bhatt doesn't look like he's used many blow dryers lately. It's because, in reality, Bhatt has built a career and a successful technology line on the idea that the individual is far less important than the group.  In his world, a person doesn't need to stick out and shouldn't stick out. As the new, 10-times-faster line of USB 3.0 products hits the market this year, Bhatt continues to believe in that group-over-self philosophy, even if he has become a rock star by proxy.  Complicated plugs The Universal Serial Bus is one of those inventions that everyone uses but no one notices. Even if you know that the rectangle-shaped hole in the side of your computer -- the one with a little icon next to it that looks like a pitchfork -- is a USB port, it may be difficult to understand why that small plug-in is so important until you think back a decade or two. In the early 1990s, Bhatt, like many people, was trying to hook up a printer to his computer. To do so, he first had to fiddle with a plug that had a dozen or more tongs on it. The plugs of the '90s looked somewhat like acupuncture devices. They were difficult to use. Tiny screws held them in place. To make matters worse, Bhatt thought, once a connection was made, there was no guarantee a computer would recognize a printer or gadget. Consumers had to install special software for that. &quot;There's got to be a better way to do this,&quot; he recalled in a recent interview. He looked to the wall sockets for inspiration, seeking to imitate their simplicity.  Cooperative wisdom There is a quiet revolution in the idea that all computers and gadgets should cooperate and talk to each other in the same language, with the same cables and with the same ports. That's been the beauty of USB. When you plug a camera into a USB port, the computer, in theory, recognizes that the device is there and helps you download photo files. All USB plugs are compatible. So if you buy a new computer, you don't have to upgrade all the rest of your equipment -- the video cameras, mobile phones and the like. That remains true as USB 3.0 products start hitting the market this year. The new plugs look slightly different -- the connectors have an extra sliver of metal tacked on to the side, like a new thumb -- but older USB plugs still work with the newer plug-ins. USB's main competitor is a connection called Firewire, which is used primarily in higher-end gadgets. USB's strength is that it connects almost anything to a PC, even computer mice, said Steve Whalley, who worked with Bhatt on USB in the early days. Getting there was anything but easy, Bhatt said. Simplifying the digital Babylon that preceded USB involved convincing nearly every computer and gadget maker in the world to get on board with a single type of cable, creating a sort of universal language that lets all computer hardware connect.   
+
+
+
+	
+	
+	
+		
+			
+				
+				
+			
+		
+			
+				
+				
+			
+		
+	
+	
+			
+			
+		
+			
+				
+			
+		
+		
+				
+					
+					 We didn't know what a big task we were taking on.--Ajay Bhatt on the original USB project
+ 
+				
+
+		
+			
+				
+			
+		
+
+
+
+			
+	
+			
+			
+		
+			
+				
+			
+		
+		
+				
+					
+					  
+RELATED TOPICS
+
+
+Intel Corporation
+
+The Tonight Show
+
+India
+
+Entertainment
+
+
+				
+
+		
+			
+				
+			
+		
+
+
+
+			
+	
+
+
+
+A boss at Intel once told Bhatt to stop working on the USB project because it would never take off, he said. He recalls one large presentation where executives stared at him like he was crazy when he suggested they all switch to this new hook-up. Still, Bhatt said he never doubted his vision. &quot;To some extent, we were na&iuml;ve and full of energy,&quot; he said. &quot;We didn't know what a big task we were taking on.&quot; Today, more than 6 billion devices use the USB system, according to the USB Implementers Forum. Humble origins That kind of against-all-odds tenacity has been a part of Bhatt's life since childhood. He grew up in India, raised by a father who was an art history professor and an encouraging mother. They told Bhatt he could do anything if he put his mind to it. Often, he put his mind to breaking things and putting them back together -- just for the fun of it. &quot;I'm the kind of guy who buys stuff from IKEA&quot; simply because it's fun to build things, he said. &quot;I used to build a computer every year just to get a feel for it.&quot; In 1981, after earning a bachelor's degree in India, Bhatt left his home country for the first time to attend graduate school at the City University of New York.  His only reason for choosing the school was that, as an undergraduate, he'd studied and liked an engineering textbook written by a CUNY employee.  On his second day in the country, Bhatt said, he bumped into the professor on an escalator. &quot;I came here, I talked to the professor and I said, 'I want to be your assistant.' &quot; He went to work for him the next day, he said. Co-creator At first, Bhatt squirmed at the thought of himself as a tech rock star. He wished the commercial had spotlighted the band of people who worked on USB. Bhatt is careful to describe himself as the &quot;co-creator&quot; of USB, giving a nod to other Intel workers, particularly Bala Cadambi, who had a hand in its creation. The goal of the Intel ad was to highlight that group's efforts, even if it singled out Bhatt, said company spokesman David Dickstein. Bhatt also emphasizes  that the entire tech community had to come together to make his idea of universal hardware connections possible. He sees several positives in his cult fame. One is that he gets to talk to groups of students frequently. He tells them it's cool to be smart.  &quot;If I can make a difference in just one kid's life, it's worth it,&quot; he said. Another is that his daughter, who didn't know he had created USB until her later years in high school, around 2005, now thinks he's cool. &quot;When I first found out my dad was going to get a commercial ... I screamed, actually,&quot; said Priya Bhatt, a bubbly 22-year-old. &quot;I was so excited. I just thought it was so great that he finally was getting the recognition that I felt was very deserved.&quot;
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+	
+		
+		
+			
+				
+					
+						
+						Share this on:
+					
+										
+						Mixx
+						Facebook
+						Twitter
+						Digg
+						delicious
+						reddit
+						MySpace
+						StumbleUpon
+						LinkedIn
+					
+				
+			
+		
+		
+	
+			
+
+
+
+	
+
+
+	
+
+
+
+
+
+FOLLOW THIS TOPIC
+
+	
+			
+  More Tech
+	
+	
+		
+Report: Google TV devices delayed as Google tweaks software
+
+
+5 Web titans that withered under Yahoo
+
+
+New 'Tron' shines glowing light on an arcade classic
+
+
+	
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+

@@ -1,0 +1,203 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:03:05,15:34:14,695,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:03:05,15:34:32,523,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,567,779,963.50,2770.38,0.35, 
+2010:03:05,15:34:37,586,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,1096,34,0.00,0.00,1.00,1 Wheel actions
+2010:03:05,15:34:37,586,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1096,34,913.71,1299.02,0.70, 
+2010:03:05,15:34:37,695,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1096,34,0.00,0.00,0.00, 
+2010:03:05,15:34:41,945,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,757,769,809.41,834.33,0.97, 
+2010:03:05,15:34:42,070,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,757,769,0.00,0.00,0.00, 
+2010:03:05,15:34:45,836,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel,553,751,204.79,293.80,0.70, 
+2010:03:05,15:35:00,664,"Explorer.EXE","3:34 PM",Mouse wheel stopped,580,719,0.00,0.00,1.00,4 Wheel actions
+2010:03:05,15:35:05,320,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel,683,659,147.20,219.04,0.67, 
+2010:03:05,15:36:00,664,"Explorer.EXE","3:35 PM",Mouse wheel stopped,643,723,0.00,0.00,1.00,6 Wheel actions
+2010:03:05,15:36:11,946,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel,643,723,75.47,345.78,0.22, 
+2010:03:05,15:36:19,555,"agent.exe","<Unknown window>",Mouse wheel stopped,643,723,0.00,0.00,1.00,4 Wheel actions
+2010:03:05,15:36:32,477,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel,643,723,0.00,0.00,0.00, 
+2010:03:05,15:37:00,665,"Explorer.EXE","3:36 PM",Mouse wheel stopped,643,720,0.00,0.00,1.00,5 Wheel actions
+2010:03:05,15:37:19,493,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel,643,718,4.00,4.00,1.00, 
+2010:03:05,15:38:00,665,"Explorer.EXE","3:37 PM",Mouse wheel stopped,622,693,0.00,0.00,1.00,7 Wheel actions
+2010:03:05,15:38:07,337,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel,521,717,122.00,508.45,0.24, 
+2010:03:05,15:38:32,056,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel stopped,730,829,0.00,0.00,1.00,7 Wheel actions
+2010:03:05,15:38:32,056,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Left mouse button pressed,730,829,239.52,255.19,0.94, 
+2010:03:05,15:38:32,181,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Left mouse button released,730,829,0.00,0.00,0.00, 
+2010:03:05,15:38:55,462,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel,449,664,325.86,524.83,0.62, 
+2010:03:05,15:39:00,666,"Explorer.EXE","3:38 PM",Mouse wheel stopped,449,664,0.00,0.00,1.00,2 Wheel actions
+2010:03:05,15:39:05,462,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel,449,665,1.00,1.00,1.00, 
+2010:03:05,15:40:00,666,"Explorer.EXE","3:39 PM",Mouse wheel stopped,449,671,0.00,0.00,1.00,11 Wheel actions
+2010:03:05,15:40:01,057,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel,452,674,4.24,6.00,0.71, 
+2010:03:05,15:41:00,666,"Explorer.EXE","3:40 PM",Mouse wheel stopped,475,678,0.00,0.00,1.00,8 Wheel actions
+2010:03:05,15:41:06,948,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel,467,675,11.31,18.00,0.63, 
+2010:03:05,15:41:48,104,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel stopped,468,676,0.00,0.00,1.00,7 Wheel actions
+2010:03:05,15:41:48,104,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Right mouse button pressed,468,676,1.00,1.00,1.00, 
+2010:03:05,15:41:48,635,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Right mouse button released,468,676,0.00,0.00,0.00, 
+2010:03:05,15:41:50,073,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Left mouse button pressed,724,777,275.20,282.21,0.98, 
+2010:03:05,15:41:50,213,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Left mouse button released,724,777,0.00,0.00,0.00, 
+2010:03:05,15:41:52,557,"Explorer.EXE","Running Applications",Left mouse button pressed,840,1009,259.38,449.99,0.58, 
+2010:03:05,15:41:52,729,"Explorer.EXE","Running Applications",Left mouse button released,840,1009,0.00,0.00,0.00, 
+2010:03:05,15:41:54,198,"firefox.exe","Netflix - Mozilla Firefox",Left mouse button pressed,989,371,655.17,682.83,0.96, 
+2010:03:05,15:41:54,323,"firefox.exe","Netflix - Mozilla Firefox",Left mouse button released,989,372,1.00,1.00,1.00, 
+2010:03:05,15:42:05,745,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel,637,614,427.16,544.43,0.78, 
+2010:03:05,15:42:08,995,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel stopped,1271,456,0.00,0.00,1.00,3 Wheel actions
+2010:03:05,15:42:08,995,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Left mouse button pressed,1271,456,658.09,889.55,0.74, 
+2010:03:05,15:42:09,120,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Left mouse button released,1271,456,0.00,0.00,0.00, 
+2010:03:05,15:42:09,682,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel,698,538,578.84,581.41,1.00, 
+2010:03:05,15:42:18,495,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel stopped,6,51,0.00,0.00,1.00,6 Wheel actions
+2010:03:05,15:42:18,495,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Left mouse button pressed,6,51,831.00,2614.82,0.32, 
+2010:03:05,15:42:18,589,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Left mouse button released,6,51,0.00,0.00,0.00, 
+2010:03:05,15:42:19,042,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Left mouse button pressed,7,56,5.10,6.00,0.85, 
+2010:03:05,15:42:19,182,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Left mouse button released,7,56,0.00,0.00,0.00, 
+2010:03:05,15:42:23,151,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1262,146,1258.22,1723.86,0.73, 
+2010:03:05,15:42:23,432,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1262,146,0.00,0.00,0.00, 
+2010:03:05,15:42:24,964,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,520,451,802.24,823.52,0.97, 
+2010:03:05,15:42:36,183,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,610,457,0.00,0.00,1.00,6 Wheel actions
+2010:03:05,15:42:36,183,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,610,457,87.28,102.16,0.85, 
+2010:03:05,15:42:36,339,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,610,457,0.00,0.00,0.00, 
+2010:03:05,15:42:44,167,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Right mouse button pressed,611,453,4.12,5.00,0.82, 
+2010:03:05,15:42:44,573,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Right mouse button released,611,453,0.00,0.00,0.00, 
+2010:03:05,15:42:46,386,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Left mouse button pressed,583,520,72.62,100.19,0.72, 
+2010:03:05,15:42:46,558,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Left mouse button released,583,520,0.00,0.00,0.00, 
+2010:03:05,15:42:55,026,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Mouse wheel,583,487,33.00,33.00,1.00, 
+2010:03:05,15:43:00,667,"Explorer.EXE","3:42 PM",Mouse wheel stopped,583,484,0.00,0.00,1.00,2 Wheel actions
+2010:03:05,15:43:12,589,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Right mouse button pressed,583,481,6.00,6.00,1.00, 
+2010:03:05,15:43:13,167,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Right mouse button released,583,481,0.00,0.00,0.00, 
+2010:03:05,15:43:14,089,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Left mouse button pressed,587,462,19.42,21.83,0.89, 
+2010:03:05,15:43:14,214,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Left mouse button released,587,462,0.00,0.00,0.00, 
+2010:03:05,15:43:19,089,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Right mouse button pressed,634,427,58.60,69.96,0.84, 
+2010:03:05,15:43:19,558,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Right mouse button released,634,427,0.00,0.00,0.00, 
+2010:03:05,15:43:20,073,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Left mouse button pressed,620,427,14.00,14.00,1.00, 
+2010:03:05,15:43:20,198,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Left mouse button released,620,427,0.00,0.00,0.00, 
+2010:03:05,15:43:40,855,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Mouse wheel,620,427,0.00,0.00,0.00, 
+2010:03:05,15:43:56,683,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Mouse wheel stopped,620,427,0.00,0.00,1.00,6 Wheel actions
+2010:03:05,15:43:56,683,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Right mouse button pressed,620,427,0.00,0.00,0.00, 
+2010:03:05,15:43:57,105,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Right mouse button released,620,427,0.00,0.00,0.00, 
+2010:03:05,15:43:57,808,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Left mouse button pressed,596,427,24.00,24.00,1.00, 
+2010:03:05,15:43:57,949,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Left mouse button released,596,427,0.00,0.00,0.00, 
+2010:03:05,15:44:16,605,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Mouse wheel,498,368,114.39,144.81,0.79, 
+2010:03:05,15:44:26,761,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Mouse wheel stopped,376,470,0.00,0.00,1.00,2 Wheel actions
+2010:03:05,15:44:26,761,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Right mouse button pressed,376,470,157.49,403.51,0.39, 
+2010:03:05,15:44:26,980,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Right mouse button released,376,470,0.00,0.00,0.00, 
+2010:03:05,15:44:28,464,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Left mouse button pressed,615,772,385.13,575.48,0.67, 
+2010:03:05,15:44:28,574,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Left mouse button released,613,767,5.39,7.00,0.77, 
+2010:03:05,15:44:32,902,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Mouse wheel,590,714,57.78,68.97,0.84, 
+2010:03:05,15:44:34,293,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Mouse wheel stopped,589,714,0.00,0.00,1.00,1 Wheel actions
+2010:03:05,15:44:34,293,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Right mouse button pressed,589,714,1.00,1.00,1.00, 
+2010:03:05,15:44:34,652,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Right mouse button released,589,714,0.00,0.00,0.00, 
+2010:03:05,15:44:35,074,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Left mouse button pressed,559,701,32.70,35.59,0.92, 
+2010:03:05,15:44:35,199,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Left mouse button released,559,701,0.00,0.00,0.00, 
+2010:03:05,15:44:37,605,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Mouse wheel,568,675,27.51,41.13,0.67, 
+2010:03:05,15:45:00,668,"Explorer.EXE","3:44 PM",Mouse wheel stopped,507,566,0.00,0.00,1.00,13 Wheel actions
+2010:03:05,15:45:15,824,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Mouse wheel,507,566,0.00,0.00,0.00, 
+2010:03:05,15:46:00,668,"Explorer.EXE","3:45 PM",Mouse wheel stopped,507,566,0.00,0.00,1.00,7 Wheel actions
+2010:03:05,15:46:01,106,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Mouse wheel,507,566,0.00,0.00,0.00, 
+2010:03:05,15:46:25,387,"agent.exe","<Unknown window>",Mouse wheel stopped,418,828,0.00,0.00,1.00,4 Wheel actions
+2010:03:05,15:46:27,950,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Mouse wheel,420,828,276.07,477.95,0.58, 
+2010:03:05,15:47:00,669,"Explorer.EXE","3:46 PM",Mouse wheel stopped,567,876,0.00,0.00,1.00,11 Wheel actions
+2010:03:05,15:47:09,575,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Mouse wheel,459,699,139.70,1365.55,0.10, 
+2010:03:05,15:47:11,403,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Mouse wheel stopped,29,66,0.00,0.00,1.00,2 Wheel actions
+2010:03:05,15:47:11,403,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Left mouse button pressed,29,66,765.24,861.85,0.89, 
+2010:03:05,15:47:11,528,"firefox.exe","Is chasing cybercrooks worth it? - CNN.com - Mozilla Firefox",Left mouse button released,29,66,0.00,0.00,0.00, 
+2010:03:05,15:47:25,497,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Middle mouse button pressed,338,416,536.00,21476.59,0.02, 
+2010:03:05,15:47:25,731,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Middle mouse button released,338,416,0.00,0.00,0.00, 
+2010:03:05,15:47:26,934,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Middle mouse button pressed,330,350,66.48,67.88,0.98, 
+2010:03:05,15:47:27,122,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Middle mouse button released,330,350,0.00,0.00,0.00, 
+2010:03:05,15:47:33,216,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,347,492,531.60,2141.23,0.25, 
+2010:03:05,15:47:33,403,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,347,492,0.00,0.00,0.00, 
+2010:03:05,15:47:35,169,"firefox.exe","11 additional airports to get...ay - CNN.com - Mozilla Firefox",Left mouse button pressed,397,120,375.35,410.53,0.91, 
+2010:03:05,15:47:35,341,"firefox.exe","Authorities investigate backg...er - CNN.com - Mozilla Firefox",Left mouse button released,397,120,0.00,0.00,0.00, 
+2010:03:05,15:47:36,559,"firefox.exe","Authorities investigate backg...er - CNN.com - Mozilla Firefox",Mouse wheel,138,661,599.80,638.03,0.94, 
+2010:03:05,15:48:00,669,"Explorer.EXE","3:47 PM",Mouse wheel stopped,142,649,0.00,0.00,1.00,10 Wheel actions
+2010:03:05,15:48:39,763,"firefox.exe","Authorities investigate backg...er - CNN.com - Mozilla Firefox",Mouse wheel,539,599,405.76,593.60,0.68, 
+2010:03:05,15:49:00,669,"Explorer.EXE","3:48 PM",Mouse wheel stopped,536,602,0.00,0.00,1.00,7 Wheel actions
+2010:03:05,15:49:20,466,"firefox.exe","Authorities investigate backg...er - CNN.com - Mozilla Firefox",Mouse wheel,536,602,0.00,0.00,0.00, 
+2010:03:05,15:50:00,670,"Explorer.EXE","3:49 PM",Mouse wheel stopped,527,603,0.00,0.00,1.00,9 Wheel actions
+2010:03:05,15:50:09,217,"firefox.exe","Authorities investigate backg...er - CNN.com - Mozilla Firefox",Mouse wheel,527,603,0.00,0.00,0.00, 
+2010:03:05,15:51:00,670,"Explorer.EXE","3:50 PM",Mouse wheel stopped,409,470,0.00,0.00,1.00,12 Wheel actions
+2010:03:05,15:51:08,186,"firefox.exe","Authorities investigate backg...er - CNN.com - Mozilla Firefox",Mouse wheel,372,813,256.67,884.90,0.29, 
+2010:03:05,15:51:11,061,"firefox.exe","Authorities investigate backg...er - CNN.com - Mozilla Firefox",Mouse wheel stopped,481,119,0.00,0.00,1.00,6 Wheel actions
+2010:03:05,15:51:11,061,"firefox.exe","Authorities investigate backg...er - CNN.com - Mozilla Firefox",Left mouse button pressed,481,119,426.19,688.34,0.62, 
+2010:03:05,15:51:11,217,"firefox.exe","Authorities investigate backg...er - CNN.com - Mozilla Firefox",Left mouse button released,481,119,0.00,0.00,0.00, 
+2010:03:05,15:51:23,014,"firefox.exe","Riders tossed out as bus roll...ay - CNN.com - Mozilla Firefox",Left mouse button pressed,483,120,2.24,1464.85,0.00, 
+2010:03:05,15:51:23,186,"firefox.exe","Riders tossed out as bus roll...ay - CNN.com - Mozilla Firefox",Left mouse button released,483,120,0.00,0.00,0.00, 
+2010:03:05,15:51:59,514,"firefox.exe","11 additional airports to get...ay - CNN.com - Mozilla Firefox",Mouse wheel,621,777,671.34,1419.58,0.47, 
+2010:03:05,15:52:00,671,"Explorer.EXE","3:51 PM",Mouse wheel stopped,621,771,0.00,0.00,1.00,2 Wheel actions
+2010:03:05,15:52:30,811,"firefox.exe","11 additional airports to get...ay - CNN.com - Mozilla Firefox",Mouse wheel,655,678,104.68,174.96,0.60, 
+2010:03:05,15:53:00,671,"Explorer.EXE","3:52 PM",Mouse wheel stopped,465,622,0.00,0.00,1.00,6 Wheel actions
+2010:03:05,15:53:04,749,"firefox.exe","11 additional airports to get...ay - CNN.com - Mozilla Firefox",Mouse wheel,465,622,198.08,591.50,0.33, 
+2010:03:05,15:53:18,515,"firefox.exe","11 additional airports to get...ay - CNN.com - Mozilla Firefox",Mouse wheel stopped,22,57,0.00,0.00,1.00,5 Wheel actions
+2010:03:05,15:53:18,515,"firefox.exe","11 additional airports to get...ay - CNN.com - Mozilla Firefox",Left mouse button pressed,22,57,717.97,1141.61,0.63, 
+2010:03:05,15:53:18,655,"firefox.exe","11 additional airports to get...ay - CNN.com - Mozilla Firefox",Left mouse button released,22,57,0.00,0.00,0.00, 
+2010:03:05,15:53:24,921,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,229,624,603.60,1318.72,0.46, 
+2010:03:05,15:53:25,015,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,229,624,0.00,0.00,0.00, 
+2010:03:05,15:53:27,249,"firefox.exe","Shark attacks down for a seco...ar - CNN.com - Mozilla Firefox",Mouse wheel,229,624,0.00,0.00,0.00, 
+2010:03:05,15:54:00,671,"Explorer.EXE","3:53 PM",Mouse wheel stopped,511,751,0.00,0.00,1.00,8 Wheel actions
+2010:03:05,15:54:14,968,"firefox.exe","Shark attacks down for a seco...ar - CNN.com - Mozilla Firefox",Mouse wheel,495,796,47.76,268.89,0.18, 
+2010:03:05,15:55:00,672,"Explorer.EXE","3:54 PM",Mouse wheel stopped,674,719,0.00,0.00,1.00,13 Wheel actions
+2010:03:05,15:55:01,359,"firefox.exe","Shark attacks down for a seco...ar - CNN.com - Mozilla Firefox",Mouse wheel,674,719,0.00,0.00,0.00, 
+2010:03:05,15:55:22,641,"firefox.exe","Shark attacks down for a seco...ar - CNN.com - Mozilla Firefox",Mouse wheel stopped,754,787,0.00,0.00,1.00,7 Wheel actions
+2010:03:05,15:55:22,641,"firefox.exe","Shark attacks down for a seco...ar - CNN.com - Mozilla Firefox",Middle mouse button pressed,754,787,608.89,11153.74,0.05, 
+2010:03:05,15:55:22,812,"firefox.exe","Shark attacks down for a seco...ar - CNN.com - Mozilla Firefox",Mouse wheel,738,727,76.00,221.54,0.34, 
+2010:03:05,15:55:23,500,"firefox.exe","Shark attacks down for a seco...ar - CNN.com - Mozilla Firefox",Mouse wheel stopped,709,612,0.00,0.00,1.00,1 Wheel actions
+2010:03:05,15:55:23,500,"firefox.exe","Shark attacks down for a seco...ar - CNN.com - Mozilla Firefox",Middle mouse button released,709,612,180.69,183.40,0.99, 
+2010:03:05,15:55:26,156,"firefox.exe","Shark attacks down for a seco...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,30,66,968.60,1164.68,0.83, 
+2010:03:05,15:55:26,312,"firefox.exe","Shark attacks down for a seco...ar - CNN.com - Mozilla Firefox",Left mouse button released,30,66,0.00,0.00,0.00, 
+2010:03:05,15:55:36,469,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,869,814,1124.02,2214.11,0.51, 
+2010:03:05,15:55:36,625,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,869,814,0.00,0.00,0.00, 
+2010:03:05,15:56:04,344,"firefox.exe","Parents of slain teen Chelsea...e' - CNN.com - Mozilla Firefox",Mouse wheel,31,354,955.95,1617.05,0.59, 
+2010:03:05,15:56:31,110,"agent.exe","<Unknown window>",Mouse wheel stopped,31,354,0.00,0.00,1.00,13 Wheel actions
+2010:03:05,15:56:35,750,"firefox.exe","Parents of slain teen Chelsea...e' - CNN.com - Mozilla Firefox",Mouse wheel,31,354,0.00,0.00,0.00, 
+2010:03:05,15:56:39,875,"firefox.exe","Parents of slain teen Chelsea...e' - CNN.com - Mozilla Firefox",Mouse wheel stopped,21,61,0.00,0.00,1.00,9 Wheel actions
+2010:03:05,15:56:39,875,"firefox.exe","Parents of slain teen Chelsea...e' - CNN.com - Mozilla Firefox",Left mouse button pressed,21,61,293.21,377.08,0.78, 
+2010:03:05,15:56:40,016,"firefox.exe","Parents of slain teen Chelsea...e' - CNN.com - Mozilla Firefox",Left mouse button released,21,61,0.00,0.00,0.00, 
+2010:03:05,15:56:47,407,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,248,658,638.70,1928.93,0.33, 
+2010:03:05,15:56:47,547,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,248,658,0.00,0.00,0.00, 
+2010:03:05,15:56:54,344,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,150,754,137.19,1751.60,0.08, 
+2010:03:05,15:56:54,454,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,150,754,0.00,0.00,0.00, 
+2010:03:05,15:57:00,797,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Mouse wheel,349,788,201.88,283.04,0.71, 
+2010:03:05,15:57:24,438,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Mouse wheel stopped,586,809,0.00,0.00,1.00,22 Wheel actions
+2010:03:05,15:57:24,438,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,586,809,237.93,267.70,0.89, 
+2010:03:05,15:57:24,548,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,586,809,0.00,0.00,0.00, 
+2010:03:05,15:57:25,454,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Mouse wheel,396,814,190.07,198.71,0.96, 
+2010:03:05,15:57:26,423,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Mouse wheel stopped,1065,752,0.00,0.00,1.00,2 Wheel actions
+2010:03:05,15:57:26,423,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,1065,752,671.87,688.81,0.98, 
+2010:03:05,15:57:26,501,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,1065,752,0.00,0.00,0.00, 
+2010:03:05,15:57:50,238,"firefox.exe","Forget about job losses, wage...Mar. 4, 2010 - Mozilla Firefox",Mouse wheel,225,716,840.77,844.69,1.00, 
+2010:03:05,15:58:00,677,"Explorer.EXE","3:57 PM",Mouse wheel stopped,225,716,0.00,0.00,1.00,3 Wheel actions
+2010:03:05,15:58:08,709,"firefox.exe","Forget about job losses, wage...Mar. 4, 2010 - Mozilla Firefox",Mouse wheel,225,716,0.00,0.00,0.00, 
+2010:03:05,15:59:00,686,"Explorer.EXE","3:58 PM",Mouse wheel stopped,156,691,0.00,0.00,1.00,15 Wheel actions
+2010:03:05,15:59:03,733,"firefox.exe","Forget about job losses, wage...Mar. 4, 2010 - Mozilla Firefox",Mouse wheel,156,691,8.00,8.00,1.00, 
+2010:03:05,15:59:39,410,"firefox.exe","Forget about job losses, wage...Mar. 4, 2010 - Mozilla Firefox",Mouse wheel stopped,27,58,0.00,0.00,1.00,15 Wheel actions
+2010:03:05,15:59:39,410,"firefox.exe","Forget about job losses, wage...Mar. 4, 2010 - Mozilla Firefox",Left mouse button pressed,27,58,747.43,944.86,0.79, 
+2010:03:05,15:59:39,582,"firefox.exe","Forget about job losses, wage...Mar. 4, 2010 - Mozilla Firefox",Left mouse button released,27,58,0.00,0.00,0.00, 
+2010:03:05,15:59:43,161,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Mouse wheel,1111,520,1178.35,1832.25,0.64, 
+2010:03:05,15:59:45,020,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Mouse wheel stopped,584,790,0.00,0.00,1.00,5 Wheel actions
+2010:03:05,15:59:45,020,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,584,790,592.14,603.58,0.98, 
+2010:03:05,15:59:45,145,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,584,790,0.00,0.00,0.00, 
+2010:03:05,15:59:49,459,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,1095,862,516.05,641.53,0.80, 
+2010:03:05,15:59:49,615,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,1095,862,0.00,0.00,0.00, 
+2010:03:05,15:59:59,788,"firefox.exe","Has 'American Idol' jumped th...k? - CNN.com - Mozilla Firefox",Mouse wheel,704,877,391.29,391.69,1.00, 
+2010:03:05,16:00:00,695,"Explorer.EXE","3:59 PM",Mouse wheel stopped,704,877,0.00,0.00,1.00,3 Wheel actions
+2010:03:05,16:00:00,851,"firefox.exe","Has 'American Idol' jumped th...k? - CNN.com - Mozilla Firefox",Mouse wheel,704,877,0.00,0.00,0.00, 
+2010:03:05,16:01:00,703,"Explorer.EXE","4:00 PM",Mouse wheel stopped,555,848,0.00,0.00,1.00,8 Wheel actions
+2010:03:05,16:01:03,376,"firefox.exe","Has 'American Idol' jumped th...k? - CNN.com - Mozilla Firefox",Mouse wheel,555,854,7.00,7.00,1.00, 
+2010:03:05,16:01:06,423,"firefox.exe","Has 'American Idol' jumped th...k? - CNN.com - Mozilla Firefox",Mouse wheel stopped,9,60,0.00,0.00,1.00,3 Wheel actions
+2010:03:05,16:01:06,423,"firefox.exe","Has 'American Idol' jumped th...k? - CNN.com - Mozilla Firefox",Left mouse button pressed,9,60,963.61,1028.34,0.94, 
+2010:03:05,16:01:06,548,"firefox.exe","Has 'American Idol' jumped th...k? - CNN.com - Mozilla Firefox",Left mouse button released,9,60,0.00,0.00,0.00, 
+2010:03:05,16:01:07,673,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Mouse wheel,620,668,861.97,883.19,0.98, 
+2010:03:05,16:01:12,127,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Mouse wheel stopped,155,638,0.00,0.00,1.00,11 Wheel actions
+2010:03:05,16:01:12,127,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,155,638,465.97,551.37,0.85, 
+2010:03:05,16:01:12,221,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,155,638,0.00,0.00,0.00, 
+2010:03:05,16:01:16,034,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,654,466,527.81,547.55,0.96, 
+2010:03:05,16:01:16,175,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,654,466,0.00,0.00,0.00, 
+2010:03:05,16:01:17,972,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,1065,522,414.80,526.93,0.79, 
+2010:03:05,16:01:18,159,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,1065,522,0.00,0.00,0.00, 
+2010:03:05,16:01:45,710,"firefox.exe","French warship team destroys ...ts - CNN.com - Mozilla Firefox",Mouse wheel,729,565,338.74,342.68,0.99, 
+2010:03:05,16:02:00,712,"Explorer.EXE","4:01 PM",Mouse wheel stopped,689,580,0.00,0.00,1.00,3 Wheel actions
+2010:03:05,16:02:07,088,"firefox.exe","French warship team destroys ...ts - CNN.com - Mozilla Firefox",Mouse wheel,325,553,402.18,689.22,0.58, 
+2010:03:05,16:03:00,718,"Explorer.EXE","4:02 PM",Mouse wheel stopped,507,696,0.00,0.00,1.00,10 Wheel actions
+2010:03:05,16:03:04,531,"firefox.exe","French warship team destroys ...ts - CNN.com - Mozilla Firefox",Mouse wheel,507,696,0.00,0.00,0.00, 
+2010:03:05,16:04:00,722,"Explorer.EXE","4:03 PM",Mouse wheel stopped,514,727,0.00,0.00,1.00,1 Wheel actions
+2010:03:05,16:07:09,561,"Explorer.EXE","Notification Area",Right mouse button pressed,1137,1011,704.36,5574.16,0.13, 
+2010:03:05,16:07:09,702,"Explorer.EXE","Notification Area",Right mouse button released,1137,1011,0.00,0.00,0.00, 
+2010:03:05,16:07:10,592,"uLog.exe","<Unknown window>",Left mouse button pressed,1147,981,31.62,40.06,0.79, 
+2010:03:05,16:07:10,702,"uLog.exe","<Unknown window>",Left mouse button released,1147,981,0.00,0.00,0.00, 
+2010:03:05,16:07:10,702,"uLog.exe"," ",Logging stopped,-1,-1,-1.00,-1.00,-1.00, 

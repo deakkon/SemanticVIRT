@@ -1,0 +1,27 @@
+Cisco unveils ultra-fast Internet technologyBy David Goldman, staff writerMarch 10, 2010: 2:15 PM ETNEW YORK (CNNMoney.com) -- Cisco unveiled a new Internet technology Tuesday that it says will provide the ultra-fast data speeds necessary to stay ahead of users' rapidly growing online video demands. The new technology, known as &quot;CRS-3,&quot; is a network routing system that will be able to offer downloads of up to 322 Terabits per second, according to the company. Facebook
+Digg
+Twitter
+Buzz Up!
+Email
+Print
+Comment on this storyTranslation: Well in Cisco terms, the router will be able to provide download speeds of 1 Gigabit per second for everyone in San Francisco, download the entire printed collection of the Library of Congress in 1 second and stream every movie ever created in less than 4 minutes.Cisco Chief Executive John Chambers acknowledged that many skeptics will say that those speeds and network capacity are not necessary, but he argued that the fast-growing media usage on mobile phones will ultimately demand it.0:00
+		/3:09Cisco CEO: Technology equals jobs&quot;I know this is not that exciting to the average consumer right now, but it is the foundation for future speeds,&quot; Chambers said in a Web cast Tuesday. &quot;When it comes to mobile devices, I want to get any video, anytime and be able to share that on any device in your living room. The foundation of that is the CRS-3.&quot;Wireless providers have reported a sharp increase in data downloads as more consumers buy smartphones, and they are quickly scrambling to update their networks to increase capacity for growing data traffic. AT&amp;T (T, Fortune 500), which saw its network traffic grow 40% in 2009, said Tuesday that it has run a successful test of the CRS-3 under a partnership deal with Cisco.It's not just mobile that's growing. Streaming video services like YouTube are now offering high-definition video, and broadcast networks and cable companies continue to put more of their content on the Internet.0:00
+		/3:05Cisco's vision of the future&quot;Cisco has set a new bar for network performance,&quot; said Zeus Kerravala, research fellow at Yankee Group. &quot;Many may think we'll never need that much bandwidth, but the enterprise future of mobile TV, streaming media, YouTube, telepresence and 3-D HD TV surely demands it.&quot; Cisco said the CRS-3 will triple the speed of its predecessor, the CRS-1, and it will offer speeds of up to 12-times faster than the next fastest product on the market. The company invested $1.6 billion in the technology and will begin selling the routers at $90,000. The networking company said it expects the CRS-3 will be available in the fall.The announcement comes a week after Google (GOOG, Fortune 500) announced it would test a super-fast broadband network in a U.S. city, and it is a week before the FCC will reveal its plan to increase broadband speeds and access for Americans.Shares of Cisco (CSCO, Fortune 500), which were up 4% on Monday ahead of Tuesday's announcement, fell about 1% in midday trading. Shares fell sharply immediately following the announcement in a &quot;sell on the news&quot; move, but managed to recover some lost ground.&nbsp;
+
+
+	  
+	  	
+			
+		
+		Print
+		Email
+	  
+
+
+AT&amp;T, Verizon and Sprint 4G: Not so fast   Google testing super-fast broadband network
+
+
+
+
+
+First Published: March 9, 2010: 12:48 PM ET

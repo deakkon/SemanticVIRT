@@ -1,0 +1,201 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:03:03,17:31:07,370,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:03:03,17:31:09,339,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,913,312,964.84,3133.47,0.31, 
+2010:03:03,17:31:09,433,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,913,312,0.00,0.00,0.00, 
+2010:03:03,17:31:44,558,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,543,703,538.31,2218.17,0.24, 
+2010:03:03,17:31:44,683,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,543,703,0.00,0.00,0.00, 
+2010:03:03,17:31:54,027,"firefox.exe","Whatever happened to bin Lade...NN.com Blogs - Mozilla Firefox",Mouse wheel,725,513,263.10,760.34,0.35, 
+2010:03:03,17:32:00,480,"explorer.exe","5:31 PM",Mouse wheel stopped,725,513,0.00,0.00,1.00,7 Wheel actions
+2010:03:03,17:32:37,215,"firefox.exe","Whatever happened to bin Lade...NN.com Blogs - Mozilla Firefox",Mouse wheel,776,400,123.98,4075.81,0.03, 
+2010:03:03,17:32:57,090,"agent.exe","<Unknown window>",Mouse wheel stopped,699,341,0.00,0.00,1.00,5 Wheel actions
+2010:03:03,17:33:03,074,"firefox.exe","Whatever happened to bin Lade...NN.com Blogs - Mozilla Firefox",Mouse wheel,699,341,97.01,165.20,0.59, 
+2010:03:03,17:34:00,481,"explorer.exe","5:33 PM",Mouse wheel stopped,686,326,0.00,0.00,1.00,10 Wheel actions
+2010:03:03,17:34:23,106,"firefox.exe","Whatever happened to bin Lade...NN.com Blogs - Mozilla Firefox",Mouse wheel,686,326,0.00,0.00,0.00, 
+2010:03:03,17:35:00,481,"explorer.exe","5:34 PM",Mouse wheel stopped,771,255,0.00,0.00,1.00,4 Wheel actions
+2010:03:03,17:35:00,747,"firefox.exe","Whatever happened to bin Lade...NN.com Blogs - Mozilla Firefox",Mouse wheel,771,255,110.75,172.12,0.64, 
+2010:03:03,17:36:00,482,"explorer.exe","5:35 PM",Mouse wheel stopped,772,205,0.00,0.00,1.00,3 Wheel actions
+2010:03:03,17:36:16,326,"firefox.exe","Whatever happened to bin Lade...NN.com Blogs - Mozilla Firefox",Mouse wheel,772,205,50.01,69.19,0.72, 
+2010:03:03,17:36:43,966,"firefox.exe","Whatever happened to bin Lade...NN.com Blogs - Mozilla Firefox",Mouse wheel stopped,191,81,0.00,0.00,1.00,2 Wheel actions
+2010:03:03,17:36:43,966,"firefox.exe","Whatever happened to bin Lade...NN.com Blogs - Mozilla Firefox",Left mouse button pressed,191,81,594.09,680.19,0.87, 
+2010:03:03,17:36:44,154,"firefox.exe","Whatever happened to bin Lade...NN.com Blogs - Mozilla Firefox",Left mouse button released,191,81,0.00,0.00,0.00, 
+2010:03:03,17:36:46,279,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,604,371,504.65,536.30,0.94, 
+2010:03:03,17:36:52,998,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,400,280,0.00,0.00,1.00,3 Wheel actions
+2010:03:03,17:36:52,998,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,400,280,223.38,228.47,0.98, 
+2010:03:03,17:36:53,154,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,400,280,0.00,0.00,0.00, 
+2010:03:03,17:37:22,779,"firefox.exe","Giant waves hit cruise ship; ...ed - CNN.com - Mozilla Firefox",Mouse wheel,837,477,479.35,825.79,0.58, 
+2010:03:03,17:38:00,482,"explorer.exe","5:37 PM",Mouse wheel stopped,742,467,0.00,0.00,1.00,7 Wheel actions
+2010:03:03,17:38:06,279,"firefox.exe","Giant waves hit cruise ship; ...ed - CNN.com - Mozilla Firefox",Mouse wheel,736,472,10.30,13.41,0.77, 
+2010:03:03,17:38:18,342,"firefox.exe","Giant waves hit cruise ship; ...ed - CNN.com - Mozilla Firefox",Mouse wheel stopped,203,82,0.00,0.00,1.00,2 Wheel actions
+2010:03:03,17:38:18,342,"firefox.exe","Giant waves hit cruise ship; ...ed - CNN.com - Mozilla Firefox",Left mouse button pressed,203,82,660.45,1009.68,0.65, 
+2010:03:03,17:38:18,592,"firefox.exe","Giant waves hit cruise ship; ...ed - CNN.com - Mozilla Firefox",Left mouse button released,203,82,0.00,0.00,0.00, 
+2010:03:03,17:38:25,748,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,706,414,602.69,677.88,0.89, 
+2010:03:03,17:38:33,998,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,639,663,0.00,0.00,1.00,2 Wheel actions
+2010:03:03,17:38:33,998,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,639,663,258.57,710.51,0.36, 
+2010:03:03,17:38:34,076,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,639,663,0.00,0.00,0.00, 
+2010:03:03,17:38:47,889,"firefox.exe","Virus outbreaks on ships mirr...re - CNN.com - Mozilla Firefox",Mouse wheel,528,509,189.83,202.11,0.94, 
+2010:03:03,17:38:57,014,"firefox.exe","Virus outbreaks on ships mirr...re - CNN.com - Mozilla Firefox",Mouse wheel stopped,185,80,0.00,0.00,1.00,9 Wheel actions
+2010:03:03,17:38:57,014,"firefox.exe","Virus outbreaks on ships mirr...re - CNN.com - Mozilla Firefox",Left mouse button pressed,185,80,547.23,638.02,0.86, 
+2010:03:03,17:38:57,155,"firefox.exe","Virus outbreaks on ships mirr...re - CNN.com - Mozilla Firefox",Left mouse button released,185,80,0.00,0.00,0.00, 
+2010:03:03,17:39:02,623,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,566,668,700.65,1332.42,0.53, 
+2010:03:03,17:39:02,717,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,566,668,0.00,0.00,0.00, 
+2010:03:03,17:39:11,905,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Mouse wheel,820,449,335.38,398.96,0.84, 
+2010:03:03,17:39:26,967,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Mouse wheel stopped,277,801,0.00,0.00,1.00,2 Wheel actions
+2010:03:03,17:39:26,967,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button pressed,277,801,647.11,862.59,0.75, 
+2010:03:03,17:39:27,092,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button released,277,801,0.00,0.00,0.00, 
+2010:03:03,17:39:27,999,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button pressed,277,801,0.00,0.00,0.00, 
+2010:03:03,17:39:28,124,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button released,277,801,0.00,0.00,0.00, 
+2010:03:03,17:39:50,421,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button pressed,318,800,41.01,1349.81,0.03, 
+2010:03:03,17:39:50,530,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button released,318,800,0.00,0.00,0.00, 
+2010:03:03,17:39:55,499,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button pressed,360,800,42.00,42.00,1.00, 
+2010:03:03,17:39:55,624,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button released,360,800,0.00,0.00,0.00, 
+2010:03:03,17:40:02,218,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button pressed,400,798,40.05,80.83,0.50, 
+2010:03:03,17:40:02,311,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button released,400,798,0.00,0.00,0.00, 
+2010:03:03,17:40:13,405,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button pressed,440,797,40.01,40.41,0.99, 
+2010:03:03,17:40:13,530,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button released,440,797,0.00,0.00,0.00, 
+2010:03:03,17:40:37,312,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button pressed,487,797,47.00,510.27,0.09, 
+2010:03:03,17:40:37,421,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button released,487,797,0.00,0.00,0.00, 
+2010:03:03,17:40:44,155,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button pressed,524,797,37.00,288.12,0.13, 
+2010:03:03,17:40:44,233,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button released,524,797,0.00,0.00,0.00, 
+2010:03:03,17:41:00,030,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Mouse wheel,493,462,336.43,980.43,0.34, 
+2010:03:03,17:41:00,484,"explorer.exe","5:40 PM",Mouse wheel stopped,482,434,0.00,0.00,1.00,6 Wheel actions
+2010:03:03,17:41:01,718,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Mouse wheel,483,434,3.16,6.00,0.53, 
+2010:03:03,17:42:00,484,"explorer.exe","5:41 PM",Mouse wheel stopped,476,443,0.00,0.00,1.00,13 Wheel actions
+2010:03:03,17:42:04,625,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Mouse wheel,476,443,1.00,1.00,1.00, 
+2010:03:03,17:43:00,484,"explorer.exe","5:42 PM",Mouse wheel stopped,332,385,0.00,0.00,1.00,7 Wheel actions
+2010:03:03,17:43:27,313,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Mouse wheel,334,407,92.31,150.38,0.61, 
+2010:03:03,17:44:00,485,"explorer.exe","5:43 PM",Mouse wheel stopped,344,270,0.00,0.00,1.00,6 Wheel actions
+2010:03:03,17:44:12,672,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Mouse wheel,344,232,175.29,917.04,0.19, 
+2010:03:03,17:44:22,719,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Mouse wheel stopped,805,350,0.00,0.00,1.00,4 Wheel actions
+2010:03:03,17:44:22,719,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button pressed,805,350,477.39,482.85,0.99, 
+2010:03:03,17:44:23,016,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button released,805,350,0.00,0.00,0.00, 
+2010:03:03,17:44:27,547,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Mouse wheel,805,350,0.00,0.00,0.00, 
+2010:03:03,17:45:00,485,"explorer.exe","5:44 PM",Mouse wheel stopped,958,176,0.00,0.00,1.00,3 Wheel actions
+2010:03:03,17:45:18,266,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Mouse wheel,910,257,46.57,459.80,0.10, 
+2010:03:03,17:46:00,485,"explorer.exe","5:45 PM",Mouse wheel stopped,781,394,0.00,0.00,1.00,8 Wheel actions
+2010:03:03,17:46:47,814,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Mouse wheel,781,393,46.04,99.88,0.46, 
+2010:03:03,17:46:56,158,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Mouse wheel stopped,203,74,0.00,0.00,1.00,2 Wheel actions
+2010:03:03,17:46:56,158,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button pressed,203,74,660.19,804.91,0.82, 
+2010:03:03,17:46:56,236,"firefox.exe","Hummer, symbol of machismo, m...rd - CNN.com - Mozilla Firefox",Left mouse button released,203,74,0.00,0.00,0.00, 
+2010:03:03,17:47:00,455,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,689,655,757.47,1179.89,0.64, 
+2010:03:03,17:47:00,486,"explorer.exe","5:46 PM",Mouse wheel stopped,689,655,0.00,0.00,1.00,2 Wheel actions
+2010:03:03,17:47:00,501,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,689,655,0.00,0.00,0.00, 
+2010:03:03,17:47:01,377,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,960,254,0.00,0.00,1.00,5 Wheel actions
+2010:03:03,17:47:01,377,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,960,254,484.81,491.97,0.99, 
+2010:03:03,17:47:01,455,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,960,254,0.00,0.00,0.00, 
+2010:03:03,17:47:03,642,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Key pressed,1271,251,-1.00,-1.00,1.00,j
+2010:03:03,17:47:04,658,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Key pressed,1271,251,-1.00,-1.00,1.00,e
+2010:03:03,17:47:04,814,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Key pressed,1271,251,-1.00,-1.00,1.00,e
+2010:03:03,17:47:04,923,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Key pressed,1271,251,-1.00,-1.00,1.00,p
+2010:03:03,17:47:05,298,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Key pressed,1271,251,-1.00,-1.00,1.00,Return
+2010:03:03,17:47:12,455,"firefox.exe","jeep - Search results for jeep - CNN.com - Mozilla Firefox",Mouse wheel,497,658,614.48,1586.25,0.39, 
+2010:03:03,17:47:18,205,"firefox.exe","jeep - Search results for jeep - CNN.com - Mozilla Firefox",Mouse wheel stopped,383,755,0.00,0.00,1.00,5 Wheel actions
+2010:03:03,17:47:18,205,"firefox.exe","jeep - Search results for jeep - CNN.com - Mozilla Firefox",Left mouse button pressed,383,755,149.68,154.07,0.97, 
+2010:03:03,17:47:18,298,"firefox.exe","jeep - Search results for jeep - CNN.com - Mozilla Firefox",Left mouse button released,383,755,0.00,0.00,0.00, 
+2010:03:03,17:47:35,033,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button pressed,284,891,168.22,1488.10,0.11, 
+2010:03:03,17:47:35,205,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button released,284,891,0.00,0.00,0.00, 
+2010:03:03,17:47:39,814,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button pressed,318,900,35.17,633.57,0.06, 
+2010:03:03,17:47:39,939,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button released,318,900,0.00,0.00,0.00, 
+2010:03:03,17:47:44,830,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button pressed,356,899,38.01,435.59,0.09, 
+2010:03:03,17:47:44,986,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button released,356,899,0.00,0.00,0.00, 
+2010:03:03,17:47:54,049,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button pressed,412,898,56.01,817.03,0.07, 
+2010:03:03,17:47:54,174,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button released,412,898,0.00,0.00,0.00, 
+2010:03:03,17:48:02,580,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Mouse wheel,809,727,432.26,537.88,0.80, 
+2010:03:03,17:48:04,377,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Mouse wheel stopped,440,555,0.00,0.00,1.00,6 Wheel actions
+2010:03:03,17:48:04,377,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button pressed,440,555,407.12,429.23,0.95, 
+2010:03:03,17:48:04,486,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button released,440,555,0.00,0.00,0.00, 
+2010:03:03,17:48:06,049,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button pressed,444,564,9.85,59.29,0.17, 
+2010:03:03,17:48:06,111,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button released,444,564,0.00,0.00,0.00, 
+2010:03:03,17:48:26,736,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Mouse wheel,618,625,184.38,266.53,0.69, 
+2010:03:03,17:48:29,174,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Mouse wheel stopped,479,499,0.00,0.00,1.00,1 Wheel actions
+2010:03:03,17:48:29,174,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button pressed,479,499,187.61,234.13,0.80, 
+2010:03:03,17:48:29,283,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button released,479,499,0.00,0.00,0.00, 
+2010:03:03,17:48:29,830,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button pressed,483,505,7.21,10.00,0.72, 
+2010:03:03,17:48:29,955,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button released,482,505,1.00,1.00,1.00, 
+2010:03:03,17:48:50,049,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button pressed,236,510,246.05,480.59,0.51, 
+2010:03:03,17:48:50,205,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button released,236,510,0.00,0.00,0.00, 
+2010:03:03,17:48:57,674,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button pressed,291,510,55.00,55.00,1.00, 
+2010:03:03,17:48:57,846,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button released,291,510,0.00,0.00,0.00, 
+2010:03:03,17:48:59,830,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button pressed,309,498,21.63,24.02,0.90, 
+2010:03:03,17:48:59,955,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button released,309,498,0.00,0.00,0.00, 
+2010:03:03,17:49:09,018,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button pressed,350,496,41.05,43.00,0.95, 
+2010:03:03,17:49:09,143,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button released,350,496,0.00,0.00,0.00, 
+2010:03:03,17:49:15,174,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button pressed,350,496,0.00,0.00,0.00, 
+2010:03:03,17:49:15,315,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button released,350,496,0.00,0.00,0.00, 
+2010:03:03,17:49:17,581,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button pressed,390,500,40.20,163.94,0.25, 
+2010:03:03,17:49:17,659,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button released,390,500,0.00,0.00,0.00, 
+2010:03:03,17:49:30,049,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button pressed,445,502,55.04,160.29,0.34, 
+2010:03:03,17:49:30,143,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button released,445,502,0.00,0.00,0.00, 
+2010:03:03,17:49:35,487,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Mouse wheel,445,502,0.00,0.00,0.00, 
+2010:03:03,17:50:00,487,"explorer.exe","5:49 PM",Mouse wheel stopped,444,500,0.00,0.00,1.00,15 Wheel actions
+2010:03:03,17:50:31,597,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Mouse wheel,486,599,105.70,535.37,0.20, 
+2010:03:03,17:51:00,487,"explorer.exe","5:50 PM",Mouse wheel stopped,490,599,0.00,0.00,1.00,9 Wheel actions
+2010:03:03,17:51:28,378,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button pressed,351,380,259.39,419.45,0.62, 
+2010:03:03,17:51:28,550,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button released,351,380,0.00,0.00,0.00, 
+2010:03:03,17:53:13,066,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Mouse wheel,825,583,515.64,4868.13,0.11, 
+2010:03:03,17:53:16,316,"agent.exe","<Unknown window>",Mouse wheel stopped,736,552,0.00,0.00,1.00,10 Wheel actions
+2010:03:03,17:53:33,707,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Mouse wheel,736,552,189.55,246.20,0.77, 
+2010:03:03,17:53:49,098,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Mouse wheel stopped,957,226,0.00,0.00,1.00,10 Wheel actions
+2010:03:03,17:53:49,098,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button pressed,957,226,393.85,412.62,0.95, 
+2010:03:03,17:53:49,223,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Left mouse button released,957,226,0.00,0.00,0.00, 
+2010:03:03,17:53:50,520,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Key pressed,957,226,-1.00,-1.00,1.00,w
+2010:03:03,17:53:50,598,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Key pressed,957,226,-1.00,-1.00,1.00,a
+2010:03:03,17:53:50,832,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Key pressed,957,226,-1.00,-1.00,1.00,t
+2010:03:03,17:53:50,926,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Key pressed,957,226,-1.00,-1.00,1.00,e
+2010:03:03,17:53:51,129,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Key pressed,957,226,-1.00,-1.00,1.00,r
+2010:03:03,17:53:52,223,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Key pressed,957,226,-1.00,-1.00,1.00,c
+2010:03:03,17:53:52,285,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Key pressed,957,226,-1.00,-1.00,1.00,a
+2010:03:03,17:53:52,629,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Key pressed,957,226,-1.00,-1.00,1.00,r
+2010:03:03,17:53:52,989,"firefox.exe","A car that turns into a speedboat - CNN.com - Mozilla Firefox",Key pressed,957,226,-1.00,-1.00,1.00,Return
+2010:03:03,17:54:13,333,"firefox.exe","watercar - Search results for...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,868,372,170.99,1662.69,0.10, 
+2010:03:03,17:54:13,411,"firefox.exe","watercar - Search results for...ar - CNN.com - Mozilla Firefox",Left mouse button released,868,372,0.00,0.00,0.00, 
+2010:03:03,17:54:19,506,"firefox.exe","WaterCar - Builder of the Wor...hibious Cars - Mozilla Firefox",Left mouse button pressed,913,946,575.76,789.41,0.73, 
+2010:03:03,17:54:20,615,"firefox.exe","WaterCar - Builder of the Wor...hibious Cars - Mozilla Firefox",Left mouse button released,1033,930,121.06,123.27,0.98, 
+2010:03:03,17:54:21,225,"firefox.exe","WaterCar - Builder of the Wor...hibious Cars - Mozilla Firefox",Left mouse button pressed,943,881,102.47,108.06,0.95, 
+2010:03:03,17:54:21,350,"firefox.exe","WaterCar - Builder of the Wor...hibious Cars - Mozilla Firefox",Left mouse button released,943,881,0.00,0.00,0.00, 
+2010:03:03,17:54:22,850,"firefox.exe","WaterCar MultiMedia - Mozilla Firefox",Mouse wheel,851,842,99.92,103.10,0.97, 
+2010:03:03,17:54:27,897,"firefox.exe","WaterCar MultiMedia - Mozilla Firefox",Mouse wheel stopped,879,392,0.00,0.00,1.00,16 Wheel actions
+2010:03:03,17:54:27,897,"firefox.exe","WaterCar MultiMedia - Mozilla Firefox",Left mouse button pressed,879,392,450.87,462.58,0.97, 
+2010:03:03,17:54:27,991,"firefox.exe","WaterCar MultiMedia - Mozilla Firefox",Left mouse button released,879,392,0.00,0.00,0.00, 
+2010:03:03,17:54:29,976,"firefox.exe","WaterCar Compilation Vide - Mozilla Firefox",Mouse wheel,754,559,208.60,221.25,0.94, 
+2010:03:03,17:54:30,788,"firefox.exe","WaterCar Compilation Vide - Mozilla Firefox",Mouse wheel stopped,741,633,0.00,0.00,1.00,1 Wheel actions
+2010:03:03,17:54:30,788,"firefox.exe","WaterCar Compilation Vide - Mozilla Firefox",Left mouse button pressed,741,633,75.13,77.45,0.97, 
+2010:03:03,17:54:30,882,"firefox.exe","WaterCar Compilation Vide - Mozilla Firefox",Left mouse button released,741,633,0.00,0.00,0.00, 
+2010:03:03,17:54:38,571,"firefox.exe","WaterCar Compilation Vide - Mozilla Firefox",Left mouse button pressed,584,809,235.85,1597.03,0.15, 
+2010:03:03,17:54:38,680,"firefox.exe","WaterCar Compilation Vide - Mozilla Firefox",Left mouse button released,584,809,0.00,0.00,0.00, 
+2010:03:03,17:54:39,508,"firefox.exe","WaterCar Compilation Vide - Mozilla Firefox",Left mouse button pressed,591,809,7.00,7.00,1.00, 
+2010:03:03,17:54:39,602,"firefox.exe","WaterCar Compilation Vide - Mozilla Firefox",Left mouse button released,591,809,0.00,0.00,0.00, 
+2010:03:03,17:54:40,649,"firefox.exe","WaterCar Compilation Vide - Mozilla Firefox",Left mouse button pressed,599,809,8.00,8.00,1.00, 
+2010:03:03,17:54:40,743,"firefox.exe","WaterCar Compilation Vide - Mozilla Firefox",Left mouse button released,599,809,0.00,0.00,0.00, 
+2010:03:03,17:55:36,391,"firefox.exe","WaterCar Compilation Vide - Mozilla Firefox",Left mouse button pressed,659,135,676.67,1082.97,0.62, 
+2010:03:03,17:55:36,516,"firefox.exe","WaterCar Compilation Vide - Mozilla Firefox",Left mouse button released,659,135,0.00,0.00,0.00, 
+2010:03:03,17:55:37,454,"firefox.exe","watercar - Search results for...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,618,454,321.62,436.63,0.74, 
+2010:03:03,17:55:37,532,"firefox.exe","watercar - Search results for...ar - CNN.com - Mozilla Firefox",Left mouse button released,618,454,0.00,0.00,0.00, 
+2010:03:03,17:55:37,954,"firefox.exe","watercar - Search results for...ar - CNN.com - Mozilla Firefox",Mouse wheel,609,454,9.00,9.00,1.00, 
+2010:03:03,17:55:40,126,"firefox.exe","watercar - Search results for...ar - CNN.com - Mozilla Firefox",Mouse wheel stopped,185,169,0.00,0.00,1.00,7 Wheel actions
+2010:03:03,17:55:40,126,"firefox.exe","watercar - Search results for...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,185,169,510.88,994.89,0.51, 
+2010:03:03,17:55:40,188,"firefox.exe","watercar - Search results for...ar - CNN.com - Mozilla Firefox",Left mouse button released,185,169,0.00,0.00,0.00, 
+2010:03:03,17:55:43,220,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,551,424,446.07,634.92,0.70, 
+2010:03:03,17:55:53,706,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,911,843,0.00,0.00,1.00,5 Wheel actions
+2010:03:03,17:55:53,706,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,911,843,552.41,613.17,0.90, 
+2010:03:03,17:55:53,800,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,911,843,0.00,0.00,0.00, 
+2010:03:03,17:56:11,880,"firefox.exe","What's your love label? - CNN.com - Mozilla Firefox",Mouse wheel,730,607,297.42,637.04,0.47, 
+2010:03:03,17:56:27,726,"firefox.exe","What's your love label? - CNN.com - Mozilla Firefox",Mouse wheel stopped,741,175,0.00,0.00,1.00,2 Wheel actions
+2010:03:03,17:56:27,726,"firefox.exe","What's your love label? - CNN.com - Mozilla Firefox",Left mouse button pressed,741,175,432.14,843.57,0.51, 
+2010:03:03,17:56:27,788,"firefox.exe","What's your love label? - CNN.com - Mozilla Firefox",Left mouse button released,741,175,0.00,0.00,0.00, 
+2010:03:03,17:56:48,994,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Mouse wheel,624,639,478.52,1280.28,0.37, 
+2010:03:03,17:57:00,512,"explorer.exe","5:56 PM",Mouse wheel stopped,628,648,0.00,0.00,1.00,2 Wheel actions
+2010:03:03,17:57:06,481,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Left mouse button pressed,675,717,59.48,320.04,0.19, 
+2010:03:03,17:57:06,622,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Left mouse button released,675,717,0.00,0.00,0.00, 
+2010:03:03,17:57:10,888,"firefox.exe","Skype on TV: Will the videoph...y? - CNN.com - Mozilla Firefox",Mouse wheel,783,540,207.35,329.75,0.63, 
+2010:03:03,17:58:00,520,"explorer.exe","5:57 PM",Mouse wheel stopped,783,540,0.00,0.00,1.00,4 Wheel actions
+2010:03:03,17:58:19,366,"firefox.exe","Skype on TV: Will the videoph...y? - CNN.com - Mozilla Firefox",Mouse wheel,783,540,0.00,0.00,0.00, 
+2010:03:03,17:59:00,528,"explorer.exe","5:58 PM",Mouse wheel stopped,815,543,0.00,0.00,1.00,13 Wheel actions
+2010:03:03,18:00:37,940,"firefox.exe","Skype on TV: Will the videoph...y? - CNN.com - Mozilla Firefox",Mouse wheel,707,560,109.33,117.12,0.93, 
+2010:03:03,18:01:00,535,"explorer.exe","6:00 PM",Mouse wheel stopped,723,569,0.00,0.00,1.00,4 Wheel actions
+2010:03:03,18:01:01,019,"firefox.exe","Skype on TV: Will the videoph...y? - CNN.com - Mozilla Firefox",Mouse wheel,724,569,27.02,31.38,0.86, 
+2010:03:03,18:02:00,538,"explorer.exe","6:01 PM",Mouse wheel stopped,870,763,0.00,0.00,1.00,38 Wheel actions
+2010:03:03,18:02:09,460,"explorer.exe","Notification Area",Right mouse button pressed,1153,1011,376.29,457.08,0.82, 
+2010:03:03,18:02:09,616,"explorer.exe","Notification Area",Right mouse button released,1153,1011,0.00,0.00,0.00, 
+2010:03:03,18:02:10,132,"uLog.exe","<Unknown window>",Left mouse button pressed,1171,980,35.85,42.47,0.84, 
+2010:03:03,18:02:10,194,"uLog.exe","<Unknown window>",Left mouse button released,1171,980,0.00,0.00,0.00, 
+2010:03:03,18:02:10,194,"uLog.exe"," ",Logging stopped,-1,-1,-1.00,-1.00,-1.00, 

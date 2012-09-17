@@ -1,0 +1,139 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:03:25,13:51:19,793,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:03:25,13:51:22,543,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,753,50,754.66,3256.24,0.23, 
+2010:03:25,13:51:22,621,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,753,50,0.00,0.00,0.00, 
+2010:03:25,13:51:22,699,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,753,50,0.00,0.00,0.00, 
+2010:03:25,13:51:22,761,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,753,50,0.00,0.00,0.00, 
+2010:03:25,13:51:51,574,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,193,657,825.86,1876.43,0.44, 
+2010:03:25,13:51:51,714,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,193,657,0.00,0.00,0.00, 
+2010:03:25,13:51:59,168,"firefox.exe","Obama returns to Iowa to sell...re - CNN.com - Mozilla Firefox",Mouse wheel,80,673,114.13,116.90,0.98, 
+2010:03:25,13:52:00,199,"Explorer.EXE","1:51 PM",Mouse wheel stopped,80,673,0.00,0.00,1.00,1 Wheel actions
+2010:03:25,13:52:24,308,"firefox.exe","Obama returns to Iowa to sell...re - CNN.com - Mozilla Firefox",Mouse wheel,73,673,7.00,11.65,0.60, 
+2010:03:25,13:53:00,199,"Explorer.EXE","1:52 PM",Mouse wheel stopped,97,672,0.00,0.00,1.00,1 Wheel actions
+2010:03:25,13:53:26,011,"firefox.exe","Obama returns to Iowa to sell...re - CNN.com - Mozilla Firefox",Mouse wheel,102,663,30.68,110.57,0.28, 
+2010:03:25,13:54:00,199,"Explorer.EXE","1:53 PM",Mouse wheel stopped,102,661,0.00,0.00,1.00,1 Wheel actions
+2010:03:25,13:54:08,324,"firefox.exe","Obama returns to Iowa to sell...re - CNN.com - Mozilla Firefox",Mouse wheel,102,661,2.00,2.00,1.00, 
+2010:03:25,13:55:00,199,"Explorer.EXE","1:54 PM",Mouse wheel stopped,69,739,0.00,0.00,1.00,4 Wheel actions
+2010:03:25,13:55:27,636,"firefox.exe","Obama returns to Iowa to sell...re - CNN.com - Mozilla Firefox",Mouse wheel,58,740,11.00,13.00,0.85, 
+2010:03:25,13:55:31,152,"firefox.exe","Obama returns to Iowa to sell...re - CNN.com - Mozilla Firefox",Mouse wheel stopped,60,737,0.00,0.00,1.00,12 Wheel actions
+2010:03:25,13:55:31,152,"firefox.exe","Obama returns to Iowa to sell...re - CNN.com - Mozilla Firefox",Middle mouse button pressed,60,737,739.44,3610.64,0.20, 
+2010:03:25,13:55:31,386,"firefox.exe","Obama returns to Iowa to sell...re - CNN.com - Mozilla Firefox",Middle mouse button released,60,737,0.00,0.00,0.00, 
+2010:03:25,13:55:32,777,"firefox.exe","Obama returns to Iowa to sell...re - CNN.com - Mozilla Firefox",Middle mouse button pressed,65,616,121.10,192.22,0.63, 
+2010:03:25,13:55:32,933,"firefox.exe","Obama returns to Iowa to sell...re - CNN.com - Mozilla Firefox",Middle mouse button released,65,616,0.00,0.00,0.00, 
+2010:03:25,13:55:33,996,"firefox.exe","Obama returns to Iowa to sell...re - CNN.com - Mozilla Firefox",Left mouse button pressed,26,65,684.70,800.40,0.86, 
+2010:03:25,13:55:34,121,"firefox.exe","Obama returns to Iowa to sell...re - CNN.com - Mozilla Firefox",Left mouse button released,26,65,0.00,0.00,0.00, 
+2010:03:25,13:55:52,261,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,206,751,709.22,951.48,0.75, 
+2010:03:25,13:55:52,371,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,206,751,0.00,0.00,0.00, 
+2010:03:25,13:56:10,246,"firefox.exe","Vatican says it was unaware o...se - CNN.com - Mozilla Firefox",Left mouse button pressed,101,687,122.97,247.51,0.50, 
+2010:03:25,13:56:10,386,"firefox.exe","Vatican says it was unaware o...se - CNN.com - Mozilla Firefox",Left mouse button released,101,687,0.00,0.00,0.00, 
+2010:03:25,13:56:10,824,"firefox.exe","Vatican says it was unaware o...se - CNN.com - Mozilla Firefox",Mouse wheel,101,687,0.00,0.00,0.00, 
+2010:03:25,13:57:00,199,"Explorer.EXE","1:56 PM",Mouse wheel stopped,99,687,0.00,0.00,1.00,6 Wheel actions
+2010:03:25,13:57:41,746,"firefox.exe","Vatican says it was unaware o...se - CNN.com - Mozilla Firefox",Mouse wheel,103,687,4.00,10.00,0.40, 
+2010:03:25,13:58:00,199,"Explorer.EXE","1:57 PM",Mouse wheel stopped,100,687,0.00,0.00,1.00,4 Wheel actions
+2010:03:25,13:58:20,714,"firefox.exe","Vatican says it was unaware o...se - CNN.com - Mozilla Firefox",Mouse wheel,100,690,4.24,6.00,0.71, 
+2010:03:25,13:59:00,199,"Explorer.EXE","1:58 PM",Mouse wheel stopped,100,690,0.00,0.00,1.00,5 Wheel actions
+2010:03:25,13:59:10,543,"firefox.exe","Vatican says it was unaware o...se - CNN.com - Mozilla Firefox",Mouse wheel,100,690,0.00,0.00,0.00, 
+2010:03:25,14:00:00,199,"Explorer.EXE","1:59 PM",Mouse wheel stopped,83,710,0.00,0.00,1.00,10 Wheel actions
+2010:03:25,14:00:45,480,"firefox.exe","Vatican says it was unaware o...se - CNN.com - Mozilla Firefox",Mouse wheel,83,710,0.00,0.00,0.00, 
+2010:03:25,14:00:47,714,"firefox.exe","Vatican says it was unaware o...se - CNN.com - Mozilla Firefox",Mouse wheel stopped,83,710,0.00,0.00,1.00,8 Wheel actions
+2010:03:25,14:00:47,714,"firefox.exe","Vatican says it was unaware o...se - CNN.com - Mozilla Firefox",Middle mouse button pressed,83,710,95.71,1832.71,0.05, 
+2010:03:25,14:00:47,871,"firefox.exe","Vatican says it was unaware o...se - CNN.com - Mozilla Firefox",Middle mouse button released,83,710,0.00,0.00,0.00, 
+2010:03:25,14:00:47,871,"firefox.exe","<Unknown window>",Mouse wheel,83,710,0.00,0.00,0.00, 
+2010:03:25,14:00:49,589,"firefox.exe","Vatican says it was unaware o...se - CNN.com - Mozilla Firefox",Mouse wheel stopped,62,541,0.00,0.00,1.00,1 Wheel actions
+2010:03:25,14:00:49,589,"firefox.exe","Vatican says it was unaware o...se - CNN.com - Mozilla Firefox",Middle mouse button pressed,62,541,170.30,175.56,0.97, 
+2010:03:25,14:00:49,746,"firefox.exe","Vatican says it was unaware o...se - CNN.com - Mozilla Firefox",Middle mouse button released,62,541,0.00,0.00,0.00, 
+2010:03:25,14:00:51,527,"firefox.exe","Vatican says it was unaware o...se - CNN.com - Mozilla Firefox",Left mouse button pressed,17,63,650.36,675.46,0.96, 
+2010:03:25,14:00:51,668,"firefox.exe","Vatican says it was unaware o...se - CNN.com - Mozilla Firefox",Left mouse button released,17,63,0.00,0.00,0.00, 
+2010:03:25,14:00:58,308,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,35,533,470.34,538.48,0.87, 
+2010:03:25,14:01:00,199,"Explorer.EXE","2:00 PM",Mouse wheel stopped,176,663,0.00,0.00,1.00,2 Wheel actions
+2010:03:25,14:01:01,918,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,213,672,225.84,258.60,0.87, 
+2010:03:25,14:01:02,027,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,213,672,0.00,0.00,0.00, 
+2010:03:25,14:01:05,855,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel,81,649,133.99,141.19,0.95, 
+2010:03:25,14:02:00,199,"Explorer.EXE","2:01 PM",Mouse wheel stopped,81,649,0.00,0.00,1.00,3 Wheel actions
+2010:03:25,14:02:01,574,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel,81,649,0.00,0.00,0.00, 
+2010:03:25,14:03:00,199,"Explorer.EXE","2:02 PM",Mouse wheel stopped,80,656,0.00,0.00,1.00,7 Wheel actions
+2010:03:25,14:03:27,089,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel,80,656,0.00,0.00,0.00, 
+2010:03:25,14:04:00,199,"Explorer.EXE","2:03 PM",Mouse wheel stopped,73,673,0.00,0.00,1.00,5 Wheel actions
+2010:03:25,14:04:00,511,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel,73,673,0.00,0.00,0.00, 
+2010:03:25,14:05:00,199,"Explorer.EXE","2:04 PM",Mouse wheel stopped,62,673,0.00,0.00,1.00,6 Wheel actions
+2010:03:25,14:05:05,714,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel,62,673,0.00,0.00,0.00, 
+2010:03:25,14:05:14,761,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel stopped,59,673,0.00,0.00,1.00,8 Wheel actions
+2010:03:25,14:05:14,761,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Middle mouse button pressed,59,673,132.03,1473.72,0.09, 
+2010:03:25,14:05:14,964,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Middle mouse button released,59,673,0.00,0.00,0.00, 
+2010:03:25,14:05:26,808,"firefox.exe","<Unknown window>",Middle mouse button pressed,53,673,6.00,51.41,0.12, 
+2010:03:25,14:05:27,027,"firefox.exe","<Unknown window>",Middle mouse button released,53,673,0.00,0.00,0.00, 
+2010:03:25,14:05:29,152,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Left mouse button pressed,585,847,554.03,625.66,0.89, 
+2010:03:25,14:05:29,355,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Left mouse button released,585,847,0.00,0.00,0.00, 
+2010:03:25,14:06:31,214,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel,122,882,464.32,1012.22,0.46, 
+2010:03:25,14:07:00,199,"Explorer.EXE","2:06 PM",Mouse wheel stopped,122,882,0.00,0.00,1.00,4 Wheel actions
+2010:03:25,14:07:01,855,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel,122,882,0.00,0.00,0.00, 
+2010:03:25,14:07:09,793,"agent.exe","<Unknown window>",Mouse wheel stopped,122,883,0.00,0.00,1.00,2 Wheel actions
+2010:03:25,14:07:11,902,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel,123,882,1.00,3.00,0.33, 
+2010:03:25,14:07:18,230,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel stopped,586,911,0.00,0.00,1.00,2 Wheel actions
+2010:03:25,14:07:18,230,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Left mouse button pressed,586,911,463.91,466.70,0.99, 
+2010:03:25,14:07:18,371,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Left mouse button released,586,911,0.00,0.00,0.00, 
+2010:03:25,14:07:48,433,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel,101,915,485.02,502.49,0.97, 
+2010:03:25,14:07:56,871,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel stopped,605,913,0.00,0.00,1.00,3 Wheel actions
+2010:03:25,14:07:56,871,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Left mouse button pressed,605,913,504.00,546.70,0.92, 
+2010:03:25,14:07:57,058,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Left mouse button released,605,913,0.00,0.00,0.00, 
+2010:03:25,14:08:13,902,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel,93,883,512.88,524.45,0.98, 
+2010:03:25,14:08:49,824,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel stopped,93,883,0.00,0.00,1.00,3 Wheel actions
+2010:03:25,14:08:49,824,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Middle mouse button pressed,93,883,213.78,3629.81,0.06, 
+2010:03:25,14:08:50,105,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Middle mouse button released,93,883,0.00,0.00,0.00, 
+2010:03:25,14:09:07,027,"firefox.exe","<Unknown window>",Middle mouse button pressed,81,881,12.17,82.24,0.15, 
+2010:03:25,14:09:07,199,"firefox.exe","<Unknown window>",Middle mouse button released,81,881,0.00,0.00,0.00, 
+2010:03:25,14:09:08,652,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Left mouse button pressed,550,892,457.09,556.65,0.82, 
+2010:03:25,14:09:08,777,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Left mouse button released,550,892,0.00,0.00,0.00, 
+2010:03:25,14:09:40,652,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel,84,881,466.13,579.24,0.80, 
+2010:03:25,14:09:49,293,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel stopped,84,881,0.00,0.00,1.00,4 Wheel actions
+2010:03:25,14:09:49,293,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Middle mouse button pressed,84,881,3.00,1053.65,0.00, 
+2010:03:25,14:09:49,511,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Middle mouse button released,84,881,0.00,0.00,0.00, 
+2010:03:25,14:10:08,605,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Middle mouse button pressed,65,874,20.25,209.30,0.10, 
+2010:03:25,14:10:08,871,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Middle mouse button released,65,874,0.00,0.00,0.00, 
+2010:03:25,14:10:18,714,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel,64,902,29.00,237.53,0.12, 
+2010:03:25,14:10:25,902,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel stopped,46,770,0.00,0.00,1.00,1 Wheel actions
+2010:03:25,14:10:25,902,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Middle mouse button pressed,46,770,105.72,164.46,0.64, 
+2010:03:25,14:10:26,089,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Middle mouse button released,46,770,0.00,0.00,0.00, 
+2010:03:25,14:10:29,527,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Middle mouse button pressed,38,786,17.89,80.19,0.22, 
+2010:03:25,14:10:29,777,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Middle mouse button released,38,786,0.00,0.00,0.00, 
+2010:03:25,14:10:40,761,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel,41,788,116.30,221.42,0.53, 
+2010:03:25,14:11:00,199,"Explorer.EXE","2:10 PM",Mouse wheel stopped,34,788,0.00,0.00,1.00,5 Wheel actions
+2010:03:25,14:11:01,355,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel,0,784,34.23,52.83,0.65, 
+2010:03:25,14:11:03,558,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Mouse wheel stopped,41,798,0.00,0.00,1.00,1 Wheel actions
+2010:03:25,14:11:03,558,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Middle mouse button pressed,41,798,12.37,100.73,0.12, 
+2010:03:25,14:11:03,730,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Middle mouse button released,41,798,0.00,0.00,0.00, 
+2010:03:25,14:11:15,777,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Middle mouse button pressed,13,780,33.29,798.65,0.04, 
+2010:03:25,14:11:16,027,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Middle mouse button released,13,780,0.00,0.00,0.00, 
+2010:03:25,14:11:26,277,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Left mouse button pressed,14,55,729.13,1663.00,0.44, 
+2010:03:25,14:11:26,418,"firefox.exe","Russian bombers 'intercepted ...e' - CNN.com - Mozilla Firefox",Left mouse button released,14,55,0.00,0.00,0.00, 
+2010:03:25,14:11:29,855,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,240,685,669.31,906.94,0.74, 
+2010:03:25,14:11:29,949,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,240,685,0.00,0.00,0.00, 
+2010:03:25,14:11:45,246,"firefox.exe","U.S. bases in Afghanistan say...NN.com Blogs - Mozilla Firefox",Mouse wheel,301,826,153.63,284.13,0.54, 
+2010:03:25,14:12:00,199,"Explorer.EXE","2:11 PM",Mouse wheel stopped,284,824,0.00,0.00,1.00,2 Wheel actions
+2010:03:25,14:12:05,777,"firefox.exe","U.S. bases in Afghanistan say...NN.com Blogs - Mozilla Firefox",Mouse wheel,246,820,42.30,177.68,0.24, 
+2010:03:25,14:13:00,199,"Explorer.EXE","2:12 PM",Mouse wheel stopped,245,820,0.00,0.00,1.00,6 Wheel actions
+2010:03:25,14:13:01,433,"firefox.exe","U.S. bases in Afghanistan say...NN.com Blogs - Mozilla Firefox",Mouse wheel,245,820,0.00,0.00,0.00, 
+2010:03:25,14:14:00,199,"Explorer.EXE","2:13 PM",Mouse wheel stopped,71,798,0.00,0.00,1.00,10 Wheel actions
+2010:03:25,14:14:14,043,"firefox.exe","U.S. bases in Afghanistan say...NN.com Blogs - Mozilla Firefox",Mouse wheel,71,798,0.00,0.00,0.00, 
+2010:03:25,14:15:00,199,"Explorer.EXE","2:14 PM",Mouse wheel stopped,119,791,0.00,0.00,1.00,5 Wheel actions
+2010:03:25,14:15:20,183,"firefox.exe","U.S. bases in Afghanistan say...NN.com Blogs - Mozilla Firefox",Mouse wheel,114,791,43.57,77.40,0.56, 
+2010:03:25,14:16:00,199,"Explorer.EXE","2:15 PM",Mouse wheel stopped,107,792,0.00,0.00,1.00,5 Wheel actions
+2010:03:25,14:16:13,371,"firefox.exe","U.S. bases in Afghanistan say...NN.com Blogs - Mozilla Firefox",Mouse wheel,108,796,4.12,5.00,0.82, 
+2010:03:25,14:17:00,199,"Explorer.EXE","2:16 PM",Mouse wheel stopped,108,796,0.00,0.00,1.00,6 Wheel actions
+2010:03:25,14:17:30,293,"firefox.exe","U.S. bases in Afghanistan say...NN.com Blogs - Mozilla Firefox",Mouse wheel,110,779,17.12,43.06,0.40, 
+2010:03:25,14:18:00,199,"Explorer.EXE","2:17 PM",Mouse wheel stopped,78,790,0.00,0.00,1.00,8 Wheel actions
+2010:03:25,14:18:21,793,"firefox.exe","U.S. bases in Afghanistan say...NN.com Blogs - Mozilla Firefox",Mouse wheel,77,791,1.41,21.41,0.07, 
+2010:03:25,14:19:00,199,"Explorer.EXE","2:18 PM",Mouse wheel stopped,77,791,0.00,0.00,1.00,3 Wheel actions
+2010:03:25,14:19:07,355,"firefox.exe","U.S. bases in Afghanistan say...NN.com Blogs - Mozilla Firefox",Mouse wheel,77,791,0.00,0.00,0.00, 
+2010:03:25,14:20:00,199,"Explorer.EXE","2:19 PM",Mouse wheel stopped,77,791,0.00,0.00,1.00,12 Wheel actions
+2010:03:25,14:20:11,746,"firefox.exe","U.S. bases in Afghanistan say...NN.com Blogs - Mozilla Firefox",Mouse wheel,77,791,0.00,0.00,0.00, 
+2010:03:25,14:21:00,199,"Explorer.EXE","2:20 PM",Mouse wheel stopped,77,791,0.00,0.00,1.00,5 Wheel actions
+2010:03:25,14:21:05,168,"firefox.exe","U.S. bases in Afghanistan say...NN.com Blogs - Mozilla Firefox",Mouse wheel,78,791,1.00,1.00,1.00, 
+2010:03:25,14:22:00,199,"Explorer.EXE","2:21 PM",Mouse wheel stopped,78,791,0.00,0.00,1.00,8 Wheel actions
+2010:03:25,14:22:09,652,"firefox.exe","U.S. bases in Afghanistan say...NN.com Blogs - Mozilla Firefox",Mouse wheel,78,791,0.00,0.00,0.00, 
+2010:03:25,14:23:00,199,"Explorer.EXE","2:22 PM",Mouse wheel stopped,78,791,0.00,0.00,1.00,5 Wheel actions
+2010:03:25,14:24:02,152,"Explorer.EXE","Notification Area",Right mouse button pressed,1132,1009,1076.31,1623.99,0.66, 
+2010:03:25,14:24:02,293,"Explorer.EXE","Notification Area",Right mouse button released,1132,1009,0.00,0.00,0.00, 
+2010:03:25,14:24:02,636,"uLog.exe","<Unknown window>",Left mouse button pressed,1150,978,35.85,38.37,0.93, 
+2010:03:25,14:24:02,746,"uLog.exe","<Unknown window>",Left mouse button released,1150,978,0.00,0.00,0.00, 
+2010:03:25,14:24:02,746,"uLog.exe"," ",Logging stopped,-1,-1,-1.00,-1.00,-1.00, 

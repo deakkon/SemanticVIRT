@@ -1,0 +1,141 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:03:23,17:52:52,977,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:03:23,17:53:18,509,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,376,601,843.90,2680.33,0.31, 
+2010:03:23,17:53:19,446,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,384,635,0.00,0.00,1.00,2 Wheel actions
+2010:03:23,17:53:19,446,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,384,635,34.93,46.17,0.76, 
+2010:03:23,17:53:19,556,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,384,635,0.00,0.00,0.00, 
+2010:03:23,17:53:19,899,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,384,635,0.00,0.00,0.00, 
+2010:03:23,17:53:39,025,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,337,706,0.00,0.00,1.00,1 Wheel actions
+2010:03:23,17:53:39,025,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,337,706,85.15,116.15,0.73, 
+2010:03:23,17:53:39,165,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,337,706,0.00,0.00,0.00, 
+2010:03:23,17:54:14,947,"firefox.exe","Judge rules against lesbian h...se - CNN.com - Mozilla Firefox",Mouse wheel,744,776,412.98,495.53,0.83, 
+2010:03:23,17:54:21,369,"agent.exe","<Unknown window>",Mouse wheel stopped,744,776,0.00,0.00,1.00,1 Wheel actions
+2010:03:23,17:54:22,322,"firefox.exe","Judge rules against lesbian h...se - CNN.com - Mozilla Firefox",Mouse wheel,744,776,0.00,0.00,0.00, 
+2010:03:23,17:54:44,463,"firefox.exe","Judge rules against lesbian h...se - CNN.com - Mozilla Firefox",Mouse wheel stopped,31,53,0.00,0.00,1.00,8 Wheel actions
+2010:03:23,17:54:44,463,"firefox.exe","Judge rules against lesbian h...se - CNN.com - Mozilla Firefox",Left mouse button pressed,31,53,730.85,798.44,0.92, 
+2010:03:23,17:54:44,526,"firefox.exe","Judge rules against lesbian h...se - CNN.com - Mozilla Firefox",Left mouse button released,31,53,0.00,0.00,0.00, 
+2010:03:23,17:54:46,822,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,65,477,425.36,464.33,0.92, 
+2010:03:23,17:54:57,166,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,220,766,0.00,0.00,1.00,8 Wheel actions
+2010:03:23,17:54:57,166,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,220,766,328.42,335.18,0.98, 
+2010:03:23,17:54:57,260,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,220,766,0.00,0.00,0.00, 
+2010:03:23,17:54:57,510,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,221,773,7.07,8.00,0.88, 
+2010:03:23,17:54:57,604,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,221,773,0.00,0.00,0.00, 
+2010:03:23,17:55:04,588,"firefox.exe","Health care reform and you: N... CNN iReport - Mozilla Firefox",Left mouse button pressed,904,651,693.81,1001.26,0.69, 
+2010:03:23,17:55:04,713,"firefox.exe","Health care reform and you: N... CNN iReport - Mozilla Firefox",Left mouse button released,904,651,0.00,0.00,0.00, 
+2010:03:23,17:55:52,245,"firefox.exe","Health care reform and you: N... CNN iReport - Mozilla Firefox",Mouse wheel,139,626,765.41,1081.32,0.71, 
+2010:03:23,17:56:00,105,"Explorer.EXE","5:55 PM",Mouse wheel stopped,139,626,0.00,0.00,1.00,8 Wheel actions
+2010:03:23,17:56:01,339,"firefox.exe","Health care reform and you: N... CNN iReport - Mozilla Firefox",Mouse wheel,139,626,0.00,0.00,0.00, 
+2010:03:23,17:56:11,308,"firefox.exe","Health care reform and you: N... CNN iReport - Mozilla Firefox",Mouse wheel stopped,15,47,0.00,0.00,1.00,20 Wheel actions
+2010:03:23,17:56:11,308,"firefox.exe","Health care reform and you: N... CNN iReport - Mozilla Firefox",Left mouse button pressed,15,47,578.95,625.09,0.93, 
+2010:03:23,17:56:11,386,"firefox.exe","Health care reform and you: N... CNN iReport - Mozilla Firefox",Left mouse button released,15,47,0.00,0.00,0.00, 
+2010:03:23,17:56:34,496,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,244,823,809.08,1229.51,0.66, 
+2010:03:23,17:56:34,621,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,244,823,0.00,0.00,0.00, 
+2010:03:23,17:57:17,887,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,467,555,348.64,480.39,0.73, 
+2010:03:23,17:58:00,106,"Explorer.EXE","5:57 PM",Mouse wheel stopped,507,676,0.00,0.00,1.00,5 Wheel actions
+2010:03:23,17:58:24,903,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,513,713,37.48,246.13,0.15, 
+2010:03:23,17:59:00,107,"Explorer.EXE","5:58 PM",Mouse wheel stopped,518,771,0.00,0.00,1.00,4 Wheel actions
+2010:03:23,17:59:26,264,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,518,771,44.15,46.85,0.94, 
+2010:03:23,18:00:00,108,"Explorer.EXE","5:59 PM",Mouse wheel stopped,503,773,0.00,0.00,1.00,3 Wheel actions
+2010:03:23,18:00:03,420,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,503,773,0.00,0.00,0.00, 
+2010:03:23,18:01:00,109,"Explorer.EXE","6:00 PM",Mouse wheel stopped,338,858,0.00,0.00,1.00,4 Wheel actions
+2010:03:23,18:01:02,046,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,308,858,212.44,465.33,0.46, 
+2010:03:23,18:02:00,109,"Explorer.EXE","6:01 PM",Mouse wheel stopped,86,822,0.00,0.00,1.00,15 Wheel actions
+2010:03:23,18:02:02,203,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,86,822,0.00,0.00,0.00, 
+2010:03:23,18:02:27,110,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel stopped,609,932,0.00,0.00,1.00,2 Wheel actions
+2010:03:23,18:02:27,110,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button pressed,609,932,534.44,574.77,0.93, 
+2010:03:23,18:02:27,235,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button released,609,932,0.00,0.00,0.00, 
+2010:03:23,18:02:32,407,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,74,862,539.56,552.32,0.98, 
+2010:03:23,18:02:48,751,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel stopped,657,905,0.00,0.00,1.00,3 Wheel actions
+2010:03:23,18:02:48,751,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button pressed,657,905,584.58,622.00,0.94, 
+2010:03:23,18:02:48,907,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button released,657,905,0.00,0.00,0.00, 
+2010:03:23,18:02:59,657,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,524,897,133.24,175.49,0.76, 
+2010:03:23,18:03:00,110,"Explorer.EXE","6:02 PM",Mouse wheel stopped,524,897,0.00,0.00,1.00,1 Wheel actions
+2010:03:23,18:03:00,657,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,46,865,479.07,495.76,0.97, 
+2010:03:23,18:04:00,111,"Explorer.EXE","6:03 PM",Mouse wheel stopped,441,880,0.00,0.00,1.00,12 Wheel actions
+2010:03:23,18:04:01,330,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button pressed,639,914,593.71,646.59,0.92, 
+2010:03:23,18:04:01,455,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button released,639,914,0.00,0.00,0.00, 
+2010:03:23,18:04:05,361,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,577,940,67.23,72.93,0.92, 
+2010:03:23,18:04:27,174,"agent.exe","<Unknown window>",Mouse wheel stopped,577,940,0.00,0.00,1.00,3 Wheel actions
+2010:03:23,18:04:37,049,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button pressed,594,935,17.72,27.24,0.65, 
+2010:03:23,18:04:37,174,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button released,594,935,0.00,0.00,0.00, 
+2010:03:23,18:04:43,611,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,637,943,43.74,45.93,0.95, 
+2010:03:23,18:04:57,205,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel stopped,603,903,0.00,0.00,1.00,3 Wheel actions
+2010:03:23,18:04:57,205,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button pressed,603,903,52.50,60.76,0.86, 
+2010:03:23,18:04:57,315,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button released,603,903,0.00,0.00,0.00, 
+2010:03:23,18:05:03,408,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,500,928,105.99,148.88,0.71, 
+2010:03:23,18:05:16,877,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel stopped,604,922,0.00,0.00,1.00,2 Wheel actions
+2010:03:23,18:05:16,877,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button pressed,604,922,104.17,105.52,0.99, 
+2010:03:23,18:05:17,018,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button released,604,922,0.00,0.00,0.00, 
+2010:03:23,18:05:25,284,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,597,938,17.46,18.37,0.95, 
+2010:03:23,18:05:40,206,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel stopped,331,938,0.00,0.00,1.00,3 Wheel actions
+2010:03:23,18:05:40,206,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button pressed,331,938,266.00,266.26,1.00, 
+2010:03:23,18:05:40,331,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button released,331,938,0.00,0.00,0.00, 
+2010:03:23,18:05:46,159,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,776,882,448.51,460.44,0.97, 
+2010:03:23,18:06:00,112,"Explorer.EXE","6:05 PM",Mouse wheel stopped,776,882,0.00,0.00,1.00,6 Wheel actions
+2010:03:23,18:06:12,941,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,640,892,136.37,139.18,0.98, 
+2010:03:23,18:07:00,113,"Explorer.EXE","6:06 PM",Mouse wheel stopped,88,920,0.00,0.00,1.00,12 Wheel actions
+2010:03:23,18:07:02,191,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button pressed,321,903,233.62,263.01,0.89, 
+2010:03:23,18:07:02,332,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button released,321,903,0.00,0.00,0.00, 
+2010:03:23,18:07:29,098,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,136,812,206.17,394.57,0.52, 
+2010:03:23,18:07:49,176,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel stopped,625,878,0.00,0.00,1.00,3 Wheel actions
+2010:03:23,18:07:49,176,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button pressed,625,878,493.43,514.23,0.96, 
+2010:03:23,18:07:49,286,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button released,624,878,1.00,1.00,1.00, 
+2010:03:23,18:07:57,864,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,475,919,154.54,172.24,0.90, 
+2010:03:23,18:08:00,114,"Explorer.EXE","6:07 PM",Mouse wheel stopped,475,919,0.00,0.00,1.00,1 Wheel actions
+2010:03:23,18:08:19,536,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,462,919,13.00,13.00,1.00, 
+2010:03:23,18:09:00,115,"Explorer.EXE","6:08 PM",Mouse wheel stopped,110,782,0.00,0.00,1.00,6 Wheel actions
+2010:03:23,18:10:09,334,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,111,782,376.79,409.47,0.92, 
+2010:03:23,18:10:18,725,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel stopped,565,851,0.00,0.00,1.00,2 Wheel actions
+2010:03:23,18:10:18,725,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button pressed,565,851,459.21,516.70,0.89, 
+2010:03:23,18:10:18,850,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button released,565,851,0.00,0.00,0.00, 
+2010:03:23,18:10:29,100,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,472,875,96.05,111.73,0.86, 
+2010:03:23,18:10:54,960,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel stopped,331,791,0.00,0.00,1.00,6 Wheel actions
+2010:03:23,18:10:54,960,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button pressed,331,791,164.12,183.47,0.89, 
+2010:03:23,18:10:55,132,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button released,331,791,0.00,0.00,0.00, 
+2010:03:23,18:11:00,038,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,661,819,331.19,354.13,0.94, 
+2010:03:23,18:11:00,116,"Explorer.EXE","6:10 PM",Mouse wheel stopped,661,819,0.00,0.00,1.00,1 Wheel actions
+2010:03:23,18:11:00,397,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel,661,819,0.00,0.00,0.00, 
+2010:03:23,18:11:11,132,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Mouse wheel stopped,891,789,0.00,0.00,1.00,5 Wheel actions
+2010:03:23,18:11:11,132,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Middle mouse button pressed,891,789,1190.13,18160.45,0.07, 
+2010:03:23,18:11:11,241,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Middle mouse button released,889,789,2.00,2.00,1.00, 
+2010:03:23,18:11:14,101,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Middle mouse button pressed,764,446,365.07,476.29,0.77, 
+2010:03:23,18:11:14,194,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Middle mouse button released,764,446,0.00,0.00,0.00, 
+2010:03:23,18:11:15,491,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button pressed,22,62,975.77,1733.64,0.56, 
+2010:03:23,18:11:15,570,"firefox.exe","GOP starts effort to block ch...aw - CNN.com - Mozilla Firefox",Left mouse button released,22,62,0.00,0.00,0.00, 
+2010:03:23,18:11:18,038,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,62,510,449.78,508.53,0.88, 
+2010:03:23,18:11:27,695,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,252,846,0.00,0.00,1.00,3 Wheel actions
+2010:03:23,18:11:27,695,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,252,846,385.51,415.18,0.93, 
+2010:03:23,18:11:27,820,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,252,846,0.00,0.00,0.00, 
+2010:03:23,18:11:29,992,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Mouse wheel,90,674,236.28,262.09,0.90, 
+2010:03:23,18:12:00,117,"Explorer.EXE","6:11 PM",Mouse wheel stopped,89,676,0.00,0.00,1.00,4 Wheel actions
+2010:03:23,18:12:03,726,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Mouse wheel,89,676,0.00,0.00,0.00, 
+2010:03:23,18:13:00,118,"Explorer.EXE","6:12 PM",Mouse wheel stopped,83,680,0.00,0.00,1.00,15 Wheel actions
+2010:03:23,18:13:39,118,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Mouse wheel,388,725,308.30,432.34,0.71, 
+2010:03:23,18:14:00,118,"Explorer.EXE","6:13 PM",Mouse wheel stopped,272,905,0.00,0.00,1.00,7 Wheel actions
+2010:03:23,18:14:42,838,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Mouse wheel,280,830,75.43,78.90,0.96, 
+2010:03:23,18:15:00,119,"Explorer.EXE","6:14 PM",Mouse wheel stopped,280,830,0.00,0.00,1.00,6 Wheel actions
+2010:03:23,18:15:28,682,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Mouse wheel,204,771,96.21,151.75,0.63, 
+2010:03:23,18:16:00,120,"Explorer.EXE","6:15 PM",Mouse wheel stopped,308,749,0.00,0.00,1.00,3 Wheel actions
+2010:03:23,18:16:06,058,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Mouse wheel,308,749,0.00,0.00,0.00, 
+2010:03:23,18:17:00,121,"Explorer.EXE","6:16 PM",Mouse wheel stopped,308,749,0.00,0.00,1.00,7 Wheel actions
+2010:03:23,18:17:16,496,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Mouse wheel,320,729,23.32,34.31,0.68, 
+2010:03:23,18:18:00,122,"Explorer.EXE","6:17 PM",Mouse wheel stopped,254,781,0.00,0.00,1.00,7 Wheel actions
+2010:03:23,18:19:13,341,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Mouse wheel,254,716,65.00,70.89,0.92, 
+2010:03:23,18:20:00,123,"Explorer.EXE","6:19 PM",Mouse wheel stopped,254,716,0.00,0.00,1.00,5 Wheel actions
+2010:03:23,18:20:25,264,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Mouse wheel,252,716,2.00,2.00,1.00, 
+2010:03:23,18:21:00,030,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Mouse wheel stopped,606,931,0.00,0.00,1.00,13 Wheel actions
+2010:03:23,18:21:00,030,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Left mouse button pressed,606,931,558.14,594.06,0.94, 
+2010:03:23,18:21:00,139,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Left mouse button released,606,931,0.00,0.00,0.00, 
+2010:03:23,18:21:05,311,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Mouse wheel,103,863,507.58,526.16,0.96, 
+2010:03:23,18:21:39,562,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Mouse wheel stopped,603,924,0.00,0.00,1.00,8 Wheel actions
+2010:03:23,18:21:39,562,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Left mouse button pressed,603,924,528.61,668.88,0.79, 
+2010:03:23,18:21:39,609,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Left mouse button released,603,924,0.00,0.00,0.00, 
+2010:03:23,18:21:41,374,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Mouse wheel,379,889,226.72,229.53,0.99, 
+2010:03:23,18:22:00,125,"Explorer.EXE","6:21 PM",Mouse wheel stopped,793,847,0.00,0.00,1.00,2 Wheel actions
+2010:03:23,18:22:06,172,"firefox.exe","Obama signs health care bill;...es - CNN.com - Mozilla Firefox",Mouse wheel,748,867,49.24,60.96,0.81, 
+2010:03:23,18:22:31,953,"Explorer.EXE","Notification Area",Mouse wheel stopped,1119,1008,0.00,0.00,1.00,3 Wheel actions
+2010:03:23,18:22:31,953,"Explorer.EXE","Notification Area",Right mouse button pressed,1119,1008,396.89,674.13,0.59, 
+2010:03:23,18:22:32,125,"Explorer.EXE","Notification Area",Right mouse button released,1119,1008,0.00,0.00,0.00, 
+2010:03:23,18:22:32,734,"uLog.exe","<Unknown window>",Left mouse button pressed,1129,982,27.86,31.54,0.88, 
+2010:03:23,18:22:32,891,"uLog.exe","<Unknown window>",Left mouse button released,1129,982,0.00,0.00,0.00, 
+2010:03:23,18:22:32,891,"uLog.exe"," ",Logging stopped,-1,-1,-1.00,-1.00,-1.00, 

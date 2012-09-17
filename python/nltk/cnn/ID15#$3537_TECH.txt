@@ -1,0 +1,187 @@
+                         Many buildings in Chile withstood a stronger earthquake than one in Haiti, which toppled concrete structures. STORY HIGHLIGHTSEngineers say technology exists to stop buildings from collapsing during quakesThe technology isn't spread evenly across the globe, however&quot;Base isolation&quot; technology puts buildings on floating padsOther simple building techniques reduce the chance of building collapse (CNN) -- It's a sobering fact: Earthquakes alone don't kill people; collapsed buildings do. But can people engineer buildings that wouldn't crumble when subjected to the rumblings of the Earth? In the wake of the Haiti and Chile earthquakes, such a question has more importance now than any time in recent memory.  The simple answer is yes. The technology exists to make buildings nearly earthquake-proof today. However, installing those safer buildings all over the world isn't so simple. Neither is figuring out who will pay. In a handful of interviews, engineers who work on earthquake-resistant buildings said current technologies prevent well-designed buildings from cracking when the ground shakes beneath them. As the earthquakes in Haiti and Chile show so graphically, the real issue may be that adoption of these building technologies -- many of which require only simple changes to building materials or composition -- is far from equitable. &quot;Most disasters are created by human beings. It's how we build and where we build that creates the hazard, the disaster,&quot; said Michael Armstrong, senior vice president of the International Code Council, a nonprofit group that develops building codes for countries to adopt. &quot;Earthquakes, hurricanes, fires, floods are going to occur, but there are ways in terms of where we build and how we build that can reduce the impact.&quot; In Chile, an 8.8-magnitude earthquake on Saturday has so far killed more than 700 people. On January 12, a less powerful earthquake, one measuring 7.0, killed more than 200,000 in Haiti. The difference in those death tolls comes from building construction and technology, scientists and engineers have said. In Haiti, buildings were constructed quickly and cheaply. Chile, a richer and more industrialized nation, adheres to more stringent building codes. How it works  
+
+
+
+	
+	
+	
+		
+			
+				
+				
+			
+		
+			
+				
+				
+			
+		
+	
+	
+			
+			
+		
+			
+				
+					
+					 
+					
+
+
+	
+	
+
+
+				
+			
+		
+		
+				
+					
+					                                 Video: Infrastructure spares Chile
+
+				
+
+		
+			
+				
+						
+
+						
+				
+			
+		
+
+
+
+			
+	
+			
+			
+		
+			
+				
+			
+		
+		
+				
+					
+					  
+RELATED TOPICS
+
+
+Haiti Earthquake
+
+Chile
+
+
+				
+
+		
+			
+				
+			
+		
+
+
+
+			
+	
+
+
+
+Technology designed to keep buildings from collapsing works essentially in two ways: By making buildings stronger, or by making them more flexible, so they sway and slide above the shaking ground rather than crumbling. The latter technology employs an idea called &quot;base isolation.&quot; For about 30 years, engineers have constructed skyscrapers that float on systems of ball bearings, springs and padded cylinders. They don't sit directly on the ground, so they're protected from some earthquake shocks. In the event of a major earthquake, they sway up to a few feet. The buildings are surrounded by &quot;moats,&quot; or buffer zones, so they don't swing into other structures. &quot;You actually take the foundation of building and you put it either on almost like springs or on a mechanism so it is allowed to move a little bit with the earthquake,&quot; said Armstrong of the building code council. Well-designed buildings with base-isolation systems ensure that no lives will be lost, no matter the strength of an earthquake, said Michael Constantinou, a professor of civil engineering at the University at Buffalo, State University of New York. More difficult than perfecting the technology, he said, is figuring out how large of an earthquake will hit a certain area. &quot;The issue is estimating correctly the seismic demand,&quot; he said. &quot;I don't think there is a problem with the technology.&quot; Mehmet Celebi, a senior research civil engineer at the U.S. Geological Survey, said there have been striking examples where buildings made with base isolation survived earthquakes while others did not. He said a University of Southern California hospital in Los Angeles, for example, survived a 1994 earthquake &quot;absolutely unharmed.&quot;  A neighboring hospital building that did not use the isolation technology suffered considerable damage, he said.  New developments Still, some engineers are developing technologies to improve on this idea of semi-floating buildings. Bill Spencer, a civil engineering professor at the University of Illinois, said electronic sensors that detect seismic shaking can tell the building how to react to avoid damage. &quot;It's in the spirit of the anti-lock braking systems in cars,&quot; he said. &quot;They measure the dynamic behavior of the car and adjust the braking force to get it to do what you want it to do.&quot; Celebi said buildings with those censors have been built in Japan but not in the United States. Some use accelerometers, which are also found in newer smart phones, to detect motion. &quot;If they exceed a certain level, then the damper system goes into action and reduces the amount of shaking&quot; in the building, he said. Old ideas Others are trying to make earthquake-safe buildings less expensive. New buildings with earthquake-resistant technology cost about 5 to 10 percent more than those built without the precautions, engineers said. The cost of retrofitting old buildings to modern earthquake standards is much more expensive but has been tried in certain cases, such as when the city of San Francisco retrofitted its city hall with base-isolation technology.  That project, which included other improvements, cost a total of $293 million, according to the San Francisco Chronicle. High costs keep countries such as Haiti from adopting the latest building techniques and technologies, said Nicholas Sitar, professor of civil and environmental engineering at the University of California at Berkeley. He said making buildings more basic might actually make them stronger and would cost less than high-tech upgrades. &quot;Sometimes it's very simple,&quot; he said. &quot;Simple square buildings that are relatively stout will do very well [in earthquakes]. The problem is that most architects and people don't like to live in square structures with square windows.&quot; Awareness Engineers pointed to other simple solutions, such as reinforcing concrete buildings with steel rods and bolting wooden buildings to their foundations, as ways to prevent mass casualties in earthquakes. But such measures still aren't taken in many parts of the world, Armstrong said. &quot;There's a way to reduce the risk,&quot; he said. &quot;The countries that have not adopted the codes tend to be poorer countries and perhaps the degree of sophistication or commitment to code enforcement is also an issue in these countries.&quot; It would be a start for more developing countries to adopt building codes that include measures about earthquake resistance, he said, but that wouldn't fix everything.  Armstrong said people all over the world, and with all job types, from city planners to construction workers, need to be aware of technologies and building methods that prevent buildings from collapsing in earthquakes. &quot;You can write a really good code, but you'd better have the capacity to enforce it,&quot; he said. &quot;You've got to have people on the ground who are trained and certified in codes and are willing to enforce the codes.&quot; 
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+	
+		
+		
+			
+				
+					
+						
+						Share this on:
+					
+										
+						Mixx
+						Facebook
+						Twitter
+						Digg
+						delicious
+						reddit
+						MySpace
+						StumbleUpon
+						LinkedIn
+					
+				
+			
+		
+		
+	
+			
+
+
+
+	
+
+
+	
+
+
+
+
+
+FOLLOW THIS TOPIC
+
+	
+			
+  More Tech
+	
+	
+		
+Report: Google TV devices delayed as Google tweaks software
+
+
+New iPhone app translates foreign-language signs
+
+
+5 Web titans that withered under Yahoo
+
+
+	
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+

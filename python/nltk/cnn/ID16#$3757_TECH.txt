@@ -1,0 +1,106 @@
+                           Authorities say the virus would have allowed the hackers to mount a large cyberattack from infected computers. STORY HIGHLIGHTS Authorities arrest trio suspected of infecting 13 million computers  The virus allegedly infected computers in more than 190 countries  It installs a program that lets hackers steal personal, financial information  The three suspects were arrested last week 
+RELATED TOPICS
+
+
+Computer Crime
+
+Spain
+
+Federal Bureau of Investigation
+
+ Madrid, Spain (CNN) -- Authorities have arrested three Spaniards suspected of infecting 13 million computers with a program that allowed them to steal personal and financial data worldwide, Spain's Civil Guard said Wednesday. The Civil Guards worked with the FBI and computer security firms in Canada, the United States and Spain to investigate what a Spanish official called the world's biggest network of virus-infected computers. The suspects &quot;copied personal and financial data of individuals, companies and official institutions in more than 190 countries,&quot; the Civil Guards' statement said. In addition to gaining illegal access to personal and financial information, the virus would have permitted those controlling the system to mount a large cyberattack from the infected computers, a U.S. official said. Police found computer and personal information from more than 800,000 users in a search of the computers at suspects' homes, the statement said. The suspects, ages 31, 30 and 25, were arrested last week in Spain's northern Vizcaya province, northwest Coruna province and southeast Murcia province, respectively. Authorities did not immediately release their identities or further details about them. The computer hacking was first detected in May by the Canadian firm Defence Intelligence, which quickly enlisted the aid of Spain's Panda Security firm and the Georgia Tech Information Security Center in Atlanta, Georgia, the statement said. The FBI soon determined that a Spanish citizen was involved and alerted the Civil Guards. Authorities concluded that the suspects had bought virus software to use in their alleged scheme. By December, investigators had identified practically all of the control channels for the pirated computer network and &quot;proceeded in a coordinated way internationally to block the domains that were being used,&quot; the statement said. The domains were mainly in two U.S. and one Spanish service providers. In a counterattack, the suspects, &quot;probably as an act of revenge,&quot; carried out a cyberattack against the Canadian firm investigating them. The attack seriously affected its Internet service provider and left numerous clients without connection, including Canadian universities and government offices, the statement said. But that counterattack also allowed investigators to determine the rest of the control channels for the alleged scheme, which were finally blocked as well, except for a few small servers that controlled a relatively small number of computers. Authorities also discovered the identity of the 31-year-old suspect, who used the alias &quot;hamlet1917,&quot; and made the arrest in the town of Balmaseda, Vizcaya province. A search of the computers found there led to the other two suspects, the statement said. The suspects were to appear before Judge Baltasar Garzon at Spain's National Court in Madrid because of the broad implications of the virus-infected computers, the statement said. Authorities are investigating whether a fourth suspect, possibly a Venezuelan national, might also be involved, police said.
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+	
+		
+		
+			
+				
+					
+						
+						Share this on:
+					
+										
+						Mixx
+						Facebook
+						Twitter
+						Digg
+						delicious
+						reddit
+						MySpace
+						StumbleUpon
+						LinkedIn
+					
+				
+			
+		
+		
+	
+			
+
+
+
+	
+
+
+	
+
+
+
+
+
+FOLLOW THIS TOPIC
+
+	
+			
+  More Tech
+	
+	
+		
+Report: Google TV devices delayed as Google tweaks software
+
+
+New iPhone app translates foreign-language signs
+
+
+5 Web titans that withered under Yahoo
+
+
+	
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+

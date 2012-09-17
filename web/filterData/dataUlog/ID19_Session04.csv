@@ -1,0 +1,49 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:03:04,14:13:40,459,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:03:04,14:13:58,821,"firefox.exe","Sniper's apology brings closu...ce - CNN.com - Mozilla Firefox",Mouse wheel,1042,700,292.44,2790.42,0.10, 
+2010:03:04,14:14:00,337,"firefox.exe","Sniper's apology brings closu...ce - CNN.com - Mozilla Firefox",Mouse wheel stopped,819,717,0.00,0.00,1.00,2 Wheel actions
+2010:03:04,14:14:00,337,"firefox.exe","Sniper's apology brings closu...ce - CNN.com - Mozilla Firefox",Left mouse button pressed,819,717,52.81,60.55,0.87, 
+2010:03:04,14:14:00,477,"firefox.exe","Sniper's apology brings closu...ce - CNN.com - Mozilla Firefox",Left mouse button released,819,717,0.00,0.00,0.00, 
+2010:03:04,14:14:00,712,"firefox.exe","Sniper's apology brings closu...ce - CNN.com - Mozilla Firefox",Mouse wheel,819,717,0.00,0.00,0.00, 
+2010:03:04,14:15:00,453,"Explorer.EXE","2:14 PM",Mouse wheel stopped,872,682,0.00,0.00,1.00,22 Wheel actions
+2010:03:04,14:15:06,078,"firefox.exe","Sniper's apology brings closu...ce - CNN.com - Mozilla Firefox",Mouse wheel,846,701,79.16,129.60,0.61, 
+2010:03:04,14:16:00,459,"Explorer.EXE","2:15 PM",Mouse wheel stopped,823,519,0.00,0.00,1.00,10 Wheel actions
+2010:03:04,14:16:04,616,"firefox.exe","Sniper's apology brings closu...ce - CNN.com - Mozilla Firefox",Mouse wheel,823,519,0.00,0.00,0.00, 
+2010:03:04,14:16:14,632,"firefox.exe","Sniper's apology brings closu...ce - CNN.com - Mozilla Firefox",Mouse wheel stopped,224,51,0.00,0.00,1.00,1 Wheel actions
+2010:03:04,14:16:14,632,"firefox.exe","Sniper's apology brings closu...ce - CNN.com - Mozilla Firefox",Left mouse button pressed,224,51,760.15,1355.40,0.56, 
+2010:03:04,14:16:15,304,"firefox.exe","Sniper's apology brings closu...ce - CNN.com - Mozilla Firefox",Left mouse button released,231,47,8.06,17.83,0.45, 
+2010:03:04,14:16:15,476,"firefox.exe","Sniper's apology brings closu...ce - CNN.com - Mozilla Firefox",Left mouse button pressed,232,47,1.00,1.00,1.00, 
+2010:03:04,14:16:15,586,"firefox.exe","Sniper's apology brings closu...ce - CNN.com - Mozilla Firefox",Left mouse button released,232,47,0.00,0.00,0.00, 
+2010:03:04,14:16:15,804,"firefox.exe","Sniper's apology brings closu...ce - CNN.com - Mozilla Firefox",Left mouse button pressed,241,68,22.85,24.02,0.95, 
+2010:03:04,14:16:15,898,"firefox.exe","Sniper's apology brings closu...ce - CNN.com - Mozilla Firefox",Left mouse button released,241,68,0.00,0.00,0.00, 
+2010:03:04,14:16:17,164,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,456,435,425.34,462.39,0.92, 
+2010:03:04,14:16:25,649,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,392,515,0.00,0.00,1.00,3 Wheel actions
+2010:03:04,14:16:25,649,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,392,515,99.64,904.66,0.11, 
+2010:03:04,14:16:25,759,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,392,515,0.00,0.00,0.00, 
+2010:03:04,14:16:33,103,"firefox.exe","Iraqi leader willing to ask s...ay - CNN.com - Mozilla Firefox",Mouse wheel,537,505,145.34,184.02,0.79, 
+2010:03:04,14:17:00,465,"Explorer.EXE","2:16 PM",Mouse wheel stopped,76,74,0.00,0.00,1.00,18 Wheel actions
+2010:03:04,14:17:01,356,"firefox.exe","Iraqi leader willing to ask s...ay - CNN.com - Mozilla Firefox",Mouse wheel,587,336,572.45,610.77,0.94, 
+2010:03:04,14:18:00,467,"Explorer.EXE","2:17 PM",Mouse wheel stopped,920,480,0.00,0.00,1.00,21 Wheel actions
+2010:03:04,14:18:01,452,"firefox.exe","Iraqi leader willing to ask s...ay - CNN.com - Mozilla Firefox",Mouse wheel,920,480,7.00,7.00,1.00, 
+2010:03:04,14:18:52,172,"firefox.exe","Iraqi leader willing to ask s...ay - CNN.com - Mozilla Firefox",Mouse wheel stopped,250,65,0.00,0.00,1.00,26 Wheel actions
+2010:03:04,14:18:52,172,"firefox.exe","Iraqi leader willing to ask s...ay - CNN.com - Mozilla Firefox",Left mouse button pressed,250,65,632.61,693.94,0.91, 
+2010:03:04,14:18:52,297,"firefox.exe","Iraqi leader willing to ask s...ay - CNN.com - Mozilla Firefox",Left mouse button released,250,65,0.00,0.00,0.00, 
+2010:03:04,14:19:06,829,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,578,588,617.34,1667.72,0.37, 
+2010:03:04,14:19:13,032,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,695,554,0.00,0.00,1.00,7 Wheel actions
+2010:03:04,14:19:13,032,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,695,554,121.84,254.76,0.48, 
+2010:03:04,14:19:13,595,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,695,554,0.00,0.00,0.00, 
+2010:03:04,14:19:14,985,"firefox.exe","Investigators on way after wa...rs - CNN.com - Mozilla Firefox",Left mouse button pressed,628,598,80.16,87.35,0.92, 
+2010:03:04,14:19:15,126,"firefox.exe","Investigators on way after wa...rs - CNN.com - Mozilla Firefox",Left mouse button released,628,598,0.00,0.00,0.00, 
+2010:03:04,14:19:16,579,"firefox.exe","Investigators on way after wa...rs - CNN.com - Mozilla Firefox",Mouse wheel,627,597,1.41,2.00,0.71, 
+2010:03:04,14:19:30,767,"agent.exe","<Unknown window>",Mouse wheel stopped,620,584,0.00,0.00,1.00,2 Wheel actions
+2010:03:04,14:20:42,519,"firefox.exe","Investigators on way after wa...rs - CNN.com - Mozilla Firefox",Mouse wheel,757,723,181.04,228.05,0.79, 
+2010:03:04,14:21:00,473,"Explorer.EXE","2:20 PM",Mouse wheel stopped,591,669,0.00,0.00,1.00,8 Wheel actions
+2010:03:04,14:21:01,395,"firefox.exe","Investigators on way after wa...rs - CNN.com - Mozilla Firefox",Mouse wheel,581,669,21.00,21.00,1.00, 
+2010:03:04,14:21:20,286,"firefox.exe","Investigators on way after wa...rs - CNN.com - Mozilla Firefox",Mouse wheel stopped,234,68,0.00,0.00,1.00,18 Wheel actions
+2010:03:04,14:21:20,286,"firefox.exe","Investigators on way after wa...rs - CNN.com - Mozilla Firefox",Left mouse button pressed,234,68,672.62,1250.95,0.54, 
+2010:03:04,14:21:20,411,"firefox.exe","Investigators on way after wa...rs - CNN.com - Mozilla Firefox",Left mouse button released,235,68,1.00,1.00,1.00, 
+2010:03:04,14:21:21,677,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,568,539,576.83,996.50,0.58, 
+2010:03:04,14:21:26,646,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,1169,290,0.00,0.00,1.00,26 Wheel actions
+2010:03:04,14:21:26,646,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1169,290,734.19,978.67,0.75, 
+2010:03:04,14:21:26,787,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1169,290,0.00,0.00,0.00, 
+2010:03:04,14:21:30,146,"firefox.exe","Breaking news, real-time scor...ted 

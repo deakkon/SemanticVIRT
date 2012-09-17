@@ -1,0 +1,698 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:03:08,18:05:27,563,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:03:08,18:05:30,454,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,553,10,553.09,3581.70,0.15, 
+2010:03:08,18:05:30,548,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,553,10,0.00,0.00,0.00, 
+2010:03:08,18:05:31,829,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,401,589,598.62,644.69,0.93, 
+2010:03:08,18:05:40,267,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,211,558,0.00,0.00,1.00,2 Wheel actions
+2010:03:08,18:05:40,267,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,211,558,93.43,122.48,0.76, 
+2010:03:08,18:05:40,361,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,211,558,0.00,0.00,0.00, 
+2010:03:08,18:05:44,720,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Left mouse button pressed,515,544,304.32,684.63,0.44, 
+2010:03:08,18:05:44,830,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Left mouse button released,515,544,0.00,0.00,0.00, 
+2010:03:08,18:05:52,799,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:05:53,330,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:05:53,721,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:05:54,424,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:05:54,955,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:05:55,502,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:05:55,893,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:05:56,737,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:05:57,377,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:05:58,487,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:05:58,846,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:05:59,502,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:10,784,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:13,597,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:13,941,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:14,300,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:18,128,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:20,503,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:22,832,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:23,347,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:23,941,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:26,238,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:29,832,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:30,957,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:31,426,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:31,910,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:38,848,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:41,176,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:41,708,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:42,208,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:46,427,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:48,114,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:52,505,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:54,396,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:55,146,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:06:55,802,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:00,209,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:02,037,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:02,474,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:03,271,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:04,521,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Key pressed,521,522,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:09,350,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Left mouse button pressed,101,65,633.12,725.06,0.87, 
+2010:03:08,18:07:09,443,"firefox.exe","American missionary held in H...ed - CNN.com - Mozilla Firefox",Left mouse button released,101,65,0.00,0.00,0.00, 
+2010:03:08,18:07:15,600,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,280,559,525.43,798.25,0.66, 
+2010:03:08,18:07:15,709,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,280,559,0.00,0.00,0.00, 
+2010:03:08,18:07:17,788,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Left mouse button pressed,587,474,318.55,400.37,0.80, 
+2010:03:08,18:07:17,897,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Left mouse button released,587,474,0.00,0.00,0.00, 
+2010:03:08,18:07:24,710,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:25,085,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:25,475,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:25,975,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:29,398,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:33,257,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:34,132,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:41,726,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:42,164,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:42,554,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:42,914,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:50,039,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:50,336,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:50,774,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:07:59,868,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:08:04,040,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:08:04,681,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:08:05,306,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:08:07,118,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:08:13,650,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:08:14,587,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:08:18,369,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:08:19,088,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:08:32,948,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:08:33,932,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:08:35,354,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:08:44,042,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:08:45,917,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:08:46,886,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:08:52,574,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:08:56,527,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:01,543,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:02,324,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:02,918,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:03,996,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:11,856,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:12,262,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:12,747,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:16,559,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:21,872,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:23,935,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:31,654,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:33,513,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:40,764,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:41,232,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:41,607,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:48,452,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:52,092,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:54,499,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:55,186,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:55,530,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:09:55,936,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:10:05,749,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:10:08,328,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:10:08,812,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:10:09,359,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:10:18,609,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Key pressed,576,562,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:10:20,797,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Left mouse button pressed,101,66,634.55,881.72,0.72, 
+2010:03:08,18:10:20,906,"firefox.exe","US envoy: Israelis and Palest...ks - CNN.com - Mozilla Firefox",Left mouse button released,101,66,0.00,0.00,0.00, 
+2010:03:08,18:10:25,844,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,237,578,529.75,616.61,0.86, 
+2010:03:08,18:10:25,953,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,237,578,0.00,0.00,0.00, 
+2010:03:08,18:10:29,532,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Left mouse button pressed,537,479,315.91,427.32,0.74, 
+2010:03:08,18:10:29,672,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Left mouse button released,537,479,0.00,0.00,0.00, 
+2010:03:08,18:10:33,219,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:10:33,876,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:10:37,485,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:10:37,938,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:10:38,313,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:10:39,423,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:10:40,017,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:10:46,986,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:10:48,126,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:10:48,580,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:10:49,533,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:11:15,565,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:11:19,566,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:11:20,362,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:11:24,800,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:11:25,378,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:11:38,051,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:11:38,442,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:11:45,770,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:11:46,114,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:11:46,629,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:11:47,067,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:11:52,208,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:11:53,177,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:11:53,614,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:11:56,724,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:11:59,239,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:11:59,630,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:00,099,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:10,568,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:15,600,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:17,662,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:17,975,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:19,240,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:24,897,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:31,725,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:32,101,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:32,476,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:33,007,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:33,585,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:36,945,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:37,460,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:38,304,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:42,289,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:42,601,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:43,195,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:49,758,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:56,461,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:57,039,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:12:59,727,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:00,258,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:00,836,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Key pressed,537,479,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:08,227,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Mouse wheel,543,475,7.21,7.62,0.95, 
+2010:03:08,18:13:10,243,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Mouse wheel stopped,103,69,0.00,0.00,1.00,3 Wheel actions
+2010:03:08,18:13:10,243,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Left mouse button pressed,103,69,650.67,828.24,0.79, 
+2010:03:08,18:13:10,306,"firefox.exe","Police to interview NFL's Roe...on - CNN.com - Mozilla Firefox",Left mouse button released,103,69,0.00,0.00,0.00, 
+2010:03:08,18:13:16,915,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,212,592,534.24,803.07,0.67, 
+2010:03:08,18:13:17,025,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,212,592,0.00,0.00,0.00, 
+2010:03:08,18:13:19,478,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Left mouse button pressed,510,616,298.96,482.89,0.62, 
+2010:03:08,18:13:19,587,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Left mouse button released,510,616,0.00,0.00,0.00, 
+2010:03:08,18:13:28,088,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:28,557,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:28,963,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:30,760,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:31,432,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:34,619,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:35,104,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:42,245,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:42,682,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:43,089,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:43,870,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:46,964,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:47,683,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:52,698,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:53,120,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:53,620,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:57,574,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:57,855,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:13:58,308,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:06,277,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:10,496,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:14,418,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:14,825,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:15,231,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:15,653,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:16,043,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:16,403,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:16,872,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:17,309,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:17,856,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:30,575,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:31,404,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:35,544,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:39,576,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:40,810,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:50,733,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:51,170,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:51,623,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:14:56,499,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:00,202,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:02,733,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:03,093,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:03,499,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:03,952,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:04,593,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:05,124,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:09,796,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:10,437,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:13,718,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:14,078,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:14,703,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:22,015,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:22,281,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:22,828,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:23,328,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:29,297,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:30,063,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:30,797,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:31,172,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:32,000,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:32,297,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:39,485,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:42,110,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:42,485,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:43,173,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:48,767,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:49,157,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:49,892,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:52,642,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:53,001,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:53,423,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:54,017,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:54,455,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:15:59,799,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:00,533,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:02,861,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:03,205,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:03,674,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:10,752,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:11,221,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:16,409,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:16,768,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:17,159,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:23,065,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:23,628,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:32,113,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:34,379,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:34,675,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:38,707,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:42,176,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:47,832,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:50,192,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:51,614,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:51,911,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:55,130,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:56,114,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:16:56,364,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:05,568,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:06,146,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:07,833,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:08,193,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:08,677,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:13,677,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:20,256,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:20,756,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:21,162,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:21,615,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:34,335,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:34,710,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:35,741,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:36,241,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:37,929,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:38,241,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:38,726,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:44,398,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:45,007,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:45,570,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Key pressed,570,573,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:48,132,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Left mouse button pressed,100,73,680.40,881.03,0.77, 
+2010:03:08,18:17:48,226,"firefox.exe","Haitian couple await baby's return - CNN.com - Mozilla Firefox",Left mouse button released,100,73,0.00,0.00,0.00, 
+2010:03:08,18:17:51,711,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,200,623,559.02,1209.75,0.46, 
+2010:03:08,18:17:51,820,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,200,623,0.00,0.00,0.00, 
+2010:03:08,18:17:53,679,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Mouse wheel,455,753,286.23,292.82,0.98, 
+2010:03:08,18:17:54,680,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Mouse wheel stopped,505,772,0.00,0.00,1.00,2 Wheel actions
+2010:03:08,18:17:54,680,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Left mouse button pressed,505,772,53.49,73.02,0.73, 
+2010:03:08,18:17:54,773,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Left mouse button released,505,772,0.00,0.00,0.00, 
+2010:03:08,18:17:56,164,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:17:56,695,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:18:11,118,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:18:15,884,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:18:16,337,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:18:31,525,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:18:31,931,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:18:37,119,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:18:44,666,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:18:47,745,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:18:48,417,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:18:53,729,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:19:04,824,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:19:05,199,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:19:05,621,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:19:15,543,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:19:18,981,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:19:38,825,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:19:39,154,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:19:40,341,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:19:43,326,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:19:45,904,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:19:47,295,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:19:47,685,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:19:48,154,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:19:55,498,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:19:55,826,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:19:56,998,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:19:57,389,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:20:07,593,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:02,736,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:04,408,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:05,611,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:13,908,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:14,877,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:15,205,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:15,518,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:16,018,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:22,565,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:23,003,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:23,409,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:29,987,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:30,300,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:30,691,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:31,956,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:46,410,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:46,848,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:51,129,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:53,332,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:53,832,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:59,036,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:21:59,426,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:22:00,505,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:22:03,989,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:22:07,333,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:22:12,240,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Key pressed,505,772,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:22:21,865,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Left mouse button pressed,108,68,808.22,946.81,0.85, 
+2010:03:08,18:22:21,928,"firefox.exe","Obama: Time to debate health ...er - CNN.com - Mozilla Firefox",Left mouse button released,108,68,0.00,0.00,0.00, 
+2010:03:08,18:22:25,709,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,216,638,580.14,1174.85,0.49, 
+2010:03:08,18:22:25,834,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,216,638,0.00,0.00,0.00, 
+2010:03:08,18:22:27,131,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Mouse wheel,374,624,158.62,162.48,0.98, 
+2010:03:08,18:22:32,397,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Mouse wheel stopped,424,595,0.00,0.00,1.00,6 Wheel actions
+2010:03:08,18:22:32,397,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,424,595,99.48,130.19,0.76, 
+2010:03:08,18:22:32,522,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Left mouse button released,424,595,0.00,0.00,0.00, 
+2010:03:08,18:22:34,413,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:22:35,366,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:22:35,616,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:22:35,913,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:22:36,194,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:22:36,538,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:22:40,007,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:22:40,382,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:22:40,772,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:22:41,194,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:23:01,742,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Up arrow
+2010:03:08,18:23:14,212,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:23:14,602,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:23:15,165,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:23:42,057,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:23:42,385,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:23:47,432,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:23:47,776,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:23:49,495,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:23:50,338,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:23:53,745,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Key pressed,490,673,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:23:59,495,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,94,67,622.64,982.73,0.63, 
+2010:03:08,18:23:59,558,"firefox.exe","Rapper Lil' Wayne sentenced t...ar - CNN.com - Mozilla Firefox",Left mouse button released,94,67,0.00,0.00,0.00, 
+2010:03:08,18:24:04,230,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,168,658,595.61,889.12,0.67, 
+2010:03:08,18:24:04,308,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,168,658,0.00,0.00,0.00, 
+2010:03:08,18:24:05,542,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Mouse wheel,448,658,280.00,286.60,0.98, 
+2010:03:08,18:24:07,730,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Mouse wheel stopped,504,538,0.00,0.00,1.00,9 Wheel actions
+2010:03:08,18:24:07,730,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Left mouse button pressed,504,538,123.88,175.72,0.70, 
+2010:03:08,18:24:07,839,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Left mouse button released,504,538,0.00,0.00,0.00, 
+2010:03:08,18:24:08,105,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Mouse wheel,504,537,1.00,1.00,1.00, 
+2010:03:08,18:24:13,433,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Mouse wheel stopped,503,537,0.00,0.00,1.00,2 Wheel actions
+2010:03:08,18:24:13,433,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:13,715,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:13,965,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:14,199,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:16,965,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:17,418,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:17,840,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:18,262,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:23,903,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Up arrow
+2010:03:08,18:24:24,996,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Up arrow
+2010:03:08,18:24:25,856,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:43,872,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:44,357,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:44,904,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:45,404,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:45,779,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:51,560,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:52,013,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:52,388,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:52,779,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:53,826,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:54,482,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:24:56,607,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Key pressed,503,537,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:25:05,702,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Left mouse button pressed,329,509,176.24,569.34,0.31, 
+2010:03:08,18:25:06,123,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Left mouse button released,592,516,263.09,264.28,1.00, 
+2010:03:08,18:25:06,202,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Left mouse button pressed,592,515,1.00,1.00,1.00, 
+2010:03:08,18:25:06,311,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Left mouse button released,592,515,0.00,0.00,0.00, 
+2010:03:08,18:25:17,593,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Left mouse button pressed,104,61,666.53,975.23,0.68, 
+2010:03:08,18:25:17,687,"firefox.exe","Betty White confirms 'Saturda...e' - CNN.com - Mozilla Firefox",Left mouse button released,104,61,0.00,0.00,0.00, 
+2010:03:08,18:25:19,280,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,301,644,615.38,918.58,0.67, 
+2010:03:08,18:25:20,640,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,196,612,0.00,0.00,1.00,1 Wheel actions
+2010:03:08,18:25:20,640,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,196,612,109.77,119.02,0.92, 
+2010:03:08,18:25:20,734,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,196,612,0.00,0.00,0.00, 
+2010:03:08,18:25:22,593,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Mouse wheel,604,662,411.05,413.05,1.00, 
+2010:03:08,18:25:29,547,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Mouse wheel stopped,462,751,0.00,0.00,1.00,4 Wheel actions
+2010:03:08,18:25:29,547,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Left mouse button pressed,462,751,167.59,211.25,0.79, 
+2010:03:08,18:25:29,656,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Left mouse button released,462,751,0.00,0.00,0.00, 
+2010:03:08,18:25:34,672,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:25:34,969,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:25:35,250,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:25:43,313,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:25:43,641,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:25:44,000,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:25:44,579,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:25:45,141,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:25:55,798,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:26:00,298,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:26:00,798,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:26:09,033,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:26:09,533,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:26:14,549,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:26:25,815,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:26:27,003,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:26:27,487,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:26:27,925,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:26:37,488,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:26:44,613,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:26:45,066,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:26:45,535,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:26:46,004,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:26:54,223,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Key pressed,462,751,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:04,489,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Mouse wheel,446,715,39.40,42.40,0.93, 
+2010:03:08,18:27:06,177,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Mouse wheel stopped,104,60,0.00,0.00,1.00,11 Wheel actions
+2010:03:08,18:27:06,177,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Left mouse button pressed,104,60,706.48,804.12,0.88, 
+2010:03:08,18:27:06,317,"firefox.exe","Rock slide drops boulders, cl...do - CNN.com - Mozilla Firefox",Left mouse button released,104,60,0.00,0.00,0.00, 
+2010:03:08,18:27:10,239,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,225,630,582.70,925.11,0.63, 
+2010:03:08,18:27:10,364,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,225,630,0.00,0.00,0.00, 
+2010:03:08,18:27:13,693,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Left mouse button pressed,108,75,567.20,937.53,0.60, 
+2010:03:08,18:27:13,802,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Left mouse button released,108,75,0.00,0.00,0.00, 
+2010:03:08,18:27:15,677,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,559,556,659.36,1294.47,0.51, 
+2010:03:08,18:27:15,771,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,559,556,0.00,0.00,0.00, 
+2010:03:08,18:27:18,037,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,558,573,17.03,18.00,0.95, 
+2010:03:08,18:27:18,115,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,558,573,0.00,0.00,0.00, 
+2010:03:08,18:27:19,287,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Mouse wheel,513,612,59.55,64.09,0.93, 
+2010:03:08,18:27:20,802,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Mouse wheel stopped,489,639,0.00,0.00,1.00,5 Wheel actions
+2010:03:08,18:27:20,802,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Left mouse button pressed,489,639,36.12,42.85,0.84, 
+2010:03:08,18:27:20,865,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Left mouse button released,489,639,0.00,0.00,0.00, 
+2010:03:08,18:27:21,490,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Mouse wheel,488,665,26.02,27.00,0.96, 
+2010:03:08,18:27:26,365,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Mouse wheel stopped,470,566,0.00,0.00,1.00,3 Wheel actions
+2010:03:08,18:27:26,365,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:26,787,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:28,037,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:28,709,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:34,084,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:34,928,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:35,725,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:36,397,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:36,866,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:37,397,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:38,428,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:38,991,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:44,178,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:44,632,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:45,022,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:45,710,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:49,366,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:49,913,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:50,382,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:50,991,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:51,335,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:54,820,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:55,742,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:27:57,164,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:05,039,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:06,242,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:07,055,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:07,680,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:08,102,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:08,445,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:09,305,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:10,195,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:11,430,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:11,867,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:12,196,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:13,227,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:13,617,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:14,039,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:21,509,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:22,055,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:23,134,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:23,446,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:23,915,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:25,962,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:26,446,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:26,853,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:28,524,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:29,462,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:29,962,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:30,384,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:30,900,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:31,478,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:31,790,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:32,072,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:33,118,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:33,556,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:36,791,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:37,869,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:42,463,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:50,072,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:52,416,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:53,791,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:28:59,807,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:29:01,136,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:29:02,136,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:29:03,933,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:29:07,042,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:29:09,277,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:29:11,042,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:29:14,230,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:29:18,527,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:29:25,902,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:29:29,621,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:29:32,575,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:29:35,840,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:29:37,090,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:29:41,622,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Key pressed,470,566,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:29:51,044,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Left mouse button pressed,103,70,707.86,1066.90,0.66, 
+2010:03:08,18:29:51,185,"firefox.exe","Complete list of Academy Awar...es - CNN.com - Mozilla Firefox",Left mouse button released,103,70,0.00,0.00,0.00, 
+2010:03:08,18:29:54,138,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,229,634,577.90,1009.53,0.57, 
+2010:03:08,18:29:54,216,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,229,634,0.00,0.00,0.00, 
+2010:03:08,18:29:56,029,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Left mouse button pressed,498,822,328.18,351.06,0.93, 
+2010:03:08,18:29:56,170,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Left mouse button released,498,822,0.00,0.00,0.00, 
+2010:03:08,18:29:56,529,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Mouse wheel,539,840,44.78,46.97,0.95, 
+2010:03:08,18:30:00,170,"Explorer.EXE","6:29 PM",Mouse wheel stopped,532,678,0.00,0.00,1.00,7 Wheel actions
+2010:03:08,18:30:18,030,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:30:18,343,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:30:35,531,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:30:35,937,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:30:36,281,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:30:48,282,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:30:48,750,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:30:49,657,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:19,783,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:20,143,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:20,408,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:20,658,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:20,861,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:21,080,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:21,315,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:33,175,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:33,753,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:48,675,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:48,987,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:49,737,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:50,190,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:50,550,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:50,847,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:51,112,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:51,315,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:54,253,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:54,909,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:55,268,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:55,549,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:55,846,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:31:56,456,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:32:03,971,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:32:04,549,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:32:22,844,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:32:23,282,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:32:28,141,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:32:28,625,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:32:34,718,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:32:35,015,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:32:35,531,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:32:35,859,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:32:36,249,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:32:47,827,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:32:48,170,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:32:48,733,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:32:49,530,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:32:50,342,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:33:10,356,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:33:10,872,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:33:11,200,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:33:11,544,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:33:12,075,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Key pressed,532,678,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:33:18,387,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Left mouse button pressed,101,62,847.80,994.17,0.85, 
+2010:03:08,18:33:18,465,"firefox.exe","Dozens dead from earthquake i...ey - CNN.com - Mozilla Firefox",Left mouse button released,101,62,0.00,0.00,0.00, 
+2010:03:08,18:33:25,824,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,177,648,590.91,1068.58,0.55, 
+2010:03:08,18:33:25,980,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,177,648,0.00,0.00,0.00, 
+2010:03:08,18:33:29,511,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Left mouse button pressed,535,459,404.83,482.60,0.84, 
+2010:03:08,18:33:29,683,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Left mouse button released,535,459,0.00,0.00,0.00, 
+2010:03:08,18:33:46,635,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:33:46,916,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:33:47,197,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:33:47,463,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:33:50,041,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:33:50,853,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:03,618,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:03,930,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:04,477,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:04,946,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:05,477,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:06,227,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:06,867,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:07,633,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:08,461,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:15,304,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:21,710,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:22,304,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:23,085,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:27,960,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:28,272,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:28,631,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:31,319,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:32,319,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:33,006,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:33,975,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:39,943,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:40,271,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:43,661,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:44,099,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:44,818,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:45,239,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:45,927,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:34:59,801,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:00,098,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:00,348,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:00,598,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:00,848,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:01,223,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:01,957,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:02,801,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:13,050,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:13,331,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:13,815,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:20,737,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:21,159,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:21,580,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:22,034,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:22,877,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:25,627,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:26,111,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:26,627,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:33,517,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:33,955,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:34,486,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:41,876,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:43,126,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:43,938,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:44,844,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:45,235,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:49,250,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:52,375,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:52,719,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:53,250,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:59,468,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:35:59,812,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:36:00,281,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:36:00,812,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:36:09,233,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:36:09,905,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:36:10,545,"firefox.exe","Pentagon security officer kne...n' - CNN.com - Mozilla Firefox",Key pressed,526,504,-1.00,-1.00,1.00,Down arrow
+2010:03:08,18:38:29,153,"Explorer.EXE","Notification Area",Right mouse button pressed,1138,1009,816.16,2421.91,0.34, 
+2010:03:08,18:38:29,293,"Explorer.EXE","Notification Area",Right mouse button released,1138,1009,0.00,0.00,0.00, 
+2010:03:08,18:38:29,731,"uLog.exe","<Unknown window>",Left mouse button pressed,1153,983,30.02,31.75,0.95, 
+2010:03:08,18:38:29,793,"uLog.exe","<Unknown window>",Left mouse button released,1153,983,0.00,0.00,0.00, 
+2010:03:08,18:38:29,793,"uLog.exe"," ",Logging stopped,-1,-1,-1.00,-1.00,-1.00, 

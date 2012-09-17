@@ -1,0 +1,153 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:02:26,15:10:00,709,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:02:26,15:10:01,741,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,37,411,412.66,1477.26,0.28, 
+2010:02:26,15:10:01,819,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,38,411,1.00,1.00,1.00, 
+2010:02:26,15:10:19,804,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,341,615,365.27,3896.25,0.09, 
+2010:02:26,15:10:19,975,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,341,615,0.00,0.00,0.00, 
+2010:02:26,15:10:21,710,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Mouse wheel,635,273,451.00,681.07,0.66, 
+2010:02:26,15:10:22,944,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Mouse wheel stopped,69,0,0.00,0.00,1.00,5 Wheel actions
+2010:02:26,15:10:22,944,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Left mouse button pressed,69,0,602.72,1084.32,0.56, 
+2010:02:26,15:10:23,007,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Left mouse button released,80,0,11.00,27.09,0.41, 
+2010:02:26,15:10:23,897,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Left mouse button pressed,17,586,589.38,780.58,0.76, 
+2010:02:26,15:10:23,991,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Left mouse button released,19,585,2.24,3.00,0.75, 
+2010:02:26,15:10:24,226,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Mouse wheel,98,527,98.01,100.91,0.97, 
+2010:02:26,15:11:00,726,"Explorer.EXE","3:10 PM",Mouse wheel stopped,92,453,0.00,0.00,1.00,12 Wheel actions
+2010:02:26,15:11:05,664,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Mouse wheel,91,454,1.41,2.00,0.71, 
+2010:02:26,15:12:00,728,"Explorer.EXE","3:11 PM",Mouse wheel stopped,780,352,0.00,0.00,1.00,12 Wheel actions
+2010:02:26,15:12:04,009,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Mouse wheel,767,363,17.03,22.83,0.75, 
+2010:02:26,15:12:10,806,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Mouse wheel stopped,776,352,0.00,0.00,1.00,1 Wheel actions
+2010:02:26,15:12:10,806,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Right mouse button pressed,776,352,14.21,81.27,0.17, 
+2010:02:26,15:12:10,963,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Right mouse button released,771,344,9.43,11.24,0.84, 
+2010:02:26,15:12:11,478,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Left mouse button pressed,800,296,56.08,59.55,0.94, 
+2010:02:26,15:12:11,666,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Left mouse button released,800,296,0.00,0.00,0.00, 
+2010:02:26,15:12:15,681,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Mouse wheel,828,279,32.76,42.72,0.77, 
+2010:02:26,15:12:49,790,"Explorer.EXE","My Computer",Mouse wheel stopped,246,549,0.00,0.00,1.00,12 Wheel actions
+2010:02:26,15:12:54,993,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Mouse wheel,247,535,22.85,40.83,0.56, 
+2010:02:26,15:13:00,727,"Explorer.EXE","3:12 PM",Mouse wheel stopped,247,535,0.00,0.00,1.00,2 Wheel actions
+2010:02:26,15:13:06,039,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Mouse wheel,247,535,0.00,0.00,0.00, 
+2010:02:26,15:14:00,723,"Explorer.EXE","3:13 PM",Mouse wheel stopped,221,553,0.00,0.00,1.00,12 Wheel actions
+2010:02:26,15:14:15,332,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Mouse wheel,242,372,182.21,1245.31,0.15, 
+2010:02:26,15:14:32,940,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Mouse wheel stopped,17,59,0.00,0.00,1.00,2 Wheel actions
+2010:02:26,15:14:32,940,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Left mouse button pressed,17,59,385.95,495.74,0.78, 
+2010:02:26,15:14:33,018,"firefox.exe","SeaWorld CEO says shows with ...ay - CNN.com - Mozilla Firefox",Left mouse button released,17,59,0.00,0.00,0.00, 
+2010:02:26,15:14:37,408,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,578,700,851.82,1082.85,0.79, 
+2010:02:26,15:14:37,502,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,578,700,0.00,0.00,0.00, 
+2010:02:26,15:14:38,721,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Mouse wheel,459,575,172.59,182.05,0.95, 
+2010:02:26,15:15:00,719,"Explorer.EXE","3:14 PM",Mouse wheel stopped,292,647,0.00,0.00,1.00,10 Wheel actions
+2010:02:26,15:15:16,453,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Mouse wheel,289,661,14.32,49.83,0.29, 
+2010:02:26,15:15:47,232,"agent.exe","<Unknown window>",Mouse wheel stopped,800,679,0.00,0.00,1.00,14 Wheel actions
+2010:02:26,15:15:53,404,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Mouse wheel,800,679,0.00,0.00,0.00, 
+2010:02:26,15:15:58,934,"Explorer.EXE","Program Manager",Mouse wheel stopped,1281,363,0.00,0.00,1.00,5 Wheel actions
+2010:02:26,15:15:58,934,"Explorer.EXE","Program Manager",Left mouse button pressed,1281,363,575.51,2248.20,0.26, 
+2010:02:26,15:15:59,419,"Explorer.EXE","Program Manager",Left mouse button released,1280,372,9.06,10.00,0.91, 
+2010:02:26,15:16:00,309,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Left mouse button pressed,1269,357,18.60,46.24,0.40, 
+2010:02:26,15:16:01,716,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Left mouse button released,1267,359,2.83,16.00,0.18, 
+2010:02:26,15:16:45,853,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Mouse wheel,15,221,1259.58,2737.68,0.46, 
+2010:02:26,15:17:00,712,"Explorer.EXE","3:16 PM",Mouse wheel stopped,1,261,0.00,0.00,1.00,8 Wheel actions
+2010:02:26,15:17:07,883,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Mouse wheel,44,273,26.08,106.07,0.25, 
+2010:02:26,15:18:00,709,"Explorer.EXE","3:17 PM",Mouse wheel stopped,95,265,0.00,0.00,1.00,13 Wheel actions
+2010:02:26,15:18:11,100,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Mouse wheel,90,313,94.63,643.46,0.15, 
+2010:02:26,15:18:32,162,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Mouse wheel stopped,105,408,0.00,0.00,1.00,5 Wheel actions
+2010:02:26,15:18:32,162,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Right mouse button pressed,105,408,85.00,120.48,0.71, 
+2010:02:26,15:18:32,209,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Right mouse button released,105,408,0.00,0.00,0.00, 
+2010:02:26,15:18:33,100,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Left mouse button pressed,137,350,66.24,69.74,0.95, 
+2010:02:26,15:18:33,147,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Left mouse button released,137,350,0.00,0.00,0.00, 
+2010:02:26,15:18:52,412,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Mouse wheel,887,200,764.85,1034.81,0.74, 
+2010:02:26,15:19:00,709,"Explorer.EXE","3:18 PM",Mouse wheel stopped,889,212,0.00,0.00,1.00,2 Wheel actions
+2010:02:26,15:19:04,693,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Mouse wheel,895,245,36.88,42.24,0.87, 
+2010:02:26,15:20:00,709,"Explorer.EXE","3:19 PM",Mouse wheel stopped,19,237,0.00,0.00,1.00,6 Wheel actions
+2010:02:26,15:20:04,302,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Mouse wheel,19,241,876.01,3276.63,0.27, 
+2010:02:26,15:20:24,193,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Mouse wheel stopped,230,820,0.00,0.00,1.00,3 Wheel actions
+2010:02:26,15:20:24,193,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Left mouse button pressed,230,820,653.39,1482.41,0.44, 
+2010:02:26,15:20:24,349,"firefox.exe","No. 5's bright future, cut sh...ce - CNN.com - Mozilla Firefox",Left mouse button released,230,820,0.00,0.00,0.00, 
+2010:02:26,15:20:26,724,"firefox.exe","Niece of Cleveland mayor live...ll - CNN.com - Mozilla Firefox",Mouse wheel,137,395,435.06,2370.29,0.18, 
+2010:02:26,15:21:00,708,"Explorer.EXE","3:20 PM",Mouse wheel stopped,38,574,0.00,0.00,1.00,3 Wheel actions
+2010:02:26,15:21:02,802,"firefox.exe","Niece of Cleveland mayor live...ll - CNN.com - Mozilla Firefox",Left mouse button pressed,243,502,223.09,1276.00,0.17, 
+2010:02:26,15:21:02,943,"firefox.exe","Niece of Cleveland mayor live...ll - CNN.com - Mozilla Firefox",Left mouse button released,243,502,0.00,0.00,0.00, 
+2010:02:26,15:21:10,568,"firefox.exe","Niece of Cleveland mayor live...ll - CNN.com - Mozilla Firefox",Left mouse button pressed,205,497,38.33,39.71,0.97, 
+2010:02:26,15:21:10,818,"firefox.exe","Niece of Cleveland mayor live...ll - CNN.com - Mozilla Firefox",Left mouse button released,205,497,0.00,0.00,0.00, 
+2010:02:26,15:21:26,724,"firefox.exe","Niece of Cleveland mayor live...ll - CNN.com - Mozilla Firefox",Mouse wheel,50,584,177.75,488.34,0.36, 
+2010:02:26,15:22:00,708,"Explorer.EXE","3:21 PM",Mouse wheel stopped,75,421,0.00,0.00,1.00,9 Wheel actions
+2010:02:26,15:22:30,208,"firefox.exe","Niece of Cleveland mayor live...ll - CNN.com - Mozilla Firefox",Mouse wheel,118,521,111.68,884.13,0.13, 
+2010:02:26,15:23:00,708,"Explorer.EXE","3:22 PM",Mouse wheel stopped,204,553,0.00,0.00,1.00,9 Wheel actions
+2010:02:26,15:23:00,896,"firefox.exe","Niece of Cleveland mayor live...ll - CNN.com - Mozilla Firefox",Mouse wheel,204,553,0.00,0.00,0.00, 
+2010:02:26,15:24:00,709,"Explorer.EXE","3:23 PM",Mouse wheel stopped,819,330,0.00,0.00,1.00,15 Wheel actions
+2010:02:26,15:24:13,631,"firefox.exe","Niece of Cleveland mayor live...ll - CNN.com - Mozilla Firefox",Mouse wheel,818,372,351.36,443.54,0.79, 
+2010:02:26,15:25:00,711,"Explorer.EXE","3:24 PM",Mouse wheel stopped,281,310,0.00,0.00,1.00,13 Wheel actions
+2010:02:26,15:25:12,195,"firefox.exe","Niece of Cleveland mayor live...ll - CNN.com - Mozilla Firefox",Mouse wheel,73,265,201.81,2155.60,0.09, 
+2010:02:26,15:25:47,008,"Explorer.EXE","Program Manager",Mouse wheel stopped,1280,819,0.00,0.00,1.00,2 Wheel actions
+2010:02:26,15:25:47,008,"Explorer.EXE","Program Manager",Left mouse button pressed,1280,819,1327.24,3848.93,0.34, 
+2010:02:26,15:25:48,790,"Explorer.EXE","Program Manager",Left mouse button released,1280,844,25.00,25.00,1.00, 
+2010:02:26,15:25:49,196,"firefox.exe","Niece of Cleveland mayor live...ll - CNN.com - Mozilla Firefox",Mouse wheel,1266,833,17.80,25.89,0.69, 
+2010:02:26,15:25:52,962,"agent.exe","<Unknown window>",Mouse wheel stopped,590,896,0.00,0.00,1.00,3 Wheel actions
+2010:02:26,15:26:05,509,"firefox.exe","Niece of Cleveland mayor live...ll - CNN.com - Mozilla Firefox",Left mouse button pressed,602,912,659.94,945.52,0.70, 
+2010:02:26,15:26:06,134,"firefox.exe","Niece of Cleveland mayor live...ll - CNN.com - Mozilla Firefox",Left mouse button released,602,912,0.00,0.00,0.00, 
+2010:02:26,15:26:13,509,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Left mouse button pressed,241,676,431.30,1583.96,0.27, 
+2010:02:26,15:26:13,665,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Left mouse button released,241,676,0.00,0.00,0.00, 
+2010:02:26,15:26:18,165,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Left mouse button pressed,205,669,36.67,51.31,0.71, 
+2010:02:26,15:26:18,306,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Left mouse button released,205,669,0.00,0.00,0.00, 
+2010:02:26,15:26:19,165,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Mouse wheel,1013,351,868.32,893.18,0.97, 
+2010:02:26,15:27:00,713,"Explorer.EXE","3:26 PM",Mouse wheel stopped,1198,251,0.00,0.00,1.00,12 Wheel actions
+2010:02:26,15:27:12,557,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Mouse wheel,1231,268,37.12,48.31,0.77, 
+2010:02:26,15:28:00,714,"Explorer.EXE","3:27 PM",Mouse wheel stopped,391,0,0.00,0.00,1.00,6 Wheel actions
+2010:02:26,15:28:21,730,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Mouse wheel,260,505,999.58,3276.99,0.31, 
+2010:02:26,15:29:00,715,"Explorer.EXE","3:28 PM",Mouse wheel stopped,371,650,0.00,0.00,1.00,3 Wheel actions
+2010:02:26,15:29:03,153,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Mouse wheel,296,661,157.70,1634.21,0.10, 
+2010:02:26,15:30:00,716,"Explorer.EXE","3:29 PM",Mouse wheel stopped,889,591,0.00,0.00,1.00,7 Wheel actions
+2010:02:26,15:30:01,357,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Mouse wheel,889,591,0.00,0.00,0.00, 
+2010:02:26,15:31:00,717,"Explorer.EXE","3:30 PM",Mouse wheel stopped,260,461,0.00,0.00,1.00,12 Wheel actions
+2010:02:26,15:31:25,374,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Mouse wheel,267,504,43.57,60.49,0.72, 
+2010:02:26,15:31:46,046,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Mouse wheel stopped,274,540,0.00,0.00,1.00,1 Wheel actions
+2010:02:26,15:31:46,046,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Right mouse button pressed,274,540,36.67,62.72,0.58, 
+2010:02:26,15:31:46,421,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Right mouse button released,274,540,0.00,0.00,0.00, 
+2010:02:26,15:31:47,109,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Left mouse button pressed,251,501,45.28,47.03,0.96, 
+2010:02:26,15:31:47,234,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Left mouse button released,251,501,0.00,0.00,0.00, 
+2010:02:26,15:31:53,734,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Mouse wheel,251,501,0.00,0.00,0.00, 
+2010:02:26,15:32:00,719,"Explorer.EXE","3:31 PM",Mouse wheel stopped,225,653,0.00,0.00,1.00,2 Wheel actions
+2010:02:26,15:32:04,234,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Mouse wheel,542,570,299.07,932.38,0.32, 
+2010:02:26,15:32:09,406,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Mouse wheel stopped,757,267,0.00,0.00,1.00,37 Wheel actions
+2010:02:26,15:32:09,406,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Left mouse button pressed,757,267,268.00,1986.69,0.13, 
+2010:02:26,15:32:09,516,"firefox.exe","Defense: Kidnap suspect hears...es - CNN.com - Mozilla Firefox",Left mouse button released,757,267,0.00,0.00,0.00, 
+2010:02:26,15:32:24,047,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button pressed,157,627,699.71,1172.76,0.60, 
+2010:02:26,15:32:24,328,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button released,157,627,0.00,0.00,0.00, 
+2010:02:26,15:32:31,313,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button pressed,268,601,114.00,184.69,0.62, 
+2010:02:26,15:32:31,563,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button released,268,601,0.00,0.00,0.00, 
+2010:02:26,15:32:33,219,"firefox.exe","Toxic towns: People of Mossvi...t' - CNN.com - Mozilla Firefox",Mouse wheel,266,596,5.39,7.00,0.77, 
+2010:02:26,15:33:00,720,"Explorer.EXE","3:32 PM",Mouse wheel stopped,17,543,0.00,0.00,1.00,16 Wheel actions
+2010:02:26,15:33:20,642,"firefox.exe","Toxic towns: People of Mossvi...t' - CNN.com - Mozilla Firefox",Mouse wheel,0,505,71.06,123.89,0.57, 
+2010:02:26,15:33:26,158,"firefox.exe","Toxic towns: People of Mossvi...t' - CNN.com - Mozilla Firefox",Mouse wheel stopped,20,66,0.00,0.00,1.00,2 Wheel actions
+2010:02:26,15:33:26,158,"firefox.exe","Toxic towns: People of Mossvi...t' - CNN.com - Mozilla Firefox",Left mouse button pressed,20,66,439.46,664.58,0.66, 
+2010:02:26,15:33:26,330,"firefox.exe","Toxic towns: People of Mossvi...t' - CNN.com - Mozilla Firefox",Left mouse button released,20,66,0.00,0.00,0.00, 
+2010:02:26,15:33:39,330,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Mouse wheel,343,783,786.40,1405.84,0.56, 
+2010:02:26,15:33:54,331,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Mouse wheel stopped,222,502,0.00,0.00,1.00,17 Wheel actions
+2010:02:26,15:33:54,331,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button pressed,222,502,245.23,524.83,0.47, 
+2010:02:26,15:33:54,503,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button released,222,502,0.00,0.00,0.00, 
+2010:02:26,15:33:56,065,"firefox.exe","Is your doctor a criminal? - CNN.com - Mozilla Firefox",Mouse wheel,212,517,18.03,20.72,0.87, 
+2010:02:26,15:34:00,721,"Explorer.EXE","3:33 PM",Mouse wheel stopped,207,524,0.00,0.00,1.00,15 Wheel actions
+2010:02:26,15:34:01,409,"firefox.exe","Is your doctor a criminal? - CNN.com - Mozilla Firefox",Mouse wheel,207,524,0.00,0.00,0.00, 
+2010:02:26,15:35:00,723,"Explorer.EXE","3:34 PM",Mouse wheel stopped,207,524,0.00,0.00,1.00,13 Wheel actions
+2010:02:26,15:35:30,474,"firefox.exe","Is your doctor a criminal? - CNN.com - Mozilla Firefox",Mouse wheel,769,403,574.88,1277.62,0.45, 
+2010:02:26,15:35:59,646,"agent.exe","<Unknown window>",Mouse wheel stopped,769,403,0.00,0.00,1.00,6 Wheel actions
+2010:02:26,15:36:12,615,"firefox.exe","Is your doctor a criminal? - CNN.com - Mozilla Firefox",Mouse wheel,769,403,0.00,0.00,0.00, 
+2010:02:26,15:37:00,726,"Explorer.EXE","3:36 PM",Mouse wheel stopped,806,586,0.00,0.00,1.00,10 Wheel actions
+2010:02:26,15:37:21,008,"firefox.exe","Is your doctor a criminal? - CNN.com - Mozilla Firefox",Left mouse button pressed,1277,485,481.71,1755.30,0.27, 
+2010:02:26,15:37:21,508,"firefox.exe","Is your doctor a criminal? - CNN.com - Mozilla Firefox",Left mouse button released,1272,191,294.04,300.50,0.98, 
+2010:02:26,15:37:24,211,"firefox.exe","Is your doctor a criminal? - CNN.com - Mozilla Firefox",Left mouse button pressed,785,257,491.45,2017.75,0.24, 
+2010:02:26,15:37:24,336,"firefox.exe","Is your doctor a criminal? - CNN.com - Mozilla Firefox",Left mouse button released,785,257,0.00,0.00,0.00, 
+2010:02:26,15:37:43,696,"firefox.exe","Living News - Personal Wellne...le - CNN.com - Mozilla Firefox",Mouse wheel,482,633,482.89,3197.23,0.15, 
+2010:02:26,15:37:49,384,"firefox.exe","Living News - Personal Wellne...le - CNN.com - Mozilla Firefox",Mouse wheel stopped,349,808,0.00,0.00,1.00,3 Wheel actions
+2010:02:26,15:37:49,384,"firefox.exe","Living News - Personal Wellne...le - CNN.com - Mozilla Firefox",Left mouse button pressed,349,808,158.11,651.70,0.24, 
+2010:02:26,15:37:49,555,"firefox.exe","Living News - Personal Wellne...le - CNN.com - Mozilla Firefox",Left mouse button released,349,808,0.00,0.00,0.00, 
+2010:02:26,15:37:55,243,"firefox.exe","Weird things written on résumés - CNN.com - Mozilla Firefox",Mouse wheel,74,194,672.77,1179.09,0.57, 
+2010:02:26,15:38:00,728,"Explorer.EXE","3:37 PM",Mouse wheel stopped,74,195,0.00,0.00,1.00,4 Wheel actions
+2010:02:26,15:38:15,056,"firefox.exe","Weird things written on résumés - CNN.com - Mozilla Firefox",Mouse wheel,29,286,101.52,139.60,0.73, 
+2010:02:26,15:39:00,729,"Explorer.EXE","3:38 PM",Mouse wheel stopped,22,334,0.00,0.00,1.00,13 Wheel actions
+2010:02:26,15:39:03,089,"firefox.exe","Weird things written on résumés - CNN.com - Mozilla Firefox",Mouse wheel,100,372,79.06,135.82,0.58, 
+2010:02:26,15:40:00,731,"Explorer.EXE","3:39 PM",Mouse wheel stopped,248,500,0.00,0.00,1.00,11 Wheel actions
+2010:02:26,15:40:01,543,"firefox.exe","Weird things written on résumés - CNN.com - Mozilla Firefox",Mouse wheel,248,500,0.00,0.00,0.00, 
+2010:02:26,15:41:00,732,"Explorer.EXE","3:40 PM",Mouse wheel stopped,40,405,0.00,0.00,1.00,11 Wheel actions
+2010:02:26,15:41:34,952,"Explorer.EXE","Notification Area",Left mouse button pressed,1101,1010,1221.37,1769.37,0.69, 
+2010:02:26,15:41:35,092,"Explorer.EXE","Notification Area",Left mouse button released,1101,1010,0.00,0.00,0.00, 
+2010:02:26,15:41:35,936,"uLog.exe","<Unknown window>",Left mouse button pressed,1133,982,42.52,47.97,0.89, 
+2010:02:26,15:41:36,046,"uLog.exe","<Unknown window>",Left mouse button released,1133,982,0.00,0.00,0.00, 
+2010:02:26,15:41:36,046,"uLog.exe"," ",Logging stopped,-1,-1,-1.00,-1.00,-1.00, 

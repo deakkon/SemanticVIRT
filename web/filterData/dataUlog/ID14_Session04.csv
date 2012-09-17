@@ -1,0 +1,336 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:03:01,17:49:30,488,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:03:01,17:49:32,707,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1157,32,1157.44,2808.99,0.41, 
+2010:03:01,17:49:32,769,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1157,32,0.00,0.00,0.00, 
+2010:03:01,17:49:34,582,"Explorer.EXE","<Unknown window>",Left mouse button pressed,1137,936,904.22,1021.41,0.89, 
+2010:03:01,17:49:34,785,"Explorer.EXE","<Unknown window>",Left mouse button released,1137,936,0.00,2.00,0.00, 
+2010:03:01,17:49:39,082,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1271,274,675.43,2143.54,0.32, 
+2010:03:01,17:49:39,441,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1268,333,59.08,59.81,0.99, 
+2010:03:01,17:49:40,285,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,610,618,717.07,885.82,0.81, 
+2010:03:01,17:49:40,410,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,610,618,0.00,0.00,0.00, 
+2010:03:01,17:49:43,223,"firefox.exe","Peanut Allergy in Kids: Briti...osure - TIME - Mozilla Firefox",Left mouse button pressed,10,60,819.37,1620.07,0.51, 
+2010:03:01,17:49:43,301,"firefox.exe","Peanut Allergy in Kids: Briti...osure - TIME - Mozilla Firefox",Left mouse button released,10,60,0.00,0.00,0.00, 
+2010:03:01,17:49:48,254,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1269,330,1287.63,1726.98,0.75, 
+2010:03:01,17:49:49,754,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1271,334,4.47,5.41,0.83, 
+2010:03:01,17:49:50,614,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,443,473,839.59,859.20,0.98, 
+2010:03:01,17:49:50,723,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,443,473,0.00,0.00,0.00, 
+2010:03:01,17:49:53,332,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Left mouse button pressed,1269,167,880.86,1571.36,0.56, 
+2010:03:01,17:50:22,223,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Left mouse button released,1269,309,142.00,142.00,1.00, 
+2010:03:01,17:50:34,083,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Left mouse button pressed,1272,316,7.62,1416.01,0.01, 
+2010:03:01,17:50:39,693,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Left mouse button released,1272,337,21.00,21.00,1.00, 
+2010:03:01,17:51:20,693,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Left mouse button pressed,1267,340,5.83,1331.53,0.00, 
+2010:03:01,17:51:32,162,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Left mouse button released,1267,381,41.00,41.00,1.00, 
+2010:03:01,17:51:32,928,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Left mouse button pressed,1272,380,5.10,10.00,0.51, 
+2010:03:01,17:51:50,788,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Left mouse button released,1269,440,60.07,63.00,0.95, 
+2010:03:01,17:51:51,569,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Left mouse button pressed,1272,444,5.00,29.89,0.17, 
+2010:03:01,17:52:03,679,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Left mouse button released,1272,463,19.00,21.00,0.90, 
+2010:03:01,17:52:04,679,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Left mouse button pressed,1267,471,9.43,24.48,0.39, 
+2010:03:01,17:52:13,585,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Left mouse button released,1257,552,81.61,87.64,0.93, 
+2010:03:01,17:52:16,304,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Left mouse button pressed,3,56,1348.53,1500.02,0.90, 
+2010:03:01,17:52:16,444,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Left mouse button released,3,56,0.00,0.00,0.00, 
+2010:03:01,17:52:23,366,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1268,394,1309.38,3009.98,0.44, 
+2010:03:01,17:52:24,226,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1273,317,77.16,78.14,0.99, 
+2010:03:01,17:52:25,788,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,725,259,551.06,907.93,0.61, 
+2010:03:01,17:52:25,882,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,725,259,0.00,0.00,0.00, 
+2010:03:01,17:52:33,945,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button pressed,1274,200,552.16,2593.95,0.21, 
+2010:03:01,17:52:38,210,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button released,1265,268,68.59,114.30,0.60, 
+2010:03:01,17:52:39,632,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button pressed,278,417,998.18,1296.48,0.77, 
+2010:03:01,17:52:39,773,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button released,278,417,0.00,0.00,0.00, 
+2010:03:01,17:52:41,976,"firefox.exe","Temple Grandin: Why Autism is...ft - CNN.com - Mozilla Firefox",Left mouse button pressed,1268,195,1014.59,1734.17,0.59, 
+2010:03:01,17:52:46,804,"firefox.exe","Temple Grandin: Why Autism is...ft - CNN.com - Mozilla Firefox",Left mouse button released,1273,308,113.11,114.97,0.98, 
+2010:03:01,17:52:47,508,"firefox.exe","Temple Grandin: Why Autism is...ft - CNN.com - Mozilla Firefox",Left mouse button pressed,1271,300,8.25,10.00,0.82, 
+2010:03:01,17:52:57,914,"firefox.exe","Temple Grandin: Why Autism is...ft - CNN.com - Mozilla Firefox",Left mouse button released,1271,336,36.00,36.00,1.00, 
+2010:03:01,17:53:05,727,"firefox.exe","Temple Grandin: Why Autism is...ft - CNN.com - Mozilla Firefox",Left mouse button pressed,1268,348,12.37,2680.51,0.00, 
+2010:03:01,17:53:07,289,"firefox.exe","Temple Grandin: Why Autism is...ft - CNN.com - Mozilla Firefox",Left mouse button released,1268,377,29.00,29.00,1.00, 
+2010:03:01,17:53:09,602,"firefox.exe","Temple Grandin: Why Autism is...ft - CNN.com - Mozilla Firefox",Left mouse button pressed,12,60,1295.39,1461.58,0.89, 
+2010:03:01,17:53:09,774,"firefox.exe","Temple Grandin: Why Autism is...ft - CNN.com - Mozilla Firefox",Left mouse button released,12,60,0.00,0.00,0.00, 
+2010:03:01,17:53:14,664,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button pressed,689,487,800.41,2018.73,0.40, 
+2010:03:01,17:53:14,805,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button released,689,487,0.00,0.00,0.00, 
+2010:03:01,17:53:17,274,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button pressed,218,340,493.41,611.51,0.81, 
+2010:03:01,17:53:17,383,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button released,218,340,0.00,0.00,0.00, 
+2010:03:01,17:53:19,602,"firefox.exe","Video - Breaking News Videos from CNN.com - Mozilla Firefox",Left mouse button pressed,20,55,347.03,2773.22,0.13, 
+2010:03:01,17:53:19,649,"firefox.exe","Video - Breaking News Videos from CNN.com - Mozilla Firefox",Left mouse button released,20,55,0.00,0.00,0.00, 
+2010:03:01,17:53:29,258,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button pressed,1270,348,1283.88,3855.19,0.33, 
+2010:03:01,17:53:40,149,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button released,1200,226,140.66,582.01,0.24, 
+2010:03:01,17:53:41,040,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button pressed,565,321,642.07,726.35,0.88, 
+2010:03:01,17:53:41,118,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button released,565,321,0.00,0.00,0.00, 
+2010:03:01,17:53:44,790,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button pressed,1270,213,713.22,1662.86,0.43, 
+2010:03:01,17:53:47,696,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button released,1270,326,113.00,114.24,0.99, 
+2010:03:01,17:53:51,774,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button pressed,542,547,760.81,1179.06,0.65, 
+2010:03:01,17:53:51,899,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button released,542,547,0.00,0.00,0.00, 
+2010:03:01,17:53:54,431,"firefox.exe","Does Obesity Rehab Help Overw...ough? - TIME - Mozilla Firefox",Left mouse button pressed,490,122,428.17,1745.42,0.25, 
+2010:03:01,17:53:54,509,"firefox.exe","Does Obesity Rehab Help Overw...ough? - TIME - Mozilla Firefox",Left mouse button released,490,122,0.00,0.00,0.00, 
+2010:03:01,17:53:59,353,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button pressed,547,563,444.67,1028.93,0.43, 
+2010:03:01,17:53:59,525,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button released,547,563,0.00,0.00,0.00, 
+2010:03:01,17:54:04,072,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button pressed,1267,184,813.66,1916.16,0.42, 
+2010:03:01,17:54:19,587,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button released,1269,236,52.04,54.00,0.96, 
+2010:03:01,17:54:21,478,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button pressed,145,546,1165.97,1301.10,0.90, 
+2010:03:01,17:54:21,603,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button released,145,546,0.00,0.00,0.00, 
+2010:03:01,17:54:41,041,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:41,650,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:42,041,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:42,447,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:43,525,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:43,791,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:44,119,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:44,557,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:45,072,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:45,510,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:46,369,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:47,291,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:49,088,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:49,838,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:53,369,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:54,291,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:54,854,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:55,463,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:55,854,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Up arrow
+2010:03:01,17:54:56,854,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:56,932,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:54:57,369,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Up arrow
+2010:03:01,17:55:10,463,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:10,792,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:11,292,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:11,995,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:12,292,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:12,635,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:12,917,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:13,276,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:14,088,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:15,510,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:16,745,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:17,885,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:19,073,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:21,307,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:22,182,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Up arrow
+2010:03:01,17:55:22,886,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:23,745,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:29,167,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:29,729,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:30,979,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:31,761,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:32,636,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:39,433,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:39,870,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:40,276,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:40,839,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:41,464,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:55:42,386,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Key pressed,144,546,-1.00,-1.00,1.00,Down arrow
+2010:03:01,17:56:00,621,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button pressed,1266,316,1144.35,3001.77,0.38, 
+2010:03:01,17:56:09,058,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button released,1266,346,30.00,30.00,1.00, 
+2010:03:01,17:56:19,137,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button pressed,1268,341,5.39,21.00,0.26, 
+2010:03:01,17:56:30,512,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button released,1268,384,43.00,43.00,1.00, 
+2010:03:01,17:56:38,434,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button pressed,1272,396,12.65,283.84,0.04, 
+2010:03:01,17:57:29,341,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button released,1266,449,53.34,233.64,0.23, 
+2010:03:01,17:57:31,669,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button pressed,1267,442,7.07,406.81,0.02, 
+2010:03:01,17:57:54,873,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button released,1269,471,29.07,33.00,0.88, 
+2010:03:01,17:58:32,905,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button pressed,1272,469,3.61,1166.38,0.00, 
+2010:03:01,17:58:38,842,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button released,1273,507,38.01,38.41,0.99, 
+2010:03:01,17:58:40,436,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button pressed,1273,507,0.00,6.00,0.00, 
+2010:03:01,17:58:53,108,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button released,1273,528,21.00,21.00,1.00, 
+2010:03:01,17:59:40,047,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button pressed,1270,516,12.37,149.00,0.08, 
+2010:03:01,17:59:43,422,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button released,1269,576,60.01,61.00,0.98, 
+2010:03:01,17:59:45,656,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button pressed,132,402,1150.24,1347.78,0.85, 
+2010:03:01,17:59:45,797,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button released,132,402,0.00,0.00,0.00, 
+2010:03:01,17:59:57,641,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button pressed,17,60,360.82,1192.77,0.30, 
+2010:03:01,17:59:57,813,"firefox.exe","The next frontier in athletic...es - CNN.com - Mozilla Firefox",Left mouse button released,17,60,0.00,0.00,0.00, 
+2010:03:01,18:00:05,750,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button pressed,634,636,844.08,2197.23,0.38, 
+2010:03:01,18:00:05,844,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button released,634,636,0.00,0.00,0.00, 
+2010:03:01,18:00:08,938,"firefox.exe","Kevin Smith: 'I'm never going...n' - CNN.com - Mozilla Firefox",Left mouse button pressed,1271,175,786.31,2098.41,0.37, 
+2010:03:01,18:00:28,595,"firefox.exe","Kevin Smith: 'I'm never going...n' - CNN.com - Mozilla Firefox",Left mouse button released,1270,354,179.00,181.41,0.99, 
+2010:03:01,18:00:32,220,"firefox.exe","Kevin Smith: 'I'm never going...n' - CNN.com - Mozilla Firefox",Left mouse button pressed,1273,354,3.00,443.32,0.01, 
+2010:03:01,18:00:39,517,"firefox.exe","Kevin Smith: 'I'm never going...n' - CNN.com - Mozilla Firefox",Left mouse button released,1274,383,29.02,30.00,0.97, 
+2010:03:01,18:00:57,736,"firefox.exe","Kevin Smith: 'I'm never going...n' - CNN.com - Mozilla Firefox",Left mouse button pressed,10,60,1304.62,1827.67,0.71, 
+2010:03:01,18:00:57,908,"firefox.exe","Kevin Smith: 'I'm never going...n' - CNN.com - Mozilla Firefox",Left mouse button released,10,60,0.00,0.00,0.00, 
+2010:03:01,18:01:04,361,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button pressed,1267,443,1314.05,2616.78,0.50, 
+2010:03:01,18:01:08,877,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button released,1265,509,66.03,69.55,0.95, 
+2010:03:01,18:01:09,892,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button pressed,374,680,907.26,1063.71,0.85, 
+2010:03:01,18:01:09,986,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button released,374,680,0.00,0.00,0.00, 
+2010:03:01,18:01:13,439,"firefox.exe","How to fight childhood obesit...ps - CNN.com - Mozilla Firefox",Left mouse button pressed,1263,171,1024.40,2047.85,0.50, 
+2010:03:01,18:01:14,142,"firefox.exe","How to fight childhood obesit...ps - CNN.com - Mozilla Firefox",Left mouse button released,1263,197,26.00,26.00,1.00, 
+2010:03:01,18:01:14,845,"firefox.exe","How to fight childhood obesit...ps - CNN.com - Mozilla Firefox",Left mouse button pressed,1270,169,28.86,42.07,0.69, 
+2010:03:01,18:01:15,689,"firefox.exe","How to fight childhood obesit...ps - CNN.com - Mozilla Firefox",Left mouse button released,1269,183,14.04,16.41,0.86, 
+2010:03:01,18:01:28,252,"firefox.exe","How to fight childhood obesit...ps - CNN.com - Mozilla Firefox",Left mouse button pressed,1269,195,12.00,442.86,0.03, 
+2010:03:01,18:02:06,190,"firefox.exe","How to fight childhood obesit...ps - CNN.com - Mozilla Firefox",Left mouse button released,1267,324,129.02,137.65,0.94, 
+2010:03:01,18:02:07,112,"firefox.exe","How to fight childhood obesit...ps - CNN.com - Mozilla Firefox",Left mouse button pressed,1272,315,10.30,69.37,0.15, 
+2010:03:01,18:02:22,065,"firefox.exe","How to fight childhood obesit...ps - CNN.com - Mozilla Firefox",Left mouse button released,1272,386,71.00,73.00,0.97, 
+2010:03:01,18:02:29,175,"firefox.exe","How to fight childhood obesit...ps - CNN.com - Mozilla Firefox",Left mouse button pressed,1272,408,22.00,490.84,0.04, 
+2010:03:01,18:03:03,957,"firefox.exe","How to fight childhood obesit...ps - CNN.com - Mozilla Firefox",Left mouse button released,1273,484,76.01,103.00,0.74, 
+2010:03:01,18:03:05,316,"firefox.exe","How to fight childhood obesit...ps - CNN.com - Mozilla Firefox",Left mouse button pressed,6,64,1334.80,1621.20,0.82, 
+2010:03:01,18:03:05,394,"firefox.exe","How to fight childhood obesit...ps - CNN.com - Mozilla Firefox",Left mouse button released,6,63,1.00,1.00,1.00, 
+2010:03:01,18:03:11,535,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button pressed,1102,676,1255.78,3439.88,0.37, 
+2010:03:01,18:03:11,660,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button released,1102,676,0.00,0.00,0.00, 
+2010:03:01,18:03:19,770,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button pressed,494,689,608.14,711.23,0.86, 
+2010:03:01,18:03:19,863,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button released,493,689,1.00,1.00,1.00, 
+2010:03:01,18:03:22,895,"firefox.exe","'Big' concerns surround new r...ow - CNN.com - Mozilla Firefox",Left mouse button pressed,1268,188,922.84,1956.27,0.47, 
+2010:03:01,18:03:35,926,"firefox.exe","'Big' concerns surround new r...ow - CNN.com - Mozilla Firefox",Left mouse button released,1271,287,99.05,99.63,0.99, 
+2010:03:01,18:03:38,254,"firefox.exe","'Big' concerns surround new r...ow - CNN.com - Mozilla Firefox",Left mouse button pressed,1266,295,9.43,58.95,0.16, 
+2010:03:01,18:03:54,005,"firefox.exe","'Big' concerns surround new r...ow - CNN.com - Mozilla Firefox",Left mouse button released,1240,320,36.07,246.30,0.15, 
+2010:03:01,18:03:55,098,"firefox.exe","'Big' concerns surround new r...ow - CNN.com - Mozilla Firefox",Left mouse button pressed,1268,317,28.16,33.06,0.85, 
+2010:03:01,18:04:10,036,"firefox.exe","'Big' concerns surround new r...ow - CNN.com - Mozilla Firefox",Left mouse button released,1224,326,44.91,575.91,0.08, 
+2010:03:01,18:04:12,958,"firefox.exe","'Big' concerns surround new r...ow - CNN.com - Mozilla Firefox",Left mouse button pressed,1269,327,45.01,280.19,0.16, 
+2010:03:01,18:04:45,381,"firefox.exe","'Big' concerns surround new r...ow - CNN.com - Mozilla Firefox",Left mouse button released,1270,459,132.00,133.00,0.99, 
+2010:03:01,18:04:55,443,"firefox.exe","'Big' concerns surround new r...ow - CNN.com - Mozilla Firefox",Left mouse button pressed,1272,464,5.39,174.43,0.03, 
+2010:03:01,18:04:56,631,"firefox.exe","'Big' concerns surround new r...ow - CNN.com - Mozilla Firefox",Left mouse button released,1244,177,288.36,291.29,0.99, 
+2010:03:01,18:04:58,287,"firefox.exe","'Big' concerns surround new r...ow - CNN.com - Mozilla Firefox",Left mouse button pressed,26,59,1223.70,1568.33,0.78, 
+2010:03:01,18:04:58,412,"firefox.exe","'Big' concerns surround new r...ow - CNN.com - Mozilla Firefox",Left mouse button released,26,59,0.00,0.00,0.00, 
+2010:03:01,18:05:05,397,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button pressed,1270,356,1278.96,2231.11,0.57, 
+2010:03:01,18:05:06,397,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button released,1270,229,127.00,127.00,1.00, 
+2010:03:01,18:05:08,397,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button pressed,732,230,538.00,1234.48,0.44, 
+2010:03:01,18:05:08,491,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button released,732,230,0.00,0.00,0.00, 
+2010:03:01,18:05:11,178,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button pressed,1270,180,540.32,1284.77,0.42, 
+2010:03:01,18:05:11,866,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button released,1272,260,80.02,80.40,1.00, 
+2010:03:01,18:05:17,022,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button pressed,622,628,746.94,1158.54,0.64, 
+2010:03:01,18:05:17,147,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button released,622,628,0.00,0.00,0.00, 
+2010:03:01,18:05:20,913,"firefox.exe","Tracy Morgan credits teen son...im - CNN.com - Mozilla Firefox",Left mouse button pressed,1272,182,788.30,1616.68,0.49, 
+2010:03:01,18:05:38,538,"Explorer.EXE","Program Manager",Left mouse button released,1280,330,148.22,150.35,0.99, 
+2010:03:01,18:05:40,413,"firefox.exe","Tracy Morgan credits teen son...im - CNN.com - Mozilla Firefox",Left mouse button pressed,1265,359,32.65,189.29,0.17, 
+2010:03:01,18:05:44,741,"firefox.exe","Tracy Morgan credits teen son...im - CNN.com - Mozilla Firefox",Left mouse button released,1265,369,10.00,10.00,1.00, 
+2010:03:01,18:05:46,413,"firefox.exe","Tracy Morgan credits teen son...im - CNN.com - Mozilla Firefox",Left mouse button pressed,1267,368,2.24,3.00,0.75, 
+2010:03:01,18:06:13,164,"firefox.exe","Tracy Morgan credits teen son...im - CNN.com - Mozilla Firefox",Left mouse button released,1266,432,64.01,67.00,0.96, 
+2010:03:01,18:06:27,961,"firefox.exe","Tracy Morgan credits teen son...im - CNN.com - Mozilla Firefox",Left mouse button pressed,25,65,1294.13,1838.57,0.70, 
+2010:03:01,18:06:28,070,"firefox.exe","Tracy Morgan credits teen son...im - CNN.com - Mozilla Firefox",Left mouse button released,25,65,0.00,0.00,0.00, 
+2010:03:01,18:06:33,742,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button pressed,530,645,769.04,1422.02,0.54, 
+2010:03:01,18:06:33,852,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button released,530,645,0.00,0.00,0.00, 
+2010:03:01,18:06:37,258,"firefox.exe","What your heart and brain are...ve - CNN.com - Mozilla Firefox",Left mouse button pressed,1274,175,880.02,2242.44,0.39, 
+2010:03:01,18:06:59,227,"firefox.exe","What your heart and brain are...ve - CNN.com - Mozilla Firefox",Left mouse button released,1255,335,161.12,176.76,0.91, 
+2010:03:01,18:07:00,243,"firefox.exe","What your heart and brain are...ve - CNN.com - Mozilla Firefox",Left mouse button pressed,1276,346,23.71,27.19,0.87, 
+2010:03:01,18:07:11,696,"firefox.exe","What your heart and brain are...ve - CNN.com - Mozilla Firefox",Left mouse button released,1277,368,22.02,29.00,0.76, 
+2010:03:01,18:07:40,712,"firefox.exe","What your heart and brain are...ve - CNN.com - Mozilla Firefox",Left mouse button pressed,1277,368,0.00,4.00,0.00, 
+2010:03:01,18:07:46,212,"firefox.exe","What your heart and brain are...ve - CNN.com - Mozilla Firefox",Left mouse button released,1257,421,56.65,72.07,0.79, 
+2010:03:01,18:08:36,260,"firefox.exe","What your heart and brain are...ve - CNN.com - Mozilla Firefox",Left mouse button pressed,474,543,792.45,2835.15,0.28, 
+2010:03:01,18:08:37,151,"firefox.exe","What your heart and brain are...ve - CNN.com - Mozilla Firefox",Left mouse button released,672,541,198.01,199.24,0.99, 
+2010:03:01,18:08:38,823,"firefox.exe","What your heart and brain are...ve - CNN.com - Mozilla Firefox",Left mouse button pressed,893,558,221.65,350.47,0.63, 
+2010:03:01,18:08:38,916,"firefox.exe","What your heart and brain are...ve - CNN.com - Mozilla Firefox",Left mouse button released,893,558,0.00,0.00,0.00, 
+2010:03:01,18:08:40,666,"firefox.exe","What your heart and brain are...ve - CNN.com - Mozilla Firefox",Left mouse button pressed,1265,412,399.62,492.10,0.81, 
+2010:03:01,18:08:43,448,"firefox.exe","What your heart and brain are...ve - CNN.com - Mozilla Firefox",Left mouse button released,1264,450,38.01,39.00,0.97, 
+2010:03:01,18:08:59,432,"firefox.exe","What your heart and brain are...ve - CNN.com - Mozilla Firefox",Left mouse button pressed,1269,457,8.60,3736.91,0.00, 
+2010:03:01,18:09:01,901,"firefox.exe","What your heart and brain are...ve - CNN.com - Mozilla Firefox",Left mouse button released,1267,494,37.05,39.00,0.95, 
+2010:03:01,18:09:48,574,"firefox.exe","What your heart and brain are...ve - CNN.com - Mozilla Firefox",Left mouse button pressed,20,55,1322.02,2151.08,0.61, 
+2010:03:01,18:09:48,683,"firefox.exe","What your heart and brain are...ve - CNN.com - Mozilla Firefox",Left mouse button released,20,55,0.00,0.00,0.00, 
+2010:03:01,18:09:58,762,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button pressed,561,680,826.62,1640.75,0.50, 
+2010:03:01,18:09:58,871,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button released,561,680,0.00,0.00,0.00, 
+2010:03:01,18:10:02,824,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Left mouse button pressed,1265,169,869.91,1778.01,0.49, 
+2010:03:01,18:10:07,418,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Left mouse button released,1278,242,74.15,78.84,0.94, 
+2010:03:01,18:10:30,840,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Left mouse button pressed,1269,251,12.73,130.55,0.10, 
+2010:03:01,18:10:32,465,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Left mouse button released,1269,299,48.00,48.00,1.00, 
+2010:03:01,18:10:56,903,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Left mouse button pressed,1270,298,1.41,2.00,0.71, 
+2010:03:01,18:10:58,982,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Left mouse button released,1278,361,63.51,65.35,0.97, 
+2010:03:01,18:11:19,920,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:20,201,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:20,420,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:20,685,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:20,904,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:21,779,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:22,732,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:23,716,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:24,623,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:24,888,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:25,107,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:25,467,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:26,513,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:29,545,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:30,232,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:30,763,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:31,154,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:31,513,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:35,279,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:38,842,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:39,467,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:40,201,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:41,123,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Up arrow
+2010:03:01,18:11:41,357,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Up arrow
+2010:03:01,18:11:41,701,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Up arrow
+2010:03:01,18:11:41,873,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Up arrow
+2010:03:01,18:11:42,014,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Up arrow
+2010:03:01,18:11:42,451,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:47,061,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:47,404,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:47,967,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:48,264,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:49,061,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:52,748,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:53,608,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:54,170,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:55,498,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:58,577,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:11:59,108,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:00,045,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:00,608,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:03,061,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:03,952,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:07,702,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:08,077,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:09,311,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:09,780,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:18,139,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:18,733,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:19,030,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:19,452,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:19,968,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:20,749,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:21,124,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:21,436,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:21,936,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:26,827,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:27,171,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:27,405,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:27,624,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:28,046,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:28,327,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:28,702,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:29,905,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:30,655,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:31,062,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:31,530,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:41,266,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:41,547,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:41,782,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:41,954,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:42,329,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:12:42,813,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Key pressed,1184,363,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:13:21,960,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Left mouse button pressed,18,59,1295.69,2261.86,0.57, 
+2010:03:01,18:13:22,085,"firefox.exe","Revised psychiatry manual tar...rs - CNN.com - Mozilla Firefox",Left mouse button released,18,59,0.00,0.00,0.00, 
+2010:03:01,18:13:24,976,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button pressed,1275,246,1270.83,1671.96,0.76, 
+2010:03:01,18:13:27,461,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button released,1272,358,112.04,113.65,0.99, 
+2010:03:01,18:13:28,305,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button pressed,212,192,1072.92,1149.96,0.93, 
+2010:03:01,18:13:28,399,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button released,211,192,1.00,1.00,1.00, 
+2010:03:01,18:13:31,040,"firefox.exe","Is dissociative identity diso...l? - CNN.com - Mozilla Firefox",Left mouse button pressed,1272,170,1061.23,1617.22,0.66, 
+2010:03:01,18:13:37,072,"Explorer.EXE","Program Manager",Left mouse button released,1290,340,170.95,196.31,0.87, 
+2010:03:01,18:14:37,379,"firefox.exe","Is dissociative identity diso...l? - CNN.com - Mozilla Firefox",Left mouse button pressed,1266,409,73.05,3478.47,0.02, 
+2010:03:01,18:14:48,115,"firefox.exe","Is dissociative identity diso...l? - CNN.com - Mozilla Firefox",Left mouse button released,1266,615,206.00,221.72,0.93, 
+2010:03:01,18:16:24,819,"firefox.exe","Is dissociative identity diso...l? - CNN.com - Mozilla Firefox",Left mouse button pressed,9,59,1374.48,1906.63,0.72, 
+2010:03:01,18:16:24,913,"firefox.exe","Is dissociative identity diso...l? - CNN.com - Mozilla Firefox",Left mouse button released,9,59,0.00,0.00,0.00, 
+2010:03:01,18:16:28,116,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button pressed,552,395,638.55,1656.86,0.39, 
+2010:03:01,18:16:28,210,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button released,552,395,0.00,0.00,0.00, 
+2010:03:01,18:16:31,539,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Left mouse button pressed,1263,197,738.05,2031.97,0.36, 
+2010:03:01,18:16:37,586,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Left mouse button released,1265,218,21.10,22.41,0.94, 
+2010:03:01,18:16:40,853,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Left mouse button pressed,1262,165,53.08,67.31,0.79, 
+2010:03:01,18:16:41,353,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Left mouse button released,1262,192,27.00,27.00,1.00, 
+2010:03:01,18:16:42,400,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Left mouse button pressed,1270,176,17.89,35.24,0.51, 
+2010:03:01,18:16:44,916,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Left mouse button released,1276,240,64.28,65.20,0.99, 
+2010:03:01,18:17:20,719,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Left mouse button pressed,1272,240,4.00,2409.60,0.00, 
+2010:03:01,18:17:41,893,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Left mouse button released,1272,352,112.00,116.00,0.97, 
+2010:03:01,18:17:50,191,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Left mouse button pressed,1271,347,5.10,2843.22,0.00, 
+2010:03:01,18:18:09,348,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Left mouse button released,1272,390,43.01,44.00,0.98, 
+2010:03:01,18:18:18,630,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Left mouse button pressed,1268,394,5.66,5567.06,0.00, 
+2010:03:01,18:18:32,631,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Left mouse button released,1268,426,32.00,32.00,1.00, 
+2010:03:01,18:19:01,430,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Left mouse button pressed,25,65,1294.36,2575.05,0.50, 
+2010:03:01,18:19:01,524,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Left mouse button released,25,65,0.00,0.00,0.00, 
+2010:03:01,18:19:04,805,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button pressed,589,518,723.40,1313.88,0.55, 
+2010:03:01,18:19:04,930,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button released,589,518,0.00,0.00,0.00, 
+2010:03:01,18:19:07,696,"firefox.exe","Therapy teaches that incest i...al - CNN.com - Mozilla Firefox",Left mouse button pressed,1273,175,765.18,2165.94,0.35, 
+2010:03:01,18:19:08,337,"Explorer.EXE","Program Manager",Left mouse button released,1284,246,71.85,72.71,0.99, 
+2010:03:01,18:19:09,196,"firefox.exe","Therapy teaches that incest i...al - CNN.com - Mozilla Firefox",Left mouse button pressed,24,69,1272.37,1454.43,0.87, 
+2010:03:01,18:19:09,290,"firefox.exe","Therapy teaches that incest i...al - CNN.com - Mozilla Firefox",Left mouse button released,24,69,0.00,0.00,0.00, 
+2010:03:01,18:19:11,540,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button pressed,1273,364,1283.37,1449.20,0.89, 
+2010:03:01,18:19:12,134,"Explorer.EXE","Program Manager",Left mouse button released,1280,315,49.50,50.97,0.97, 
+2010:03:01,18:19:13,978,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button pressed,394,641,944.07,1490.79,0.63, 
+2010:03:01,18:19:14,087,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button released,394,641,0.00,0.00,0.00, 
+2010:03:01,18:19:18,681,"firefox.exe","Mental Health: News & Videos ...h -- CNN.com - Mozilla Firefox",Left mouse button pressed,1267,11,1076.58,1630.90,0.66, 
+2010:03:01,18:19:18,806,"firefox.exe","Mental Health: News & Videos ...h -- CNN.com - Mozilla Firefox",Left mouse button released,1267,11,0.00,0.00,0.00, 
+2010:03:01,18:19:46,902,"Explorer.EXE","Notification Area",Left mouse button pressed,1133,1013,1010.92,1076.29,0.94, 
+2010:03:01,18:19:47,011,"Explorer.EXE","Notification Area",Left mouse button released,1133,1013,0.00,0.00,0.00, 
+2010:03:01,18:19:48,496,"uLog.exe","<Unknown window>",Left mouse button pressed,1178,980,55.80,57.31,0.97, 
+2010:03:01,18:19:48,590,"uLog.exe","<Unknown window>",Left mouse button released,1178,980,0.00,0.00,0.00, 
+2010:03:01,18:19:48,590,"uLog.exe"," ",Logging stopped,-1,-1,-1.00,-1.00,-1.00, 

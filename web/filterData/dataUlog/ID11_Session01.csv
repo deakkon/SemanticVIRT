@@ -1,0 +1,113 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:02:19,15:47:44,282,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:02:19,15:48:04,798,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,585,648,873.00,2204.80,0.40, 
+2010:02:19,15:48:04,876,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,585,648,0.00,0.00,0.00, 
+2010:02:19,15:48:13,188,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Mouse wheel,681,724,122.44,550.72,0.22, 
+2010:02:19,15:48:28,391,"agent.exe","<Unknown window>",Mouse wheel stopped,700,694,0.00,0.00,1.00,4 Wheel actions
+2010:02:19,15:48:49,923,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Mouse wheel,700,694,34.71,79.42,0.44, 
+2010:02:19,15:49:00,188,"Explorer.EXE","3:48 PM",Mouse wheel stopped,696,695,0.00,0.00,1.00,6 Wheel actions
+2010:02:19,15:49:47,329,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Mouse wheel,691,694,9.00,1170.22,0.01, 
+2010:02:19,15:50:00,188,"Explorer.EXE","3:49 PM",Mouse wheel stopped,691,694,0.00,0.00,1.00,2 Wheel actions
+2010:02:19,15:50:13,673,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Mouse wheel,691,694,0.00,0.00,0.00, 
+2010:02:19,15:51:00,188,"Explorer.EXE","3:50 PM",Mouse wheel stopped,711,694,0.00,0.00,1.00,11 Wheel actions
+2010:02:19,15:51:04,110,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Mouse wheel,710,694,28.02,31.00,0.90, 
+2010:02:19,15:52:00,188,"Explorer.EXE","3:51 PM",Mouse wheel stopped,709,694,0.00,0.00,1.00,7 Wheel actions
+2010:02:19,15:52:07,563,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Mouse wheel,705,690,6.40,8.41,0.76, 
+2010:02:19,15:53:00,188,"Explorer.EXE","3:52 PM",Mouse wheel stopped,739,696,0.00,0.00,1.00,9 Wheel actions
+2010:02:19,15:53:09,173,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Mouse wheel,768,696,29.00,33.00,0.88, 
+2010:02:19,15:53:12,407,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Mouse wheel stopped,439,518,0.00,0.00,1.00,16 Wheel actions
+2010:02:19,15:53:12,407,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Left mouse button pressed,439,518,374.07,409.30,0.91, 
+2010:02:19,15:53:12,548,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Left mouse button released,439,518,0.00,0.00,0.00, 
+2010:02:19,15:53:15,985,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Mouse wheel,829,656,413.70,432.82,0.96, 
+2010:02:19,15:54:00,188,"Explorer.EXE","3:53 PM",Mouse wheel stopped,678,730,0.00,0.00,1.00,7 Wheel actions
+2010:02:19,15:54:01,141,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Mouse wheel,678,730,10.77,12.83,0.84, 
+2010:02:19,15:55:00,188,"Explorer.EXE","3:54 PM",Mouse wheel stopped,689,679,0.00,0.00,1.00,14 Wheel actions
+2010:02:19,15:55:06,001,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Mouse wheel,689,679,0.00,0.00,0.00, 
+2010:02:19,15:56:00,188,"Explorer.EXE","3:55 PM",Mouse wheel stopped,745,688,0.00,0.00,1.00,7 Wheel actions
+2010:02:19,15:56:01,016,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Mouse wheel,745,688,0.00,0.00,0.00, 
+2010:02:19,15:57:00,188,"Explorer.EXE","3:56 PM",Mouse wheel stopped,815,674,0.00,0.00,1.00,7 Wheel actions
+2010:02:19,15:57:12,360,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Mouse wheel,815,674,0.00,0.00,0.00, 
+2010:02:19,15:58:00,188,"Explorer.EXE","3:57 PM",Mouse wheel stopped,810,664,0.00,0.00,1.00,9 Wheel actions
+2010:02:19,15:58:03,032,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Mouse wheel,810,664,0.00,0.00,0.00, 
+2010:02:19,15:58:37,688,"agent.exe","<Unknown window>",Mouse wheel stopped,807,662,0.00,0.00,1.00,10 Wheel actions
+2010:02:19,15:59:42,813,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Mouse wheel,811,671,9.85,454.20,0.02, 
+2010:02:19,16:00:00,188,"Explorer.EXE","3:59 PM",Mouse wheel stopped,805,660,0.00,0.00,1.00,5 Wheel actions
+2010:02:19,16:00:22,485,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Mouse wheel,805,660,12.53,24.41,0.51, 
+2010:02:19,16:01:00,188,"Explorer.EXE","4:00 PM",Mouse wheel stopped,797,650,0.00,0.00,1.00,6 Wheel actions
+2010:02:19,16:01:13,219,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Mouse wheel,797,650,0.00,0.00,0.00, 
+2010:02:19,16:01:38,813,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Mouse wheel stopped,300,518,0.00,0.00,1.00,59 Wheel actions
+2010:02:19,16:01:38,813,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Left mouse button pressed,300,518,412.44,427.97,0.96, 
+2010:02:19,16:01:39,001,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Left mouse button released,300,518,0.00,0.00,0.00, 
+2010:02:19,16:01:55,485,"firefox.exe","Tiger Woods' apology: Full tr...pt - CNN.com - Mozilla Firefox",Mouse wheel,656,577,360.86,628.17,0.57, 
+2010:02:19,16:02:00,188,"Explorer.EXE","4:01 PM",Mouse wheel stopped,656,577,0.00,0.00,1.00,1 Wheel actions
+2010:02:19,16:02:05,766,"firefox.exe","Tiger Woods' apology: Full tr...pt - CNN.com - Mozilla Firefox",Mouse wheel,656,577,0.00,0.00,0.00, 
+2010:02:19,16:03:00,188,"Explorer.EXE","4:02 PM",Mouse wheel stopped,666,534,0.00,0.00,1.00,7 Wheel actions
+2010:02:19,16:03:04,282,"firefox.exe","Tiger Woods' apology: Full tr...pt - CNN.com - Mozilla Firefox",Mouse wheel,666,534,9.49,12.00,0.79, 
+2010:02:19,16:04:00,188,"Explorer.EXE","4:03 PM",Mouse wheel stopped,731,649,0.00,0.00,1.00,10 Wheel actions
+2010:02:19,16:04:17,891,"firefox.exe","Tiger Woods' apology: Full tr...pt - CNN.com - Mozilla Firefox",Mouse wheel,731,649,0.00,0.00,0.00, 
+2010:02:19,16:05:00,188,"Explorer.EXE","4:04 PM",Mouse wheel stopped,752,649,0.00,0.00,1.00,7 Wheel actions
+2010:02:19,16:05:08,751,"firefox.exe","Tiger Woods' apology: Full tr...pt - CNN.com - Mozilla Firefox",Mouse wheel,752,649,0.00,0.00,0.00, 
+2010:02:19,16:06:00,188,"Explorer.EXE","4:05 PM",Mouse wheel stopped,752,649,0.00,0.00,1.00,8 Wheel actions
+2010:02:19,16:06:08,657,"firefox.exe","Tiger Woods' apology: Full tr...pt - CNN.com - Mozilla Firefox",Mouse wheel,752,649,0.00,0.00,0.00, 
+2010:02:19,16:07:00,188,"Explorer.EXE","4:06 PM",Mouse wheel stopped,756,640,0.00,0.00,1.00,7 Wheel actions
+2010:02:19,16:07:07,548,"firefox.exe","Tiger Woods' apology: Full tr...pt - CNN.com - Mozilla Firefox",Mouse wheel,756,640,0.00,0.00,0.00, 
+2010:02:19,16:08:00,188,"Explorer.EXE","4:07 PM",Mouse wheel stopped,756,640,0.00,0.00,1.00,7 Wheel actions
+2010:02:19,16:08:00,798,"firefox.exe","Tiger Woods' apology: Full tr...pt - CNN.com - Mozilla Firefox",Mouse wheel,756,640,0.00,0.00,0.00, 
+2010:02:19,16:08:43,423,"agent.exe","<Unknown window>",Mouse wheel stopped,1014,506,0.00,0.00,1.00,2 Wheel actions
+2010:02:19,16:08:43,704,"firefox.exe","Tiger Woods' apology: Full tr...pt - CNN.com - Mozilla Firefox",Left mouse button pressed,1014,505,291.19,312.44,0.93, 
+2010:02:19,16:08:48,251,"firefox.exe","Tiger Woods' apology: Full tr...pt - CNN.com - Mozilla Firefox",Left mouse button released,975,210,297.57,888.00,0.34, 
+2010:02:19,16:08:49,985,"firefox.exe","Tiger Woods' apology: Full tr...pt - CNN.com - Mozilla Firefox",Left mouse button pressed,63,93,919.47,969.40,0.95, 
+2010:02:19,16:08:50,094,"firefox.exe","Tiger Woods' apology: Full tr...pt - CNN.com - Mozilla Firefox",Left mouse button released,63,93,0.00,0.00,0.00, 
+2010:02:19,16:08:51,079,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Left mouse button pressed,63,93,0.00,0.00,0.00, 
+2010:02:19,16:08:51,157,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Left mouse button released,63,93,0.00,0.00,0.00, 
+2010:02:19,16:08:53,782,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Left mouse button pressed,1019,371,995.60,1413.24,0.70, 
+2010:02:19,16:08:54,923,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Left mouse button released,1019,247,124.00,124.00,1.00, 
+2010:02:19,16:08:56,079,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Left mouse button pressed,63,88,969.13,987.08,0.98, 
+2010:02:19,16:08:56,173,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Left mouse button released,63,88,0.00,0.00,0.00, 
+2010:02:19,16:09:04,188,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,289,641,597.40,1866.48,0.32, 
+2010:02:19,16:09:21,688,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,136,527,0.00,0.00,1.00,14 Wheel actions
+2010:02:19,16:09:21,688,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,136,527,190.80,266.02,0.72, 
+2010:02:19,16:09:21,813,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,136,527,0.00,0.00,0.00, 
+2010:02:19,16:09:29,219,"firefox.exe","Campus Mourns for Death of Hi... CNN iReport - Mozilla Firefox",Left mouse button pressed,796,629,667.84,753.52,0.89, 
+2010:02:19,16:09:29,313,"firefox.exe","Campus Mourns for Death of Hi... CNN iReport - Mozilla Firefox",Left mouse button released,796,629,0.00,0.00,0.00, 
+2010:02:19,16:09:37,532,"firefox.exe","Campus Mourns for Death of Hi... CNN iReport - Mozilla Firefox",Mouse wheel,176,699,623.94,816.07,0.76, 
+2010:02:19,16:10:00,188,"Explorer.EXE","4:09 PM",Mouse wheel stopped,176,694,0.00,0.00,1.00,23 Wheel actions
+2010:02:19,16:10:06,454,"firefox.exe","Campus Mourns for Death of Hi... CNN iReport - Mozilla Firefox",Mouse wheel,176,694,0.00,0.00,0.00, 
+2010:02:19,16:11:00,188,"Explorer.EXE","4:10 PM",Mouse wheel stopped,156,696,0.00,0.00,1.00,4 Wheel actions
+2010:02:19,16:11:21,456,"firefox.exe","Campus Mourns for Death of Hi... CNN iReport - Mozilla Firefox",Mouse wheel,156,696,0.00,0.00,0.00, 
+2010:02:19,16:11:25,019,"firefox.exe","Campus Mourns for Death of Hi... CNN iReport - Mozilla Firefox",Mouse wheel stopped,91,179,0.00,0.00,1.00,17 Wheel actions
+2010:02:19,16:11:25,019,"firefox.exe","Campus Mourns for Death of Hi... CNN iReport - Mozilla Firefox",Left mouse button pressed,91,179,521.07,606.29,0.86, 
+2010:02:19,16:11:25,097,"firefox.exe","Campus Mourns for Death of Hi... CNN iReport - Mozilla Firefox",Left mouse button released,91,179,0.00,0.00,0.00, 
+2010:02:19,16:11:37,145,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,268,634,488.22,1026.28,0.48, 
+2010:02:19,16:11:51,396,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,699,728,0.00,0.00,1.00,36 Wheel actions
+2010:02:19,16:11:51,396,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,699,728,438.53,541.47,0.81, 
+2010:02:19,16:11:51,506,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,699,728,0.00,0.00,0.00, 
+2010:02:19,16:12:04,882,"firefox.exe","Olympic photographer: Best se...se - CNN.com - Mozilla Firefox",Mouse wheel,672,632,99.72,696.02,0.14, 
+2010:02:19,16:13:00,200,"Explorer.EXE","4:12 PM",Mouse wheel stopped,687,622,0.00,0.00,1.00,8 Wheel actions
+2010:02:19,16:13:01,919,"firefox.exe","Olympic photographer: Best se...se - CNN.com - Mozilla Firefox",Mouse wheel,687,622,0.00,0.00,0.00, 
+2010:02:19,16:13:26,203,"firefox.exe","Olympic photographer: Best se...se - CNN.com - Mozilla Firefox",Mouse wheel stopped,64,89,0.00,0.00,1.00,23 Wheel actions
+2010:02:19,16:13:26,203,"firefox.exe","Olympic photographer: Best se...se - CNN.com - Mozilla Firefox",Left mouse button pressed,64,89,852.89,1161.30,0.73, 
+2010:02:19,16:13:26,297,"firefox.exe","Olympic photographer: Best se...se - CNN.com - Mozilla Firefox",Left mouse button released,64,89,0.00,0.00,0.00, 
+2010:02:19,16:13:37,266,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,657,796,922.77,1284.50,0.72, 
+2010:02:19,16:13:37,360,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,657,796,0.00,0.00,0.00, 
+2010:02:19,16:13:42,767,"firefox.exe","Ice dancing team hopes to bui...el - CNN.com - Mozilla Firefox",Mouse wheel,691,871,82.35,1809.30,0.05, 
+2010:02:19,16:14:00,206,"Explorer.EXE","4:13 PM",Mouse wheel stopped,672,743,0.00,0.00,1.00,6 Wheel actions
+2010:02:19,16:14:04,785,"firefox.exe","Ice dancing team hopes to bui...el - CNN.com - Mozilla Firefox",Mouse wheel,663,738,77.01,98.83,0.78, 
+2010:02:19,16:15:00,212,"Explorer.EXE","4:14 PM",Mouse wheel stopped,674,700,0.00,0.00,1.00,6 Wheel actions
+2010:02:19,16:15:00,728,"firefox.exe","Ice dancing team hopes to bui...el - CNN.com - Mozilla Firefox",Mouse wheel,674,700,40.05,103.26,0.39, 
+2010:02:19,16:16:00,219,"Explorer.EXE","4:15 PM",Mouse wheel stopped,682,740,0.00,0.00,1.00,12 Wheel actions
+2010:02:19,16:16:01,234,"firefox.exe","Ice dancing team hopes to bui...el - CNN.com - Mozilla Firefox",Mouse wheel,682,740,13.04,13.41,0.97, 
+2010:02:19,16:17:00,221,"Explorer.EXE","4:16 PM",Mouse wheel stopped,790,558,0.00,0.00,1.00,12 Wheel actions
+2010:02:19,16:17:34,816,"firefox.exe","Ice dancing team hopes to bui...el - CNN.com - Mozilla Firefox",Mouse wheel,790,558,204.38,2346.29,0.09, 
+2010:02:19,16:18:00,223,"Explorer.EXE","4:17 PM",Mouse wheel stopped,785,584,0.00,0.00,1.00,5 Wheel actions
+2010:02:19,16:18:17,990,"firefox.exe","Ice dancing team hopes to bui...el - CNN.com - Mozilla Firefox",Mouse wheel,787,584,3.16,5.41,0.58, 
+2010:02:19,16:18:23,334,"firefox.exe","Ice dancing team hopes to bui...el - CNN.com - Mozilla Firefox",Mouse wheel stopped,97,300,0.00,0.00,1.00,47 Wheel actions
+2010:02:19,16:18:23,334,"firefox.exe","Ice dancing team hopes to bui...el - CNN.com - Mozilla Firefox",Left mouse button pressed,97,300,747.85,791.50,0.94, 
+2010:02:19,16:18:23,506,"firefox.exe","Ice dancing team hopes to bui...el - CNN.com - Mozilla Firefox",Left mouse button released,97,300,0.00,0.00,0.00, 
+2010:02:19,16:18:25,568,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,790,725,812.94,836.94,0.97, 
+2010:02:19,16:18:49,178,"agent.exe","<Unknown window>",Mouse wheel stopped,1148,685,0.00,0.00,1.00,37 Wheel actions
+2010:02:19,16:19:06,538,"Explorer.EXE","Notification Area",Left mouse button pressed,1123,1013,487.41,1429.80,0.34, 
+2010:02:19,16:19:06,648,"Explorer.EXE","Notification Area",Left mouse button released,1123,1013,0.00,0.00,0.00, 
+2010:02:19,16:19:07,367,"uLog.exe","<Unknown window>",Left mouse button pressed,1140,978,38.91,42.07,0.92, 
+2010:02:19,16:19:07,460,"uLog.exe","<Unknown window>",Left mouse button released,1140,978,0.00,0.00,0.00, 
+2010:02:19,16:19:07,460,"uLog.exe"," ",Logging stopped,-1,-1,-1.00,-1.00,-1.00, 

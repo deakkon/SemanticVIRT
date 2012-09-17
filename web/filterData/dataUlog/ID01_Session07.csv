@@ -1,0 +1,337 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:02:19,17:55:11,224,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:02:19,17:55:13,802,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1001,22,966.05,3741.00,0.26, 
+2010:02:19,17:55:13,911,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1001,22,0.00,0.00,0.00, 
+2010:02:19,17:55:20,599,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1164,454,461.73,508.78,0.91, 
+2010:02:19,17:55:20,708,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1164,455,1.00,1.00,1.00, 
+2010:02:19,17:55:28,161,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,1163,450,5.10,46.65,0.11, 
+2010:02:19,17:55:42,302,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,622,660,0.00,0.00,1.00,6 Wheel actions
+2010:02:19,17:55:42,302,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,622,660,580.33,1120.60,0.52, 
+2010:02:19,17:55:42,458,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,622,660,0.00,0.00,0.00, 
+2010:02:19,17:55:45,364,"firefox.exe","Can Love Survive Scandal? - T...: People.com - Mozilla Firefox",Mouse wheel,548,330,338.20,861.30,0.39, 
+2010:02:19,17:55:47,208,"firefox.exe","Can Love Survive Scandal? - T...: People.com - Mozilla Firefox",Mouse wheel stopped,491,124,0.00,0.00,1.00,18 Wheel actions
+2010:02:19,17:55:47,208,"firefox.exe","Can Love Survive Scandal? - T...: People.com - Mozilla Firefox",Left mouse button pressed,491,124,213.74,255.17,0.84, 
+2010:02:19,17:55:47,317,"firefox.exe","Can Love Survive Scandal? - T...: People.com - Mozilla Firefox",Left mouse button released,491,124,0.00,0.00,0.00, 
+2010:02:19,17:56:09,677,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,282,453,389.77,973.06,0.40, 
+2010:02:19,17:56:09,771,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,282,453,0.00,0.00,0.00, 
+2010:02:19,17:56:12,599,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Mouse wheel,415,437,133.96,196.92,0.68, 
+2010:02:19,17:56:39,896,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Mouse wheel stopped,77,697,0.00,0.00,1.00,1 Wheel actions
+2010:02:19,17:56:39,896,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Left mouse button pressed,77,697,426.43,445.74,0.96, 
+2010:02:19,17:56:40,021,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Left mouse button released,77,697,0.00,0.00,0.00, 
+2010:02:19,17:56:43,146,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Mouse wheel,137,684,61.39,89.49,0.69, 
+2010:02:19,17:56:52,599,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Mouse wheel stopped,26,60,0.00,0.00,1.00,2 Wheel actions
+2010:02:19,17:56:52,599,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Left mouse button pressed,26,60,632.99,913.36,0.69, 
+2010:02:19,17:56:52,708,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Left mouse button released,26,60,0.00,0.00,0.00, 
+2010:02:19,17:56:56,974,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,665,599,835.97,971.75,0.86, 
+2010:02:19,17:56:57,599,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,741,660,0.00,0.00,1.00,1 Wheel actions
+2010:02:19,17:56:57,599,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,741,660,97.45,121.35,0.80, 
+2010:02:19,17:56:57,661,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,741,660,0.00,0.00,0.00, 
+2010:02:19,17:57:11,724,"firefox.exe","Oral cancer's toll cruel - CNN.com - Mozilla Firefox",Mouse wheel,667,611,88.75,154.27,0.58, 
+2010:02:19,17:57:24,411,"firefox.exe","Oral cancer's toll cruel - CNN.com - Mozilla Firefox",Mouse wheel stopped,19,60,0.00,0.00,1.00,56 Wheel actions
+2010:02:19,17:57:24,411,"firefox.exe","Oral cancer's toll cruel - CNN.com - Mozilla Firefox",Left mouse button pressed,19,60,872.08,973.99,0.90, 
+2010:02:19,17:57:24,552,"firefox.exe","Oral cancer's toll cruel - CNN.com - Mozilla Firefox",Left mouse button released,19,60,0.00,0.00,0.00, 
+2010:02:19,17:57:31,021,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,335,545,578.86,627.61,0.92, 
+2010:02:19,17:57:31,130,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,335,545,0.00,0.00,0.00, 
+2010:02:19,17:57:37,067,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Mouse wheel,175,453,184.56,1015.24,0.18, 
+2010:02:19,17:58:00,927,"Explorer.EXE","5:57 PM",Mouse wheel stopped,1167,562,0.00,0.00,1.00,1 Wheel actions
+2010:02:19,17:58:54,974,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Key pressed,1167,562,-1.00,-1.00,1.00,Down arrow
+2010:02:19,17:58:55,489,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Key pressed,1167,562,-1.00,-1.00,1.00,Down arrow
+2010:02:19,17:58:55,833,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Key pressed,1167,562,-1.00,-1.00,1.00,Down arrow
+2010:02:19,17:58:56,114,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Key pressed,1167,562,-1.00,-1.00,1.00,Down arrow
+2010:02:19,17:58:56,380,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Key pressed,1167,562,-1.00,-1.00,1.00,Down arrow
+2010:02:19,17:58:58,364,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Key pressed,1167,562,-1.00,-1.00,1.00,Down arrow
+2010:02:19,17:59:44,224,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Left mouse button pressed,17,69,415.23,3017.27,0.14, 
+2010:02:19,17:59:44,317,"firefox.exe","Tiger Woods says, 'I am so so...gy - CNN.com - Mozilla Firefox",Left mouse button released,17,69,0.00,0.00,0.00, 
+2010:02:19,17:59:49,802,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,717,539,843.15,1055.66,0.80, 
+2010:02:19,17:59:58,739,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,823,677,0.00,0.00,1.00,12 Wheel actions
+2010:02:19,17:59:58,739,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,823,677,172.57,254.98,0.68, 
+2010:02:19,17:59:58,880,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,823,677,0.00,0.00,0.00, 
+2010:02:19,18:00:02,380,"firefox.exe","Does acai help with weight loss? - CNN.com - Mozilla Firefox",Mouse wheel,729,573,140.19,184.55,0.76, 
+2010:02:19,18:00:05,067,"firefox.exe","Does acai help with weight loss? - CNN.com - Mozilla Firefox",Mouse wheel stopped,18,57,0.00,0.00,1.00,20 Wheel actions
+2010:02:19,18:00:05,067,"firefox.exe","Does acai help with weight loss? - CNN.com - Mozilla Firefox",Left mouse button pressed,18,57,867.10,1040.72,0.83, 
+2010:02:19,18:00:05,161,"firefox.exe","Does acai help with weight loss? - CNN.com - Mozilla Firefox",Left mouse button released,18,57,0.00,0.00,0.00, 
+2010:02:19,18:00:08,739,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,570,386,642.61,825.67,0.78, 
+2010:02:19,18:00:57,208,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,1183,662,0.00,0.00,1.00,49 Wheel actions
+2010:02:19,18:00:57,208,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1183,662,647.82,1134.55,0.57, 
+2010:02:19,18:00:57,286,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1182,662,1.00,1.00,1.00, 
+2010:02:19,18:00:57,583,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,1182,655,7.00,7.00,1.00, 
+2010:02:19,18:01:00,927,"Explorer.EXE","6:00 PM",Mouse wheel stopped,1077,745,0.00,0.00,1.00,10 Wheel actions
+2010:02:19,18:01:01,755,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1022,914,330.95,360.53,0.92, 
+2010:02:19,18:01:01,833,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1022,914,0.00,0.00,0.00, 
+2010:02:19,18:01:06,021,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,1095,829,112.04,192.39,0.58, 
+2010:02:19,18:01:08,817,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,714,568,0.00,0.00,1.00,21 Wheel actions
+2010:02:19,18:01:08,817,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,714,568,421.90,484.85,0.87, 
+2010:02:19,18:01:08,927,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,714,568,0.00,0.00,0.00, 
+2010:02:19,18:01:44,802,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Mouse wheel,694,725,158.27,1339.69,0.12, 
+2010:02:19,18:02:00,927,"Explorer.EXE","6:01 PM",Mouse wheel stopped,698,713,0.00,0.00,1.00,31 Wheel actions
+2010:02:19,18:02:01,302,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Mouse wheel,698,713,0.00,0.00,0.00, 
+2010:02:19,18:02:24,255,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Mouse wheel stopped,713,826,0.00,0.00,1.00,12 Wheel actions
+2010:02:19,18:02:24,255,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Left mouse button pressed,713,826,113.99,328.73,0.35, 
+2010:02:19,18:02:24,364,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Left mouse button released,713,826,0.00,0.00,0.00, 
+2010:02:19,18:02:25,208,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Mouse wheel,845,778,140.46,166.37,0.84, 
+2010:02:19,18:03:00,927,"Explorer.EXE","6:02 PM",Mouse wheel stopped,920,801,0.00,0.00,1.00,18 Wheel actions
+2010:02:19,18:03:00,927,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Mouse wheel,920,801,0.00,0.00,0.00, 
+2010:02:19,18:03:17,771,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Mouse wheel stopped,21,61,0.00,0.00,1.00,45 Wheel actions
+2010:02:19,18:03:17,771,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Left mouse button pressed,21,61,1164.28,1297.21,0.90, 
+2010:02:19,18:03:17,896,"firefox.exe","Does Tiger Woods' apology hol...t? - CNN.com - Mozilla Firefox",Left mouse button released,21,61,0.00,0.00,0.00, 
+2010:02:19,18:03:32,849,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,65,451,392.47,2241.36,0.18, 
+2010:02:19,18:03:32,958,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,65,451,0.00,0.00,0.00, 
+2010:02:19,18:03:33,521,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,67,448,3.61,4.41,0.82, 
+2010:02:19,18:03:44,505,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,778,687,0.00,0.00,1.00,16 Wheel actions
+2010:02:19,18:03:44,505,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,778,687,740.62,1270.81,0.58, 
+2010:02:19,18:03:44,646,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,778,687,0.00,0.00,0.00, 
+2010:02:19,18:04:10,442,"firefox.exe","'Exciting' advance reported i...py - CNN.com - Mozilla Firefox",Key pressed,722,564,-1.00,-1.00,1.00,Down arrow
+2010:02:19,18:04:14,833,"firefox.exe","'Exciting' advance reported i...py - CNN.com - Mozilla Firefox",Key pressed,722,564,-1.00,-1.00,1.00,Down arrow
+2010:02:19,18:04:20,661,"firefox.exe","'Exciting' advance reported i...py - CNN.com - Mozilla Firefox",Key pressed,722,564,-1.00,-1.00,1.00,Down arrow
+2010:02:19,18:05:00,161,"firefox.exe","'Exciting' advance reported i...py - CNN.com - Mozilla Firefox",Left mouse button pressed,5,561,783.20,1382.18,0.57, 
+2010:02:19,18:05:00,255,"firefox.exe","'Exciting' advance reported i...py - CNN.com - Mozilla Firefox",Left mouse button released,5,561,0.00,0.00,0.00, 
+2010:02:19,18:05:03,255,"firefox.exe","'Exciting' advance reported i...py - CNN.com - Mozilla Firefox",Mouse wheel,141,628,151.61,189.60,0.80, 
+2010:02:19,18:05:08,146,"firefox.exe","'Exciting' advance reported i...py - CNN.com - Mozilla Firefox",Mouse wheel stopped,19,63,0.00,0.00,1.00,42 Wheel actions
+2010:02:19,18:05:08,146,"firefox.exe","'Exciting' advance reported i...py - CNN.com - Mozilla Firefox",Left mouse button pressed,19,63,590.26,736.54,0.80, 
+2010:02:19,18:05:08,286,"firefox.exe","'Exciting' advance reported i...py - CNN.com - Mozilla Firefox",Left mouse button released,19,63,0.00,0.00,0.00, 
+2010:02:19,18:05:22,521,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,97,575,517.91,1692.31,0.31, 
+2010:02:19,18:05:22,708,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,97,575,0.00,0.00,0.00, 
+2010:02:19,18:05:23,567,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,107,564,14.87,19.65,0.76, 
+2010:02:19,18:06:00,927,"Explorer.EXE","6:05 PM",Mouse wheel stopped,76,518,0.00,0.00,1.00,34 Wheel actions
+2010:02:19,18:06:05,614,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,0,582,99.36,209.56,0.47, 
+2010:02:19,18:06:11,271,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,446,660,0.00,0.00,1.00,4 Wheel actions
+2010:02:19,18:06:11,271,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,446,660,452.77,487.15,0.93, 
+2010:02:19,18:06:11,380,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,446,660,0.00,0.00,0.00, 
+2010:02:19,18:06:17,396,"firefox.exe","Freshman Year - two Congressm... for CNN.com - Mozilla Firefox",Left mouse button pressed,185,665,261.05,523.66,0.50, 
+2010:02:19,18:06:17,505,"firefox.exe","Freshman Year - two Congressm... for CNN.com - Mozilla Firefox",Left mouse button released,185,665,0.00,0.00,0.00, 
+2010:02:19,18:06:18,130,"firefox.exe","Freshman Year - two Congressm... for CNN.com - Mozilla Firefox",Left mouse button pressed,102,630,90.08,94.41,0.95, 
+2010:02:19,18:06:18,271,"firefox.exe","Freshman Year - two Congressm... for CNN.com - Mozilla Firefox",Left mouse button released,102,630,0.00,0.00,0.00, 
+2010:02:19,18:06:18,489,"firefox.exe","Freshman Year - two Congressm... for CNN.com - Mozilla Firefox",Mouse wheel,111,625,10.30,11.66,0.88, 
+2010:02:19,18:06:20,317,"firefox.exe","Freshman Year - two Congressm... for CNN.com - Mozilla Firefox",Mouse wheel stopped,19,52,0.00,0.00,1.00,14 Wheel actions
+2010:02:19,18:06:20,317,"firefox.exe","Freshman Year - two Congressm... for CNN.com - Mozilla Firefox",Left mouse button pressed,19,52,566.01,664.51,0.85, 
+2010:02:19,18:06:20,427,"firefox.exe","Freshman Year - two Congressm... for CNN.com - Mozilla Firefox",Left mouse button released,19,52,0.00,0.00,0.00, 
+2010:02:19,18:06:26,911,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,522,294,558.19,1567.45,0.36, 
+2010:02:19,18:06:50,692,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,337,462,0.00,0.00,1.00,4 Wheel actions
+2010:02:19,18:06:50,692,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,337,462,249.90,407.22,0.61, 
+2010:02:19,18:06:50,817,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,337,462,0.00,0.00,0.00, 
+2010:02:19,18:06:54,302,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Mouse wheel,504,338,208.00,720.62,0.29, 
+2010:02:19,18:07:00,927,"Explorer.EXE","6:06 PM",Mouse wheel stopped,504,336,0.00,0.00,1.00,6 Wheel actions
+2010:02:19,18:07:06,599,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Mouse wheel,504,336,2.00,2.00,1.00, 
+2010:02:19,18:07:43,864,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Mouse wheel stopped,300,490,0.00,0.00,1.00,14 Wheel actions
+2010:02:19,18:07:43,864,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Left mouse button pressed,300,490,291.80,354.62,0.82, 
+2010:02:19,18:07:43,958,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Left mouse button released,300,490,0.00,0.00,0.00, 
+2010:02:19,18:08:32,083,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Mouse wheel,801,649,525.63,3023.57,0.17, 
+2010:02:19,18:09:00,927,"Explorer.EXE","6:08 PM",Mouse wheel stopped,785,614,0.00,0.00,1.00,2 Wheel actions
+2010:02:19,18:09:30,692,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Left mouse button pressed,66,642,735.03,1582.37,0.46, 
+2010:02:19,18:09:30,817,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Left mouse button released,66,642,0.00,0.00,0.00, 
+2010:02:19,18:09:34,692,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Mouse wheel,767,694,702.93,736.53,0.95, 
+2010:02:19,18:10:00,927,"Explorer.EXE","6:09 PM",Mouse wheel stopped,664,640,0.00,0.00,1.00,54 Wheel actions
+2010:02:19,18:10:08,677,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Mouse wheel,658,624,88.75,121.99,0.73, 
+2010:02:19,18:10:14,974,"agent.exe","<Unknown window>",Mouse wheel stopped,658,624,0.00,0.00,1.00,4 Wheel actions
+2010:02:19,18:10:25,505,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Key pressed,658,624,-1.00,-1.00,1.00,Down arrow
+2010:02:19,18:10:36,458,"firefox.exe","Wife of Texas pilot expresses...ms - CNN.com - Mozilla Firefox",Key pressed,658,624,-1.00,-1.00,1.00,Backspace
+2010:02:19,18:10:38,724,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Key pressed,658,624,-1.00,-1.00,1.00,Up arrow
+2010:02:19,18:10:46,974,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,54,519,613.06,801.79,0.76, 
+2010:02:19,18:10:47,099,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,54,519,0.00,0.00,0.00, 
+2010:02:19,18:10:47,458,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,54,519,0.00,0.00,0.00, 
+2010:02:19,18:11:00,927,"Explorer.EXE","6:10 PM",Mouse wheel stopped,72,498,0.00,0.00,1.00,22 Wheel actions
+2010:02:19,18:11:01,646,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,72,498,3.61,5.00,0.72, 
+2010:02:19,18:11:21,224,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,786,572,0.00,0.00,1.00,13 Wheel actions
+2010:02:19,18:11:21,224,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,786,572,711.29,3166.75,0.22, 
+2010:02:19,18:11:21,333,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,786,572,0.00,0.00,0.00, 
+2010:02:19,18:11:24,130,"firefox.exe","Lysacek upsets Plushenko in f...ng - CNN.com - Mozilla Firefox",Left mouse button pressed,513,664,288.09,463.04,0.62, 
+2010:02:19,18:11:24,208,"firefox.exe","Lysacek upsets Plushenko in f...ng - CNN.com - Mozilla Firefox",Left mouse button released,513,664,0.00,0.00,0.00, 
+2010:02:19,18:11:25,677,"firefox.exe","Lysacek upsets Plushenko in f...ng - CNN.com - Mozilla Firefox",Left mouse button pressed,22,730,495.42,555.85,0.89, 
+2010:02:19,18:11:25,802,"firefox.exe","Lysacek upsets Plushenko in f...ng - CNN.com - Mozilla Firefox",Left mouse button released,22,730,0.00,0.00,0.00, 
+2010:02:19,18:11:29,286,"firefox.exe","Lysacek upsets Plushenko in f...ng - CNN.com - Mozilla Firefox",Mouse wheel,28,724,8.49,12.00,0.71, 
+2010:02:19,18:12:00,927,"Explorer.EXE","6:11 PM",Mouse wheel stopped,59,495,0.00,0.00,1.00,56 Wheel actions
+2010:02:19,18:12:27,911,"firefox.exe","Lysacek upsets Plushenko in f...ng - CNN.com - Mozilla Firefox",Mouse wheel,132,417,260.85,3349.56,0.08, 
+2010:02:19,18:13:00,927,"Explorer.EXE","6:12 PM",Mouse wheel stopped,139,418,0.00,0.00,1.00,13 Wheel actions
+2010:02:19,18:13:02,146,"firefox.exe","Lysacek upsets Plushenko in f...ng - CNN.com - Mozilla Firefox",Mouse wheel,139,418,0.00,0.00,0.00, 
+2010:02:19,18:14:00,927,"Explorer.EXE","6:13 PM",Mouse wheel stopped,607,494,0.00,0.00,1.00,63 Wheel actions
+2010:02:19,18:14:12,130,"firefox.exe","Lysacek upsets Plushenko in f...ng - CNN.com - Mozilla Firefox",Left mouse button pressed,72,737,329.87,3747.83,0.09, 
+2010:02:19,18:14:12,271,"firefox.exe","Lysacek upsets Plushenko in f...ng - CNN.com - Mozilla Firefox",Left mouse button released,72,737,0.00,0.00,0.00, 
+2010:02:19,18:14:12,849,"firefox.exe","Lysacek upsets Plushenko in f...ng - CNN.com - Mozilla Firefox",Mouse wheel,91,724,23.02,27.31,0.84, 
+2010:02:19,18:14:49,724,"firefox.exe","Lysacek upsets Plushenko in f...ng - CNN.com - Mozilla Firefox",Mouse wheel stopped,27,61,0.00,0.00,1.00,77 Wheel actions
+2010:02:19,18:14:49,724,"firefox.exe","Lysacek upsets Plushenko in f...ng - CNN.com - Mozilla Firefox",Left mouse button pressed,27,61,650.99,901.21,0.72, 
+2010:02:19,18:14:49,896,"firefox.exe","Lysacek upsets Plushenko in f...ng - CNN.com - Mozilla Firefox",Left mouse button released,27,61,0.00,0.00,0.00, 
+2010:02:19,18:14:58,411,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,632,331,662.51,1445.65,0.46, 
+2010:02:19,18:15:00,161,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,679,323,0.00,0.00,1.00,6 Wheel actions
+2010:02:19,18:15:00,161,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,679,323,51.24,319.39,0.16, 
+2010:02:19,18:15:00,271,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,679,323,0.00,0.00,0.00, 
+2010:02:19,18:15:09,646,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button pressed,573,331,106.30,1080.31,0.10, 
+2010:02:19,18:15:09,755,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button released,573,331,0.00,0.00,0.00, 
+2010:02:19,18:15:28,364,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button pressed,816,741,476.60,1260.49,0.38, 
+2010:02:19,18:15:28,489,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button released,816,741,0.00,0.00,0.00, 
+2010:02:19,18:15:29,802,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button pressed,839,798,61.47,157.32,0.39, 
+2010:02:19,18:15:29,896,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button released,839,798,0.00,0.00,0.00, 
+2010:02:19,18:15:37,536,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button pressed,1198,753,361.81,520.96,0.69, 
+2010:02:19,18:15:37,739,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button released,1198,753,0.00,0.00,0.00, 
+2010:02:19,18:15:37,958,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Mouse wheel,1199,737,16.03,17.00,0.94, 
+2010:02:19,18:15:56,536,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Mouse wheel stopped,457,257,0.00,0.00,1.00,27 Wheel actions
+2010:02:19,18:15:56,536,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button pressed,457,257,376.05,1260.09,0.30, 
+2010:02:19,18:15:56,692,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button released,457,257,0.00,0.00,0.00, 
+2010:02:19,18:16:00,286,"firefox.exe","Living Well with Healthy Livi...m CNN health - Mozilla Firefox",Left mouse button pressed,774,335,326.46,483.21,0.68, 
+2010:02:19,18:16:00,364,"firefox.exe","Living Well with Healthy Livi...m CNN health - Mozilla Firefox",Left mouse button released,774,335,0.00,0.00,0.00, 
+2010:02:19,18:16:10,380,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Mouse wheel,596,757,458.00,861.39,0.53, 
+2010:02:19,18:16:17,317,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Mouse wheel stopped,185,269,0.00,0.00,1.00,27 Wheel actions
+2010:02:19,18:16:17,317,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button pressed,185,269,715.04,1081.35,0.66, 
+2010:02:19,18:16:17,458,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button released,185,269,0.00,0.00,0.00, 
+2010:02:19,18:16:37,052,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,628,763,663.54,1383.57,0.48, 
+2010:02:19,18:16:37,130,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,628,763,0.00,0.00,0.00, 
+2010:02:19,18:16:40,989,"firefox.exe","Can Love Survive Scandal? - T...: People.com - Mozilla Firefox",Left mouse button pressed,801,530,290.20,1020.49,0.28, 
+2010:02:19,18:16:41,083,"firefox.exe","Can Love Survive Scandal? - T...: People.com - Mozilla Firefox",Left mouse button released,801,530,0.00,0.00,0.00, 
+2010:02:19,18:16:48,802,"firefox.exe","Can Love Survive Scandal? - E...: People.com - Mozilla Firefox",Left mouse button pressed,783,547,24.76,63.49,0.39, 
+2010:02:19,18:16:48,911,"firefox.exe","Can Love Survive Scandal? - E...: People.com - Mozilla Firefox",Left mouse button released,783,547,0.00,0.00,0.00, 
+2010:02:19,18:16:55,114,"firefox.exe","Can Love Survive Scandal? - H...: People.com - Mozilla Firefox",Left mouse button pressed,783,547,0.00,0.00,0.00, 
+2010:02:19,18:16:55,239,"firefox.exe","Can Love Survive Scandal? - H...: People.com - Mozilla Firefox",Left mouse button released,783,547,0.00,0.00,0.00, 
+2010:02:19,18:17:04,536,"firefox.exe","Can Love Survive Scandal? - J...: People.com - Mozilla Firefox",Left mouse button pressed,788,520,27.46,29.66,0.93, 
+2010:02:19,18:17:04,646,"firefox.exe","Can Love Survive Scandal? - J...: People.com - Mozilla Firefox",Left mouse button released,789,520,1.00,1.00,1.00, 
+2010:02:19,18:17:14,224,"firefox.exe","Can Love Survive Scandal? - D...: People.com - Mozilla Firefox",Left mouse button pressed,789,520,0.00,0.00,0.00, 
+2010:02:19,18:17:14,349,"firefox.exe","Can Love Survive Scandal? - D...: People.com - Mozilla Firefox",Left mouse button released,789,520,0.00,0.00,0.00, 
+2010:02:19,18:17:21,192,"firefox.exe","Can Love Survive Scandal? - V...: People.com - Mozilla Firefox",Left mouse button pressed,789,520,0.00,0.00,0.00, 
+2010:02:19,18:17:21,349,"firefox.exe","Can Love Survive Scandal? - V...: People.com - Mozilla Firefox",Left mouse button released,789,520,0.00,0.00,0.00, 
+2010:02:19,18:17:24,286,"firefox.exe","Can Love Survive Scandal? - J...: People.com - Mozilla Firefox",Left mouse button pressed,789,520,0.00,0.00,0.00, 
+2010:02:19,18:17:24,474,"firefox.exe","Can Love Survive Scandal? - J...: People.com - Mozilla Firefox",Left mouse button released,789,520,0.00,0.00,0.00, 
+2010:02:19,18:17:31,052,"firefox.exe","Can Love Survive Scandal? - K...: People.com - Mozilla Firefox",Mouse wheel,607,724,273.39,1105.98,0.25, 
+2010:02:19,18:17:33,755,"firefox.exe","Can Love Survive Scandal? - K...: People.com - Mozilla Firefox",Mouse wheel stopped,795,563,0.00,0.00,1.00,23 Wheel actions
+2010:02:19,18:17:33,755,"firefox.exe","Can Love Survive Scandal? - K...: People.com - Mozilla Firefox",Left mouse button pressed,795,563,237.12,360.17,0.66, 
+2010:02:19,18:17:33,864,"firefox.exe","Can Love Survive Scandal? - K...: People.com - Mozilla Firefox",Left mouse button released,795,563,0.00,0.00,0.00, 
+2010:02:19,18:17:39,599,"firefox.exe","Can Love Survive Scandal? - A...: People.com - Mozilla Firefox",Mouse wheel,743,599,63.25,345.08,0.18, 
+2010:02:19,18:17:40,427,"firefox.exe","Can Love Survive Scandal? - A...: People.com - Mozilla Firefox",Mouse wheel stopped,798,509,0.00,0.00,1.00,1 Wheel actions
+2010:02:19,18:17:40,427,"firefox.exe","Can Love Survive Scandal? - A...: People.com - Mozilla Firefox",Left mouse button pressed,798,509,105.48,113.04,0.93, 
+2010:02:19,18:17:40,567,"firefox.exe","Can Love Survive Scandal? - A...: People.com - Mozilla Firefox",Left mouse button released,798,509,0.00,0.00,0.00, 
+2010:02:19,18:17:46,224,"firefox.exe","Can Love Survive Scandal? - Z...: People.com - Mozilla Firefox",Left mouse button pressed,798,509,0.00,0.00,0.00, 
+2010:02:19,18:17:46,364,"firefox.exe","Can Love Survive Scandal? - Z...: People.com - Mozilla Firefox",Left mouse button released,798,509,0.00,0.00,0.00, 
+2010:02:19,18:17:53,864,"firefox.exe","Can Love Survive Scandal? - R...: People.com - Mozilla Firefox",Left mouse button pressed,798,509,0.00,0.00,0.00, 
+2010:02:19,18:17:53,989,"firefox.exe","Can Love Survive Scandal? - R...: People.com - Mozilla Firefox",Left mouse button released,798,509,0.00,0.00,0.00, 
+2010:02:19,18:17:59,802,"firefox.exe","Can Love Survive Scandal? - J...: People.com - Mozilla Firefox",Left mouse button pressed,798,509,0.00,0.00,0.00, 
+2010:02:19,18:17:59,958,"firefox.exe","Can Love Survive Scandal? - J...: People.com - Mozilla Firefox",Left mouse button released,798,509,0.00,0.00,0.00, 
+2010:02:19,18:18:05,161,"firefox.exe","Can Love Survive Scandal? - S...: People.com - Mozilla Firefox",Left mouse button pressed,576,493,222.58,246.74,0.90, 
+2010:02:19,18:18:05,333,"firefox.exe","Can Love Survive Scandal? - S...: People.com - Mozilla Firefox",Left mouse button released,576,493,0.00,0.00,0.00, 
+2010:02:19,18:18:07,708,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Mouse wheel,233,620,365.76,435.85,0.84, 
+2010:02:19,18:18:11,536,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Mouse wheel stopped,783,454,0.00,0.00,1.00,18 Wheel actions
+2010:02:19,18:18:11,536,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button pressed,783,454,565.89,685.82,0.83, 
+2010:02:19,18:18:11,661,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button released,783,454,0.00,0.00,0.00, 
+2010:02:19,18:18:15,286,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button pressed,162,425,621.68,740.13,0.84, 
+2010:02:19,18:18:15,380,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button released,162,425,0.00,0.00,0.00, 
+2010:02:19,18:18:22,692,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button pressed,787,475,627.00,1148.94,0.55, 
+2010:02:19,18:18:22,833,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button released,787,475,0.00,0.00,0.00, 
+2010:02:19,18:18:25,989,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button pressed,781,468,9.22,13.00,0.71, 
+2010:02:19,18:18:26,099,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button released,781,468,0.00,0.00,0.00, 
+2010:02:19,18:18:30,864,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button pressed,777,461,8.06,18.41,0.44, 
+2010:02:19,18:18:30,989,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button released,777,461,0.00,0.00,0.00, 
+2010:02:19,18:18:33,317,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button pressed,777,461,0.00,0.00,0.00, 
+2010:02:19,18:18:33,458,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button released,777,461,0.00,0.00,0.00, 
+2010:02:19,18:18:36,646,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button pressed,777,461,0.00,0.00,0.00, 
+2010:02:19,18:18:36,786,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button released,777,461,0.00,0.00,0.00, 
+2010:02:19,18:18:38,880,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button pressed,777,461,0.00,0.00,0.00, 
+2010:02:19,18:18:39,021,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button released,777,461,0.00,0.00,0.00, 
+2010:02:19,18:18:40,958,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button pressed,788,461,11.00,11.00,1.00, 
+2010:02:19,18:18:41,067,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button released,789,461,1.00,1.00,1.00, 
+2010:02:19,18:18:43,599,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button pressed,789,462,1.00,1.00,1.00, 
+2010:02:19,18:18:43,771,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button released,789,462,0.00,0.00,0.00, 
+2010:02:19,18:18:48,989,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button pressed,476,215,398.72,1213.61,0.33, 
+2010:02:19,18:18:49,099,"firefox.exe","Johnny Weir: Drama on Ice! - ...: People.com - Mozilla Firefox",Left mouse button released,476,215,0.00,0.00,0.00, 
+2010:02:19,18:19:04,380,"firefox.exe","Can Love Survive Scandal? : P...: People.com - Mozilla Firefox",Mouse wheel,573,436,241.35,933.75,0.26, 
+2010:02:19,18:19:09,880,"firefox.exe","Can Love Survive Scandal? : P...: People.com - Mozilla Firefox",Mouse wheel stopped,482,121,0.00,0.00,1.00,6 Wheel actions
+2010:02:19,18:19:09,880,"firefox.exe","Can Love Survive Scandal? : P...: People.com - Mozilla Firefox",Left mouse button pressed,482,121,327.88,421.21,0.78, 
+2010:02:19,18:19:09,974,"firefox.exe","Can Love Survive Scandal? : P...: People.com - Mozilla Firefox",Left mouse button released,482,121,0.00,0.00,0.00, 
+2010:02:19,18:19:14,239,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,91,603,620.65,3870.70,0.16, 
+2010:02:19,18:19:14,349,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,91,603,0.00,0.00,0.00, 
+2010:02:19,18:19:14,817,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,177,608,86.15,95.20,0.90, 
+2010:02:19,18:19:20,896,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,92,551,0.00,0.00,1.00,5 Wheel actions
+2010:02:19,18:19:20,896,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,92,551,106.78,1508.90,0.07, 
+2010:02:19,18:19:21,005,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,92,551,0.00,0.00,0.00, 
+2010:02:19,18:19:21,302,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,101,545,10.82,13.83,0.78, 
+2010:02:19,18:19:39,411,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,7,544,0.00,0.00,1.00,5 Wheel actions
+2010:02:19,18:19:39,411,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,7,544,94.01,159.54,0.59, 
+2010:02:19,18:19:39,536,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,7,544,0.00,0.00,0.00, 
+2010:02:19,18:19:39,630,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,11,542,4.47,5.41,0.83, 
+2010:02:19,18:19:41,349,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,607,569,0.00,0.00,1.00,19 Wheel actions
+2010:02:19,18:19:41,349,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,607,569,83.17,87.78,0.95, 
+2010:02:19,18:19:41,442,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,607,569,0.00,0.00,0.00, 
+2010:02:19,18:19:44,489,"firefox.exe","Can Love Survive Scandal? - T...: People.com - Mozilla Firefox",Left mouse button pressed,29,55,773.49,978.82,0.79, 
+2010:02:19,18:19:44,567,"firefox.exe","Can Love Survive Scandal? - T...: People.com - Mozilla Firefox",Left mouse button released,29,55,0.00,0.00,0.00, 
+2010:02:19,18:19:47,005,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,720,576,865.40,1091.40,0.79, 
+2010:02:19,18:19:47,099,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,720,576,0.00,0.00,0.00, 
+2010:02:19,18:19:47,708,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,719,601,25.02,27.41,0.91, 
+2010:02:19,18:19:47,771,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,719,601,0.00,0.00,0.00, 
+2010:02:19,18:19:48,271,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button pressed,718,569,32.02,32.24,0.99, 
+2010:02:19,18:19:48,333,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button released,718,569,0.00,0.00,0.00, 
+2010:02:19,18:19:52,396,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button pressed,242,828,541.90,1399.39,0.39, 
+2010:02:19,18:19:52,489,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button released,242,828,0.00,0.00,0.00, 
+2010:02:19,18:20:09,911,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button pressed,281,828,39.00,1901.17,0.02, 
+2010:02:19,18:20:10,005,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button released,281,828,0.00,0.00,0.00, 
+2010:02:19,18:20:42,786,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button pressed,319,830,38.05,368.18,0.10, 
+2010:02:19,18:20:42,911,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button released,319,830,0.00,0.00,0.00, 
+2010:02:19,18:21:12,146,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button pressed,355,837,36.67,880.40,0.04, 
+2010:02:19,18:21:12,255,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button released,355,837,0.00,0.00,0.00, 
+2010:02:19,18:21:33,114,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button pressed,649,660,343.17,434.45,0.79, 
+2010:02:19,18:21:33,286,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button released,649,660,0.00,0.00,0.00, 
+2010:02:19,18:21:51,692,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button pressed,404,822,293.72,427.12,0.69, 
+2010:02:19,18:21:51,817,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button released,405,822,1.00,1.00,1.00, 
+2010:02:19,18:22:03,505,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button pressed,438,821,33.02,615.15,0.05, 
+2010:02:19,18:22:03,630,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button released,438,821,0.00,0.00,0.00, 
+2010:02:19,18:22:06,864,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button pressed,482,823,44.05,63.94,0.69, 
+2010:02:19,18:22:06,989,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button released,482,823,0.00,0.00,0.00, 
+2010:02:19,18:22:45,067,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button pressed,514,831,32.98,35.11,0.94, 
+2010:02:19,18:22:45,239,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button released,514,831,0.00,0.00,0.00, 
+2010:02:19,18:22:54,614,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button pressed,559,832,45.01,45.16,1.00, 
+2010:02:19,18:22:54,739,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button released,559,832,0.00,0.00,0.00, 
+2010:02:19,18:22:57,021,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button pressed,42,780,519.61,527.30,0.99, 
+2010:02:19,18:22:57,130,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button released,42,780,0.00,0.00,0.00, 
+2010:02:19,18:22:57,396,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Mouse wheel,43,775,5.10,10.00,0.51, 
+2010:02:19,18:23:00,427,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Mouse wheel stopped,22,58,0.00,0.00,1.00,10 Wheel actions
+2010:02:19,18:23:00,427,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button pressed,22,58,712.31,1483.30,0.48, 
+2010:02:19,18:23:00,489,"firefox.exe","Celebrities recover from publ...ls - CNN.com - Mozilla Firefox",Left mouse button released,22,58,0.00,0.00,0.00, 
+2010:02:19,18:23:04,505,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,14,556,498.06,1582.39,0.31, 
+2010:02:19,18:23:04,583,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,14,556,0.00,0.00,0.00, 
+2010:02:19,18:23:08,005,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,67,517,65.80,76.99,0.85, 
+2010:02:19,18:23:38,739,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,741,652,0.00,0.00,1.00,9 Wheel actions
+2010:02:19,18:23:38,739,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,741,652,685.09,1734.49,0.39, 
+2010:02:19,18:23:38,849,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,741,652,0.00,0.00,0.00, 
+2010:02:19,18:23:48,864,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Mouse wheel,381,598,364.03,1059.60,0.34, 
+2010:02:19,18:23:50,786,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Mouse wheel stopped,304,827,0.00,0.00,1.00,6 Wheel actions
+2010:02:19,18:23:50,786,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Left mouse button pressed,304,827,241.60,497.74,0.49, 
+2010:02:19,18:23:50,849,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Left mouse button released,304,827,0.00,0.00,0.00, 
+2010:02:19,18:23:56,302,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Mouse wheel,367,694,147.17,170.03,0.87, 
+2010:02:19,18:23:59,974,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Mouse wheel stopped,714,817,0.00,0.00,1.00,5 Wheel actions
+2010:02:19,18:23:59,974,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Left mouse button pressed,714,817,368.15,574.97,0.64, 
+2010:02:19,18:24:00,083,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Left mouse button released,714,817,0.00,0.00,0.00, 
+2010:02:19,18:24:03,849,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Mouse wheel,719,791,26.48,29.24,0.91, 
+2010:02:19,18:24:17,442,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Mouse wheel stopped,746,758,0.00,0.00,1.00,6 Wheel actions
+2010:02:19,18:24:17,442,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Left mouse button pressed,746,758,39.82,254.55,0.16, 
+2010:02:19,18:24:17,567,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Left mouse button released,746,758,0.00,0.00,0.00, 
+2010:02:19,18:24:17,911,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Left mouse button pressed,749,758,3.00,3.00,1.00, 
+2010:02:19,18:24:18,021,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Left mouse button released,749,758,0.00,0.00,0.00, 
+2010:02:19,18:24:18,317,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Mouse wheel,622,734,129.25,133.63,0.97, 
+2010:02:19,18:24:19,271,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Mouse wheel stopped,171,278,0.00,0.00,1.00,5 Wheel actions
+2010:02:19,18:24:19,271,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Left mouse button pressed,171,278,639.24,737.53,0.87, 
+2010:02:19,18:24:19,333,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Left mouse button released,171,278,0.00,0.00,0.00, 
+2010:02:19,18:24:22,396,"firefox.exe","Business, financial, personal...CNNMoney.com - Mozilla Firefox",Left mouse button pressed,196,163,117.69,196.53,0.60, 
+2010:02:19,18:24:22,489,"firefox.exe","Business, financial, personal...CNNMoney.com - Mozilla Firefox",Left mouse button released,196,163,0.00,0.00,0.00, 
+2010:02:19,18:24:26,989,"firefox.exe","Business, financial, personal...CNNMoney.com - Mozilla Firefox",Mouse wheel,100,396,252.00,323.78,0.78, 
+2010:02:19,18:24:30,692,"firefox.exe","Business, financial, personal...CNNMoney.com - Mozilla Firefox",Mouse wheel stopped,23,53,0.00,0.00,1.00,22 Wheel actions
+2010:02:19,18:24:30,692,"firefox.exe","Business, financial, personal...CNNMoney.com - Mozilla Firefox",Left mouse button pressed,23,53,329.95,565.61,0.58, 
+2010:02:19,18:24:30,817,"firefox.exe","Business, financial, personal...CNNMoney.com - Mozilla Firefox",Left mouse button released,23,53,0.00,0.00,0.00, 
+2010:02:19,18:24:33,114,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Left mouse button pressed,22,61,8.06,114.11,0.07, 
+2010:02:19,18:24:33,208,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Left mouse button released,22,61,0.00,0.00,0.00, 
+2010:02:19,18:24:35,614,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Left mouse button pressed,23,61,1.00,1.00,1.00, 
+2010:02:19,18:24:35,755,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Left mouse button released,23,61,0.00,0.00,0.00, 
+2010:02:19,18:24:36,583,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Left mouse button pressed,23,61,0.00,0.00,0.00, 
+2010:02:19,18:24:36,677,"firefox.exe","10 dirt cheap collectible car...CNNMoney.com - Mozilla Firefox",Left mouse button released,23,61,0.00,0.00,0.00, 
+2010:02:19,18:24:38,489,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,55,353,293.75,308.57,0.95, 
+2010:02:19,18:24:51,427,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,284,744,0.00,0.00,1.00,14 Wheel actions
+2010:02:19,18:24:51,427,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,284,744,452.12,2446.86,0.18, 
+2010:02:19,18:24:51,505,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,284,744,0.00,0.00,0.00, 
+2010:02:19,18:24:58,114,"firefox.exe","Video - Breaking News Videos from CNN.com - Mozilla Firefox",Left mouse button pressed,79,802,213.05,541.06,0.39, 
+2010:02:19,18:24:58,271,"firefox.exe","Video - Breaking News Videos from CNN.com - Mozilla Firefox",Left mouse button released,79,802,0.00,0.00,0.00, 
+2010:02:19,18:24:59,130,"firefox.exe","Video - Breaking News Videos from CNN.com - Mozilla Firefox",Mouse wheel,80,800,2.24,3.00,0.75, 
+2010:02:19,18:25:00,927,"Explorer.EXE","6:24 PM",Mouse wheel stopped,103,766,0.00,0.00,1.00,20 Wheel actions
+2010:02:19,18:25:01,083,"firefox.exe","Video - Breaking News Videos from CNN.com - Mozilla Firefox",Mouse wheel,108,756,26.42,28.67,0.92, 
+2010:02:19,18:25:03,567,"firefox.exe","Video - Breaking News Videos from CNN.com - Mozilla Firefox",Mouse wheel stopped,24,49,0.00,0.00,1.00,4 Wheel actions
+2010:02:19,18:25:03,567,"firefox.exe","Video - Breaking News Videos from CNN.com - Mozilla Firefox",Left mouse button pressed,24,49,708.00,750.17,0.94, 
+2010:02:19,18:25:03,677,"firefox.exe","Video - Breaking News Videos from CNN.com - Mozilla Firefox",Left mouse button released,24,49,0.00,0.00,0.00, 
+2010:02:19,18:25:24,005,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1167,463,1215.67,1873.24,0.65, 
+2010:02:19,18:25:24,146,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1167,463,0.00,0.00,0.00, 
+2010:02:19,18:26:07,817,"Explorer.EXE","Notification Area",Left mouse button pressed,1122,1012,550.84,1003.76,0.55, 
+2010:02:19,18:26:07,896,"Explorer.EXE","Notification Area",Left mouse button released,1122,1012,0.00,0.00,0.00, 
+2010:02:19,18:26:08,521,"uLog.exe","<Unknown window>",Left mouse button pressed,1133,986,28.23,30.41,0.93, 
+2010:02:19,18:26:08,614,"uLog.exe","<Unknown window>",Left mouse button released,1133,986,0.00,0.00,0.00, 
+2010:02:19,18:26:08,614,"uLog.exe"," ",Logging stopped,-1,-1,-1.00,-1.00,-1.00, 

@@ -1,0 +1,7 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:02:26,16:08:01,930,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:02:26,16:08:03,696,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1160,477,505.72,1254.54,0.40, 
+2010:02:26,16:08:03,805,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1160,477,0.00,0.00,0.00, 
+2010:02:26,16:08:12,743,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1098,267,218.96,1060.56,0.21, 
+2010:02:26,16:08:12,821,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1098,267,0.00,0.00,0.00, 
+2010:02:26,16:08:15,493,"firefox.exe","Breaking news, real-time scor...ted 

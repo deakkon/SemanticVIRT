@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>	
+	<var-def name="userURL">
+	    <database connection="jdbc:mysql://localhost:3306/test" 
+	              jdbcclass="com.mysql.jdbc.Driver"
+	              username="root" 
+	         	 password="">
+	        select userID,URL from datahistory
+	    </database>
+	</var-def> 
+	<loop item="emp">
+	    <list>
+	        <var name="userURL"/>
+	    </list>
+	    <body>
+	        <template>Salary of ${emp.get("userID")} is ${emp.get("URL")}</template>
+	    </body>    
+	</loop>
+	
+</config>

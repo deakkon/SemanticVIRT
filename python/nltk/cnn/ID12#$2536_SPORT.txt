@@ -1,0 +1,226 @@
+                     Hacking 'biometric passports'STORY HIGHLIGHTS Hackers allege self-serve computer passport scanners can be fooled  They say they hacked biometric passport with Elvis Presley details and it was cleared   Passport security in spotlight after the apparent use of false documents in Dubai killing   Hackers say international agreement is needed to tighten system  London, England (CNN) -- In the name of improved security a hacker showed how a biometric passport issued in the name of long-dead rock 'n' roll king Elvis Presley could be cleared through an automated passport scanning system being tested at an international airport. Using a doctored passport at a self-serve passport machine, the hacker was cleared for travel after just a few seconds and a picture of the King himself appeared on the monitor's display. Adam Laurie and Jeroen Van Beek, who call themselves &quot;ethical hackers,&quot; say the exercise exposed how easy it is to fool a passport scanner with a fraudulent biometric chip. The Presley test was carried out at Amsterdam's Schiphol airport in September 2008 -- by Laurie and Van Beek -- to highlight potential security shortcomings. Passports, and the ability to fake them, are back in the spotlight after the apparent use of false documents during the gang assassination of a Hamas militant in Dubai in January. Van Beek said: &quot;What we did for that chip is create passport content for Elvis Presley and put it on a chip and sign it with our own key for a non-existent country. And a device that was used to read chips didn't check the country's signatures.&quot; Fingerprint scans, eye scans and digital photographs are now frequently used with passports to check a traveler's biometrics -- unique physical characteristics that can identify a specific individual  
+
+
+
+	
+	
+	
+		
+			
+				
+				
+			
+		
+			
+				
+				
+			
+		
+			
+				
+				
+			
+		
+	
+	
+			
+			
+		
+			
+				
+					
+					 
+					
+
+
+	
+	
+
+
+				
+			
+		
+		
+				
+					
+					                                 Video: Hitmen didn't avoid cameras
+
+				
+
+		
+			
+				
+						
+
+						
+				
+			
+		
+
+
+
+			
+	
+			
+			
+		
+			
+				
+			
+		
+		
+				
+					
+					 In the current state, I think they [scanners] have actually made the borders weaker, not stronger.
+--Adam Laurie, 'ethical  hacker'
+ 
+				
+
+		
+			
+				
+			
+		
+
+
+
+			
+	
+			
+			
+		
+			
+				
+			
+		
+		
+				
+					
+					  
+RELATED TOPICS
+
+
+Hamas
+
+Israel
+
+Dubai
+
+
+				
+
+		
+			
+				
+			
+		
+
+
+
+			
+	
+
+
+
+Biometric passports -- with data stored on embedded chip -- are now standard issue in Europe, the U.S. and a number of other countries. Laurie and Van Beek use their knowledge of IT security and hacking to show that biometric passports remain vulnerable to fraud. &quot;I think [fraud] is 100 percent possible,&quot; said Laurie. &quot;The passport bit is the more difficult. You would have to buy one from a professional forger or some means, but adding the chip is something we could do ourselves using off the shelf equipment using $100 investment.&quot; The problem, in part, is that each country has its own security signature for verifying its own biometric passports. While some share that information, many countries do not, making it easy to exploit the loopholes, said Laurie. &quot;I probably couldn't produce a fake UK passport that would successfully cross into the UK because I'm sure the UK is actually able to check its own signatures,&quot; Laurie said. &quot;But I may be able to produce a passport from some other country and use it on an automated system to enter the UK and the UK wouldn't be able to check the signatures because they don't have them.&quot; An international system coordinating the various security signatures is needed, said Van Beek. &quot;If you want to make the system more secure then all countries need to have access to a list of all certificates of all countries all over the world. If that's in place, if that list is used by all countries and all inspection systems, that might help to detect non-genuine documents and non-genuine chips,&quot; said Van Beek. &quot;But if that system is not there, it's really difficult to increase the security level with the technology that's currently used. So, implementing a central security system with all lists from around the world, that's something that needs to be done before you can trust the system,&quot; he added. Most countries rely on a combination of automated passport scanning by computers and border control officers. But Laurie and Van Beek fear an over-reliance on the automated scanning. &quot;If they [the scanners] are checking a facial image, they look at the picture of the person standing there. They check it against the data stored on the chip and if they match and that person isn't on a stop list, then they let you through,&quot; explained Laurie. &quot;In the current state, I think they've actually made the borders weaker, not stronger.&quot; But Britain's Home Office maintains that its biometric passports are some of the most secure in the world. &quot;We remain confident that the British passport is one of the most secure documents of its kind -- fully meeting rigorous international standards,&quot; said a Home Office spokesperson. &quot;Since 2006 biometric passports issued by the British government biometrically link an individual to their passport through their photograph contained in an electronic chip. &quot;Even if an individual's photograph on the document is changed the photograph in the chip cannot be without border control officers becoming aware that the passport chip has been tampered with.&quot; But Laurie and Van Beek insist that confidence in technology could be misplaced, because biometric passports can be faked, with pictures and chips that match.
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+	
+		
+		
+			
+				
+					
+						
+						Share this on:
+					
+										
+						Mixx
+						Facebook
+						Twitter
+						Digg
+						delicious
+						reddit
+						MySpace
+						StumbleUpon
+						LinkedIn
+					
+				
+			
+		
+		
+	
+			
+
+
+
+	
+
+
+	
+
+
+
+
+
+FOLLOW THIS TOPIC
+
+We recommend
+EU blasts passport ID thefts in killing 
+
+
+UAE vows to catch killers of Hamas official 
+
+
+Mossad's checkered history 
+
+  More Tech
+	
+	
+		
+Report: Google TV devices delayed as Google tweaks software
+
+
+5 Web titans that withered under Yahoo
+
+
+New 'Tron' shines glowing light on an arcade classic
+
+
+	
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+

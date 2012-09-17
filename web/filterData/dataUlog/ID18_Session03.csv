@@ -1,0 +1,220 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:03:01,17:55:14,777,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:03:01,17:55:15,949,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,474,13,474.18,3402.31,0.14, 
+2010:03:01,17:55:16,011,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,474,13,0.00,0.00,0.00, 
+2010:03:01,17:55:22,558,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,44,455,616.66,1097.60,0.56, 
+2010:03:01,17:55:25,871,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,483,684,0.00,0.00,1.00,1 Wheel actions
+2010:03:01,17:55:25,871,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,483,684,495.14,544.24,0.91, 
+2010:03:01,17:55:25,964,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,483,684,0.00,0.00,0.00, 
+2010:03:01,17:55:27,214,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Mouse wheel,482,681,3.16,4.00,0.79, 
+2010:03:01,17:56:00,325,"Explorer.EXE","5:55 PM",Mouse wheel stopped,469,680,0.00,0.00,1.00,13 Wheel actions
+2010:03:01,17:56:21,153,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Mouse wheel,469,680,0.00,0.00,0.00, 
+2010:03:01,17:57:00,326,"Explorer.EXE","5:56 PM",Mouse wheel stopped,469,680,0.00,0.00,1.00,7 Wheel actions
+2010:03:01,17:57:28,343,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Mouse wheel,469,680,0.00,0.00,0.00, 
+2010:03:01,17:58:00,328,"Explorer.EXE","5:57 PM",Mouse wheel stopped,580,679,0.00,0.00,1.00,11 Wheel actions
+2010:03:01,17:58:16,000,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Mouse wheel,533,601,80.96,133.15,0.61, 
+2010:03:01,17:58:48,470,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Mouse wheel stopped,23,65,0.00,0.00,1.00,7 Wheel actions
+2010:03:01,17:58:48,470,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Left mouse button pressed,23,65,739.14,1164.51,0.63, 
+2010:03:01,17:58:48,548,"firefox.exe","Why Haiti's quake toll higher...'s - CNN.com - Mozilla Firefox",Left mouse button released,22,65,1.00,1.00,1.00, 
+2010:03:01,17:58:53,220,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,393,508,577.83,748.10,0.77, 
+2010:03:01,17:59:00,329,"Explorer.EXE","5:58 PM",Mouse wheel stopped,392,509,0.00,0.00,1.00,2 Wheel actions
+2010:03:01,17:59:08,189,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,557,795,330.18,353.88,0.93, 
+2010:03:01,17:59:08,298,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,557,795,0.00,0.00,0.00, 
+2010:03:01,17:59:09,689,"firefox.exe","The night Oscar got a black eye - CNN.com - Mozilla Firefox",Mouse wheel,434,725,141.52,149.50,0.95, 
+2010:03:01,17:59:43,924,"agent.exe","<Unknown window>",Mouse wheel stopped,20,119,0.00,0.00,1.00,11 Wheel actions
+2010:03:01,17:59:54,174,"firefox.exe","The night Oscar got a black eye - CNN.com - Mozilla Firefox",Left mouse button pressed,7,62,767.89,1645.52,0.47, 
+2010:03:01,17:59:54,284,"firefox.exe","The night Oscar got a black eye - CNN.com - Mozilla Firefox",Left mouse button released,7,62,0.00,0.00,0.00, 
+2010:03:01,18:00:03,440,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,166,720,676.94,889.18,0.76, 
+2010:03:01,18:00:03,581,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,166,720,0.00,0.00,0.00, 
+2010:03:01,18:00:06,659,"firefox.exe","Bill Clinton Offered His Supp...: People.com - Mozilla Firefox",Mouse wheel,370,297,469.62,1457.74,0.32, 
+2010:03:01,18:00:17,566,"firefox.exe","Bill Clinton Offered His Supp...: People.com - Mozilla Firefox",Mouse wheel stopped,480,115,0.00,0.00,1.00,12 Wheel actions
+2010:03:01,18:00:17,566,"firefox.exe","Bill Clinton Offered His Supp...: People.com - Mozilla Firefox",Left mouse button pressed,480,115,353.56,408.44,0.87, 
+2010:03:01,18:00:17,988,"firefox.exe","Bill Clinton Offered His Supp...: People.com - Mozilla Firefox",Left mouse button released,480,115,0.00,0.00,0.00, 
+2010:03:01,18:00:21,331,"firefox.exe","Bill Clinton Offered His Supp...: People.com - Mozilla Firefox",Left mouse button pressed,482,120,5.39,7.00,0.77, 
+2010:03:01,18:00:21,659,"firefox.exe","Bill Clinton Offered His Supp...: People.com - Mozilla Firefox",Left mouse button released,482,120,0.00,0.00,0.00, 
+2010:03:01,18:00:22,925,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,80,559,595.25,627.64,0.95, 
+2010:03:01,18:00:25,144,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,687,264,0.00,0.00,1.00,5 Wheel actions
+2010:03:01,18:00:25,144,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,687,264,674.89,761.03,0.89, 
+2010:03:01,18:00:25,238,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,687,264,0.00,0.00,0.00, 
+2010:03:01,18:00:33,488,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Left mouse button pressed,492,428,254.80,1087.66,0.23, 
+2010:03:01,18:00:33,582,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Left mouse button released,492,428,0.00,0.00,0.00, 
+2010:03:01,18:00:34,754,"firefox.exe","Online game seeks to empower Africa - CNN.com - Mozilla Firefox Mouse wheel",Mouse wheel,372,427,120.00,120.41,1.00, 
+2010:03:01,18:01:00,332,"Explorer.EXE","6:00 PM",Mouse wheel stopped,46,423,0.00,0.00,1.00,10 Wheel actions
+2010:03:01,18:01:28,317,"firefox.exe","Online game seeks to empower Africa - CNN.com - Mozilla Firefox Mouse wheel",Mouse wheel,47,423,6.00,6.00,1.00, 
+2010:03:01,18:02:00,334,"Explorer.EXE","6:01 PM",Mouse wheel stopped,47,423,0.00,0.00,1.00,11 Wheel actions
+2010:03:01,18:02:05,225,"firefox.exe","Online game seeks to empower Africa - CNN.com - Mozilla Firefox Left mouse button pressed",Left mouse button pressed,25,66,357.68,405.64,0.88, 
+2010:03:01,18:02:05,334,"firefox.exe","Online game seeks to empower Africa - CNN.com - Mozilla Firefox Left mouse button released",Left mouse button released,25,66,0.00,0.00,0.00, 
+2010:03:01,18:02:15,975,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Left mouse button pressed,247,485,474.18,492.53,0.96, 
+2010:03:01,18:02:16,069,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Left mouse button released,247,485,0.00,0.00,0.00, 
+2010:03:01,18:02:20,569,"firefox.exe","Captured on a cell phone - CNN.com - Mozilla Firefox",Mouse wheel,37,428,217.60,224.15,0.97, 
+2010:03:01,18:02:30,616,"firefox.exe","Captured on a cell phone - CNN.com - Mozilla Firefox",Mouse wheel stopped,31,62,0.00,0.00,1.00,14 Wheel actions
+2010:03:01,18:02:30,616,"firefox.exe","Captured on a cell phone - CNN.com - Mozilla Firefox",Left mouse button pressed,31,62,366.05,408.82,0.90, 
+2010:03:01,18:02:30,725,"firefox.exe","Captured on a cell phone - CNN.com - Mozilla Firefox",Left mouse button released,31,62,0.00,0.00,0.00, 
+2010:03:01,18:02:40,538,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Left mouse button pressed,514,726,821.09,858.86,0.96, 
+2010:03:01,18:02:40,647,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Left mouse button released,514,726,0.00,0.00,0.00, 
+2010:03:01,18:02:42,429,"firefox.exe","U.S. military OKs use of onli...ia - CNN.com - Mozilla Firefox",Mouse wheel,110,463,482.06,507.42,0.95, 
+2010:03:01,18:03:00,335,"Explorer.EXE","6:02 PM",Mouse wheel stopped,87,472,0.00,0.00,1.00,2 Wheel actions
+2010:03:01,18:03:18,883,"firefox.exe","U.S. military OKs use of onli...ia - CNN.com - Mozilla Firefox",Mouse wheel,87,472,24.70,30.65,0.81, 
+2010:03:01,18:03:29,227,"firefox.exe","U.S. military OKs use of onli...ia - CNN.com - Mozilla Firefox",Mouse wheel stopped,9,64,0.00,0.00,1.00,5 Wheel actions
+2010:03:01,18:03:29,227,"firefox.exe","U.S. military OKs use of onli...ia - CNN.com - Mozilla Firefox",Left mouse button pressed,9,64,415.39,555.70,0.75, 
+2010:03:01,18:03:29,352,"firefox.exe","U.S. military OKs use of onli...ia - CNN.com - Mozilla Firefox",Left mouse button released,9,64,0.00,0.00,0.00, 
+2010:03:01,18:03:34,086,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Left mouse button pressed,528,802,902.22,1006.32,0.90, 
+2010:03:01,18:03:34,164,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Left mouse button released,528,802,0.00,0.00,0.00, 
+2010:03:01,18:03:36,149,"firefox.exe","TigerText: An iPhone App for ...uses? - TIME - Mozilla Firefox",Mouse wheel,69,445,581.49,770.63,0.75, 
+2010:03:01,18:04:00,337,"Explorer.EXE","6:03 PM",Mouse wheel stopped,87,445,0.00,0.00,1.00,13 Wheel actions
+2010:03:01,18:04:15,869,"firefox.exe","TigerText: An iPhone App for ...uses? - TIME - Mozilla Firefox",Mouse wheel,87,445,18.00,18.00,1.00, 
+2010:03:01,18:05:00,338,"Explorer.EXE","6:04 PM",Mouse wheel stopped,88,446,0.00,0.00,1.00,5 Wheel actions
+2010:03:01,18:05:17,323,"firefox.exe","TigerText: An iPhone App for ...uses? - TIME - Mozilla Firefox",Left mouse button pressed,72,432,19.85,101.44,0.20, 
+2010:03:01,18:05:17,448,"firefox.exe","TigerText: An iPhone App for ...uses? - TIME - Mozilla Firefox",Left mouse button released,72,432,0.00,0.00,0.00, 
+2010:03:01,18:05:17,745,"firefox.exe","TigerText: An iPhone App for ...uses? - TIME - Mozilla Firefox",Mouse wheel,72,432,0.00,0.00,0.00, 
+2010:03:01,18:05:49,480,"firefox.exe","TigerText: An iPhone App for ...uses? - TIME - Mozilla Firefox",Mouse wheel stopped,481,117,0.00,0.00,1.00,8 Wheel actions
+2010:03:01,18:05:49,480,"firefox.exe","TigerText: An iPhone App for ...uses? - TIME - Mozilla Firefox",Left mouse button pressed,481,117,516.24,1169.54,0.44, 
+2010:03:01,18:05:49,574,"firefox.exe","TigerText: An iPhone App for ...uses? - TIME - Mozilla Firefox",Left mouse button released,481,117,0.00,0.00,0.00, 
+2010:03:01,18:05:50,137,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Mouse wheel,310,234,207.20,215.62,0.96, 
+2010:03:01,18:05:54,309,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Mouse wheel stopped,486,553,0.00,0.00,1.00,4 Wheel actions
+2010:03:01,18:05:54,309,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Left mouse button pressed,486,553,352.79,558.77,0.63, 
+2010:03:01,18:05:54,418,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Left mouse button released,486,553,0.00,0.00,0.00, 
+2010:03:01,18:05:56,606,"firefox.exe","Video - Breaking News Videos from CNN.com - Mozilla Firefox",Mouse wheel,142,456,357.41,414.84,0.86, 
+2010:03:01,18:06:00,340,"Explorer.EXE","6:05 PM",Mouse wheel stopped,51,129,0.00,0.00,1.00,9 Wheel actions
+2010:03:01,18:06:01,465,"firefox.exe","Video - Breaking News Videos from CNN.com - Mozilla Firefox",Left mouse button pressed,20,51,391.49,486.93,0.80, 
+2010:03:01,18:06:01,559,"firefox.exe","Video - Breaking News Videos from CNN.com - Mozilla Firefox",Left mouse button released,20,51,0.00,0.00,0.00, 
+2010:03:01,18:06:13,809,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Mouse wheel,464,467,608.43,848.41,0.72, 
+2010:03:01,18:06:24,622,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Mouse wheel stopped,755,265,0.00,0.00,1.00,18 Wheel actions
+2010:03:01,18:06:24,622,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Left mouse button pressed,755,265,444.76,705.89,0.63, 
+2010:03:01,18:06:24,763,"firefox.exe","Science and Technology News -...from CNN.com - Mozilla Firefox",Left mouse button released,755,265,0.00,0.00,0.00, 
+2010:03:01,18:06:35,372,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Mouse wheel,656,297,104.04,130.62,0.80, 
+2010:03:01,18:06:39,232,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Mouse wheel stopped,387,286,0.00,0.00,1.00,1 Wheel actions
+2010:03:01,18:06:39,232,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button pressed,387,286,269.22,275.20,0.98, 
+2010:03:01,18:06:39,341,"firefox.exe","Health News - Medical, Mental...ss - CNN.com - Mozilla Firefox",Left mouse button released,387,286,0.00,0.00,0.00, 
+2010:03:01,18:07:03,982,"firefox.exe","Living Well with Healthy Livi...m CNN health - Mozilla Firefox",Left mouse button pressed,520,323,138.05,156.40,0.88, 
+2010:03:01,18:07:04,092,"firefox.exe","Living Well with Healthy Livi...m CNN health - Mozilla Firefox",Left mouse button released,520,323,0.00,0.00,0.00, 
+2010:03:01,18:07:26,733,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button pressed,526,880,557.03,771.08,0.72, 
+2010:03:01,18:07:26,889,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button released,526,880,0.00,0.00,0.00, 
+2010:03:01,18:07:28,389,"firefox.exe","Running debate: Bare or in shoes? - CNN.com - Mozilla Firefox",Mouse wheel,454,578,310.46,316.65,0.98, 
+2010:03:01,18:08:00,343,"Explorer.EXE","6:07 PM",Mouse wheel stopped,451,583,0.00,0.00,1.00,10 Wheel actions
+2010:03:01,18:08:06,328,"firefox.exe","Running debate: Bare or in shoes? - CNN.com - Mozilla Firefox",Mouse wheel,451,587,4.12,5.00,0.82, 
+2010:03:01,18:09:00,345,"Explorer.EXE","6:08 PM",Mouse wheel stopped,374,585,0.00,0.00,1.00,16 Wheel actions
+2010:03:01,18:09:12,017,"firefox.exe","Running debate: Bare or in shoes? - CNN.com - Mozilla Firefox",Mouse wheel,378,600,77.88,108.86,0.72, 
+2010:03:01,18:09:56,065,"agent.exe","<Unknown window>",Mouse wheel stopped,379,623,0.00,0.00,1.00,5 Wheel actions
+2010:03:01,18:09:57,205,"firefox.exe","Running debate: Bare or in shoes? - CNN.com - Mozilla Firefox",Mouse wheel,301,673,100.26,111.58,0.90, 
+2010:03:01,18:10:00,346,"Explorer.EXE","6:09 PM",Mouse wheel stopped,284,686,0.00,0.00,1.00,7 Wheel actions
+2010:03:01,18:11:00,957,"firefox.exe","Running debate: Bare or in shoes? - CNN.com - Mozilla Firefox",Mouse wheel,284,686,14.56,15.12,0.96, 
+2010:03:01,18:12:00,349,"Explorer.EXE","6:11 PM",Mouse wheel stopped,293,677,0.00,0.00,1.00,13 Wheel actions
+2010:03:01,18:12:23,631,"firefox.exe","Running debate: Bare or in shoes? - CNN.com - Mozilla Firefox",Left mouse button pressed,22,52,681.22,2953.86,0.23, 
+2010:03:01,18:12:23,725,"firefox.exe","Running debate: Bare or in shoes? - CNN.com - Mozilla Firefox",Left mouse button released,22,52,0.00,0.00,0.00, 
+2010:03:01,18:12:32,991,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button pressed,680,332,715.10,1806.35,0.40, 
+2010:03:01,18:12:33,069,"firefox.exe","Diet and Fitness News and Inf...m CNN health - Mozilla Firefox",Left mouse button released,680,332,0.00,0.00,0.00, 
+2010:03:01,18:12:41,460,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button pressed,536,772,462.96,490.94,0.94, 
+2010:03:01,18:12:41,569,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button released,536,772,0.00,0.00,0.00, 
+2010:03:01,18:12:43,069,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Mouse wheel,536,772,0.00,0.00,0.00, 
+2010:03:01,18:13:00,350,"Explorer.EXE","6:12 PM",Mouse wheel stopped,528,772,0.00,0.00,1.00,6 Wheel actions
+2010:03:01,18:13:46,020,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Mouse wheel,513,770,15.13,15.58,0.97, 
+2010:03:01,18:14:00,348,"Explorer.EXE","6:13 PM",Mouse wheel stopped,486,763,0.00,0.00,1.00,8 Wheel actions
+2010:03:01,18:14:52,425,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Mouse wheel,503,782,13.00,45.60,0.29, 
+2010:03:01,18:15:00,347,"Explorer.EXE","6:14 PM",Mouse wheel stopped,337,820,0.00,0.00,1.00,12 Wheel actions
+2010:03:01,18:15:57,033,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Mouse wheel,328,829,13.45,13.87,0.97, 
+2010:03:01,18:16:00,345,"Explorer.EXE","6:15 PM",Mouse wheel stopped,326,829,0.00,0.00,1.00,4 Wheel actions
+2010:03:01,18:16:07,173,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Left mouse button pressed,30,58,826.23,1294.82,0.64, 
+2010:03:01,18:16:07,267,"firefox.exe","I lived with a hoarder; he to...me - CNN.com - Mozilla Firefox",Left mouse button released,22,59,8.06,8.41,0.96, 
+2010:03:01,18:16:15,188,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button pressed,802,270,808.04,1062.54,0.76, 
+2010:03:01,18:16:15,282,"firefox.exe","Mental Health Care and Disord...m CNN health - Mozilla Firefox",Left mouse button released,802,270,0.00,0.00,0.00, 
+2010:03:01,18:16:29,157,"firefox.exe","Living News - Personal Wellne...le - CNN.com - Mozilla Firefox",Left mouse button pressed,558,816,598.04,668.92,0.89, 
+2010:03:01,18:16:29,266,"firefox.exe","Living News - Personal Wellne...le - CNN.com - Mozilla Firefox",Left mouse button released,558,816,0.00,0.00,0.00, 
+2010:03:01,18:16:30,813,"firefox.exe","Spider-Man's alter ego to los...ob - CNN.com - Mozilla Firefox",Mouse wheel,515,689,134.08,143.46,0.93, 
+2010:03:01,18:16:49,125,"firefox.exe","Spider-Man's alter ego to los...ob - CNN.com - Mozilla Firefox",Mouse wheel stopped,19,75,0.00,0.00,1.00,3 Wheel actions
+2010:03:01,18:16:49,125,"firefox.exe","Spider-Man's alter ego to los...ob - CNN.com - Mozilla Firefox",Left mouse button pressed,19,75,789.31,1096.61,0.72, 
+2010:03:01,18:16:49,234,"firefox.exe","Spider-Man's alter ego to los...ob - CNN.com - Mozilla Firefox",Left mouse button released,19,75,0.00,0.00,0.00, 
+2010:03:01,18:16:56,094,"firefox.exe","Living News - Personal Wellne...le - CNN.com - Mozilla Firefox",Left mouse button pressed,461,905,940.35,1344.06,0.70, 
+2010:03:01,18:16:56,187,"firefox.exe","Living News - Personal Wellne...le - CNN.com - Mozilla Firefox",Left mouse button released,461,905,0.00,0.00,0.00, 
+2010:03:01,18:17:04,703,"firefox.exe","Career change: An ad exec qui...arch 1, 2010 - Mozilla Firefox",Mouse wheel,448,899,14.32,15.89,0.90, 
+2010:03:01,18:17:25,124,"firefox.exe","Career change: An ad exec qui...arch 1, 2010 - Mozilla Firefox",Mouse wheel stopped,21,59,0.00,0.00,1.00,12 Wheel actions
+2010:03:01,18:17:25,124,"firefox.exe","Career change: An ad exec qui...arch 1, 2010 - Mozilla Firefox",Left mouse button pressed,21,59,942.30,1295.57,0.73, 
+2010:03:01,18:17:25,218,"firefox.exe","Career change: An ad exec qui...arch 1, 2010 - Mozilla Firefox",Left mouse button released,21,59,0.00,0.00,0.00, 
+2010:03:01,18:17:32,515,"firefox.exe","Living News - Personal Wellne...le - CNN.com - Mozilla Firefox",Mouse wheel,441,454,576.56,580.55,0.99, 
+2010:03:01,18:17:36,124,"firefox.exe","Living News - Personal Wellne...le - CNN.com - Mozilla Firefox",Mouse wheel stopped,858,270,0.00,0.00,1.00,14 Wheel actions
+2010:03:01,18:17:36,124,"firefox.exe","Living News - Personal Wellne...le - CNN.com - Mozilla Firefox",Left mouse button pressed,858,270,469.55,512.10,0.92, 
+2010:03:01,18:17:36,233,"firefox.exe","Living News - Personal Wellne...le - CNN.com - Mozilla Firefox",Left mouse button released,858,270,0.00,0.00,0.00, 
+2010:03:01,18:17:48,264,"firefox.exe","Travel News, Guides and Tips ...ay - CNN.com - Mozilla Firefox",Left mouse button pressed,895,265,37.34,43.05,0.87, 
+2010:03:01,18:17:48,327,"firefox.exe","Travel News, Guides and Tips ...ay - CNN.com - Mozilla Firefox",Left mouse button released,895,265,0.00,0.00,0.00, 
+2010:03:01,18:17:57,702,"firefox.exe","Opinions, Analysis, Discussions from CNN.com - Mozilla Firefox",Left mouse button pressed,956,265,61.00,63.60,0.96, 
+2010:03:01,18:17:57,858,"firefox.exe","Opinions, Analysis, Discussions from CNN.com - Mozilla Firefox",Left mouse button released,956,265,0.00,0.00,0.00, 
+2010:03:01,18:18:02,733,"firefox.exe","CNN iReport - Share your stor...with CNN.com - Mozilla Firefox",Left mouse button pressed,906,642,380.30,1532.25,0.25, 
+2010:03:01,18:18:02,811,"firefox.exe","CNN iReport - Share your stor...with CNN.com - Mozilla Firefox",Left mouse button released,906,642,0.00,0.00,0.00, 
+2010:03:01,18:18:05,358,"firefox.exe","CNN iReport - Share your stor...with CNN.com - Mozilla Firefox",Left mouse button pressed,1038,262,402.27,440.63,0.91, 
+2010:03:01,18:18:05,468,"firefox.exe","CNN iReport - Share your stor...with CNN.com - Mozilla Firefox",Left mouse button released,1038,262,0.00,0.00,0.00, 
+2010:03:01,18:18:17,671,"firefox.exe","Business, financial, personal...CNNMoney.com - Mozilla Firefox",Left mouse button pressed,496,560,618.52,1153.97,0.54, 
+2010:03:01,18:18:17,796,"firefox.exe","Business, financial, personal...CNNMoney.com - Mozilla Firefox",Left mouse button released,496,560,0.00,0.00,0.00, 
+2010:03:01,18:18:23,358,"firefox.exe","Tabasco: 142 years old and st...Mar. 1, 2010 - Mozilla Firefox",Left mouse button pressed,23,61,687.55,787.04,0.87, 
+2010:03:01,18:18:27,499,"firefox.exe","Tabasco: 142 years old and st...Mar. 1, 2010 - Mozilla Firefox",Left mouse button released,23,61,0.00,0.00,0.00, 
+2010:03:01,18:18:35,343,"firefox.exe","Business, financial, personal...CNNMoney.com - Mozilla Firefox",Left mouse button pressed,23,61,0.00,0.00,0.00, 
+2010:03:01,18:18:35,530,"firefox.exe","Business, financial, personal...CNNMoney.com - Mozilla Firefox",Left mouse button released,23,61,0.00,0.00,0.00, 
+2010:03:01,18:18:44,593,"firefox.exe","CNN iReport - Share your stor...with CNN.com - Mozilla Firefox",Left mouse button pressed,640,782,948.96,2260.95,0.42, 
+2010:03:01,18:18:44,702,"firefox.exe","CNN iReport - Share your stor...with CNN.com - Mozilla Firefox",Left mouse button released,639,782,1.00,1.00,1.00, 
+2010:03:01,18:18:47,999,"firefox.exe","My mobile life: News & Videos... CNN iReport - Mozilla Firefox",Left mouse button pressed,688,642,148.33,912.23,0.16, 
+2010:03:01,18:18:48,077,"firefox.exe","My mobile life: News & Videos... CNN iReport - Mozilla Firefox",Left mouse button released,688,642,0.00,0.00,0.00, 
+2010:03:01,18:18:55,234,"firefox.exe","My mobile life: News & Videos... CNN iReport - Mozilla Firefox",Left mouse button pressed,912,642,224.00,247.89,0.90, 
+2010:03:01,18:18:55,968,"firefox.exe","My mobile life: News & Videos... CNN iReport - Mozilla Firefox",Left mouse button released,912,642,0.00,0.00,0.00, 
+2010:03:01,18:18:58,296,"firefox.exe","My mobile life: News & Videos... CNN iReport - Mozilla Firefox",Mouse wheel,114,549,803.40,808.99,0.99, 
+2010:03:01,18:19:00,343,"Explorer.EXE","6:18 PM",Mouse wheel stopped,114,549,0.00,0.00,1.00,6 Wheel actions
+2010:03:01,18:19:10,562,"firefox.exe","My mobile life: News & Videos... CNN iReport - Mozilla Firefox",Mouse wheel,114,549,0.00,0.00,0.00, 
+2010:03:01,18:19:15,218,"firefox.exe","My mobile life: News & Videos... CNN iReport - Mozilla Firefox",Mouse wheel stopped,291,262,0.00,0.00,1.00,12 Wheel actions
+2010:03:01,18:19:15,218,"firefox.exe","My mobile life: News & Videos... CNN iReport - Mozilla Firefox",Left mouse button pressed,291,262,337.19,407.82,0.83, 
+2010:03:01,18:19:15,328,"firefox.exe","My mobile life: News & Videos... CNN iReport - Mozilla Firefox",Left mouse button released,290,262,1.00,1.00,1.00, 
+2010:03:01,18:19:25,624,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,558,534,381.85,622.65,0.61, 
+2010:03:01,18:19:25,703,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,556,534,2.00,2.00,1.00, 
+2010:03:01,18:19:27,109,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,1059,579,505.01,532.53,0.95, 
+2010:03:01,18:19:27,187,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,1059,579,0.00,0.00,0.00, 
+2010:03:01,18:19:28,453,"firefox.exe","Liberalism, atheism, male sex...IQ - CNN.com - Mozilla Firefox",Mouse wheel,464,351,637.19,643.73,0.99, 
+2010:03:01,18:19:55,328,"firefox.exe","Liberalism, atheism, male sex...IQ - CNN.com - Mozilla Firefox",Mouse wheel stopped,647,376,0.00,0.00,1.00,12 Wheel actions
+2010:03:01,18:19:55,328,"firefox.exe","Liberalism, atheism, male sex...IQ - CNN.com - Mozilla Firefox",Key pressed,647,376,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:19:55,515,"firefox.exe","Liberalism, atheism, male sex...IQ - CNN.com - Mozilla Firefox",Key pressed,647,376,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:19:55,703,"firefox.exe","Liberalism, atheism, male sex...IQ - CNN.com - Mozilla Firefox",Key pressed,647,376,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:19:55,875,"firefox.exe","Liberalism, atheism, male sex...IQ - CNN.com - Mozilla Firefox",Key pressed,647,376,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:19:56,031,"firefox.exe","Liberalism, atheism, male sex...IQ - CNN.com - Mozilla Firefox",Key pressed,647,376,-1.00,-1.00,1.00,Down arrow
+2010:03:01,18:21:11,500,"firefox.exe","Liberalism, atheism, male sex...IQ - CNN.com - Mozilla Firefox",Mouse wheel,647,376,184.32,185.60,0.99, 
+2010:03:01,18:22:00,344,"Explorer.EXE","6:21 PM",Mouse wheel stopped,658,386,0.00,0.00,1.00,17 Wheel actions
+2010:03:01,18:22:16,344,"firefox.exe","Liberalism, atheism, male sex...IQ - CNN.com - Mozilla Firefox",Mouse wheel,663,397,12.08,14.40,0.84, 
+2010:03:01,18:23:00,345,"Explorer.EXE","6:22 PM",Mouse wheel stopped,706,390,0.00,0.00,1.00,11 Wheel actions
+2010:03:01,18:23:29,205,"firefox.exe","Liberalism, atheism, male sex...IQ - CNN.com - Mozilla Firefox",Left mouse button pressed,13,64,765.85,1051.04,0.73, 
+2010:03:01,18:23:29,283,"firefox.exe","Liberalism, atheism, male sex...IQ - CNN.com - Mozilla Firefox",Left mouse button released,13,64,0.00,0.00,0.00, 
+2010:03:01,18:23:35,455,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Mouse wheel,87,381,325.52,346.89,0.94, 
+2010:03:01,18:23:53,830,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Mouse wheel stopped,613,859,0.00,0.00,1.00,5 Wheel actions
+2010:03:01,18:23:53,830,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,613,859,714.61,753.23,0.95, 
+2010:03:01,18:23:53,940,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,613,859,0.00,0.00,0.00, 
+2010:03:01,18:24:01,409,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,1080,921,471.10,1082.56,0.44, 
+2010:03:01,18:24:01,471,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,1080,921,0.00,0.00,0.00, 
+2010:03:01,18:24:03,127,"firefox.exe","Justices: Slain wrestling sta...cs - CNN.com - Mozilla Firefox",Mouse wheel,590,743,521.33,534.85,0.97, 
+2010:03:01,18:24:14,081,"firefox.exe","Justices: Slain wrestling sta...cs - CNN.com - Mozilla Firefox",Mouse wheel stopped,590,743,0.00,0.00,1.00,8 Wheel actions
+2010:03:01,18:24:14,081,"firefox.exe","Justices: Slain wrestling sta...cs - CNN.com - Mozilla Firefox",Right mouse button pressed,590,743,0.00,0.00,0.00, 
+2010:03:01,18:24:14,456,"firefox.exe","Justices: Slain wrestling sta...cs - CNN.com - Mozilla Firefox",Right mouse button released,590,743,0.00,0.00,0.00, 
+2010:03:01,18:24:14,956,"firefox.exe","Justices: Slain wrestling sta...cs - CNN.com - Mozilla Firefox",Left mouse button pressed,473,729,117.83,118.27,1.00, 
+2010:03:01,18:24:15,096,"firefox.exe","Justices: Slain wrestling sta...cs - CNN.com - Mozilla Firefox",Left mouse button released,472,729,1.00,1.00,1.00, 
+2010:03:01,18:24:54,066,"firefox.exe","Justices: Slain wrestling sta...cs - CNN.com - Mozilla Firefox",Right mouse button pressed,472,729,0.00,0.00,0.00, 
+2010:03:01,18:24:54,519,"firefox.exe","Justices: Slain wrestling sta...cs - CNN.com - Mozilla Firefox",Right mouse button released,472,729,0.00,0.00,0.00, 
+2010:03:01,18:24:55,878,"firefox.exe","Justices: Slain wrestling sta...cs - CNN.com - Mozilla Firefox",Left mouse button pressed,522,530,205.19,234.16,0.88, 
+2010:03:01,18:24:55,988,"firefox.exe","Justices: Slain wrestling sta...cs - CNN.com - Mozilla Firefox",Left mouse button released,522,530,0.00,0.00,0.00, 
+2010:03:01,18:25:03,535,"firefox.exe","Justices: Slain wrestling sta...cs - CNN.com - Mozilla Firefox",Mouse wheel,520,530,2.00,2.00,1.00, 
+2010:03:01,18:26:00,348,"Explorer.EXE","6:25 PM",Mouse wheel stopped,518,530,0.00,0.00,1.00,13 Wheel actions
+2010:03:01,18:26:09,864,"firefox.exe","Justices: Slain wrestling sta...cs - CNN.com - Mozilla Firefox",Mouse wheel,518,530,0.00,0.00,0.00, 
+2010:03:01,18:27:00,349,"Explorer.EXE","6:26 PM",Mouse wheel stopped,480,582,0.00,0.00,1.00,9 Wheel actions
+2010:03:01,18:27:22,069,"firefox.exe","Justices: Slain wrestling sta...cs - CNN.com - Mozilla Firefox",Left mouse button pressed,30,59,678.22,915.33,0.74, 
+2010:03:01,18:27:22,178,"firefox.exe","Justices: Slain wrestling sta...cs - CNN.com - Mozilla Firefox",Left mouse button released,29,59,1.00,1.00,1.00, 
+2010:03:01,18:27:23,866,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Mouse wheel,102,249,203.54,210.22,0.97, 
+2010:03:01,18:27:36,991,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Mouse wheel stopped,554,456,0.00,0.00,1.00,12 Wheel actions
+2010:03:01,18:27:36,991,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,554,456,482.99,523.04,0.92, 
+2010:03:01,18:27:37,069,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,553,456,1.00,1.00,1.00, 
+2010:03:01,18:27:42,772,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,584,406,58.83,77.23,0.76, 
+2010:03:01,18:27:42,882,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,584,406,0.00,0.00,0.00, 
+2010:03:01,18:27:46,350,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,600,758,352.36,481.07,0.73, 
+2010:03:01,18:27:46,491,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,600,758,0.00,0.00,0.00, 
+2010:03:01,18:27:52,632,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,726,811,136.69,728.49,0.19, 
+2010:03:01,18:27:52,804,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,726,811,0.00,0.00,0.00, 
+2010:03:01,18:27:53,272,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,712,811,14.00,14.00,1.00, 
+2010:03:01,18:27:53,351,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,712,811,0.00,0.00,0.00, 
+2010:03:01,18:27:54,179,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,656,821,56.89,58.82,0.97, 
+2010:03:01,18:27:54,272,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,656,821,0.00,0.00,0.00, 
+2010:03:01,18:28:20,101,"Explorer.EXE","Notification Area",Left mouse button pressed,1102,1008,483.62,1061.57,0.46, 
+2010:03:01,18:28:20,257,"Explorer.EXE","Notification Area",Left mouse button released,1102,1008,0.00,0.00,0.00, 
+2010:03:01,18:28:20,789,"uLog.exe","<Unknown window>",Left mouse button pressed,1124,975,39.66,42.17,0.94, 
+2010:03:01,18:28:20,914,"uLog.exe","<Unknown window>",Left mouse button released,1124,975,0.00,0.00,0.00, 
+2010:03:01,18:28:20,914,"uLog.exe"," ",Logging stopped,-1,-1,-1.00,-1.00,-1.00, 

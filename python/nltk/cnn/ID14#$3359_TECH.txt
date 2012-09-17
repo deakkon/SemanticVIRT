@@ -1,0 +1,106 @@
+                      The iShoe helps detect balance problems in humans. It is expected to be on the market in a couple of years. STORY HIGHLIGHTS MIT-Harvard student gets prize for innovation and entrepreneurship  Erez Lieberman-Aiden created &quot;iShoe,&quot; a device to help older people with balance  His grandmother died in a fall he feels could have been prevented  The 30-year-old also creates 3-D modeling tech for the human genome
+RELATED TOPICS
+
+
+Massachusetts Institute of Technology
+
+Medical Science
+
+Science and Technology
+
+ (CNN) -- Erez Lieberman-Aiden had a nagging feeling that his grandmother's death, which occurred after a hard fall, could have been prevented. But the 30-year-old graduate student at MIT and Harvard did more than fret. He tried to prevent something similar from happening to other older people. Lieberman-Aiden invented a high-tech shoe insole to help older people manage their balance before a catastrophic fall occurs. His &quot;iShoe&quot; sneaker insoles track a person's balance patterns using digital sensors. The battery-powered footbeds transmit data to computers about a person's walking and standing stability. &quot;The model of 'I go into my doctor once every six months or once a year to get a check up' is kind of more the speed of a society where people write long letters to each other every three months to be in touch,&quot; he said. &quot;Now information can travel all over the place in real time. ... That model is beginning to influence medicine as well.&quot; Lieberman-Aiden was among four students awarded a $30,000 prize in innovation from MIT on Wednesday. The Lemelson-MIT Collegiate Student Prize is given to inventive and entrepreneurial students from MIT, Caltech, Rensselaer Polytechnic Institute and the University of Illinois. Other winners helped develop affordable prosthetic arms, new diagnostic tests for cancer and other diseases, and new methods for storing hydrogen power. Aside from the iShoe, Lieberman-Aiden was also granted the award for his work with colleagues on developing new technology to create 3-D models of the human genome, which he said had never been done before. What did it end up looking like? Well, if you zoom in a bit, he said, the twisted genome looks pretty much like a pack of Ramen noodles. The 3-D modeling methods help scientists understand why cells with the same genetic sequencing can function in such different ways, he said. The answer lies in the macro structure, which lets cells turn certain parts of their gene codes on and off. As for the iShoe, Lieberman-Aiden said he was frustrated after his grandmother's death, but didn't know quite what to do about it. &quot;I was aware that [balance problems in older people] was obviously a problem, but doing anything about it had not really clicked,&quot; he said. An internship soon brought him some answers. While working at NASA, Lieberman-Aiden stumbled on a project where NASA scientists were trying to analyze astronaut balance in low-gravity environments. All of a sudden he made the connection. Maybe he could use a similar process to diagnose balance problems here on Earth. &quot;There are interventions people can engage in in order to improve their balance,&quot; he said. &quot;It's kind of like, in some sense, heart disease, where you're increasingly prone to it as you age, but there are treatments that can improve the situation.&quot; The key to a person's balance, it turns out, is not in how well they walk but how well they stand still, he said. So the iShoe takes particular note of how much a person shifts his or her weight while standing. A well-balanced person might shift weight every 40 seconds, he said, but a person with potentially dangerous balance problems might shift weight constantly, or every second. The iShoe spits out balance data sets that can be interpreted by doctors, or potentially by patients themselves, he said. It uses a Bluetooth connection to transmit the info from a person's shoes to a computer. The invention is still in the research-and-development phase, but Lieberman-Aiden said he expects it to become a consumer product within a few years. He said he's working with a company to produce the device, and that other manufacturers are looking into the idea, too. Most of Lieberman-Aiden's time these days is spent working on his genome modeling project. He's scheduled to graduate this spring with a degree in applied math, and health science and technology. He also has a baby on the way. He said he'll use his $30,000 prize to further his research efforts, help with baby expenses and, possibly, to buy a new couch. &quot;I do a lot of work on the couch and as a result our couch has become phenomenally dilapidated, so I think we're likely to buy a new couch,&quot; he said.
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+	
+		
+		
+			
+				
+					
+						
+						Share this on:
+					
+										
+						Mixx
+						Facebook
+						Twitter
+						Digg
+						delicious
+						reddit
+						MySpace
+						StumbleUpon
+						LinkedIn
+					
+				
+			
+		
+		
+	
+			
+
+
+
+	
+
+
+	
+
+
+
+
+
+FOLLOW THIS TOPIC
+
+	
+			
+  More Tech
+	
+	
+		
+Report: Google TV devices delayed as Google tweaks software
+
+
+5 Web titans that withered under Yahoo
+
+
+New 'Tron' shines glowing light on an arcade classic
+
+
+	
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+

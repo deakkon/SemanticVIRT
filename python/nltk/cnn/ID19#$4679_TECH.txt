@@ -1,0 +1,116 @@
+                              The International Imaging Industry Association is creating a rating system to grade cell-phone cameras' image quality. STORY HIGHLIGHTS Image organization is working on a test that will use a five-star rating and chart to judge image quality  Scores based on measurements sharpness, color uniformity, and lens distortion  Group now is tackling image noise, white balance, sensitivity, blur, and other attributes for test  In addition to star rating, chart would show how well camera fares with demanding tasks 
+RELATED TOPICS
+
+
+Apple iPhone
+
+BlackBerry Mobile Devices
+
+Google Android
+
+Photography
+
+ (CNET) -- Let's say you're trying to decide whether to buy a new mobile phone and you like taking photos. The Google Nexus One's 5-megapixel camera has 56 percent more pixels than the iPhone 3GS's 3.2 megapixels, but it's clear the camera isn't 56 percent better. Now let's say it's 2012 and you're trying to decide whether to buy an Apple iPhone 4GS or a Google Nexus Three. You might be able to make a better choice this time. That's because the International Imaging Industry Association, a consortium involving more than 30 companies, is working on a test that will use a five-star rating and a basic accompanying chart to judge image quality. It may seem like a simple idea, but it's pretty important. That's because the nature of mobile-phone photography is changing dramatically. Once upon a time, mobile-phone cameras didn't see much use beyond teenagers mugging for the camera and maybe sending each other the photos for viewing on another mobile phone. But now mobile-phone cameras are getting good enough to store precious memories, too. That means viewing them on bigger screens, printing them, and saving them for more than a fleeting moment. &quot;As [mobile-phone photography] gets to older people, it will get more important,&quot; said Nicholas Touchard, vice president of marketing for image quality evaluation at the French company DxO Labs, after a speech at the Image Sensor Europe conference here. Touchard represents DxO in the consortium. He said phone buyers could start seeing the quality score as early as a year from now, but realistically two years is more likely. The score is based on measurements of a variety of factors. First came basics such as sharpness, color uniformity, and lens distortion. Now the group is tackling image noise, white balance, sensitivity, blur, and other attributes. Of course, reducing image quality to a single five-star rating scale can oversimplify a complicated situation. There's a bit more, though: a chart that shows how well the camera fares with increasingly demanding tasks -- mobile-phone sharing to a print mounted on the wall, for example -- and showing different uses such as portraits, sports, and landscape photography. &quot;This is a very controversial thing. Most people will tell you that summarizing the quality of a camera to just one number is quite risky or isn't what you would like to do as a scientist,&quot; he said in his speech. &quot;However, as a consumer, it's probably a good idea.&quot; Mobile-phone cameras suffer poor image quality compared even to inexpensive compact cameras, much less to increasingly popular SLRs. One thing that holds them back are the tiny image sensors, which simply have a harder time recording as much information as larger ones in dedicated cameras.  Another is the correspondingly small lenses that must be built to tight manufacturing tolerances but that also must be inexpensive enough for high-volume markets with very thin profit margins. But as the saying has gone in photography circles since the days of film, the best camera is the one you have with you, and people always bring their mobile phones. Adding to that is another fact: as Internet connectivity increasingly is built into phones, those photos are more likely to escape the phone via e-mail, Facebook, or other means.  It's not a coincidence that the iPhone is the most popular camera on Yahoo's Flickr photo-sharing site. And the new smartphones are powerful enough to run software such as Photoshop for those who want to polish before sharing. There could be more quality improvements coming, too, that separate camera quality more widely. In 2011, start-up InVisage hopes to transform the smartphone market with much higher-quality image sensors. The company believes its QuantumFilm technology -- small precisely sized elements of light-sensitive semiconductor painted onto the surface of an image sensor chip -- will be as much as four times as sensitive as prevailing image sensor technology. InVisage has another potential edge, too, said digital design manager Michael Malone in a talk at the conference. That's because InVisage's design isn't as sensitive to the direction light is arriving from, in contrast to traditional sensors that work best with light arriving perpendicular to the sensor. InVisage's approach opens up options for lens designs that permit a smaller camera package. And as everybody knows with mobile phones, thin is in. Key to making the camera phone image quality (CPIQ) score useful will be persuading those who sell mobile phones -- handset makers and carriers, chiefly -- to show the number. Touchard believes they will -- at least some of them some of the time. &quot;They're all waiting for who makes the first move,&quot; Touchard said. &quot;Progress is not really coming from the carriers. They don't know much about this, and they don't want to do it if the others aren't doing it.&quot; Of course, plenty of companies won't want to if their phone's camera gets a low score. But Touchard believes that those on the other end of the quality spectrum will be instrumental in its spread. It also will appeal to newcomers or those trying to show off a competitive edge. This is where Google and Microsoft, which joined the phone quality effort in 2009, could come into play. &quot;Google and Microsoft are in a battle to get into the high-end market because of Apple and Nokia,&quot; two incumbent powers, Touchard said. Google has a particular interest in image quality: its Google Goggles program lets people submit photos as search queries, and text recognition doesn't do well with low-quality images. And once consumers start seeing the camera ratings, they could become sophisticated enough to recognize that there might be a reason it's missing from some products.		&copy; 2010 CBS Interactive Inc. All rights reserved. CNET, CNET.com and the CNET logo are registered trademarks of CBS Interactive Inc. Used by permission.
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+	
+		
+		
+			
+				
+					
+						
+						Share this on:
+					
+										
+						Mixx
+						Facebook
+						Twitter
+						Digg
+						delicious
+						reddit
+						MySpace
+						StumbleUpon
+						LinkedIn
+					
+				
+			
+		
+		
+	
+			
+
+
+
+	
+
+
+	
+
+
+
+
+
+FOLLOW THIS TOPIC
+
+We recommend
+Latest CNET News videos CNET
+
+
+CNET News image galleries CNET
+
+
+More technology news from CNET CNET
+
+  More Tech
+	
+	
+		
+FCC to vote Tuesday on 'net neutrality' rules
+
+
+Report: Google TV devices delayed as Google tweaks software
+
+
+New iPhone app translates foreign-language signs
+
+
+	
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+

@@ -1,0 +1,150 @@
+                          Scaling the wall: Firewall-breaching tools are booming in countries that are clamping down on Internet freedom. STORY HIGHLIGHTSCompanies providing tools to avoid Web access restrictions see big rise in businessVirtual private networks (VPN) and proxy servers increasingly popular in China and IranFirewall breaching services often fall victim to government blocks if they are too popularIn China majority of VPNs used by expatriates
+RELATED TOPICS
+
+
+Google Inc.
+
+Internet
+
+Business
+
+China
+
+ (CNN) -- A growing number of software companies are capitalizing on an unexpected business opportunity: Internet censorship.  In countries where governments continue to ramp up Web filtering systems, more people are searching for tools that will allow them to access inaccessible information -- and they are willing to pay for them.  Such tools include virtual private networks (VPN), proxy servers and other workarounds that enable users to breach barriers to blocked information online.  VPNs &quot;tunnel&quot; through to servers in a country with no Web controls, encrypting information under an anonymous computer address to conceal private traffic. Proxies also allow unfiltered Internet access but are considered less secure than VPNs.  &quot;The market is growing very rapidly at the moment,&quot; said Patrick Lin, who offers a circumvention technology he calls &quot;Puff&quot; to those looking for ways to leap over firewalls. One version is available for free, while another costs $16 to use for a year.  According to Lin, since he launched the application from his California office last June, it has been downloaded more than 500,000 times. Sixty percent of its 60,000 daily users are from China while 40 percent are in Iran, he said.  &quot;The reason is the Chinese and the Iranian governments are becoming more aggressive with blocking Web sites,&quot; he told CNN. &quot;If China blocks Gmail, then the user base will increase a lot more rapidly.&quot;  Earlier this month Iranian authorities imposed restrictions on Internet access in the country and a permanent ban on Gmail, Google's e-mail service.  While there has been no such move in China, there has been speculation Google's international site could be blocked after the company announced on January 12 it was considering ending its operations in the country and would stop censoring results on its Chinese search engine, Google.cn.  On February 12, Google co-founder Sergey Brin said the Internet giant will not pull the plug in China and would agree to filter pornographic and other potentially objectionable material.   
+
+
+
+	
+	
+	
+		
+			
+				
+				
+			
+		
+	
+	
+			
+			
+		
+			
+				
+			
+		
+		
+				
+					
+					 "When we see new blocking techniques in China, we have to counter them. It is an ongoing battle."--Bill Bullock, VPN provider
+ 
+				
+
+		
+			
+				
+			
+		
+
+
+
+			
+	
+
+
+
+However, Google's video sharing portal, YouTube, and popular social networking sites Facebook and Twitter are blocked in China, which means companies have already been cashing in on censored Web surfers who can no longer connect with friends and family online.  David Gorodyansky, founder of the U.S.-based company AnchorFree, said his business has around one million people in China using its free VPN Hotspot Shield each month. The VPN has over 7 million monthly users in 100 countries.  Gorodyansky says the company is profitable and generates revenues by selling ads appearing on every Web page. There are 50 million page views a month in China and more than a billion worldwide.  &quot;We have grown 500 percent in the last 12 months,&quot; Gorodyansky told CNN. &quot;We would like to continue growing as fast as possible. We think there is no reason why usage can't grow from 7 million to 70 million around the world.&quot;  When AnchorFree introduced its product in 2005, it was intended for people concerned about online identity theft or who are safely using wireless networks in hotels and other public places.  &quot;It is an interesting position to be in, for sure,&quot; said Gorodyansky. &quot;Our goal is not to in anyway disrespect the government of China. We just happened to build a cool technology that people in China want to use.&quot;  Too many people in China, apparently.  When firewall-breaching services accrue substantial user bases, more often than not, they fall victim to government blocks. Hotspot Shield, along with other, usually free, VPNs and proxies have been temporarily shut down or completely banished by Internet police in China as well as Iran.  &quot;That is why we have not specifically done a tremendous amount of advertising in China,&quot; Bill Bullock, head of WiTopia, a Virginia-based company that sells a VPN service, told CNN.  &quot;We just kind of do what we need to do,&quot; he said. &quot;When we see new blocking techniques come out [in China], we have counter measures for those. It is an ongoing battle, we are doing business in a country that does not want us to do business there.&quot;  Steve Dickinson, a China-based lawyer with Harris &amp; Moure, an international business law firm, said that companies supplying VPN products in China are technically breaking Chinese law.  &quot;China has no jurisdiction over such persons. As long as they do not physically enter China, there is no risk,&quot; he said in an email to CNN.  While free proxies are frequently shut down, subscription VPNs rarely face blockages, largely because they target expatriates and foreign businesspeople, an almost inconsequential share of Web users in China.  &quot;It is only the elite who can get access or know how to use [the software],&quot; Andrew Lih, director of new media at the University of Southern California's Annenberg School of Communication and Journalism, told CNN.  &quot;As long as the Chinese government can keep 90 percent [behind the firewall], then there is not enough critical mass for there to be a problem,&quot; he said.  &quot;Even though you will have new ways of piercing the firewall, as long as you have the authorities controlling the physical access points, in the long term, the authorities will have the upper hand.&quot;  There could one day be a limit to the expansion of an industry banking its future on selling what is, in essence, freedom.  While there is growing awareness of the technologies, companies running them must constantly outsmart Internet police intent on shutting them down. And in China, many local users are unwilling to pay, either because they lack access to a foreign credit card or would rather use something that is free.  Research also suggests many Chinese may not have a desire to use the tools at all. A 2007 study conducted by the Chinese Academy of Social Sciences found 80 percent of those surveyed supported government control of the Internet.  &quot;We don't want to rely on [censoring of the Internet for our business],&quot; said Bullock. &quot;But we may never get rid of it. Someone will always be trying to control the flow of information.&quot; 
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+	
+		
+		
+			
+				
+					
+						
+						Share this on:
+					
+										
+						Mixx
+						Facebook
+						Twitter
+						Digg
+						delicious
+						reddit
+						MySpace
+						StumbleUpon
+						LinkedIn
+					
+				
+			
+		
+		
+	
+			
+
+
+
+	
+
+
+	
+
+
+
+
+
+FOLLOW THIS TOPIC
+
+	
+			
+  More Tech
+	
+	
+		
+Report: Google TV devices delayed as Google tweaks software
+
+
+5 Web titans that withered under Yahoo
+
+
+New 'Tron' shines glowing light on an arcade classic
+
+
+	
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+

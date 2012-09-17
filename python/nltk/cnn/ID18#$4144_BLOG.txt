@@ -1,0 +1,19 @@
+			 
+I logged on to YouTube today, eager to test the automatic-captioning feature made available to all users Thursday.
+I plugged in my headphones, clicked on the first video I saw - a clip from the Food Network show, “Semi-Homemade Cooking” &#8211; and turned on captioning by clicking the &#034;cc&#034; icon in the lower right-hand corner of the screen.
+Before the captions appeared, a message popped up that read, “Please note: Transcribed Audio is an experimental service that uses Google’s speech recognition technologies to provide automated captions for video.”
+Experimental - they weren’t kidding.
+“I’m just going to take this and kind of free form it,” host Sandra Lee said as she prodded a loaf of raw meat. However, the caption read, “I’m just going to take that a tax break for it.”
+Other mangled captions have appeared on Twitter and on the new Web meme, YouTubecaptionfail.com.
+In a post on the Official YouTube Blog, a spokesperson acknowledges “auto-captions aren’t perfect,” but asks user to be patient. “Our speech recognition technology gets better every day.”
+Here&#039;s how it works:
+“Auto-captioning combines some of the speech-to-text algorithms found in Google&#039;s Voice Search to automatically generate video captions when requested by a viewer … Just like any speech recognition application, auto-captions require a clearly spoken audio track,” the blog states. “Videos with background noise or a muffled voice can&#039;t be auto-captioned.” 
+A YouTube spokesperson told CNN, “Although auto-captions are imperfect, they’re better than nothing and they will help the deaf community to better understand this wide world of video they previously hadn’t been able to connect with.”
+At the moment, auto-captioning only applies to videos in English. In the coming months, YouTube plans to release auto-captioning for many other languages.
+
+
+Posted by: Special to CNN, Stephanie GoldbergFiled under: Google&nbsp;&#149;&nbsp;YouTube
+
+
+
+

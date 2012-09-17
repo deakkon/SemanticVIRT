@@ -1,0 +1,114 @@
+                          Google employees and outsiders tested Buzz before its launch. But privacy concerns became issue after it went live. STORY HIGHLIGHTSColumnist: With privacy concerns, does Google understand market?Google asking users to manually approve followers instead of automatically adding themGoogle tested Buzz with employees and outside testers, but was that enough?Privacy issues surrounding Buzz became center of attention at Google's employee meeting
+RELATED TOPICS
+
+
+Google Inc.
+
+Internet
+
+Business
+
+ (CNET) -- Google may have reached the limits of what it can learn from dog food. Ask almost any technology company what products and services they use within their own organizations, and most will enthusiastically admit to &quot;dog-fooding&quot; their own products. It's both a show of support for their own technology and an opportunity to test those products for flaws that won't make the light of day before they are fixed. Google is no different. But something went wrong with the dog-fooding process for Google Buzz, forcing company engineers to scramble over a holiday weekend to calm the outcry over privacy violations with tweaks to the settings and set-up process.  Google now asks Buzz users to manually approve their followers instead of automatically including them on their Buzz lists, and improved the visibility of the privacy controls. Buzz was just tested inside Google before it launched to the general public, said Todd Jackson, Google Buzz product manager. Several layers of Google employees participated in the process, from the initial design team to wider and wider circles of employees.  And a source familiar with the product development process said Google put Buzz through its usability lab, where it brings in outsiders to evaluate products in secret before they are launched. However, either no one brought up the privacy concerns that Buzz users raised within a day of its launch, Google didn't ask the outsiders for their thoughts on Buzz privacy, or Google engineers dismissed those concerns as unfounded.  For whatever reason, Google has taken a hit over the Buzz launch from a public that is already skeptical about the search giant's motivations with the enormous amount of personal data it already has accumulated. It is moving quickly to assuage those fears. Buzz and the issues surrounding its launch quickly became the center of attention at Google's weekly meeting for employees on Friday, where tradition holds that employees can speak freely on anything and everything involving the company.  People familiar with the meeting characterized it as full of &quot;strong feelings&quot; that led to Google's weekend push to improve the set-up options for Buzz. The furor over the Buzz launch will subside, and Web users will turn their attentions to debating the usefulness of the service. However, the incident exposes a real problem for Google: Does its unique culture really understand the markets in which it wants to participate? Social media has already been a minefield for Google, with stops and starts amid charges that the engineers who built Google don't understand the wider world of social networking.  Fairly or unfairly, incidents such as the Google Buzz launch underscore that Google employees -- among the smartest and most tech-savvy group of workers in Silicon Valley -- may not be the best testing ground for products designed to reach the general public. Google is famous -- infamous, really -- for keeping products in &quot;beta&quot; mode for an inordinate amount of time while they work out the kinks. Gmail -- the host product for Google Buzz -- was in beta for five years, with Google unwilling to lift the qualifier tag until last year amid a push into corporate accounts. The company also tests products through invitation-only groups, such as it did for Google Voice and Google Wave. Then, over time, it opens those groups to wider and wider circles until the general public is welcome. But when it came to making that decision for Google Buzz, the company decided that social networks only really start to become compelling when a user has a lot of contacts, according to a source familiar with its thinking.  Therefore, it wanted to seed Buzz users with as many contacts as possible when they first logged into the system, so they could get up and Buzzing right away. The idea was to avoid some of the backlash attached to Google Wave, which underwhelmed early adopters following months of hype because they couldn't find enough people on Google Wave to unlock its potential. With all the scrutiny on Google these days, however, it appears that the time is ready for privacy to become as important a part of Google's product design philosophy as the placement of pixels.   Google says it takes this responsibility very seriously, but despite including tens of thousands of Googlers on pre-launch Buzz testing, the privacy mistakes still slipped through the cracks. How can Google avoid making these mistakes in the future? For one, the company needs to make sure it strikes a better balance between internal and external feedback. It's understandable that Google would prefer to test things with its own employees to prevent product leaks, but unless Google wants to invest in ethnographers and social scientists to balance the engineers, it will need to solicit outside feedback to make sure it understands the needs of regular people. Also, Google does not have a chief privacy officer listed as part of its operating committee, and the word &quot;privacy&quot; does not appear in the job description of any of the dozens of top executives listed on Google's management page. A company representative said that Google has chosen a strategy where &quot;rather than having a single, isolated privacy department, here at Google we embed the importance of privacy into our products and systems from engineers through executives, guided by trained privacy professionals.&quot;   However, despite that focus, the privacy controls in Google Buzz were deemed adequate by those people. That can't happen again: Google simply can't afford to make any more mistakes regarding privacy. Otherwise, it will start to lose the trust of its users, who have been reminded for years that the competition is just a click away.		&copy; 2010 CBS Interactive Inc. All rights reserved. CNET, CNET.com and the CNET logo are registered trademarks of CBS Interactive Inc. Used by permission.
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+	
+		
+		
+			
+				
+					
+						
+						Share this on:
+					
+										
+						Mixx
+						Facebook
+						Twitter
+						Digg
+						delicious
+						reddit
+						MySpace
+						StumbleUpon
+						LinkedIn
+					
+				
+			
+		
+		
+	
+			
+
+
+
+	
+
+
+	
+
+
+
+
+
+FOLLOW THIS TOPIC
+
+We recommend
+Latest CNET News videos CNET
+
+
+CNET News image galleries CNET
+
+
+More technology news from CNET CNET
+
+  More Tech
+	
+	
+		
+Apple computer for sale: only $160K!
+
+
+From bomb maker wannabe to e-bike revolutionary
+
+
+Narnia's 'Dawn Treader' sails enhanced e-book wave
+
+
+	
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+

@@ -1,0 +1,77 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:03:05,15:30:30,090,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:03:05,15:30:40,106,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,722,790,1070.23,3708.90,0.29, 
+2010:03:05,15:30:41,434,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,400,632,0.00,0.00,1.00,2 Wheel actions
+2010:03:05,15:30:41,434,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,400,632,35.90,38.55,0.93, 
+2010:03:05,15:30:41,590,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,400,632,0.00,0.00,0.00, 
+2010:03:05,15:30:41,793,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,400,632,0.00,0.00,0.00, 
+2010:03:05,15:30:52,059,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,811,723,0.00,0.00,1.00,1 Wheel actions
+2010:03:05,15:30:52,059,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,811,723,420.95,1194.10,0.35, 
+2010:03:05,15:30:52,152,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,811,723,0.00,0.00,0.00, 
+2010:03:05,15:30:54,606,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel,811,719,4.00,4.00,1.00, 
+2010:03:05,15:31:00,621,"Explorer.EXE","3:30 PM",Mouse wheel stopped,811,719,0.00,0.00,1.00,3 Wheel actions
+2010:03:05,15:31:03,262,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel,811,719,0.00,0.00,0.00, 
+2010:03:05,15:32:00,622,"Explorer.EXE","3:31 PM",Mouse wheel stopped,783,712,0.00,0.00,1.00,12 Wheel actions
+2010:03:05,15:32:25,075,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel,732,671,73.01,126.27,0.58, 
+2010:03:05,15:33:00,622,"Explorer.EXE","3:32 PM",Mouse wheel stopped,566,406,0.00,0.00,1.00,16 Wheel actions
+2010:03:05,15:33:22,325,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Right mouse button pressed,514,422,279.11,451.23,0.62, 
+2010:03:05,15:33:22,341,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Right mouse button released,513,422,1.00,1.00,1.00, 
+2010:03:05,15:33:23,122,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Left mouse button pressed,499,595,173.57,811.84,0.21, 
+2010:03:05,15:33:23,232,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Left mouse button released,499,594,1.00,1.00,1.00, 
+2010:03:05,15:33:23,435,"firefox.exe","Mozilla Firefox",Mouse wheel,484,569,29.15,34.02,0.86, 
+2010:03:05,15:33:23,466,"firefox.exe","Mozilla Firefox",Mouse wheel stopped,484,568,0.00,0.00,1.00,1 Wheel actions
+2010:03:05,15:33:23,466,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel,484,567,2.00,2.00,1.00, 
+2010:03:05,15:33:25,747,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel stopped,638,133,0.00,0.00,1.00,1 Wheel actions
+2010:03:05,15:33:25,747,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Left mouse button pressed,638,133,460.51,1647.39,0.28, 
+2010:03:05,15:33:25,825,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Left mouse button released,638,133,0.00,0.00,0.00, 
+2010:03:05,15:33:26,341,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel,660,207,77.20,91.53,0.84, 
+2010:03:05,15:33:58,669,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Mouse wheel stopped,182,68,0.00,0.00,1.00,7 Wheel actions
+2010:03:05,15:33:58,669,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Left mouse button pressed,182,68,631.16,2186.01,0.29, 
+2010:03:05,15:33:58,747,"firefox.exe","Holly Graf: Navy Relieves Har...wpens - TIME - Mozilla Firefox",Left mouse button released,182,68,0.00,0.00,0.00, 
+2010:03:05,15:34:00,263,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,673,544,683.85,809.41,0.84, 
+2010:03:05,15:34:00,622,"Explorer.EXE","3:33 PM",Mouse wheel stopped,819,605,0.00,0.00,1.00,1 Wheel actions
+2010:03:05,15:34:02,451,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,542,608,145.80,1296.66,0.11, 
+2010:03:05,15:34:05,607,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,390,509,0.00,0.00,1.00,2 Wheel actions
+2010:03:05,15:34:05,607,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,390,509,185.88,475.17,0.39, 
+2010:03:05,15:34:05,763,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,388,506,3.61,5.00,0.72, 
+2010:03:05,15:34:06,841,"firefox.exe","Riders tossed out as bus roll...ay - CNN.com - Mozilla Firefox",Mouse wheel,388,506,0.00,0.00,0.00, 
+2010:03:05,15:34:17,248,"firefox.exe","Riders tossed out as bus roll...ay - CNN.com - Mozilla Firefox",Mouse wheel stopped,160,81,0.00,0.00,1.00,6 Wheel actions
+2010:03:05,15:34:17,248,"firefox.exe","Riders tossed out as bus roll...ay - CNN.com - Mozilla Firefox",Left mouse button pressed,160,81,686.63,1721.63,0.40, 
+2010:03:05,15:34:17,466,"firefox.exe","Riders tossed out as bus roll...ay - CNN.com - Mozilla Firefox",Left mouse button released,161,80,1.41,2.00,0.71, 
+2010:03:05,15:34:18,482,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,512,298,413.19,437.42,0.94, 
+2010:03:05,15:34:20,154,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,333,622,0.00,0.00,1.00,2 Wheel actions
+2010:03:05,15:34:20,154,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,333,622,369.68,730.20,0.51, 
+2010:03:05,15:34:20,263,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,333,622,0.00,0.00,0.00, 
+2010:03:05,15:34:21,544,"firefox.exe","Online dating liars: Why they do it - CNN.com - Mozilla Firefox Mouse wheel",Mouse wheel,333,617,5.00,5.00,1.00, 
+2010:03:05,15:35:00,623,"Explorer.EXE","3:34 PM",Mouse wheel stopped,549,611,0.00,0.00,1.00,19 Wheel actions
+2010:03:05,15:35:13,232,"firefox.exe","Online dating liars: Why they do it - CNN.com - Mozilla Firefox Mouse wheel",Mouse wheel,551,620,35.81,47.10,0.76, 
+2010:03:05,15:35:28,186,"firefox.exe","Online dating liars: Why they do it - CNN.com - Mozilla Firefox Mouse wheel stopped",Mouse wheel stopped,171,77,0.00,0.00,1.00,4 Wheel actions
+2010:03:05,15:35:28,186,"firefox.exe","Online dating liars: Why they do it - CNN.com - Mozilla Firefox Left mouse button pressed",Left mouse button pressed,171,77,659.49,1479.47,0.45, 
+2010:03:05,15:35:28,295,"firefox.exe","Online dating liars: Why they do it - CNN.com - Mozilla Firefox Left mouse button released",Left mouse button released,171,77,0.00,0.00,0.00, 
+2010:03:05,15:35:29,639,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,532,652,678.93,695.26,0.98, 
+2010:03:05,15:35:35,717,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,534,534,0.00,0.00,1.00,8 Wheel actions
+2010:03:05,15:35:35,717,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,534,534,132.28,852.67,0.16, 
+2010:03:05,15:35:35,857,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,534,533,1.00,1.00,1.00, 
+2010:03:05,15:35:38,482,"firefox.exe","French warship team destroys ...ts - CNN.com - Mozilla Firefox",Mouse wheel,635,518,102.11,137.91,0.74, 
+2010:03:05,15:36:00,623,"Explorer.EXE","3:35 PM",Mouse wheel stopped,766,533,0.00,0.00,1.00,6 Wheel actions
+2010:03:05,15:36:04,404,"firefox.exe","French warship team destroys ...ts - CNN.com - Mozilla Firefox",Mouse wheel,749,530,10.30,123.08,0.08, 
+2010:03:05,15:36:09,045,"firefox.exe","French warship team destroys ...ts - CNN.com - Mozilla Firefox",Mouse wheel stopped,724,529,0.00,0.00,1.00,3 Wheel actions
+2010:03:05,15:36:09,045,"firefox.exe","French warship team destroys ...ts - CNN.com - Mozilla Firefox",Right mouse button pressed,724,529,7.07,8.00,0.88, 
+2010:03:05,15:36:09,451,"firefox.exe","French warship team destroys ...ts - CNN.com - Mozilla Firefox",Right mouse button released,724,529,0.00,0.00,0.00, 
+2010:03:05,15:36:09,842,"firefox.exe","French warship team destroys ...ts - CNN.com - Mozilla Firefox",Left mouse button pressed,671,520,53.76,55.62,0.97, 
+2010:03:05,15:36:09,998,"firefox.exe","French warship team destroys ...ts - CNN.com - Mozilla Firefox",Left mouse button released,671,520,0.00,0.00,0.00, 
+2010:03:05,15:36:12,248,"firefox.exe","French warship team destroys ...ts - CNN.com - Mozilla Firefox",Mouse wheel,672,520,1.00,1.00,1.00, 
+2010:03:05,15:36:16,248,"firefox.exe","French warship team destroys ...ts - CNN.com - Mozilla Firefox",Mouse wheel stopped,653,447,0.00,0.00,1.00,1 Wheel actions
+2010:03:05,15:36:16,248,"firefox.exe","French warship team destroys ...ts - CNN.com - Mozilla Firefox",Left mouse button pressed,653,447,75.43,89.13,0.85, 
+2010:03:05,15:36:16,248,"firefox.exe","French warship team destroys ...ts - CNN.com - Mozilla Firefox",Left mouse button released,653,447,0.00,0.00,0.00, 
+2010:03:05,15:36:19,561,"firefox.exe","French warship team destroys ...ts - CNN.com - Mozilla Firefox",Mouse wheel,527,392,137.48,161.34,0.85, 
+2010:03:05,15:37:00,624,"Explorer.EXE","3:36 PM",Mouse wheel stopped,353,239,0.00,0.00,1.00,12 Wheel actions
+2010:03:05,15:37:03,670,"firefox.exe","French warship team destroys ...ts - CNN.com - Mozilla Firefox",Left mouse button pressed,163,66,507.58,1104.80,0.46, 
+2010:03:05,15:37:03,858,"firefox.exe","French warship team destroys ...ts - CNN.com - Mozilla Firefox",Left mouse button released,164,65,1.41,1.41,1.00, 
+2010:03:05,15:37:04,936,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,506,436,504.58,535.85,0.94, 
+2010:03:05,15:37:37,811,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,992,306,0.00,0.00,1.00,28 Wheel actions
+2010:03:05,15:37:37,811,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Middle mouse button pressed,992,306,1038.12,27013.31,0.04, 
+2010:03:05,15:37:38,202,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Middle mouse button released,1132,300,140.13,142.06,0.99, 
+2010:03:05,15:37:38,843,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1064,284,662.87,1522.78,0.44, 
+2010:03:05,15:37:38,952,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1064,284,0.00,0.00,0.00, 
+2010:03:05,15:37:40,843,"firefox.exe","Breaking news, real-time scor...ted 

@@ -1,0 +1,232 @@
+                        Gmail "graduated" six experimental features on Wednesday, including one to let people categorize e-mail with a full-color palette. STORY HIGHLIGHTS Google kills off some and &quot;graduates&quot; other experimental Gmail features  One now-integrated feature lets people color code their e-mail  Google says its &quot;Labs&quot; projects help keep the company innovative  Some engineers create Gmail Labs features to solve personal e-mail challenges (CNN) -- Mark Knichel's e-mail in-box is a funky grid of color. Red boxes indicate e-mails sent from friends. Bright green labels are attached to messages from e-mail lists. Notes from his family members are tagged in gold. And the gray messages? Well, those are for bills, of course. &quot;I just like that it gives me, right away, the sense of what type of e-mail I just received, so that I can glance over at the e-mail and see from the colors if I actually need to go over and read any of the messages,&quot; he said. Knichel is an engineer at Gmail, the free e-mail program from Google. And this system of color-coded messages is something he invented to save himself time and to organize the 100 or so e-mails he gets in a typical workday. Until Wednesday, this color system was classified by Google as a beta-stage feature in Gmail Labs, which the company refers to as &quot;a testing ground for experimental features that aren't quite ready for prime time.&quot;  
+
+
+
+	
+	
+	
+		
+			
+				
+				
+			
+		
+			
+				
+				
+			
+		
+			
+				
+				
+			
+		
+	
+	
+			
+			
+		
+			
+				
+					
+					 
+					
+
+
+	
+	
+
+
+				
+			
+		
+		
+				
+					
+					                                 Video: Google verdict ramifications
+
+				
+
+		
+			
+				
+						
+
+						
+				
+			
+		
+
+
+
+			
+	
+			
+			
+		
+			
+				
+					
+					 
+					
+
+
+	
+	
+
+
+				
+			
+		
+		
+				
+					
+					                                 Video: How would Google do it?
+
+				
+
+		
+			
+				
+						
+
+						
+				
+			
+		
+
+
+
+			
+	
+			
+			
+		
+			
+				
+			
+		
+		
+				
+					
+					  
+RELATED TOPICS
+
+
+Google Gmail
+
+Google Inc.
+
+Internet
+
+
+				
+
+		
+			
+				
+			
+		
+
+
+
+			
+	
+
+
+
+But now, along with five other features, Knichel's color system has graduated to become a full-time part of Gmail. At the same time, Google also held &quot;funerals&quot; Wednesday for five Gmail Labs features that were unpopular with e-mail users.  Google will keep Gmail functions with the following names: search autocomplete; forgotten attachment detector; YouTube previews; custom label colors; and vacation dates, which sets up away-from-e-mail messages to coincide with trips.  The search engine killed these Gmail features: muzzle, which hid away messages from online friends; fixed width font; e-mail addict, which let users force themselves to take a break; location in signature; and random signature.  This isn't the first time Gmail Labs has graduated and killed some test features since Gmail Labs started in June 2008, but the event does underscore an idea that Google says is key to its success as an innovative company: Let people create products they'd use themselves, get those products out to the public as soon as possible, and make consumers think it's OK for things to break. &quot;At Google, in general, the philosophy is to get things out quickly in front of our users and not make huge promises,&quot; said Ari Leichtberg, another Google engineer who has developed Gmail Labs products. &quot;Gmail was a beta app for a while in itself and that kind of let us as a company not be too afraid about getting something out that may screw up once in a while.&quot; This stands somewhat in contrast to Google's release of two recent products, Buzz and Wave, which were met with an unusual amount of criticism. Gmail users have to elect to turn on features that are in Gmail Labs, but Buzz is a social networking feature that Google forced upon its users.  Some felt their privacy had been violated, and a class-action lawsuit was filed against the company because of privacy concerns. Todd Jackson, a product manager at Gmail, said Buzz had to be handled differently than Gmail Labs because a person's entire social network needed to be using the Twitter-like service in order for it to work. Google has listened to user feedback on Buzz and made some changes, Jackson said. In phone interviews, the three Google engineers highlighted Gmail Labs as an example of nimble innovation. Some Gmail Labs features take only days to create; others months. Jackson said the ideas often are proposed by an individual, based on a particular e-mail problem they face, or in response to online comments about Gmail. And there's a limited approval process, he said, which allows creative or controversial ideas to get tested. Leichtberg, an engineer based in Google's Israel office, said by phone that two Gmail Labs applications he's helped developed came from real-life embarrassments. One of Leichtberg's applications, called &quot;Got the Wrong Bob,&quot; tries to prevent e-mailers from sending messages to the wrong person. It came up because Leichtberg's boss sent him an e-mail intended for another person named &quot;Ari&quot; who works at Google. Leichtberg joked that &quot;Got the Wrong Ari&quot; might not have been as catchy of a title for the feature. That add-on, and one called &quot;Don't Forget Bob,&quot; which reminds people about people they might like to include on large e-mail lists, will remain in Gmail Labs for now. Knichel, the engineer with the colorful in-box, said he has set up automatic filters that color code most of his messages as he receives them.  He was happy to learn that his Gmail feature would be adapted full time -- even though it only took him a few weeks to create. &quot;I'm pretty excited that everyone in Gmail will have this lab,&quot; he said.
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+	
+		
+		
+			
+				
+					
+						
+						Share this on:
+					
+										
+						Mixx
+						Facebook
+						Twitter
+						Digg
+						delicious
+						reddit
+						MySpace
+						StumbleUpon
+						LinkedIn
+					
+				
+			
+		
+		
+	
+			
+
+
+
+	
+
+
+	
+
+
+
+
+
+FOLLOW THIS TOPIC
+
+	
+			
+  More Tech
+	
+	
+		
+Report: Google TV devices delayed as Google tweaks software
+
+
+5 Web titans that withered under Yahoo
+
+
+New 'Tron' shines glowing light on an arcade classic
+
+
+	
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+

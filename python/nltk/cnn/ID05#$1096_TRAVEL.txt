@@ -1,0 +1,107 @@
+                           STORY HIGHLIGHTS When you find a fare online, it isn't actually there -- it's cached on the site  Caching, or storing a copy of the information, is cheaper and makes things run faster  A small number of fares may no longer be available when you try to book them  Some travelers think it's a bait-and-switch scheme 
+RELATED TOPICS
+
+
+Air Travel
+
+ (Tribune Media Services) -- Now you see it. Now you don't. When you're airfare shopping, attractive prices can vanish in a split second. Just ask Jim Doll, a systems engineer in Atlanta, who recently tried to buy a ticket to San Francisco on AirTran Airways' Web site. He found a one-way fare for just $130, but by the time he'd toggled over to Orbitz.com to see if he could do better there and then clicked back, the price had changed. &quot;Now it was $220 per person,&quot; he said. &quot;Why couldn't they lock the fare for, say, five minutes, to give me a chance to make the reservation?&quot; Why, indeed? Because that's not how reservations systems work. When you find a fare online, it isn't actually there -- it's cached on the site. Caching, or storing a copy of the fare information, is cheaper and makes everything run faster. But there's a price to be paid for the speed and convenience: A small number of fares -- usually less than 5 percent -- may no longer be available when you try to book them. This is the &quot;underbelly of the whole reservation system,&quot; said Timothy J. O'Neil-Dunne, a managing partner for T2Impact, a technology consulting firm. &quot;It is a dirty secret that the industry would rather no one know about.&quot;  But some customers think there's more to blame than clumsy Internet technology. They believe that travel companies intentionally display a low fare but raise it as you move through the booking process, an electronic version of the time-tested bait-and-switch scheme. Although there's no proof that any travel company is engaged in this illegal pricing activity, there's plenty of evidence that travel companies try to lure customers with artificially low prices. I can see the skeptical customers' point. A few weeks ago, I booked a flight from Orlando to Las Vegas. I found a $114 one-way fare on the Southwest Airlines site, scrolled away to make sure Kayak.com couldn't do better (it couldn't) and then tried to buy the ticket. &quot;New Price,&quot; the site announced in annoying red letters. The same ticket now cost $234. I felt frustrated. If I had been notified that there was only one seat left at $114, I might have booked faster instead of taking my time. Hasn't technology evolved to a point where you can show a passenger the seat inventory in real time, I wondered? A spokeswoman for the Air Transport Association, which represents the major airlines, says the vanishing fares aren't a bait-and-switch scheme but a &quot;normal turnover&quot; in ticket prices. &quot;It reflects marketplace competition and has produced dramatic reductions in average fares since deregulation, as well as in the last few years,&quot; said Victoria Day. Whether this sleight of hand is intentional or not, there's no need to become its next victim. The easiest way to avoid a fare surprise is to make a faster booking decision. Not a knee-jerk response, but less than, say, five minutes. The longer you wait, the greater the chance that the seat you wanted will be snatched up by someone else, and that the cheap fare will be replaced by a more expensive one. Another tip: Read the initial fare quote carefully. For example, a ticket from Denver to London might be advertised at $734, but the actual price is $1,121. &quot;You think, 'It's theft. It's a scam. I've been robbed,' &quot; said Jim Fisher, a travel consultant who writes the blog diyEurope. In fact, it's nothing so sinister. The initial rate is the actual ticket price, but once you add taxes, fees and other surcharges, you end up with a ticket that costs $387 more than you thought it would. &quot;The airfare your airline charges is just a small part of what it costs to get you from Denver to London and back,&quot; he said. Here's where well-meaning travel agents and I differ on airfare quotes. Many agents believe that it's perfectly acceptable to offer you a base fare, minus all the extras, when you're shopping around.  The grand total is often disclosed in small type and then revealed in a more overt way just as you're getting ready to pay. They have their reasons for making the prices seem artificially low -- high fares are a turn-off for their customers and even a few extra dollars can make a traveler run to a competitor. I think that's dishonest. And Sen. Robert Menendez (D-New Jersey) agrees. Last year, he introduced the Clear Airfares Act, a Senate bill that would require airlines and online travel agencies to disclose any additional fees before you buy a ticket. Passing that law would ensure that every agency and airline would quote an all-inclusive, no-surprise price, right upfront. Until that happens, I'm not too optimistic that an apparent bait-and-switch -- or a technology glitch -- is completely preventable. Buy fast and do a little math. But even if you're quick on the draw and run arithmetic problems for fun, you could still get ensnared by a fare that wasn't really there. (Christopher Elliott is the ombudsman for National Geographic Traveler magazine. You can read more travel tips on his blog, elliott.org or e-mail him at celliott@ngs.org). &copy; 2010 CHRISTOPHER ELLIOTT DISTRIBUTED BY TRIBUNE MEDIA SERVICES, INC.
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+	
+		
+		
+			
+				
+					
+						
+						Share this on:
+					
+										
+						Mixx
+						Facebook
+						Twitter
+						Digg
+						delicious
+						reddit
+						MySpace
+						StumbleUpon
+						LinkedIn
+					
+				
+			
+		
+		
+	
+			
+
+
+
+	
+
+
+	
+
+
+
+
+
+FOLLOW THIS TOPIC
+
+We recommend
+Cruise shopping tips from the pros 
+
+
+My bags didn't make the connection 
+
+
+Hotwire's half-star mistake 
+
+  More Travel
+	
+	
+		
+Heavy snow snarls airports, roads in Europe
+
+
+No flight to catch: A glimpse at airport employees, culture
+
+
+Report: Queen of pop given royal treatment on Virgin Atlantic flight
+
+
+	  
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+

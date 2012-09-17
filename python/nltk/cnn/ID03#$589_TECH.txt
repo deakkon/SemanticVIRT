@@ -1,0 +1,226 @@
+                       Sunday is Pi Day, on which math geeks celebrate the number representing the ratio of circumference to diameter of a circle. STORY HIGHLIGHTSPi Day falls on March 14, which is also Albert Einstein's birthdayThe true &quot;randomness&quot; of pi's digits -- 3.14 and so on -- has never been provenThe U.S. House passed a resolution supporting Pi Day in March 2009 (CNN) -- The sound of meditation for some people is full of deep breaths or gentle humming. For Marc Umile, it's &quot;3.14159265358979...&quot; Whether in the shower, driving to work, or walking down the street, he'll mentally rattle off digits of pi to pass the time. Holding 10th place in the world for pi memorization -- he typed out 15,314 digits from memory in 2007 -- Umile meditates through one of the most beloved and mysterious numbers in all of mathematics.  Pi, the ratio of circumference to diameter of a circle, has captivated imaginations for thousands of years -- perhaps even since the first person tried to draw a perfect circle on the ground or wondered how to construct something round like a wheel. Approximately 3.14, the number has its own holiday on March 14 -- 3-14, get it? -- which also happens to be Albert Einstein's birthday. You won't get off school for Pi Day, but you might be doing something special in school on Friday (the last weekday before Pi Day). Mathematicians, teachers, museum directors, math students of all ages and other aficionados celebrate the number with pi recitations, pie-baking, pie-eating contests and math-related activities.  The holiday has gained popularity worldwide every year during the last decade as enthusiasm has spread on the Web, said David Blatner, author of &quot;The Joy of Pi.&quot;   
+
+
+
+	
+	
+	
+		
+			
+				
+				
+			
+		
+	
+	
+			
+			
+		
+			
+				
+			
+		
+		
+				
+					
+					  FACTS ABOUT PIGeometry: Half the circumference of a circle with a radius of 1 is exactly pi Record for calculation: 2.7 trillion digits (by Fabrice Bellard, December 2009) Record for memorization: 67,890 digits (by Chao Lu, 2005) How random? There are no occurences of the sequence 123456 in the first million digits of pi Source: "The Joy of Pi," Pi World Ranking List
+
+				
+
+		
+			
+				
+			
+		
+
+
+
+			
+	
+
+
+
+One of the oldest, if not the first, established Pi Day celebrations is at the Exploratorium in San Francisco, California, which boasts 22 years of pi mayhem. The day is even recognized by the U.S. government: Last March, the U.S. House of Representatives passed a resolution supporting Pi Day and encouraging schools to teach children about the number.  It doesn't take a math whiz to appreciate pi. Umile, a Medicare biller training to be an emergency medical technician, never took advanced math classes in school, not even algebra. Memorizing pi for him seemed like a good test of memory, and he found that putting the digits in a definite rhythm, which repeated exactly every 1,000 digits, helped him remember them.  See pi calculated to the 10,000 digit But Umile also appreciates pi's importance in the world around us.  &quot;There are many things that could not be built without implementing the constant pi,&quot; Umile said. &quot;The great engineering marvels like the arch or suspension bridges we cross over, the tunnels spanning within mountains or even under the water that we drive through. ... Without it, everything would be incomplete or in danger of collapse.&quot;  Designing any structure with cylindrical components involves pi, as the formula for area is pi multiplied by the square of the radius. Let's say you wanted to know if a column or cable, both of which have circular cross-sections, is strong enough to withstand a particular force. You would calculate the stress -- force divided by area -- to see if the particular object would work in the construction. You can increase the area if the stress is too great. Pi has broad appeal because it &quot;reeks of mystery,&quot; Blatner said.  Author's note: My life with pi If a circle is such a simple shape, how can its key proportion be so complex? Why is it impossible to know what pi is exactly, its digits continuing on infinitely in a seemingly random fashion? &quot;It rubs off even on people who don't really understand what it means,&quot; Blatner said. &quot;We hunger for true mystery, even in our everyday lives, because there's so little that really seems mysterious anymore.&quot;  
+
+
+
+	
+	
+	
+		
+			
+				
+				
+			
+		
+	
+	
+			
+			
+		
+			
+		
+		
+				
+					
+					         Marc Umile holds a personal record of 15,314 digits and typing them out from memory. 
+				
+
+		
+			
+		
+
+
+
+			
+	
+
+
+
+Besides a plethora of educational Web sites that have cropped up with facts about pi and activities for Pi Day, dozens of memorization enthusiasts such as Umile have posted videos of themselves reciting or typing out digits on YouTube (here's Umile at 1,000 digits). There are also plenty of poems and songs dedicated to pi, including my own American Pi.   
+
+
+
+	
+	
+	
+		
+			
+				
+				
+			
+		
+	
+	
+			
+			
+		
+			
+				
+			
+		
+		
+				
+					
+					  
+RELATED TOPICS
+
+
+Mathematics
+
+Science and Technology
+
+Sciences
+
+
+				
+
+		
+			
+				
+			
+		
+
+
+
+			
+	
+
+
+
+Despite efforts to calculate pi by everyone from Archimedes to Sir Isaac Newton to present-day mathematicians with supercomputers, there is still no formula that would allow you to figure out, in base 10, any digit of pi without having to calculate everything that came before it. In other words, if you wanted to know the 24,000th digit, there's no way of figuring that out without putting down all 23,999 numbers before it. Such calculations can be done in binary, but it's not so interesting to know whether it's just a 0 or a 1. Mathematicians know that pi is irrational -- it cannot be represented as one number divided by another -- and transcendental, meaning it is not algebraic. That means, theoretically, that its digits will continue on indefinitely without ending in repetition -- in other words, the digits won't suddenly continue infinitely as 5s after 3 trillion digits (Pi's digits were calculated out to a record 2.7 trillion places in December by French computer scientist Fabrice Bellard).  That also means, mathematicians theorize, that any string of numbers you can imagine is somewhere in pi -- for instance, look for your birthday. Coincidentally, &quot;360,&quot; the number of degrees in a circle, occurs at digits 358 to 360. On the other hand, the true &quot;randomness&quot; of pi's digits has never been proven, which is frustrating, said David Bailey, a technologist at Lawrence Berkeley National Laboratory who is still working on this question.  &quot;For all we know, just out beyond where we calculated, there are no more 5s,&quot; he said.  Bailey, whose interest in pi began with memorizing a couple hundred digits in graduate school, co-wrote a seminal paper in 1996 on calculating pi with Peter Borwein and Simon Plouffe, resulting in what's called the Bailey-Borwein-Plouffe formula. He has continued working with Borwein and his brother Jonathan Borwein on a number of studies, some related to pi. &quot;You might say calculating pi has its practical benefits, because it's led to a career-long collaboration,&quot; Bailey said.  The question of whether there's a pattern in pi's apparent chaos has enormous implications as biologists look for meaning in the map of the human genome, Peter Borwein says.  &quot;If you have a subtle pattern, how do you know it's there in a mess of numbers?&quot; said Borwein, professor at Simon Fraser University.  Having achieved recognition for the formula, Borwein says he's &quot;a little embarrassed to be the pi guy.&quot; After all, he's done a lot of non-pi-related research. Still, he's also gearing up for his school's Pi Day celebration, which will feature pi-digit cookies, pie and a lecture about the number.  Umile says he feels a little like a weightlifter who has gotten out of shape, having forgotten some of the thousands of digits. Because of hard economic times, work and EMT school, pi memorization is much more of a distraction. Still, for this Pi Day he's thinking about testing himself to type out 1,000 digits or more.  He also still enjoys hearing from others about pi memorization.  &quot;I think it's very fun. It's good to be an inspiration to people who would like to broaden their minds and climb the Mount Everest of their minds,&quot; he said. 
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+	
+		
+		
+			
+				
+					
+						
+						Share this on:
+					
+										
+						Mixx
+						Facebook
+						Twitter
+						Digg
+						delicious
+						reddit
+						MySpace
+						StumbleUpon
+						LinkedIn
+					
+				
+			
+		
+		
+	
+			
+
+
+
+	
+
+
+	
+
+
+
+
+
+FOLLOW THIS TOPIC
+
+	
+			
+  More Tech
+	
+	
+		
+Apple computer for sale: only $160K!
+
+
+From bomb maker wannabe to e-bike revolutionary
+
+
+Narnia's 'Dawn Treader' sails enhanced e-book wave
+
+
+	
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+

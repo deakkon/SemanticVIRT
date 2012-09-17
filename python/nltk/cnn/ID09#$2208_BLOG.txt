@@ -1,0 +1,36 @@
+			
+Tech news is complicated enough. But throw in some international relations and a heavy dose of spying allegations, and you&#039;ve got yourself a news story that plenty of people talk about, but few people really understand.
+That&#039;s the Google vs. China story in a nutshell. But don&#039;t check out just yet. This blog is here to help, with answers to several important (and easy-to-digest) questions about the Google-China situation.
+Let me know if there are further confusions you&#039;d like to have cleared up. And, if you decide to whip some of these facts out at your next cocktail party, report back on how it goes.
+When did Google go into China, and why?
+On January 27, 2006, some eight years after Google first incorporated, the San Francisco, California-based search engine decided to launch Google.cn, a Chinese version of its Web site. Google&#039;s global Web site - Google.com - had been available in China before that, but it was censored and at times shut down by the Chinese government. It didn&#039;t work very well.
+China&#039;s communist leadership restricts Internet content and political speech, so Google had to agree to censor some of its Internet search results in order to do business in China.
+Still, the company argued that its presence in China would help open up the system over time. And the company said its search engine would work better if Google, rather than China, did the filtering.
+&#034;Our decision was based on a judgment that Google.cn will make a meaningful - though imperfect - contribution to the overall expansion of access to information in China,&#034; Elliot Schrage, Google&#039;s then-VP of communications, testified in 2006.
+Are there financial reasons for Google to be in China, too?
+Of course. China has more Web users than any other country in the world - nearly 400 million of them, according to the latest reports. So there is definitely money to be made in China. Google made $300 million in China last year alone, according to CNNMoney. And the Chinese Internet market is expected to grow considerably as the Asian country continues to industrialize.
+What happened this week? Did Google pull out of China?
+Not exactly. Google said it would stop filtering search results in China. It accomplished this with a logistical change: Search results from mainland China now are directed to Google.hk, a Hong Kong site that isn&#039;t filtered, instead of Google.cn, which Google stopped filtering on Monday.
+Many people assume China will block Google&#039;s unfiltered site. But Google&#039;s move put that decision in the Chinese government&#039;s hands. The search engine posted a chart, which has been dubbed the &#034;evil meter,&#034; where people can see which Google services are currently blocked in China.
+As of Wednesday morning, the chart said Web searches remained active in China.
+What changed to make Google stop going along with Chinese censorship laws?
+Google says Chinese hackers tapped into the Gmail accounts of Chinese human rights activists and conducted a &#034;highly sophisticated and targeted attack on our corporate infrastructure.&#034; China denies these claims, but the situation caused Google to promise to stop censoring its results in China unless some kind of new agreement could be arranged between Google and China.
+Here&#039;s what the company said in a blog post this January:
+These attacks and the surveillance they have uncovered - combined with the attempts over the past year to further limit free speech on the web - have led us to conclude that we should review the feasibility of our business operations in China. We have decided we are no longer willing to continue censoring our results on Google.cn, and so over the next few weeks we will be discussing with the Chinese government the basis on which we could operate an unfiltered search engine within the law, if at all. We recognize that this may well mean having to shut down Google.cn, and potentially our offices in China.
+Why would it be a big deal for Google not to be in China?
+Some say it could sour U.S.-China relations, although a spokesman for China&#039;s foreign ministry says this will not be the case. Others say it could reduce access to information and Web services in China. But one caveat there: Google is not the dominant search engine in China. A site called Baidu is.
+There are obvious implications for Google&#039;s financial future if it, indeed, does not have a strong foothold in the largest market of Internet searchers in the world. And some analysts says the move could cause China to withdraw further from the Internet and from the globalizing world.
+Do regular people in China care about whether Google is there or not?
+Academics and business types have complained that their work will become more difficult without Google&#039;s search site around. National Public Radio reports that Chinese citizens are referring to Monday, the day Google stopped censoring in China, as &#034;G Day,&#034; an apparent reference to the D-Day invasion of Normandy during World War II.
+One professor told NPR that Google has &#034;overestimated its importance&#034; in China. &#034;As a researcher and an English-speaking person, I use Google English a lot. But for most Chinese netizens, they don&#039;t care about Google Chinese version,&#034; Deng Jianguo, an associate professor at Fudan University, told the news organization.
+Does Google censor Web content in other countries?
+In a word: Yes. Google caters its search site to censorship and privacy laws of countries where it operates. CNNMoney has a good round-up of some of these rules. Among them: In Germany, France and Poland, it&#039;s illegal to publish material that denies the Holocaust. So Google filters search results that do so. And in Turkey, videos that the government says mock &#034;Turkishness,&#034; are filtered by Google for its Google.com.tr Web site.
+That story also provides an important detail about why Google&#039;s censorship policies are important:
+Google controls nearly two-thirds of the world&#039;s search results, making it the Internet gateway for most people. As a result of that clout, Google&#039;s censorship policies are closely watched.
+
+
+Posted by: John D. Sutter -- CNN.com writer/producerFiled under: China&nbsp;&#149;&nbsp;Google
+
+
+
+

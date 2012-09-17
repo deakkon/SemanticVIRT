@@ -1,0 +1,51 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:02:18,12:27:03,038,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:02:18,12:27:22,694,"Explorer.EXE","<Unknown window>",Left mouse button pressed,1113,939,1456.19,2185.19,0.67, 
+2010:02:18,12:27:22,757,"Explorer.EXE","<Unknown window>",Left mouse button released,1113,939,0.00,0.00,0.00, 
+2010:02:18,12:27:24,210,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1075,45,894.81,1074.46,0.83, 
+2010:02:18,12:27:24,304,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1075,45,0.00,0.00,0.00, 
+2010:02:18,12:27:28,788,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,912,686,661.40,1499.00,0.44, 
+2010:02:18,12:27:28,882,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,912,686,0.00,0.00,0.00, 
+2010:02:18,12:27:33,897,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1054,731,148.96,282.33,0.53, 
+2010:02:18,12:27:33,976,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1056,731,2.00,2.00,1.00, 
+2010:02:18,12:27:37,944,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1049,876,145.17,549.00,0.26, 
+2010:02:18,12:27:38,069,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1049,876,0.00,0.00,0.00, 
+2010:02:18,12:27:42,741,"firefox.exe","NBA news, scores, stats, fant...all - SI.com - Mozilla Firefox",Left mouse button pressed,20,59,1313.90,1413.40,0.93, 
+2010:02:18,12:27:42,897,"firefox.exe","NBA news, scores, stats, fant...all - SI.com - Mozilla Firefox",Left mouse button released,20,59,0.00,0.00,0.00, 
+2010:02:18,12:27:51,866,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,623,259,635.30,2379.15,0.27, 
+2010:02:18,12:27:51,991,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,623,259,0.00,0.00,0.00, 
+2010:02:18,12:28:10,163,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Left mouse button pressed,588,732,474.29,958.46,0.49, 
+2010:02:18,12:28:10,288,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Left mouse button released,588,732,0.00,0.00,0.00, 
+2010:02:18,12:28:17,148,"firefox.exe","Tiger Woods's Announcement Al...: People.com - Mozilla Firefox",Mouse wheel,368,643,237.32,456.79,0.52, 
+2010:02:18,12:28:35,179,"firefox.exe","Tiger Woods's Announcement Al...: People.com - Mozilla Firefox",Mouse wheel stopped,191,119,0.00,0.00,1.00,9 Wheel actions
+2010:02:18,12:28:35,179,"firefox.exe","Tiger Woods's Announcement Al...: People.com - Mozilla Firefox",Left mouse button pressed,191,119,763.12,930.02,0.82, 
+2010:02:18,12:28:35,288,"firefox.exe","Tiger Woods's Announcement Al...: People.com - Mozilla Firefox",Left mouse button released,191,119,0.00,0.00,0.00, 
+2010:02:18,12:28:36,632,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Left mouse button pressed,372,121,181.01,200.56,0.90, 
+2010:02:18,12:28:36,773,"firefox.exe","Tiger Woods's Announcement Al...: People.com - Mozilla Firefox",Left mouse button released,372,121,0.00,0.00,0.00, 
+2010:02:18,12:29:30,211,"firefox.exe","Tiger Woods's Announcement Al...: People.com - Mozilla Firefox",Mouse wheel,698,926,868.51,974.27,0.89, 
+2010:02:18,12:30:00,930,"Explorer.EXE","12:29 PM",Mouse wheel stopped,705,917,0.00,0.00,1.00,7 Wheel actions
+2010:02:18,12:30:10,945,"firefox.exe","Tiger Woods's Announcement Al...: People.com - Mozilla Firefox",Mouse wheel,601,913,107.69,347.83,0.31, 
+2010:02:18,12:30:54,789,"agent.exe","<Unknown window>",Mouse wheel stopped,489,870,0.00,0.00,1.00,9 Wheel actions
+2010:02:18,12:31:06,789,"firefox.exe","Tiger Woods's Announcement Al...: People.com - Mozilla Firefox",Left mouse button pressed,491,121,749.00,1740.71,0.43, 
+2010:02:18,12:31:06,883,"firefox.exe","Tiger Woods's Announcement Al...: People.com - Mozilla Firefox",Left mouse button released,491,121,0.00,0.00,0.00, 
+2010:02:18,12:31:09,524,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Left mouse button pressed,481,774,653.08,850.02,0.77, 
+2010:02:18,12:31:09,618,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Left mouse button released,481,774,0.00,0.00,0.00, 
+2010:02:18,12:31:11,883,"firefox.exe","Elton John speaks openly abou...NN.com Blogs - Mozilla Firefox",Mouse wheel,302,731,184.09,194.99,0.94, 
+2010:02:18,12:32:00,930,"Explorer.EXE","12:31 PM",Mouse wheel stopped,298,729,0.00,0.00,1.00,1 Wheel actions
+2010:02:18,12:32:46,431,"firefox.exe","Elton John speaks openly abou...NN.com Blogs - Mozilla Firefox",Mouse wheel,317,642,90.26,191.91,0.47, 
+2010:02:18,12:33:00,931,"Explorer.EXE","12:32 PM",Mouse wheel stopped,313,663,0.00,0.00,1.00,21 Wheel actions
+2010:02:18,12:33:07,556,"firefox.exe","Elton John speaks openly abou...NN.com Blogs - Mozilla Firefox",Mouse wheel,313,663,6.40,8.41,0.76, 
+2010:02:18,12:33:25,572,"firefox.exe","Elton John speaks openly abou...NN.com Blogs - Mozilla Firefox",Mouse wheel stopped,18,65,0.00,0.00,1.00,2 Wheel actions
+2010:02:18,12:33:25,572,"firefox.exe","Elton John speaks openly abou...NN.com Blogs - Mozilla Firefox",Left mouse button pressed,18,65,666.81,824.34,0.81, 
+2010:02:18,12:33:25,712,"firefox.exe","Elton John speaks openly abou...NN.com Blogs - Mozilla Firefox",Left mouse button released,18,65,0.00,0.00,0.00, 
+2010:02:18,12:33:37,869,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Left mouse button pressed,248,441,440.77,1206.87,0.37, 
+2010:02:18,12:33:37,962,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Left mouse button released,248,441,0.00,0.00,0.00, 
+2010:02:18,12:33:39,806,"firefox.exe","Justin Timberlake's mom: Jess...s' - CNN.com - Mozilla Firefox",Mouse wheel,238,633,192.26,226.42,0.85, 
+2010:02:18,12:34:00,931,"Explorer.EXE","12:33 PM",Mouse wheel stopped,224,644,0.00,0.00,1.00,43 Wheel actions
+2010:02:18,12:35:44,401,"firefox.exe","Justin Timberlake's mom: Jess...s' - CNN.com - Mozilla Firefox",Mouse wheel,602,878,440.01,631.51,0.70, 
+2010:02:18,12:36:00,932,"Explorer.EXE","12:35 PM",Mouse wheel stopped,589,848,0.00,0.00,1.00,2 Wheel actions
+2010:02:18,12:36:01,260,"firefox.exe","Justin Timberlake's mom: Jess...s' - CNN.com - Mozilla Firefox",Mouse wheel,589,848,3.61,5.00,0.72, 
+2010:02:18,12:36:44,135,"firefox.exe","Justin Timberlake's mom: Jess...s' - CNN.com - Mozilla Firefox",Mouse wheel stopped,1106,155,0.00,0.00,1.00,31 Wheel actions
+2010:02:18,12:36:44,135,"firefox.exe","Justin Timberlake's mom: Jess...s' - CNN.com - Mozilla Firefox",Left mouse button pressed,1106,155,877.61,1507.01,0.58, 
+2010:02:18,12:36:44,260,"firefox.exe","Justin Timberlake's mom: Jess...s' - CNN.com - Mozilla Firefox",Left mouse button released,1106,155,0.00,0.00,0.00, 
+2010:02:18,12:36:48,354,"firefox.exe","Breaking news, real-time scor...ted 

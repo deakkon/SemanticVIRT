@@ -1,0 +1,43 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:02:22,18:58:43,666,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:02:22,18:58:44,604,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1642,44,1044.40,1276.06,0.82, 
+2010:02:22,18:58:44,697,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1642,44,0.00,0.00,0.00, 
+2010:02:22,18:58:46,557,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1749,457,426.64,558.25,0.76, 
+2010:02:22,18:58:46,666,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1749,457,0.00,0.00,0.00, 
+2010:02:22,18:58:49,885,"firefox.exe","Dejected Canada hopes for a b...ek - CNN.com - Mozilla Firefox",Mouse wheel,1848,568,148.73,808.65,0.18, 
+2010:02:22,18:59:00,135,"Explorer.EXE","6:58 PM",Mouse wheel stopped,1740,574,0.00,0.00,1.00,9 Wheel actions
+2010:02:22,18:59:48,463,"firefox.exe","Dejected Canada hopes for a b...ek - CNN.com - Mozilla Firefox",Mouse wheel,1715,503,209.09,782.25,0.27, 
+2010:02:22,19:00:00,135,"Explorer.EXE","6:59 PM",Mouse wheel stopped,1500,598,0.00,0.00,1.00,11 Wheel actions
+2010:02:22,19:00:07,010,"firefox.exe","Dejected Canada hopes for a b...ek - CNN.com - Mozilla Firefox",Right mouse button pressed,1534,485,52.70,1779.10,0.03, 
+2010:02:22,19:00:07,292,"firefox.exe","Dejected Canada hopes for a b...ek - CNN.com - Mozilla Firefox",Right mouse button released,1535,477,8.06,9.00,0.90, 
+2010:02:22,19:00:08,089,"firefox.exe","Dejected Canada hopes for a b...ek - CNN.com - Mozilla Firefox",Left mouse button pressed,1487,455,52.80,122.73,0.43, 
+2010:02:22,19:00:08,198,"firefox.exe","Dejected Canada hopes for a b...ek - CNN.com - Mozilla Firefox",Left mouse button released,1487,455,0.00,0.00,0.00, 
+2010:02:22,19:00:48,386,"firefox.exe","Dejected Canada hopes for a b...ek - CNN.com - Mozilla Firefox",Mouse wheel,1599,683,254.02,626.91,0.41, 
+2010:02:22,19:01:00,136,"Explorer.EXE","7:00 PM",Mouse wheel stopped,1576,683,0.00,0.00,1.00,3 Wheel actions
+2010:02:22,19:01:21,323,"firefox.exe","Dejected Canada hopes for a b...ek - CNN.com - Mozilla Firefox",Mouse wheel,1572,684,27.02,149.52,0.18, 
+2010:02:22,19:01:26,042,"firefox.exe","Dejected Canada hopes for a b...ek - CNN.com - Mozilla Firefox",Mouse wheel stopped,1306,110,0.00,0.00,1.00,10 Wheel actions
+2010:02:22,19:01:26,042,"firefox.exe","Dejected Canada hopes for a b...ek - CNN.com - Mozilla Firefox",Left mouse button pressed,1306,110,562.35,582.71,0.97, 
+2010:02:22,19:01:26,120,"firefox.exe","Dejected Canada hopes for a b...ek - CNN.com - Mozilla Firefox",Left mouse button released,1306,110,0.00,0.00,0.00, 
+2010:02:22,19:01:30,683,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,1694,788,781.17,1062.24,0.74, 
+2010:02:22,19:01:37,323,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,1697,569,0.00,0.00,1.00,3 Wheel actions
+2010:02:22,19:01:37,323,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1697,569,222.27,229.60,0.97, 
+2010:02:22,19:01:37,448,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1697,569,0.00,0.00,0.00, 
+2010:02:22,19:01:47,402,"firefox.exe","Why Americans love the Dalai Lama - CNN.com - Mozilla Firefox",Mouse wheel,1690,651,82.30,83.68,0.98, 
+2010:02:22,19:02:00,136,"Explorer.EXE","7:01 PM",Mouse wheel stopped,1479,813,0.00,0.00,1.00,9 Wheel actions
+2010:02:22,19:02:34,480,"firefox.exe","Why Americans love the Dalai Lama - CNN.com - Mozilla Firefox",Left mouse button pressed,1315,104,723.61,1014.02,0.71, 
+2010:02:22,19:02:34,652,"firefox.exe","Why Americans love the Dalai Lama - CNN.com - Mozilla Firefox",Left mouse button released,1315,104,0.00,0.00,0.00, 
+2010:02:22,19:02:38,543,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,1504,803,724.10,758.46,0.95, 
+2010:02:22,19:02:38,699,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,1504,803,0.00,0.00,0.00, 
+2010:02:22,19:02:51,699,"firefox.exe","Gold could lead to more spons...eb. 22, 2010 - Mozilla Firefox",Mouse wheel,1460,760,61.52,717.93,0.09, 
+2010:02:22,19:03:00,136,"Explorer.EXE","7:02 PM",Mouse wheel stopped,1871,853,0.00,0.00,1.00,5 Wheel actions
+2010:02:22,19:03:22,762,"firefox.exe","Gold could lead to more spons...eb. 22, 2010 - Mozilla Firefox",Mouse wheel,1871,853,3.00,3.00,1.00, 
+2010:02:22,19:03:54,887,"agent.exe","<Unknown window>",Mouse wheel stopped,1927,644,0.00,0.00,1.00,74 Wheel actions
+2010:02:22,19:03:57,027,"firefox.exe","Gold could lead to more spons...eb. 22, 2010 - Mozilla Firefox",Left mouse button pressed,1313,101,956.09,1324.11,0.72, 
+2010:02:22,19:03:57,184,"firefox.exe","Gold could lead to more spons...eb. 22, 2010 - Mozilla Firefox",Left mouse button released,1313,101,0.00,0.00,0.00, 
+2010:02:22,19:03:59,465,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,1474,476,408.10,463.45,0.88, 
+2010:02:22,19:04:00,137,"Explorer.EXE","7:03 PM",Mouse wheel stopped,1488,478,0.00,0.00,1.00,4 Wheel actions
+2010:02:22,19:04:00,652,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel,1663,427,191.13,198.82,0.96, 
+2010:02:22,19:04:05,496,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Mouse wheel stopped,2332,305,0.00,0.00,1.00,1 Wheel actions
+2010:02:22,19:04:05,496,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,2332,305,680.03,885.01,0.77, 
+2010:02:22,19:04:05,840,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,2332,305,0.00,0.00,0.00, 
+2010:02:22,19:04:09,731,"firefox.exe","Breaking news, real-time scor...ted 

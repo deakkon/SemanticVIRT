@@ -1,0 +1,25 @@
+Comcast prevails over FCC in Web traffic fightBy Aaron Smith, CNNMoney.com staff writerApril 6, 2010: 2:28 PM ETNEW YORK (CNNMoney.com) -- A federal appeals court in Washington ruled on Tuesday that the FCC does not have the authority to stop Internet service provider Comcast from interfering with its customers' file sharing. Tuesday's court decision is the latest volley in a legal fight dating back to 2007, when Comcast subscribers realized that the company was hindering their ability to use peer-to-peer applications like BitTorrent to swap files that consume large amounts of bandwidth. Facebook
+Digg
+Twitter
+Buzz Up!
+Email
+Print
+Comment on this storyThat led to petitions from advocates and regulatory action from the Federal Communications Commission, which wants to prohibit Internet providers from selectively blocking Web content and applications. The FCC ruled that Comcast had &quot;significantly impeded consumers' ability to access the content and use the applications of their choice&quot; and slapped Comcast with several new oversight rules. Comcast (CMCSA, Fortune 500) appealed, saying the FCC had no regulatory authority over the company's network-management practices. Tuesday's ruling backs Comcast's position -- a major setback for the FCC as it tries to step up its regulation of broadband providers. The case is a high-profile battle in the ongoing &quot;Net neutrality&quot; fight, which pits large Internet providers like Comcast, AT&amp;T and Verizon against content and application providers like Google and Skype that rely on those connections to deliver their programs to consumers.   &quot;This is not about government regulation of the Internet,&quot; FCC chairman Julius Genachowski said in September, as the commission outlined new rules for Internet providers. &quot;It's about fair rules of the road for companies that control access to the Internet.&quot;The FCC adopted those new rules in October, but Tuesday's court ruling casts doubt on their enforceability. Comcast spokeswoman Sena Fitzmaurice told CNNMoney.com, that her company was &quot;gratified&quot; by the court's decision and that the &quot;primary goal was always to clear our name and reputation.&quot;She said that Comcast never blocked file sharing, but acknowledged that the sharing had been &quot;delayed&quot; in a &quot;very, very small percentage of cases when an area gets overloaded.&quot; She said Comcast regards all file sharing to be on equal footing and no longer targets peer-to-peer file sharing.&nbsp;
+
+
+	  
+	  	
+			
+		
+		Print
+		Email
+	  
+
+
+FCC chairman proposes Net neutrality rules  Net neutrality: Round one goes to Google &amp; Co.  A consumer watchdog for your wallet
+
+
+
+
+
+First Published: April 6, 2010: 1:30 PM ET

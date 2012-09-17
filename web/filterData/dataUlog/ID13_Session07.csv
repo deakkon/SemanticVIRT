@@ -1,0 +1,468 @@
+Date,Time,Msec,Application,Window,Message,X,Y,Rel. dist.,Total dist.,Rate,Extra info
+2010:03:02,17:56:24,187,"uLog.exe"," ",Logging started,-1,-1,-1.00,-1.00,-1.00, 
+2010:03:02,17:56:57,691,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button pressed,300,275,406.97,7600.65,0.05, 
+2010:03:02,17:56:57,832,"firefox.exe","CNN.com - Breaking News, U.S....& Video News - Mozilla Firefox",Left mouse button released,300,275,0.00,0.00,0.00, 
+2010:03:02,17:57:02,114,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,695,392,411.96,529.24,0.78, 
+2010:03:02,17:57:02,208,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,695,392,0.00,0.00,0.00, 
+2010:03:02,17:57:04,067,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,1075,457,385.52,483.64,0.80, 
+2010:03:02,17:57:04,177,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,1075,457,0.00,0.00,0.00, 
+2010:03:02,17:57:21,194,"firefox.exe","Toyota problems don't lead to...Mar. 2, 2010 - Mozilla Firefox",Mouse wheel,489,516,588.96,909.47,0.65, 
+2010:03:02,17:58:00,965,"Explorer.EXE","5:57 PM",Mouse wheel stopped,1616,62,0.00,0.00,1.00,91 Wheel actions
+2010:03:02,17:58:02,497,"Explorer.EXE","Program Manager",Right mouse button pressed,2120,745,1646.15,6462.08,0.25, 
+2010:03:02,17:58:02,638,"Explorer.EXE","Program Manager",Right mouse button released,1286,1023,879.11,1053.25,0.83, 
+2010:03:02,17:58:05,388,"firefox.exe","Toyota problems don't lead to...Mar. 2, 2010 - Mozilla Firefox",Left mouse button pressed,12,63,1595.20,7688.88,0.21, 
+,,000," "," ", ,0,0,0.00,0.00,0.00, 
+2010:03:02,17:58:05,466,"firefox.exe","Toyota problems don't lead to...Mar. 2, 2010 - Mozilla Firefox",Left mouse button released,12,63,0.00,0.00,0.00, 
+2010:03:02,17:58:09,592,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,736,468,829.58,1210.50,0.69, 
+2010:03:02,17:58:09,748,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,736,468,0.00,0.00,0.00, 
+2010:03:02,17:58:10,123,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,732,460,8.94,12.00,0.75, 
+2010:03:02,17:58:10,232,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,732,460,0.00,0.00,0.00, 
+2010:03:02,17:58:11,561,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,1067,512,339.01,360.49,0.94, 
+2010:03:02,17:58:11,701,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,1067,512,0.00,0.00,0.00, 
+2010:03:02,17:58:15,483,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Mouse wheel,571,723,539.01,641.02,0.84, 
+2010:03:02,17:58:51,832,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Mouse wheel stopped,571,712,0.00,0.00,1.00,3 Wheel actions
+2010:03:02,17:58:51,832,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:58:52,160,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:58:52,613,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:58:52,832,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:58:53,051,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:58:53,316,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:58:53,551,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:58:53,769,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:22,570,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:23,086,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:23,398,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:23,961,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:24,320,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:30,899,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:31,415,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:31,712,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:31,962,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:32,227,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:32,430,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:32,727,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:32,977,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:33,212,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:33,430,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:33,665,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:33,930,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:34,602,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:35,102,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:35,431,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:35,727,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:35,993,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:36,259,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,17:59:36,556,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:02,979,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:03,338,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:03,573,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:03,838,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:04,057,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:04,291,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:04,557,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:04,870,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:05,151,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:05,385,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:05,557,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:05,854,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:06,073,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:06,541,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:06,776,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:07,010,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:07,245,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:07,432,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:00:07,901,"firefox.exe","An Australia tour that wasn't...be - CNN.com - Mozilla Firefox",Key pressed,571,712,-1.00,-1.00,1.00,Backspace
+2010:03:02,18:00:22,574,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Mouse wheel,887,569,351.53,1480.53,0.24, 
+2010:03:02,18:00:51,700,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Mouse wheel stopped,726,628,0.00,0.00,1.00,17 Wheel actions
+2010:03:02,18:00:51,700,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,726,628,59.17,753.28,0.08, 
+2010:03:02,18:00:51,856,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,726,628,0.00,0.00,0.00, 
+2010:03:02,18:00:53,231,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,1072,687,350.99,417.04,0.84, 
+2010:03:02,18:00:53,450,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,1072,687,0.00,0.00,0.00, 
+2010:03:02,18:00:54,919,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Mouse wheel,474,674,598.14,613.12,0.98, 
+2010:03:02,18:01:00,982,"Explorer.EXE","6:00 PM",Mouse wheel stopped,474,674,0.00,0.00,1.00,8 Wheel actions
+2010:03:02,18:01:42,625,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:01:43,078,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:01:43,375,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:01:43,609,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:01:43,828,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:01:49,750,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:01:50,062,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:01:50,312,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:01:50,531,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:01:50,781,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:01:51,000,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:01:51,234,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:01:51,484,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:01:51,734,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:01:51,984,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:01:52,219,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:01:52,484,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:02,704,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:03,032,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:03,297,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:03,532,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:03,751,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:03,969,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:04,204,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:04,454,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:20,658,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:21,048,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:21,330,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:21,580,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:21,814,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:22,048,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:22,298,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:29,502,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:29,893,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:30,174,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:30,408,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:30,643,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:43,362,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:43,690,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:43,971,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:44,221,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:44,456,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:44,690,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:44,909,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:02:45,159,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:15,098,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:15,379,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:15,614,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:20,911,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:21,208,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:21,489,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:21,786,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:26,255,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:26,583,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:26,864,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:27,099,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:36,287,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:42,849,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:45,146,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:45,459,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:45,662,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:45,865,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:03:46,178,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:15,648,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:15,914,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:16,132,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:16,336,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:16,554,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:16,773,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:17,007,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:17,226,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:17,476,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:23,930,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:24,289,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:24,555,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:24,773,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:25,023,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:51,399,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:51,727,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:52,009,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:52,227,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:52,462,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:52,712,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:52,977,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:53,196,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:58,962,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:59,337,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:59,603,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:04:59,837,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:05,775,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:06,087,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:06,306,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:06,509,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:06,728,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:06,962,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:07,196,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:07,400,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:07,618,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:07,853,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:08,118,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:08,665,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:32,166,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:32,416,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:32,635,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:32,869,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:48,276,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:48,541,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:48,885,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:49,635,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:50,026,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:50,323,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:50,619,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:50,901,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:51,073,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:51,369,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:51,666,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:52,135,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:57,385,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:57,667,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:57,901,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:58,120,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:58,338,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:58,557,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:58,776,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:58,995,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:59,213,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:59,401,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:59,620,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:05:59,932,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:06:00,182,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,474,674,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:06:29,761,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Right mouse button pressed,475,674,1.00,1.00,1.00, 
+2010:03:02,18:06:29,761,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Right mouse button released,475,674,0.00,0.00,0.00, 
+2010:03:02,18:06:30,074,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Mouse wheel,464,684,14.87,18.66,0.80, 
+2010:03:02,18:06:30,949,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Mouse wheel stopped,745,560,0.00,0.00,1.00,12 Wheel actions
+2010:03:02,18:06:30,949,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Left mouse button pressed,745,560,308.70,313.33,0.99, 
+2010:03:02,18:06:31,089,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Left mouse button released,745,560,0.00,0.00,0.00, 
+2010:03:02,18:06:31,339,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Mouse wheel,745,560,0.00,0.00,0.00, 
+2010:03:02,18:06:31,980,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Mouse wheel stopped,742,561,0.00,0.00,1.00,6 Wheel actions
+2010:03:02,18:06:31,980,"firefox.exe","An inconvenient challenge: Ea...th - CNN.com - Mozilla Firefox",Key pressed,742,561,-1.00,-1.00,1.00,Backspace
+2010:03:02,18:06:34,996,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Mouse wheel,966,727,278.80,437.48,0.64, 
+2010:03:02,18:06:37,418,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Mouse wheel stopped,378,232,0.00,0.00,1.00,23 Wheel actions
+2010:03:02,18:06:37,418,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button pressed,378,232,489.53,808.63,0.61, 
+2010:03:02,18:06:37,589,"firefox.exe","NewsPulse - Get the news filt...ar - CNN.com - Mozilla Firefox",Left mouse button released,378,232,0.00,0.00,0.00, 
+2010:03:02,18:06:41,136,"firefox.exe","U.S. News - Headlines, Storie...from CNN.com - Mozilla Firefox",Left mouse button pressed,273,701,480.61,956.48,0.50, 
+2010:03:02,18:06:41,339,"firefox.exe","U.S. News - Headlines, Storie...from CNN.com - Mozilla Firefox",Left mouse button released,273,701,0.00,0.00,0.00, 
+2010:03:02,18:07:15,637,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,563,774,299.05,709.76,0.42, 
+2010:03:02,18:07:15,825,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,563,774,0.00,0.00,0.00, 
+2010:03:02,18:07:39,560,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,596,777,33.14,49.41,0.67, 
+2010:03:02,18:07:39,700,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,596,777,0.00,0.00,0.00, 
+2010:03:02,18:07:41,794,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Mouse wheel,632,773,36.22,38.83,0.93, 
+2010:03:02,18:07:49,107,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Mouse wheel stopped,635,716,0.00,0.00,1.00,19 Wheel actions
+2010:03:02,18:07:49,107,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,635,716,58.03,130.22,0.45, 
+2010:03:02,18:07:49,216,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,635,716,0.00,0.00,0.00, 
+2010:03:02,18:07:49,654,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,625,711,11.18,15.00,0.75, 
+2010:03:02,18:07:49,763,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,625,711,0.00,0.00,0.00, 
+2010:03:02,18:07:51,451,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Mouse wheel,625,711,0.00,0.00,0.00, 
+2010:03:02,18:07:52,998,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Mouse wheel stopped,761,639,0.00,0.00,1.00,2 Wheel actions
+2010:03:02,18:07:52,998,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,761,639,153.88,165.26,0.93, 
+2010:03:02,18:07:53,123,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,761,639,0.00,0.00,0.00, 
+2010:03:02,18:07:53,560,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,761,639,0.00,0.00,0.00, 
+2010:03:02,18:07:53,654,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,761,639,0.00,0.00,0.00, 
+2010:03:02,18:07:55,435,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,761,639,0.00,0.00,0.00, 
+2010:03:02,18:07:55,576,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,761,639,0.00,0.00,0.00, 
+2010:03:02,18:07:58,841,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,154,643,607.01,626.02,0.97, 
+2010:03:02,18:07:58,982,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,154,643,0.00,0.00,0.00, 
+2010:03:02,18:08:00,826,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,572,599,420.31,422.44,0.99, 
+2010:03:02,18:08:00,998,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,572,599,0.00,0.00,0.00, 
+2010:03:02,18:08:04,560,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,596,594,24.52,29.00,0.85, 
+2010:03:02,18:08:04,748,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,596,594,0.00,0.00,0.00, 
+2010:03:02,18:08:06,185,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,317,642,283.10,357.73,0.79, 
+2010:03:02,18:08:06,326,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,317,642,0.00,0.00,0.00, 
+2010:03:02,18:08:09,185,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Right mouse button pressed,564,604,249.91,257.25,0.97, 
+2010:03:02,18:08:09,514,"firefox.exe","<Unknown window>",Right mouse button released,564,604,0.00,0.00,0.00, 
+2010:03:02,18:08:10,529,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,1161,461,613.89,622.50,0.99, 
+2010:03:02,18:08:10,639,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,1161,461,0.00,0.00,0.00, 
+2010:03:02,18:08:25,967,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,565,600,611.99,708.01,0.86, 
+2010:03:02,18:08:26,108,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,565,600,0.00,0.00,0.00, 
+2010:03:02,18:08:31,045,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,596,595,31.40,40.24,0.78, 
+2010:03:02,18:08:31,186,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,596,595,0.00,0.00,0.00, 
+2010:03:02,18:08:47,421,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,351,647,250.46,682.32,0.37, 
+2010:03:02,18:08:47,530,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,351,647,0.00,0.00,0.00, 
+2010:03:02,18:09:35,609,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,390,639,39.81,2947.48,0.01, 
+2010:03:02,18:09:35,734,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,390,639,0.00,0.00,0.00, 
+2010:03:02,18:09:39,266,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,350,643,40.20,456.55,0.09, 
+2010:03:02,18:09:39,406,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,350,643,0.00,0.00,0.00, 
+2010:03:02,18:09:40,281,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,567,599,221.42,235.33,0.94, 
+2010:03:02,18:09:40,453,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,567,599,0.00,0.00,0.00, 
+2010:03:02,18:09:44,078,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,398,640,173.90,246.76,0.70, 
+2010:03:02,18:09:44,250,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,398,640,0.00,0.00,0.00, 
+2010:03:02,18:09:45,375,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,563,596,170.77,184.13,0.93, 
+2010:03:02,18:09:45,516,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,563,597,1.00,1.00,1.00, 
+2010:03:02,18:10:18,079,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,593,596,30.02,693.63,0.04, 
+2010:03:02,18:10:18,235,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,593,596,0.00,0.00,0.00, 
+2010:03:02,18:10:19,438,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,626,601,33.38,36.24,0.92, 
+2010:03:02,18:10:19,579,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,626,601,0.00,0.00,0.00, 
+2010:03:02,18:10:21,173,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,659,603,33.06,39.13,0.84, 
+2010:03:02,18:10:21,266,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,659,603,0.00,0.00,0.00, 
+2010:03:02,18:10:38,485,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,428,647,235.15,799.01,0.29, 
+2010:03:02,18:10:38,610,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,428,647,0.00,0.00,0.00, 
+2010:03:02,18:10:40,126,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,565,598,145.50,200.68,0.73, 
+2010:03:02,18:10:40,282,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,565,598,0.00,0.00,0.00, 
+2010:03:02,18:10:41,438,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,480,643,96.18,105.79,0.91, 
+2010:03:02,18:10:41,548,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,480,643,0.00,0.00,0.00, 
+2010:03:02,18:10:43,173,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,560,601,90.35,104.87,0.86, 
+2010:03:02,18:10:43,282,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,560,601,0.00,0.00,0.00, 
+2010:03:02,18:10:44,298,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,580,601,20.00,20.00,1.00, 
+2010:03:02,18:10:44,392,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,580,601,0.00,0.00,0.00, 
+2010:03:02,18:10:44,985,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,601,601,21.00,21.00,1.00, 
+2010:03:02,18:10:45,063,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,601,601,0.00,0.00,0.00, 
+2010:03:02,18:10:46,282,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,529,642,82.86,89.87,0.92, 
+2010:03:02,18:10:46,392,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,529,642,0.00,0.00,0.00, 
+2010:03:02,18:10:48,579,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,563,595,58.01,76.56,0.76, 
+2010:03:02,18:10:48,735,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,563,595,0.00,0.00,0.00, 
+2010:03:02,18:10:50,360,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,597,597,34.06,35.41,0.96, 
+2010:03:02,18:10:50,564,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,597,597,0.00,0.00,0.00, 
+2010:03:02,18:10:51,564,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,634,597,37.00,37.00,1.00, 
+2010:03:02,18:10:51,751,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,634,597,0.00,0.00,0.00, 
+2010:03:02,18:11:12,470,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,647,760,163.52,260.06,0.63, 
+2010:03:02,18:11:12,626,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,647,760,0.00,0.00,0.00, 
+2010:03:02,18:11:12,986,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,640,765,8.60,9.48,0.91, 
+2010:03:02,18:11:13,111,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,640,766,1.00,1.00,1.00, 
+2010:03:02,18:11:14,486,"firefox.exe","Oscar Theory #4: Best Support...uy - CNN.com - Mozilla Firefox",Mouse wheel,634,758,10.00,12.83,0.78, 
+2010:03:02,18:11:46,517,"firefox.exe","Oscar Theory #4: Best Support...uy - CNN.com - Mozilla Firefox",Mouse wheel stopped,28,54,0.00,0.00,1.00,70 Wheel actions
+2010:03:02,18:11:46,517,"firefox.exe","Oscar Theory #4: Best Support...uy - CNN.com - Mozilla Firefox",Left mouse button pressed,28,54,680.44,2146.55,0.32, 
+2010:03:02,18:11:46,627,"firefox.exe","Oscar Theory #4: Best Support...uy - CNN.com - Mozilla Firefox",Left mouse button released,28,54,0.00,0.00,0.00, 
+2010:03:02,18:11:48,283,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Mouse wheel,548,562,726.96,1175.07,0.62, 
+2010:03:02,18:11:53,049,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Mouse wheel stopped,590,807,0.00,0.00,1.00,3 Wheel actions
+2010:03:02,18:11:53,049,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button pressed,590,807,245.62,854.08,0.29, 
+2010:03:02,18:11:53,189,"firefox.exe","'American Idol': Where are th...w? - CNN.com - Mozilla Firefox",Left mouse button released,590,807,0.00,0.00,0.00, 
+2010:03:02,18:11:55,939,"firefox.exe","Will overseas fans save 'Flas...'? - CNN.com - Mozilla Firefox",Mouse wheel,468,626,218.28,574.09,0.38, 
+2010:03:02,18:12:00,002,"Explorer.EXE","6:11 PM",Mouse wheel stopped,402,585,0.00,0.00,1.00,6 Wheel actions
+2010:03:02,18:12:19,690,"firefox.exe","Will overseas fans save 'Flas...'? - CNN.com - Mozilla Firefox",Mouse wheel,532,769,166.82,1446.14,0.12, 
+2010:03:02,18:12:25,690,"firefox.exe","Will overseas fans save 'Flas...'? - CNN.com - Mozilla Firefox",Mouse wheel stopped,860,768,0.00,0.00,1.00,34 Wheel actions
+2010:03:02,18:12:25,690,"firefox.exe","Will overseas fans save 'Flas...'? - CNN.com - Mozilla Firefox",Left mouse button pressed,860,768,327.07,434.42,0.75, 
+2010:03:02,18:12:25,877,"firefox.exe","Will overseas fans save 'Flas...'? - CNN.com - Mozilla Firefox",Left mouse button released,859,764,4.12,5.00,0.82, 
+2010:03:02,18:12:30,034,"firefox.exe","AmazingLivingTools - Lifestyl... the Fullest - Mozilla Firefox",Left mouse button pressed,485,120,744.72,1366.02,0.55, 
+2010:03:02,18:12:30,190,"firefox.exe","AmazingLivingTools - Lifestyl... the Fullest - Mozilla Firefox",Left mouse button released,485,120,0.00,0.00,0.00, 
+2010:03:02,18:12:34,112,"firefox.exe","Will overseas fans save 'Flas...'? - CNN.com - Mozilla Firefox",Left mouse button pressed,591,274,186.95,874.92,0.21, 
+2010:03:02,18:12:34,206,"firefox.exe","Will overseas fans save 'Flas...'? - CNN.com - Mozilla Firefox",Left mouse button released,591,274,0.00,0.00,0.00, 
+2010:03:02,18:12:51,299,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Mouse wheel,527,688,418.92,2891.27,0.14, 
+2010:03:02,18:12:55,003,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Mouse wheel stopped,460,624,0.00,0.00,1.00,8 Wheel actions
+2010:03:02,18:12:55,003,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Left mouse button pressed,460,624,49.04,62.56,0.78, 
+2010:03:02,18:12:55,159,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Left mouse button released,460,624,0.00,0.00,0.00, 
+2010:03:02,18:13:09,175,"firefox.exe","Academy Awards - Special Coverage on CNN.com - Mozilla Firefox",Mouse wheel,656,534,215.68,428.66,0.50, 
+2010:03:02,18:13:18,237,"agent.exe","<Unknown window>",Mouse wheel stopped,839,653,0.00,0.00,1.00,7 Wheel actions
+2010:03:02,18:13:19,019,"firefox.exe","Academy Awards - Special Coverage on CNN.com - Mozilla Firefox",Mouse wheel,839,653,0.00,0.00,0.00, 
+2010:03:02,18:13:22,300,"firefox.exe","Academy Awards - Special Coverage on CNN.com - Mozilla Firefox",Mouse wheel stopped,645,876,0.00,0.00,1.00,4 Wheel actions
+2010:03:02,18:13:22,300,"firefox.exe","Academy Awards - Special Coverage on CNN.com - Mozilla Firefox",Left mouse button pressed,645,876,295.58,312.54,0.95, 
+2010:03:02,18:13:22,425,"firefox.exe","Academy Awards - Special Coverage on CNN.com - Mozilla Firefox",Left mouse button released,645,876,0.00,0.00,0.00, 
+2010:03:02,18:13:24,019,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Mouse wheel,611,789,93.41,118.11,0.79, 
+2010:03:02,18:13:37,534,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Mouse wheel stopped,745,692,0.00,0.00,1.00,23 Wheel actions
+2010:03:02,18:13:37,534,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,745,692,128.55,160.44,0.80, 
+2010:03:02,18:13:37,675,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,745,692,0.00,0.00,0.00, 
+2010:03:02,18:13:38,363,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,746,692,1.00,1.00,1.00, 
+2010:03:02,18:13:38,488,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,746,692,0.00,0.00,0.00, 
+2010:03:02,18:13:42,660,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,746,692,0.00,0.00,0.00, 
+2010:03:02,18:13:42,800,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,746,692,0.00,0.00,0.00, 
+2010:03:02,18:13:51,972,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,746,692,0.00,0.00,0.00, 
+2010:03:02,18:13:52,175,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,746,692,0.00,0.00,0.00, 
+2010:03:02,18:13:55,050,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,746,692,0.00,0.00,0.00, 
+2010:03:02,18:13:55,269,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,746,692,0.00,0.00,0.00, 
+2010:03:02,18:13:56,972,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,746,692,0.00,0.00,0.00, 
+2010:03:02,18:13:57,175,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,746,692,0.00,0.00,0.00, 
+2010:03:02,18:14:02,457,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,746,692,0.00,0.00,0.00, 
+2010:03:02,18:14:02,644,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,746,692,0.00,0.00,0.00, 
+2010:03:02,18:14:03,988,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,746,692,0.00,0.00,0.00, 
+2010:03:02,18:14:04,175,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,746,692,0.00,0.00,0.00, 
+2010:03:02,18:14:05,894,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,746,692,0.00,0.00,0.00, 
+2010:03:02,18:14:06,113,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,746,692,0.00,0.00,0.00, 
+2010:03:02,18:14:30,644,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,746,692,0.00,0.00,0.00, 
+2010:03:02,18:14:30,848,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,746,692,0.00,0.00,0.00, 
+2010:03:02,18:14:33,457,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,174,690,572.00,587.91,0.97, 
+2010:03:02,18:14:33,613,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,174,690,0.00,0.00,0.00, 
+2010:03:02,18:14:35,551,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,742,692,568.00,642.97,0.88, 
+2010:03:02,18:14:35,770,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,742,692,0.00,0.00,0.00, 
+2010:03:02,18:14:42,629,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,742,692,0.00,0.00,0.00, 
+2010:03:02,18:14:42,770,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,742,692,0.00,0.00,0.00, 
+2010:03:02,18:14:47,426,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,742,692,0.00,0.00,0.00, 
+2010:03:02,18:14:47,660,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,742,692,0.00,0.00,0.00, 
+2010:03:02,18:14:49,301,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,742,692,0.00,0.00,0.00, 
+2010:03:02,18:14:49,441,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,742,692,0.00,0.00,0.00, 
+2010:03:02,18:14:51,738,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,742,692,0.00,0.00,0.00, 
+2010:03:02,18:14:51,941,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,742,692,0.00,0.00,0.00, 
+2010:03:02,18:14:55,723,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,742,692,0.00,0.00,0.00, 
+2010:03:02,18:14:55,895,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,742,692,0.00,0.00,0.00, 
+2010:03:02,18:14:57,301,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,742,692,0.00,0.00,0.00, 
+2010:03:02,18:14:57,504,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,742,692,0.00,0.00,0.00, 
+2010:03:02,18:14:59,270,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,742,692,0.00,0.00,0.00, 
+2010:03:02,18:14:59,442,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,742,692,0.00,0.00,0.00, 
+2010:03:02,18:15:02,645,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,742,692,0.00,0.00,0.00, 
+2010:03:02,18:15:02,848,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,742,692,0.00,0.00,0.00, 
+2010:03:02,18:15:10,723,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Mouse wheel,511,731,234.27,246.51,0.95, 
+2010:03:02,18:15:16,754,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Mouse wheel stopped,511,731,0.00,0.00,1.00,49 Wheel actions
+2010:03:02,18:15:16,754,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Key pressed,511,731,-1.00,-1.00,1.00,Backspace
+2010:03:02,18:15:19,410,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button pressed,26,64,824.69,2342.83,0.35, 
+2010:03:02,18:15:19,520,"firefox.exe","List of Academy Award nominations - CNN.com - Mozilla Firefox",Left mouse button released,26,64,0.00,0.00,0.00, 
+2010:03:02,18:15:27,098,"firefox.exe","Academy Awards - Special Coverage on CNN.com - Mozilla Firefox",Mouse wheel,423,575,647.09,4240.84,0.15, 
+2010:03:02,18:15:34,817,"firefox.exe","Academy Awards - Special Coverage on CNN.com - Mozilla Firefox",Mouse wheel stopped,624,213,0.00,0.00,1.00,10 Wheel actions
+2010:03:02,18:15:34,817,"firefox.exe","Academy Awards - Special Coverage on CNN.com - Mozilla Firefox",Left mouse button pressed,624,213,247.07,567.27,0.44, 
+2010:03:02,18:15:34,911,"firefox.exe","Academy Awards - Special Coverage on CNN.com - Mozilla Firefox",Left mouse button released,624,213,0.00,0.00,0.00, 
+2010:03:02,18:15:40,364,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Mouse wheel,664,440,230.50,2621.26,0.09, 
+2010:03:02,18:15:45,598,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Mouse wheel stopped,191,612,0.00,0.00,1.00,13 Wheel actions
+2010:03:02,18:15:45,598,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Left mouse button pressed,191,612,502.28,530.66,0.95, 
+2010:03:02,18:15:45,707,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Left mouse button released,191,612,0.00,0.00,0.00, 
+2010:03:02,18:15:49,895,"firefox.exe","Movies: News & Videos about Movies - CNN.com - Mozilla Firefox",Mouse wheel,435,618,244.07,357.11,0.68, 
+2010:03:02,18:16:00,004,"Explorer.EXE","6:15 PM",Mouse wheel stopped,23,136,0.00,0.00,1.00,21 Wheel actions
+2010:03:02,18:16:00,770,"firefox.exe","Movies: News & Videos about Movies - CNN.com - Mozilla Firefox",Left mouse button pressed,21,63,689.91,751.38,0.92, 
+2010:03:02,18:16:00,926,"firefox.exe","Movies: News & Videos about Movies - CNN.com - Mozilla Firefox",Left mouse button released,21,63,0.00,0.00,0.00, 
+2010:03:02,18:16:03,411,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Mouse wheel,613,403,682.69,712.92,0.96, 
+2010:03:02,18:16:09,192,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Mouse wheel stopped,429,250,0.00,0.00,1.00,18 Wheel actions
+2010:03:02,18:16:09,192,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Left mouse button pressed,429,250,238.03,1518.14,0.16, 
+2010:03:02,18:16:09,348,"firefox.exe","Entertainment News - Movie, T...ip - CNN.com - Mozilla Firefox",Left mouse button released,429,250,0.00,0.00,0.00, 
+2010:03:02,18:16:18,051,"firefox.exe","World News - International He...from CNN.com - Mozilla Firefox",Mouse wheel,584,573,358.27,3417.14,0.10, 
+2010:03:02,18:16:22,411,"firefox.exe","World News - International He...from CNN.com - Mozilla Firefox",Mouse wheel stopped,165,548,0.00,0.00,1.00,9 Wheel actions
+2010:03:02,18:16:22,411,"firefox.exe","World News - International He...from CNN.com - Mozilla Firefox",Left mouse button pressed,165,548,419.75,491.67,0.85, 
+2010:03:02,18:16:22,551,"firefox.exe","World News - International He...from CNN.com - Mozilla Firefox",Left mouse button released,165,548,0.00,0.00,0.00, 
+2010:03:02,18:16:37,130,"firefox.exe","Asia News - Headlines, Storie...nternational - Mozilla Firefox",Mouse wheel,637,660,485.11,2434.99,0.20, 
+2010:03:02,18:16:41,302,"firefox.exe","Asia News - Headlines, Storie...nternational - Mozilla Firefox",Mouse wheel stopped,434,603,0.00,0.00,1.00,8 Wheel actions
+2010:03:02,18:16:41,302,"firefox.exe","Asia News - Headlines, Storie...nternational - Mozilla Firefox",Left mouse button pressed,434,603,210.85,736.10,0.29, 
+2010:03:02,18:16:41,395,"firefox.exe","Asia News - Headlines, Storie...nternational - Mozilla Firefox",Left mouse button released,434,603,0.00,0.00,0.00, 
+2010:03:02,18:16:55,317,"firefox.exe","CNN.com International - Speci...e on CNN.com - Mozilla Firefox",Mouse wheel,623,700,212.44,1073.87,0.20, 
+2010:03:02,18:17:00,005,"Explorer.EXE","6:16 PM",Mouse wheel stopped,651,656,0.00,0.00,1.00,9 Wheel actions
+2010:03:02,18:17:05,677,"firefox.exe","CNN.com International - Speci...e on CNN.com - Mozilla Firefox",Mouse wheel,651,656,0.00,0.00,0.00, 
+2010:03:02,18:17:08,677,"firefox.exe","CNN.com International - Speci...e on CNN.com - Mozilla Firefox",Mouse wheel stopped,597,543,0.00,0.00,1.00,11 Wheel actions
+2010:03:02,18:17:08,677,"firefox.exe","CNN.com International - Speci...e on CNN.com - Mozilla Firefox",Left mouse button pressed,597,543,125.24,134.21,0.93, 
+2010:03:02,18:17:08,802,"firefox.exe","CNN.com International - Speci...e on CNN.com - Mozilla Firefox",Left mouse button released,597,543,0.00,0.00,0.00, 
+2010:03:02,18:17:12,974,"firefox.exe","CNN.com International - Speci...e on CNN.com - Mozilla Firefox",Left mouse button pressed,576,575,38.28,56.79,0.67, 
+2010:03:02,18:17:13,130,"firefox.exe","CNN.com International - Speci...e on CNN.com - Mozilla Firefox",Left mouse button released,576,575,0.00,0.00,0.00, 
+2010:03:02,18:17:19,583,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Mouse wheel,544,585,33.53,37.72,0.89, 
+2010:03:02,18:18:00,005,"Explorer.EXE","6:17 PM",Mouse wheel stopped,621,861,0.00,0.00,1.00,5 Wheel actions
+2010:03:02,18:18:04,396,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Mouse wheel,620,861,286.27,4818.22,0.06, 
+2010:03:02,18:19:00,006,"Explorer.EXE","6:18 PM",Mouse wheel stopped,613,863,0.00,0.00,1.00,11 Wheel actions
+2010:03:02,18:19:23,974,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Key pressed,613,863,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:19:24,349,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Key pressed,613,863,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:19:24,599,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Key pressed,613,863,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:19:24,818,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Key pressed,613,863,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:19:25,021,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Key pressed,613,863,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:19:25,209,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Key pressed,613,863,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:19:25,412,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Key pressed,613,863,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:19:25,631,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Key pressed,613,863,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:19:25,865,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Key pressed,613,863,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:19:26,084,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Key pressed,613,863,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:19:26,287,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Key pressed,613,863,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:19:26,521,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Key pressed,613,863,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:19:26,740,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Key pressed,613,863,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:19:26,959,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Key pressed,613,863,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:19:27,178,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Key pressed,613,863,-1.00,-1.00,1.00,Down arrow
+2010:03:02,18:20:29,787,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Mouse wheel,770,773,179.11,186.18,0.96, 
+2010:03:02,18:20:34,053,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Mouse wheel stopped,488,116,0.00,0.00,1.00,15 Wheel actions
+2010:03:02,18:20:34,053,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Left mouse button pressed,488,116,713.79,2202.86,0.32, 
+2010:03:02,18:20:34,178,"firefox.exe","China's grown-up 'child slaves' | CNNGo.com - Mozilla Firefox",Left mouse button released,488,116,0.00,0.00,0.00, 
+2010:03:02,18:21:15,366,"firefox.exe","CNN.com International - Speci...e on CNN.com - Mozilla Firefox",Left mouse button pressed,328,573,484.20,5177.43,0.09, 
+2010:03:02,18:21:15,475,"firefox.exe","CNN.com International - Speci...e on CNN.com - Mozilla Firefox",Left mouse button released,328,573,0.00,0.00,0.00, 
+2010:03:02,18:21:46,960,"firefox.exe","China losing appetite for U.S. debt - CNN.com - Mozilla Firefox Mouse wheel",Mouse wheel,542,612,217.52,765.73,0.28, 
+2010:03:02,18:22:00,007,"Explorer.EXE","6:21 PM",Mouse wheel stopped,628,575,0.00,0.00,1.00,2 Wheel actions
+2010:03:02,18:22:15,272,"firefox.exe","China losing appetite for U.S. debt - CNN.com - Mozilla Firefox Mouse wheel",Mouse wheel,627,575,92.70,101.55,0.91, 
+2010:03:02,18:22:42,507,"firefox.exe","China losing appetite for U.S. debt - CNN.com - Mozilla Firefox Mouse wheel stopped",Mouse wheel stopped,26,60,0.00,0.00,1.00,38 Wheel actions
+2010:03:02,18:22:42,507,"firefox.exe","China losing appetite for U.S. debt - CNN.com - Mozilla Firefox Left mouse button pressed",Left mouse button pressed,26,60,787.68,921.00,0.86, 
+2010:03:02,18:22:42,648,"firefox.exe","China losing appetite for U.S. debt - CNN.com - Mozilla Firefox Left mouse button released",Left mouse button released,26,60,0.00,0.00,0.00, 
+2010:03:02,18:22:48,007,"firefox.exe","CNN.com International - Speci...e on CNN.com - Mozilla Firefox",Left mouse button pressed,383,598,645.67,1065.61,0.61, 
+2010:03:02,18:22:48,241,"firefox.exe","CNN.com International - Speci...e on CNN.com - Mozilla Firefox",Left mouse button released,383,598,0.00,0.00,0.00, 
+2010:03:02,18:22:49,835,"firefox.exe","Japan stays ahead of China - ...ow - CNN.com - Mozilla Firefox",Mouse wheel,383,597,1.00,1.00,1.00, 
+2010:03:02,18:23:00,007,"Explorer.EXE","6:22 PM",Mouse wheel stopped,472,532,0.00,0.00,1.00,6 Wheel actions
+2010:03:02,18:23:28,726,"firefox.exe","Japan stays ahead of China - ...ow - CNN.com - Mozilla Firefox",Mouse wheel,627,698,248.13,1620.31,0.15, 
+2010:03:02,18:24:00,007,"Explorer.EXE","6:23 PM",Mouse wheel stopped,628,654,0.00,0.00,1.00,8 Wheel actions
+2010:03:02,18:24:24,383,"firefox.exe","Japan stays ahead of China - ...ow - CNN.com - Mozilla Firefox",Left mouse button pressed,25,57,848.54,1101.69,0.77, 
+2010:03:02,18:24:24,508,"firefox.exe","Japan stays ahead of China - ...ow - CNN.com - Mozilla Firefox",Left mouse button released,25,57,0.00,0.00,0.00, 
+2010:03:02,18:24:31,039,"firefox.exe","CNN.com International - Speci...e on CNN.com - Mozilla Firefox",Left mouse button pressed,323,646,660.09,1473.34,0.45, 
+2010:03:02,18:24:31,211,"firefox.exe","CNN.com International - Speci...e on CNN.com - Mozilla Firefox",Left mouse button released,323,646,0.00,0.00,0.00, 
+2010:03:02,18:24:32,851,"firefox.exe","Recall in China a big headach...ta - CNN.com - Mozilla Firefox",Mouse wheel,518,601,200.12,203.03,0.99, 
+2010:03:02,18:25:00,008,"Explorer.EXE","6:24 PM",Mouse wheel stopped,525,741,0.00,0.00,1.00,10 Wheel actions
+2010:03:02,18:25:15,477,"firefox.exe","Recall in China a big headach...ta - CNN.com - Mozilla Firefox",Mouse wheel,525,741,0.00,0.00,0.00, 
+2010:03:02,18:26:00,008,"Explorer.EXE","6:25 PM",Mouse wheel stopped,595,687,0.00,0.00,1.00,9 Wheel actions
+2010:03:02,18:26:00,336,"firefox.exe","Recall in China a big headach...ta - CNN.com - Mozilla Firefox",Mouse wheel,595,687,88.41,127.19,0.70, 
+2010:03:02,18:26:05,633,"firefox.exe","Recall in China a big headach...ta - CNN.com - Mozilla Firefox",Mouse wheel stopped,10,62,0.00,0.00,1.00,3 Wheel actions
+2010:03:02,18:26:05,633,"firefox.exe","Recall in China a big headach...ta - CNN.com - Mozilla Firefox",Left mouse button pressed,10,62,856.07,1001.81,0.85, 
+2010:03:02,18:26:05,774,"firefox.exe","Recall in China a big headach...ta - CNN.com - Mozilla Firefox",Left mouse button released,10,62,0.00,0.00,0.00, 
+2010:03:02,18:26:16,383,"firefox.exe","CNN.com International - Speci...e on CNN.com - Mozilla Firefox",Left mouse button pressed,895,626,1049.44,1468.56,0.71, 
+2010:03:02,18:26:16,540,"firefox.exe","CNN.com International - Speci...e on CNN.com - Mozilla Firefox",Left mouse button released,895,626,0.00,0.00,0.00, 
+2010:03:02,18:26:18,868,"firefox.exe","Business 360: Get to grips wi...from CNN.com - Mozilla Firefox",Mouse wheel,526,665,371.06,439.38,0.84, 
+2010:03:02,18:26:28,821,"Explorer.EXE","Notification Area",Mouse wheel stopped,1122,1010,0.00,0.00,1.00,5 Wheel actions
+2010:03:02,18:26:28,821,"Explorer.EXE","Notification Area",Right mouse button pressed,1122,1010,688.65,1896.23,0.36, 
+2010:03:02,18:26:29,024,"Explorer.EXE","Notification Area",Right mouse button released,1122,1010,0.00,0.00,0.00, 
+2010:03:02,18:26:30,055,"uLog.exe","<Unknown window>",Left mouse button pressed,1180,982,64.40,83.56,0.77, 
+2010:03:02,18:26:30,165,"uLog.exe","<Unknown window>",Left mouse button released,1180,982,0.00,0.00,0.00, 
+2010:03:02,18:26:30,165,"uLog.exe"," ",Logging stopped,-1,-1,-1.00,-1.00,-1.00, 
