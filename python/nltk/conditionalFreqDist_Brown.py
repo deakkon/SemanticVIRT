@@ -10,6 +10,8 @@ for word in brown.words():
     words.append(word)
     print word 
 
+
+
 """
 cfd = nltk.ConditionalFreqDist(
           (genre, word)

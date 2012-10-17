@@ -12,6 +12,8 @@ for fileid in gutenberg.fileids():
     num_vocab = len(set([w.lower() for w in gutenberg.words(fileid)]))
     print fileid, int(num_chars/num_words),int(num_words/num_sents), int(num_words/num_vocab)
     
+    
+    
 macbeth_sentences = gutenberg.sents('shakespeare-macbeth.txt')
 macbeth_sentences
 
