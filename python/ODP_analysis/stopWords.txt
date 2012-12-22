@@ -1,4 +1,13 @@
+.
+,
+&
+&gt
+&lt
+;
+:
+/b
 a
+aa
 aaaa
 able
 about
