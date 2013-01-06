@@ -21,22 +21,18 @@ Repeat until there are no more documents (descriptions from database in our case
 Created on 18.10.2012.
 
 @author: Jurica Seva, PhD candidate
+
+list of functions
 """
 
-""" import libraries """
-import sys, os
-#db
-import MySQLdb
-#nltk
-import nltk
-#tokenization
-from nltk import tokenize, stem
+#import libraries
+import sys, os, re, MySQLdb
+import nltk.tokenize, nltk.stem
 from nltk.tokenize import word_tokenize, wordpunct_tokenize, sent_tokenize
-#stemmers
 from nltk.stem import WordNetLemmatizer, PorterStemmer, LancasterStemmer
-
-#stop words
+from decimal import Decimal
 from nltk.corpus import stopwords
+from odpDatabase import *
 
 #stemmers
 wnl = WordNetLemmatizer()
@@ -46,9 +42,10 @@ ps = PorterStemmer()
 #stemming lists
 desc = []
 desc_seg = []
-#empty name list
+stopWordsPercentage = []
+stemmingPercentage = []
 
-
+#functions
 def dbConnect(sql):
     """
     Basic dB functionality
@@ -58,7 +55,23 @@ def dbConnect(sql):
     rez = c.execute(sql)
     return c.fetchall()
 
-def tokenizersDifference(text,mode):
+def removePunct(text,returnType=2):
+    """
+    Remove punctuation from text
+    Return list of returnType = 1, string if returnType = 2 (default)
+    """
+    sentence = re.compile('\w+').findall(text)
+    #sentence = re.sub("[^a-zA-Z]", "", text)
+    #sentence = " ".join([x for x in text.split(" ") if not x.isdigit()])
+    #print "rp sentence: ",sentence
+    if returnType == 1:   
+        sentence = [x.lower() for x in sentence]              
+        return sentence
+    else:
+        sentenceReturn = ' '.join(sentence)
+        return sentenceReturn
+
+def tokenizersDifference(text,mode=0):
     """
     parameters:
     text = text to tokenize
@@ -69,6 +82,7 @@ def tokenizersDifference(text,mode):
         3 = print results of sent_tokenize
     """
     if len(text) != 0:
+        text = removePunct(text)
         if mode == 0:
             print "word_tokenize", "    ",nltk.word_tokenize(text)
             print "wordpunct_tokenize", "    ",nltk.wordpunct_tokenize(text)
@@ -84,7 +98,8 @@ def tokenizersDifference(text,mode):
     else:
         sys.exit("text string to tokenize is empty")
         
-def removeStopWords(text,mode):        
+
+def removeStopWords(text,mode=2):        
     """
     remove stop words; 1 = stem words from nltk.corpus.stopwords.words
     2 = stop words from file stopWords.txt
@@ -120,40 +135,53 @@ def extract_entity_names(t):
 sql = "select dmoz_newsgroups.catid, dmoz_categories.Description as catDesc from dmoz_categories, dmoz_newsgroups where dmoz_categories.catid = dmoz_newsgroups.catid and dmoz_categories.Description != '' group by dmoz_newsgroups.catid limit 100"
 rowCount = dbConnect(sql)
 
-for record in rowCount:
-    """
-    simple tokenization & stemming
-    taking results of an SQL query
-    name recognition
-    """
-    desc_WNL = []
-    desc_LS = []
-    desc_PS = []
-    names = []
-    cleanHtml = nltk.clean_html(record[1])
-    print "###########################"
-    #tokenizersDifference(cleanHtml,0)
-    tokens = nltk.word_tokenize(cleanHtml)
-    print "number of tokens: ",len(tokens),"    ",tokens
-    contentNoStopWords = removeStopWords(tokens,1)
-    print "number of tokens w/o SW: ",len(contentNoStopWords),"    ",contentNoStopWords
-    #print tokens, "\n"
-    for i in contentNoStopWords:
-        #WordNet Lemmatizer
-        #print wnl.lemmatize(i)
-        desc_WNL.append(wnl.lemmatize(i))
-        #Lancaster stemmer
-        #print lst.stem(i)
-        desc_LS.append(lst.stem(i))
-        #Porter stemmer
-        #print ps.stem(i)
-        desc_PS.append(ps.stem(i))
+def indexModel(content):
+    for record in content:
+        """
+        simple tokenization & stemming
+        taking results of an SQL query
+        name recognition
+        """
+        desc_WNL = []
+        desc_LS = []
+        desc_PS = []
+        names = []
+        stpWrdPctg = []
+        cleanHtml = nltk.clean_html(record[1])
+        print "###########################"
+        print "Original sentence ", cleanHtml
+        #tokenizersDifference(cleanHtml,0)
+        tokens = nltk.word_tokenize(cleanHtml)
+        print "Number of tokens: ",len(tokens),"    ",tokens
+        contentNoStopWords = removeStopWords(tokens,2)
+        ratio = Decimal(float(len(contentNoStopWords))/float(len(tokens)))
+        stopWordsPercentage.append(ratio)
+        stpWrdPctg.append(ratio)
+        print "% of stop words in original sentence    ", ratio
+        print "Number of tokens w/o SW: ",len(contentNoStopWords),"    ",contentNoStopWords
+        #print tokens, "\n"
+        for i in contentNoStopWords:
+            #WordNet Lemmatizer
+            #print "WordNet Lemmatizer", wnl.lemmatize(i)
+            desc_WNL.append(wnl.lemmatize(i))
+            #Lancaster stemmer
+            #print "Lancaster stemmer",lst.stem(i)
+            desc_LS.append(lst.stem(i))
+            #Porter stemmer
+            #print "Porter stemmer", ps.stem(i)
+            desc_PS.append(ps.stem(i))
+        """
+        for tree in chunked_sentences:
+            # Print results per sentence
+            # print extract_entity_names(tree)    
+            entity_names.extend(extract_entity_names(tree))
+        """        
+        #print "Recognized names", extract_entity_names(tokens)
+        print "WordNet Lemmatization","    ",len(desc_WNL),"    ",desc_WNL
+        print "lancaster stemmer","    ",len(desc_LS) ,"    ",desc_LS
+        print "Porter stemmer","    ",len(desc_PS) ,"    ",desc_PS
+        print "Sentence reduction: ", float(sum(stpWrdPctg)/len(stpWrdPctg))
+    print "Overall reduction: ", float(sum(stopWordsPercentage)/len(stopWordsPercentage))
     
-    for tree in chunked_sentences:
-        # Print results per sentence
-        # print extract_entity_names(tree)    
-        entity_names.extend(extract_entity_names(tree))        
-    print "Recognized names", extract_entity_names(tokens)
-    print len(desc_WNL) ,"WordNet Lemmatization","    ",desc_WNL
-    print len(desc_LS) ,"lancaster stemmer","    ",desc_LS
-    print len(desc_LS) ,"Porter stemmer","    ",desc_PS
+#sentence = "Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting list. If maxsplit is nonzero, at most maxsplit splits occur, and the remainder of the string is returned as the final element of the list. (Incompatibility note: in the original Python 1.5 release, maxsplit was ignored. This has been fixed in later releases.)"
+#tokenizersDifference(sentence)
