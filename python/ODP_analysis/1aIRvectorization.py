@@ -70,9 +70,13 @@ def vectorizeDocument(document):
     print corpus1
     print list(corpus1)
 
-def vectorizeMultiple(documents):
+def createCorpus(documents):
     """
-    Takes in documents/SQL results and prepares them for similarity operations
+    Take SQL results
+    Tag/stem each document
+    Add to dictionary
+    Create corpus
+    Save corpus to file for further use in all gensim supported formats
     """
     data = []
         
@@ -85,21 +89,21 @@ def vectorizeMultiple(documents):
         noPunct = removePunct(row[1], 1)
         data.append(removeStopWords(noPunct))
             
-    print "Stop words ",data
+    #print "Stop words ",data
     dictionary = corpora.Dictionary(data)
-    print dictionary.token2id
+    #print dictionary.token2id
         
-    #creating different corpus formats    
+    #creating dictionary and corpus  files in different formats    
     corpus = [dictionary.doc2bow(text) for text in data]
-    dictionary.save('tmp/test.dict') # store the dictionary, for future reference
-    corpora.MmCorpus.serialize('tmp/test.mm', corpus) # store to disk, for later use
-    #corpora.SvmLightCorpus.serialize('tmp/test.svmlight', corpus)
-    #corpora.BleiCorpus.serialize('tmp/test.lda-c', corpus)
-    #corpora.LowCorpus.serialize('tmp/test.low', corpus)
-    print corpus        
+    dictionary.save('tmp/testNewsgroupsDictionary.dict') 
+    corpora.MmCorpus.serialize('tmp/testNewsgroupsMmCorpus.mm', corpus) 
+    corpora.SvmLightCorpus.serialize('tmp/testNewsgroupsSvmLightCorpus.svmlight', corpus)
+    corpora.BleiCorpus.serialize('tmp/testNewsgroupsBleiCorpus.lda-c', corpus)
+    corpora.LowCorpus.serialize('tmp/testNewsgroupsLowCorpus.low', corpus)
+    #print corpus        
     
-def calculateSimilartiy():
+def readCorpus():
     pass
 
 #vectorizeDocument(sentence)
-vectorizeMultiple(results)
+createCorpus(results)
