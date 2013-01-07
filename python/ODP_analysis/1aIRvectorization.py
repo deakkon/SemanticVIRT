@@ -19,6 +19,8 @@ Implementing Gensim Python modules for IR implementation, tested on newsletter c
 #imports
 import logging
 from gensim import corpora, models, similarities, utils
+from gensim.corpora.dictionary import Dictionary
+
 import nltk
 from bs4 import BeautifulSoup
 from lxml import html
@@ -54,21 +56,18 @@ def vectorizeDocument(document):
     #print "length 2", len(document)
     #print "Prepared text: ", len(document),"    ", document, 
     dictionary = corpora.Dictionary(document)
-    #print dictionary.token2id
+    #print "vectorizeDocument ",dictionary.token2id
     
     #creating different corpus formats
     corpus = [dictionary.doc2bow(text) for text in document]
+    """
     dictionary.save('tmp/test.dict') # store the dictionary, for future reference
     corpora.MmCorpus.serialize('tmp/test.mm', corpus) # store to disk, for later use
     corpora.SvmLightCorpus.serialize('tmp/test.svmlight', corpus)
     corpora.BleiCorpus.serialize('tmp/test.lda-c', corpus)
     corpora.LowCorpus.serialize('tmp/test.low', corpus)
-    print corpus
-    
-    #reading corpuses from file
-    corpus1 = corpora.SvmLightCorpus('tmp/test.svmlight')
-    print corpus1
-    print list(corpus1)
+    """
+    return corpus
 
 def createCorpus(documents):
     """
@@ -95,17 +94,43 @@ def createCorpus(documents):
         
     #creating dictionary and corpus  files in different formats    
     corpus = [dictionary.doc2bow(text) for text in data]
-    dictionary.save('tmp/testNewsgroupsDictionary.dict') 
-    corpora.MmCorpus.serialize('tmp/testNewsgroupsMmCorpus.mm', corpus) 
-    corpora.SvmLightCorpus.serialize('tmp/testNewsgroupsSvmLightCorpus.svmlight', corpus)
-    corpora.BleiCorpus.serialize('tmp/testNewsgroupsBleiCorpus.lda-c', corpus)
-    corpora.LowCorpus.serialize('tmp/testNewsgroupsLowCorpus.low', corpus)
+    dictionary.save('corpusFiles/testNewsgroupsDictionary.dict') 
+    corpora.MmCorpus.serialize('corpusFiles/testNewsgroupsMmCorpus.mm', corpus) 
+    corpora.SvmLightCorpus.serialize('corpusFiles/testNewsgroupsSvmLightCorpus.svmlight', corpus)
+    corpora.BleiCorpus.serialize('corpusFiles/testNewsgroupsBleiCorpus.lda-c', corpus)
+    corpora.LowCorpus.serialize('corpusFiles/testNewsgroupsLowCorpus.low', corpus)
     #print corpus        
     
-def readCorpus():
-    dictionary = corpora.Dictionary.load('tmp/testNewsgroupsDictionary.dict')
-    corpus = corpora.MmCorpus('tmp/testNewsgroupsMmCorpus.mm')
-    print corpus
+def readCorpus(document):
+
+    #prepare corpusfor transformation
+    dictionary = corpora.Dictionary.load('corpusFiles/testNewsgroupsDictionary.dict')
+    corpus = corpora.MmCorpus('corpusFiles/testNewsgroupsMmCorpus.mm')
+    #print dictionary
+    #print corpus
+    tfidf = models.TfidfModel(corpus)
+    
+    #save tfidf model
+    tfidf.save('modelsTFIDF/testNewsgroups.tfidf_model')
+    #print tfidf
+    
+    #prepare document; remove punctuation, stopWords, return bow format
+    processedDoc = vectorizeDocument(document)
+    #print processedDoc
+
+    #transformation of new document to existing model
+    for doc in processedDoc:
+        documentTfIDF = tfidf[doc]
+        print documentTfIDF            
+    
+    """
+    Testing transformation
+    doc_bow = [(0, 1), (1, 1),(4,3),(17,9)]
+    print tfidf[doc_bow]
+    """
+
+    
 
 #vectorizeDocument(sentence)
-createCorpus(results)
+#createCorpus(results)
+readCorpus(sentence)
