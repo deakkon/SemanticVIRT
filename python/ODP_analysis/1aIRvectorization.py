@@ -103,7 +103,9 @@ def createCorpus(documents):
     #print corpus        
     
 def readCorpus():
-    pass
+    dictionary = corpora.Dictionary.load('tmp/testNewsgroupsDictionary.dict')
+    corpus = corpora.MmCorpus('tmp/testNewsgroupsMmCorpus.mm')
+    print corpus
 
 #vectorizeDocument(sentence)
 createCorpus(results)
