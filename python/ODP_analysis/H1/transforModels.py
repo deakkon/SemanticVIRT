@@ -7,6 +7,9 @@ PhD Candidate
 Faculty of Organization and Informatics
 University of Zagreb
 '''
+from python.ODP_analysis.utils import odpDatabase
+
+
 def transformModel(inputModel, dictionary ,type = 0):    
     #create model handlers
     if type == 0:

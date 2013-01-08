@@ -32,7 +32,7 @@ from nltk.tokenize import word_tokenize, wordpunct_tokenize, sent_tokenize
 from nltk.stem import WordNetLemmatizer, PorterStemmer, LancasterStemmer
 from decimal import Decimal
 from nltk.corpus import stopwords
-from odpDatabase import *
+
 
 #stemmers
 wnl = WordNetLemmatizer()
@@ -112,7 +112,7 @@ def removeStopWords(text,mode=2):
         #print len(content)/len(text)
         return content
     elif mode == 2:
-        stopwordsFileOpen = open('stopWords.txt','r')
+        stopwordsFileOpen = open('/doktorat/python/ODP_analysis/utils/stopWords.txt','r')
         stopwordsFile = [i.strip() for i in stopwordsFileOpen.readlines()]
         content = [w for w in text if w.lower() not in stopwordsFile]
         stopwordsFileOpen.close()
