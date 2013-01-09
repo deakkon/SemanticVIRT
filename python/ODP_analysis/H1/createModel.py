@@ -69,7 +69,7 @@ def vectorizeDocument(document):
     """
     return bow_document
 
-def createTrainingModel(documents, outputFormat=1, modelFormat=1):
+def createTrainingModel(documents, outputFormat=1, modelFormat=1, fileName =""):
     """
     Take SQL results
     Tag/stem each document
@@ -80,6 +80,11 @@ def createTrainingModel(documents, outputFormat=1, modelFormat=1):
     """
     #variables
     data = []
+    
+    #create file names to save
+    if fileName == "":
+        fileName = "testNewsgroups"
+    
     
     #iteration rhrough supplied documents
     for row in documents:
@@ -97,32 +102,40 @@ def createTrainingModel(documents, outputFormat=1, modelFormat=1):
         
     #creating dictionary and corpus  files in different matrix formats    
     bow_documents = [dictionary.doc2bow(text) for text in data]
-    dictionary.save('corpusFiles/testNewsgroupsDictionary.dict')
+    dictFN = fileName+"Dictionary.dict"
+    dictionary.save(dictFN)
 
     #create corpora data for use in creating a vector model representation for furher use
     if outputFormat == 1:
-        corpora.MmCorpus.serialize('corpusFiles/testNewsgroupsMmCorpus.mm', bow_documents)
+        saveFN = "corpusFiles/"+fileName+"MmCorpus.mm"
+        corpora.MmCorpus.serialize(saveFN, bow_documents)
     elif outputFormat == 2:
-        corpora.SvmLightCorpus.serialize('corpusFiles/testNewsgroupsSvmLightCorpus.svmlight', bow_documents)
+        saveFN = "corpusFiles/"+fileName+"SvmLightCorpus.svmlight"
+        corpora.SvmLightCorpus.serialize(saveFN, bow_documents)
     elif outputFormat == 3:
-        corpora.BleiCorpus.serialize('corpusFiles/testNewsgroupsBleiCorpus.lda-c', bow_documents)
+        saveFN = "corpusFiles/"+fileName+"BleiCorpus.lda-c"
+        corpora.BleiCorpus.serialize(saveFN, bow_documents)
     elif outputFormat == 4:
-        corpora.LowCorpus.serialize('corpusFiles/testNewsgroupsLowCorpus.low', bow_documents)
+        corpora.LowCorpus.serialize(saveFN, bow_documents)
+        saveFN = "corpusFiles/"+fileName+"LowCorpus.low"
     else:
         errorMessage("Something went wrong with the type identificator")
     
     #save model to disk -> model of all documents that are going to be compared against
     if modelFormat == 1:
         tfidf = models.TfidfModel(bow_documents)
-        tfidf.save('models/testNewsgroups.tfidf_model')
+        saveFN = "models/"+fileName+".tfidf_model"
+        tfidf.save(saveFN)
     elif modelFormat == 2:
         #lsi
         lsi = models.LsiModel(bow_documents)
-        lsi.save('models/testNewsgroups.lsi')
+        saveFN = "models/"+fileName+".lsi"
+        lsi.save(saveFN)
     elif modelFormat == 3:
         #lsi
-        lsi = models.LdaModel(bow_documents)
-        lsi.save('models/testNewsgroups.lda')
+        lda = models.LdaModel(bow_documents)
+        saveFN = "models/"+fileName+".lda"
+        lda.save(saveFN)
     else:
         errorMessage("createTrainingModel: Something went wrong with the type identificator")
     
@@ -143,18 +156,18 @@ def documentToBoW(document):
     dataFinal=[]
     
     if type(document) is str:
-        print 'a string ',type(document)
+        #print 'a string ',type(document)
         #data.append(document.split())
         data.insert(1, document)
-        print data
+        #print data
     elif type(document) is tuple:
-        print 'a tuple',type(document)
+        #print 'a tuple',type(document)
         data = document
-        print data
+        #print data
         
     for row in data:
         noPunct = ""
-        print row
+        #print row
         #dataNLTK = nltk.clean_html(row[1])
         #soup = BeautifulSoup(row[1])
         #print "NLTK clean_html ", dataNLTK
@@ -162,7 +175,7 @@ def documentToBoW(document):
         noPunct = removePunct(row[1], 1)
         dataFinal.append(removeStopWords(noPunct))    
     
-    print dataFinal
+    #print dataFinal
     dictionary = corpora.Dictionary(dataFinal)
     #print dictionary.token2id
         

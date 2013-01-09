@@ -33,6 +33,12 @@ from nltk.stem import WordNetLemmatizer, PorterStemmer, LancasterStemmer
 from decimal import Decimal
 from nltk.corpus import stopwords
 from python.ODP_analysis.utils import *
+from python.ODP_analysis.utils.odpDatabase import *
+
+#dummy testing data
+sentence = "Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting list. If maxsplit is nonzero, at most maxsplit splits occur, and the remainder of the string is returned as the final element of the list. (Incompatibility note: in the original Python 1.5 release, maxsplit was ignored. This has been fixed in later releases.)"
+
+sql = "select dmoz_newsgroups.catid, dmoz_categories.Description as catDesc from dmoz_categories, dmoz_newsgroups where dmoz_categories.catid = dmoz_newsgroups.catid and dmoz_categories.Description != '' group by dmoz_newsgroups.catid limit 100"
 
 
 #stemmers
@@ -70,7 +76,29 @@ def removePunct(text,returnType=2):
         return sentence
     else:
         sentenceReturn = ' '.join(sentence)
-        return sentenceReturn
+        return sentenceReturn      
+
+def removeStopWords(text,mode=2):        
+    """
+    remove stop words; 1 = stem words from nltk.corpus.stopwords.words
+    2 = stop words from file stopWords.txt
+    """
+    content = []
+    
+    if mode == 1:
+        stopwords = nltk.corpus.stopwords.words('english')
+        content = [w for w in text if w.lower() not in stopwords]
+        #print len(content)/len(text)
+        return content
+    elif mode == 2:
+        stopwordsFileOpen = open('D:\\research\\3_DataAnalysis(code,software,output)\\1_Code\\1_gitHubDoktorat\\SemanticVIRT\\python\\ODP_analysis\\utils\\stopWords.txt','r')
+        stopwordsFile = [i.strip() for i in stopwordsFileOpen.readlines()]
+        content = [w for w in text if w.lower() not in stopwordsFile]
+        stopwordsFileOpen.close()
+        #print len(content)/len(text)
+        return content
+    else:
+        sys.exit("False flag -> second parameter must be \n 1, if you want to use nltk based set of stopwrods \n 2, if you want to use file based set of stopwords \n")
 
 def tokenizersDifference(text,mode=0):
     """
@@ -98,31 +126,9 @@ def tokenizersDifference(text,mode=0):
             sys.exit("False flag -> second parameter must be \n0 = print results of word_tokenize, wordpunct_tokenize and sent_tokenize on text\n1 = print results of word_tokenize\n2 = print results of wordpunct_tokenize\n3 = print results of sent_tokenize")
     else:
         sys.exit("text string to tokenize is empty")
-        
-
-def removeStopWords(text,mode=2):        
-    """
-    remove stop words; 1 = stem words from nltk.corpus.stopwords.words
-    2 = stop words from file stopWords.txt
-    """
-    content = []
-    
-    if mode == 1:
-        stopwords = nltk.corpus.stopwords.words('english')
-        content = [w for w in text if w.lower() not in stopwords]
-        #print len(content)/len(text)
-        return content
-    elif mode == 2:
-        stopwordsFileOpen = open('D:\\research\\3_DataAnalysis(code,software,output)\\1_Code\\1_gitHubDoktorat\\SemanticVIRT\\python\\ODP_analysis\\utils\\stopWords.txt','r')
-        stopwordsFile = [i.strip() for i in stopwordsFileOpen.readlines()]
-        content = [w for w in text if w.lower() not in stopwordsFile]
-        stopwordsFileOpen.close()
-        #print len(content)/len(text)
-        return content
-    else:
-        sys.exit("False flag -> second parameter must be \n 1, if you want to use nltk based set of stopwrods \n 2, if you want to use file based set of stopwords \n")
 
 def extract_entity_names(t):
+    #not working at this moment
     entity_names = []
     
     if hasattr(t, 'node') and t.node:
@@ -130,11 +136,8 @@ def extract_entity_names(t):
             entity_names.append(' '.join([child[0] for child in t]))
         else:
             for child in t:
-                entity_names.extend(extract_entity_names(child))
-                
+                entity_names.extend(extract_entity_names(child))                
     return entity_names
-sql = "select dmoz_newsgroups.catid, dmoz_categories.Description as catDesc from dmoz_categories, dmoz_newsgroups where dmoz_categories.catid = dmoz_newsgroups.catid and dmoz_categories.Description != '' group by dmoz_newsgroups.catid limit 100"
-rowCount = dbConnect(sql)
 
 def indexModel(content):
     for record in content:
@@ -146,7 +149,6 @@ def indexModel(content):
         desc_WNL = []
         desc_LS = []
         desc_PS = []
-        names = []
         stpWrdPctg = []
         cleanHtml = nltk.clean_html(record[1])
         print "###########################"
@@ -184,5 +186,5 @@ def indexModel(content):
         print "Sentence reduction: ", float(sum(stpWrdPctg)/len(stpWrdPctg))
     print "Overall reduction: ", float(sum(stopWordsPercentage)/len(stopWordsPercentage))
     
-#sentence = "Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting list. If maxsplit is nonzero, at most maxsplit splits occur, and the remainder of the string is returned as the final element of the list. (Incompatibility note: in the original Python 1.5 release, maxsplit was ignored. This has been fixed in later releases.)"
+
 #tokenizersDifference(sentence)

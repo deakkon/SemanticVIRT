@@ -48,11 +48,11 @@ def prepareComparisonDocuments(sql):
     bow_documents = [dictionary.doc2bow(text) for text in data]
     
     tfIdfModel = models.TfidfModel.load('models/testNewsgroups.tfidf_model')
-    print tfIdfModel
+    #print tfIdfModel
     
     #convert prepared documents to TfDdf space, based on saved model, and return the results
     vec_tfidf = tfIdfModel[bow_documents]
-    print vec_tfidf
+    #print vec_tfidf
     return vec_tfidf
         
 
@@ -107,7 +107,7 @@ def corpusToDOcumentCompare(document):
     
     #Test document based on tfidf model 
     vec_bow = tfidf[doc_bow]
-    print vec_bow
+    #print vec_bow
     
     #similarity
     index = similarities.MatrixSimilarity(tfidf[corpus])
@@ -117,4 +117,4 @@ def corpusToDOcumentCompare(document):
     
     
 #corpusToDOcumentCompare()
-corpusToDOcuments(testSentence)
+#corpusToDOcuments(testSentence)

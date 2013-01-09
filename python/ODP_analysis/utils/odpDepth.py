@@ -93,4 +93,4 @@ def returnChildrenNodes(topic, a, b):
 
 #parentChildDepth(2, 4)
 #returnParentsNumber(6277481)
-print returnChildrenNodes("Arts",2,7)
+#print returnChildrenNodes("Arts",2,7)
