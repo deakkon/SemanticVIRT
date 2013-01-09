@@ -87,9 +87,10 @@ def returnChildrenNodes(topic, a, b):
         sql = "select * from dmoz_categories where Topic like '%/"+str(topic)+"/%' and categoryDepth >= '"+str(a)+"' and categoryDepth <= '"+str(b)+"'"    
         con = dbConnect()
         res = dbQuery(con, sql)
+        #print res.rowcount
         return res
 
 
 #parentChildDepth(2, 4)
 #returnParentsNumber(6277481)
-#print returnChildrenNodes("Arts",2,7)
+print returnChildrenNodes("Arts",2,7)

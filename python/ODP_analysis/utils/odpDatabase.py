@@ -11,6 +11,7 @@ import MySQLdb, sys
 
 def errorMessage(msg):
     print msg
+    sys.exit(1)
 
 def dbConnect():
     """
