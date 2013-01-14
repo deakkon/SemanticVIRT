@@ -38,4 +38,4 @@ def createTFIDFfromODP_dmoz_descriptions(topic="",depthStart="", depthEnd=""):
     #create corpora and model from db query results
     createTrainingModel(res,fileName=saveFileName)
             
-#createTFIDFfromODP_dmoz_descriptions("Arts",1,3)
+createTFIDFfromODP_dmoz_descriptions("Arts",1,3)

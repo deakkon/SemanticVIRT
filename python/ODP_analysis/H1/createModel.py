@@ -102,7 +102,7 @@ def createTrainingModel(documents, outputFormat=1, modelFormat=1, fileName =""):
         
     #creating dictionary and corpus  files in different matrix formats    
     bow_documents = [dictionary.doc2bow(text) for text in data]
-    dictFN = fileName+"Dictionary.dict"
+    dictFN = "dictionaries/"+fileName+".dict"
     dictionary.save(dictFN)
 
     #create corpora data for use in creating a vector model representation for furher use
