@@ -25,7 +25,7 @@ from gensim.corpora.dictionary import Dictionary
 #from lxml import html
 #user defined functions
 from indexingModel import *
-from python.ODP_analysis.utils.odpDatabase import *
+from python.utils.databaseODP import dbQuery, errorMessage
 
 
 #logging
@@ -36,8 +36,7 @@ manualStopWords = []
 
 #test data
 sql = "select dmoz_newsgroups.catid, dmoz_categories.Description as catDesc from dmoz_categories, dmoz_newsgroups where dmoz_categories.catid = dmoz_newsgroups.catid and dmoz_categories.Description != '' group by dmoz_newsgroups.catid limit 100"
-con = dbConnect()
-results = dbQuery(con, sql)
+results = dbQuery(sql)
 
 sentence = "Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting list. If maxsplit is nonzero, at most maxsplit splits occur, and the remainder of the string is returned as the final element of the list. (Incompatibility note: in the original Python 1.5 release, maxsplit was ignored. This has been fixed in later releases.)"
 
@@ -46,7 +45,7 @@ lisType = []
 #functions
 def vectorizeDocument(document):
     """
-    Returns BoW representation of one or more documents 
+    Returns BoW representation of one document 
     """   
     #document preparation: remove puncuation and stopwords
     #print "Starting text: ", document
@@ -69,7 +68,7 @@ def vectorizeDocument(document):
     """
     return bow_document
 
-def createTrainingModel(documents, outputFormat=1, modelFormat=1, fileName =""):
+def createCorpusAndVectorModel(documents, outputFormat=1, modelFormat=1, fileName =""):
     """
     Take SQL results
     Tag/stem each document
@@ -83,7 +82,7 @@ def createTrainingModel(documents, outputFormat=1, modelFormat=1, fileName =""):
     
     #create file names to save
     if fileName == "":
-        fileName = "testNewsgroups"
+        fileName = "defaultCollection"
     
     
     #iteration rhrough supplied documents
@@ -137,52 +136,7 @@ def createTrainingModel(documents, outputFormat=1, modelFormat=1, fileName =""):
         saveFN = "models/"+fileName+".lda"
         lda.save(saveFN)
     else:
-        errorMessage("createTrainingModel: Something went wrong with the type identificator")
-    
- 
-def documentToBoW(document):
-    """
-    Takes in string type or tuple type
-    If stringType
-        convert to list for futher processing 
-    If tupe
-        continue to processing
-        
-    NOT IMPLEMENTABLE IN THIS FASHION; STAGE 2
-    """
-    #input datas
-    data = []
-    #output data
-    dataFinal=[]
-    
-    if type(document) is str:
-        #print 'a string ',type(document)
-        #data.append(document.split())
-        data.insert(1, document)
-        #print data
-    elif type(document) is tuple:
-        #print 'a tuple',type(document)
-        data = document
-        #print data
-        
-    for row in data:
-        noPunct = ""
-        #print row
-        #dataNLTK = nltk.clean_html(row[1])
-        #soup = BeautifulSoup(row[1])
-        #print "NLTK clean_html ", dataNLTK
-        #print "BS4 ",soup.get_text()
-        noPunct = removePunct(row[1], 1)
-        dataFinal.append(removeStopWords(noPunct))    
-    
-    #print dataFinal
-    dictionary = corpora.Dictionary(dataFinal)
-    #print dictionary.token2id
-        
-    #creating dictionary and corpus  files in different matrix formats    
-    bow_documents = [dictionary.doc2bow(text) for text in dataFinal]
-    #dictionary.save('corpusFiles/testNewsgroupsDictionary.dict')
-    return bow_documents            
+        errorMessage("createTrainingModel: Something went wrong with the type identificator")       
         
 
 #print documentToBoW(sentence) -> not working properly, not needed

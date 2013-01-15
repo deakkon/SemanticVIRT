@@ -11,7 +11,7 @@ University of Zagreb
 import logging
 from gensim import models, corpora, similarities
 from python.ODP_analysis.utils import *
-from python.ODP_analysis.H1.createModel import *
+from python.ODP_analysis.H1.createVectorModel import *
 
 #logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
@@ -20,20 +20,24 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 testSentence = "Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting list. If maxsplit is nonzero, at most maxsplit splits occur, and the remainder of the string is returned as the final element of the list. (Incompatibility note: in the original Python 1.5 release, maxsplit was ignored. This has been fixed in later releases.)"
 
 #functions     
-def prepareComparisonDocuments(sql):
+def prepareComparisonDocuments(sql, useVectorModel=""):
     """
-    Takes in set of documents and prepares them for similarity calculations
-    Uses TF IDF model created by createTrainingModel()
+    Input parameters: 
+    sql: SQL query (text/variable) where second select parameter has to be desription field in the table that is queried against            
+    useVectorModel: which vector space model to use (tfidf default, model file testNewsgroups.tfidf_model)
     
-    Input parameters: sql query
-    Output parameters: processed set of documents, represented through saved tfidf model (currently, testing corpus from newsgroup db table 
-    The results are input to similarity calculations
+    Output parameters:
+    Returned documents from SQL query in specified vector space model (tf-idf by default)
     """
+    #SQL processing
     con = dbConnect()
     results = dbQuery(con, sql)
+
+    #use vector model
+    if useVectorModel == "":
     
-    data = []
-    
+    #sql result processing
+    data = []    
     for row in results:
         noPunct = ""
         #dataNLTK = nltk.clean_html(row[1])
@@ -47,6 +51,7 @@ def prepareComparisonDocuments(sql):
     dictionary = corpora.Dictionary(data)
     bow_documents = [dictionary.doc2bow(text) for text in data]
     
+    #load model specified with useVectorModel
     tfIdfModel = models.TfidfModel.load('models/testNewsgroups.tfidf_model')
     #print tfIdfModel
     
@@ -115,6 +120,31 @@ def corpusToDOcumentCompare(document):
     sims = sorted(enumerate(similarity), key=lambda item: -item[1])
     print sims
     
-    
+def main():
+    """
+    Dummy main function.
+    Printing out starting comments as direction for use
+    Test of __main__ function
+    Test of command line UI
+    """ 
+    print main.__doc__
+
+    var = raw_input("Enter something: ")
+        
+    if var == "1":
+        print corpusToDOcuments.__doc__
+    elif var == "2":
+        print corpusToDOcumentCompare.__doc__
+        corpusToDOcumentCompare()
+    elif var == "3":
+        
+    else:
+        print "Hm, ", var," not supported as an options"
+        sys.exit(1)
+    sys.exit(0)
+        
+
+if __name__ == '__main__':    
+    main()
 #corpusToDOcumentCompare()
 #corpusToDOcuments(testSentence)

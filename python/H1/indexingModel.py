@@ -53,15 +53,6 @@ stopWordsPercentage = []
 stemmingPercentage = []
 
 #functions
-def dbConnect(sql):
-    """
-    Basic dB functionality
-    """
-    db = MySQLdb.connect(host="localhost", user="root", passwd="", db="dmoz_new")
-    c = db.cursor()
-    rez = c.execute(sql)
-    return c.fetchall()
-
 def removePunct(text,returnType=2):
     """
     Remove punctuation from text

@@ -6,12 +6,14 @@ Created on 4.1.2013.
 PhD Candidate 
 Faculty of Organization and Informatics
 University of Zagreb
+
+Functions:
+dbConnect()
+dbDisconnect()
+dbQuery(sql)
+errorMessage(msg)
 '''
 import MySQLdb, sys
-
-def errorMessage(msg):
-    print msg
-    sys.exit(1)
 
 def dbConnect():
     """
@@ -35,9 +37,9 @@ def dbDisconnect(connection):
     """
     connection.close()
     
-def dbQuery(con, sql):
-    #con = conn.execute(sql)
-    #print sql
+def dbQuery(sql):
+
+    con =dbConnect()
     try:
         cur = con.cursor()   
         cur.execute(sql) 
@@ -55,3 +57,8 @@ def dbQuery(con, sql):
     except MySQLdb.Error, e:
         print "Error dbQuery %d: %s" % (e.args[0],e.args[1])
         sys.exit(1)
+
+
+def errorMessage(msg):
+    print msg
+    sys.exit(1)

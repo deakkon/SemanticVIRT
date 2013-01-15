@@ -7,15 +7,17 @@ PhD Candidate
 Faculty of Organization and Informatics
 University of Zagreb
 '''
-from python.ODP_analysis.utils import odpDatabase, odpDepth, parentChildDepth
+
 from gensim import models, corpora
 import sys
-from python.ODP_analysis.utils.odpDatabase import errorMessage
+from python.utils.databaseODP import errorMessage
 from gensim.models.tfidfmodel import TfidfModel
 
 
 def transformModel(modelType, inputModel="", dictionary=""):
     """
+    Input parameters: modelType, inputModel="", dictionary=""
+    
     Takes in TF IDF model and makes a transformation in to one of the following
     1 -> LSI model
     2 -> LDA model
@@ -38,9 +40,8 @@ def transformModel(modelType, inputModel="", dictionary=""):
         
     #use default stored model; mm format
     if inputModel == "":
-        #inputModel = corpora.MmCorpus('corpusFiles/testNewsgroupsMmCorpus.mm')
         inputModel = TfidfModel.load("models/testNewsgroups.tfidf_model")
-        print inputModel
+        #print inputModel
     else:
         corpus = corpora.MmCorpus(inputModel)
         inputModel = models.TfidfModel(corpus)
@@ -53,10 +54,10 @@ def transformModel(modelType, inputModel="", dictionary=""):
         sys.exit(1)    
     elif modelType == 1:
         model = models.LsiModel(inputModel,id2word=dictionary)
-    elif type == 2:
-        modelType = models.LdaModel(inputModel,id2word=dictionary)
+    elif modelType == 2:
+        model = models.LdaModel(inputModel,id2word=dictionary)
     elif type == 3:
-        modelType = models.LogEntropyModel(inputModel,id2word=dictionary)
+        model = models.LogEntropyModel(inputModel,id2word=dictionary)
     else:
         errorMessage("Something went wrong with the type identificator")
     
