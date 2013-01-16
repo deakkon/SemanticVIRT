@@ -64,4 +64,25 @@ def transformModel(modelType, inputModel="", dictionary=""):
     
     return model
 
-transformModel(modelType=1)
+#transformModel(modelType=1)
+def main():
+    """
+    Functions:
+        1.vectorizeDocument(document)
+        2.createCorpusAndVectorModel(documents, outputFormat=1, modelFormat=1, fileName ="")
+    """ 
+    print main.__doc__
+
+    var = raw_input("Choose function to run: ")
+        
+    if var == "1":
+        print transformModel.__doc__
+        var1 = "Input text to vectorize"
+        print transformModel(var1)    
+    else:
+        print "Hm, ", var," not supported as an options"
+        sys.exit(1)
+    sys.exit(0)
+        
+if __name__ == '__main__':    
+    main()

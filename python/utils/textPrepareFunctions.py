@@ -31,12 +31,13 @@ Functions:
 """
 
 #import libraries
-import sys, re, nltk
+import sys, re, nltk, os
 #from nltk.tokenize import word_tokenize, wordpunct_tokenize, sent_tokenize
 from nltk.stem import WordNetLemmatizer, PorterStemmer, LancasterStemmer
 from decimal import Decimal
 from nltk.corpus import stopwords
 from databaseODP import dbQuery
+from python.utils import *
 
 #dummy testing data
 #not used anymore
@@ -58,7 +59,7 @@ stemmingPercentage = []
 #functions
 def removePunct(text,returnType=2):
     """
-    Input arguments: text (text to remove punct from), returnType (what to return; default string)
+    Input arguments: text (text to remove punctuation from), returnType (what to return; default string)
     Return types: type list of words if returnType = 1, string if returnType = 2 (default)
     """
     sentence = re.compile('\w+').findall(text)
@@ -72,7 +73,7 @@ def removePunct(text,returnType=2):
         sentenceReturn = ' '.join(sentence)
         return sentenceReturn      
 
-def removeStopWords(text,mode=2):        
+def removeStopWords(text,mode=1):        
     """
     Removes stop words from text, passed as variable text 
     Node -> type of stemmer to use
@@ -82,7 +83,8 @@ def removeStopWords(text,mode=2):
     Output: type list of words that are not defined as stopwords
     """
     content = []
-    
+    filePath = os.getcwd()
+        
     if mode == 1:
         stopwords = nltk.corpus.stopwords.words('english')
         content = [w for w in text if w.lower() not in stopwords]
@@ -91,6 +93,7 @@ def removeStopWords(text,mode=2):
     elif mode == 2:
         stopwordsFileOpen = open('stopWords.txt','r')
         stopwordsFile = [i.strip() for i in stopwordsFileOpen.readlines()]
+        print stopwordsFile
         content = [w for w in text if w.lower() not in stopwordsFile]
         stopwordsFileOpen.close()
         #print len(content)/len(text)

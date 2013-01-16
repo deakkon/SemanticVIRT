@@ -6,18 +6,45 @@ Created on 9.1.2013.
 PhD Candidate 
 Faculty of Organization and Informatics
 University of Zagreb
+
+Functions:
+    1. createTFIDFfromODP_dmoz_descriptions(topic="",depthStart="", depthEnd="")
+    2. createTrainingData()
 '''
 #imports
-import logging
-from python.utils.databaseODP import *
-from python.H1.createVectorModel import *
-from python.H1.calculateSimilarity import *
+import logging, sys
+from python.utils.databaseODP import dbQuery, errorMessage
+from python.H1.createVectorModel import createCorpusAndVectorModel
 
 #logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
 #functions
 def createTFIDFfromODP_dmoz_descriptions(topic="",depthStart="", depthEnd=""):
+    """
+    Input paramters:
+        1. topic
+            Available topics:
+            "Title"
+            "Arts"
+            "Business"
+            "Computers"
+            "Games"
+            "Health"
+            "Home"
+            "Kids_and_Teens"
+            "News"
+            "Recreation"
+            "Reference"
+            "Regional"
+            "Science"
+            "Shopping"
+            "Society"
+            "Sports"
+        2. depthStart
+        3. depthEnd
+    """
+        
     #if any of the arguments emty exit
     if topic == "":
         errorMessage("First paramter is missing")    
@@ -36,5 +63,68 @@ def createTFIDFfromODP_dmoz_descriptions(topic="",depthStart="", depthEnd=""):
     
     #create corpora and model from db query results
     createCorpusAndVectorModel(res,fileName=saveFileName)
-            
-createTFIDFfromODP_dmoz_descriptions("Arts",1,3)
+
+def createTrainingData():
+    """
+    1. get root categories to be used and iterate through main categories
+    3. get max depth for individual category
+    4. from 1 to max till 1 to 1
+        get all catid for iterated category
+        get all pages for selected categories
+        call createCorpusAndVectorModel fro selected documents
+     
+    """
+    #get root categories to be used
+    sqlMainCategories = "select distinct(Title) from dmoz_categories where dmoz_categories.categoryDepth = 1 and dmoz_categories.filterOut = 0"
+    mainCat = dbQuery(sqlMainCategories)
+    
+    #iterate through main categories
+    for cat in mainCat:
+        print cat[0]
+        sqlmaxDepth = "select max(categoryDepth) from dmoz_categories where Title ='"+str(cat[0])+"' and filterOut = 0"
+        maxDebthRS = dbQuery(sqlmaxDepth)
+        maxDebth = maxDebthRS[0]
+        print maxDebth
+        
+        #dynamic sql for depth levels to be queried, extracting all catid values for category cat between depthLevels 1 and maxDepth, with maxDepth-- each iteration
+        while maxDebth != 1:
+            sqlFromTo = "select Description,Title,link from dmoz_externalpages where catid in (select catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and categoryDepth >=1 and categoryDepth <= "+str(maxDebth)+")"            
+            maxDebth -= 1
+            #dbQuery(sqlFromTo)
+            fileName = cat[0]+"_1_"+str(maxDebth)
+            """
+            #prints for debugging
+            print "file name: ",fileName
+            print maxDebth
+            print sqlFromTo
+            """
+            createCorpusAndVectorModel(sqlFromTo, fileName=fileName)
+
+           
+#main function
+def main():
+    """
+Functions:
+    1. createTFIDFfromODP_dmoz_descriptions(topic="",depthStart="", depthEnd="")
+    2. createTrainingData()
+    """ 
+    print main.__doc__
+
+    var = raw_input("Choose function to run: ")
+        
+    if var == "1":
+        print createTFIDFfromODP_dmoz_descriptions.__doc__
+        var1 = raw_input("Insert Topic Name to query")
+        var2 = raw_input("Start depth for topic ")
+        var3 = raw_input("End depth for topic ")
+        print createTFIDFfromODP_dmoz_descriptions(var1,var2,var3)
+    elif var == "2":
+        print createTrainingData.__doc__
+        print createTrainingData()
+    else:
+        print "Hm, ", var," not supported as an options"
+        sys.exit(1)
+    sys.exit(0)
+        
+if __name__ == '__main__':    
+    main()
