@@ -10,8 +10,9 @@ University of Zagreb
 #imports
 import logging
 from gensim import models, corpora, similarities
-from python.ODP_analysis.utils import *
-from python.ODP_analysis.H1.createVectorModel import *
+from python.utils.databaseODP import dbQuery
+from python.utils.textPrepareFunctions import removePunct,removeStopWords
+from python.H1.createVectorModel import vectorizeDocument
 
 #logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
@@ -30,11 +31,7 @@ def prepareComparisonDocuments(sql, useVectorModel=""):
     Returned documents from SQL query in specified vector space model (tf-idf by default)
     """
     #SQL processing
-    con = dbConnect()
-    results = dbQuery(con, sql)
-
-    #use vector model
-    if useVectorModel == "":
+    results = dbQuery(sql)
     
     #sql result processing
     data = []    
@@ -119,14 +116,14 @@ def corpusToDOcumentCompare(document):
     similarity = index[vec_bow]
     sims = sorted(enumerate(similarity), key=lambda item: -item[1])
     print sims
-    
+"""
 def main():
-    """
+    
     Dummy main function.
     Printing out starting comments as direction for use
     Test of __main__ function
     Test of command line UI
-    """ 
+     
     print main.__doc__
 
     var = raw_input("Enter something: ")
@@ -137,7 +134,7 @@ def main():
         print corpusToDOcumentCompare.__doc__
         corpusToDOcumentCompare()
     elif var == "3":
-        
+        pass
     else:
         print "Hm, ", var," not supported as an options"
         sys.exit(1)
@@ -146,3 +143,4 @@ def main():
 
 if __name__ == '__main__':    
     main()
+"""

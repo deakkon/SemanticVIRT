@@ -103,7 +103,7 @@ def createCorpusAndVectorModel(sqlQuery="", outputFormat=1, modelFormat=1, fileN
          
     
     #iteration rhrough supplied documents
-    for row in sqlQuery:
+    for row in sqlQueryResults:
         noPunct = ""
         #dataNLTK = nltk.clean_html(row[1])
         #soup = BeautifulSoup(row[1])
