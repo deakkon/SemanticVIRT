@@ -28,21 +28,22 @@ def transformModel(modelType, inputModel="", dictionary=""):
     Default files -> test Newsgroup files
     corpusFiles/testNewsgroupsDictionary.dict
     corpusFiles/testNewsgroupsMmCorpus.mm
-      
     """
     #check if using default dict or lcoation passed as parameter
     if dictionary == "":
-        dictionary = corpora.Dictionary.load('corpusFiles/testNewsgroupsDictionary.dict')
+        dictionary = corpora.Dictionary.load('dictionaries/testNewsgroupsDictionary.dict')
         print dictionary
         #sys.exit(1)
     else:
-        dictionary = corpora.Dictionary.load(dictionary)
+        fileName = 'dictionaries/'+str(dictionary)
+        dictionary = corpora.Dictionary.load(fileName)
         
     #use default stored model; mm format
     if inputModel == "":
         inputModel = TfidfModel.load("models/testNewsgroups.tfidf_model")
         #print inputModel
     else:
+        fileName = 'models/'+str(inputModel)
         corpus = corpora.MmCorpus(inputModel)
         inputModel = models.TfidfModel(corpus)
         

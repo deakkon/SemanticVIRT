@@ -22,23 +22,27 @@ Created on 18.10.2012.
 
 @author: Jurica Seva, PhD candidate
 
-list of functions
+Functions: 
+1. removePunct(text,returnType=2); remove punctuation, default return type string (sentence)
+2. removeStopWords(text,mode=2)
+3. tokenizersDifference(text,mode=0)
+4. testReductionExample(sqlQuery)
+
 """
 
 #import libraries
-import sys, os, re, MySQLdb
-import nltk.tokenize, nltk.stem
-from nltk.tokenize import word_tokenize, wordpunct_tokenize, sent_tokenize
+import sys, re, nltk
+#from nltk.tokenize import word_tokenize, wordpunct_tokenize, sent_tokenize
 from nltk.stem import WordNetLemmatizer, PorterStemmer, LancasterStemmer
 from decimal import Decimal
 from nltk.corpus import stopwords
-from python.ODP_analysis.utils import *
-from python.ODP_analysis.utils.odpDatabase import *
+from databaseODP import dbQuery
+from python.utils import *
 
 #dummy testing data
-sentence = "Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting list. If maxsplit is nonzero, at most maxsplit splits occur, and the remainder of the string is returned as the final element of the list. (Incompatibility note: in the original Python 1.5 release, maxsplit was ignored. This has been fixed in later releases.)"
-
-sql = "select dmoz_newsgroups.catid, dmoz_categories.Description as catDesc from dmoz_categories, dmoz_newsgroups where dmoz_categories.catid = dmoz_newsgroups.catid and dmoz_categories.Description != '' group by dmoz_newsgroups.catid limit 100"
+#not used anymore
+#sentence = "Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting list. If maxsplit is nonzero, at most maxsplit splits occur, and the remainder of the string is returned as the final element of the list. (Incompatibility note: in the original Python 1.5 release, maxsplit was ignored. This has been fixed in later releases.)"
+#sql = "select dmoz_newsgroups.catid, dmoz_categories.Description as catDesc from dmoz_categories, dmoz_newsgroups where dmoz_categories.catid = dmoz_newsgroups.catid and dmoz_categories.Description != '' group by dmoz_newsgroups.catid limit 100"
 
 
 #stemmers
@@ -55,8 +59,8 @@ stemmingPercentage = []
 #functions
 def removePunct(text,returnType=2):
     """
-    Remove punctuation from text
-    Return list of returnType = 1, string if returnType = 2 (default)
+    Input arguments: text (text to remove punct from), returnType (what to return; default string)
+    Return types: type list of words if returnType = 1, string if returnType = 2 (default)
     """
     sentence = re.compile('\w+').findall(text)
     #sentence = re.sub("[^a-zA-Z]", "", text)
@@ -71,8 +75,12 @@ def removePunct(text,returnType=2):
 
 def removeStopWords(text,mode=2):        
     """
-    remove stop words; 1 = stem words from nltk.corpus.stopwords.words
-    2 = stop words from file stopWords.txt
+    Removes stop words from text, passed as variable text 
+    Node -> type of stemmer to use
+        1 = stem words from nltk.corpus.stopwords.words
+        2 = stop words from file stopWords.txt (default)
+        
+    Output: type list of words that are not defined as stopwords
     """
     content = []
     
@@ -82,7 +90,7 @@ def removeStopWords(text,mode=2):
         #print len(content)/len(text)
         return content
     elif mode == 2:
-        stopwordsFileOpen = open('D:\\research\\3_DataAnalysis(code,software,output)\\1_Code\\1_gitHubDoktorat\\SemanticVIRT\\python\\ODP_analysis\\utils\\stopWords.txt','r')
+        stopwordsFileOpen = open('stopWords.txt','r')
         stopwordsFile = [i.strip() for i in stopwordsFileOpen.readlines()]
         content = [w for w in text if w.lower() not in stopwordsFile]
         stopwordsFileOpen.close()
@@ -93,6 +101,7 @@ def removeStopWords(text,mode=2):
 
 def tokenizersDifference(text,mode=0):
     """
+    Dummy function to test difference between tokenizers
     parameters:
     text = text to tokenize
     mode: 
@@ -118,36 +127,31 @@ def tokenizersDifference(text,mode=0):
     else:
         sys.exit("text string to tokenize is empty")
 
-def extract_entity_names(t):
-    #not working at this moment
-    entity_names = []
-    
-    if hasattr(t, 'node') and t.node:
-        if t.node == 'NE':
-            entity_names.append(' '.join([child[0] for child in t]))
-        else:
-            for child in t:
-                entity_names.extend(extract_entity_names(child))                
-    return entity_names
 
-def indexModel(content):
+def testReductionExample(sqlQuery):
+    """
+    Dummy function, showing reduction effects of removePunct, removeStopWords
+    Input: SQL query, specify data to be processed as the first parameter of the query
+    """
+    #SQL results
+    content = dbQuery(sqlQuery)
+    
+    #go through returned records 
     for record in content:
-        """
-        simple tokenization & stemming
-        taking results of an SQL query
-        #name recognition
-        """
         desc_WNL = []
         desc_LS = []
         desc_PS = []
         stpWrdPctg = []
-        cleanHtml = nltk.clean_html(record[1])
+        print record[0]
+        cleanHtml = nltk.clean_html(record[0])
         print "###########################"
-        print "Original sentence ", cleanHtml
+        print "Original sentence ", record[0]
         #tokenizersDifference(cleanHtml,0)
         tokens = nltk.word_tokenize(cleanHtml)
-        print "Number of tokens: ",len(tokens),"    ",tokens
-        contentNoStopWords = removeStopWords(tokens,2)
+        #tokens = removePunct(cleanHtml, returnType=1)
+        #print "Number of tokens: ",len(tokens),"    ",tokens
+        #contentNoStopWords = removeStopWords(tokens,2)
+        contentNoStopWords = removeStopWords(removePunct(cleanHtml, returnType=1),2)
         ratio = Decimal(float(len(contentNoStopWords))/float(len(tokens)))
         stopWordsPercentage.append(ratio)
         stpWrdPctg.append(ratio)
@@ -163,13 +167,7 @@ def indexModel(content):
             desc_LS.append(lst.stem(i))
             #Porter stemmer
             #print "Porter stemmer", ps.stem(i)
-            desc_PS.append(ps.stem(i))
-        """
-        for tree in chunked_sentences:
-            # Print results per sentence
-            # print extract_entity_names(tree)    
-            entity_names.extend(extract_entity_names(tree))
-        """        
+            desc_PS.append(ps.stem(i))  
         #print "Recognized names", extract_entity_names(tokens)
         print "WordNet Lemmatization","    ",len(desc_WNL),"    ",desc_WNL
         print "lancaster stemmer","    ",len(desc_LS) ,"    ",desc_LS
@@ -178,4 +176,39 @@ def indexModel(content):
     print "Overall reduction: ", float(sum(stopWordsPercentage)/len(stopWordsPercentage))
     
 
-#tokenizersDifference(sentence)
+def main():
+    """
+    Functions:
+        1. removePunct(text,returnType=2); remove punctuation, default return type string (sentence)
+        2. removeStopWords(text,mode=2)
+        3. tokenizersDifference(text,mode=0)
+        4. testReductionExample(sqlQuery)
+           anything else for exit    
+    """ 
+    print main.__doc__
+    
+    var = raw_input("Choose a function: ")
+        
+    if var == "1":        
+        print removePunct.__doc__
+        var1 = raw_input("Enter text to remove punctuation: ")
+        print removePunct(var1)
+    elif var == "2":
+        print removeStopWords.__doc__
+        var1 = raw_input("Enter text to remove stop words: ")
+        print removeStopWords(var1)
+    elif var == "3":
+        print tokenizersDifference.__doc__
+        var1 = raw_input("Enter text to remove stop words: ")
+        print tokenizersDifference(var1)   
+    elif var == "4":
+        print testReductionExample.__doc__
+        var1 = raw_input("Insert SQL query: ")        
+        print testReductionExample(var1)      
+    else:
+        print "Hm, ", var," not supported as an options"
+        sys.exit(1)
+        
+
+if __name__ == '__main__':    
+    main()

@@ -24,7 +24,7 @@ from gensim.corpora.dictionary import Dictionary
 #from bs4 import BeautifulSoup
 #from lxml import html
 #user defined functions
-from indexingModel import *
+from python.utils.textPrepareFunctions import removePunct, removeStopWords 
 from python.utils.databaseODP import dbQuery, errorMessage
 
 
