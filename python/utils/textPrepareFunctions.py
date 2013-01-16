@@ -37,7 +37,6 @@ from nltk.stem import WordNetLemmatizer, PorterStemmer, LancasterStemmer
 from decimal import Decimal
 from nltk.corpus import stopwords
 from databaseODP import dbQuery
-from python.utils import *
 
 #dummy testing data
 #not used anymore
@@ -167,7 +166,7 @@ def testReductionExample(sqlQuery):
             desc_LS.append(lst.stem(i))
             #Porter stemmer
             #print "Porter stemmer", ps.stem(i)
-            desc_PS.append(ps.stem(i))  
+            desc_PS.append(ps.stem(i))
         #print "Recognized names", extract_entity_names(tokens)
         print "WordNet Lemmatization","    ",len(desc_WNL),"    ",desc_WNL
         print "lancaster stemmer","    ",len(desc_LS) ,"    ",desc_LS
