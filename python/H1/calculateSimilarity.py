@@ -11,7 +11,7 @@ Functions:
 
 1. prepareComparisonDocuments(sql, useVectorModel="")
 2. documentVScorpus(document)
-3. corpusToDOcumentCompare(document)
+3. 
 4.
 5.
 '''
@@ -66,30 +66,31 @@ def prepareComparisonDocuments(sql, useVectorModel=""):
     return vec_tfidf
         
 
-def documentVScorpus(document):
+def documentVScorpus(document,comparisonModel=""):
     """
     List of documents
     create td idf model from saved corpora on disk
     take document and compare to model, loaded from disk
     print document in tf idf model    
     """
+    
+    #inital input variable check
+    if comparisonModel == "":
+        comparisonModel = "testNewsgroups"
+    
+    #dict, corpus, tfidf model filenames
+    dcitionaryFN = "dictionaries/"+str(comparisonModel)+"Dictionary.dict"
+    corpusFN = "corpusFiles/"+str(comparisonModel)+".mm"
+    tfidfFN = "models/"+str(comparisonModel)+".tfidf_model"
+    
     #prepare corpus for transformation
-    dictionary = corpora.Dictionary.load('dictionaries/testNewsgroupsDictionary.dict')
-    corpus = corpora.MmCorpus('corpusFiles/testNewsgroupsMmCorpus.mm')
-    #print dictionary
-    #print corpus
-    tfidf = models.TfidfModel.load('models/testNewsgroups.tfidf_model')
-    #print tfidf
-       
-    """
-    Testing transformation
-    doc_bow = [(0, 1), (1, 1),(4,3),(17,9)]
-    print tfidf[doc_bow]
-    """
+    dictionary = corpora.Dictionary.load(dcitionaryFN)
+    corpus = corpora.MmCorpus(corpusFN)
+    tfidf = models.TfidfModel.load(tfidfFN)
     
     #prepare document; remove punctuation, stopWords, return bow format
     processedDoc = vectorizeDocument(document)
-    print processedDoc
+
 
     #transformation of new document to existing model
     for doc in processedDoc:
@@ -97,48 +98,17 @@ def documentVScorpus(document):
         print documentTfIDF, "\n"
         
     #similarity to trained model
-    corpus = corpora.MmCorpus('corpusFiles/testNewsgroupsMmCorpus.mm')
     index = similarities.MatrixSimilarity(tfidf[corpus])
     sims = index[documentTfIDF]
-    print list(enumerate(sims))
     sims = sorted(enumerate(sims), key=lambda item: -item[1])
-    print sims
-
-def corpusToDOcumentCompare(document):
-    """
-    create td idf model from saved corpora on disk
-    take document and compare to model, loaded from disk
-    print document / model 
-    dummy comparison function; not to be used further
-    """
-    #prepare corpus for transformation
-    dictionary = corpora.Dictionary.load('dictionaries/testNewsgroupsDictionary.dict')
-    corpus = corpora.MmCorpus('corpusFiles/testNewsgroupsMmCorpus.mm')
-   
-    #read tfidf model
-    tfidf = models.TfidfModel.load('models/testNewsgroups.tfidf_model')
-    print tfidf
-    
-    #Test document
-    doc_bow = [(0, 1), (1, 1),(4,3),(7,9)]
-    #print tfidf[doc_bow]
-    
-    #Test document based on tfidf model 
-    vec_bow = tfidf[doc_bow]
-    #print vec_bow
-    
-    #similarity
-    index = similarities.MatrixSimilarity(tfidf[corpus])
-    similarity = index[vec_bow]
-    sims = sorted(enumerate(similarity), key=lambda item: -item[1])
     print sims
 
 def main():
     """
     Functions:
         1. prepareComparisonDocuments(sql, useVectorModel="")
-        2. corpusToDOcuments(document)
-        3. corpusToDOcumentCompare(document)
+        2. documentVScorpus(document)
+        3. 
         Anything else to stop
      """
     print main.__doc__
@@ -153,10 +123,6 @@ def main():
         print documentVScorpus.__doc__
         var1 = raw_input("Insert document: ")
         documentVScorpus(var1)
-    elif var == "3":
-        print prepareComparisonDocuments.__doc__
-        var1 = raw_input("Insert SQL query")
-        prepareComparisonDocuments(sql=var1)
     else:
         print "Hm, ", var," not supported as an options"
         sys.exit(1)
