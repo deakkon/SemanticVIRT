@@ -6,6 +6,14 @@ Created on 8.1.2013.
 PhD Candidate 
 Faculty of Organization and Informatics
 University of Zagreb
+
+Functions:
+
+1. prepareComparisonDocuments(sql, useVectorModel="")
+2. documentVScorpus(document)
+3. corpusToDOcumentCompare(document)
+4.
+5.
 '''
 #imports
 import logging, sys, gensim
@@ -58,20 +66,20 @@ def prepareComparisonDocuments(sql, useVectorModel=""):
     return vec_tfidf
         
 
-def corpusToDOcuments(document):
+def documentVScorpus(document):
     """
     List of documents
     create td idf model from saved corpora on disk
     take document and compare to model, loaded from disk
-    print document in tf idf model
+    print document in tf idf model    
     """
     #prepare corpus for transformation
-    dictionary = corpora.Dictionary.load('corpusFiles/testNewsgroupsDictionary.dict')
+    dictionary = corpora.Dictionary.load('dictionaries/testNewsgroupsDictionary.dict')
     corpus = corpora.MmCorpus('corpusFiles/testNewsgroupsMmCorpus.mm')
     #print dictionary
     #print corpus
     tfidf = models.TfidfModel.load('models/testNewsgroups.tfidf_model')
-    print tfidf
+    #print tfidf
        
     """
     Testing transformation
@@ -87,6 +95,14 @@ def corpusToDOcuments(document):
     for doc in processedDoc:
         documentTfIDF = tfidf[doc]
         print documentTfIDF, "\n"
+        
+    #similarity to trained model
+    corpus = corpora.MmCorpus('corpusFiles/testNewsgroupsMmCorpus.mm')
+    index = similarities.MatrixSimilarity(tfidf[corpus])
+    sims = index[documentTfIDF]
+    print list(enumerate(sims))
+    sims = sorted(enumerate(sims), key=lambda item: -item[1])
+    print sims
 
 def corpusToDOcumentCompare(document):
     """
@@ -96,7 +112,7 @@ def corpusToDOcumentCompare(document):
     dummy comparison function; not to be used further
     """
     #prepare corpus for transformation
-    dictionary = corpora.Dictionary.load('corpusFiles/testNewsgroupsDictionary.dict')
+    dictionary = corpora.Dictionary.load('dictionaries/testNewsgroupsDictionary.dict')
     corpus = corpora.MmCorpus('corpusFiles/testNewsgroupsMmCorpus.mm')
    
     #read tfidf model
@@ -130,12 +146,17 @@ def main():
     var = raw_input("Enter something: ")
         
     if var == "1":
-        print corpusToDOcuments.__doc__
+        print prepareComparisonDocuments.__doc__
+        var1 = raw_input("Insert SQL query")
+        prepareComparisonDocuments(sql=var1)        
     elif var == "2":
-        print corpusToDOcumentCompare.__doc__
-        corpusToDOcumentCompare()
+        print documentVScorpus.__doc__
+        var1 = raw_input("Insert document: ")
+        documentVScorpus(var1)
     elif var == "3":
-        pass
+        print prepareComparisonDocuments.__doc__
+        var1 = raw_input("Insert SQL query")
+        prepareComparisonDocuments(sql=var1)
     else:
         print "Hm, ", var," not supported as an options"
         sys.exit(1)
