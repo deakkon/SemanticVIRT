@@ -14,7 +14,7 @@ Functions:
 #imports
 import logging, sys
 from python.utils.databaseODP import dbQuery, errorMessage
-from python.H1.createVectorModel import createCorpusAndVectorModel
+from python.utils.createVectorModel import createCorpusAndVectorModel
 
 #logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
@@ -54,7 +54,7 @@ def createTFIDFfromODP_dmoz_descriptions(topic="",depthStart="", depthEnd=""):
         errorMessage("Third paramter is missing")
     
     #data from db
-    sql = "select * from dmoz_categories where Topic like '%/"+str(topic)+"/%' and categoryDepth >= '"+str(depthStart)+"' and categoryDepth <= '"+str(depthEnd)+"'"
+    sql = "select Description from dmoz_categories where Topic like '%/"+str(topic)+"/%' and categoryDepth >= '"+str(depthStart)+"' and categoryDepth <= '"+str(depthEnd)+"'"
     res = dbQuery(sql)
     
     #create dynamic file names

@@ -94,12 +94,21 @@ def createCorpusAndVectorModel(sqlQuery="", outputFormat=1, modelFormat=1, fileN
     if fileName == "":
         fileName = "defaultCollection"
     
+    #type
+    print type(sqlQuery)
+    
     #default data
     if sqlQuery == "":
         sqlQuery = "select Description from dmoz_categories where Description != '' limit 1000"
         sqlQueryResults = dbQuery(sqlQuery)
-    else:
+    elif type(sqlQuery) is str:
         sqlQueryResults = dbQuery(sqlQuery)
+    elif type(sqlQuery)is tuple:
+        sqlQueryResults = sqlQuery
+    else:
+        print type(sqlQuery)
+        print "yaba daba doo createVectorModel createCorpusAndVectorModel "
+        sys.exit(1)
          
     
     #iteration rhrough supplied documents

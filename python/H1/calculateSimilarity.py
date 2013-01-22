@@ -8,11 +8,11 @@ Faculty of Organization and Informatics
 University of Zagreb
 '''
 #imports
-import logging
-from gensim import models, corpora, similarities
+import logging, sys, gensim
+from gensim import corpora, models, similarities
 from python.utils.databaseODP import dbQuery
 from python.utils.textPrepareFunctions import removePunct,removeStopWords
-from python.H1.createVectorModel import vectorizeDocument
+from python.utils.createVectorModel import vectorizeDocument
 
 #logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
@@ -116,14 +116,15 @@ def corpusToDOcumentCompare(document):
     similarity = index[vec_bow]
     sims = sorted(enumerate(similarity), key=lambda item: -item[1])
     print sims
-"""
+
 def main():
-    
-    Dummy main function.
-    Printing out starting comments as direction for use
-    Test of __main__ function
-    Test of command line UI
-     
+    """
+    Functions:
+        1. prepareComparisonDocuments(sql, useVectorModel="")
+        2. corpusToDOcuments(document)
+        3. corpusToDOcumentCompare(document)
+        Anything else to stop
+     """
     print main.__doc__
 
     var = raw_input("Enter something: ")
@@ -143,4 +144,3 @@ def main():
 
 if __name__ == '__main__':    
     main()
-"""
