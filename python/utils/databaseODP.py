@@ -29,6 +29,19 @@ def dbConnect():
         print "Error dbConnect %d: %s" % (e.args[0],e.args[1])
         sys.exit(1)
         
+def dbConnectRemote():
+    """
+    Basic dB functionality
+    COnnect to db, return connection handler
+    """
+    try:
+        db = MySQLdb.connect(host="192.168.5.23", user="root", passwd="root", db="dmoz")
+        db.autocommit(True)
+        return db        
+    
+    except MySQLdb.Error, e:
+        print "Error dbConnect %d: %s" % (e.args[0],e.args[1])
+        sys.exit(1)
 
 def dbDisconnect(connection):
     """
@@ -39,7 +52,8 @@ def dbDisconnect(connection):
     
 def dbQuery(sql):
 
-    con =dbConnect()
+    #con =dbConnect()
+    con = dbConnectRemote()
     try:
         cur = con.cursor()   
         cur.execute(sql) 

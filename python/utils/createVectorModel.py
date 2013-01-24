@@ -25,7 +25,7 @@ Version 0.2
     Working with sql queries 
 '''
 #imports
-import logging, sys
+import logging, sys, csv
 from gensim import corpora, models
 from python.utils.textPrepareFunctions import removePunct, removeStopWords 
 from python.utils.databaseODP import dbQuery, errorMessage
@@ -37,12 +37,6 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 #variables
 manualStopWords = []
 lisType = []
-
-#test data
-#sql = "select dmoz_newsgroups.catid, dmoz_categories.Description as catDesc from dmoz_categories, dmoz_newsgroups where dmoz_categories.catid = dmoz_newsgroups.catid and dmoz_categories.Description != '' group by dmoz_newsgroups.catid limit 100"
-#results = dbQuery(sql)
-#sentence = "Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting list. If maxsplit is nonzero, at most maxsplit splits occur, and the remainder of the string is returned as the final element of the list. (Incompatibility note: in the original Python 1.5 release, maxsplit was ignored. This has been fixed in later releases.)"
-
 
 #functions
 def vectorizeDocument(document):
@@ -62,19 +56,12 @@ def vectorizeDocument(document):
     
     #creating different corpus formats
     bow_document = [dictionary.doc2bow(text) for text in document]
-    """
-    dictionary.save('tmp/test.dict') # store the dictionary, for future reference
-    corpora.MmCorpus.serialize('tmp/test.mm', corpus) # store to disk, for later use
-    corpora.SvmLightCorpus.serialize('tmp/test.svmlight', corpus)
-    corpora.BleiCorpus.serialize('tmp/test.lda-c', corpus)
-    corpora.LowCorpus.serialize('tmp/test.low', corpus)
-    """
     return bow_document
 
 def createCorpusAndVectorModel(sqlQuery="", outputFormat=1, modelFormat=1, fileName =""):
     """
     Input parameters: sqlQueryResults="", outputFormat=1, modelFormat=1, fileName =""
-        1. sqlQueryResults -> if "" use dummy data, textual column to be analyzed first parameter in query
+        1. sqlQueryResults -> if "" exit, textual column to be analyzed first parameter in query
         2. outputFormat definition:     1 -> MmCorpus (default)
                                         2 -> SvmLightCorpus
                                         3 -> BleiCorpus
@@ -95,15 +82,14 @@ def createCorpusAndVectorModel(sqlQuery="", outputFormat=1, modelFormat=1, fileN
         fileName = "defaultCollection"
     
     #type
-    print type(sqlQuery)
+    #print type(sqlQuery)
     
     #default data
     if sqlQuery == "":
-        sqlQuery = "select Description from dmoz_categories where Description != '' limit 1000"
-        sqlQueryResults = dbQuery(sqlQuery)
+        sys.exit("No query mate. Function getCategoryLabel")
     elif type(sqlQuery) is str:
         sqlQueryResults = dbQuery(sqlQuery)
-    elif type(sqlQuery)is tuple:
+    elif type(sqlQuery) is tuple:
         sqlQueryResults = sqlQuery
     else:
         print type(sqlQuery)
@@ -133,17 +119,17 @@ def createCorpusAndVectorModel(sqlQuery="", outputFormat=1, modelFormat=1, fileN
 
     #create corpora data for use in creating a vector model representation for furher use
     if outputFormat == 1:
-        saveFN = "corpusFiles/"+fileName+"MmCorpus.mm"
+        saveFN = "corpusFiles/"+fileName+".mm"
         corpora.MmCorpus.serialize(saveFN, bow_documents)
     elif outputFormat == 2:
-        saveFN = "corpusFiles/"+fileName+"SvmLightCorpus.svmlight"
+        saveFN = "corpusFiles/"+fileName+".svmlight"
         corpora.SvmLightCorpus.serialize(saveFN, bow_documents)
     elif outputFormat == 3:
-        saveFN = "corpusFiles/"+fileName+"BleiCorpus.lda-c"
+        saveFN = "corpusFiles/"+fileName+".lda-c"
         corpora.BleiCorpus.serialize(saveFN, bow_documents)
     elif outputFormat == 4:
         corpora.LowCorpus.serialize(saveFN, bow_documents)
-        saveFN = "corpusFiles/"+fileName+"LowCorpus.low" 
+        saveFN = "corpusFiles/"+fileName+".low" 
     else:
         errorMessage("Something went wrong with the type identificator")
     
@@ -165,11 +151,78 @@ def createCorpusAndVectorModel(sqlQuery="", outputFormat=1, modelFormat=1, fileN
     else:
         errorMessage("createTrainingModel: Something went wrong with the type identificator")       
         
+def getCategoryLabel(sqlQuery,fileName):
+    """
+    sqlQuery -> query to be executed or query result set
+    fileName -> file to save labels returned by the query
+    """
+    #variables
+    categoryLabels = []
+    
+    #default data
+    if sqlQuery == "":
+        sys.exit("No query mate. Function getCategoryLabel")
+    elif type(sqlQuery) is str:
+        sqlQueryResults = dbQuery(sqlQuery)
+    elif type(sqlQuery) is tuple:
+        sqlQueryResults = sqlQuery
+    else:
+        print type(sqlQuery)
+        print "yaba daba doo createVectorModel getCategoryLabel "
+        sys.exit(1)
+        
+    #iteration rhrough supplied documents
+    for row in sqlQueryResults:
+        #print row[0]
+        categoryLabels.append(row[0])
+    
+    #test sql output    
+    #print row[0]
+    
+    #write to csv
+    out = csv.writer(open(fileName,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
+    out.writerow(categoryLabels)
+    
+    """
+    with open(fileName, 'wb') as f:
+        writer = csv.writer(f)
+        writer.writerows(categoryLabels)
+    """
+        
+def returnFatherIDs(sqlQuery):
+    """
+    Group catid, on specific depth level,  based on their fatherID values
+    sql query -> fatherID first level 
+    Returns fatherID on level x    
+    """
+    #variables
+    fatherIDLevel = []
+    
+    if sqlQuery == "":
+        sys.exit("No query mate. Function getCategoryLabel")
+    elif type(sqlQuery) is str:
+        sqlQueryResults = dbQuery(sqlQuery)
+    elif type(sqlQuery) is tuple:
+        sqlQueryResults = sqlQuery
+    else:
+        print type(sqlQuery)
+        print "yaba daba doo createVectorModel getCategoryLabel "
+        sys.exit(1)
+        
+    #iterate through returned
+    for row in sqlQueryResults:
+        #print row[0]
+        fatherIDLevel.append(row[0])
+        
+    #return values 
+    return fatherIDLevel
+
 def main():
     """
     Functions:
         1.vectorizeDocument(document)
         2.createCorpusAndVectorModel(documents, outputFormat=1, modelFormat=1, fileName ="")
+        3.getCategoryLabel(sqlQuery,fileName)
     """ 
     print main.__doc__
 
@@ -182,7 +235,12 @@ def main():
     elif var == "2":
         print createCorpusAndVectorModel.__doc__
         print "No input parameters needed. Works with dummy data to show functionality."
-        createCorpusAndVectorModel()        
+        createCorpusAndVectorModel()
+    elif var == "3":
+        print getCategoryLabel.__doc__
+        var1 = raw_input("Input SQl query")
+        var2 = raw_input("fileName for the file to be created")
+        getCategoryLabel(var1,var2)           
     else:
         print "Hm, ", var," not supported as an options"
         sys.exit(1)

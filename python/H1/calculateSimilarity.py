@@ -11,12 +11,9 @@ Functions:
 
 1. prepareComparisonDocuments(sql, useVectorModel="")
 2. documentVScorpus(document)
-3. 
-4.
-5.
 '''
 #imports
-import logging, sys, gensim
+import logging, sys
 from gensim import corpora, models, similarities
 from python.utils.databaseODP import dbQuery
 from python.utils.textPrepareFunctions import removePunct,removeStopWords
@@ -29,27 +26,36 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 testSentence = "Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting list. If maxsplit is nonzero, at most maxsplit splits occur, and the remainder of the string is returned as the final element of the list. (Incompatibility note: in the original Python 1.5 release, maxsplit was ignored. This has been fixed in later releases.)"
 
 #functions     
-def prepareComparisonDocuments(sql, useVectorModel=""):
+def prepareComparisonDocuments(sqlQuery, useVectorModel=""):
     """
     Input parameters: 
-    sql: SQL query (text/variable) where second select parameter has to be desription field in the table that is queried against            
+    sql: textual column to be analyzed first parameter in query       
     useVectorModel: which vector space model to use (tfidf default, model file testNewsgroups.tfidf_model)
     
     Output parameters:
     Returned documents from SQL query in specified vector space model (tf-idf by default)
     """
-    #SQL processing
-    results = dbQuery(sql)
+    #default data
+    if sqlQuery == "":
+        sys.exit("No query mate. Function getCategoryLabel")
+    elif type(sqlQuery) is str:
+        sqlQueryResults = dbQuery(sqlQuery)
+    elif type(sqlQuery) is tuple:
+        sqlQueryResults = sqlQuery
+    else:
+        print type(sqlQuery)
+        print "yaba daba doo createVectorModel createCorpusAndVectorModel "
+        sys.exit(1)    
     
     #sql result processing
     data = []    
-    for row in results:
+    for row in sqlQueryResults:
         noPunct = ""
         #dataNLTK = nltk.clean_html(row[1])
         #soup = BeautifulSoup(row[1])
         #print "NLTK clean_html ", dataNLTK
         #print "BS4 ",soup.get_text()
-        noPunct = removePunct(row[1], 1)
+        noPunct = removePunct(row[0], 1)
         data.append(removeStopWords(noPunct))
     
     #create dict and bow format
@@ -65,7 +71,6 @@ def prepareComparisonDocuments(sql, useVectorModel=""):
     #print vec_tfidf
     return vec_tfidf
         
-
 def documentVScorpus(document,comparisonModel=""):
     """
     List of documents

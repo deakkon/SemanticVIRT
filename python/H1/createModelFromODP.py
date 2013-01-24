@@ -14,7 +14,8 @@ Functions:
 #imports
 import logging, sys
 from python.utils.databaseODP import dbQuery, errorMessage
-from python.utils.createVectorModel import createCorpusAndVectorModel
+from python.utils.createVectorModel import createCorpusAndVectorModel,\
+    getCategoryLabel
 
 #logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
@@ -85,13 +86,22 @@ def createTrainingData():
         maxDebthRS = dbQuery(sqlmaxDepth)
         maxDebth = maxDebthRS[0]
         print maxDebth
+        #catLabels = []
         
         #dynamic sql for depth levels to be queried, extracting all catid values for category cat between depthLevels 1 and maxDepth, with maxDepth-- each iteration
         while maxDebth != 1:
-            sqlFromTo = "select Description,Title,link from dmoz_externalpages where catid in (select catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and categoryDepth >=1 and categoryDepth <= "+str(maxDebth)+")"            
+            #sqlFromTo = "select Description,Title,link from dmoz_externalpages where catid in (select catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and categoryDepth >=1 and categoryDepth <= "+str(maxDebth)+" and filterOut = 0)"        
+            #sqlLabelsBetween = "select Title, catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and Description != '' and categoryDepth >=1 and categoryDepth <= "+str(maxDebth)
+            #sqlLabelsCategory = "select Title, catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and categoryDepth = "+str(maxDebth)
+            #DUMMY QUERIES 
+            sqlFromTo = "select Description,Title,link from dmoz_externalpages where catid in (select catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and categoryDepth >=1 and categoryDepth <= "+str(maxDebth)+" and filterOut = 0) LIMIT 1000"        
+            sqlLabelsBetween = "select Title, catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and Description != '' and categoryDepth >=1 and categoryDepth <= "+str(maxDebth)
+            sqlLabelsCategory = "select Title, catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and categoryDepth = "+str(maxDebth)
+            
             maxDebth -= 1
             #dbQuery(sqlFromTo)
             fileName = cat[0]+"_1_"+str(maxDebth)
+            fileNameLabelsCategory = cat[0]+str(maxDebth) 
             """
             #prints for debugging
             print "file name: ",fileName
@@ -99,6 +109,8 @@ def createTrainingData():
             print sqlFromTo
             """
             createCorpusAndVectorModel(sqlFromTo, fileName=fileName)
+            getCategoryLabel(sqlLabelsBetween,fileName)
+            getCategoryLabel(sqlLabelsCategory,fileNameLabelsCategory)
 
            
 #main function
