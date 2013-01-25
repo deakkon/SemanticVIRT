@@ -35,7 +35,7 @@ def dbConnectRemote():
     COnnect to db, return connection handler
     """
     try:
-        db = MySQLdb.connect(host="192.168.5.23", user="root", passwd="root", db="dmoz")
+        db = MySQLdb.connect(host="xxx.xxx.xxx.xxx", user="xxxxxxx", passwd="xxxxxxx", db="xxxxxxx")
         db.autocommit(True)
         return db        
     
