@@ -16,3 +16,7 @@ select max(categoryDepth) from dmoz_categories
 select distinct(fatherid), categoryDepth from dmoz_categories 
 where Topic like '%/Arts/%' and filterOut = 0 and categoryDepth > 1 and categoryDepth < 15 
 group by categoryDepth
+
+select Description,Title,link from dmoz_externalpages where catid in 
+(select catid from dmoz_categories where Topic like '%/Arts/%' and categoryDepth >=1 and categoryDepth <= 15 and filterOut = 0) 
+limit 10000
