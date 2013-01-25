@@ -24,6 +24,9 @@ Implementing Gensim Python modules for IR implementation, tested on newsletter c
 Version 0.2
     Working with sql queries 
 '''
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 #imports
 import logging, sys, csv
 from gensim import corpora, models
@@ -170,24 +173,26 @@ def getCategoryLabel(sqlQuery,fileName):
         print type(sqlQuery)
         print "yaba daba doo createVectorModel getCategoryLabel "
         sys.exit(1)
+    
+    print sqlQuery
         
-    #iteration rhrough supplied documents
+    #iteration through documents   
     for row in sqlQueryResults:
-        #print row[0]
-        categoryLabels.append(row[0])
-    
-    #test sql output    
-    #print row[0]
-    
+        if type(row) is not long:
+            #print type(row)," :: ",type(row[0])        
+            categoryLabels.append(str(row[0]))
+        
+    #print sqlQueryResults
+    #categoryLabels = [row[0] for row in sqlQueryResults]
+    #print categoryLabels
+                
+    #create file name
+    fileName = str(fileName)
+    #print fileName
     #write to csv
-    out = csv.writer(open(fileName,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
-    out.writerow(categoryLabels)
-    
-    """
-    with open(fileName, 'wb') as f:
-        writer = csv.writer(f)
-        writer.writerows(categoryLabels)
-    """
+    out = csv.writer(open("labels/"+fileName+".csv","w"), delimiter=',',quoting=csv.QUOTE_ALL)
+    out.writerow(categoryLabels)    
+
         
 def returnFatherIDs(sqlQuery):
     """
