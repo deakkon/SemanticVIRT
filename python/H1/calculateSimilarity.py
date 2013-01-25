@@ -19,6 +19,7 @@ from python.utils.databaseODP import dbQuery
 from python.utils.textPrepareFunctions import removePunct,removeStopWords
 from python.utils.createVectorModel import vectorizeDocument
 
+
 #logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
