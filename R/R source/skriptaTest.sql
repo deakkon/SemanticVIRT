@@ -1,1 +1,0 @@
-select sessionID, actionTakenNumeric, AVG(`durationMSEC`) FROM `actiontimes` group by `actionTakenNumeric`, `sessionID`

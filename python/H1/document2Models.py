@@ -1,19 +1,13 @@
 '''
-Created on 24.1.2013.
+Created on 25. 1. 2013.
 
-@author: Jurica Seva
+@author: Jurica
 
 PhD Candidate 
 Faculty of Organization and Informatics
 University of Zagreb
 
-
-What gives:
-
-
-
 Functions:
-
 
 1.
 2.
@@ -22,13 +16,12 @@ Functions:
 5.
 '''
 #imports
-import logging
+import logging, sys
 
 #logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
 #functions
-def 
 
 
 #main functions definition
@@ -48,9 +41,9 @@ def main():
        
    #functions, depending on user input
     if var == "1":
-        print functionName.__doc__
+        print .__doc__
     elif var == "2":
-        print functionName.__doc__
+        print .__doc__
     elif var == "3":
         pass
     else:

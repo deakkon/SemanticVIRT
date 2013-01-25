@@ -85,12 +85,12 @@ def documentVScorpus(document,comparisonModel=""):
         comparisonModel = "testNewsgroups"
     
     #dict, corpus, tfidf model filenames
-    dcitionaryFN = "dictionaries/"+str(comparisonModel)+"Dictionary.dict"
+    dictionaryFN = "dictionaries/"+str(comparisonModel)+"Dictionary.dict"
     corpusFN = "corpusFiles/"+str(comparisonModel)+".mm"
     tfidfFN = "models/"+str(comparisonModel)+".tfidf_model"
     
     #prepare corpus for transformation
-    dictionary = corpora.Dictionary.load(dcitionaryFN)
+    #dictionary = corpora.Dictionary.load(dcitionaryFN)
     corpus = corpora.MmCorpus(corpusFN)
     tfidf = models.TfidfModel.load(tfidfFN)
     
@@ -114,7 +114,6 @@ def main():
     Functions:
         1. prepareComparisonDocuments(sql, useVectorModel="")
         2. documentVScorpus(document)
-        3. 
         Anything else to stop
      """
     print main.__doc__
