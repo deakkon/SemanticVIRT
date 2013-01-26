@@ -82,7 +82,7 @@ def createCorpusAndVectorModel(sqlQuery="", outputFormat=1, modelFormat=1, fileN
     
     #create file names to save
     if fileName == "":
-        fileName = "defaultCollection"
+        sys.exit("No file name mate. Function getCategoryLabel")
     
     #type
     #print type(sqlQuery)
@@ -111,7 +111,7 @@ def createCorpusAndVectorModel(sqlQuery="", outputFormat=1, modelFormat=1, fileN
         data.append(removeStopWords(noPunct))
             
     #print "Stop words ",data
-    print data
+    #print data
     dictionary = corpora.Dictionary(data)
     #print dictionary.token2id
         
@@ -174,13 +174,14 @@ def getCategoryLabel(sqlQuery,fileName):
         print "yaba daba doo createVectorModel getCategoryLabel "
         sys.exit(1)
     
-    print sqlQuery
+    #print sqlQuery
         
     #iteration through documents   
     for row in sqlQueryResults:
         if type(row) is not long:
             #print type(row)," :: ",type(row[0])        
-            categoryLabels.append(str(row[0]))
+            #categoryLabels.append(str(row[0]))
+            categoryLabels.append(removeStopWords(removePunct(row[0], 1)))
         
     #print sqlQueryResults
     #categoryLabels = [row[0] for row in sqlQueryResults]

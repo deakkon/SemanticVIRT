@@ -35,7 +35,7 @@ def dbConnectRemote():
     COnnect to db, return connection handler
     """
     try:
-        db = MySQLdb.connect(host="xxx.xxx.xxx.xxx", user="xxxxxxx", passwd="xxxxxxx", db="xxxxxxx")
+        db = MySQLdb.connect(host="192.168.5.23", user="root", passwd="root", db="dmoz")
         db.autocommit(True)
         return db        
     
@@ -58,6 +58,7 @@ def dbQuery(sql):
         cur = con.cursor()   
         cur.execute(sql) 
         numrows = int(cur.rowcount)
+        #print "Number of rows: ",numrows
         if numrows == 1:
             resultRows = cur.fetchone()
         elif numrows > 1: 

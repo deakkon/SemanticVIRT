@@ -81,32 +81,32 @@ def createTrainingData():
     
     #iterate through main categories
     for cat in mainCat:
-        print cat[0]
+        #print cat[0]
         sqlmaxDepth = "select max(categoryDepth) from dmoz_categories where Topic like '%/"+str(cat[0])+"/%' and filterOut = 0"
         maxDebthRS = dbQuery(sqlmaxDepth)
         maxDebth = maxDebthRS[0]
-        print "cat max depth: ",maxDebth
+        #print "cat max depth: ",maxDebth
         #catLabels = []
         
         #dynamic sql for depth levels to be queried, extracting all catid values for category cat between depthLevels 1 and maxDepth, with maxDepth-- each iteration
         while maxDebth != 1:
 
             #limited to 10 000 pages per Topic per level
-            sqlFromTo = "select Description,Title,link from dmoz_externalpages where catid in (select catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and categoryDepth >=1 and categoryDepth <= "+str(maxDebth)+" and filterOut = 0)"
-            sqlFromToSame = "select Description,Title,link from dmoz_externalpages where catid in (select catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and categoryDepth >=1 and categoryDepth <= "+str(maxDebth)+" and filterOut = 0) LIMIT 1000"            
-            sqlLabelsBetween = "select Title, catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and Description != '' and categoryDepth >=1 and categoryDepth <= "+str(maxDebth)
-            sqlLabelsCategory = "select Title, catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and categoryDepth = "+str(maxDebth)
-            
-            #!!!to be run on the virtual machine!!!
-            #sqlFromTo = "select Description,Title,link from dmoz_externalpages where catid in (select catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and categoryDepth >=1 and categoryDepth <= "+str(maxDebth)+" and filterOut = 0)"
-            #sqlFromToSame = "select Description,Title,link from dmoz_externalpages where catid in (select catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and categoryDepth >=1 and categoryDepth <= "+str(maxDebth)+" and filterOut = 0) LIMIT 1000"            
+            #sqlFromTo = "select Description,Title,link from dmoz_externalpages where catid in (select catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and categoryDepth >=1 and categoryDepth <= "+str(maxDebth)+" and filterOut = 0) ORDER BY RAND() limit 10000"
+            #sqlFromToSame = "select Description,Title,link from dmoz_externalpages where catid in (select catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and categoryDepth ="+str(maxDebth)+" and filterOut = 0) ORDER BY RAND() LIMIT 1000"            
             #sqlLabelsBetween = "select Title, catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and Description != '' and categoryDepth >=1 and categoryDepth <= "+str(maxDebth)
             #sqlLabelsCategory = "select Title, catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and categoryDepth = "+str(maxDebth)
             
+            #!!!to be run on the virtual machine!!!
+            sqlFromTo = "select Description,Title,link from dmoz_externalpages where catid in (select catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and categoryDepth >=1 and categoryDepth <= "+str(maxDebth)+" and filterOut = 0)"
+            sqlFromToSame = "select Description,Title,link from dmoz_externalpages where catid in (select catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and categoryDepth ="+str(maxDebth)+" and filterOut = 0)"            
+            sqlLabelsBetween = "select Title, catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and Description != '' and categoryDepth >=1 and categoryDepth <= "+str(maxDebth)
+            sqlLabelsCategory = "select Title, catid from dmoz_categories where Topic like '%/"+cat[0]+"/%' and categoryDepth = "+str(maxDebth)
+            
             #print "local max depth ", maxDebth
             maxDebth -= 1
-            fileName = cat[0]+"_1_"+str(maxDebth)
-            fileNameLabelsCategory = cat[0]+"_"+str(maxDebth) 
+            fileNameMaxDebth = cat[0]+"_1_"+str(maxDebth)
+            fileNameLevelDebth = cat[0]+"_"+str(maxDebth) 
             
             #prints for debugging
             #print "file name: ",fileName            
@@ -114,10 +114,14 @@ def createTrainingData():
             #print sqlLabelsBetween|
             #print sqlLabelsCategory
             
-            #createCorpusAndVectorModel(sqlFromTo, fileName=fileName)
-            #createCorpusAndVectorModel(sqlFromToSame, fileName=fileName)
-            getCategoryLabel(sqlLabelsBetween,fileName)
-            getCategoryLabel(sqlLabelsCategory,fileNameLabelsCategory)
+            createCorpusAndVectorModel(sqlFromTo, fileName=fileNameMaxDebth)
+            createCorpusAndVectorModel(sqlFromToSame, fileName=fileNameLevelDebth)
+            getCategoryLabel(sqlLabelsBetween,fileNameMaxDebth)
+            getCategoryLabel(sqlLabelsCategory,fileNameLevelDebth)
+    
+    #end of script
+    print "End of show."
+    sys.exit(0)
 
            
 #main function
