@@ -33,5 +33,8 @@ pip-log.txt
 *.dict
 *.tfidf*
 
-#direcotries
+#directories
 python/H1/testData/
+python/utils//lineGraph/
+python/utils/statistics/
+python/utils/histograms/
