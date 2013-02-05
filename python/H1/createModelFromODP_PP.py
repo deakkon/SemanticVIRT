@@ -12,7 +12,7 @@ Functions:
     2. createTrainingData()
 '''
 #imports
-import math, sys, time, csv, os, string, pp,gensim, MySQLdb, nltk.corpus, nltk.stem
+import math, sys, time, csv, os, string, pp, re, gensim, MySQLdb, nltk.corpus, nltk.stem
 from MySQLdb import *
 #from nltk.corpus import names
 #import gensim.corpora
