@@ -12,8 +12,9 @@ Functions:
 # -*- coding: utf-8 -*-
 
 #imports
-import logging, sys, csv, numpy, scipy, matplotlib
+import logging, sys, csv, numpy, scipy, matplotlib, datetime
 from scipy import stats
+from scipy.stats.stats import gmean, hmean, skew, kurtosis, kurtosistest
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt, matplotlib.mlab
 from numpy.random import normal
@@ -59,7 +60,7 @@ def getCatInfo():
     """    
     return categories
         
-def getDescriptiveStatistics():
+def getDescriptiveStatisticsCategory():
     """
     Basic statistics for each category, level based:
         1. Mean
@@ -69,16 +70,14 @@ def getDescriptiveStatistics():
         5. Std. variation
         6. Median
     """
-    #redirect output
-    sys.stdout = open('descStat1.txt', 'w')
-                 
     #variables
     categories = getCatInfo()
-    fpr = open('basicStats.txt', 'w')
+    finalResults = []
     
     for cat in categories:
         #variables, specific for cat
         perCategory = []
+        tempResults = []
         sqlMaxDepth = "select max(categoryDepth) from dmoz_categories where Topic like '%/"+str(cat)+"/%' and filterOut = 0"
         #query results
         maxDebthRS = dbQuery(sqlMaxDepth)
@@ -88,49 +87,119 @@ def getDescriptiveStatistics():
             debthRowCount = dbQuery(sqlDepth)
             perCategory.append(debthRowCount[0])
         perCategoryNumpy = numpy.asarray([perCategory[x] for x in range(1,len(perCategory))])
-        print perCategoryNumpy
-       
-        """
-        n, min_max, mean, var, skew, kurt = stats.describe(perCategory)
-        print "Category: ", cat
-        print("Number of elements: {0:d}".format(n))        
-        print("Minimum: {0:8.6f} Maximum: {1:8.6f}".format(min_max[0], min_max[1]))
-        print("Mean: {0:8.6f}".format(mean))
-        print("Variance: {0:8.6f}".format(var))        
-        print("Skew : {0:8.6f}".format(skew))
-        print("Kurtosis: {0:8.6f}".format(kurt))        
-        print "########################################"
-        """
+        #test print
+        print "##################################################"
+        print perCategoryNumpy                
         print("Mean : {0:8.6f}".format(perCategoryNumpy.mean()))
-        print("Minimum : {0:8.6f}".format(perCategoryNumpy.min()))
-        print("Maximum : {0:8.6f}".format(perCategoryNumpy.max()))
-        print("Variance : {0:8.6f}".format(perCategoryNumpy.var()))
-        print("Std. deviation : {0:8.6f}".format(perCategoryNumpy.std()))
+        tempResults.append("{0:8.6f}".format(perCategoryNumpy.mean()))
+        print("G Mean : {0:8.6f}".format(gmean(perCategoryNumpy)))
+        tempResults.append(format(gmean(perCategoryNumpy)))
+        print("H Mean : {0:8.6f}".format(hmean(perCategoryNumpy)))
+        tempResults.append(format(hmean(perCategoryNumpy)))
         print("Median : {0:8.6f}".format(scipy.median(perCategoryNumpy)))
+        tempResults.append(format(scipy.median(perCategoryNumpy)))                
+        print("Minimum : {0:8.6f}".format(perCategoryNumpy.min()))
+        tempResults.append(format(perCategoryNumpy.min()))
+        print("Maximum : {0:8.6f}".format(perCategoryNumpy.max()))
+        tempResults.append(format(perCategoryNumpy.max()))
+        print("Std. deviation : {0:8.6f}".format(perCategoryNumpy.std()))
+        tempResults.append(format(perCategoryNumpy.std()))
+        print("Skewness : {0:8.6f}".format(skew(perCategoryNumpy)))
+        tempResults.append(format(skew(perCategoryNumpy)))
+        print("Kurtosis : {0:8.6f}".format(kurtosis(perCategoryNumpy)))
+        tempResults.append(format(kurtosis(perCategoryNumpy))) 
+        tempResults.append(cat)
         print "########################################"
+        finalResults.append(tempResults)
         
-def createHistogram():
-    pass
+    #create file name
+    fileName = "statistics/CAT_DescriptiveStatistics"+datetime.datetime.now().ctime()+".csv"
+    #print fileName
+    #write to csv
+    out = csv.writer(open(fileName,"wb"), delimiter=';',quoting=csv.QUOTE_NONE)
 
+    out.writerow(['Mean','Geometric mean','Harmonic mean','Median','Minimum','Maximum','Std. deviation','Skewness','Kurtosis','Category'])
+    for results in finalResults:      
+        out.writerow(results)
+        
+def getDescriptiveStatisticsEP():
+    """
+    Basic statistics for dmoz_externalpages, level based:
+        1. Mean
+        2. Min
+        3. Max
+        4. Variance
+        5. Std. variation
+        6. Median
+    """                 
+    #variables
+    categories = getCatInfo()
+    finalResults = []
+    
+    for cat in categories:
+        #variables, specific for cat
+        perCategory = []
+        tempResults = []
+        sqlMaxDepth = "select max(categoryDepth) from dmoz_categories where Topic like '%/"+str(cat)+"/%' and filterOut = 0"
+        #query results
+        maxDebthRS = dbQuery(sqlMaxDepth)
+        #for each depth level
+        for depth in range(1,maxDebthRS[0]):
+            sqlDepth = "select count(*) from dmoz_externalpages where catid in (select catid from dmoz_categories where Topic like '%/"+str(cat)+"/%' and categoryDepth="+str(depth)+")"
+            debthRowCount = dbQuery(sqlDepth)
+            perCategory.append(debthRowCount[0])        
+        perCategoryNumpy = numpy.asarray([perCategory[x] for x in range(1,len(perCategory))])        
+        #test print
+        print "##################################################"
+        print perCategoryNumpy                
+        print("Mean : {0:8.6f}".format(perCategoryNumpy.mean()))
+        tempResults.append("{0:8.6f}".format(perCategoryNumpy.mean()))
+        print("G Mean : {0:8.6f}".format(gmean(perCategoryNumpy)))
+        tempResults.append(format(gmean(perCategoryNumpy)))
+        print("H Mean : {0:8.6f}".format(hmean(perCategoryNumpy)))
+        tempResults.append(format(hmean(perCategoryNumpy)))
+        print("Median : {0:8.6f}".format(scipy.median(perCategoryNumpy)))
+        tempResults.append(format(scipy.median(perCategoryNumpy)))                
+        print("Minimum : {0:8.6f}".format(perCategoryNumpy.min()))
+        tempResults.append(format(perCategoryNumpy.min()))
+        print("Maximum : {0:8.6f}".format(perCategoryNumpy.max()))
+        tempResults.append(format(perCategoryNumpy.max()))
+        print("Std. deviation : {0:8.6f}".format(perCategoryNumpy.std()))
+        tempResults.append(format(perCategoryNumpy.std()))
+        print("Skewness : {0:8.6f}".format(skew(perCategoryNumpy)))
+        tempResults.append(format(skew(perCategoryNumpy)))
+        print("Kurtosis : {0:8.6f}".format(kurtosis(perCategoryNumpy)))
+        tempResults.append(format(kurtosis(perCategoryNumpy))) 
+        tempResults.append(cat)
+        print "########################################"
+        finalResults.append(tempResults)
+        
+    #create file name
+    fileName = "statistics/EP_DescriptiveStatistics"+datetime.datetime.now().ctime()+".csv"
+    #print fileName
+    #write to csv
+    out = csv.writer(open(fileName,"wb"), delimiter=';',quoting=csv.QUOTE_NONE)
 
-
+    out.writerow(['Mean','Geometric mean','Harmonic mean','Median','Minimum','Maximum','Std. deviation','Skewness','Kurtosis','Category'])
+    for results in finalResults:      
+        out.writerow(results)
 #main
 def main():
     """
     Functions:
-        1. getCatInfo(document)
-        2. getDescriptiveStatistics()
+        1. getDescriptiveStatisticsCategory(document)
+        2. getDescriptiveStatisticsEP()
     """ 
     print main.__doc__
 
     var = raw_input("Choose function to run: ")
         
     if var == "1":
-        print getCatInfo.__doc__
-        getCatInfo()
+        print getDescriptiveStatisticsCategory.__doc__
+        getDescriptiveStatisticsCategory()
     elif var == "2":
-        print getDescriptiveStatistics.__doc__
-        print getDescriptiveStatistics()
+        print getDescriptiveStatisticsEP.__doc__
+        print getDescriptiveStatisticsEP()
     else:
         print "Hm, ", var," not supported as an options"
         sys.exit(1)

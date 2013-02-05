@@ -28,7 +28,7 @@ Version 0.2
 # -*- coding: utf-8 -*-
 
 #imports
-import logging, sys, csv
+import logging, sys, csv, os, string
 from gensim import corpora, models
 from python.utils.textPrepareFunctions import removePunct, removeStopWords 
 from python.utils.databaseODP import dbQuery, errorMessage
@@ -47,6 +47,8 @@ def vectorizeDocument(document):
     Input: single document
     Output: BoW representation of a single document, tpye python list
     Doesn't save the dictionary 
+    
+    NOT USED
     """   
     #document preparation: remove puncuation and stopwords
     #print "Starting text: ", document
@@ -78,47 +80,48 @@ def createCorpusAndVectorModel(sqlQuery="", outputFormat=1, modelFormat=1, fileN
     Output data: saved dictionary, corpus and model files of chosen format to disk, to respected directories
     """
     #variables
-    data = []
+    data = [] 
     
     #create file names to save
     if fileName == "":
-        sys.exit("No file name mate. Function getCategoryLabel")
+        fileName = "defaultCollection"
     
-    #type
+    #type TEST PRINT
     #print type(sqlQuery)
     
     #default data
     if sqlQuery == "":
-        sys.exit("No query mate. Function getCategoryLabel")
+        sys.exit("No query mate. Function createCorpusAndVectorModel")
     elif type(sqlQuery) is str:
         sqlQueryResults = dbQuery(sqlQuery)
     elif type(sqlQuery) is tuple:
         sqlQueryResults = sqlQuery
     else:
         print type(sqlQuery)
-        print "yaba daba doo createVectorModel createCorpusAndVectorModel "
+        print "ERROR createVectorModel createCorpusAndVectorModel "
         sys.exit(1)
          
     
-    #iteration rhrough supplied documents
+    #iteration through supplied documents
     for row in sqlQueryResults:
-        noPunct = ""
+        #noPunct = ""
         #dataNLTK = nltk.clean_html(row[1])
         #soup = BeautifulSoup(row[1])
         #print "NLTK clean_html ", dataNLTK
         #print "BS4 ",soup.get_text()
-        noPunct = removePunct(row[0], 1)
-        data.append(removeStopWords(noPunct))
+        #noPunct = removePunct(row[0],1)
+        data.append(removeStopWords(row[0]))
             
     #print "Stop words ",data
     #print data
+    #create dictionary
     dictionary = corpora.Dictionary(data)
+    dictFN = "dictionaries/"+fileName+".dict"
+    dictionary.save(dictFN)
     #print dictionary.token2id
         
     #creating dictionary and corpus  files in different matrix formats    
     bow_documents = [dictionary.doc2bow(text) for text in data]
-    dictFN = "dictionaries/"+fileName+".dict"
-    dictionary.save(dictFN)
 
     #create corpora data for use in creating a vector model representation for furher use
     if outputFormat == 1:
@@ -171,28 +174,52 @@ def getCategoryLabel(sqlQuery,fileName):
         sqlQueryResults = sqlQuery
     else:
         print type(sqlQuery)
-        print "yaba daba doo createVectorModel getCategoryLabel "
+        print "error createVectorModel getCategoryLabel "
         sys.exit(1)
     
+    #print executed query
     #print sqlQuery
         
     #iteration through documents   
     for row in sqlQueryResults:
         if type(row) is not long:
-            #print type(row)," :: ",type(row[0])        
+            #print type(row)," :: ",type(row[0]), row[0]
+            #missing: remove stop words, punctuation, names
+            categoryLabels.append(removeStopWords(row[0]))   
             #categoryLabels.append(str(row[0]))
-            categoryLabels.append(removeStopWords(removePunct(row[0], 1)))
         
     #print sqlQueryResults
     #categoryLabels = [row[0] for row in sqlQueryResults]
     #print categoryLabels
-                
-    #create file name
-    fileName = str(fileName)
-    #print fileName
-    #write to csv
-    out = csv.writer(open("labels/"+fileName+".csv","w"), delimiter=',',quoting=csv.QUOTE_ALL)
-    out.writerow(categoryLabels)    
+    """
+    dictionary = corpora.Dictionary(categoryLabels)
+    dictFN = "labels/"+fileName+".dict"
+    dictionary.save(dictFN)
+    """
+
+    #path to save the file    
+    if os.path.realpath(__file__)== "/home/jseva/SemanticVIRT/python/utils/createVectorModel.py":
+        fileName = "../H1/labels/"+fileName+".csv"
+    else:
+        fileName = "labels/"+fileName+".csv"    
+    
+    out = csv.writer(open(fileName,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
+    
+    writeLabels = []
+    #append to file
+    print string.letters
+    for row in categoryLabels:
+        print row
+        #print type(row)
+        #print len(row)
+        for i in row:            
+            if i != "" or i.lower() not in string.letters.lower():
+                #print i.lower()
+                #out.writerow(i)
+                writeLabels.append(i.lower())
+    print writeLabels
+    out.writerow(writeLabels)
+    #return categoryLabels 
 
         
 def returnFatherIDs(sqlQuery):
@@ -246,7 +273,7 @@ def main():
         print getCategoryLabel.__doc__
         var1 = raw_input("Input SQl query")
         var2 = raw_input("fileName for the file to be created")
-        getCategoryLabel(var1,var2)           
+        print getCategoryLabel(var1,var2)           
     else:
         print "Hm, ", var," not supported as an options"
         sys.exit(1)

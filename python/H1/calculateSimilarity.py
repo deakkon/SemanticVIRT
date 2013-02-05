@@ -35,6 +35,8 @@ def prepareComparisonDocuments(sqlQuery, useVectorModel=""):
     
     Output parameters:
     Returned documents from SQL query in specified vector space model (tf-idf by default)
+    
+    !!!!use utils.createCorpusAndVectorModel()
     """
     #default data
     if sqlQuery == "":

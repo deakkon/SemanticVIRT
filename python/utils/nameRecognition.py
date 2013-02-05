@@ -4,7 +4,15 @@ Created on 17.12.2012.
 @author: Jurica
 '''
 import nltk
- 
+from nltk.corpus import names
+names = nltk.corpus.names
+print names
+male_names = names.words('male.txt')
+print male_names
+
+female_names = names.words('female.txt')
+print female_names
+"""
 with open('sample.txt', 'r') as f:
     sample = f.read()
  
@@ -43,3 +51,4 @@ print entity_names
  
 # Print unique entity names
 print set(entity_names)
+"""

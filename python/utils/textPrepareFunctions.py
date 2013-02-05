@@ -31,13 +31,15 @@ Functions:
 """
 
 #import libraries
-import sys, re, nltk, os
+import sys, re, nltk, os, string
 #from nltk.tokenize import word_tokenize, wordpunct_tokenize, sent_tokenize
 from nltk.stem import WordNetLemmatizer, PorterStemmer, LancasterStemmer
+from nltk.corpus import names
 from decimal import Decimal
 from nltk.corpus import stopwords
 from databaseODP import dbQuery
 from python.utils import *
+
 
 #dummy testing data
 #not used anymore
@@ -57,49 +59,99 @@ stopWordsPercentage = []
 stemmingPercentage = []
 
 #functions
-def removePunct(text,returnType=2):
+def removePunct(text,returnType=1):
     """
     Input arguments: text (text to remove punctuation from), returnType (what to return; default string)
-    Return types: type list of words if returnType = 1, string if returnType = 2 (default)
+    Return types: type list (of words) if returnType = 1, string if returnType = 2 (default)
+    
+    Removes:
+    single letters 
+    numbers 
+    first male/female names
+    punctuation
     """
-    sentence = re.compile('\w+').findall(text)
-    #sentence = re.sub("[^a-zA-Z]", "", text)
-    #sentence = " ".join([x for x in text.split(" ") if not x.isdigit()])
-    #print "rp sentence: ",sentence
-    if returnType == 1:   
-        sentence = [x.lower() for x in sentence]              
-        return sentence
+    #data preparation
+    #print "Remove punct ",type(text),"    ",text
+    
+    if type(text) is str:
+        sentence = re.compile('\w+').findall(text)
+    elif type(text) is list:
+        sentence = text
     else:
-        sentenceReturn = ' '.join(sentence)
-        return sentenceReturn      
+        sys.exit("Error with data types. removePunct. textPrepareFunctions")
+        
+    #print type(sentence),"    ", sentence
+    #letter of the alphabet
+    allTheLetters = [x for x in string.lowercase]
+
+    if returnType == 1:   
+        sentence = [x.lower() for x in sentence]   
+        #sentence = removeNames(sentence)
+        sentence = [item for item in sentence if item not in allTheLetters]
+        sentence = [item for item in sentence if not item.isdigit()]             
+    else:
+        sentence = ' '.join(sentence)   
+    return sentence
+
+def removeNames(text):
+    """
+    Identifies names
+    Input: text, str or list
+    Output: removed first male/female names from text, type list
+    """    
+    #str to list, if needed
+    if type(text) is str:
+        text = text.split()        
+        text = [x.lower() for x in text] 
+            
+    #list of names
+    male_names = names.words('male.txt')
+    male_names = [name.lower() for name in male_names]    
+    female_names = names.words('female.txt')
+    female_names = [name.lower() for name in female_names]
+    
+    #print list of names
+    #print male_names
+    #print female_names
+    #print text
+    noNames = [item for item in text if (item not in male_names and item not in female_names)]
+    return noNames  
 
 def removeStopWords(text,mode=1):        
     """
-    Removes stop words from text, passed as variable text 
-    Node -> type of stemmer to use
+    Removes stop words from text, passed as variable text
+    text: type list
+    mode -> type of stop words list to use:
         1 = stem words from nltk.corpus.stopwords.words
         2 = stop words from file stopWords.txt (default)
         
-    Output: type list of words that are not defined as stopwords
+    Output: stemmed (Porter stemmer) list of words that are not defined as stopwords, type list
     """
+    #print "Remove stop words ",text,"    ",type(text)
+    
+    #str to list
+    """
+    if type(text) is str:
+        text = text.split()        
+        text = [x.lower() for x in text]        
+    """
+    #variables
     content = []
-    filePath = os.getcwd()
-        
+    
+    #choice of stopwords
     if mode == 1:
         stopwords = nltk.corpus.stopwords.words('english')
-        content = [w for w in text if w.lower() not in stopwords]
-        #print len(content)/len(text)
-        return content
     elif mode == 2:
         stopwordsFileOpen = open('stopWords.txt','r')
         stopwordsFile = [i.strip() for i in stopwordsFileOpen.readlines()]
-        print stopwordsFile
-        content = [w for w in text if w.lower() not in stopwordsFile]
-        stopwordsFileOpen.close()
-        #print len(content)/len(text)
-        return content
     else:
-        sys.exit("False flag -> second parameter must be \n 1, if you want to use nltk based set of stopwrods \n 2, if you want to use file based set of stopwords \n")
+        sys.exit("False flag -> second parameter must be \n 1, if you want to use nltk based set of stopwrods \n 2, if you want to use file based set of stopwords \n")        
+
+    content = removePunct(text)
+    content = [w for w in content if w.lower() not in stopwords]
+    content = removeNames(content)
+    content = [ps.stem(i) for i in content]
+    return content
 
 def tokenizersDifference(text,mode=0):
     """
@@ -153,7 +205,7 @@ def testReductionExample(sqlQuery):
         #tokens = removePunct(cleanHtml, returnType=1)
         #print "Number of tokens: ",len(tokens),"    ",tokens
         #contentNoStopWords = removeStopWords(tokens,2)
-        contentNoStopWords = removeStopWords(removePunct(cleanHtml, returnType=1),2)
+        contentNoStopWords = removeStopWords(cleanHtml)
         ratio = Decimal(float(len(contentNoStopWords))/float(len(tokens)))
         stopWordsPercentage.append(ratio)
         stpWrdPctg.append(ratio)
@@ -184,7 +236,9 @@ def main():
         1. removePunct(text,returnType=2); remove punctuation, default return type string (sentence)
         2. removeStopWords(text,mode=2)
         3. tokenizersDifference(text,mode=0)
-        4. testReductionExample(sqlQuery)
+        4. removeNames(text)
+        5. testReductionExample(sqlQuery)
+        
            anything else for exit    
     """ 
     print main.__doc__
@@ -204,9 +258,13 @@ def main():
         var1 = raw_input("Enter text to remove stop words: ")
         print tokenizersDifference(var1)   
     elif var == "4":
+        print removeNames.__doc__
+        var1 = raw_input("Text to remove names from: ")        
+        print removeNames(var1)  
+    elif var == "5":
         print testReductionExample.__doc__
-        var1 = raw_input("Insert SQL query: ")        
-        print testReductionExample(var1)      
+        var1 = raw_input("Text to remove names from: ")        
+        print testReductionExample(var1)               
     else:
         print "Hm, ", var," not supported as an options"
         sys.exit(1)

@@ -25,3 +25,13 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+
+#gensim files
+*.mm*
+*.mm
+*.csv
+*.dict
+*.tfidf*
+
+#direcotries
+python/H1/testData/
