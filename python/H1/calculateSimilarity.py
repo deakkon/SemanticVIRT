@@ -53,7 +53,7 @@ def prepareComparisonDocuments(sqlQuery):
     #prepare BoW
     for row in sqlQueryResults:
         bowTemp = removeStopWords(row[0])
-        bowTemp = [dictionary.doc2bow(text) for text in bow_documents]
+        bowTemp = [dictionary.doc2bow(text) for text in bowTemp]
         bowReturn.extend(bowTemp)            
     
     return bowReturn
@@ -62,21 +62,21 @@ def prepareComparisonDocuments(sqlQuery):
 def getFileList(folder):
     """
     List test model files in folder, with folder being 1000 or 5000
-    
-    Input: folder -> 1 = 1000 \n 2 -> 5000
-            
+    Input: folder \n -> 1 = 1000 \n 2 -> 5000 \n 3 -> all data            
     """
     if folder == "1":
         path = "testData/1000/models/*.tfidf*"
     elif folder == "2":
         path = "testData/5000/models/*.tfidf*"
+    elif folder == "3":
+         path = "fullDataPP/models/*.tfidf*"
     else:
         sys.exit("Wrong choice. calculateSimilarity.getFileList()")  
     
-    print glob.glob(path)
+    #print glob.glob(path)
     return glob.glob(path)
         
-def documentVScorpus(bowDocument):
+def returnSimilarities():
     """
     Input: 
         bowDocument -> BoW representation of document for similarity comparison
@@ -84,37 +84,65 @@ def documentVScorpus(bowDocument):
     Output:
         list of top n similar documents from tfidf model
     """
+    #variables
+    modelList = []
+    depthDescirption = []
     
-    #dict, corpus, tfidf model filenames
-    dictionaryFN = "dictionaries/"+str(comparisonModel)+"Dictionary.dict"
-    corpusFN = "corpusFiles/"+str(comparisonModel)+".mm"
-    tfidfFN = "models/"+str(comparisonModel)+".tfidf_model"
+    #get random category
+    sqlMainCategories = "select distinct(Title) from dmoz_categories where dmoz_categories.categoryDepth = 1 and dmoz_categories.filterOut = 0 and filterOut = 0 order by rand() limit 1"
+    print sqlMainCategories
+    mainCat = dbQuery(sqlMainCategories)
+    randomCat = mainCat[0]
+    print randomCat
     
-    #prepare corpus for transformation
-    #dictionary = corpora.Dictionary.load(dcitionaryFN)
-    corpus = corpora.MmCorpus(corpusFN)
-    tfidf = models.TfidfModel.load(tfidfFN)
+    #get cat debth
+    sqlCatDebth = "select max(categoryDepth) from dmoz_categories where Topic like '%/"+str(randomCat)+"/%'"
+    print sqlCatDebth
+    catDepthRow = dbQuery(sqlCatDebth)
+    catDepth = catDepthRow[0]
+    print catDepth
     
-    #prepare document; remove punctuation, stopWords, return bow format
-    processedDoc = vectorizeDocument(document)
-
-
-    #transformation of new document to existing model
-    for doc in processedDoc:
-        documentTfIDF = tfidf[doc]
-        print documentTfIDF, "\n"
+    #get random documents from database for cat; get catid and all files from dmoz_externalpages for each catid
+    for depth in range(2,catDepth):    
+        sqlRandom = "SELECT ep.Description, ep.catid FROM dmoz_externalpages ep LEFT JOIN dmoz_categories c ON ep.catid = c.catid where Topic like '%/"+str(randomCat)+"/%' and categoryDepth = "+str(depth)+" ORDER BY rand() LIMIT 1000"
+        prepareComparisonDocuments(sqlRandom)
+        print sqlRandom
+        descriptionRow = dbQuery(sqlRandom)
+        print type(descriptionRow)
+        depthDescirption.append(descriptionRow)
         
-    #similarity to trained model
-    index = similarities.MatrixSimilarity(tfidf[corpus])
-    sims = index[documentTfIDF]
-    sims = sorted(enumerate(sims), key=lambda item: -item[1])
-    print sims
+    #print depthDescirption        
+    
+    """
+    #choose comparison model
+    print "Choose model for comparison: 1 = 1000 \n 2 -> 5000 \n 3 -> all data"
+    chosenModel = raw_input(": ")
+    modelList = getFileList(chosenModel)
+    
+    #load model
+    tfidf = models.TfidfModel.load(tfidfFN)
+
+    #for each dowcument in bow representation
+    for doc in bowDocument:
+        documentTfIDF = tfidf[doc]
+        #print documentTfIDF, "\n"
+        
+        #load corpus for similarity index
+        
+        
+        #similarity to trained model
+        index = similarities.MatrixSimilarity(tfidf)
+        sims = index[documentTfIDF]
+        sims = sorted(enumerate(sims), key=lambda item: -item[1])
+        print sims
+    """
 
 def main():
     """
     Functions:
-        1. prepareComparisonDocuments(sql, useVectorModel="")
-        2. documentVScorpus(document)
+        1. prepareComparisonDocuments(sqlQuery)
+        2. getFileList(folder)
+        3. returnSimilarities()
         Anything else to stop
      """
     print main.__doc__
@@ -129,6 +157,10 @@ def main():
         print getFileList.__doc__
         var1 = raw_input("Choose test data version: ")
         getFileList(var1)
+    elif var == "3":
+        print returnSimilarities.__doc__
+        returnSimilarities()
+        
     else:
         print "Hm, ", var," not supported as an options"
         sys.exit(1)
