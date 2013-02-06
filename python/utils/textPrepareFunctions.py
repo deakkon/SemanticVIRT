@@ -31,7 +31,7 @@ Functions:
 """
 
 #import libraries
-import sys, re, nltk, os, string
+import sys, re, nltk, os, string, glob
 #from nltk.tokenize import word_tokenize, wordpunct_tokenize, sent_tokenize
 from nltk.stem import WordNetLemmatizer, PorterStemmer, LancasterStemmer
 from nltk.corpus import names

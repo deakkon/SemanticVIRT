@@ -13,11 +13,11 @@ Functions:
 2. documentVScorpus(document)
 '''
 #imports
-import logging, sys
+import logging, sys, os
 from gensim import corpora, models, similarities
 from python.utils.databaseODP import dbQuery
-from python.utils.textPrepareFunctions import removePunct,removeStopWords
-from python.utils.createVectorModel import vectorizeDocument
+from python.utils.textPrepareFunctions import removeStopWords
+
 
 
 #logging
@@ -53,12 +53,13 @@ def prepareComparisonDocuments(sqlQuery):
     #variabless
     bowTemp = []
     bowReturn = []
+    dictionary = corpora.Dictionary()
         
     #prepare BoW
     for row in sqlQueryResults:
-        bowTemp.append(removeStopWords(noPunct))
-        
-            
+        bowTemp = removeStopWords(row[0])
+        bowTemp = [dictionary.doc2bow(text) for text in bow_documents]
+        bowReturn.extend(bowTemp)            
     
     return bowReturn
     
@@ -74,6 +75,8 @@ def prepareComparisonDocuments(sqlQuery):
     vec_tfidf = tfIdfModel[bow_documents]
     #print vec_tfidf
     return vec_tfidf
+def getModelList(folder):
+    pass
         
 def documentVScorpus(bowDocument):
     """
@@ -83,10 +86,6 @@ def documentVScorpus(bowDocument):
     Output:
         list of top n similar documents from tfidf model
     """
-    
-    #inital input variable check
-    if comparisonModel == "":
-        comparisonModel = "testNewsgroups"
     
     #dict, corpus, tfidf model filenames
     dictionaryFN = "dictionaries/"+str(comparisonModel)+"Dictionary.dict"
