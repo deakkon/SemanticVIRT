@@ -13,27 +13,22 @@ Functions:
 2. documentVScorpus(document)
 '''
 #imports
-import logging, sys, os
+import logging, sys, os, glob
 from gensim import corpora, models, similarities
 from python.utils.databaseODP import dbQuery
 from python.utils.textPrepareFunctions import removeStopWords
 
-
-
 #logging
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-
-#test data
-testSentence = "Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting list. If maxsplit is nonzero, at most maxsplit splits occur, and the remainder of the string is returned as the final element of the list. (Incompatibility note: in the original Python 1.5 release, maxsplit was ignored. This has been fixed in later releases.)"
 
 #functions     
 def prepareComparisonDocuments(sqlQuery):
     """
     Input: 
-        sqlQuery to be executed       
+        sqlQuery to be executed, first parameter being textual data to convert to BoW
         
     Output parameters:
-        BoW representation of documents returned from sqlQuery
+        BoW representation of documents returned from sqlQuery, list of lists
     """
     #check sqlQuery
     if sqlQuery == "":
@@ -48,7 +43,7 @@ def prepareComparisonDocuments(sqlQuery):
         sys.exit(1)    
     
     #get data from DB
-    sqlQueryResults = dbQuery(sqlQuery)    
+    sqlQueryResults = dbQuery(sqlQuery)
     
     #variabless
     bowTemp = []
@@ -62,21 +57,24 @@ def prepareComparisonDocuments(sqlQuery):
         bowReturn.extend(bowTemp)            
     
     return bowReturn
+
+#get model files from folder
+def getFileList(folder):
+    """
+    List test model files in folder, with folder being 1000 or 5000
     
-    #create dict and bow format
-    dictionary = corpora.Dictionary(data)
-    bow_documents = [dictionary.doc2bow(text) for text in data]
+    Input: folder -> 1 = 1000 \n 2 -> 5000
+            
+    """
+    if folder == "1":
+        path = "testData/1000/models/*.tfidf*"
+    elif folder == "2":
+        path = "testData/5000/models/*.tfidf*"
+    else:
+        sys.exit("Wrong choice. calculateSimilarity.getFileList()")  
     
-    #load model specified with useVectorModel
-    tfIdfModel = models.TfidfModel.load('models/testNewsgroups.tfidf_model')
-    #print tfIdfModel
-    
-    #convert prepared documents to TfDdf space, based on saved model, and return the results
-    vec_tfidf = tfIdfModel[bow_documents]
-    #print vec_tfidf
-    return vec_tfidf
-def getModelList(folder):
-    pass
+    print glob.glob(path)
+    return glob.glob(path)
         
 def documentVScorpus(bowDocument):
     """
@@ -126,11 +124,11 @@ def main():
     if var == "1":
         print prepareComparisonDocuments.__doc__
         var1 = raw_input("Insert SQL query")
-        prepareComparisonDocuments(sql=var1)        
+        prepareComparisonDocuments(var1)        
     elif var == "2":
-        print documentVScorpus.__doc__
-        var1 = raw_input("Insert document: ")
-        documentVScorpus(var1)
+        print getFileList.__doc__
+        var1 = raw_input("Choose test data version: ")
+        getFileList(var1)
     else:
         print "Hm, ", var," not supported as an options"
         sys.exit(1)
