@@ -35,6 +35,11 @@ pip-log.txt
 
 #directories
 python/H1/testData/
+python/H1/fullDataPP
+python/H1/fullData
+=======
 python/utils//lineGraph/
 python/utils/statistics/
 python/utils/histograms/
+UML/
+.settings/

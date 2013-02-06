@@ -27,39 +27,40 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 testSentence = "Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups in the pattern are also returned as part of the resulting list. If maxsplit is nonzero, at most maxsplit splits occur, and the remainder of the string is returned as the final element of the list. (Incompatibility note: in the original Python 1.5 release, maxsplit was ignored. This has been fixed in later releases.)"
 
 #functions     
-def prepareComparisonDocuments(sqlQuery, useVectorModel=""):
+def prepareComparisonDocuments(sqlQuery):
     """
-    Input parameters: 
-    sql: textual column to be analyzed first parameter in query       
-    useVectorModel: which vector space model to use (tfidf default, model file testNewsgroups.tfidf_model)
-    
+    Input: 
+        sqlQuery to be executed       
+        
     Output parameters:
-    Returned documents from SQL query in specified vector space model (tf-idf by default)
-    
-    !!!!use utils.createCorpusAndVectorModel()
+        BoW representation of documents returned from sqlQuery
     """
-    #default data
+    #check sqlQuery
     if sqlQuery == "":
-        sys.exit("No query mate. Function getCategoryLabel")
+        sys.exit("No query mate. Function prepareComparisonDocuments")
     elif type(sqlQuery) is str:
         sqlQueryResults = dbQuery(sqlQuery)
     elif type(sqlQuery) is tuple:
         sqlQueryResults = sqlQuery
     else:
         print type(sqlQuery)
-        print "yaba daba doo createVectorModel createCorpusAndVectorModel "
+        print "yaba daba doo calculateSimilarity.prepareComparisonDocuments() "
         sys.exit(1)    
     
-    #sql result processing
-    data = []    
+    #get data from DB
+    sqlQueryResults = dbQuery(sqlQuery)    
+    
+    #variabless
+    bowTemp = []
+    bowReturn = []
+        
+    #prepare BoW
     for row in sqlQueryResults:
-        noPunct = ""
-        #dataNLTK = nltk.clean_html(row[1])
-        #soup = BeautifulSoup(row[1])
-        #print "NLTK clean_html ", dataNLTK
-        #print "BS4 ",soup.get_text()
-        noPunct = removePunct(row[0], 1)
-        data.append(removeStopWords(noPunct))
+        bowTemp.append(removeStopWords(noPunct))
+        
+            
+    
+    return bowReturn
     
     #create dict and bow format
     dictionary = corpora.Dictionary(data)
@@ -74,12 +75,13 @@ def prepareComparisonDocuments(sqlQuery, useVectorModel=""):
     #print vec_tfidf
     return vec_tfidf
         
-def documentVScorpus(document,comparisonModel=""):
+def documentVScorpus(bowDocument):
     """
-    List of documents
-    create td idf model from saved corpora on disk
-    take document and compare to model, loaded from disk
-    print document in tf idf model    
+    Input: 
+        bowDocument -> BoW representation of document for similarity comparison
+    
+    Output:
+        list of top n similar documents from tfidf model
     """
     
     #inital input variable check
