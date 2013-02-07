@@ -48,21 +48,29 @@ def prepareComparisonDocuments(sqlQuery):
     #variabless
     bowTemp = []
     bowReturn = []
-    dictionary = corpora.Dictionary()
         
     #prepare BoW
     for row in sqlQueryResults:
-        bowTemp = removeStopWords(row[0])
-        bowTemp = [dictionary.doc2bow(text) for text in bowTemp]
-        bowReturn.extend(bowTemp)            
+        print "Originalni zapis: ",row[0]
+        bowTemp = removeStopWords(row[0])        
+        bowReturn.append(bowTemp)            
     
+    #print type(bowReturn)
     return bowReturn
+
+#end stuff
+def getMainCat():
+    #get root categories to be used
+    sqlMainCategories = "select distinct(Title) from dmoz_categories where dmoz_categories.categoryDepth = 1 and dmoz_categories.filterOut = 0"
+    mainCatRS = dbQuery(sqlMainCategories)
+    mainCat = tuple([x[0] for x in mainCatRS])
+    return mainCat
 
 #get model files from folder
 def getFileList(folder):
     """
     List test model files in folder, with folder being 1000 or 5000
-    Input: folder \n -> 1 = 1000 \n 2 -> 5000 \n 3 -> all data            
+    Input: folder \n 1 -> 1000 \n 2 -> 5000 \n 3 -> all data            
     """
     if folder == "1":
         path = "testData/1000/models/*.tfidf*"
@@ -71,56 +79,125 @@ def getFileList(folder):
     elif folder == "3":
          path = "fullDataPP/models/*.tfidf*"
     else:
-        sys.exit("Wrong choice. calculateSimilarity.getFileList()")  
+        sys.exit("Wrong choice. calculateSimilarity.getFileList()")
+        
+    return [name for name in os.listdir(dir)
+                if os.path.isdir(os.path.join(dir, name))]        
     
-    #print glob.glob(path)
+    print glob.glob(path)
     return glob.glob(path)
         
-def returnSimilarities():
+def returnSimilarities(category, compareTo="1"):
     """
-    Input: 
-        bowDocument -> BoW representation of document for similarity comparison
-    
-    Output:
-        list of top n similar documents from tfidf model
+    Input:\n 
+        bowDocument -> BoW representation of document for similarity comparison\n
+        compareTo -> 1: level based comparison (default) \n
+                     2: range based comparison \n
+                     3: both comparisons \n
+    Output:\n
+        Similarity list of documents to selected tfidf model
     """
     #variables
     modelList = []
     depthDescirption = []
     
-    #get random category
-    sqlMainCategories = "select distinct(Title) from dmoz_categories where dmoz_categories.categoryDepth = 1 and dmoz_categories.filterOut = 0 and filterOut = 0 order by rand() limit 1"
-    print sqlMainCategories
-    mainCat = dbQuery(sqlMainCategories)
-    randomCat = mainCat[0]
-    print randomCat
+    #temp dict, corpus, model files for comparison; testing data during programming, 
+    #COMMENT DURING ACTUAL COMPARISON
+    path = "testData/1000/"
+    fileName = "Arts_10"    
+    dictPath = path+"dict/"+fileName+".dict"
+    corpusPath = path+"corpusFiles/"+fileName+""+".mm"
+    modelPath = path+"models/"+fileName+""+".tfidf_model"
+    labesPath = path+"labels/"+fileName+""+".csv"
+    
+    #temp test gensim data
+    corpus = corpora.MmCorpus(corpusPath)
+    dictionary = corpora.Dictionary.load(dictPath)
+    tfidfModel = models.tfidfmodel.TfidfModel.load(modelPath)
+    index = similarities.MatrixSimilarity(tfidfModel[corpus])
     
     #get cat debth
-    sqlCatDebth = "select max(categoryDepth) from dmoz_categories where Topic like '%/"+str(randomCat)+"/%'"
-    print sqlCatDebth
+    sqlCatDebth = "select max(categoryDepth) from dmoz_categories where Topic like '%/"+str(category)+"/%'"
     catDepthRow = dbQuery(sqlCatDebth)
     catDepth = catDepthRow[0]
-    print catDepth
     
     #get random documents from database for cat; get catid and all files from dmoz_externalpages for each catid
-    for depth in range(2,catDepth):    
-        sqlRandom = "SELECT ep.Description, ep.catid FROM dmoz_externalpages ep LEFT JOIN dmoz_categories c ON ep.catid = c.catid where Topic like '%/"+str(randomCat)+"/%' and categoryDepth = "+str(depth)+" ORDER BY rand() LIMIT 1000"
-        prepareComparisonDocuments(sqlRandom)
-        print sqlRandom
-        descriptionRow = dbQuery(sqlRandom)
-        print type(descriptionRow)
-        depthDescirption.append(descriptionRow)
+    for depth in range(2,4):    
+        sqlRandom = "SELECT ep.Description, ep.catid FROM dmoz_externalpages ep LEFT JOIN dmoz_categories c ON ep.catid = c.catid where Topic like '%/"+str(category)+"/%' and categoryDepth = "+str(depth)+" ORDER BY rand() LIMIT 10"
+        depthDescirption.append(prepareComparisonDocuments(sqlRandom))
+    print type(depthDescirption)
+    
+    #comparison
+    levelIndex = 2
+    
+    for level in depthDescirption:
+        """
+        #dynamicm file name
+        fileName = category+"_"+levelIndex
+        fileNameRange =  category+"_1_"+levelIndex
         
-    #print depthDescirption        
+        #load files from disk needed for comaprison and all
+        #lOAD MODELS FOR LEVEL levelIndex
+        if compareTo == "1" or compareTo == "3":
+            dictPath = path+"dict/"+fileName+".dict"
+            corpusPath = path+"corpusFiles/"+fileName+""+".mm"
+            modelPath = path+"models/"+fileName+""+".tfidf_model"
+            labesPath = path+"labels/"+fileName+""+".csv"
+        
+        #lOAD MODELS FOR LEVEL 1_levelIndex
+        if compareTo == "2" or compareTo == "3":
+            dictPathRange = path+"dict/"+fileNameRange+".dict"
+            corpusPathRange = path+"corpusFiles/"+fileNameRange+""+".mm"
+            modelPathRange = path+"models/"+fileNameRange+""+".tfidf_model"
+            labesPathRange = path+"labels/"+fileNameRange+""+".csv"
+        """
+        
+        #compare document for query to selected model
+        for dox in level:
+            if compareTo == "1" or compareTo == "3":
+                #level based comparison
+                vec_bow = dictionary.doc2bow(dox)            
+                vec_tfidf = tfidfModel[vec_bow]
+                sims = index[vec_tfidf]
+                sims = sorted(enumerate(sims), key=lambda item: -item[1])            
+                print  sims[:20]
+                #print "Obradjen zapis: ",dox
+                #print "BoW zapis: ",vec_bow
+                #print "Mapiran na model: ",vec_tfidf
+                #print "Slicnost (Prvih dvadeset: \n",sims[:20]
+            
+            #range based comparison
+            if compareTo == "2" or compareTo == "3":
+                vec_bow_range = dictionary.doc2bow(dox)            
+                vec_tfidf_range = tfidfModel[vec_bow_range]
+                sims_range = index[vec_tfidf_range]
+                sims_range = sorted(enumerate(sims_range), key=lambda item: -item[1])            
+                print  sims_range[:20]
+                #print "Obradjen zapis: ",dox
+                #print "BoW zapis: ",vec_bow_range
+                #print "Mapiran na model: ",vec_tfidf_range
+                #print "Slicnost (Prvih dvadeset: \n",sims_range[:20]
+                        
+        levelIndex += 1
+            
+
     
     """
+    
+    FLOW:
+     READ IN DICTIONARY
+         CREATE BOW OF EACH ROW
+     READ IN CORPUS
+     READ IN MODEL
+    
     #choose comparison model
     print "Choose model for comparison: 1 = 1000 \n 2 -> 5000 \n 3 -> all data"
     chosenModel = raw_input(": ")
     modelList = getFileList(chosenModel)
     
-    #load model
+    #load model, corpus, create index
     tfidf = models.TfidfModel.load(tfidfFN)
+    corpus = gensim
 
     #for each dowcument in bow representation
     for doc in bowDocument:
@@ -147,7 +224,7 @@ def main():
      """
     print main.__doc__
 
-    var = raw_input("Enter something: ")
+    var = raw_input("Choose function: ")
         
     if var == "1":
         print prepareComparisonDocuments.__doc__
@@ -159,7 +236,7 @@ def main():
         getFileList(var1)
     elif var == "3":
         print returnSimilarities.__doc__
-        returnSimilarities()
+        returnSimilarities("Arts")
         
     else:
         print "Hm, ", var," not supported as an options"
@@ -169,3 +246,4 @@ def main():
 
 if __name__ == '__main__':    
     main()
+    
