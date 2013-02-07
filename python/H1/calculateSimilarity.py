@@ -123,7 +123,7 @@ def returnSimilarities(category, compareTo="1"):
     
     #get random documents from database for cat; get catid and all files from dmoz_externalpages for each catid
     for depth in range(2,4):    
-        sqlRandom = "SELECT ep.Description, ep.catid FROM dmoz_externalpages ep LEFT JOIN dmoz_categories c ON ep.catid = c.catid where Topic like '%/"+str(category)+"/%' and categoryDepth = "+str(depth)+" ORDER BY rand() LIMIT 10"
+        sqlRandom = "SELECT ep.Description, ep.catid FROM dmoz_externalpages ep LEFT JOIN dmoz_categories c ON ep.catid = c.catid where Topic like '%/"+str(category)+"/%' and categoryDepth = "+str(depth)+" ORDER BY rand() LIMIT 1000"
         depthDescirption.append(prepareComparisonDocuments(sqlRandom))
     print type(depthDescirption)
     
@@ -139,17 +139,29 @@ def returnSimilarities(category, compareTo="1"):
         #load files from disk needed for comaprison and all
         #lOAD MODELS FOR LEVEL levelIndex
         if compareTo == "1" or compareTo == "3":
+            corpusPath = path+"corpusFiles/"+fileName+""+".mm"            
             dictPath = path+"dict/"+fileName+".dict"
-            corpusPath = path+"corpusFiles/"+fileName+""+".mm"
             modelPath = path+"models/"+fileName+""+".tfidf_model"
             labesPath = path+"labels/"+fileName+""+".csv"
+            
+            #read in HDD files and create sim index
+            corpus = corpora.MmCorpus(corpusPath)
+            dictionary = corpora.Dictionary.load(dictPath)            
+            tfidfModel = models.tfidfmodel.TfidfModel.load(modelPath)
+            index = similarities.MatrixSimilarity(tfidfModel[corpus])            
         
         #lOAD MODELS FOR LEVEL 1_levelIndex
-        if compareTo == "2" or compareTo == "3":
-            dictPathRange = path+"dict/"+fileNameRange+".dict"
+        if compareTo == "2" or compareTo == "3":            
             corpusPathRange = path+"corpusFiles/"+fileNameRange+""+".mm"
+            dictPathRange = path+"dict/"+fileNameRange+".dict"
             modelPathRange = path+"models/"+fileNameRange+""+".tfidf_model"
             labesPathRange = path+"labels/"+fileNameRange+""+".csv"
+
+            #read in HDD files and create sim index
+            corpusRange = corpora.MmCorpus(corpusPathRange)
+            dictionaryRange = corpora.Dictionary.load(dictPath)
+            tfidfModelRange = models.tfidfmodel.TfidfModel.load(modelPathRange)
+            indexRange = similarities.MatrixSimilarity(tfidfModelRange[corpusRange])              
         """
         
         #compare document for query to selected model
@@ -168,9 +180,9 @@ def returnSimilarities(category, compareTo="1"):
             
             #range based comparison
             if compareTo == "2" or compareTo == "3":
-                vec_bow_range = dictionary.doc2bow(dox)            
-                vec_tfidf_range = tfidfModel[vec_bow_range]
-                sims_range = index[vec_tfidf_range]
+                vec_bow_range = dictionaryRange.doc2bow(dox)            
+                vec_tfidf_range = tfidfModelRange[vec_bow_range]
+                sims_range = indexRange[vec_tfidf_range]
                 sims_range = sorted(enumerate(sims_range), key=lambda item: -item[1])            
                 print  sims_range[:20]
                 #print "Obradjen zapis: ",dox
@@ -179,41 +191,8 @@ def returnSimilarities(category, compareTo="1"):
                 #print "Slicnost (Prvih dvadeset: \n",sims_range[:20]
                         
         levelIndex += 1
-            
 
-    
-    """
-    
-    FLOW:
-     READ IN DICTIONARY
-         CREATE BOW OF EACH ROW
-     READ IN CORPUS
-     READ IN MODEL
-    
-    #choose comparison model
-    print "Choose model for comparison: 1 = 1000 \n 2 -> 5000 \n 3 -> all data"
-    chosenModel = raw_input(": ")
-    modelList = getFileList(chosenModel)
-    
-    #load model, corpus, create index
-    tfidf = models.TfidfModel.load(tfidfFN)
-    corpus = gensim
-
-    #for each dowcument in bow representation
-    for doc in bowDocument:
-        documentTfIDF = tfidf[doc]
-        #print documentTfIDF, "\n"
-        
-        #load corpus for similarity index
-        
-        
-        #similarity to trained model
-        index = similarities.MatrixSimilarity(tfidf)
-        sims = index[documentTfIDF]
-        sims = sorted(enumerate(sims), key=lambda item: -item[1])
-        print sims
-    """
-
+#main 
 def main():
     """
     Functions:
