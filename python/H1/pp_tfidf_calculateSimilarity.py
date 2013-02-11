@@ -201,25 +201,27 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
     
     #get random documents from database for cat; get catid and all files from dmoz_externalpages for each catid
     for depth in range(2,catDepth):
+        """
         #number of elements to return from database; if percentage != '' then % else 1000
         if percentage == "":
             limit = 1000
         elif percentage != "":
             sqlPercent = "select count(*) from dmoz_categories where Topic like '%/"+str(category)+"/%' and categoryDepth = "+str(depth)
-            numerRows = dbQuery(sqlPercent)
-            
+            #numerRows = dbQuery(sqlPercent)            
         elif percentage > 100:
-            sys.exit("Perdcentage can not be more than 100%")
-                        
+            sys.exit("Percentage can not be more than 100%")
+        """
+
         #queries
-        sqlRandom = "SELECT ep.Description, ep.catid FROM dmoz_externalpages ep LEFT JOIN dmoz_categories c ON ep.catid = c.catid where Topic like '%/"+str(category)+"/%' and categoryDepth = "+str(depth)+" and and c.filterOut = 0 and ep.filterOut = 0 ORDER BY rand() LIMIT 1000"
+        sqlRandom = "SELECT ep.Description, ep.catid FROM dmoz_externalpages ep LEFT JOIN dmoz_categories c ON ep.catid = c.catid where Topic like '%/"+str(category)+"/%' and categoryDepth = "+str(depth)+" and c.filterOut = 0 and ep.filterOut = 0 ORDER BY rand() LIMIT 1000"
+        print sqlRandom
         originalContent, originalId = prepareComparisonDocuments(sqlRandom)
         depthDescirption.append(originalContent)
         depthID.append(originalId)
         
     #temp dict, corpus, model files for comparison; testing data during programming, 
     #COMMENT DURING ACTUAL COMPARISON
-    path = "testData/1000/"
+    path = "testData/5000/"
     fileName = "Arts_10"    
     dictPath = path+"dict/"+fileName+".dict"
     corpusPath = path+"corpusFiles/"+fileName+""+".mm"
