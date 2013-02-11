@@ -145,7 +145,7 @@ def getDescriptiveStatisticsEP():
         maxDebthRS = dbQuery(sqlMaxDepth)
         #for each depth level
         for depth in range(1,maxDebthRS[0]):
-            sqlDepth = "select count(*) from dmoz_externalpages where catid in (select catid from dmoz_categories where Topic like '%/"+str(cat)+"/%' and categoryDepth="+str(depth)+")"
+            sqlDepth = "select count(*) from dmoz_externalpages where filterOut = 0 and catid in (select catid from dmoz_categories where Topic like '%/"+str(cat)+"/%' and categoryDepth="+str(depth)+" and filterOut = 0)"
             debthRowCount = dbQuery(sqlDepth)
             perCategory.append(debthRowCount[0])        
         perCategoryNumpy = numpy.asarray([perCategory[x] for x in range(1,len(perCategory))])        

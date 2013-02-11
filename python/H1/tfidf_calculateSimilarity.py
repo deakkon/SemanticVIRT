@@ -40,24 +40,23 @@ def prepareComparisonDocuments(sqlQuery):
     else:
         print type(sqlQuery)
         print "yaba daba doo calculateSimilarity.prepareComparisonDocuments() "
-        sys.exit(1)    
+        sys.exit(1)
     
-    #get data from DB
-    sqlQueryResults = dbQuery(sqlQuery)
-    
-    #variabless
-    bowTemp = []
-    bowReturn = []
+    #variables
+    originalContent = []
     originalID = []
+    depthDescirption = []
+    depthID = []    
+    modelList = []
         
     #prepare BoW
     for row in sqlQueryResults:
-        #print "Originalni zapis: ",row[0]
-        bowTemp = removeStopWords(row[0])        
-        bowReturn.append(bowTemp)
-        #original catid
-        originalID.append(row[1])
-    
+        if type(row) is not long:
+            #print "Originalni zapis: ",row[0]
+            bowTemp = removeStopWords(row[0])        
+            bowReturn.append(bowTemp)
+            #original catid
+            originalID.append(row[1])
     #print type(bowReturn)
     return (bowReturn,originalID)
 
@@ -108,13 +107,13 @@ def returnSimilarities(category, compareTo="1"):
     modelList = []
         
     #get cat debth
-    sqlCatDebth = "select max(categoryDepth) from dmoz_categories where Topic like '%/"+str(category)+"/%'"
+    sqlCatDebth = "select max(categoryDepth) from dmoz_categories where Topic like '%/"+str(category)+"/%' and filterOut = 0"
     catDepthRow = dbQuery(sqlCatDebth)
     catDepth = catDepthRow[0]
     
     #get random documents from database for cat; get catid and all files from dmoz_externalpages for each catid
     for depth in range(2,catDepth):    
-        sqlRandom = "SELECT ep.Description, ep.catid FROM dmoz_externalpages ep LEFT JOIN dmoz_categories c ON ep.catid = c.catid where Topic like '%/"+str(category)+"/%' and categoryDepth = "+str(depth)+" ORDER BY rand() LIMIT 1000"
+        sqlRandom = "SELECT ep.Description, ep.catid FROM dmoz_externalpages ep LEFT JOIN dmoz_categories c ON ep.catid = c.catid where Topic like '%/"+str(category)+"/%' and categoryDepth = "+str(depth)+" and and c.filterOut = 0 and ep.filterOut = 0 ORDER BY rand() LIMIT 1000"
         originalContent, originalId = prepareComparisonDocuments(sqlRandom)
         depthDescirption.append(originalContent)
         depthID.append(originalId)

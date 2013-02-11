@@ -131,7 +131,7 @@ def getGraphExternalPages(type=""):
                 #for each depth level
                 for depth in range(1,maxDebthRS[0]):
                     #print depth                    
-                    sqlDepth = "select count(*) from dmoz_externalpages where catid in (select catid from dmoz_categories where Topic like '%/"+str(cat)+"/%' and categoryDepth="+str(depth)+")"                    
+                    sqlDepth = "select count(*) from dmoz_externalpages where filterOut = 0 and catid in (select catid from dmoz_categories where Topic like '%/"+str(cat)+"/%' and categoryDepth="+str(depth)+" and filterOut = 0)"                    
                     debthRowCount = dbQuery(sqlDepth)
                     #print debthRowCount[0]
                     #print sqlDepth
@@ -167,7 +167,7 @@ def getGraphExternalPages(type=""):
                 #for each depth level
                 for depth in range(1,maxDebthRS[0]):
                     #print depth
-                    sqlDepth = "select count(*) from dmoz_externalpages where catid in (select catid from dmoz_categories where Topic like '%/"+str(cat)+"/%' and categoryDepth="+str(depth)+")"
+                    sqlDepth = "select count(*) from dmoz_externalpages where filterOut = 0 and catid in (select catid from dmoz_categories where Topic like '%/"+str(cat)+"/%' and categoryDepth="+str(depth)+" and filterOut = 0)"
                     debthRowCount = dbQuery(sqlDepth)
                     #print debthRowCount[0]
                     #print sqlDepth

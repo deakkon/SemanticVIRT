@@ -62,10 +62,10 @@ def removePunct(text):
     Return types: type list (of words) if returnType = 1, string if returnType = 2 (default)
     
     Removes:
-    single letters 
-    numbers 
-    first male/female names
-    punctuation
+        single letters 
+        numbers 
+        first male/female names
+        punctuation
     """
     #data preparation
     #print "Remove punct ",type(text),"    ",text
@@ -149,6 +149,10 @@ def prepareComparisonDocuments(sqlQuery):
     Output parameters:
         BoW representation of documents returned from sqlQuery, list of lists
     """
+    #variables
+    originalID = []
+    bowReturn = []    
+    
     #check sqlQuery
     if sqlQuery == "":
         sys.exit("No query mate. Function prepareComparisonDocuments")
@@ -159,51 +163,56 @@ def prepareComparisonDocuments(sqlQuery):
     else:
         print type(sqlQuery)
         print "yaba daba doo calculateSimilarity.prepareComparisonDocuments() "
-        sys.exit(1)    
-    
-    #get data from DB
-    sqlQueryResults = dbQuery(sqlQuery)
-    
-    #variabless
-    bowTemp = []
-    bowReturn = []
+        sys.exit(1)
         
     #prepare BoW
     for row in sqlQueryResults:
         #print "Originalni zapis: ",row[0]
-        bowTemp = removeStopWords(row[0])        
-        bowReturn.append(bowTemp)            
-    
+        if type(row) is not long:
+            bowReturn.append(removeStopWords(row[0]))
+            originalID.append(row[1])
     #print type(bowReturn)
-    return bowReturn
+    return (bowReturn,originalID)
 
 #get model files from folder
 
-def returnSimilarities(category, compareTo="1"):
+def returnSimilarities(category, compareTo="1", percentage = ""):
     """
     Input:\n 
         bowDocument -> BoW representation of document for similarity comparison\n
         compareTo -> 1: level based comparison (default) \n
                      2: range based comparison \n
                      3: both comparisons \n
+        percentage -> % of pages to randomly get from database for specific level for specific category
     Output:\n
         Similarity list of documents to selected tfidf model
     """
     #variables
     originalContent = []
-    originalID = []
+    originalId = []
     depthDescirption = []
     depthID = []    
-    modelList = []
-        
+    #modelList = []       
+
     #get cat debth
-    sqlCatDebth = "select max(categoryDepth) from dmoz_categories where Topic like '%/"+str(category)+"/%'"
+    sqlCatDebth = "select max(categoryDepth) from dmoz_categories where Topic like '%/"+str(category)+"/%' and filterOut = 0"
     catDepthRow = dbQuery(sqlCatDebth)
     catDepth = catDepthRow[0]
     
     #get random documents from database for cat; get catid and all files from dmoz_externalpages for each catid
-    for depth in range(2,catDepth):    
-        sqlRandom = "SELECT ep.Description, ep.catid FROM dmoz_externalpages ep LEFT JOIN dmoz_categories c ON ep.catid = c.catid where Topic like '%/"+str(category)+"/%' and categoryDepth = "+str(depth)+" ORDER BY rand() LIMIT 1000"
+    for depth in range(2,catDepth):
+        #number of elements to return from database; if percentage != '' then % else 1000
+        if percentage == "":
+            limit = 1000
+        elif percentage != "":
+            sqlPercent = "select count(*) from dmoz_categories where Topic like '%/"+str(category)+"/%' and categoryDepth = "+str(depth)
+            numerRows = dbQuery(sqlPercent)
+            
+        elif percentage > 100:
+            sys.exit("Perdcentage can not be more than 100%")
+                        
+        #queries
+        sqlRandom = "SELECT ep.Description, ep.catid FROM dmoz_externalpages ep LEFT JOIN dmoz_categories c ON ep.catid = c.catid where Topic like '%/"+str(category)+"/%' and categoryDepth = "+str(depth)+" and and c.filterOut = 0 and ep.filterOut = 0 ORDER BY rand() LIMIT 1000"
         originalContent, originalId = prepareComparisonDocuments(sqlRandom)
         depthDescirption.append(originalContent)
         depthID.append(originalId)
@@ -244,7 +253,7 @@ def returnSimilarities(category, compareTo="1"):
             corpus = gensim.corpora.MmCorpus(corpusPath)
             dictionary = gensim.corpora.Dictionary.load(dictPath)            
             tfidfModel = gensim.models.tfidfmodel.TfidfModel.load(modelPath)
-            index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus])
+            index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus],num_features=len(dictionary))
             
             #create csv
             csvResults = csv.writer(open(resultsSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
@@ -262,7 +271,7 @@ def returnSimilarities(category, compareTo="1"):
             corpusRange = gensim.corpora.MmCorpus(corpusPathRange)
             dictionaryRange = gensim.corpora.Dictionary.load(dictPathRange)
             tfidfModelRange = gensim.models.tfidfmodel.TfidfModel.load(modelPathRange)
-            indexRange = gensim.similarities.MatrixSimilarity(tfidfModelRange[corpusRange])
+            indexRange = gensim.similarities.MatrixSimilarity(tfidfModelRange[corpusRange],num_features=len(dictionaryRange))
 
             #create csv
             csvResultsRange = csv.writer(open(resultsRangeSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)

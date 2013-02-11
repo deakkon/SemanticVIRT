@@ -24,7 +24,7 @@ def parentChildDepthNumber_dmoz_categories(a,b):
         errorMessage("First parameter has to be smaller than the second")
         sys.exit(1)
     else: 
-        sql = "select count(*) from dmoz_categories where categoryDepth >= '%s' and categoryDepth <= '%s' and filterOut != '-1'" % (a,b)
+        sql = "select count(*) from dmoz_categories where categoryDepth >= '%s' and categoryDepth <= '%s' and filterOut = '0'" % (a,b)
         res = dbQuery(sql)
     return res      
         
@@ -43,7 +43,7 @@ def parentNodesNumber_dmoz_categories(nodeCatId):
         depth = -1
         level = 0
         while depth != 0 and nodeCatId != 1:              
-            sqlCount = "select fatherid from dmoz_categories where catid = '%s' and filterOut != '-1'" %nodeCatId
+            sqlCount = "select fatherid from dmoz_categories where catid = '%s' and filterOut = '0'" %nodeCatId
             res = dbQuery(sqlCount)
             depth = len(res)
             nodeCatId = res[0]
@@ -74,7 +74,7 @@ def parentNodesList_dmoz_categories(topicID):
         while depth != 0 and topicID > 1:             
             #get fatherid untill you get to root
             #print topicID
-            sqlCount = "select fatherid,categoryDepth from dmoz_categories where catid = '%s' and filterOut != '-1'" %topicID
+            sqlCount = "select fatherid,categoryDepth from dmoz_categories where catid = '%s' and filterOut = '0'" %topicID
             #print sqlCount
             res = dbQuery(sqlCount)
             depth = len(res)
@@ -83,7 +83,7 @@ def parentNodesList_dmoz_categories(topicID):
             level += 1
             
             #get all categories where father = fatherid (node)
-            sqlChildren = "select catid from dmoz_categories where fatherid = '%s'  and filterOut != '-1'" %topicID
+            sqlChildren = "select catid from dmoz_categories where fatherid = '%s'  and filterOut = '0'" %topicID
             #print sqlChildren
             resChildren = dbQuery(sqlChildren)
             #print "lista:",list(resChildren)
@@ -121,7 +121,7 @@ def returnChildrenNodes(topic, a, b):
         errorMessage("First parameter has to be smaller than the second")
         sys.exit()
     else:     
-        sql = "select * from dmoz_categories where Topic like '%/"+str(topic)+"/%' and categoryDepth >= '"+str(a)+"' and categoryDepth <= '"+str(b)+"' and filterOut != '-1'"    
+        sql = "select * from dmoz_categories where Topic like '%/"+str(topic)+"/%' and categoryDepth >= '"+str(a)+"' and categoryDepth <= '"+str(b)+"' and filterOut = '0'"    
         res = dbQuery(sql)
         #print res.rowcount
         return res
@@ -136,7 +136,7 @@ def depthTopicUpdate():
     seq = []
     
     #db
-    sql = "select id,Topic, (length(Topic)-length(replace(Topic,'/','')))/length('/') as nR, fatherid, categoryDepth FROM dmoz_categories n where filterOut=0"
+    sql = "select id,Topic, (length(Topic)-length(replace(Topic,'/','')))/length('/') as nR, fatherid, categoryDepth FROM dmoz_categories where filterOut=0"
     resultRows = dbQuery(sql)
     #print resultRows
 
@@ -148,7 +148,7 @@ def depthTopicUpdate():
         print row[0],"    ",row[1],"                                                                ",int(i[2])
         """
         
-        sql = "update dmoz_categories set categoryDepth = '%s' WHERE id = '%s' and filterOut != '-1'" % (int(row[2]),int(row[0]))
+        sql = "update dmoz_categories set categoryDepth = '%s' WHERE id = '%s' and filterOut = '0'" % (int(row[2]),int(row[0]))
         dbQuery(sql)
 
 def main():
