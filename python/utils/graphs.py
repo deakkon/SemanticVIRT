@@ -1,4 +1,4 @@
-import  matplotlib, sys, numpy, datetime
+import  matplotlib, sys, numpy, datetime, os
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
@@ -96,12 +96,12 @@ def getGraphCategories(type=""):
                 plt.plot(x_series, topic, label=categories[i])
                 i += 1
             
-            plt.xlabel("Depth level")
-            plt.ylabel("Number of labels")
-            plt.title("Number of labels per depth level")
+            plt.xlabel("Category depth")
+            plt.ylabel("Number of (sub)categories")
+            plt.title("Number of categories per level")
             #plt.ylim(0, 20000) 
             plt.legend(loc="upper right")
-            fileName = "lineGraph/"+datetime.datetime.now().ctime()+"LineGraph.png"
+            fileName = "lineGraph/CAT_"+datetime.datetime.now().ctime()+"LineGraph.png"
             plt.savefig(fileName)
     
 
@@ -153,7 +153,11 @@ def getGraphExternalPages(type=""):
                 plt.bar(pos, frequencies, width, color='r')
                 #filename
                 fn = "histograms/"+cat+"_EP_"+datetime.datetime.now().ctime()
-                #save graph        
+                #save graph
+                #ch3ck if dir exists
+                #if not os.path.isdir('/lineGraph/'):
+                    #os.mkdir('/lineGraph/')
+                    
                 plt.savefig(fn)
         
         #line graph
@@ -195,11 +199,16 @@ def getGraphExternalPages(type=""):
                 plt.plot(x_series, topic, label=categories[i])
                 i += 1
             
-            plt.xlabel("Depth level")
-            plt.ylabel("Number of labels")
-            plt.title("Number of labels per depth level")
+            plt.xlabel("External pages level")
+            plt.ylabel("Number of external pages")
+            plt.title("Number of external pages per level")
             #plt.ylim(0, 20000) 
             plt.legend(loc="upper right")
+            
+            #ch3ck if dir exists
+            #if not os.path.isdir('/lineGraph/'):
+                #os.mkdir('/lineGraph/')
+            #save to dir
             fileName = "lineGraph/EP_"+datetime.datetime.now().ctime()+"LineGraph.png"
             plt.savefig(fileName)
     
