@@ -214,7 +214,7 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
 
         #queries
         sqlRandom = "SELECT ep.Description, ep.catid FROM dmoz_externalpages ep LEFT JOIN dmoz_categories c ON ep.catid = c.catid where Topic like '%/"+str(category)+"/%' and categoryDepth = "+str(depth)+" and c.filterOut = 0 and ep.filterOut = 0 ORDER BY rand() LIMIT 1000"
-        print sqlRandom
+        #print sqlRandom
         originalContent, originalId = prepareComparisonDocuments(sqlRandom)
         depthDescirption.append(originalContent)
         depthID.append(originalId)
@@ -260,10 +260,10 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
             
             #number of similarity records for further processing
             if percentage != "":
-                sample = (percentage * len(dictionary))/100
+                sample = int((percentage * len(dictionary))/100)
             elif percentage == "":
                 percentage = 0.05
-                sample = (percentage * len(dictionary))/100           
+                sample = int((percentage * len(dictionary))/100)           
             
             #create csv
             csvResults = csv.writer(open(resultsSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
@@ -285,10 +285,10 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
             
             #number of similarity records for further processing
             if percentage != "":
-                sampleRange = (percentage * len(dictionaryRange))/100
+                sampleRange = int((percentage * len(dictionaryRange))/100)
             elif percentage == "":
                 percentage = 0.05
-                sampleRange = (percentage * len(dictionaryRange))/100              
+                sampleRange = int((percentage * len(dictionaryRange))/100)
 
             #create csv
             csvResultsRange = csv.writer(open(resultsRangeSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
