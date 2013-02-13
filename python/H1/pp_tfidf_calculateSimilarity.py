@@ -228,19 +228,13 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
     corpusPath = path+"corpusFiles/"+fileName+""+".mm"
     modelPath = path+"models/"+fileName+""+".tfidf_model"
     labesPath = path+"labels/"+fileName+""+".csv"
-    """
+
     #temp test gensim data
     corpus = gensim.corpora.MmCorpus(corpusPath)
     dictionary = gensim.corpora.Dictionary.load(dictPath)
     tfidfModel = gensim.models.tfidfmodel.TfidfModel.load(modelPath)
     index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus])
-    
-    #number of similarity records for further processing
-    if percentage != "":
-        sample = (percentage * len(dictionary))/100
-    elif percentage == "":
-        sample = 20
-
+    """    
     levelIndex = 2
     
     for levelC, levelID in itertools.izip(depthDescirption,depthID):
@@ -264,6 +258,13 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
             tfidfModel = gensim.models.tfidfmodel.TfidfModel.load(modelPath)
             index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus],num_features=len(dictionary))
             
+            #number of similarity records for further processing
+            if percentage != "":
+                sample = (percentage * len(dictionary))/100
+            elif percentage == "":
+                percentage = 0.05
+                sample = (percentage * len(dictionary))/100           
+            
             #create csv
             csvResults = csv.writer(open(resultsSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
             csvResults.writerow(('category','level','catidEP','matrixID','similarity'))
@@ -281,6 +282,13 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
             dictionaryRange = gensim.corpora.Dictionary.load(dictPathRange)
             tfidfModelRange = gensim.models.tfidfmodel.TfidfModel.load(modelPathRange)
             indexRange = gensim.similarities.MatrixSimilarity(tfidfModelRange[corpusRange],num_features=len(dictionaryRange))
+            
+            #number of similarity records for further processing
+            if percentage != "":
+                sampleRange = (percentage * len(dictionaryRange))/100
+            elif percentage == "":
+                percentage = 0.05
+                sampleRange = (percentage * len(dictionaryRange))/100              
 
             #create csv
             csvResultsRange = csv.writer(open(resultsRangeSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
@@ -323,7 +331,7 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
                 sims_range = sorted(enumerate(sims_range), key=lambda item: -item[1])
                 sims_range.save(path+"sim/"+fileNameRange)
                 #print  sims_range[:20]
-                for sim in sims[:sample]:
+                for sim in sims_range[:sampleRange]:
                     writeData = []
                     #print sim[0], sim[1]
                     writeData.append(category)
@@ -366,7 +374,7 @@ def runParallel():
     jobs = []
     
     for index in inputs:
-        print index
+        #print index
         jobs.append(job_server.submit(returnSimilarities, (index,), depfuncs = (dbQuery, errorMessage, removePunct, removeStopWords, getMainCat, prepareComparisonDocuments,), modules = ("logging", "sys", "os", "glob", "itertools", "csv","gensim.corpora","gensim.models","gensim.similarities","pp", "time", "MySQLdb","nltk","re","nltk.corpus","nltk.stem","string",)))    
     for job in jobs:
         result = job()
@@ -416,4 +424,3 @@ def main():
         
 if __name__ == '__main__':    
     main()
-    
