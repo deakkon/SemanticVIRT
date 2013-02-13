@@ -8,8 +8,8 @@ Faculty of Organization and Informatics
 University of Zagreb
 
 Functions:
-    1. createTFIDFfromODP_dmoz_descriptions(topic="",depthStart="", depthEnd="")
-    2. createTrainingData()
+    1. createData(category)
+    2. runParallel()
 '''
 #imports
 import math, sys, time, csv, os, string, pp, re, gensim, MySQLdb, nltk.corpus, nltk.stem
@@ -24,7 +24,6 @@ from nltk.stem import WordNetLemmatizer, PorterStemmer, LancasterStemmer
 wnl = nltk.stem.WordNetLemmatizer()
 lst = nltk.stem.LancasterStemmer()
 ps = nltk.stem.PorterStemmer()
-
 
 #Database stuff    
 def dbQuery(sql):
@@ -55,12 +54,12 @@ def dbQuery(sql):
         print "Error dbQuery %d: %s" % (e.args[0],e.args[1])
         sys.exit(1)
 
-
 def errorMessage(msg):
     print msg
     sys.exit(1)
 
-#prepare stuff
+#prepare functions
+
 def removePunct(text):
     """
     Input arguments: text (text to remove punctuation from), returnType (what to return; default string)
@@ -100,7 +99,6 @@ def removePunct(text):
     #print "punct ",sentence
     return sentence
 
-
 def removeStopWords(text, mode=1):        
     """
     Removes stop words from text, passed as variable text
@@ -139,6 +137,7 @@ def removeStopWords(text, mode=1):
     return content
 
 #vectorization stuff
+
 def createCorpusAndVectorModel(data, fileName ="", outputFormat=1, modelFormat=1):
     """
     Input parameters: sqlQueryResults="", outputFormat=1, modelFormat=1, fileName =""
@@ -164,7 +163,7 @@ def createCorpusAndVectorModel(data, fileName ="", outputFormat=1, modelFormat=1
     
     #creating dictionary and corpus  files in different matrix formats    
     bow_documents = [dictionary.doc2bow(text) for text in data]
-    print "BoW", bow_documents
+    #print "BoW", bow_documents
 
     #create corpora data for use in creating a vector model representation for furher use
     if outputFormat == 1:
@@ -199,8 +198,7 @@ def createCorpusAndVectorModel(data, fileName ="", outputFormat=1, modelFormat=1
         lda.save(saveFN)
     else:
         errorMessage("createTrainingModel: Something went wrong with the type identificator")
-    
-        
+            
 def getCategoryLabel(categoryLabels,fileName):
     """
     categoryLabels -> list of labels to write to disk
@@ -226,6 +224,7 @@ def getCategoryLabel(categoryLabels,fileName):
 
 
 #end stuff
+
 def getMainCat():
     #get root categories to be used
     sqlMainCategories = "select distinct(Title) from dmoz_categories where dmoz_categories.categoryDepth = 1 and dmoz_categories.filterOut = 0"
@@ -265,7 +264,7 @@ def createData(category):
         dataCategoryLabel = []
         
         #dynamic SQL queries
-        sqlCategoryLevel = "select Description,Title,link from dmoz_externalpages where catid in (select catid from dmoz_categories where Topic like '%/"+category+"/%' and categoryDepth = "+str(indeks)+" and filterOut = 0)"            
+        sqlCategoryLevel = "select Description,Title,link from dmoz_externalpages where filterOut = 0 and catid in (select catid from dmoz_categories where Topic like '%/"+category+"/%' and categoryDepth = "+str(indeks)+" and filterOut = 0)"            
         sqlCategoryLabel = "select distinct(Title) from dmoz_categories where Topic like '%/"+category+"/%' and categoryDepth = "+str(indeks)+ " and filterOut = 0"
         #print sqlCategoryLevel
         #print sqlCategoryLabel
@@ -304,36 +303,68 @@ def createData(category):
         
         #increment counter indeks by 1        
         indeks += 1
+        
+def runParallel():
+    """
+    Run comparison on n processors
+    """
+    # tuple of all parallel python servers to connect with
+    ppservers = ()
+    #ppservers = ("10.0.0.1",)
+    
+    if len(sys.argv) > 1:
+        ncpus = int(sys.argv[1])
+        # Creates jobserver with ncpus workers
+        job_server = pp.Server(ncpus, ppservers=ppservers)
+    else:
+        # Creates jobserver with automatically detected number of workers
+        job_server = pp.Server(ppservers=ppservers)
+    
+    print "Starting pp with", job_server.get_ncpus(), "workers"
+    start_time = time.time()
+    
+    # The following submits a job for each category
+    inputs = getMainCat()
+    #inputs =("Arts",)
+    
+    jobs = []
+    
+    for index in inputs:
+        #print index
+        jobs.append(job_server.submit(createData, (index,), depfuncs = (dbQuery,createCorpusAndVectorModel,getCategoryLabel,removeStopWords,removePunct,dbQuery,errorMessage,), modules = ("math", "sys", "time", "csv", "os", "string", "pp","gensim","MySQLdb","gensim.corpora","gensim.models","re","nltk.corpus","nltk.stem",)))
+    
+    for job in jobs:
+        result = job()
+        if result:
+            break
+    #prints
+    job_server.print_stats()
+    print "Time elapsed: ", time.time() - start_time, "s"
+    
+#main UI
 
-# tuple of all parallel python servers to connect with
-ppservers = ()
-#ppservers = ("10.0.0.1",)
+def main():
+    """
+    Functions:
+        1. createData(category)
+        2. runParallel()
+            Anything else to stop
+     """
+    print main.__doc__
 
-if len(sys.argv) > 1:
-    ncpus = int(sys.argv[1])
-    # Creates jobserver with ncpus workers
-    job_server = pp.Server(ncpus, ppservers=ppservers)
-else:
-    # Creates jobserver with automatically detected number of workers
-    job_server = pp.Server(ppservers=ppservers)
-
-print "Starting pp with", job_server.get_ncpus(), "workers"
-start_time = time.time()
-
-# The following submits a job for each category
-inputs = getMainCat()
-#inputs =("Arts",)
-
-jobs = []
-
-for index in inputs:
-    print index
-    jobs.append(job_server.submit(createData, (index,), depfuncs = (dbQuery,createCorpusAndVectorModel,getCategoryLabel,removeStopWords,removePunct,dbQuery,errorMessage,), modules = ("math", "sys", "time", "csv", "os", "string", "pp","gensim","MySQLdb","gensim.corpora","gensim.models","re","nltk.corpus","nltk.stem",)))
-
-for job in jobs:
-    result = job()
-    if result:
-        break
-#prints
-job_server.print_stats()
-print "Time elapsed: ", time.time() - start_time, "s"
+    var = raw_input("Choose function: ")
+        
+    if var == "1":
+        print createData.__doc__
+        createData("Arts")    
+    if var == "2":
+        print runParallel.__doc__
+        runParallel()
+          
+    else:
+        print "Hm, ", var," not supported as an options"
+        sys.exit(1)
+    sys.exit(0)
+        
+if __name__ == '__main__':    
+    main()    

@@ -89,7 +89,7 @@ def getFileList(folder):
     print glob.glob(path)
     return glob.glob(path)
         
-def returnSimilarities(category, compareTo="1"):
+def returnSimilarities(category, compareTo="1", limit="", dataSet="", percentage = ""):
     """
     Input:\n 
         bowDocument -> BoW representation of document for similarity comparison\n
@@ -105,6 +105,17 @@ def returnSimilarities(category, compareTo="1"):
     depthDescirption = []
     depthID = []    
     modelList = []
+    
+    #set limit for documents
+    if limit == "":
+        limit = "1000"
+        
+    #set data set to evaluate against
+    if dataSet=="":
+        dataSet = "1000";
+
+    #define path
+    path = "testData/"+str(dataSet)+"/"
         
     #get cat debth
     sqlCatDebth = "select max(categoryDepth) from dmoz_categories where Topic like '%/"+str(category)+"/%' and filterOut = 0"
@@ -113,14 +124,15 @@ def returnSimilarities(category, compareTo="1"):
     
     #get random documents from database for cat; get catid and all files from dmoz_externalpages for each catid
     for depth in range(2,catDepth):    
-        sqlRandom = "SELECT ep.Description, ep.catid FROM dmoz_externalpages ep LEFT JOIN dmoz_categories c ON ep.catid = c.catid where Topic like '%/"+str(category)+"/%' and categoryDepth = "+str(depth)+" and and c.filterOut = 0 and ep.filterOut = 0 ORDER BY rand() LIMIT 1000"
+        sqlRandom = "SELECT ep.Description, ep.catid FROM dmoz_externalpages ep LEFT JOIN dmoz_categories c ON ep.catid = c.catid where Topic like '%/"+str(category)+"/%' and categoryDepth = "+str(depth)+" and and c.filterOut = 0 and ep.filterOut = 0 ORDER BY rand() LIMIT "+str(limit)
         originalContent, originalId = prepareComparisonDocuments(sqlRandom)
         depthDescirption.append(originalContent)
         depthID.append(originalId)
         
+    
+    """
     #temp dict, corpus, model files for comparison; testing data during programming, 
-    #COMMENT DURING ACTUAL COMPARISON
-    path = "testData/1000/"
+    #COMMENT DURING ACTUAL COMPARISON    
     fileName = "Arts_10"    
     dictPath = path+"dict/"+fileName+".dict"
     corpusPath = path+"corpusFiles/"+fileName+""+".mm"
@@ -132,11 +144,16 @@ def returnSimilarities(category, compareTo="1"):
     dictionary = corpora.Dictionary.load(dictPath)
     tfidfModel = models.tfidfmodel.TfidfModel.load(modelPath)
     index = similarities.MatrixSimilarity(tfidfModel[corpus])    
-
+    """
+    
     levelIndex = 2
     
     for levelC, levelID in itertools.izip(depthDescirption,depthID):
                 
+        #level similartiy indexes list
+        levelSimList = []
+        levelFirstSimList = []
+        
         #dynamic file name
         fileName = category+"_"+str(levelIndex)
         fileNameRange =  category+"_1_"+str(levelIndex)
@@ -156,9 +173,16 @@ def returnSimilarities(category, compareTo="1"):
             tfidfModel = models.tfidfmodel.TfidfModel.load(modelPath)
             index = similarities.MatrixSimilarity(tfidfModel[corpus])
             
+            #number of similarity records for further processing
+            if percentage != "":
+                sample = int((percentage * len(dictionary))/100)
+            elif percentage == "":
+                sample = 20            
+            
+            
             #create csv
-            csvResults = csv.writer(open(resultsSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
-            csvResults.writerow(('category','level','catidEP','matrixID','similarity'))
+            #csvResults = csv.writer(open(resultsSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
+            #csvResults.writerow(('category','level','catidEP','matrixID','similarity'))
             
         #lOAD MODELS FOR LEVEL 1_levelIndex
         if compareTo == "2" or compareTo == "3":            
@@ -173,10 +197,16 @@ def returnSimilarities(category, compareTo="1"):
             dictionaryRange = corpora.Dictionary.load(dictPathRange)
             tfidfModelRange = models.tfidfmodel.TfidfModel.load(modelPathRange)
             indexRange = similarities.MatrixSimilarity(tfidfModelRange[corpusRange])
-
+            
+            #number of similarity records for further processing
+            if percentage != "":
+                sampleRange = int((percentage * len(dictionaryRange))/100)
+            elif percentage == "":
+                sampleRange = 20
+            
             #create csv
-            csvResultsRange = csv.writer(open(resultsRangeSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
-            csvResultsRange.writerow(('category','level','catidEP','matrixID','similarity'))
+            #csvResultsRange = csv.writer(open(resultsRangeSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
+            #csvResultsRange.writerow(('category','level','catidEP','matrixID','similarity'))
         #print "##############################"
         
         #CONTENT PART; CALCULATE SIMILARTIY BASED ON TFIDF
@@ -190,13 +220,13 @@ def returnSimilarities(category, compareTo="1"):
                 vec_tfidf = tfidfModel[vec_bow]
                 sims = index[vec_tfidf]
                 sims = sorted(enumerate(sims), key=lambda item: -item[1])            
-                #print  sims[:20]
+                print  sims[:sample]
                 #print "Obradjen zapis: ",dox
                 #print "BoW zapis: ",vec_bow
                 #print "Mapiran na model: ",vec_tfidf
-                #print "Slicnost (Prvih dvadeset: \n",sims[:20]
+                print "Slicnost (Prvih dvadeset: \n",sims[:20]
                 #WRITE SIMLARITY RESULTS TO CSV
-                for sim in sims:
+                for sim in sims[:sample]:
                     writeData = []
                     #print sim[0], sim[1]
                     writeData.append(category)
@@ -204,7 +234,8 @@ def returnSimilarities(category, compareTo="1"):
                     writeData.append(idLevel)
                     writeData.append(sim[0])
                     writeData.append(sim[1])
-                    csvResults.writerow(writeData) 
+                    levelSimList.append(writeData)
+                    #csvResults.writerow(writeData) 
             
             #range based comparison
             if compareTo == "2" or compareTo == "3":
@@ -214,21 +245,17 @@ def returnSimilarities(category, compareTo="1"):
                 sims_range = indexRange[vec_tfidf_range]
                 sims_range = sorted(enumerate(sims_range), key=lambda item: -item[1])
                 #sims_range.save(path+"sim/"+fileNameRange)
-                #print  sims_range[:20]
-                for sim in sims:
+                print  sims_range[:sampleRange]
+                for sim in sims_range[:sampleRange]:
                     writeData = []
-                    #print sim[0], sim[1]
+                    #print sim[0], sim[1]                    
                     writeData.append(category)
                     writeData.append(levelIndex)
                     writeData.append(idLevel)
                     writeData.append(sim[0])
                     writeData.append(sim[1])
-                    csvResults.writerow(writeData)                    
-                #print "Obradjen zapis: ",dox
-                #print "BoW zapis: ",vec_bow_range
-                #print "Mapiran na model: ",vec_tfidf_range
-                #print "Slicnost (Prvih dvadeset: \n",sims_range[:20]
-                #WRITE SIMLARITY RESULTS TO CSV
+                    #csvResults.writerow(writeData)
+                    levelSimList.append(writeData)
 
         levelIndex += 1
 

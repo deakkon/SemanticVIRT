@@ -232,7 +232,13 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
     corpus = gensim.corpora.MmCorpus(corpusPath)
     dictionary = gensim.corpora.Dictionary.load(dictPath)
     tfidfModel = gensim.models.tfidfmodel.TfidfModel.load(modelPath)
-    index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus])    
+    index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus])
+    
+    #number of similarity records for further processing
+    if percentage != "":
+        sample = (percentage * len(dictionary))/100
+    elif percentage == "":
+        sample = 20
 
     levelIndex = 2
     
@@ -297,7 +303,7 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
                 #print "Mapiran na model: ",vec_tfidf
                 #print "Slicnost (Prvih dvadeset: \n",sims[:20]
                 #WRITE SIMLARITY RESULTS TO CSV
-                for sim in sims[:20]:
+                for sim in sims[:sample]:
                     writeData = []
                     #print sim[0], sim[1]
                     writeData.append(category)
@@ -305,7 +311,7 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
                     writeData.append(idLevel)
                     writeData.append(sim[0])
                     writeData.append(sim[1])
-                    csvResults.writerow(writeData) 
+                    csvResults.writerow(writeData)
             
             #range based comparison
             if compareTo == "2" or compareTo == "3":
@@ -316,7 +322,7 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
                 sims_range = sorted(enumerate(sims_range), key=lambda item: -item[1])
                 sims_range.save(path+"sim/"+fileNameRange)
                 #print  sims_range[:20]
-                for sim in sims[:20]:
+                for sim in sims[:sample]:
                     writeData = []
                     #print sim[0], sim[1]
                     writeData.append(category)
