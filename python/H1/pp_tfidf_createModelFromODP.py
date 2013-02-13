@@ -152,13 +152,16 @@ def createCorpusAndVectorModel(data, fileName ="", outputFormat=1, modelFormat=1
                                         3 -> lda                                                                                                                            
     Output data: saved dictionary, corpus and model files of chosen format to disk, to respected directories
     """   
+    #define where to sign models
+    path = "testData/fullData/"
+    
     #create file names to save
     if fileName == "":
         fileName = "defaultCollection"
     
     #create dictionary
     dictionary = gensim.corpora.Dictionary(data)
-    dictFN = "fullDataPP/dict/"+fileName+".dict"
+    dictFN = path+"dict/"+fileName+".dict"
     dictionary.save(dictFN)
     
     #creating dictionary and corpus  files in different matrix formats    
@@ -166,35 +169,37 @@ def createCorpusAndVectorModel(data, fileName ="", outputFormat=1, modelFormat=1
     #print "BoW", bow_documents
 
     #create corpora data for use in creating a vector model representation for furher use
+    corpora = path+"corpusFiles/"
     if outputFormat == 1:
-        saveFN = "fullDataPP/corpusFiles/"+fileName+".mm"
+        saveFN = corpora+fileName+".mm"
         gensim.corpora.MmCorpus.serialize(saveFN, bow_documents)
     elif outputFormat == 2:
-        saveFN = "fullDataPP/corpusFiles/"+fileName+".svmlight"
+        saveFN = corpora+fileName+".svmlight"
         gensim.corpora.SvmLightCorpus.serialize(saveFN, bow_documents)
     elif outputFormat == 3:
-        saveFN = "fullDataPP/corpusFiles/"+fileName+".lda-c"
+        saveFN = corpora+fileName+".lda-c"
         gensim.corpora.BleiCorpus.serialize(saveFN, bow_documents)
     elif outputFormat == 4:
         gensim.corpora.LowCorpus.serialize(saveFN, bow_documents)
-        saveFN = fileName+".low" 
+        saveFN = corpora+fileName+".low" 
     else:
         errorMessage("Something went wrong with the type identificator")
     
     #save model to disk -> model of all documents that are going to be compared against
+    model = path+"models/"
     if modelFormat == 1:
         tfidf = gensim.models.TfidfModel(bow_documents)
-        saveFN = "fullDataPP/models/"+fileName+".tfidf_model"
+        saveFN = model+fileName+".tfidf_model"
         tfidf.save(saveFN)
     elif modelFormat == 2:
         #lsi
         lsi = gensim.models.LsiModel(bow_documents)
-        saveFN = "fullDataPP/models/"+fileName+".lsi"
+        saveFN = model+fileName+".lsi"
         lsi.save(saveFN)
     elif modelFormat == 3:
         #lsi
         lda = gensim.models.LdaModel(bow_documents)
-        saveFN = "fullDataPP/models/"+fileName+".lda"
+        saveFN = model+fileName+".lda"
         lda.save(saveFN)
     else:
         errorMessage("createTrainingModel: Something went wrong with the type identificator")

@@ -221,13 +221,14 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
         
     #temp dict, corpus, model files for comparison; testing data during programming, 
     #COMMENT DURING ACTUAL COMPARISON
-    path = "testData/5000/"
+    path = "testData/1000/"
+    """
     fileName = "Arts_10"    
     dictPath = path+"dict/"+fileName+".dict"
     corpusPath = path+"corpusFiles/"+fileName+""+".mm"
     modelPath = path+"models/"+fileName+""+".tfidf_model"
     labesPath = path+"labels/"+fileName+""+".csv"
-    
+    """
     #temp test gensim data
     corpus = gensim.corpora.MmCorpus(corpusPath)
     dictionary = gensim.corpora.Dictionary.load(dictPath)
