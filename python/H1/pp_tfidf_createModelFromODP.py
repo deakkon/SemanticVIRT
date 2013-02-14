@@ -71,9 +71,7 @@ def removePunct(text):
     first male/female names
     punctuation
     """
-    #data preparation
-    #print "Remove punct ",type(text),"    ",text
-    
+    #data preparation   
     if type(text) is str:
         sentence = re.compile('\w+').findall(text)
     elif type(text) is list:

@@ -176,7 +176,7 @@ def prepareComparisonDocuments(sqlQuery):
 
 #get model files from folder
 
-def returnSimilarities(category, compareTo="1", percentage = ""):
+def returnSimilarities(category, compareTo="3", percentage = ""):
     """
     Input:\n 
         bowDocument -> BoW representation of document for similarity comparison\n
@@ -221,7 +221,7 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
         
     #temp dict, corpus, model files for comparison; testing data during programming, 
     #COMMENT DURING ACTUAL COMPARISON
-    path = "testData/1000/"
+    path = "testData/fullData/"
     """
     fileName = "Arts_10"    
     dictPath = path+"dict/"+fileName+".dict"
@@ -246,11 +246,11 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
         #load files from disk needed for similarity indexing
         #lOAD MODELS FOR LEVEL levelIndex
         if compareTo == "1" or compareTo == "3":
+            
             corpusPath = path+"corpusFiles/"+fileName+""+".mm"            
             dictPath = path+"dict/"+fileName+".dict"
             modelPath = path+"models/"+fileName+""+".tfidf_model"
             labesPath = path+"labels/"+fileName+""+".csv"
-            resultsSavePath = path+"sim/"+fileName+".csv"
             
             #read in HDD files and create sim index
             corpus = gensim.corpora.MmCorpus(corpusPath)
@@ -263,19 +263,21 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
                 sample = int((percentage * len(dictionary))/100)
             elif percentage == "":
                 percentage = 0.05
-                sample = int((percentage * len(dictionary))/100)           
+                sample = int((percentage * len(dictionary))/100)
             
             #create csv
+            resultsSavePath = path+"sim/"+str(sample)+"_"+fileName+".csv"            
             csvResults = csv.writer(open(resultsSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
             csvResults.writerow(('category','level','catidEP','matrixID','similarity'))
             
         #lOAD MODELS FOR LEVEL 1_levelIndex
         if compareTo == "2" or compareTo == "3":            
+
+            #paths to files            
             corpusPathRange = path+"corpusFiles/"+fileNameRange+""+".mm"
             dictPathRange = path+"dict/"+fileNameRange+".dict"
             modelPathRange = path+"models/"+fileNameRange+""+".tfidf_model"
             labesPathRange = path+"labels/"+fileNameRange+""+".csv"
-            resultsRangeSavePath = path+"sim/"+fileNameRange+".csv"
 
             #read in HDD files and create sim index
             corpusRange = gensim.corpora.MmCorpus(corpusPathRange)
@@ -288,9 +290,10 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
                 sampleRange = int((percentage * len(dictionaryRange))/100)
             elif percentage == "":
                 percentage = 0.05
-                sampleRange = int((percentage * len(dictionaryRange))/100)
-
+                sampleRange = int((percentage * len(dictionaryRange))/100)                  
+            
             #create csv
+            resultsRangeSavePath = path+"sim/"+str(sampleRange)+"_"+fileNameRange+".csv"
             csvResultsRange = csv.writer(open(resultsRangeSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
             csvResultsRange.writerow(('category','level','catidEP','matrixID','similarity'))
         #print "##############################"
@@ -329,7 +332,7 @@ def returnSimilarities(category, compareTo="1", percentage = ""):
                 vec_tfidf_range = tfidfModelRange[vec_bow_range]
                 sims_range = indexRange[vec_tfidf_range]
                 sims_range = sorted(enumerate(sims_range), key=lambda item: -item[1])
-                sims_range.save(path+"sim/"+fileNameRange)
+                #sims_range.save(path+"sim/"+fileNameRange)
                 #print  sims_range[:20]
                 for sim in sims_range[:sampleRange]:
                     writeData = []
