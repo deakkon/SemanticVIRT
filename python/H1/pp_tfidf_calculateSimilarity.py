@@ -176,14 +176,14 @@ def prepareComparisonDocuments(sqlQuery):
 
 #get model files from folder
 
-def returnSimilarities(category, compareTo="3", percentage = ""):
+def returnSimilarities(category, compareTo="3"):
     """
     Input:\n 
         bowDocument -> BoW representation of document for similarity comparison\n
         compareTo -> 1: level based comparison (default) \n
                      2: range based comparison \n
                      3: both comparisons \n
-        percentage -> % of pages to randomly get from database for specific level for specific category
+        #DELETED percentage -> % of pages to randomly get from database for specific level for specific category
     Output:\n
         Similarity list of documents to selected tfidf model
     """
@@ -192,164 +192,139 @@ def returnSimilarities(category, compareTo="3", percentage = ""):
     originalId = []
     depthDescirption = []
     depthID = []    
-    #modelList = []       
-
+   
     #get cat debth
     sqlCatDebth = "select max(categoryDepth) from dmoz_categories where Topic like '%/"+str(category)+"/%' and filterOut = 0"
     catDepthRow = dbQuery(sqlCatDebth)
     catDepth = catDepthRow[0]
-    
+    """
     #get random documents from database for cat; get catid and all files from dmoz_externalpages for each catid
     for depth in range(2,catDepth):
-        """
-        #number of elements to return from database; if percentage != '' then % else 1000
-        if percentage == "":
-            limit = 1000
-        elif percentage != "":
-            sqlPercent = "select count(*) from dmoz_categories where Topic like '%/"+str(category)+"/%' and categoryDepth = "+str(depth)
-            #numerRows = dbQuery(sqlPercent)            
-        elif percentage > 100:
-            sys.exit("Percentage can not be more than 100%")
-        """
-
         #queries
         sqlRandom = "SELECT ep.Description, ep.catid FROM dmoz_externalpages ep LEFT JOIN dmoz_categories c ON ep.catid = c.catid where Topic like '%/"+str(category)+"/%' and categoryDepth = "+str(depth)+" and c.filterOut = 0 and ep.filterOut = 0 ORDER BY rand() LIMIT 1000"
         #print sqlRandom
         originalContent, originalId = prepareComparisonDocuments(sqlRandom)
         depthDescirption.append(originalContent)
         depthID.append(originalId)
+       """ 
+    #percdentage, data list
+    testingData = ['1000','5000','fullData']
+    percentageData = [5, 10, 20, 30, 50]
+       
+    #start iteration
+    for testingDataItem in testingData:
+        #data to be compared to
+        path = "testData/"+str(testingDataItem)+"/"
         
-    #temp dict, corpus, model files for comparison; testing data during programming, 
-    #COMMENT DURING ACTUAL COMPARISON
-    path = "testData/fullData/"
-    """
-    fileName = "Arts_10"    
-    dictPath = path+"dict/"+fileName+".dict"
-    corpusPath = path+"corpusFiles/"+fileName+""+".mm"
-    modelPath = path+"models/"+fileName+""+".tfidf_model"
-    labesPath = path+"labels/"+fileName+""+".csv"
-
-    #temp test gensim data
-    corpus = gensim.corpora.MmCorpus(corpusPath)
-    dictionary = gensim.corpora.Dictionary.load(dictPath)
-    tfidfModel = gensim.models.tfidfmodel.TfidfModel.load(modelPath)
-    index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus])
-    """    
-    levelIndex = 2
-    
-    for levelC, levelID in itertools.izip(depthDescirption,depthID):
+        for percentage in percentageData:
+            #level index
+            levelIndex = 2
+            
+            #for category, go from level to level, compare documents at taht level with randomly selected documents. 
+            for levelC, levelID in itertools.izip(depthDescirption,depthID):
+                print "Category: ",category,"    level: ",levelIndex,"    percentage: ",percentage, "     testing data: ",testingDataItem
+                #dynamic file name
+                fileName = category+"_"+str(levelIndex)
+                fileNameRange =  category+"_1_"+str(levelIndex)
                 
-        #dynamic file name
-        fileName = category+"_"+str(levelIndex)
-        fileNameRange =  category+"_1_"+str(levelIndex)
+                #load files from disk needed for similarity indexing
+                #lOAD MODELS FOR LEVEL levelIndex
+                if compareTo == "1" or compareTo == "3":
+                    
+                    corpusPath = path+"corpusFiles/"+fileName+""+".mm"
+                    dictPath = path+"dict/"+fileName+".dict"
+                    modelPath = path+"models/"+fileName+""+".tfidf_model"
+                    labesPath = path+"labels/"+fileName+""+".csv"
+                    
+                    #read in HDD files and create sim index
+                    corpus = gensim.corpora.MmCorpus(corpusPath)
+                    dictionary = gensim.corpora.Dictionary.load(dictPath)
+                    tfidfModel = gensim.models.tfidfmodel.TfidfModel.load(modelPath)
+                    index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus],num_features=len(dictionary))
+                    
+                    #number of similarity records for further processing
+                    if percentage != "":
+                        sample = int(((percentageDataItem/100) * len(dictionary))/100)
+                    elif percentage == "":
+                        percentage = 0.05
+                        sample = int(((percentageDataItem/100) * len(dictionary))/100)
+                    
+                    #create csv
+                    resultsSavePath = path+"sim/"+str(sample)+"_"+fileName+".csv"
+                    csvResults = csv.writer(open(resultsSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
+                    csvResults.writerow(('category','level','catidEP','matrixID','similarity'))
+                    
+                    #print out filenames being used
+                    print "Single level comparison: ",corpusPath,"    ",dictPath,"    ",modelPath, "    ",labesPath,"    ",resultsSavePath
+                    print "##########################################################################"
+                    
+                #lOAD MODELS FOR LEVEL 1_levelIndex
+                if compareTo == "2" or compareTo == "3":
         
-        #load files from disk needed for similarity indexing
-        #lOAD MODELS FOR LEVEL levelIndex
-        if compareTo == "1" or compareTo == "3":
-            
-            corpusPath = path+"corpusFiles/"+fileName+""+".mm"            
-            dictPath = path+"dict/"+fileName+".dict"
-            modelPath = path+"models/"+fileName+""+".tfidf_model"
-            labesPath = path+"labels/"+fileName+""+".csv"
-            
-            #read in HDD files and create sim index
-            corpus = gensim.corpora.MmCorpus(corpusPath)
-            dictionary = gensim.corpora.Dictionary.load(dictPath)            
-            tfidfModel = gensim.models.tfidfmodel.TfidfModel.load(modelPath)
-            index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus],num_features=len(dictionary))
-            
-            #number of similarity records for further processing
-            if percentage != "":
-                sample = int((percentage * len(dictionary))/100)
-            elif percentage == "":
-                percentage = 0.05
-                sample = int((percentage * len(dictionary))/100)
-            
-            #create csv
-            resultsSavePath = path+"sim/"+str(sample)+"_"+fileName+".csv"            
-            csvResults = csv.writer(open(resultsSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
-            csvResults.writerow(('category','level','catidEP','matrixID','similarity'))
-            
-        #lOAD MODELS FOR LEVEL 1_levelIndex
-        if compareTo == "2" or compareTo == "3":            
-
-            #paths to files            
-            corpusPathRange = path+"corpusFiles/"+fileNameRange+""+".mm"
-            dictPathRange = path+"dict/"+fileNameRange+".dict"
-            modelPathRange = path+"models/"+fileNameRange+""+".tfidf_model"
-            labesPathRange = path+"labels/"+fileNameRange+""+".csv"
-
-            #read in HDD files and create sim index
-            corpusRange = gensim.corpora.MmCorpus(corpusPathRange)
-            dictionaryRange = gensim.corpora.Dictionary.load(dictPathRange)
-            tfidfModelRange = gensim.models.tfidfmodel.TfidfModel.load(modelPathRange)
-            indexRange = gensim.similarities.MatrixSimilarity(tfidfModelRange[corpusRange],num_features=len(dictionaryRange))
-            
-            #number of similarity records for further processing
-            if percentage != "":
-                sampleRange = int((percentage * len(dictionaryRange))/100)
-            elif percentage == "":
-                percentage = 0.05
-                sampleRange = int((percentage * len(dictionaryRange))/100)                  
-            
-            #create csv
-            resultsRangeSavePath = path+"sim/"+str(sampleRange)+"_"+fileNameRange+".csv"
-            csvResultsRange = csv.writer(open(resultsRangeSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
-            csvResultsRange.writerow(('category','level','catidEP','matrixID','similarity'))
-        #print "##############################"
+                    #paths to files            
+                    corpusPathRange = path+"corpusFiles/"+fileNameRange+""+".mm"
+                    dictPathRange = path+"dict/"+fileNameRange+".dict"
+                    modelPathRange = path+"models/"+fileNameRange+""+".tfidf_model"
+                    labesPathRange = path+"labels/"+fileNameRange+""+".csv"
         
-        #CONTENT PART; CALCULATE SIMILARTIY BASED ON TFIDF
-        #RETURN TOP(n) DOCUMENTS BY SIMILARITY
-        for descriptionLevel, idLevel in  itertools.izip(levelC,levelID):
-            #print idLevel,"    ",descriptionLevel 
-            if compareTo == "1" or compareTo == "3":
-                #print 'compareTo == "1" or compareTo == "3"'
-                #level based comparison
-                vec_bow = dictionary.doc2bow(descriptionLevel)            
-                vec_tfidf = tfidfModel[vec_bow]
-                sims = index[vec_tfidf]
-                sims = sorted(enumerate(sims), key=lambda item: -item[1])            
-                #print  sims[:20]
-                #print "Obradjen zapis: ",dox
-                #print "BoW zapis: ",vec_bow
-                #print "Mapiran na model: ",vec_tfidf
-                #print "Slicnost (Prvih dvadeset: \n",sims[:20]
-                #WRITE SIMLARITY RESULTS TO CSV
-                for sim in sims[:sample]:
-                    writeData = []
-                    #print sim[0], sim[1]
-                    writeData.append(category)
-                    writeData.append(levelIndex)
-                    writeData.append(idLevel)
-                    writeData.append(sim[0])
-                    writeData.append(sim[1])
-                    csvResults.writerow(writeData)
-            
-            #range based comparison
-            if compareTo == "2" or compareTo == "3":
-                #print 'compareTo == "2" or compareTo == "3"'
-                vec_bow_range = dictionaryRange.doc2bow(descriptionLevel)            
-                vec_tfidf_range = tfidfModelRange[vec_bow_range]
-                sims_range = indexRange[vec_tfidf_range]
-                sims_range = sorted(enumerate(sims_range), key=lambda item: -item[1])
-                #sims_range.save(path+"sim/"+fileNameRange)
-                #print  sims_range[:20]
-                for sim in sims_range[:sampleRange]:
-                    writeData = []
-                    #print sim[0], sim[1]
-                    writeData.append(category)
-                    writeData.append(levelIndex)
-                    writeData.append(idLevel)
-                    writeData.append(sim[0])
-                    writeData.append(sim[1])
-                    csvResults.writerow(writeData)                    
-                #print "Obradjen zapis: ",dox
-                #print "BoW zapis: ",vec_bow_range
-                #print "Mapiran na model: ",vec_tfidf_range
-                #print "Slicnost (Prvih dvadeset: \n",sims_range[:20]
-                #WRITE SIMLARITY RESULTS TO CSV
+                    #read in HDD files and create sim index
+                    corpusRange = gensim.corpora.MmCorpus(corpusPathRange)
+                    dictionaryRange = gensim.corpora.Dictionary.load(dictPathRange)
+                    tfidfModelRange = gensim.models.tfidfmodel.TfidfModel.load(modelPathRange)
+                    indexRange = gensim.similarities.MatrixSimilarity(tfidfModelRange[corpusRange],num_features=len(dictionaryRange))
+                    
+                    #number of similarity records for further processing
+                    if percentage != "":
+                        sampleRange = int(((percentageDataItem/100) * len(dictionaryRange))/100)
+                    elif percentage == "":
+                        percentage = 0.05
+                        sampleRange = int(((percentageDataItem/100) * len(dictionaryRange))/100)                  
+                    
+                    #create csv
+                    resultsRangeSavePath = path+"sim/"+str(sampleRange)+"_"+fileNameRange+".csv"
+                    csvResultsRange = csv.writer(open(resultsRangeSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
+                    csvResultsRange.writerow(('category','level','catidEP','matrixID','similarity'))
+                
+                    #print out filenames being used
+                    print "Range level comparison: ", corpusPathRange,"    ",dictPathRange,"    ",modelPathRange,"    ",labesPathRange,"    ",resultsRangeSavePath
+                    print "#######################################"
+                                    
+                #CONTENT PART; CALCULATE SIMILARTIY BASED ON TFIDF
+                #RETURN TOP(n) DOCUMENTS BY SIMILARITY
+                for descriptionLevel, idLevel in  itertools.izip(levelC,levelID):
+                    if compareTo == "1" or compareTo == "3":
+                        vec_bow = dictionary.doc2bow(descriptionLevel)
+                        vec_tfidf = tfidfModel[vec_bow]
+                        sims = index[vec_tfidf]
+                        sims = sorted(enumerate(sims), key=lambda item: -item[1])
 
-        levelIndex += 1
+                        #WRITE SIMLARITY RESULTS TO CSV
+                        for sim in sims[:sample]:
+                            writeData = []
+                            writeData.append(category)
+                            writeData.append(levelIndex)
+                            writeData.append(idLevel)
+                            writeData.append(sim[0])
+                            writeData.append(sim[1])
+                            csvResults.writerow(writeData)
+                    
+                    #range based comparison
+                    if compareTo == "2" or compareTo == "3":
+                        vec_bow_range = dictionaryRange.doc2bow(descriptionLevel)
+                        vec_tfidf_range = tfidfModelRange[vec_bow_range]
+                        sims_range = indexRange[vec_tfidf_range]
+                        sims_range = sorted(enumerate(sims_range), key=lambda item: -item[1])
+
+                        for sim in sims_range[:sampleRange]:
+                            writeData = []
+                            writeData.append(category)
+                            writeData.append(levelIndex)
+                            writeData.append(idLevel)
+                            writeData.append(sim[0])
+                            writeData.append(sim[1])
+                            csvResults.writerow(writeData)
+                levelIndex += 1
+                print "#######################################"                
 
 def runParallel():
     """
