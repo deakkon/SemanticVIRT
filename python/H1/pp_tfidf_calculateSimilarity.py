@@ -197,7 +197,7 @@ def returnSimilarities(category, compareTo="3"):
     sqlCatDebth = "select max(categoryDepth) from dmoz_categories where Topic like '%/"+str(category)+"/%' and filterOut = 0"
     catDepthRow = dbQuery(sqlCatDebth)
     catDepth = catDepthRow[0]
-    """
+
     #get random documents from database for cat; get catid and all files from dmoz_externalpages for each catid
     for depth in range(2,catDepth):
         #queries
@@ -206,7 +206,7 @@ def returnSimilarities(category, compareTo="3"):
         originalContent, originalId = prepareComparisonDocuments(sqlRandom)
         depthDescirption.append(originalContent)
         depthID.append(originalId)
-       """ 
+
     #percdentage, data list
     testingData = ['1000','5000','fullData']
     percentageData = [5, 10, 20, 30, 50]
