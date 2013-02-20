@@ -17,3 +17,75 @@
 Category:  News     level:  2     percentage:  0.3      testing data:  1.0
 Category:  News     level:  2     percentage:  0.3      testing data:  0.1
 Category:  News     level:  3     percentage:  0.3      testing data:  1.0
+Category:  News     level:  3     percentage:  0.3      testing data:  0.1
+Filename: pp_tfidf_calculateSimilarityPerCategory.py
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+   185                             @profile
+   186                             def calculateSimilarity(path, fileName, percentage, levelCategory,levelID, category,levelIndex):
+   187    50.918 MB     0.000 MB       #prepare saved documents
+   188   519.406 MB   468.488 MB       corpusPath = path+"corpusFiles/"+fileName+""+".mm"
+   189   519.406 MB     0.000 MB       dictPath = path+"dict/"+fileName+".dict"
+   190   519.406 MB     0.000 MB       modelPath = path+"models/"+fileName+""+".tfidf_model"
+   191   519.406 MB     0.000 MB       labesPath = path+"labels/"+fileName+""+".csv"
+   192                                 resultsSavePath = path+"sim/"+fileName+".csv"
+   193                                 
+   194   519.406 MB     0.000 MB       #if similarity file doesnt exist, to speed up the process; delete if afterwards
+   195   519.406 MB     0.000 MB       if not os.path.isfile(resultsSavePath):    
+   196   519.406 MB     0.000 MB           #read in HDD files and create sim index
+   197   528.055 MB     8.648 MB           corpus = gensim.corpora.MmCorpus(corpusPath)
+   198                                     dictionary = gensim.corpora.Dictionary.load(dictPath)
+   199                                     tfidfModel = gensim.models.tfidfmodel.TfidfModel.load(modelPath)
+   200   528.055 MB     0.000 MB           index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus],num_features=len(dictionary))
+   201                                     
+   202                                     #number of similarity records for further processing
+   203   528.055 MB     0.000 MB           sample = int(percentage * len(dictionary))
+   204   528.055 MB     0.000 MB           
+   205   528.055 MB     0.000 MB           #create csv
+   206    58.016 MB  -470.039 MB           
+   207                                     ifile  = open(resultsSavePath, "w")
+   208                                     csvResults = csv.writer(ifile, delimiter=',', quotechar='"',quoting=csv.QUOTE_ALL)
+   209                                     csvResults.writerow(("category","level","catidEP","matrixID","similarity"))
+   210                                     
+   211                                     #print out filenames being used
+   212                                     #print "Single level comparison: ",corpusPath,"    ",dictPath,"    ",modelPath, "    ",labesPath,"    ",resultsSavePath
+   213                                     #print "##########################################################################"    
+   214   552.043 MB   494.027 MB       
+   215   552.043 MB     0.000 MB           #CONTENT PART; CALCULATE SIMILARTIY BASED ON TFIDF
+   216   552.043 MB     0.000 MB           #RETURN TOP(n) DOCUMENTS BY SIMILARITY
+   217   552.043 MB     0.000 MB           for descriptionLevel, idLevel in  itertools.izip(levelCategory,levelID):
+   218    58.016 MB  -494.027 MB               vec_bow = dictionary.doc2bow(descriptionLevel)
+   219                                         vec_tfidf = tfidfModel[vec_bow]
+   220                                         sims = index[vec_tfidf]
+   221                                         sims = sorted(enumerate(sims), key=lambda item: -item[1])
+   222   552.145 MB   494.129 MB           
+   223   552.145 MB     0.000 MB               #WRITE SIMLARITY RESULTS TO CSV
+   224   552.145 MB     0.000 MB               #for sim in sims[:sample]:
+   225   552.145 MB     0.000 MB               for sim in sims:
+   226   552.145 MB     0.000 MB                   if sim[1] != 0.0:
+   227   552.145 MB     0.000 MB                       writeData = []
+   228   552.145 MB     0.000 MB                       writeData.append(category)
+   229   552.145 MB     0.000 MB                       writeData.append(levelCategory)
+   230   552.145 MB     0.000 MB                       writeData.append(idLevel)
+   231    58.016 MB  -494.129 MB                       writeData.append(sim[0])
+   232                                                 writeData.append(sim[1])
+   233   552.043 MB   494.027 MB                       csvResults.writerow(writeData)                
+   234   538.156 MB   -13.887 MB                       #print sim[0],"    ",sim[1]
+   235                                         
+   236                                         del vec_bow, vec_tfidf, sims
+   237                                         gc.collect()
+   238                                 
+   239                                     #close all files
+   240                                     #csvResults.close()
+   241                                     #tfidfModel.close()
+   242                                     #dictionary.close()
+   243                                     #corpus.close()
+   244   538.152 MB    -0.004 MB           #dictionary.close()
+   245   519.406 MB   -18.746 MB           #index.close()
+   246   519.406 MB     0.000 MB           #garbage collect   
+   247                                     ifile.close() 
+   248                                     del corpus, dictionary, tfidfModel, index
+   249                                     gc.collect()
+
+

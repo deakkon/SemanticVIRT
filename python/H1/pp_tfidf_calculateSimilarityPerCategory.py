@@ -274,8 +274,8 @@ def returnSimilaritiesCategory(category, compareTo="3", limit = "1000"):
     
     #singular comparison, get directory listing where models are stored
     #testData = returnDirectoryList('testData')
-    #testData = ['0.75', '0.5', '1.0', '0.1', '0.25']
-    testData = ['1.0', '0.1']
+    testData = ['0.75', '0.5', '1.0', '0.1', '0.25']
+    #testData = ['1.0', '0.1']
         
     #set treshold for comparison; take percentageData number of documents in to consideration    
     percentageData = 0.3

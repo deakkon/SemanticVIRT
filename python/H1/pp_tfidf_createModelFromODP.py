@@ -240,7 +240,7 @@ def getCategoryListLevel(catID, fileName, dataset):
     csvResults.writerow(('number of row in model','original cat id'))
     #number of rows
     length = range(0,len(catID)-1)
-    print "Length: ", length
+    #print "Length: ", length
         #write each row
     for i in itertools.izip(length,catID):
         #print i
@@ -328,7 +328,7 @@ def createData(category):
                 dataCategoryLevel.append(removeStopWords(row[0]))
                 originalCatID.append(row[3])
             
-            print "Original CatID: ",originalCatID
+            #print "Original CatID: ",originalCatID
             #label per level            
             for row in sqlQueryResultsLabel[:percentageLabel]:
                 if type(row) is not long:
@@ -418,7 +418,7 @@ def main():
         runParallel()
           
     else:
-        print "Hm, ", var," not supported as an options"
+        print "Hm, ", var," not supported as an option"
         sys.exit(1)
     sys.exit(0)
 
