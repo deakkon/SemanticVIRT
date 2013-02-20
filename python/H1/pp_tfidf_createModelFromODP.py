@@ -207,7 +207,7 @@ def createCorpusAndVectorModel(data, dataSet, fileName ="", outputFormat=1, mode
         saveFN = model+".lda"
         lda.save(saveFN)
     else:
-        errorMessage("createTrainingModel: Something went wrong with the type identificator")
+        errorMessage("createTrainingModel: Something went wrong with the type identificator") 
 
 def getCategoryLabel(categoryLabels,fileName, dataSet):
     """
@@ -263,7 +263,7 @@ def createData(category):
         call createCorpusAndVectorModel fro selected documents
     """
     #percentage of data to be used for model build
-    percentageList = [0.1,0.25,0.5,0.75]
+    testData = ['0.75', '0.5', '1.0', '0.1', '0.25']
     
     #get max debth
     sqlmaxDepth = "select max(categoryDepth) from dmoz_categories where Topic like 'Top/"+str(category)+"/%' and filterOut = 0"
@@ -284,17 +284,20 @@ def createData(category):
         #dynamic SQL queries
         sqlCategoryLevel = "select Description,Title,link,catid from dmoz_externalpages where filterOut = 0 and catid in (select catid from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+" and filterOut = 0) limit 100"            
         sqlCategoryLabel = "select distinct(Title) from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+ " and filterOut = 0"
-        #print sqlCategoryLevel
-        #print sqlCategoryLabel
-        
+
         #getData
         sqlQueryResultsLevel = dbQuery(sqlCategoryLevel)
         sqlQueryResultsLabel = dbQuery(sqlCategoryLabel)
+        
+        #print out
+        print len(sqlCategoryLevel),"    ",sqlCategoryLevel
+        print len(sqlCategoryLabel),"    ",sqlCategoryLabel        
 
         #####################################################
         #IMPLEMENT PRECENTAGE
         #prepare returned documents
         #data for individual level, percentage based
+        """
         for percentageItem in percentageList:
             
             #basic directory for model, based on % of data being analyzed
@@ -303,7 +306,7 @@ def createData(category):
                 os.mkdir(path)
                 
             #path to dict, model, corpusFiles directory, sim, labels, origCATID directories
-            pathSubDir = ["dict/","models/","corpusFiles/","labels/","origCATID/","sim/","single/" ]
+            pathSubDir = ["dict/","models/","corpusFiles/","labels/","origCATID/","sim/","single/", "indeks" ]
             for pathItem in pathSubDir:
                 checkPath = path+pathItem
                 if not os.path.isdir(checkPath):
@@ -359,6 +362,7 @@ def createData(category):
         
         #increment counter indeks by 1        
         indeks += 1
+        """
 
 def runParallel():
     """
