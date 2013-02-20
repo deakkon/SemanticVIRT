@@ -290,14 +290,13 @@ def createData(category):
         sqlQueryResultsLabel = dbQuery(sqlCategoryLabel)
         
         #print out
-        print len(sqlCategoryLevel),"    ",sqlCategoryLevel
-        print len(sqlCategoryLabel),"    ",sqlCategoryLabel        
+        #print len(sqlCategoryLevel),"    ",sqlCategoryLevel
+        #print len(sqlCategoryLabel),"    ",sqlCategoryLabel        
 
         #####################################################
         #IMPLEMENT PRECENTAGE
         #prepare returned documents
         #data for individual level, percentage based
-        """
         for percentageItem in percentageList:
             
             #basic directory for model, based on % of data being analyzed
@@ -362,7 +361,6 @@ def createData(category):
         
         #increment counter indeks by 1        
         indeks += 1
-        """
 
 def runParallel():
     """
