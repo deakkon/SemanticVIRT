@@ -8,16 +8,20 @@ Faculty of Organization and Informatics
 University of Zagreb
 
 Functions:
-    1. createData(category)
-    2. runParallel()
+    1. dbQuery(sql)
+    2. errorMessage(msg)
+    3. removePunct(text)
+    4. removeStopWords(text, mode=1)
+    5. createCorpusAndVectorModel(data, dataSet, fileName ="", outputFormat=1, modelFormat=1)
+    6. getCategoryLabel(categoryLabels,fileName, dataSet)
+    7. getCategoryListLevel(catID, fileName, dataset)
+    8. getMainCat()
+    9. createData(category)
+    10. runParallel()
 '''
 #imports
-import math, sys, time, csv, os, string, pp, re, gensim, MySQLdb, nltk.corpus, nltk.stem
+import math, sys, time, csv, os, string, pp, re, gensim, MySQLdb, nltk.corpus, nltk.stem, itertools
 from MySQLdb import *
-#from nltk.corpus import names
-#import gensim.corpora
-#from gensim import corpora 
-#from gensim import models
 from nltk.stem import WordNetLemmatizer, PorterStemmer, LancasterStemmer
 
 #stemmers
@@ -60,16 +64,18 @@ def errorMessage(msg):
 
 #prepare functions
 
+#prepare text for gensimn stuff
+
 def removePunct(text):
     """
     Input arguments: text (text to remove punctuation from), returnType (what to return; default string)
     Return types: type list (of words) if returnType = 1, string if returnType = 2 (default)
     
     Removes:
-    single letters 
-    numbers 
-    first male/female names
-    punctuation
+        single letters 
+        numbers 
+        first male/female names
+        punctuation
     """
     #data preparation   
     if type(text) is str:
@@ -127,35 +133,36 @@ def removeStopWords(text, mode=1):
         sys.exit("False flag -> second parameter must be \n 1, if you want to use nltk based set of stopwrods \n 2, if you want to use file based set of stopwords \n")        
 
     content = removePunct(text)
-    #print "remove punct",content
-    content = [w for w in content if w.lower() not in stopwords]
-    #print "remove sw",content
+    content = [w for w in content if w.lower() not in stopwords]    
     content = [ps.stem(i) for i in content]
+    #print 
+    #print "remove sw",content
     #print "SW ",content
+    #print "remove punct",content    
     return content
 
 #vectorization stuff
 
-def createCorpusAndVectorModel(data, fileName ="", outputFormat=1, modelFormat=1):
+def createCorpusAndVectorModel(data, dataSet, fileName ="", outputFormat=1, modelFormat=1):
     """
     Input parameters: sqlQueryResults="", outputFormat=1, modelFormat=1, fileName =""
         1. data -> data to save to models, corpus, dictionary
-        2. fileName -> if "" use dummy name
-        3. outputFormat definition:     1 -> MmCorpus (default)
+        2. dataset: % model of all data; part of dirName where to save files
+        3. fileName -> if "" use dummy name
+        4. outputFormat definition:     1 -> MmCorpus (default)
                                         2 -> SvmLightCorpus
                                         3 -> BleiCorpus
                                         4 -> LowCorpus
-        4. modelFormat:                 1 -> tfidf_model (default)
+        5. modelFormat:                 1 -> tfidf_model (default)
                                         2 -> lsi
                                         3 -> lda                                                                                                                            
     Output data: saved dictionary, corpus and model files of chosen format to disk, to respected directories
     """   
-    #define where to sign models
-    path = "testData/fullData/"
+    path = "testData/"+str(dataSet)+"/"
     
     #create file names to save
     if fileName == "":
-        fileName = "defaultCollection"
+        sys.exit("No file name given.")
     
     #create dictionary
     dictionary = gensim.corpora.Dictionary(data)
@@ -167,57 +174,53 @@ def createCorpusAndVectorModel(data, fileName ="", outputFormat=1, modelFormat=1
     #print "BoW", bow_documents
 
     #create corpora data for use in creating a vector model representation for furher use
-    corpora = path+"corpusFiles/"
+    corpora = path+"corpusFiles/"+fileName
     if outputFormat == 1:
-        saveFN = corpora+fileName+".mm"
+        saveFN = corpora+".mm"
         gensim.corpora.MmCorpus.serialize(saveFN, bow_documents)
     elif outputFormat == 2:
-        saveFN = corpora+fileName+".svmlight"
+        saveFN = corpora+".svmlight"
         gensim.corpora.SvmLightCorpus.serialize(saveFN, bow_documents)
     elif outputFormat == 3:
-        saveFN = corpora+fileName+".lda-c"
+        saveFN = corpora+".lda-c"
         gensim.corpora.BleiCorpus.serialize(saveFN, bow_documents)
     elif outputFormat == 4:
         gensim.corpora.LowCorpus.serialize(saveFN, bow_documents)
-        saveFN = corpora+fileName+".low" 
+        saveFN = corpora+".low" 
     else:
         errorMessage("Something went wrong with the type identificator")
     
     #save model to disk -> model of all documents that are going to be compared against
-    model = path+"models/"
+    model = path+"models/"+fileName
     if modelFormat == 1:
         tfidf = gensim.models.TfidfModel(bow_documents)
-        saveFN = model+fileName+".tfidf_model"
+        saveFN = model+".tfidf_model"
         tfidf.save(saveFN)
     elif modelFormat == 2:
         #lsi
         lsi = gensim.models.LsiModel(bow_documents)
-        saveFN = model+fileName+".lsi"
+        saveFN = model+".lsi"
         lsi.save(saveFN)
     elif modelFormat == 3:
         #lsi
         lda = gensim.models.LdaModel(bow_documents)
-        saveFN = model+fileName+".lda"
+        saveFN = model+".lda"
         lda.save(saveFN)
     else:
         errorMessage("createTrainingModel: Something went wrong with the type identificator")
-            
-def getCategoryLabel(categoryLabels,fileName):
+
+def getCategoryLabel(categoryLabels,fileName, dataSet):
     """
     categoryLabels -> list of labels to write to disk
     fileName -> file to save labels returned by the query
     """
-    #path to save the file    
-    if os.path.realpath(__file__)== "/home/jseva/SemanticVIRT/python/utils/createVectorModel.py":
-        fileName = "../H1/fullDataPP/labels/"+fileName+".csv"
-    else:
-        fileName = "fullDataPP/labels/"+fileName+".csv"    
-    
-    #filenames
+    #lables array for level, for % of accesed rows
+    writeLabels = []    
+
+    #file to save data to 
+    fileName = "testData/"+str(dataSet)+"/labels/"+fileName+".csv"
     out = csv.writer(open(fileName,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
-    
-    writeLabels = []
-    
+
     for row in categoryLabels:
         for i in row:            
             if i != "" or i.lower() not in string.letters.lower():
@@ -225,8 +228,23 @@ def getCategoryLabel(categoryLabels,fileName):
 
     out.writerow(writeLabels)
 
-
-#end stuff
+def getCategoryListLevel(catID, fileName, dataset):
+    """
+    catID: original cadID while creating data
+    fileName: fileName for saving
+    dataset: % model of data
+    """
+    #create csv
+    resultsSavePath = "testData/"+str(dataset)+"/origCATID/"+str(fileName)+".csv"
+    csvResults = csv.writer(open(resultsSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
+    csvResults.writerow(('number of row in model','original cat id'))
+    #number of rows
+    length = range(0,len(catID)-1)
+    print "Length: ", length
+        #write each row
+    for i in itertools.izip(length,catID):
+        #print i
+        csvResults.writerow(i)
 
 def getMainCat():
     #get root categories to be used
@@ -244,69 +262,104 @@ def createData(category):
         get all pages for selected categories
         call createCorpusAndVectorModel fro selected documents
     """
+    #percentage of data to be used for model build
+    percentageList = [0.1,0.25,0.5,0.75]
     
     #get max debth
-    sqlmaxDepth = "select max(categoryDepth) from dmoz_categories where Topic like '%/"+str(category)+"/%' and filterOut = 0"
+    sqlmaxDepth = "select max(categoryDepth) from dmoz_categories where Topic like 'Top/"+str(category)+"/%' and filterOut = 0"
     maxDebthRS = dbQuery(sqlmaxDepth)
     maxDebth = maxDebthRS[0]
+    #maxDebth = 3
     
     #(1,indeks) list variables
     dataCategoryLevelAll = []
     dataCategoryLabelAll = []
+    originalCatIDAll = []
+    dataCategorySingleAll = []
     #counter
     indeks = 2
 
     #go through all levels (2,maxDebth)
-    while indeks <= maxDebth:                
-        #create file names
-        fileNameAll = category+"_1_"+str(indeks)
-        fileNameLevel = category+"_"+str(indeks) 
-        
-        #level list variables
-        dataCategoryLevel = []
-        dataCategoryLabel = []
-        
+    while indeks <= maxDebth:
         #dynamic SQL queries
-        sqlCategoryLevel = "select Description,Title,link from dmoz_externalpages where filterOut = 0 and catid in (select catid from dmoz_categories where Topic like '%/"+category+"/%' and categoryDepth = "+str(indeks)+" and filterOut = 0)"            
-        sqlCategoryLabel = "select distinct(Title) from dmoz_categories where Topic like '%/"+category+"/%' and categoryDepth = "+str(indeks)+ " and filterOut = 0"
+        sqlCategoryLevel = "select Description,Title,link,catid from dmoz_externalpages where filterOut = 0 and catid in (select catid from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+" and filterOut = 0) limit 100"            
+        sqlCategoryLabel = "select distinct(Title) from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+ " and filterOut = 0"
         #print sqlCategoryLevel
         #print sqlCategoryLabel
         
-
         #getData
         sqlQueryResultsLevel = dbQuery(sqlCategoryLevel)
         sqlQueryResultsLabel = dbQuery(sqlCategoryLabel)
 
         #####################################################
+        #IMPLEMENT PRECENTAGE
         #prepare returned documents
-        #data for individual level
-        for row in sqlQueryResultsLevel:
-            dataCategoryLevel.append(removeStopWords(row[0]))
-        
-        #create models for individual level
-        createCorpusAndVectorModel(dataCategoryLevel, fileName=fileNameLevel)
-        
-        #data for individual level labels
-        for row in sqlQueryResultsLabel:
-            if type(row) is not long:
-                dataCategoryLabel.append(removeStopWords(row[0]))
-               
-        #create labels for individual level
-        getCategoryLabel(dataCategoryLabel,fileNameLevel)
-        #####################################################
-        #####################################################
-        #data for all levels, labels so far
-        dataCategoryLevelAll.extend(dataCategoryLevel)
-        dataCategoryLabelAll.extend(dataCategoryLabel)
-        
-        #create models, corpus, dicts, labels for all levels
-        createCorpusAndVectorModel(dataCategoryLevelAll, fileName=fileNameAll)
-        getCategoryLabel(dataCategoryLabelAll,fileNameAll)
-        #####################################################
+        #data for individual level, percentage based
+        for percentageItem in percentageList:
+            
+            #basic directory for model, based on % of data being analyzed
+            path = "testData/"+str(percentageItem)+"/"
+            if not os.path.isdir(path):
+                os.mkdir(path)
+                
+            #path to dict, model, corpusFiles directory, sim, labels, origCATID directories
+            pathSubDir = ["dict/","models/","corpusFiles/","labels/","origCATID/","sim/","single/" ]
+            for pathItem in pathSubDir:
+                checkPath = path+pathItem
+                if not os.path.isdir(checkPath):
+                    os.mkdir(checkPath)                
+            
+            #create file names
+            fileNameAll = str(percentageItem)+"_"+category+"_1_"+str(indeks)
+            fileNameLevel = str(percentageItem)+"_"+category+"_"+str(indeks)
+            fileNameSingleAll = str(percentageItem)+"_"+category+"_"+str(indeks)+"_single"
+            
+            #level list variables
+            dataCategoryLevel = []
+            dataCategoryLabel = []
+            originalCatID = []
+            originalFatherID = []
+                        
+            #number of similarity records for further processing
+            percentageLevel = int(percentageItem * len(sqlQueryResultsLevel))
+            percentageLabel = int(percentageItem * len(sqlQueryResultsLabel))                        
+            
+            for row in sqlQueryResultsLevel[:percentageLevel]:
+                dataCategoryLevel.append(removeStopWords(row[0]))
+                originalCatID.append(row[3])
+            
+            print "Original CatID: ",originalCatID
+            #label per level            
+            for row in sqlQueryResultsLabel[:percentageLabel]:
+                if type(row) is not long:
+                    dataCategoryLabel.append(removeStopWords(row[0]))
+                   
+            #create Description, originalCATID and labels for individual level
+            createCorpusAndVectorModel(dataCategoryLevel,percentageItem,fileName=fileNameLevel)
+            getCategoryListLevel(originalCatID,fileNameLevel,percentageItem)            
+            getCategoryLabel(dataCategoryLabel,fileNameLevel,percentageItem)
+            #####################################################
+            #####################################################
+            #data for all levels, labels so far
+            dataCategoryLevelAll.extend(dataCategoryLevel)
+            dataCategoryLabelAll.extend(dataCategoryLabel)
+            originalCatIDAll.extend(originalCatID)
+            
+            #one list for category (1,indeks)
+            dataCategorySingleAll.append([x for sublist in dataCategoryLevelAll for x in sublist])
+            #print dataCategorySingleAll
+            
+            #create models, corpus, dicts, labels for all levels
+            createCorpusAndVectorModel(dataCategoryLevelAll, percentageItem, fileName=fileNameAll)
+            getCategoryLabel(dataCategoryLabelAll,fileNameAll, percentageItem)
+            getCategoryListLevel(originalCatIDAll,fileNameAll,percentageItem)
+            #single model for level(1,indeks)
+            createCorpusAndVectorModel(dataCategorySingleAll, percentageItem, fileName=fileNameSingleAll)
+            #####################################################
         
         #increment counter indeks by 1        
         indeks += 1
-        
+
 def runParallel():
     """
     Run comparison on n processors
@@ -334,7 +387,7 @@ def runParallel():
     
     for index in inputs:
         #print index
-        jobs.append(job_server.submit(createData, (index,), depfuncs = (dbQuery,createCorpusAndVectorModel,getCategoryLabel,removeStopWords,removePunct,dbQuery,errorMessage,), modules = ("math", "sys", "time", "csv", "os", "string", "pp","gensim","MySQLdb","gensim.corpora","gensim.models","re","nltk.corpus","nltk.stem",)))
+        jobs.append(job_server.submit(createData, (index,), depfuncs = (dbQuery,createCorpusAndVectorModel,getCategoryLabel,removeStopWords,removePunct,dbQuery,errorMessage,getCategoryListLevel,), modules = ("math", "sys", "time", "csv", "os", "string", "pp","gensim","MySQLdb","gensim.corpora","gensim.models","re","nltk.corpus","nltk.stem","itertools",)))
     
     for job in jobs:
         result = job()
@@ -368,6 +421,6 @@ def main():
         print "Hm, ", var," not supported as an options"
         sys.exit(1)
     sys.exit(0)
-        
+
 if __name__ == '__main__':    
-    main()    
+    main()

@@ -100,7 +100,6 @@ def returnChildrenNodes(topic, a, b):
     """
     Nodes between a and b belonging to a specific topic (based on the original category path)
     Topics:
-    "Title"
     "Arts"
     "Business"
     "Computers"
