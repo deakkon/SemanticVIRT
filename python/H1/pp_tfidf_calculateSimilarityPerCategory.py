@@ -182,7 +182,7 @@ def prepareComparisonDocuments(sqlQuery):
     gc.collect()
 
 #get corpus, dict, model files
-@profile
+#@profile
 def calculateSimilarity(path, fileName, percentage, levelCategory,levelID, category,levelIndex):
     #prepare saved documents
     corpusPath = path+"corpusFiles/"+fileName+""+".mm"
