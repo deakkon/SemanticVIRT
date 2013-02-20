@@ -1,4 +1,4 @@
-import MySQLdb
+import MySQLdb, sys
 
 def dbQuery(sql):
 
@@ -116,7 +116,7 @@ def runParallelCategory():
     
     for index in inputs:
         #print index
-        jobs.append(job_server.submit(createData, (index,), depfuncs = (dbQuery, getMainCat, ), modules = ("MySQLdb",)))    
+        jobs.append(job_server.submit(createData, (index,), depfuncs = (dbQuery, getMainCat, ), modules = ("MySQLdb","sys",)))    
     for job in jobs:
         result = job()
         if result:
