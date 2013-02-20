@@ -36,7 +36,7 @@ def getMainCat():
     mainCat = tuple([x[0] for x in mainCatRS])
     return mainCat        
         
-def createData():
+def createData(category):
     
     """
     1. get root categories to be used and iterate through main categories
@@ -49,44 +49,43 @@ def createData():
     #percentage of data to be used for model build
     testData = ['0.75', '0.5', '1.0', '0.1', '0.25']
     
-    categories = getMainCat()
+    #categories = getMainCat()
     
-    for category in categories:
-        #get max debth
-        sqlmaxDepth = "select max(categoryDepth) from dmoz_categories where Topic like 'Top/"+str(category)+"/%' and filterOut = 0"
-        maxDebthRS = dbQuery(sqlmaxDepth)
-        maxDebth = maxDebthRS[0]
-        #print maxDebth
-        #maxDebth = 3
+    #get max debth
+    sqlmaxDepth = "select max(categoryDepth) from dmoz_categories where Topic like 'Top/"+str(category)+"/%' and filterOut = 0"
+    maxDebthRS = dbQuery(sqlmaxDepth)
+    maxDebth = maxDebthRS[0]
+    #print maxDebth
+    #maxDebth = 3
+    
+    #(1,indeks) list variables
+    dataCategoryLevelAll = []
+    dataCategoryLabelAll = []
+    originalCatIDAll = []
+    dataCategorySingleAll = []
+    #counter
+    indeks = 2
+
+    #go through all levels (2,maxDebth)
+    while indeks <= maxDebth:
+        #dynamic SQL queries
+        #print indeks
+        sqlCategoryLevel = "select Description,Title,link,catid from dmoz_externalpages where filterOut = 0 and catid in (select catid from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+" and filterOut = 0) limit 100"            
+        sqlCategoryLabel = "select distinct(Title) from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+ " and filterOut = 0"
+
+        #getData
+        sqlQueryResultsLevel = dbQuery(sqlCategoryLevel)
+        sqlQueryResultsLabel = dbQuery(sqlCategoryLabel)
         
-        #(1,indeks) list variables
-        dataCategoryLevelAll = []
-        dataCategoryLabelAll = []
-        originalCatIDAll = []
-        dataCategorySingleAll = []
-        #counter
-        indeks = 2
-    
-        #go through all levels (2,maxDebth)
-        while indeks <= maxDebth:
-            #dynamic SQL queries
-            #print indeks
-            sqlCategoryLevel = "select Description,Title,link,catid from dmoz_externalpages where filterOut = 0 and catid in (select catid from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+" and filterOut = 0) limit 100"            
-            sqlCategoryLabel = "select distinct(Title) from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+ " and filterOut = 0"
-    
-            #getData
-            sqlQueryResultsLevel = dbQuery(sqlCategoryLevel)
-            sqlQueryResultsLabel = dbQuery(sqlCategoryLabel)
-            
-            #print len(sqlCategoryLevel),"    ",sqlCategoryLevel
-            #print len(sqlCategoryLabel),"    ",sqlCategoryLabel  
-            
-            #print out
-            if len(sqlCategoryLevel) == 0:                
-                print category,"    ",indeks,"    ",len(sqlCategoryLevel),"    ",sqlCategoryLevel
-            if len(sqlCategoryLabel) == 0:            
-                print category,"    ",indeks,"    ",len(sqlCategoryLabel),"    ",sqlCategoryLabel
-            indeks +=1
+        #print len(sqlCategoryLevel),"    ",sqlCategoryLevel
+        #print len(sqlCategoryLabel),"    ",sqlCategoryLabel  
+        
+        #print out
+        if len(sqlCategoryLevel) == 0:                
+            print category,"    ",indeks,"    ",len(sqlCategoryLevel),"    ",sqlCategoryLevel
+        if len(sqlCategoryLabel) == 0:            
+            print category,"    ",indeks,"    ",len(sqlCategoryLabel),"    ",sqlCategoryLabel
+        indeks +=1
             
 #run PP
 def runParallelCategory():
