@@ -263,7 +263,7 @@ def createData(category):
         call createCorpusAndVectorModel fro selected documents
     """
     #percentage of data to be used for model build
-    percentageList = ['0.75', '0.5', '1.0', '0.1', '0.25']
+    percentageList = [0.75, 0.5, 1.0, 0.1, 0.25]
     
     #get max debth
     sqlmaxDepth = "select max(categoryDepth) from dmoz_categories where Topic like 'Top/"+str(category)+"/%' and filterOut = 0"
