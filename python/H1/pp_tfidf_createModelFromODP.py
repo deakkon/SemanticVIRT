@@ -327,8 +327,9 @@ def createData(category):
             percentageLabel = int(percentageItem * len(sqlQueryResultsLabel))                        
             
             for row in sqlQueryResultsLevel[:percentageLevel]:
-                dataCategoryLevel.append(removeStopWords(row[0]))
-                originalCatID.append(row[3])
+                if type(row) is not long:
+                    dataCategoryLevel.append(removeStopWords(row[0]))
+                    originalCatID.append(row[3])
             
             #print "Original CatID: ",originalCatID
             #label per level            
