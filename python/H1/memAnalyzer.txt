@@ -1,0 +1,19 @@
+
+    Input:
+ 
+        bowDocument -> BoW representation of document for similarity comparison
+
+        compareTo -> 1: level based comparison (default) 
+
+                     2: range based comparison 
+
+                     3: both comparisons 
+
+        #DELETED percentage -> % of pages to randomly get from database for specific level for specific category
+    Output:
+
+        Similarity list of documents to selected tfidf model
+    
+Category:  News     level:  2     percentage:  0.3      testing data:  1.0
+Category:  News     level:  2     percentage:  0.3      testing data:  0.1
+Category:  News     level:  3     percentage:  0.3      testing data:  1.0

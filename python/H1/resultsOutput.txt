@@ -1,0 +1,21 @@
+
+    Functions:
+            1. getMainCat()
+            2. prepareComparisonDocuments(sqlQuery)
+            3. getFileList(folder)
+            4. returnSimilarities(category, compareTo="1")
+            5. runParallelCategory()
+            Anything else to stop
+     
+Choose function: Traceback (most recent call last):
+  File "/home/jseva/epd_free-7.3-2-rh5-x86_64/lib/python2.7/runpy.py", line 162, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/home/jseva/epd_free-7.3-2-rh5-x86_64/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/home/jseva/epd_free-7.3-2-rh5-x86_64/lib/python2.7/site-packages/memory_profiler.py", line 583, in <module>
+    execfile(__file__, ns, ns)
+  File "pp_tfidf_calculateSimilarityPerCategory.py", line 388, in <module>
+    main()
+  File "pp_tfidf_calculateSimilarityPerCategory.py", line 363, in main
+    var = raw_input("Choose function: ")
+KeyboardInterrupt
