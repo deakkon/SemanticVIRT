@@ -49,8 +49,29 @@ def dbQuery(sql):
     
     except MySQLdb.Error, e:
         print "Error dbQuery %d: %s" % (e.args[0],e.args[1])
-        print sql
+        print "Erroneous query: ",sql
         sys.exit(1)
+        
+def dbQueryInsert(sql):
+    try:
+        con = MySQLdb.connect(host="localhost", user="root", passwd="root", db="dmoz")
+        con.autocommit(True)  
+    
+    except MySQLdb.Error, e:
+        print "Error dbConnect %d: %s" % (e.args[0],e.args[1])
+        sys.exit(1)
+        
+    try:
+        cur = con.cursor()   
+        cur.execute(sql)
+        dur.commit()
+        cur.close()
+        con.close()
+    
+    except MySQLdb.Error, e:
+        print "Error dbQuery %d: %s" % (e.args[0],e.args[1])
+        print "Erroneous query: ",sql
+        sys.exit(1)    
 
 def errorMessage(msg):
     print msg
@@ -184,27 +205,26 @@ def prepareComparisonDocuments(sqlQuery):
     
 def getOriginalRowFromModel(modelRow, modelDocument=""):  
     #variables
+    originalRow = "Empty"
     find = False
     
     #find original cat id at position modelRow
     with open(modelDocument, "rb" ) as theFile:
-        reader = csv.DictReader( theFile )
         while find is False:
-            for line in reader:
-                if line['number of row in model'] == str(modelRow):
+            for line in theFile:
+                print line
+                #if line['number of row in model'] == str(modelRow):
                     #print line
                     #print line['number of row in model']
                     #print line['original cat id']
                     #print type(line['original cat id'])
-                    find = True
-                    return line['original cat id']
-                    
-                 
-            
-        
+                    #originalRow = str(line['original cat id'])
+                    #find = True    
+    #return originalRow
+
 #get corpus, dict, model files
 #@profile
-def calculateSimilarity(path,fileName,originalContent, originalId,category,depth,operationType = "3"):
+def calculateSimilarity(path,fileName,originalContent, originalId,category,depth,operationType = "1"):
     """
     operationType: 1 -> write to database
                    2 -> write to CSV 
@@ -235,8 +255,9 @@ def calculateSimilarity(path,fileName,originalContent, originalId,category,depth
     print modelPath
     print labesPath
     print resultsSavePath
-    print originalCATID
     """    
+    print originalCATID
+
     
     #open needed files
     corpus = gensim.corpora.MmCorpus(corpusPath)
@@ -247,27 +268,46 @@ def calculateSimilarity(path,fileName,originalContent, originalId,category,depth
     #create save csv if needed
     #save csv file
     #define dictionary
-    if operationType == "1":    
+    if operationType == "1":
         ifile  = open(resultsSavePath, "w")
         csvResults = csv.writer(ifile, delimiter=',', quotechar='"',quoting=csv.QUOTE_ALL)
         csvResults.writerow(("category","level","catIdEP","matrixCatID","similarity"))
-    
+
     #CONTENT PART; CALCULATE SIMILARTIY BASED ON TFIDF, RETURN TOP(n) DOCUMENTS BY SIMILARITY
+    print "Lenght of parameter: ",len(originalContent),"    ",len( originalId)
     for descriptionLevel, idLevel in  itertools.izip(originalContent,originalId):
+        #print descriptionLevel, idLevel
         vec_bow = dictionary.doc2bow(descriptionLevel)
         vec_tfidf = tfidfModel[vec_bow]
         sims = index[vec_tfidf]
         sims = sorted(enumerate(sims), key=lambda item: -item[1])
-        #WRITE SIMLARITY RESULTS TO CSV
-        #for sim in sims[:sample]:
+        #print type(sims)
+        enumerator = 0
+        print "##################################################################################################################"
+        for sim in sims:
+            if float(sim[1]) != 0.0:
+                print sim[0]
+                print getOriginalRowFromModel(sim[0], originalCATID)
+                #print sim[1],"    ",type(sim[1]),"    ",str(sim[1]),"    ",type(str(sim[1])),"    "
+                #orID = getOriginalRowFromModel(str(sim[0]),str(originalCATID))
+                #print type(fileName),"    ",type(category),"    ",type(depth),"    ",type(idLevel),"    "
+                #print sim[0],"    ",type(sim[0]),"    ",sim[1],"    ",type(sim[1]),"    string:",str(sim[1]),"    float:",float(sim[1])
+                #sqlInsert = "INSERT INTO dmoz_comparisonResults (comparisonModel, category,level,catidEP,matrixID,similarity) VALUES ('%s','%s','%s','%s','%s')" %(str(fileName),str(category),str(depth),(idLevel),)
+                #print sqlInsert
+                enumerator += 1
+        print enumerator
+        
+"""
+        #write to db
         if operationType == "1":
-            #if similarity file doesn't exist, to speed up the process; delete if afterwards
-            #if not os.path.isfile(resultsSavePath):                
             for sim in sims:
-                if sim[1] != 0.0:
+                if float(sim[1]) != 0.0:
+                    print sim[1]
                     sqlInsert = "INSERT INTO dmoz_comparisonResults (comparisonModel, category,level,catidEP,matrixID,similarity) VALUES ('"+str(fileName)+"','"+str(category)+"','"+str(depth)+"','"+str(idLevel)+"','"+str(getOriginalRowFromModel(sim[0],originalCATID))+"','"+str(sim[1])+"')"
-                    #print sqlInsert
-                    dbQuery(sqlInsert)
+                    print sqlInsert
+                    #dbQueryInsert(sqlInsert)
+
+        #write to file
         elif operationType == "2":
             for sim in sims:
                 if sim[1] != 0.0:
@@ -279,41 +319,36 @@ def calculateSimilarity(path,fileName,originalContent, originalId,category,depth
                     writeData.append(sim[1])
                     csvResults.writerow(writeData)                
                     #print writeData
+        
+        #create dict, sort, filter, write to either db or csv
         elif operationType == "3":
             for sim in sims:
                 if sim[1] != 0.0:
                     if len(dictAnalysis) == 0:
-                        print "New entry"
-                        """
-                        dictAnalysis['key']=sim[0]
-                        dictAnalysis['key']['category']=category
-                        dictAnalysis['key']['depth']=str(depth)
-                        dictAnalysis['key']['idLevel']=str(idLevel)
-                        dictAnalysis['key']['ocID']=getOriginalRowFromModel(sim[0],originalCATID)
-                        dictAnalysis['key']['nrOcc'] = 1
-                        """
-                        dictAnalysis[sim[0]] = {'category': category, 'depth': depth, 'idLevel': idLevel, 'ocID': getOriginalRowFromModel(sim[0],originalCATID), 'nrOcc': 1}
+                        dictAnalysis[sim[0]] = {'category': category, 'depth': depth, 'idLevel': idLevel, 'ocID': getOriginalRowFromModel(sim[0],originalCATID), 'nrOcc': 1, 'sim':sim[1]}
                     else:                        
-                        print dictAnalysis.keys()
-                        """
-                        if sim[0] in dictAnalysis.keys():
-                            print "Its already in"                        
-                            dictAnalysis['key']=sim[0]
-                            dictAnalisys['key']['category']=category
-                            dictAnalisys['key']['depth']=depth
-                            dictAnalisys['key']['idLevel']=idLevel
-                            dictAnalisys['key']['originalCatID']=getOriginalRowFromModel(sim[0],originalCATID)
-                            dictAnalysis['key']['nrOcc'] += 1
-                            dictAnalysis['key']['similarity']+=sim[1]
-                        """
+                        if sim[0] not in dictAnalysis.keys():
+                            dictAnalysis[sim[0]] = {'category': category, 'depth': depth, 'idLevel': idLevel, 'ocID': getOriginalRowFromModel(sim[0],originalCATID), 'nrOcc': 1, 'sim':sim[1]}
+                        else:
+                            #print "Its already in"                        
+                            #dictAnalysis['key']=sim[0]
+                            #dictAnalisys['key']['category']=category
+                            #dictAnalisys['key']['depth']=depth
+                            #dictAnalisys['key']['idLevel']=idLevel
+                            #dictAnalisys['key']['originalCatID']=getOriginalRowFromModel(sim[0],originalCATID)
+                            nrOcc = dictAnalysis[sim[0]]['nrOcc'] + 1 
+                            simSUm = dictAnalysis[sim[0]]['sim'] +sim[1]
+                            dictAnalysis['key']['nrOcc'] += nrOcc
+                            dictAnalysis['key']['similarity']=simSUm
+
         else:
             sys.exit("Unknown flag calculateSimilarity.operationType")
 
         #garbage collect
         print dictAnalysis
-        ifile.close()
+        #ifile.close()
         #print "Category: ",category,"    level: ",depth,"     model: ",fileName
-
+"""
 
 #return similarities based on a category comparison; get random documents from category, scattered through levels.
 def returnSimilaritiesCategory(category, compareTo="3", limit = "1000"):
@@ -348,7 +383,7 @@ def returnSimilaritiesCategory(category, compareTo="3", limit = "1000"):
         #originalContent, originalId = ""
         #queries
         sqlRandom = "SELECT ep.Description, ep.catid FROM dmoz_externalpages ep LEFT JOIN dmoz_categories c ON ep.catid = c.catid where Topic like 'Top/"+str(category)+"/%' and categoryDepth = "+str(depth)+" and c.filterOut = 0 and ep.filterOut = 0 ORDER BY rand() limit "+limit
-        #print sqlRandom
+        #print "sql query: ",sqlRandom
         originalContent, originalId = prepareComparisonDocuments(sqlRandom)
         #print type(originalContent), "    ", originalContent
         #print type(originalId), "    ", originalId
@@ -417,7 +452,7 @@ def main():
             1. getMainCat()
             2. prepareComparisonDocuments(sqlQuery)
             3. getFileList(folder)
-            4. getOriginalRowFromModel(modelRow="", modelDocument="", file="")
+            4. getOriginalRowFromModel(modelRow, modelDocument="")
             5. returnSimilaritiesCategory("News",compareTo="3", limit = "100")
             6. runParallelCategory()
             Anything else to stop
@@ -439,7 +474,7 @@ def main():
         getFileList(var1)
     elif var == "4":
         print getOriginalRowFromModel.__doc__
-        getOriginalRowFromModel(modelRow=6, modelDocument="testData/0.1/origCATID/0.1_News_1_2.csv")
+        getOriginalRowFromModel(modelRow="9", modelDocument="testData/0.1/origCATID/0.1_News_2.csv")
     elif var == "5":
         #myFile= open( "memAnalyzer.txt", "w", 0) 
         #sys.stdout= myFile

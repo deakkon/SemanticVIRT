@@ -282,20 +282,9 @@ def createData(category):
     #go through all levels (2,maxDebth)
     while indeks <= maxDebth:
         #dynamic SQL queries
-        sqlCategoryLevel = "select Description,Title,link,catid from dmoz_externalpages where filterOut = 0 and catid in (select catid from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+" and filterOut = 0) limit 100"            
+        sqlCategoryLevel = "select Description,Title,link,catid from dmoz_externalpages where filterOut = 0 and catid in (select catid from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+" and filterOut = 0)"            
         sqlCategoryLabel = "select distinct(Title) from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+ " and filterOut = 0"
 
-        #getData
-        sqlQueryResultsLevel = dbQuery(sqlCategoryLevel)
-        sqlQueryResultsLabel = dbQuery(sqlCategoryLabel)
-        
-        #print out
-        #print len(sqlCategoryLevel),"    ",sqlCategoryLevel
-        #print len(sqlCategoryLabel),"    ",sqlCategoryLabel        
-
-        #####################################################
-        #IMPLEMENT PRECENTAGE
-        #prepare returned documents
         #data for individual level, percentage based
         for percentageItem in percentageList:
             
@@ -309,7 +298,7 @@ def createData(category):
             for pathItem in pathSubDir:
                 checkPath = path+pathItem
                 if not os.path.isdir(checkPath):
-                    os.mkdir(checkPath)                
+                    os.mkdir(checkPath)
             
             #create file names
             fileNameAll = str(percentageItem)+"_"+category+"_1_"+str(indeks)
@@ -321,44 +310,49 @@ def createData(category):
             dataCategoryLabel = []
             originalCatID = []
             originalFatherID = []
-                        
-            #number of similarity records for further processing
+
+            ##########   ORIGINAL DESCRIPTION   #################
+            sqlQueryResultsLevel = dbQuery(sqlCategoryLevel)
+            print len(sqlCategoryLevel),"    ",sqlCategoryLevel
+            
+            #nr of rows for defined percentage 
             percentageLevel = int(percentageItem * len(sqlQueryResultsLevel))
-            percentageLabel = int(percentageItem * len(sqlQueryResultsLabel))                        
             
             for row in sqlQueryResultsLevel[:percentageLevel]:
                 if type(row) is not long:
                     dataCategoryLevel.append(removeStopWords(row[0]))
                     originalCatID.append(row[3])
+                    
+            print len(dataCategoryLabel),"    ",len(originalCatID)
+
+            """
+            dataCategoryLevelAll.extend(dataCategoryLevel)
+            createCorpusAndVectorModel(dataCategoryLevel,percentageItem,fileName=fileNameLevel)
+            createCorpusAndVectorModel(dataCategoryLevelAll, percentageItem, fileName=fileNameAll)
+            dataCategorySingleAll.append([x for sublist in dataCategoryLevelAll for x in sublist])
+            createCorpusAndVectorModel(dataCategorySingleAll, percentageItem, fileName=fileNameSingleAll)            
             
-            #print "Original CatID: ",originalCatID
-            #label per level            
+            
+            ##########   ORIGINAL CATEGORIES    #################
+            getCategoryListLevel(originalCatID,fileNameLevel,percentageItem)
+            originalCatIDAll.extend(originalCatID)
+            getCategoryListLevel(originalCatIDAll,fileNameAll,percentageItem)
+            
+            """
+            #######################    LABEL    #################
+            sqlQueryResultsLabel = dbQuery(sqlCategoryLabel)
+            print len(sqlCategoryLabel),"    ",sqlCategoryLabel            
+            
+            percentageLabel = int(percentageItem * len(sqlQueryResultsLabel))
             for row in sqlQueryResultsLabel[:percentageLabel]:
                 if type(row) is not long:
                     dataCategoryLabel.append(removeStopWords(row[0]))
-                   
-            #create Description, originalCATID and labels for individual level
-            createCorpusAndVectorModel(dataCategoryLevel,percentageItem,fileName=fileNameLevel)
-            getCategoryListLevel(originalCatID,fileNameLevel,percentageItem)            
+                        
             getCategoryLabel(dataCategoryLabel,fileNameLevel,percentageItem)
-            #####################################################
-            #####################################################
-            #data for all levels, labels so far
-            dataCategoryLevelAll.extend(dataCategoryLevel)
             dataCategoryLabelAll.extend(dataCategoryLabel)
-            originalCatIDAll.extend(originalCatID)
-            
-            #one list for category (1,indeks)
-            dataCategorySingleAll.append([x for sublist in dataCategoryLevelAll for x in sublist])
-            #print dataCategorySingleAll
-            
-            #create models, corpus, dicts, labels for all levels
-            createCorpusAndVectorModel(dataCategoryLevelAll, percentageItem, fileName=fileNameAll)
             getCategoryLabel(dataCategoryLabelAll,fileNameAll, percentageItem)
-            getCategoryListLevel(originalCatIDAll,fileNameAll,percentageItem)
-            #single model for level(1,indeks)
-            createCorpusAndVectorModel(dataCategorySingleAll, percentageItem, fileName=fileNameSingleAll)
-            #####################################################
+                        #label per level
+            """
         
         #increment counter indeks by 1        
         indeks += 1
