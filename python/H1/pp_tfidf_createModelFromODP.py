@@ -205,7 +205,7 @@ def createCorpusAndVectorModel(data, dataSet, fileName ="", outputFormat=1, mode
         lda.save(saveModel)
     else:
         errorMessage("createTrainingModel: Something went wrong with the type identificator")
-        
+    """    
     #create and save similarity index files for comparison
     corpus = gensim.corpora.MmCorpus(saveCorpora)
     dictionary = gensim.corpora.Dictionary.load(dictFN)
@@ -213,6 +213,7 @@ def createCorpusAndVectorModel(data, dataSet, fileName ="", outputFormat=1, mode
     index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus],num_features=len(dictionary))
     simIndeks = path+"indeks/"+fileName+".index"
     index.save(simIndeks)
+    """
 
 def getCategoryLabel(categoryLabels,fileName, dataSet):
     """
