@@ -295,6 +295,7 @@ def createData(category):
         fileNameAll = str(percentageItem)+"_"+category+"_1_"+str(indeks)
         fileNameLevel = str(percentageItem)+"_"+category+"_"+str(indeks)
         fileNameSingleAll = str(percentageItem)+"_"+category+"_"+str(indeks)+"_single"
+        print "Category    Level    PercentageModel    LevelAllRows    ModelRows    IDRows    CombinedRows    CombinedID"
                 
         #go through all levels (2,maxDebth)
         while indeks <= maxDebth:
@@ -335,7 +336,7 @@ def createData(category):
             #getCategoryListLevel(originalCatID,fileNameLevel,percentageItem)
             originalCatIDAll.extend(originalCatID)
             #getCategoryListLevel(originalCatIDAll,fileNameAll,percentageItem)
-            print percentageItem,"    ",percentageLevel,"    ",len(sqlQueryResultsLevel),"    ",len(dataCategoryLevel),"    ",len(originalCatID),"    ",len(dataCategoryLevelAll),"    ",len(originalCatIDAll)
+            print category,"    ",level,"    ",percentageItem,"    ",len(sqlQueryResultsLevel),"    ",len(dataCategoryLevel),"    ",len(originalCatID),"    ",len(dataCategoryLevelAll),"    ",len(originalCatIDAll)
             """
             """
             #######################    LABEL    #################
