@@ -238,14 +238,10 @@ def getCategoryListLevel(catID, fileName, dataset):
     resultsSavePath = "testData/"+str(dataset)+"/origCATID/"+str(fileName)+".csv"
     csvResults = csv.writer(open(resultsSavePath,"wb"), delimiter=',',quoting=csv.QUOTE_ALL)
     csvResults.writerow(('number of row in model','original cat id'))
-    #number of rows
-    length = range(0,len(catID)-1)
-    #print "Length: ", length
-        #write each row
 
     for i in list(enumerate(catID)):
         #print i
-        csvResults.writerow(i[0],i[1])
+        csvResults.writerow((i[0],i[1]))
 
 
 def getMainCat():
@@ -327,7 +323,7 @@ def createData(category):
                     
             print len(dataCategoryLabel),"    ",len(originalCatID)
 
-            """
+
             dataCategoryLevelAll.extend(dataCategoryLevel)
             createCorpusAndVectorModel(dataCategoryLevel,percentageItem,fileName=fileNameLevel)
             createCorpusAndVectorModel(dataCategoryLevelAll, percentageItem, fileName=fileNameAll)
@@ -340,7 +336,7 @@ def createData(category):
             originalCatIDAll.extend(originalCatID)
             getCategoryListLevel(originalCatIDAll,fileNameAll,percentageItem)
             
-            
+            """
             #######################    LABEL    #################
             sqlQueryResultsLabel = dbQuery(sqlCategoryLabel)
             print len(sqlCategoryLabel),"    ",sqlCategoryLabel            
@@ -353,9 +349,7 @@ def createData(category):
             getCategoryLabel(dataCategoryLabel,fileNameLevel,percentageItem)
             dataCategoryLabelAll.extend(dataCategoryLabel)
             getCategoryLabel(dataCategoryLabelAll,fileNameAll, percentageItem)
-                        #label per level
             """
-        
         #increment counter indeks by 1        
         indeks += 1
 
