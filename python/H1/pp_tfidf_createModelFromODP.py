@@ -267,47 +267,43 @@ def createData(category):
     sqlmaxDepth = "select max(categoryDepth) from dmoz_categories where Topic like 'Top/"+str(category)+"/%' and filterOut = 0"
     maxDebthRS = dbQuery(sqlmaxDepth)
     maxDebth = maxDebthRS[0]
-    #maxDebth = 3
-    
 
-    #counter
-    indeks = 2
-
-    #go through all levels (2,maxDebth)
-    print "percentageItem   percentageLevel    len(sqlQueryResultsLevel)    len(dataCategoryLevel)    len(dataCategoryLevelAll)"
+    #specific models
     for percentageItem in percentageList:
-        
         #(1,indeks) list variables
         dataCategoryLevelAll = []
         dataCategoryLabelAll = []
         originalCatIDAll = []
-        dataCategorySingleAll = []        
-        
+        dataCategorySingleAll = []
+
+
+        #basic directory for model, based on % of data being analyzed
+        path = "testData/"+str(percentageItem)+"/"
+        if not os.path.isdir(path):
+            os.mkdir(path)
+            
+        #path to dict, model, corpusFiles directory, sim, labels, origCATID directories
+        pathSubDir = ["dict/","models/","corpusFiles/","labels/","origCATID/","sim/","single/", "indeks" ]
+        for pathItem in pathSubDir:
+            checkPath = path+pathItem
+            if not os.path.isdir(checkPath):
+                os.mkdir(checkPath)
+                    
+        #create file names
+        fileNameAll = str(percentageItem)+"_"+category+"_1_"+str(indeks)
+        fileNameLevel = str(percentageItem)+"_"+category+"_"+str(indeks)
+        fileNameSingleAll = str(percentageItem)+"_"+category+"_"+str(indeks)+"_single"
+    
+        #counter
+        indeks = 2
+            
+        #go through all levels (2,maxDebth)
         while indeks <= maxDebth:
-            print indeks
             #dynamic SQL queries
             sqlCategoryLevel = "select Description,Title,link,catid from dmoz_externalpages where filterOut = 0 and catid in (select catid from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+" and filterOut = 0)"            
             sqlCategoryLabel = "select distinct(Title) from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+ " and filterOut = 0"
             #data for individual level, percentage based
     
-            """
-            #basic directory for model, based on % of data being analyzed
-            path = "testData/"+str(percentageItem)+"/"
-            if not os.path.isdir(path):
-                os.mkdir(path)
-                
-            #path to dict, model, corpusFiles directory, sim, labels, origCATID directories
-            pathSubDir = ["dict/","models/","corpusFiles/","labels/","origCATID/","sim/","single/", "indeks" ]
-            for pathItem in pathSubDir:
-                checkPath = path+pathItem
-                if not os.path.isdir(checkPath):
-                    os.mkdir(checkPath)
-                        
-            #create file names
-            fileNameAll = str(percentageItem)+"_"+category+"_1_"+str(indeks)
-            fileNameLevel = str(percentageItem)+"_"+category+"_"+str(indeks)
-            fileNameSingleAll = str(percentageItem)+"_"+category+"_"+str(indeks)+"_single"
-            """
             #level list variables
             dataCategoryLevel = []
             dataCategoryLabel = []
@@ -355,8 +351,8 @@ def createData(category):
             dataCategoryLabelAll.extend(dataCategoryLabel)
             getCategoryLabel(dataCategoryLabelAll,fileNameAll, percentageItem)
             """
-        #increment counter indeks by 1        
-        indeks += 1
+            #increment counter indeks by 1        
+            indeks += 1
 
 def runParallel():
     """
