@@ -336,7 +336,7 @@ def createData(category):
             #getCategoryListLevel(originalCatID,fileNameLevel,percentageItem)
             originalCatIDAll.extend(originalCatID)
             #getCategoryListLevel(originalCatIDAll,fileNameAll,percentageItem)
-            print category,"    ",level,"    ",percentageItem,"    ",len(sqlQueryResultsLevel),"    ",len(dataCategoryLevel),"    ",len(originalCatID),"    ",len(dataCategoryLevelAll),"    ",len(originalCatIDAll)
+            print category,"    ",indeks,"    ",percentageItem,"    ",len(sqlQueryResultsLevel),"    ",len(dataCategoryLevel),"    ",len(originalCatID),"    ",len(dataCategoryLevelAll),"    ",len(originalCatIDAll)
             """
             """
             #######################    LABEL    #################
