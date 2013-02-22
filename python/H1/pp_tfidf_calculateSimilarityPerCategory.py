@@ -49,6 +49,7 @@ def dbQuery(sql):
     
     except MySQLdb.Error, e:
         print "Error dbQuery %d: %s" % (e.args[0],e.args[1])
+        print sql
         sys.exit(1)
 
 def errorMessage(msg):
@@ -180,87 +181,149 @@ def prepareComparisonDocuments(sqlQuery):
     #try to manage memory
     del sqlQueryResults, originalID, bowReturn
     gc.collect()
-
+    
+def getOriginalRowFromModel(modelRow, modelDocument=""):  
+    #variables
+    find = False
+    
+    #find original cat id at position modelRow
+    with open(modelDocument, "rb" ) as theFile:
+        reader = csv.DictReader( theFile )
+        while find is False:
+            for line in reader:
+                if line['number of row in model'] == str(modelRow):
+                    #print line
+                    #print line['number of row in model']
+                    #print line['original cat id']
+                    #print type(line['original cat id'])
+                    find = True
+                    return line['original cat id']
+                    
+                 
+            
+        
 #get corpus, dict, model files
 #@profile
-def calculateSimilarity(path, fileName, percentage, levelCategory,levelID, category,levelIndex):
-    #prepare saved documents
+def calculateSimilarity(path,fileName,originalContent, originalId,category,depth,operationType = "3"):
+    """
+    operationType: 1 -> write to database
+                   2 -> write to CSV 
+                   3 -> filter data in dict then write in csv file
+    path:
+    fileName:
+    originalContent:
+    originalId:
+    category:
+    depth    
+    """  
+    #define dictionary
+    #if operationType == "3":
+    dictAnalysis = {}
+    #print len(dictAnalisys)
+    
+    #paths do needed files
     corpusPath = path+"corpusFiles/"+fileName+""+".mm"
     dictPath = path+"dict/"+fileName+".dict"
     modelPath = path+"models/"+fileName+""+".tfidf_model"
     labesPath = path+"labels/"+fileName+""+".csv"
     resultsSavePath = path+"sim/"+fileName+".csv"
+    originalCATID = path+"origCATID/"+fileName+".csv"
+    """
+    #print paths
+    print corpusPath
+    print dictPath
+    print modelPath
+    print labesPath
+    print resultsSavePath
+    print originalCATID
+    """    
     
-    #if similarity file doesnt exist, to speed up the process; delete if afterwards
-    if not os.path.isfile(resultsSavePath):    
-        #read in HDD files and create sim index
-        corpus = gensim.corpora.MmCorpus(corpusPath)
-        dictionary = gensim.corpora.Dictionary.load(dictPath)
-        tfidfModel = gensim.models.tfidfmodel.TfidfModel.load(modelPath)
-        index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus],num_features=len(dictionary))
-        
-        #number of similarity records for further processing
-        sample = int(percentage * len(dictionary))
-        
-        #create csv
-        
+    #open needed files
+    corpus = gensim.corpora.MmCorpus(corpusPath)
+    dictionary = gensim.corpora.Dictionary.load(dictPath)
+    tfidfModel = gensim.models.tfidfmodel.TfidfModel.load(modelPath)
+    index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus],num_features=len(dictionary))
+    
+    #create save csv if needed
+    #save csv file
+    #define dictionary
+    if operationType == "1":    
         ifile  = open(resultsSavePath, "w")
         csvResults = csv.writer(ifile, delimiter=',', quotechar='"',quoting=csv.QUOTE_ALL)
-        csvResults.writerow(("category","level","catidEP","matrixID","similarity"))
-        
-        #print out filenames being used
-        #print "Single level comparison: ",corpusPath,"    ",dictPath,"    ",modelPath, "    ",labesPath,"    ",resultsSavePath
-        #print "##########################################################################"    
+        csvResults.writerow(("category","level","catIdEP","matrixCatID","similarity"))
     
-        #CONTENT PART; CALCULATE SIMILARTIY BASED ON TFIDF
-        #RETURN TOP(n) DOCUMENTS BY SIMILARITY
-        for descriptionLevel, idLevel in  itertools.izip(levelCategory,levelID):
-            vec_bow = dictionary.doc2bow(descriptionLevel)
-            vec_tfidf = tfidfModel[vec_bow]
-            sims = index[vec_tfidf]
-            sims = sorted(enumerate(sims), key=lambda item: -item[1])
-        
-            #WRITE SIMLARITY RESULTS TO CSV
-            #for sim in sims[:sample]:
+    #CONTENT PART; CALCULATE SIMILARTIY BASED ON TFIDF, RETURN TOP(n) DOCUMENTS BY SIMILARITY
+    for descriptionLevel, idLevel in  itertools.izip(originalContent,originalId):
+        vec_bow = dictionary.doc2bow(descriptionLevel)
+        vec_tfidf = tfidfModel[vec_bow]
+        sims = index[vec_tfidf]
+        sims = sorted(enumerate(sims), key=lambda item: -item[1])
+        #WRITE SIMLARITY RESULTS TO CSV
+        #for sim in sims[:sample]:
+        if operationType == "1":
+            #if similarity file doesn't exist, to speed up the process; delete if afterwards
+            #if not os.path.isfile(resultsSavePath):                
+            for sim in sims:
+                if sim[1] != 0.0:
+                    sqlInsert = "INSERT INTO dmoz_comparisonResults (comparisonModel, category,level,catidEP,matrixID,similarity) VALUES ('"+str(fileName)+"','"+str(category)+"','"+str(depth)+"','"+str(idLevel)+"','"+str(getOriginalRowFromModel(sim[0],originalCATID))+"','"+str(sim[1])+"')"
+                    #print sqlInsert
+                    dbQuery(sqlInsert)
+        elif operationType == "2":
             for sim in sims:
                 if sim[1] != 0.0:
                     writeData = []
                     writeData.append(category)
-                    writeData.append(levelCategory)
+                    writeData.append(depth)
                     writeData.append(idLevel)
-                    writeData.append(sim[0])
+                    writeData.append(getOriginalRowFromModel(sim[0],originalCATID))
                     writeData.append(sim[1])
                     csvResults.writerow(writeData)                
-                    #print sim[0],"    ",sim[1]
-            
-            del vec_bow, vec_tfidf, sims
-            gc.collect()
-    
-        #close all files
-        #csvResults.close()
-        #tfidfModel.close()
-        #dictionary.close()
-        #corpus.close()
-        #dictionary.close()
-        #index.close()
-        #garbage collect   
-        ifile.close() 
-        del corpus, dictionary, tfidfModel, index
-        gc.collect()
-   
+                    #print writeData
+        elif operationType == "3":
+            for sim in sims:
+                if sim[1] != 0.0:
+                    if len(dictAnalysis) == 0:
+                        print "New entry"
+                        """
+                        dictAnalysis['key']=sim[0]
+                        dictAnalysis['key']['category']=category
+                        dictAnalysis['key']['depth']=str(depth)
+                        dictAnalysis['key']['idLevel']=str(idLevel)
+                        dictAnalysis['key']['ocID']=getOriginalRowFromModel(sim[0],originalCATID)
+                        dictAnalysis['key']['nrOcc'] = 1
+                        """
+                        dictAnalysis[sim[0]] = {'category': category, 'depth': depth, 'idLevel': idLevel, 'ocID': getOriginalRowFromModel(sim[0],originalCATID), 'nrOcc': 1}
+                    else:                        
+                        print dictAnalysis.keys()
+                        """
+                        if sim[0] in dictAnalysis.keys():
+                            print "Its already in"                        
+                            dictAnalysis['key']=sim[0]
+                            dictAnalisys['key']['category']=category
+                            dictAnalisys['key']['depth']=depth
+                            dictAnalisys['key']['idLevel']=idLevel
+                            dictAnalisys['key']['originalCatID']=getOriginalRowFromModel(sim[0],originalCATID)
+                            dictAnalysis['key']['nrOcc'] += 1
+                            dictAnalysis['key']['similarity']+=sim[1]
+                        """
+        else:
+            sys.exit("Unknown flag calculateSimilarity.operationType")
+
+        #garbage collect
+        print dictAnalysis
+        ifile.close()
+        #print "Category: ",category,"    level: ",depth,"     model: ",fileName
 
 
 #return similarities based on a category comparison; get random documents from category, scattered through levels.
 def returnSimilaritiesCategory(category, compareTo="3", limit = "1000"):
     """
     Input:\n 
-        bowDocument -> BoW representation of document for similarity comparison\n
-        compareTo -> 1: level based comparison (default) \n
-                     2: range based comparison \n
-                     3: both comparisons \n
-        #DELETED percentage -> % of pages to randomly get from database for specific level for specific category
-    Output:\n
-        Similarity list of documents to selected tfidf model
+        category -> BoW representation of document for similarity comparison
+        compareTo -> 1: level based comparison (default)
+                     2: range based comparison
+                     3: both comparisons
+        limit ->    Nr. of row to return from database
     """
     #ENVIRONEMNT SETUP
     #variables
@@ -271,17 +334,15 @@ def returnSimilaritiesCategory(category, compareTo="3", limit = "1000"):
     sqlCatDebth = "select max(categoryDepth) from dmoz_categories where Topic like 'Top/"+str(category)+"/%' and filterOut = 0"
     catDepthRow = dbQuery(sqlCatDebth)
     catDepth = catDepthRow[0]
+    #print catDepth
     
     #singular comparison, get directory listing where models are stored
     #testData = returnDirectoryList('testData')
-    testData = ['0.75', '0.5', '1.0', '0.1', '0.25']
-    #testData = ['1.0', '0.1']
-        
-    #set treshold for comparison; take percentageData number of documents in to consideration    
-    percentageData = 0.3
+    testData = ['0.1']
+    #testData = ['0.75', '0.5', '1.0', '0.1', '0.25']
 
     #get random documents from database for cat; get catid and all files from dmoz_externalpages for each catid
-    for depth in range(2,catDepth):
+    for depth in range(2,catDepth+1):
         originalContent = []
         originalId = []
         #originalContent, originalId = ""
@@ -295,31 +356,22 @@ def returnSimilaritiesCategory(category, compareTo="3", limit = "1000"):
         #start iteration
         for testingDataItem in testData:
             #dynamic file name
-            fileName = testingDataItem+"_"+category+"_"+str(depth)
-            fileNameRange =  testingDataItem+"_"+category+"_1_"+str(depth)
-                         
             #data to be compared to
             path = "testData/"+str(testingDataItem)+"/"
-    
-            #for category, go from level to level, compare documents at taht level with randomly selected documents. 
-            #for levelC, levelID in itertools.izip(depthDescirption,depthID):
-            print "Category: ",category,"    level: ",depth,"    percentage: ",percentageData, "     testing data: ",testingDataItem
+            fileName = testingDataItem+"_"+category+"_"+str(depth)
+            fileNameRange =  testingDataItem+"_"+category+"_1_"+str(depth)
 
             #load files from disk needed for similarity indexing
-            #lOAD MODELS FOR LEVEL levelIndex
             if compareTo == "1":
-                calculateSimilarity(path,fileName,percentageData,originalContent, originalId,category,depth)
+                calculateSimilarity(path,fileName,originalContent, originalId,category,depth)
             elif compareTo == "2":
-                calculateSimilarity(path,fileNameRange,percentageData,originalContent,originalId,category,depth)
+                calculateSimilarity(path,fileNameRange,originalContent,originalId,category,depth)
             elif compareTo == "3":
-                calculateSimilarity(path,fileName,percentageData,originalContent, originalId,category,depth)
-                calculateSimilarity(path,fileNameRange,percentageData,originalContent,originalId,category,depth)
+                calculateSimilarity(path,fileName,originalContent, originalId,category,depth)
+                calculateSimilarity(path,fileNameRange,originalContent,originalId,category,depth)
             else:
                 sys.exit("Something went wrong with similarity calculation. ")
-    del originalContent, originalId
-    gc.collect()
 
-        
 #run PP
 def runParallelCategory():
     """
@@ -348,7 +400,7 @@ def runParallelCategory():
     
     for index in inputs:
         #print index
-        jobs.append(job_server.submit(returnSimilaritiesCategory, (index,), depfuncs = (dbQuery, errorMessage, returnDirectoryList, removePunct, removeStopWords, getMainCat, calculateSimilarity, prepareComparisonDocuments,), modules = ("sys", "os", "glob", "itertools", "csv","gensim.corpora","gensim.models","gensim.similarities","pp", "time", "MySQLdb","nltk","re","nltk.corpus","nltk.stem","string","gc",)))    
+        jobs.append(job_server.submit(returnSimilaritiesCategory, (index,), depfuncs = (dbQuery, errorMessage, returnDirectoryList, removePunct, removeStopWords, getMainCat, calculateSimilarity, prepareComparisonDocuments,getOriginalRowFromModel,), modules = ("sys", "os", "glob", "itertools", "csv","gensim.corpora","gensim.models","gensim.similarities","pp", "time", "MySQLdb","nltk","re","nltk.corpus","nltk.stem","string","gc",)))    
     for job in jobs:
         result = job()
         if result:
@@ -365,8 +417,9 @@ def main():
             1. getMainCat()
             2. prepareComparisonDocuments(sqlQuery)
             3. getFileList(folder)
-            4. returnSimilarities(category, compareTo="3", limit = "1000")
-            5. runParallelCategory()
+            4. getOriginalRowFromModel(modelRow="", modelDocument="", file="")
+            5. returnSimilaritiesCategory("News",compareTo="3", limit = "100")
+            6. runParallelCategory()
             Anything else to stop
      """
     print main.__doc__
@@ -385,11 +438,14 @@ def main():
         var1 = raw_input("Folder to list data from (experimental): ")
         getFileList(var1)
     elif var == "4":
-        myFile= open( "memAnalyzer.txt", "w", 0) 
-        sys.stdout= myFile
-        print returnSimilaritiesCategory.__doc__
-        returnSimilaritiesCategory("News")
+        print getOriginalRowFromModel.__doc__
+        getOriginalRowFromModel(modelRow=6, modelDocument="testData/0.1/origCATID/0.1_News_1_2.csv")
     elif var == "5":
+        #myFile= open( "memAnalyzer.txt", "w", 0) 
+        #sys.stdout= myFile
+        print returnSimilaritiesCategory.__doc__
+        returnSimilaritiesCategory("News",compareTo="3", limit = "100")
+    elif var == "6":
         print runParallelCategory.__doc__
         runParallelCategory()             
     else:
