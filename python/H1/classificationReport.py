@@ -94,11 +94,7 @@ def analyzeCSV(modelPath,fileName):
 
 #print returnDirectoryList('testData')
 #analyzeCSV('0.1','0.1_Arts_3.csv')
-resultsSavePath = "testData.csv"
-csvResults = csv.writer(open(resultsSavePath,"wb"), delimiter=',',quoting=csv.QUOTE_ALL)
-csvResults.writerow(("number of row in model","original cat id"))
 
-data = ["1,2,3,4,5,6,7,8,9","a","b","c"]
-print list(enumerate(data))
-for i in list(enumerate(data)):
-    csvResults.writerow((i[0],i[1]))
+from urlparse import urlparse
+data = [el for el in ['text1', 'FTP://somewhere.com', 'text2', 'http://blah.com:8080/foo/bar#header'] if not urlparse(el).scheme]
+print data

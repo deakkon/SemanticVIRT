@@ -16,7 +16,7 @@ Functions:
 
 '''
 #imports
-import sys, os, glob, itertools, csv, pp, time, gensim.corpora, gensim.models, gensim.similarities, MySQLdb, nltk, string, gc
+import sys, os, glob, itertools, csv, pp, time, gensim.corpora, gensim.models, gensim.similarities, MySQLdb, nltk, string, gc, urlparse
 
 
 #stdout
@@ -113,6 +113,7 @@ def removePunct(text):
     sentence = [item for item in sentence if item not in allTheLetters]
     sentence = [item for item in sentence if not item.isdigit()]   
     sentence = [item for item in sentence if (item not in male_names and item not in female_names)]
+    sentence = [item for item in sentence if not urlparse.urlparse(item).scheme]
     #print "punct ",sentence
     return sentence
 
@@ -294,10 +295,6 @@ def calculateSimilarity(path,fileName,originalContent, originalId,category,depth
                 #print sim[0],"    ",type(sim[0]),"    ",sim[1],"    ",type(sim[1]),"    string:",str(sim[1]),"    float:",float(sim[1])
                 #sqlInsert = "INSERT INTO dmoz_comparisonResults (comparisonModel, category,level,catidEP,matrixID,similarity) VALUES ('%s','%s','%s','%s','%s')" %(str(fileName),str(category),str(depth),(idLevel),)
                 #print sqlInsert
-                enumerator += 1
-        print enumerator
-        
-"""
         #write to db
         if operationType == "1":
             for sim in sims:
@@ -324,31 +321,16 @@ def calculateSimilarity(path,fileName,originalContent, originalId,category,depth
         elif operationType == "3":
             for sim in sims:
                 if sim[1] != 0.0:
-                    if len(dictAnalysis) == 0:
+                    if len(dictAnalysis) == 0 or sim[0] not in dictAnalysis.keys():
                         dictAnalysis[sim[0]] = {'category': category, 'depth': depth, 'idLevel': idLevel, 'ocID': getOriginalRowFromModel(sim[0],originalCATID), 'nrOcc': 1, 'sim':sim[1]}
-                    else:                        
-                        if sim[0] not in dictAnalysis.keys():
-                            dictAnalysis[sim[0]] = {'category': category, 'depth': depth, 'idLevel': idLevel, 'ocID': getOriginalRowFromModel(sim[0],originalCATID), 'nrOcc': 1, 'sim':sim[1]}
-                        else:
-                            #print "Its already in"                        
-                            #dictAnalysis['key']=sim[0]
-                            #dictAnalisys['key']['category']=category
-                            #dictAnalisys['key']['depth']=depth
-                            #dictAnalisys['key']['idLevel']=idLevel
-                            #dictAnalisys['key']['originalCatID']=getOriginalRowFromModel(sim[0],originalCATID)
-                            nrOcc = dictAnalysis[sim[0]]['nrOcc'] + 1 
-                            simSUm = dictAnalysis[sim[0]]['sim'] +sim[1]
-                            dictAnalysis['key']['nrOcc'] += nrOcc
-                            dictAnalysis['key']['similarity']=simSUm
+                    else:
+                        nrOcc = int(dictAnalysis[sim[0]]['nrOcc']) + 1 
+                        simSUm = float(dictAnalysis[sim[0]]['sim']) +float(sim[1])
+                        dictAnalysis['key']['nrOcc'] += nrOcc
+                        dictAnalysis['key']['similarity']=simSUm
 
         else:
             sys.exit("Unknown flag calculateSimilarity.operationType")
-
-        #garbage collect
-        print dictAnalysis
-        #ifile.close()
-        #print "Category: ",category,"    level: ",depth,"     model: ",fileName
-"""
 
 #return similarities based on a category comparison; get random documents from category, scattered through levels.
 def returnSimilaritiesCategory(category, compareTo="3", limit = "1000"):

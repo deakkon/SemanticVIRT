@@ -261,7 +261,7 @@ def createData(category):
         call createCorpusAndVectorModel fro selected documents
     """
     #percentage of data to be used for model build
-    percentageList = [0.75, 0.5, 1.0, 0.1, 0.25]
+    percentageList = [0.1, 0.25, 0.5, 0.75, 1.0]
     
     #get max debth
     sqlmaxDepth = "select max(categoryDepth) from dmoz_categories where Topic like 'Top/"+str(category)+"/%' and filterOut = 0"
@@ -269,23 +269,28 @@ def createData(category):
     maxDebth = maxDebthRS[0]
     #maxDebth = 3
     
-    #(1,indeks) list variables
-    dataCategoryLevelAll = []
-    dataCategoryLabelAll = []
-    originalCatIDAll = []
-    dataCategorySingleAll = []
+
     #counter
     indeks = 2
 
     #go through all levels (2,maxDebth)
-    while indeks <= maxDebth:
-        #dynamic SQL queries
-        sqlCategoryLevel = "select Description,Title,link,catid from dmoz_externalpages where filterOut = 0 and catid in (select catid from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+" and filterOut = 0)"            
-        sqlCategoryLabel = "select distinct(Title) from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+ " and filterOut = 0"
-
-        #data for individual level, percentage based
-        for percentageItem in percentageList:
-            
+    print "percentageItem   percentageLevel    len(sqlQueryResultsLevel)    len(dataCategoryLevel)    len(dataCategoryLevelAll)"
+    for percentageItem in percentageList:
+        
+        #(1,indeks) list variables
+        dataCategoryLevelAll = []
+        dataCategoryLabelAll = []
+        originalCatIDAll = []
+        dataCategorySingleAll = []        
+        
+        while indeks <= maxDebth:
+            print indeks
+            #dynamic SQL queries
+            sqlCategoryLevel = "select Description,Title,link,catid from dmoz_externalpages where filterOut = 0 and catid in (select catid from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+" and filterOut = 0)"            
+            sqlCategoryLabel = "select distinct(Title) from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+ " and filterOut = 0"
+            #data for individual level, percentage based
+    
+            """
             #basic directory for model, based on % of data being analyzed
             path = "testData/"+str(percentageItem)+"/"
             if not os.path.isdir(path):
@@ -297,12 +302,12 @@ def createData(category):
                 checkPath = path+pathItem
                 if not os.path.isdir(checkPath):
                     os.mkdir(checkPath)
-            
+                        
             #create file names
             fileNameAll = str(percentageItem)+"_"+category+"_1_"+str(indeks)
             fileNameLevel = str(percentageItem)+"_"+category+"_"+str(indeks)
             fileNameSingleAll = str(percentageItem)+"_"+category+"_"+str(indeks)+"_single"
-            
+            """
             #level list variables
             dataCategoryLevel = []
             dataCategoryLabel = []
@@ -311,36 +316,36 @@ def createData(category):
 
             ##########   ORIGINAL DESCRIPTION   #################
             sqlQueryResultsLevel = dbQuery(sqlCategoryLevel)
-            print len(sqlCategoryLevel),"    ",sqlCategoryLevel
             
             #nr of rows for defined percentage 
             percentageLevel = int(percentageItem * len(sqlQueryResultsLevel))
+            
+            if percentageLevel == 0:
+                percentageLevel = 1
             
             for row in sqlQueryResultsLevel[:percentageLevel]:
                 if type(row) is not long:
                     dataCategoryLevel.append(removeStopWords(row[0]))
                     originalCatID.append(row[3])
-                    
-            print len(dataCategoryLabel),"    ",len(originalCatID)
-
-
-            dataCategoryLevelAll.extend(dataCategoryLevel)
-            createCorpusAndVectorModel(dataCategoryLevel,percentageItem,fileName=fileNameLevel)
-            createCorpusAndVectorModel(dataCategoryLevelAll, percentageItem, fileName=fileNameAll)
-            dataCategorySingleAll.append([x for sublist in dataCategoryLevelAll for x in sublist])
-            createCorpusAndVectorModel(dataCategorySingleAll, percentageItem, fileName=fileNameSingleAll)            
             
+            #createCorpusAndVectorModel(dataCategoryLevel,percentageItem,fileName=fileNameLevel)
+            dataCategoryLevelAll.extend(dataCategoryLevel)
+            #createCorpusAndVectorModel(dataCategoryLevelAll, percentageItem, fileName=fileNameAll)
+            
+            #single model for all documents
+            #dataCategorySingleAll.append([x for sublist in dataCategoryLevelAll for x in sublist])
+            #createCorpusAndVectorModel(dataCategorySingleAll, percentageItem, fileName=fileNameSingleAll)
             
             ##########   ORIGINAL CATEGORIES    #################
-            getCategoryListLevel(originalCatID,fileNameLevel,percentageItem)
+            #getCategoryListLevel(originalCatID,fileNameLevel,percentageItem)
             originalCatIDAll.extend(originalCatID)
-            getCategoryListLevel(originalCatIDAll,fileNameAll,percentageItem)
-            
+            #getCategoryListLevel(originalCatIDAll,fileNameAll,percentageItem)
+            print percentageItem,"    ",percentageLevel,"    ",len(sqlQueryResultsLevel),"    ",len(dataCategoryLevel),"    ",len(originalCatID),"    ",len(dataCategoryLevelAll),"    ",len(originalCatIDAll)
+            """
             """
             #######################    LABEL    #################
+            """
             sqlQueryResultsLabel = dbQuery(sqlCategoryLabel)
-            print len(sqlCategoryLabel),"    ",sqlCategoryLabel            
-            
             percentageLabel = int(percentageItem * len(sqlQueryResultsLabel))
             for row in sqlQueryResultsLabel[:percentageLabel]:
                 if type(row) is not long:
@@ -405,11 +410,10 @@ def main():
         
     if var == "1":
         print createData.__doc__
-        createData("Arts")    
-    if var == "2":
+        createData("Regional")
+    elif var == "2":
         print runParallel.__doc__
         runParallel()
-          
     else:
         print "Hm, ", var," not supported as an option"
         sys.exit(1)
