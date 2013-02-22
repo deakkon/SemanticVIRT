@@ -290,7 +290,7 @@ def createData(category):
             os.mkdir(path)
             
         #path to dict, model, corpusFiles directory, sim, labels, origCATID directories
-        pathSubDir = ["dict/","models/","corpusFiles/","labels/","origCATID/","sim/","single/", "indeks" ]
+        pathSubDir = ["dict/","models/","corpusFiles/","labels/","origCATID/","sim/", "indeks"]
         for pathItem in pathSubDir:
             checkPath = path+pathItem
             if not os.path.isdir(checkPath):
