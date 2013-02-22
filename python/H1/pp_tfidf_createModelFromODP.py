@@ -171,43 +171,48 @@ def createCorpusAndVectorModel(data, dataSet, fileName ="", outputFormat=1, mode
     
     #creating dictionary and corpus  files in different matrix formats    
     bow_documents = [dictionary.doc2bow(text) for text in data]
-    #print "BoW", bow_documents
 
     #create corpora data for use in creating a vector model representation for furher use
     corpora = path+"corpusFiles/"+fileName
     if outputFormat == 1:
-        saveFN = corpora+".mm"
-        gensim.corpora.MmCorpus.serialize(saveFN, bow_documents)
+        saveCorpora = corpora+".mm"
+        gensim.corpora.MmCorpus.serialize(saveCorpora, bow_documents)
     elif outputFormat == 2:
-        saveFN = corpora+".svmlight"
-        gensim.corpora.SvmLightCorpus.serialize(saveFN, bow_documents)
+        saveCorpora = corpora+".svmlight"
+        gensim.corpora.SvmLightCorpus.serialize(saveCorpora, bow_documents)
     elif outputFormat == 3:
-        saveFN = corpora+".lda-c"
-        gensim.corpora.BleiCorpus.serialize(saveFN, bow_documents)
+        saveCorpora = corpora+".lda-c"
+        gensim.corpora.BleiCorpus.serialize(saveCorpora, bow_documents)
     elif outputFormat == 4:
-        gensim.corpora.LowCorpus.serialize(saveFN, bow_documents)
-        saveFN = corpora+".low" 
+        saveCorpora = corpora+".low" 
+        gensim.corpora.LowCorpus.serialize(saveCorpora, bow_documents)
     else:
-        errorMessage("Something went wrong with the type identificator")
+        errorMessage("Something went wrong with the corpus type identificator")
     
     #save model to disk -> model of all documents that are going to be compared against
     model = path+"models/"+fileName
     if modelFormat == 1:
         tfidf = gensim.models.TfidfModel(bow_documents)
-        saveFN = model+".tfidf_model"
-        tfidf.save(saveFN)
+        saveModel = model+".tfidf_model"
+        tfidf.save(saveModel)
     elif modelFormat == 2:
-        #lsi
         lsi = gensim.models.LsiModel(bow_documents)
-        saveFN = model+".lsi"
-        lsi.save(saveFN)
+        saveModel = model+".lsi"
+        lsi.save(saveModel)
     elif modelFormat == 3:
-        #lsi
         lda = gensim.models.LdaModel(bow_documents)
-        saveFN = model+".lda"
-        lda.save(saveFN)
+        saveModel = model+".lda"
+        lda.save(saveModel)
     else:
-        errorMessage("createTrainingModel: Something went wrong with the type identificator") 
+        errorMessage("createTrainingModel: Something went wrong with the type identificator")
+        
+    #create and save similarity index files for comparison
+    corpus = gensim.corpora.MmCorpus(saveCorpora)
+    dictionary = gensim.corpora.Dictionary.load(dictFN)
+    tfidfModel = gensim.models.tfidfmodel.TfidfModel.load(saveModel)
+    index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus],num_features=len(dictionary))
+    simIndeks = path+"indeks/"+fileName+".index"
+    index.save(simIndeks)
 
 def getCategoryLabel(categoryLabels,fileName, dataSet):
     """
@@ -268,7 +273,7 @@ def createData(category):
     maxDebthRS = dbQuery(sqlmaxDepth)
     maxDebth = maxDebthRS[0]
 
-    #specific models
+    #specific % models
     for percentageItem in percentageList:
         #(1,indeks) list variables
         dataCategoryLevelAll = []
@@ -302,7 +307,6 @@ def createData(category):
             #dynamic SQL queries
             sqlCategoryLevel = "select Description,Title,link,catid from dmoz_externalpages where filterOut = 0 and catid in (select catid from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+" and filterOut = 0)"            
             sqlCategoryLabel = "select distinct(Title) from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+ " and filterOut = 0"
-            #data for individual level, percentage based
     
             #level list variables
             dataCategoryLevel = []
@@ -313,32 +317,34 @@ def createData(category):
             ##########   ORIGINAL DESCRIPTION   #################
             sqlQueryResultsLevel = dbQuery(sqlCategoryLevel)
             
-            #nr of rows for defined percentage 
+            # % of rows
             percentageLevel = int(percentageItem * len(sqlQueryResultsLevel))
             
+            # if % rows = 0 take at least one
             if percentageLevel == 0:
                 percentageLevel = 1
             
+            #prepare % of returned documents for analysis
             for row in sqlQueryResultsLevel[:percentageLevel]:
                 if type(row) is not long:
                     dataCategoryLevel.append(removeStopWords(row[0]))
                     originalCatID.append(row[3])
             
-            #createCorpusAndVectorModel(dataCategoryLevel,percentageItem,fileName=fileNameLevel)
+            #create copus models
+            createCorpusAndVectorModel(dataCategoryLevel,percentageItem,fileName=fileNameLevel)
             dataCategoryLevelAll.extend(dataCategoryLevel)
-            #createCorpusAndVectorModel(dataCategoryLevelAll, percentageItem, fileName=fileNameAll)
+            createCorpusAndVectorModel(dataCategoryLevelAll, percentageItem, fileName=fileNameAll)
             
             #single model for all documents
             #dataCategorySingleAll.append([x for sublist in dataCategoryLevelAll for x in sublist])
             #createCorpusAndVectorModel(dataCategorySingleAll, percentageItem, fileName=fileNameSingleAll)
             
             ##########   ORIGINAL CATEGORIES    #################
-            #getCategoryListLevel(originalCatID,fileNameLevel,percentageItem)
+            getCategoryListLevel(originalCatID,fileNameLevel,percentageItem)
             originalCatIDAll.extend(originalCatID)
-            #getCategoryListLevel(originalCatIDAll,fileNameAll,percentageItem)
-            print category,"    ",indeks,"    ",percentageItem,"    ",len(sqlQueryResultsLevel),"    ",len(dataCategoryLevel),"    ",len(originalCatID),"    ",len(dataCategoryLevelAll),"    ",len(originalCatIDAll)
-            """
-            """
+            getCategoryListLevel(originalCatIDAll,fileNameAll,percentageItem)
+            #print category,"    ",indeks,"    ",percentageItem,"    ",len(sqlQueryResultsLevel),"    ",len(dataCategoryLevel),"    ",len(originalCatID),"    ",len(dataCategoryLevelAll),"    ",len(originalCatIDAll)
+            
             #######################    LABEL    #################
             """
             sqlQueryResultsLabel = dbQuery(sqlCategoryLabel)
@@ -351,7 +357,7 @@ def createData(category):
             dataCategoryLabelAll.extend(dataCategoryLabel)
             getCategoryLabel(dataCategoryLabelAll,fileNameAll, percentageItem)
             """
-            #increment counter indeks by 1        
+            #go to next level
             indeks += 1
 
 def runParallel():
