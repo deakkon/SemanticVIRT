@@ -236,15 +236,17 @@ def getCategoryListLevel(catID, fileName, dataset):
     """
     #create csv
     resultsSavePath = "testData/"+str(dataset)+"/origCATID/"+str(fileName)+".csv"
-    csvResults = csv.writer(open(resultsSavePath,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
+    csvResults = csv.writer(open(resultsSavePath,"wb"), delimiter=',',quoting=csv.QUOTE_ALL)
     csvResults.writerow(('number of row in model','original cat id'))
     #number of rows
     length = range(0,len(catID)-1)
     #print "Length: ", length
         #write each row
-    for i in itertools.izip(length,catID):
+
+    for i in list(enumerate(catID)):
         #print i
-        csvResults.writerow(i)
+        csvResults.writerow(i[0],i[1])
+
 
 def getMainCat():
     #get root categories to be used
@@ -338,7 +340,7 @@ def createData(category):
             originalCatIDAll.extend(originalCatID)
             getCategoryListLevel(originalCatIDAll,fileNameAll,percentageItem)
             
-            """
+            
             #######################    LABEL    #################
             sqlQueryResultsLabel = dbQuery(sqlCategoryLabel)
             print len(sqlCategoryLabel),"    ",sqlCategoryLabel            

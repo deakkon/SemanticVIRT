@@ -93,4 +93,12 @@ def analyzeCSV(modelPath,fileName):
     print originalRowID
 
 #print returnDirectoryList('testData')
-analyzeCSV('0.1','0.1_Arts_3.csv')
+#analyzeCSV('0.1','0.1_Arts_3.csv')
+resultsSavePath = "testData.csv"
+csvResults = csv.writer(open(resultsSavePath,"wb"), delimiter=',',quoting=csv.QUOTE_ALL)
+csvResults.writerow(("number of row in model","original cat id"))
+
+data = ["1,2,3,4,5,6,7,8,9","a","b","c"]
+print list(enumerate(data))
+for i in list(enumerate(data)):
+    csvResults.writerow((i[0],i[1]))
