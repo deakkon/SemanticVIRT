@@ -275,7 +275,9 @@ def createData(category):
         dataCategoryLabelAll = []
         originalCatIDAll = []
         dataCategorySingleAll = []
-
+        
+        #counter
+        indeks = 2
 
         #basic directory for model, based on % of data being analyzed
         path = "testData/"+str(percentageItem)+"/"
@@ -293,10 +295,7 @@ def createData(category):
         fileNameAll = str(percentageItem)+"_"+category+"_1_"+str(indeks)
         fileNameLevel = str(percentageItem)+"_"+category+"_"+str(indeks)
         fileNameSingleAll = str(percentageItem)+"_"+category+"_"+str(indeks)+"_single"
-    
-        #counter
-        indeks = 2
-            
+                
         #go through all levels (2,maxDebth)
         while indeks <= maxDebth:
             #dynamic SQL queries
