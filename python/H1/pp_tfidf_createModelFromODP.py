@@ -20,7 +20,7 @@ Functions:
     10. runParallel()
 '''
 #imports
-import math, sys, time, csv, os, string, pp, re, gensim, MySQLdb, nltk.corpus, nltk.stem, itertools
+import math, sys, time, csv, os, string, pp, re, gensim, MySQLdb, nltk.corpus, nltk.stem, itertools,urlparse
 from MySQLdb import *
 from nltk.stem import WordNetLemmatizer, PorterStemmer, LancasterStemmer
 
@@ -131,14 +131,9 @@ def removeStopWords(text, mode=1):
 
     content = removePunct(text)
     content = [w for w in content if w.lower() not in stopwords]    
-    content = [ps.stem(i) for i in content]
-    #print 
-    #print "remove sw",content
-    #print "SW ",content
-    #print "remove punct",content    
+    content = [ps.stem(i) for i in content]   
     return content
 
-#vectorization stuff
 
 def createCorpusAndVectorModel(data, dataSet, fileName ="", outputFormat=1, modelFormat=1):
     """
@@ -327,21 +322,23 @@ def createData(category):
                 if type(row) is not long:
                     dataCategoryLevel.append(removeStopWords(row[0]))
                     originalCatID.append(row[3])
-            
+            """
             #create copus models
             createCorpusAndVectorModel(dataCategoryLevel,percentageItem,fileName=fileNameLevel)
             dataCategoryLevelAll.extend(dataCategoryLevel)
             createCorpusAndVectorModel(dataCategoryLevelAll, percentageItem, fileName=fileNameAll)
-            
+            """
             #single model for all documents
             #dataCategorySingleAll.append([x for sublist in dataCategoryLevelAll for x in sublist])
             #createCorpusAndVectorModel(dataCategorySingleAll, percentageItem, fileName=fileNameSingleAll)
-            
+            """
             ##########   ORIGINAL CATEGORIES    #################
             getCategoryListLevel(originalCatID,fileNameLevel,percentageItem)
             originalCatIDAll.extend(originalCatID)
             getCategoryListLevel(originalCatIDAll,fileNameAll,percentageItem)
-            #print category,"    ",indeks,"    ",percentageItem,"    ",len(sqlQueryResultsLevel),"    ",len(dataCategoryLevel),"    ",len(originalCatID),"    ",len(dataCategoryLevelAll),"    ",len(originalCatIDAll)
+            """
+            #print out
+            print category,"    ",indeks,"    ",percentageItem,"    ",len(sqlQueryResultsLevel),"    ",len(dataCategoryLevel),"    ",len(originalCatID),"    ",len(dataCategoryLevelAll),"    ",len(originalCatIDAll)
             
             #######################    LABEL    #################
             """
@@ -385,7 +382,7 @@ def runParallel():
     
     for index in inputs:
         #print index
-        jobs.append(job_server.submit(createData, (index,), depfuncs = (dbQuery,createCorpusAndVectorModel,getCategoryLabel,removeStopWords,removePunct,dbQuery,errorMessage,getCategoryListLevel,), modules = ("math", "sys", "time", "csv", "os", "string", "pp","gensim","MySQLdb","gensim.corpora","gensim.models","re","nltk.corpus","nltk.stem","itertools",)))
+        jobs.append(job_server.submit(createData, (index,), depfuncs = (dbQuery,createCorpusAndVectorModel,getCategoryLabel,removeStopWords,removePunct,dbQuery,errorMessage,getCategoryListLevel,), modules = ("math", "sys", "time", "csv", "os", "string", "pp","gensim","MySQLdb","gensim.corpora","gensim.models","re","nltk.corpus","nltk.stem","itertools","urlparse",)))
     
     for job in jobs:
         result = job()
