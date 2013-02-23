@@ -89,18 +89,15 @@ def removePunct(text):
     male_names = nltk.corpus.names.words('male.txt')
     male_names = [name.lower() for name in male_names]    
     female_names = nltk.corpus.names.words('female.txt')
-    female_names = [name.lower() for name in female_names]        
-        
-    #letter of the alphabet
+    female_names = [name.lower() for name in female_names]
     allTheLetters = [x for x in string.lowercase]
 
-    #if returnType == 1:   
-    sentence = [x.lower() for x in sentence]   
-    #sentence = removeNames(sentence)
+    #clean up
+    sentence = [x.lower() for x in sentence]
     sentence = [item for item in sentence if item not in allTheLetters]
     sentence = [item for item in sentence if not item.isdigit()]   
     sentence = [item for item in sentence if (item not in male_names and item not in female_names)]
-    #print "punct ",sentence
+    sentence = [item for item in sentence if not urlparse.urlparse(item).scheme]
     return sentence
 
 def removeStopWords(text, mode=1):        
