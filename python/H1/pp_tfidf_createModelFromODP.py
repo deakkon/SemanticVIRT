@@ -273,9 +273,6 @@ def createData(category):
         dataCategoryLabelAll = []
         originalCatIDAll = []
         dataCategorySingleAll = []
-        
-        #counter
-        indeks = 2
 
         #basic directory for model, based on % of data being analyzed
         path = "testData/"+str(percentageItem)+"/"
@@ -288,15 +285,21 @@ def createData(category):
             checkPath = path+pathItem
             if not os.path.isdir(checkPath):
                 os.mkdir(checkPath)
-                    
-        #create file names
-        fileNameAll = str(percentageItem)+"_"+category+"_1_"+str(indeks)
-        fileNameLevel = str(percentageItem)+"_"+category+"_"+str(indeks)
-        fileNameSingleAll = str(percentageItem)+"_"+category+"_"+str(indeks)+"_single"
+                
+        #counter
+        indeks = 2
+        
+        #print header for (cat,level,model)
         print "Category    Level    PercentageModel    LevelAllRows    ModelRows    IDRows    CombinedRows    CombinedID"
                 
         #go through all levels (2,maxDebth)
         while indeks <= maxDebth:
+            
+            #create file names
+            fileNameAll = str(percentageItem)+"_"+category+"_1_"+str(indeks)
+            fileNameLevel = str(percentageItem)+"_"+category+"_"+str(indeks)
+            fileNameSingleAll = str(percentageItem)+"_"+category+"_"+str(indeks)+"_single"
+            
             #dynamic SQL queries
             sqlCategoryLevel = "select Description,Title,link,catid from dmoz_externalpages where filterOut = 0 and catid in (select catid from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+" and filterOut = 0)"            
             sqlCategoryLabel = "select distinct(Title) from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+ " and filterOut = 0"
@@ -307,7 +310,7 @@ def createData(category):
             originalCatID = []
             originalFatherID = []
 
-            ##########   ORIGINAL DESCRIPTION   #################
+            ##########   ORIGINAL DESCRIPTION AND VECTORIZATION  #################
             sqlQueryResultsLevel = dbQuery(sqlCategoryLevel)
             
             # % of rows
@@ -322,22 +325,22 @@ def createData(category):
                 if type(row) is not long:
                     dataCategoryLevel.append(removeStopWords(row[0]))
                     originalCatID.append(row[3])
-            """
-            #create copus models
+ 
+            #create corpus models
             createCorpusAndVectorModel(dataCategoryLevel,percentageItem,fileName=fileNameLevel)
             dataCategoryLevelAll.extend(dataCategoryLevel)
             createCorpusAndVectorModel(dataCategoryLevelAll, percentageItem, fileName=fileNameAll)
-            """
+
             #single model for all documents
             #dataCategorySingleAll.append([x for sublist in dataCategoryLevelAll for x in sublist])
             #createCorpusAndVectorModel(dataCategorySingleAll, percentageItem, fileName=fileNameSingleAll)
-            """
-            ##########   ORIGINAL CATEGORIES    #################
+
+            ##########   ORIGINAL CATEGORIES ID   #################
             getCategoryListLevel(originalCatID,fileNameLevel,percentageItem)
             originalCatIDAll.extend(originalCatID)
             getCategoryListLevel(originalCatIDAll,fileNameAll,percentageItem)
-            """
-            #print out
+
+            #print out number of documents for (cat,level,model)
             print category,"    ",indeks,"    ",percentageItem,"    ",len(sqlQueryResultsLevel),"    ",len(dataCategoryLevel),"    ",len(originalCatID),"    ",len(dataCategoryLevelAll),"    ",len(originalCatIDAll)
             
             #######################    LABEL    #################
