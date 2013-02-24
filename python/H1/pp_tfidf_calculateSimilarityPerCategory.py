@@ -369,7 +369,7 @@ def returnSimilaritiesCategory(category, compareTo="3", limit = "100"):
     #singular comparison, get directory listing where models are stored
     #testData = returnDirectoryList('testData')
     #testData = ['0.1']
-    testData = ['0.1', '0.25', '0.5', '0.75', '1.0']
+    testData = ['0.25', '0.5', '0.75', '1.0']
 
     #get random documents from database for cat; get catid and all files from dmoz_externalpages for each catid
     for depth in range(2,catDepth+1):
