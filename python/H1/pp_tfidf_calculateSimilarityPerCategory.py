@@ -233,9 +233,6 @@ def calculateSimilarity(path,fileName,originalContent, originalId,category,depth
     category:
     depth    
     """  
-    #define dictionary
-    dictAnalysis = {}
-    
     #paths do needed files
     corpusPath = path+"corpusFiles/"+fileName+""+".mm"
     dictPath = path+"dict/"+fileName+".dict"
@@ -243,16 +240,18 @@ def calculateSimilarity(path,fileName,originalContent, originalId,category,depth
     labesPath = path+"labels/"+fileName+""+".csv"
     resultsSavePath = path+"sim/"+fileName+".csv"
     originalCATID = path+"origCATID/"+fileName+".csv"
+           
+    #if sim file doesn't exist
+    if not os.path.exists(resultsSavePath):
         
-    #open needed files
-    corpus = gensim.corpora.MmCorpus(corpusPath)
-    dictionary = gensim.corpora.Dictionary.load(dictPath)
-    tfidfModel = gensim.models.tfidfmodel.TfidfModel.load(modelPath)
-    
-    #TO DO: if sim file saved on disk read from disk else create new
-    index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus],num_features=len(dictionary))
-    
-    if not os.path.exists(resultsSavePath):    
+        #open needed files
+        corpus = gensim.corpora.MmCorpus(corpusPath)
+        dictionary = gensim.corpora.Dictionary.load(dictPath)
+        tfidfModel = gensim.models.tfidfmodel.TfidfModel.load(modelPath)
+            
+        #TO DO: if sim file saved on disk read from disk else create new
+        index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus],num_features=len(dictionary))
+        
         #write to db
         if operationType == "1":
             #similarities for list of documents
@@ -273,7 +272,7 @@ def calculateSimilarity(path,fileName,originalContent, originalId,category,depth
         #write to file
         elif operationType == "2":
             #csv file to store results in to
-            ifile  = open(resultsSavePath, "w")
+            ifile  = open(resultsSavePath, "wb")
             csvResults = csv.writer(ifile, delimiter=',', quotechar='"',quoting=csv.QUOTE_ALL)
             csvResults.writerow(("category","level","catIdEP","matrixCatID","similarity"))
             
@@ -297,15 +296,17 @@ def calculateSimilarity(path,fileName,originalContent, originalId,category,depth
         
         #create dict, sort, filter, write to either db or csv
         elif operationType == "3":
+            
+            #define dictionary
+            dictAnalysis = {}
+            
             #csv file to store results in to
-            ifile  = open(resultsSavePath, "w")
-            #CSV for results
+            ifile  = open(resultsSavePath, "wb")
             csvResults = csv.writer(ifile, delimiter=',', quotechar='"',quoting=csv.QUOTE_ALL)
             csvResults.writerow(("category","level", "EP_CatID","Matrix_CatID","NrOccurences","sumSim"))
     
             #similarities for list of documents         
             for descriptionLevel, idLevel in  itertools.izip(originalContent,originalId):
-                #print descriptionLevel, idLevel
                 vec_bow = dictionary.doc2bow(descriptionLevel)
                 vec_tfidf = tfidfModel[vec_bow]
                 sims = index[vec_tfidf]
@@ -320,11 +321,10 @@ def calculateSimilarity(path,fileName,originalContent, originalId,category,depth
                             dictAnalysis[sim[0]]['nrOcc'] = nrOcc
                             dictAnalysis[sim[0]]['sim']=simSUm
             
-            #sort dictionary by sum value and write to csv
+            #sort dictionary by sum value and write to CSV
             dictAnalysisValues = sorted(dictAnalysis.values(),key=lambda k: k['sim'], reverse=True)
             keys = ['category', 'depth','idLevel','ocID','sim','nrOcc']
             f = open(resultsSavePath, 'wb')
-            #f = open("test.csv", 'wb')
             dict_writer = csv.DictWriter(f, keys)
             dict_writer.writer.writerow(keys)
             dict_writer.writerows(dictAnalysisValues)
