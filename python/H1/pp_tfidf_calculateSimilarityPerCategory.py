@@ -242,8 +242,7 @@ def calculateSimilarity(path,fileName,originalContent, originalId,category,depth
     originalCATID = path+"origCATID/"+fileName+".csv"
            
     #if sim file doesn't exist
-    if not os.path.exists(resultsSavePath):
-        
+    if not os.path.isfile(resultsSavePath):        
         #open needed files
         corpus = gensim.corpora.MmCorpus(corpusPath)
         dictionary = gensim.corpora.Dictionary.load(dictPath)
@@ -284,7 +283,7 @@ def calculateSimilarity(path,fileName,originalContent, originalId,category,depth
                 sims = index[vec_tfidf]
                 sims = sorted(enumerate(sims), key=lambda item: -item[1])              
                 for sim in sims:
-                    if sim[1] != 0.0:
+                    if float(sim[1]) != 0.0:
                         writeData = []
                         writeData.append(category)
                         writeData.append(depth)
@@ -296,23 +295,18 @@ def calculateSimilarity(path,fileName,originalContent, originalId,category,depth
         
         #create dict, sort, filter, write to either db or csv
         elif operationType == "3":
-            
+
             #define dictionary
             dictAnalysis = {}
-            
-            #csv file to store results in to
-            ifile  = open(resultsSavePath, "wb")
-            csvResults = csv.writer(ifile, delimiter=',', quotechar='"',quoting=csv.QUOTE_ALL)
-            csvResults.writerow(("category","level", "EP_CatID","Matrix_CatID","NrOccurences","sumSim"))
-    
-            #similarities for list of documents         
+
+            #similarities for list of documents
             for descriptionLevel, idLevel in  itertools.izip(originalContent,originalId):
                 vec_bow = dictionary.doc2bow(descriptionLevel)
                 vec_tfidf = tfidfModel[vec_bow]
                 sims = index[vec_tfidf]
-                sims = sorted(enumerate(sims), key=lambda item: -item[1])              
+                sims = sorted(enumerate(sims), key=lambda item: -item[1])
                 for sim in sims:
-                    if sim[1] != 0.0:
+                    if float(sim[1]) != 0.0:
                         if len(dictAnalysis) == 0 or sim[0] not in dictAnalysis.keys():                        
                             dictAnalysis[sim[0]] = {'category': category, 'depth': depth, 'idLevel': idLevel, 'ocID': getOriginalRowFromModel(sim[0],originalCATID), 'sim':sim[1], 'nrOcc': 1}
                         else:
@@ -342,7 +336,14 @@ def calculateSimilarity(path,fileName,originalContent, originalId,category,depth
                         
             summarySTR = [category,depth,fileName,tfidfModel.num_docs,len(dictAnalysis.keys()),len(originalContent)] 
             csvSummary.writerow(summarySTR)
+            
+            #close files
+            #ifile.close()
+            dictAnalysis.clear()
+            f.close()
+            summaryFile.close()
             #print category,"\t",depth,"\t",fileName,"\t",tfidfModel.num_docs,"\t",len(dictAnalysis.keys()),"\t",len(originalContent)
+            gc.collect()
         else:
             sys.exit("Unknown flag calculateSimilarity.operationType")
     else:
