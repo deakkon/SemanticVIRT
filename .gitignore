@@ -3,6 +3,8 @@
 # Packages
 *.egg
 *.egg-info
+*.lprof
+*.png
 dist
 *.sql
 *.txt
