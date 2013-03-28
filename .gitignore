@@ -4,6 +4,8 @@
 *.egg
 *.egg-info
 dist
+*.sql
+*.txt
 build
 eggs
 parts
@@ -35,9 +37,12 @@ pip-log.txt
 
 #directories
 python/H1/testData/
+python/H1/testData_classificationModels/
+python/H1/testData2/
 =======
-python/utils//lineGraph/
+python/utils/lineGraph/
 python/utils/statistics/
 python/utils/histograms/
+python/H1/tmpSim/
 UML/
 .settings/
