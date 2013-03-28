@@ -41,6 +41,7 @@ pip-log.txt
 python/H1/testData/
 python/H1/testData_classificationModels/
 python/H1/testData2/
+python/H1/analysis/
 =======
 python/utils/lineGraph/
 python/utils/statistics/
