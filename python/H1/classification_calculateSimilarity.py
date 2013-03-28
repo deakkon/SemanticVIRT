@@ -519,7 +519,7 @@ def calculateSimilarityCSV_Summary(path,fileName,originalContent, originalId,cat
 
 
 #@profile
-def returnSimilaritiesCategory(category, depth, compareTo="3"):
+def returnSimilaritiesCategory(category, depth):
     """
     COMPARE WITH ALL GROUPING MODELS
     Input:\n 
@@ -680,7 +680,6 @@ def runParallelCategory():
         i += 1
         print i
         job()
-        #print results
 
     print "Time elapsed: ", time.time() - start_time, "s"    
     job_server.print_stats()
