@@ -292,10 +292,10 @@ def createData(category):
         call createCorpusAndVectorModel fro selected documents
     """
     #percentage of data to be used for model build
-    #GROUPTYPE = ["CATID","FATHERID","GENERAL"]
-    #percentageList = [0.1, 0.25, 0.5, 0.75, 1.0]
-    GROUPTYPE = ["FATHERID"]
-    percentageList = [1.0]
+    GROUPTYPE = ["CATID","FATHERID","GENERAL"]
+    percentageList = [0.1, 0.25, 0.5, 0.75, 1.0]
+    #GROUPTYPE = ["FATHERID"]
+    #percentageList = [1.0]
 
     #get max debth
     sqlmaxDepth = "select max(categoryDepth) from dmoz_combined where mainCategory = '%s' and filterOut = 0" %(category)
@@ -369,8 +369,7 @@ def createData(category):
                         tempContent = " ".join(tempContent[:percentageLevel])
                         dataCategoryLevel.append(removeStopWords(tempContent))
                         originalCatID.append(uniq)
-          
-                print category,"\t",percentageItem,"\t",indeks
+
                 createDir(group,percentageItem)
     
                 #create file names
@@ -393,9 +392,8 @@ def createData(category):
                 originalCatIDAll.extend(originalCatID)
                 getCategoryListLevel(originalCatIDAll,fileNameAll,path)
                 
-                
                 #print out number of documents for (cat,level,model)
-                #print category,"    ",indeks,"    ",percentageItem,"    ",len(sqlQueryResultsLevel),"    ",len(dataCategoryLevel),"    ",len(originalCatID),"    ",len(dataCategoryLevelAll),"    ",len(originalCatIDAll)
+                print group,"\t",category,"\t",indeks,"\t",percentageItem
         
                 #######################    LABEL    #################
 
