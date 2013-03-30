@@ -1,5 +1,4 @@
 import os, csv, operator, glob, matplotlib, sys, MySQLdb, gc, sklearn, pp, time
-from docutils.utils import uniq
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
@@ -80,8 +79,7 @@ def returnDirectoryList(path):
     return directories
 
 #get unique fileds in csv, ignore header line
-
-def uniq(inlist, indeks):
+def getUniqueItems(inlist, indeks=""):
     """
     Return uniqe values from column indeks from either list or csv file inlist
     """
@@ -119,18 +117,18 @@ def summaryGraph(a,b,labels,name,model):
     plt.ylabel("Number of documents")
     plt.title("Documents in model vs returned documents")
     #plt.setp(gca().get_legend().get_texts(), fontsize='10')
-    name = "testData/%s/%s.png" %(model,name)
+    name = "testData_classificationModels/%s/%s.png" %(model,name)
     plt.savefig(name)
 
-def analyzeSummary(groupingType, model="0.1"):
+def analyzeSummary(groupingType, model, limit):
     """
     Make graphs from summary files: input 
     CSV summary structure: 
         "Category","Level","Model","docsInModel","ReturnedDocsForModel","NrInputDocs"
     """
-    path = "testData/%s/%s/summary_100.csv" %(groupingType,model)
+    path = "testData_classificationModels/%s/%s/summary_%s.csv" %(groupingType,model,limit)
     labels = []
-    categories = uniq(path, 0)
+    categories = getUniqueItems(path, 0)
     plt.rc('legend',**{'fontsize':6})
     
     contentSingleDocsInModel = []
@@ -196,7 +194,13 @@ def getMainCat():
     mainCat = tuple([x[0] for x in mainCatRS])
     return mainCat
 
-def analyzeCSV(groupingType, model, type=2, analysisType="3",limit = "100"):
+def computeClassificationMetrics(y_true,y_pred):
+    precision = precision_score(y_true, y_pred)
+    recall = recall_score(y_true, y_pred)
+    F1 = f1_score(y_true, y_pred)
+    return (precision,recall, F1)
+
+def analyzeCSV(groupingType, model, category, limit, type=2):
     """
     Parameters.
         model :  model to analyize
@@ -208,54 +212,61 @@ def analyzeCSV(groupingType, model, type=2, analysisType="3",limit = "100"):
     Distinguish between sngle and range sim files
     Get top n row from sim file, n = numer of items searched for
     Calculate IR measures
+    """
     
+    keys = ['category', 'depth','idLevel','ocID','sim','nrOcc']
+    path = "testData_classificationModels/%s/%s/sim/SummaryCSV/%s/" %(groupingType,model,limit)
     
     """
-    keys = ['category', 'depth','idLevel','ocID','sim','nrOcc']
-    path = "testData/%s/%s/sim/SummaryCSV/%s/" %(groupingType,model,limit)
-    categories = getMainCat()
+    if type==1:
+        sysOutFile = "%s%s_%s.txt" %(path,cat,limit)
+    else:
+        sysOutFile = "%s%s_%s_Range.txt" %(path,cat,limit) 
+    sys.stdout = open(sysOutFile, 'wb')
+    """
+    #get cat debth
+    sqlmaxDepth = "select max(categoryDepth) from dmoz_combined where mainCategory = '%s' and filterOut = 0" %(category)
+    maxDebthRS = dbQuery(sqlmaxDepth)
+    maxDebth = maxDebthRS[0]
+    maxDebth = maxDebth[0]
+    ranger = [x for x in range(2,maxDebth+1)]
+    for level in ranger:
+        if type == 1:
+            fileName = "%s%s_%s_%s.csv" % (path,model,category,level)
+            originalIDFile = "%s%s_%s_%s_original.csv" % (path,model,category,level)
+        elif type == 2:
+            fileName = "%s%s_%s_1_%s.csv" % (path,model,category,level)
+            originalIDFile = "%s%s_%s_1_%s_original.csv" % (path,model,category,level)
+        
+        #original categories from sim csv or oid csv 
+        nrUID = getUniqueItems(originalIDFile, 0)
+        returnedID = getUniqueItems(fileName, 3)
+        print "level: ", level,"\t",fileName, originalIDFile,"\t",len(nrUID),"\t",len(returnedID)
+        
+        nrUID = [int(i) for i in nrUID]
+        returnedID = [int(i) for i in returnedID[:len(nrUID)]]
+        
+        if len(returnedID) < len(nrUID):
+            for i in range(len(returnedID),len(nrUID)):
+                returnedID.append(0)
+        #print computeClassificationMetrics(nrUID,returnedID)
+            
+
+def scatterPlots(x_axis, y_axis, saveName):
+    """
+    Creates scatter plots for x_axis, y_axis with name
+    """
+    pass
+
+def averageHitRate(categroy):
+    """
+    INPUT: realtive files
+    Average hit rate:
+    for each 
+    """
     
-    for cat in categories:
-        if type==1:
-            sysOutFile = path+cat+".txt"
-        else:
-            sysOutFile = path+cat+"_Range.txt"
-            
-        sys.stdout = open(sysOutFile, 'wb')
-        #get cat debth
-        sqlmaxDepth = "select max(categoryDepth) from dmoz_categories where Topic like 'Top/"+str(cat)+"/%' and filterOut = 0"
-        maxDebthRS = dbQuery(sqlmaxDepth)
-        maxDebth = maxDebthRS[0]
-        maxDebth = maxDebth[0]
-        ranger = [x for x in range(2,maxDebth+1)]
-        print "Category: ", cat
-        for level in ranger:
-            
-            if type == 1:
-                fileName = "%s%s_%s_%s.csv" % (path,model,cat,level)
-                originalIDFile = "%s%s_%s_%s_original.csv" % (path,model,cat,level) 
-            elif type == 2:
-                fileName = "%s%s_%s_1_%s.csv" % (path,model,cat,level)
-                originalIDFile = "%s%s_%s_1_%s_original.csv" % (path,model,cat,level)
-            
-            #original categories from sim csv or oid csv 
-            if os.path.isfile(originalIDFile):
-                nrUID = uniq(originalIDFile, 0)
-            else:                
-                nrUID = uniq(fileName, 2)
-            
-            nrUID = [int(i) for i in nrUID]
-            #print fileName
-            returnedID = uniq(fileName, 3)
-            returnedID = [int(i) for i in returnedID[:len(nrUID)]]
-            print "level: ", level,"\t",fileName
-            #print nrUID
-            #print returnedID
-            print len(nrUID)
-            print len(returnedID)
-            if len(nrUID) ==len(returnedID): 
-                print sklearn.metrics.classification_report(nrUID,returnedID)
-            
+
+
 def analyzeCSVPP():
     """
     Paralell Python analisys of sim files
@@ -285,38 +296,7 @@ def analyzeCSVPP():
         job()
     #prints
     job_server.print_stats()
-    print "Time elapsed: ", time.time() - start_time, "s"    
-    
-def updateParallel():
-    """
-    Paralell Python analisys of sim files
-    """
-    # tuple of all parallel python servers to connect with
-    ppservers = ()
-    #ppservers = ("10.0.0.1",)
-    
-    if len(sys.argv) > 1:
-        ncpus = int(sys.argv[1])
-        # Creates jobserver with ncpus workers
-        job_server = pp.Server(ncpus, ppservers=ppservers)
-    else:
-        # Creates jobserver with automatically detected number of workers
-        job_server = pp.Server(ppservers=ppservers)
-    
-    print "Starting pp with", job_server.get_ncpus(), "workers"
-    start_time = time.time()
-    
-    # The following submits a job for each category
-    inputs = getMainCat()
-    jobs = []
-    
-    jobs = [(input, job_server.submit(updateEP, (input,), depfuncs = (dbQuery,), modules = ("sys", "os", "glob", "itertools", "csv","gensim.corpora","gensim.models","gensim.similarities","pp", "time", "MySQLdb","nltk","re","nltk.corpus","nltk.stem","string","gc","urlparse","logging",))) for input in inputs]    
-    
-    for input, job in jobs:
-        job()
-    #prints
-    job_server.print_stats()
-    print "Time elapsed: ", time.time() - start_time, "s"   
+    print "Time elapsed: ", time.time() - start_time, "s"
     
 #main UI
 def main():
@@ -341,7 +321,7 @@ def main():
             analyzeSummary(item)
     elif var == "2":
         print analyzeCSV.__doc__
-        analyzeCSV("0.1")
+        analyzeCSV("GENERAL", 0.1 , "Arts", 100)
     elif var == "3":
         print analyzeCSVPP.__doc__
         analyzeCSVPP()

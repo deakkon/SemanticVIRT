@@ -380,15 +380,11 @@ def calculateSimilarityCSV_Summary(path,fileName,originalContent, originalId,cat
         #if not os.path.isfile(resultsSavePath):
         logText = 'Calculating similarity for %s, %s ; simFile: %s '%(category,depth,resultsSavePath)
         logging.debug(logText)
-        
-        #if sim file doesn't exist
-        #if not os.path.isfile(resultsSavePath):
-        #paths do needed files
+
         corpusPath = "%scorpusFiles/%s.mm" % (path,fileName)
         dictPath = "%sdict/%s.dict" % (path,fileName)
         modelPath = "%smodels/%s.tfidf_model" % (path,fileName)
         originalCATID = "%sorigCATID/%s.csv" % (path,fileName)
-        #labesPath = path+"labels/"+fileName+""+".csv"
     
         #open needed files
         corpus = gensim.corpora.MmCorpus(corpusPath)
@@ -401,7 +397,7 @@ def calculateSimilarityCSV_Summary(path,fileName,originalContent, originalId,cat
         else:
             tmpSim = 'tmpSim/%s_%s' %(groupingType,fileName)
             index = gensim.similarities.Similarity(tmpSim,tfidfModel[corpus],num_features=len(dictionary))
-        
+
         #create dict, sort, filter, write to either db or csv
         dictAnalysis = {}
         dictRelative = []
@@ -416,20 +412,20 @@ def calculateSimilarityCSV_Summary(path,fileName,originalContent, originalId,cat
     
         #print "OC:\t",len(originalContent),originalContent 
         #print "OID:\t",len(originalId),originalId
-        
         #similarities for list of documents
         for descriptionLevel, idLevel in  itertools.izip(originalContent,originalId):
             #relative sim value initial states 
             sumTemp = float()
             simFound = float()
             relativeSum = float()
-            
             #prepare documents and calculate similarity
             vec_bow = dictionary.doc2bow(descriptionLevel)
             vec_tfidf = tfidfModel[vec_bow]
             sims = []
             sims = index[vec_tfidf]
+            #print "Sims:\t",len(sims),"\t",sims,"\t",descriptionLevel,"\t",descriptionLevel,"\t",idLevel
             sims = enumerate(sims)
+            #print "Sims:\t",len(sims),"\t",sims
             sims = [x for x in sims if x[1] > 0]
             #print "Sims:\t",len(sims),"\t",sims
             
@@ -473,15 +469,23 @@ def calculateSimilarityCSV_Summary(path,fileName,originalContent, originalId,cat
         #create relative summary files
         #createCSV(oidSavePathRelative, dictRelative)
         with open(oidSavePathRelative, "wb") as the_file:
-            csv.register_dialect("custom", delimiter=",", skipinitialspace=True)
-            writer = csv.writer(the_file, dialect="custom")
+            keys = ['catID', 'relSim']
+            csv.register_dialect("custom", delimiter=",", skipinitialspace=True,)
+            writerRelative = csv.DictWriter(the_file, keys)
+            writerRelative.writer.writerow(keys)
             for item in dictRelative:
-                writer.writerow(item)    
-    
+                writerRelative.writer.writerow(item)
+
         #write original id's
         myfile = open(oidSavePath, 'wb')
-        wr = csv.writer(myfile, delimiter=",", quoting=csv.QUOTE_ALL)
-        wr.writerow(originalId)
+        wr = csv.writer(myfile, delimiter=",", quoting=csv.QUOTE_NONNUMERIC)
+        wr.writerow(['OID'])
+        #print originalId
+        #wr.writerows(originalId)
+        for x in originalId:
+            #print x
+            wr.writerow([x])
+        
         myfile.close()
     
         #CSV for summary (nr of returned sim rows vs nr of rows submitted)
@@ -513,7 +517,8 @@ def calculateSimilarityCSV_Summary(path,fileName,originalContent, originalId,cat
         elapsed_time = time.time() - start_time
         print elapsed_time,": done with %s on level %s from grouping %s: %s " %(category,depth,groupingType,fileName)
         return True
-    except:
+    except Exception as e:
+        print e
         print "File %s NOT created" %(fileName)
         return False
 
@@ -529,14 +534,16 @@ def returnSimilaritiesCategory(category, depth):
                      3: both comparisons
         limit ->    Nr. of row to return from database
     """
-
+    
     #elements from query, depending on groupingType
     testData = ['0.1', '0.25', '0.5', '0.75', '1.0']
     grouping = ['CATID','FATHERID','GENERAL']
     limits = [10,100,1000]
-
+        
     #testing data
-    #grouping = ["FATHERID"]
+    #testData = ['0.1']
+    #grouping = ['GENERAL']
+    #limits = [10]
     
     ###########            CHECK IF ALL MODELS EXIST        ##########
     #LOOP RHTOUGH % MODELS
@@ -614,21 +621,21 @@ def returnSimilaritiesCategory(category, depth):
             
                     #LEVEL BASED SIM FILES 
                     if not os.path.isfile(resultsSavePathLevel):
-                        print "Started with %s\t%s\t%s\t%s\t%s\t%s" %(category, depth, groupingType, limit, testingDataItem,fileName)
-                        if calculateSimilarityCSV_Summary(path,fileName,originalContent, originalId,category,depth,limit, groupingType):
-                            print "Done with %s\t%s\t%s\t%s\t%s\t%s" %(category, depth, groupingType, limit, testingDataItem,fileName)
-                        else:
-                            print "Done with %s\t%s\t%s\t%s\t%s\t%s: file already exists" %(category, depth, groupingType,limit, testingDataItem,fileName)
+                        #print "Started with %s\t%s\t%s\t%s\t%s\t%s" %(category, depth, groupingType, limit, testingDataItem,fileName)
+                        calculateSimilarityCSV_Summary(path,fileName,originalContent, originalId,category,depth,limit, groupingType)
+                            #print "Done with %s\t%s\t%s\t%s\t%s\t%s" %(category, depth, groupingType, limit, testingDataItem,fileName)
+                        #else:
+                            #print "Done with %s\t%s\t%s\t%s\t%s\t%s: file already exists" %(category, depth, groupingType,limit, testingDataItem,fileName)
                     else: 
                         print "Done with %s\t%s\t%s\t%s\t%s\t%s: file already exists" %(category, depth, groupingType, limit, testingDataItem,fileName)
                     
                     #RANGE BASED SIM FILES
                     if not os.path.isfile(resultsSavePathRange):
-                        print "Started with %s\t%s\t%s\t%s\t%s\t%s" %(category, depth, groupingType, limit, testingDataItem,fileNameRange)
-                        if calculateSimilarityCSV_Summary(path,fileNameRange,originalContent,originalId,category,depth,limit, groupingType):
-                            print "Done with %s\t%s\t%s\t%s\t%s\t%s" %(category, depth, groupingType, limit, testingDataItem,fileNameRange)
-                        else:
-                            print "Done with %s\t%s\t%s\t%s\t%s\t%s: file already exists" %(category, depth, groupingType,limit, testingDataItem,fileNameRange)
+                        #print "Started with %s\t%s\t%s\t%s\t%s\t%s" %(category, depth, groupingType, limit, testingDataItem,fileNameRange)
+                        calculateSimilarityCSV_Summary(path,fileNameRange,originalContent,originalId,category,depth,limit, groupingType)
+                            #print "Done with %s\t%s\t%s\t%s\t%s\t%s" %(category, depth, groupingType, limit, testingDataItem,fileNameRange)
+                        #else:
+                            #print "Done with %s\t%s\t%s\t%s\t%s\t%s: file already exists" %(category, depth, groupingType,limit, testingDataItem,fileNameRange)
                     else: 
                         print "Done with %s\t%s\t%s\t%s\t%s\t%s: file already exists" %(category, depth, groupingType, limit, testingDataItem,fileNameRange)
                 
@@ -667,14 +674,13 @@ def runParallelCategory():
    
     i = 0
     for category in categories:
-        if category != 'Regional':
-            sqlmaxDepth = "select max(categoryDepth) from dmoz_categories where Topic like 'Top/"+str(category)+"/%' and filterOut = 0"
-            maxDebthRS = dbQuery(sqlmaxDepth)
-            maxDebth = maxDebthRS[0]
-            maxDebth = maxDebth[0]
-            ranger = [x for x in range(2,maxDebth+1)]
-            for rang in ranger:
-                jobs.append(job_server.submit(returnSimilaritiesCategory, (category,rang), depfuncs = (dbQuery, returnDirectoryList, removePunct, removeStopWords, getMainCat, calculateSimilarityCSV_Summary, prepareComparisonDocuments,getOriginalRowFromModel,createDir,createCSV,), modules = ("sys", "os", "glob", "itertools", "csv","gensim.corpora","gensim.models","gensim.similarities","pp", "time", "MySQLdb","nltk","re","nltk.corpus","nltk.stem","string","gc","urlparse","pickle","logging","random","operator",)))
+        sqlmaxDepth = "select max(categoryDepth) from dmoz_categories where Topic like 'Top/"+str(category)+"/%' and filterOut = 0"
+        maxDebthRS = dbQuery(sqlmaxDepth)
+        maxDebth = maxDebthRS[0]
+        maxDebth = maxDebth[0]
+        ranger = [x for x in range(2,maxDebth+1)]
+        for rang in ranger:
+            jobs.append(job_server.submit(returnSimilaritiesCategory, (category,rang), depfuncs = (dbQuery, returnDirectoryList, removePunct, removeStopWords, getMainCat, calculateSimilarityCSV_Summary, prepareComparisonDocuments,getOriginalRowFromModel,createDir,createCSV,), modules = ("sys", "os", "glob", "itertools", "csv","gensim.corpora","gensim.models","gensim.similarities","pp", "time", "MySQLdb","nltk","re","nltk.corpus","nltk.stem","string","gc","urlparse","pickle","logging","random","operator",)))
 
     for job in jobs:
         i += 1
