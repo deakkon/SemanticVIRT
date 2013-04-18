@@ -363,7 +363,7 @@ def calculateSimilarityDatabase(path,fileName,originalContent, originalId,catego
                 sqlInsert = "INSERT INTO dmoz_comparisonResults (comparisonModel, category,level,catidEP,matrixID,similarity) VALUES ('"+str(fileName)+"','"+str(category)+"','"+str(depth)+"','"+str(idLevel)+"','"+str(matrixCatID)+"','"+str(sim[1])+"')"
 
 #@profile
-def calculateSimilarityCSV_Summary(path,fileName,originalContent, originalId,category,depth,limit,groupingType):
+def calculateSimilarityCSV_Summary(path,fileName,originalContent,originalId,category,depth,limit,groupingType):
     """
     Calculate similarity for originalContent against model fileName (category, depth, limit additional descriptors)
     WRITE DATA TO SINGLE CSV FILE, AFTER APPLYING SUMMARIZATION
