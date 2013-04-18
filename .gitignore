@@ -42,6 +42,7 @@ python/H1/testData/
 python/H1/testData_classificationModels/
 python/H1/testData2/
 python/H1/tmpSim/
+python/H1/graphs
 =======
 python/utils/lineGraph/
 python/utils/statistics/
