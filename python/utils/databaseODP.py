@@ -76,3 +76,9 @@ def dbQuery(sql):
 def errorMessage(msg):
     print msg
     sys.exit(1)
+    
+def truncateTable():
+    tables = ["analysis_f1","analysis_precision","analysis_recall"]
+    for table in tables: 
+        sql = "TRUNCATE TABLE  %s" %(table)
+        dbQuery(sql)

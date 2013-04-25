@@ -440,24 +440,17 @@ def calculateSimilarityCSV_Summary(path,fileName,originalContent, originalId,cat
                 else:
                     #originalIDtTem=reader[str(sim[0])]
                     dictAnalysis[sim[0]] = {'category': category, 'depth': depth, 'idLevel': idLevel, 'ocID': int(originalID_item), 'sim':sim[1], 'nrOcc': 1}
-    
-                #if returned original value
-                #print type(originalID_item), type(idLevel)
+
                 if originalID_item == str(idLevel):
-                    #print "found id level:\t", "\t",originalID_item,"\t",idLevel
                     simFound += sim[1]
-                    
-                #print idLevel, sim[0] , originalID_item, simFound
-            #relative: if idLevel returned as similar from model calculate relative sim values
-            #print type(simFound),"\t", simFound,"\t", type(sumTemp),"\t",sumTemp
-            
-            if sumTemp != 0:
+
+            if sumTemp > 0:
                 relativeSum = simFound/sumTemp
                 dictRelative.append((idLevel,relativeSum))
-            else:
-                dictRelative.append((idLevel,0))
+            #else:
+                #dictRelative.append((idLevel,0))
     
-        #sort dictionary by sum value and write to CSV
+        #sort dictionary by sum value and write to CSV -> write cumulative similarity measures
         dictAnalysisValues = sorted(dictAnalysis.values(),key=lambda k: k['nrOcc'], reverse=True)
         keys = ['category', 'depth','idLevel','ocID','sim','nrOcc']
         f = open(resultsSavePath, 'wb')
@@ -467,7 +460,6 @@ def calculateSimilarityCSV_Summary(path,fileName,originalContent, originalId,cat
         f.close()
         
         #create relative summary files
-        #createCSV(oidSavePathRelative, dictRelative)
         with open(oidSavePathRelative, "wb") as the_file:
             keys = ['catID', 'relSim']
             csv.register_dialect("custom", delimiter=",", skipinitialspace=True,)
@@ -480,10 +472,8 @@ def calculateSimilarityCSV_Summary(path,fileName,originalContent, originalId,cat
         myfile = open(oidSavePath, 'wb')
         wr = csv.writer(myfile, delimiter=",", quoting=csv.QUOTE_NONNUMERIC)
         wr.writerow(['OID'])
-        #print originalId
-        #wr.writerows(originalId)
+
         for x in originalId:
-            #print x
             wr.writerow([x])
         
         myfile.close()
