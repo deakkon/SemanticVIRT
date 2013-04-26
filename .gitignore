@@ -16,6 +16,7 @@ var
 sdist
 develop-eggs
 .installed.cfg
+*.log
 
 # Installer logs
 pip-log.txt
@@ -37,6 +38,13 @@ pip-log.txt
 *.dict
 *.tfidf*
 
+#image files
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.bmp
+
 #directories
 python/H1/testData/
 python/H1/testData_classificationModels/
@@ -50,3 +58,4 @@ python/utils/statistics/
 python/utils/histograms/
 UML/
 .settings/
+python/data/
