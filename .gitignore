@@ -45,6 +45,7 @@ python/H1/tmpSim/
 python/H1/graphs
 =======
 python/utils/lineGraph/
+python/utils/old/
 python/utils/statistics/
 python/utils/histograms/
 UML/
