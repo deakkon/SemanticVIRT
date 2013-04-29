@@ -12,7 +12,7 @@ class ShevaDB:
             db = MySQLdb.connect(self.host, self.user, self.passwd, self.database)
             db.autocommit(True)
             return db
-        
+
         except MySQLdb.Error, e:
             print "Error dbConnect %d: %s" % (e.args[0],e.args[1])
             sys.exit(1)

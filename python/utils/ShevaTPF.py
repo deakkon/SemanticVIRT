@@ -1,9 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf8 -*-
-"""
-Text preparation functions for further vectorization etc.
-"""
-
 #import libraries
 import sys, re, nltk, os, string, glob
 from nltk.stem import WordNetLemmatizer, PorterStemmer, LancasterStemmer
@@ -14,10 +8,12 @@ from postmarkup import render_bbcode
 from lxml import html
 
 class ShevaTPF:
-
-    def __init__(self, text, type):
+    """
+    def __init__(self):
+        print "Calling parent constructor"
         self.text = text
-        self.type = type
+        self.typeModus = typeModus
+    """
 
     def string2list(self, text):
         sentence = []
@@ -28,7 +24,7 @@ class ShevaTPF:
         else:
             sys.exit("Error with data types. removePunct. textPrepareFunctions")
         return sentence
-        
+
     def removeNames(self, text):
         sentence = []
         #name files
@@ -78,26 +74,26 @@ class ShevaTPF:
         sentence = [w for w in text if w.lower() not in stopwords]
         return sentence
     
-    def returnStem(self, text, type=1):
+    def returnStem(self, text, typeModus=1):
         sentence = []
-        if type == 1:
+        if typeModus == 1:
             stemmer = PorterStemmer()
-        elif type == 2:
+        elif typeModus == 2:
             stemmer = LancasterStemmer()
-        elif type == 3:
+        elif typeModus == 3:
             stemmer = WordNetLemmatizer()
         else:
             sys.exit("Something wrong with stemmer")
-            
+
         sentence = [stemmer.stem(wordItem) for wordItem in text]
         return sentence
     
-    def returnClean(self):
+    def returnClean(self,text,typeModus):
         sentence = []
-        sentence = self.string2list(self.text)
+        sentence = self.string2list(text)
         #sentence = self.removeHtmlTags(sentence)
         sentence = self.removeNames(sentence)
         sentence = self.removeAN(sentence)
-        sentence = self.removeStopWords(sentence,self.type)
+        sentence = self.removeStopWords(sentence,typeModus)
         sentence = self.returnStem(sentence)
         return sentence
