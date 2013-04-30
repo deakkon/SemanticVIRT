@@ -46,9 +46,8 @@ pip-log.txt
 *.bmp
 
 #directories
-python/classification(H1)/old/
-=======
-python/_utils/old/
+classification(H1)/old/
+_utils/old/
 UML/
 .settings/
-python/_initalData/
+_initalData/
