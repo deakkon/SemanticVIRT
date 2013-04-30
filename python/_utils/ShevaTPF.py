@@ -1,11 +1,14 @@
 #import libraries
-import sys, re, nltk, os, string, glob
+import sys, re, nltk, os, string, glob, urlparse, types
 from nltk.stem import WordNetLemmatizer, PorterStemmer, LancasterStemmer
 from nltk.corpus import names
 from nltk.corpus import stopwords
+from nltk.tokenize.punkt import PunktWordTokenizer
 from urlparse import urlparse
 from postmarkup import render_bbcode
 from lxml import html
+from bs4 import BeautifulSoup
+from bs4 import BeautifulStoneSoup
 
 class ShevaTPF:
     """
@@ -46,12 +49,47 @@ class ShevaTPF:
         return sentence
 
     def removeHtmlTags(self, text):
-        text = " ".join(text)
-        doc = html.document_fromstring(text)
-        bbcode = doc.text_content()
-        content = render_bbcode(bbcode)
-        return content
+        
+        if isinstance(text, types.ListType): 
+            text = " ".join(text)
+
+        sentence = ' '.join(BeautifulSoup(text).findAll(text=True))
+        sentence = sentence.encode('utf8')
+        sentence = sentence.split()
+        return sentence
     
+    def stripHTMLTags(self, text):
+        if isinstance(text, types.ListType):
+            text = " ".join(text)
+
+        # apply rules in given order!
+        rules = [
+        { r'>\s+' : u'>'},                  # remove spaces after a tag opens or closes
+        { r'\s+' : u' '},                   # replace consecutive spaces
+        { r'\s*<br\s*/?>\s*' : u'\n'},      # newline after a <br>
+        { r'</(div)\s*>\s*' : u'\n'},       # newline after </p> and </div> and <h1/>...
+        { r'</(p|h\d)\s*>\s*' : u'\n\n'},   # newline after </p> and </div> and <h1/>...
+        { r'<head>.*<\s*(/head|body)[^>]*>' : u'' },     # remove <head> to </head>
+        { r'<a\s+href="([^"]+)"[^>]*>.*</a>' : r'\1' },  # show links instead of texts
+        { r'[ \t]*<[^<]*?/?>' : u'' },            # remove remaining tags
+        { r'^\s+' : u'' }                   # remove spaces at the beginning
+        ]
+        
+        for rule in rules:
+            for (k,v) in rule.items():
+                regex = re.compile (k)
+                text  = regex.sub (v, text)
+        
+        # replace special strings
+        special = {'&nbsp;' : ' ', '&amp;' : '&', '&quot;' : '"','&lt;'   : '<', '&gt;'  : '>'
+        }
+        
+        for (k,v) in special.items():
+            text = text.replace (k, v)
+        
+        text = str(text)
+        return text.split()
+
     def removeStopWords(self, text, mode=1):
         """
         Removes stop words from text, passed as variable text
@@ -66,8 +104,9 @@ class ShevaTPF:
         if mode == 1:
             stopwords = nltk.corpus.stopwords.words('english')
         elif mode == 2:
-            stopwordsFileOpen = open('stopWords.txt','r')
-            stopwordsFile = [i.strip() for i in stopwordsFileOpen.readlines()]
+            stopwordsFile = open('stopWords.txt','r')
+            stopwords = [i.strip() for i in stopwordsFile.readlines()]
+            #print stopwords
         else:
             sys.exit("False flag -> second parameter must be \n 1, if you want to use nltk based set of stopwrods \n 2, if you want to use file based set of stopwords \n")        
     
@@ -88,12 +127,19 @@ class ShevaTPF:
         sentence = [stemmer.stem(wordItem) for wordItem in text]
         return sentence
     
-    def returnClean(self,text,typeModus):
-        sentence = []
-        sentence = self.string2list(text)
-        #sentence = self.removeHtmlTags(sentence)
+    def returnClean(self,sentence,typeModus):
+
+        sentence = self.string2list(sentence)
+        #print sentence
+        sentence = self.stripHTMLTags(sentence)
+        #print sentence
+        sentence = self.removeHtmlTags(sentence)
+        #print sentence
         sentence = self.removeNames(sentence)
+        #print sentence
         sentence = self.removeAN(sentence)
+        #print sentence
         sentence = self.removeStopWords(sentence,typeModus)
+        #print sentence
         sentence = self.returnStem(sentence)
         return sentence

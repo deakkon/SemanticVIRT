@@ -46,16 +46,9 @@ pip-log.txt
 *.bmp
 
 #directories
-python/H1/testData/
-python/H1/testData_classificationModels/
-python/H1/testData2/
-python/H1/tmpSim/
-python/H1/graphs
+python/classification(H1)/old/
 =======
-python/utils/lineGraph/
-python/utils/old/
-python/utils/statistics/
-python/utils/histograms/
+python/_utils/old/
 UML/
 .settings/
-python/data/
+python/_initalData/

@@ -19,17 +19,71 @@ Functions:
     9. createData(category)
     10. runParallel()
 '''
-#imports
+#libraries
 import math, sys, time, csv, os, string, pp, re, gensim, MySQLdb, nltk.corpus, nltk.stem, itertools,urlparse,gc
-from MySQLdb import *
 from nltk.stem import WordNetLemmatizer, PorterStemmer, LancasterStemmer
+#import Sheva py files
+sys.path.append("~/SemanticVIRT/python/utils/")
+from ShevaDB import ShevaDB
+from ShevaTPF import ShevaTPF
 
-#stemmers
-wnl = nltk.stem.WordNetLemmatizer()
-lst = nltk.stem.LancasterStemmer()
-ps = nltk.stem.PorterStemmer()
+#Database stuff
 
-#Database stuff    
+class ShevaModels:
+    def __init__(self, data, fileName, path, outputFormat):
+        self.data = data
+        self.fileName = fileName
+        self.path = path
+        self.outputFormat = outputFormat
+    
+    def createDictionary(self,data=self.data,fileName=self.fileName,path=self.path):
+        #create dictionary
+        dictionary = gensim.corpora.Dictionary(data)
+        dictPath = "%sdict/%s.dict" %(path,fileName)
+        dictionary.save(dictPath)
+    
+        dataBoW = [dictionary.doc2bow(text) for text in data]
+        return dataBoW
+    
+    def createModel(self,data=self.data,fileName=self.fileName,path=self.path,outputFormat=self.outputFormat):
+        model = path+"models/"+fileName
+        if outputFormat == 1:
+            tfidf = gensim.models.TfidfModel(data)
+            saveModel = model+".tfidf_model"
+            tfidf.save(saveModel)
+        elif outputFormat == 2:
+            lsi = gensim.models.LsiModel(data)
+            saveModel = model+".lsi"
+            lsi.save(saveModel)
+        elif outputFormat == 3:
+            lda = gensim.models.LdaModel(data)
+            saveModel = model+".lda"
+            lda.save(saveModel)
+        else:
+            errorMessage("createTrainingModel: Something went wrong with the type identificator")        
+    
+    def createCorpora(self,data=self.data,fileName=self.fileName,path=self.path,outputFormat=self.outputFormat):
+    #create corpora data for use in creating a vector model representation for furher use
+        corpora = path+"corpusFiles/"+fileName
+        if outputFormat == 1:
+            saveCorpora = corpora+".mm"
+            gensim.corpora.MmCorpus.serialize(saveCorpora, data)
+        elif outputFormat == 2:
+            saveCorpora = corpora+".svmlight"
+            gensim.corpora.SvmLightCorpus.serialize(saveCorpora, data)
+        elif outputFormat == 3:
+            saveCorpora = "%s.lda-c"% (corpora)
+            gensim.corpora.BleiCorpus.serialize(saveCorpora, data)
+        elif outputFormat == 4:
+            saveCorpora = corpora+".low" 
+            gensim.corpora.LowCorpus.serialize(saveCorpora, data)
+        else:
+            errorMessage("Something went wrong with the corpus type identificator")
+            
+    def createVMF(data, data=self.data,fileName=self.fileName,path=self.path,outputFormat=self.outputFormat):
+        pass
+    
+ 
 def dbQuery(sql):
 
     try:
@@ -56,7 +110,7 @@ def dbQuery(sql):
         con.close()
         gc.collect()
         return resultRows
-    
+
     except MySQLdb.Error, e:
         print "Error dbQuery %d: %s" % (e.args[0],e.args[1])
         sys.exit(1)
@@ -65,19 +119,19 @@ def errorMessage(msg):
     print msg
     sys.exit(1)
 
-#prepare text for gensim stuff
-
+#prepare text for gensimn stuff
 def removePunct(text):
     """
     Input arguments: text (text to remove punctuation from), returnType (what to return; default string)
     Return types: type list (of words) if returnType = 1, string if returnType = 2 (default)
-    
+
     Removes:
-        single letters 
-        numbers 
+        single letters
+        numbers
         first male/female names
         punctuation
     """
+
     #data preparation   
     if type(text) is str:
         sentence = re.compile('\w+').findall(text)
@@ -100,6 +154,7 @@ def removePunct(text):
     sentence = [item for item in sentence if not item.isdigit()]   
     sentence = [item for item in sentence if (item not in male_names and item not in female_names)]
     sentence = [item for item in sentence if not urlparse.urlparse(item).scheme]
+
     return sentence
 
 def removeStopWords(text, mode=1):        
@@ -141,8 +196,7 @@ def removeStopWords(text, mode=1):
     #print content
     return content
 
-#@profile
-def createCorpusAndVectorModel(data, dataSet, fileName ="", outputFormat=1, modelFormat=1):
+def createCorpusAndVectorModel(data, fileName, path, outputFormat=1, modelFormat=1):
     """
     Input parameters: sqlQueryResults="", outputFormat=1, modelFormat=1, fileName =""
         1. data -> data to save to models, corpus, dictionary
@@ -157,7 +211,7 @@ def createCorpusAndVectorModel(data, dataSet, fileName ="", outputFormat=1, mode
                                         3 -> lda                                                                                                                            
     Output data: saved dictionary, corpus and model files of chosen format to disk, to respected directories
     """   
-    path = "test1/"+str(dataSet)+"/"
+    #path = "testData/%s/%s/" %(groupingType,dataSet)
     
     #create file names to save
     if fileName == "":
@@ -165,7 +219,7 @@ def createCorpusAndVectorModel(data, dataSet, fileName ="", outputFormat=1, mode
     
     #create dictionary
     dictionary = gensim.corpora.Dictionary(data)
-    dictFN = path+"dict/"+fileName+".dict"
+    dictFN = "%sdict/%s.dict" %(path,fileName)
     dictionary.save(dictFN)
     
     #creating dictionary and corpus  files in different matrix formats    
@@ -176,7 +230,6 @@ def createCorpusAndVectorModel(data, dataSet, fileName ="", outputFormat=1, mode
     if outputFormat == 1:
         saveCorpora = corpora+".mm"
         gensim.corpora.MmCorpus.serialize(saveCorpora, bow_documents)
-        #print "corpus created"
     elif outputFormat == 2:
         saveCorpora = corpora+".svmlight"
         gensim.corpora.SvmLightCorpus.serialize(saveCorpora, bow_documents)
@@ -188,7 +241,6 @@ def createCorpusAndVectorModel(data, dataSet, fileName ="", outputFormat=1, mode
         gensim.corpora.LowCorpus.serialize(saveCorpora, bow_documents)
     else:
         errorMessage("Something went wrong with the corpus type identificator")
-        
     
     #save model to disk -> model of all documents that are going to be compared against
     model = path+"models/"+fileName
@@ -196,7 +248,6 @@ def createCorpusAndVectorModel(data, dataSet, fileName ="", outputFormat=1, mode
         tfidf = gensim.models.TfidfModel(bow_documents)
         saveModel = model+".tfidf_model"
         tfidf.save(saveModel)
-        #print "corpus created"
     elif modelFormat == 2:
         lsi = gensim.models.LsiModel(bow_documents)
         saveModel = model+".lsi"
@@ -207,19 +258,15 @@ def createCorpusAndVectorModel(data, dataSet, fileName ="", outputFormat=1, mode
         lda.save(saveModel)
     else:
         errorMessage("createTrainingModel: Something went wrong with the type identificator")
-    """
+    """    
     #create and save similarity index files for comparison
     corpus = gensim.corpora.MmCorpus(saveCorpora)
     dictionary = gensim.corpora.Dictionary.load(dictFN)
-    tfidfModel = gensim.models.TfidfModel.load(saveModel)
-    index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus], num_features=len(dictionary))
+    tfidfModel = gensim.models.tfidfmodel.TfidfModel.load(saveModel)
+    index = gensim.similarities.MatrixSimilarity(tfidfModel[corpus],num_features=len(dictionary))
     simIndeks = path+"indeks/"+fileName+".index"
     index.save(simIndeks)
-    print "simIndeks created"
-    del index
     """
-    gc.collect()
-    return None
 
 def getCategoryLabel(categoryLabels,fileName, dataSet):
     """
@@ -230,24 +277,24 @@ def getCategoryLabel(categoryLabels,fileName, dataSet):
     writeLabels = []    
 
     #file to save data to 
-    fileName = "test1/"+str(dataSet)+"/labels/"+fileName+".csv"
-    ifile  = open(fileName, "wb")
-    out = csv.writer(ifile, delimiter=',',quoting=csv.QUOTE_ALL)
+    fileName = "testData/"+str(dataSet)+"/labels/"+fileName+".csv"
+    out = csv.writer(open(fileName,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
 
     for row in categoryLabels:
         for i in row:            
             if i != "" or i.lower() not in string.letters.lower():
                 writeLabels.append(i.lower())
+
     out.writerow(writeLabels)
 
-def getCategoryListLevel(catID, fileName, dataset):
+def getCategoryListLevel(catID, fileName, path):
     """
     catID: original cadID while creating data
     fileName: fileName for saving
     dataset: % model of data
     """
     #create csv
-    resultsSavePath = "test1/"+str(dataset)+"/origCATID/"+str(fileName)+".csv"
+    resultsSavePath = "%s/origCATID/%s.csv" %(path,fileName)
     summaryFile  = open(resultsSavePath, "wb")
     csvResults = csv.writer(summaryFile, delimiter=',',quoting=csv.QUOTE_ALL)
     csvResults.writerow(('number of row in model','original cat id'))
@@ -261,7 +308,28 @@ def getCategoryListLevel(catID, fileName, dataset):
     
     summaryFile.close()
     gc.collect()
-    return None
+    
+def createDir(type,percentageItem):
+    #basic directory for grouping type: GENERAL
+    path = "testData_classificationModels/%s/" %(type)
+    if not os.path.isdir(path):
+        os.mkdir(path)
+
+    #basic directory for model, based on % of data being analyzed
+    path = path+str(percentageItem)+"/"
+    if not os.path.isdir(path):
+        os.mkdir(path)
+        
+    #path to dict, model, corpusFiles directory, sim, labels, origCATID directories
+    pathSubDir = ["dict/","models/","corpusFiles/","origCATID/","sim/"]
+    for pathItem in pathSubDir:
+        checkPath = path+pathItem
+        if not os.path.isdir(checkPath):
+            os.mkdir(checkPath)
+            
+def createDirOne(dir):
+    if not os.path.isdir(path):
+        os.mkdir(path)
 
 def getMainCat():
     #get root categories to be used
@@ -280,118 +348,112 @@ def createData(category):
         call createCorpusAndVectorModel fro selected documents
     """
     #percentage of data to be used for model build
-    #percentageList = [0.1, 0.25, 0.5, 0.75, 1.0]
-    percentageList = [0.1]
-    
+    GROUPTYPE = ["CATID","FATHERID","GENERAL"]
+    percentageList = [0.1, 0.25, 0.5, 0.75, 1.0]
+    #GROUPTYPE = ["FATHERID"]
+    #percentageList = [1.0]
+
     #get max debth
-    sqlmaxDepth = "select max(categoryDepth) from dmoz_categories where Topic like 'Top/"+str(category)+"/%' and filterOut = 0"
+    sqlmaxDepth = "select max(categoryDepth) from dmoz_combined where mainCategory = '%s' and filterOut = 0" %(category)
     maxDebthRS = dbQuery(sqlmaxDepth)
     maxDebth = maxDebthRS[0]
     maxDebth = int(maxDebth[0])
     ranger = [x for x in range(2,maxDebth+1)]
     #print type(ranger[2])
     #print ranger
-
-    #specific % models
-    for percentageItem in percentageList:
-        #(1,indeks) list variables
-        dataCategoryLevelAll = []
-        dataCategoryLabelAll = []
-        originalCatIDAll = []
-        dataCategorySingleAll = []
-
-        #basic directory for model, based on % of data being analyzed
-        path = "test1/"+str(percentageItem)+"/"
-        if not os.path.isdir(path):
-            os.mkdir(path)
+    for group in GROUPTYPE: 
+    #go through all levels (2,maxDebth)
+        for percentageItem in percentageList:
+            #data for % model, range data
+            dataCategoryLevelAll = []
+            dataCategoryLabelAll = []
+            originalCatIDAll = []
+            dataCategorySingleAll = []
             
-        #path to dict, model, corpusFiles directory, sim, labels, origCATID directories
-        pathSubDir = ["dict/","models/","corpusFiles/","labels/","origCATID/","sim/", "indeks"]
-        for pathItem in pathSubDir:
-            checkPath = path+pathItem
-            if not os.path.isdir(checkPath):
-                os.mkdir(checkPath)
+            path = "testData_classificationModels/%s/%s/" %(group,percentageItem)
+            createDir(group,percentageItem)
+            
+            for indeks in ranger:
+                
+                #level list variables
+                dataCategoryLevel = []
+                dataCategoryLabel = []
+                originalCatID = []
+                originalFatherID = []
 
-        #print header for (cat,level,model)
-        #print "Category    Level    PercentageModel    LevelAllRows    ModelRows    IDRows    CombinedRows    CombinedID"
-
-        #go through all levels (2,maxDebth)
-        for indeks in ranger:
-            print category,"\t",percentageItem,"\t",indeks
-            
-            #create file names
-            fileNameAll = str(percentageItem)+"_"+category+"_1_"+str(indeks)
-            fileNameLevel = str(percentageItem)+"_"+category+"_"+str(indeks)
-            fileNameSingleAll = str(percentageItem)+"_"+category+"_"+str(indeks)+"_single"
-            
-            #dynamic SQL queries
-            sqlCategoryLevel = "select Description,Title,link,catid from dmoz_externalpages where filterOut = 0 and catid in (select catid from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+" and filterOut = 0)"            
-            #sqlCategoryLabel = "select distinct(Title) from dmoz_categories where Topic like 'Top/"+category+"/%' and categoryDepth = "+str(indeks)+ " and filterOut = 0"
-    
-            #level list variables
-            dataCategoryLevel = []
-            dataCategoryLabel = []
-            originalCatID = []
-            originalFatherID = []
-
-            ##########   ORIGINAL DESCRIPTION AND VECTORIZATION  #################
-            sqlQueryResultsLevel = dbQuery(sqlCategoryLevel)
-            
-            if sqlQueryResultsLevel == 0:
-                print category,"\t",indeks,"\t",sqlCategoryLevel
-            # % of rows
-            percentageLevel = int(percentageItem * int((len(sqlQueryResultsLevel))))
-            
-            
-            # if % rows = 0 take at least one
-            if percentageLevel == 0:
-                percentageLevel = 1
-  
-            #print type(sqlQueryResultsLevel),"\t",len(sqlQueryResultsLevel),"\t", type(lrows),len(lrows),"\t"
-
-            #prepare % of returned documents for analysis
-            for row in sqlQueryResultsLevel[:percentageLevel]:
-                #print type(row[0]),"\n",row[0],"\n",row
-                if str(row[3]) == "e":
-                    print "row je cudan:\t",row[3]
+                #gruping dependent queries
+                if group != "FATHERID":
+                    sqlCategoryLevel = "select Description, catid from dmoz_combined where mainCategory = '%s' and categoryDepth = '%s'" %(category,indeks)
                 else:
-                    dataCategoryLevel.append(removeStopWords(row[0]))
-                    originalCatID.append(row[3])
- 
-
-            #create corpus models
-            createCorpusAndVectorModel(dataCategoryLevel,percentageItem,fileName=fileNameLevel)
-            dataCategoryLevelAll.extend(dataCategoryLevel)
-            createCorpusAndVectorModel(dataCategoryLevelAll, percentageItem, fileName=fileNameAll)
-
-            #single model for all documents
-            #dataCategorySingleAll.append([x for sublist in dataCategoryLevelAll for x in sublist])
-            #createCorpusAndVectorModel(dataCategorySingleAll, percentageItem, fileName=fileNameSingleAll)
-
-            ##########   ORIGINAL CATEGORIES ID   #################
-            getCategoryListLevel(originalCatID,fileNameLevel,percentageItem)
-            originalCatIDAll.extend(originalCatID)
-            getCategoryListLevel(originalCatIDAll,fileNameAll,percentageItem)
-
-            #print out number of documents for (cat,level,model)
-            #print category,"    ",indeks,"    ",percentageItem,"    ",len(sqlQueryResultsLevel),"    ",len(dataCategoryLevel),"    ",len(originalCatID),"    ",len(dataCategoryLevelAll),"    ",len(originalCatIDAll)
-
-            #######################    LABEL    #################
-            """
-            sqlQueryResultsLabel = dbQuery(sqlCategoryLabel)
-            percentageLabel = int(percentageItem * len(sqlQueryResultsLabel))
-            for row in sqlQueryResultsLabel[:percentageLabel]:
-                    dataCategoryLabel.append(removeStopWords(row[0]))
-                        
-            getCategoryLabel(dataCategoryLabel,fileNameLevel,percentageItem)
-            dataCategoryLabelAll.extend(dataCategoryLabel)
-            getCategoryLabel(dataCategoryLabelAll,fileNameAll, percentageItem)
-            """
-            gc.collect()
+                    sqlCategoryLevel = "select Description, fatherid from dmoz_combined where mainCategory = '%s' and categoryDepth = '%s'" %(category,indeks)
+                
+                sqlQueryResultsLevel = dbQuery(sqlCategoryLevel)
+                
+                if sqlQueryResultsLevel == 0:
+                    print category,"\t",indeks,"\t",sqlCategoryLevel
+                    sys.exit("SQL code error")
+                    
+                #get unique values
+                if group == "GENERAL":
+                    #calculate percentage per catid
+                    percentageLevel = int(percentageItem * int((len(sqlQueryResultsLevel))))
+                    if percentageLevel == 0:
+                        percentageLevel = 1
     
-    return None
-            
+                    tempContent = [row[0] for row in sqlQueryResultsLevel[:percentageLevel]]
+                    originalCatID = [row[1] for row in sqlQueryResultsLevel[:percentageLevel]]
+                    dataCategoryLevel.append(removeStopWords(tempContent))
+                    #print uniq,"\t",len(tempContent),"\t" 
+                else:
+                    unique = []
+                    for row in sqlQueryResultsLevel:
+                        if row[1] not in unique:
+                            unique.append(row[1])
+                    
+                    #prepare rows with uniq for document in model
+                    for uniq in unique:
+                        tempContent = []
+                        
+                        tempContent = [row[0] for row in sqlQueryResultsLevel if row[1] == uniq]
+                        print uniq,"\t",len(tempContent),"\t"
+                        
+                        #calculate percentage per catid
+                        percentageLevel = int(percentageItem * int((len(tempContent))))
+                        if percentageLevel == 0:
+                            percentageLevel = 1
+    
+                        tempContent = " ".join(tempContent[:percentageLevel])
+                        dataCategoryLevel.append(removeStopWords(tempContent))
+                        originalCatID.append(uniq)
 
+                createDir(group,percentageItem)
+    
+                #create file names
+                fileNameAll = str(percentageItem)+"_"+category+"_1_"+str(indeks)
+                fileNameLevel = str(percentageItem)+"_"+category+"_"+str(indeks)
+                fileNameSingleAll = str(percentageItem)+"_"+category+"_"+str(indeks)+"_single"
+    
+                ##########   ORIGINAL DESCRIPTION AND VECTORIZATION  #################
+                #create corpus models
+                createCorpusAndVectorModel(dataCategoryLevel,fileNameLevel,path)
+                dataCategoryLevelAll.extend(dataCategoryLevel)
+                createCorpusAndVectorModel(dataCategoryLevelAll, fileNameAll,path)
+    
+                #single model for all documents
+                #dataCategorySingleAll.append([x for sublist in dataCategoryLevelAll for x in sublist])
+                #createCorpusAndVectorModel(dataCategorySingleAll, percentageItem, fileName=fileNameSingleAll)
+    
+                ##########   ORIGINAL CATEGORIES ID   #################
+                getCategoryListLevel(originalCatID,fileNameLevel,path)
+                originalCatIDAll.extend(originalCatID)
+                getCategoryListLevel(originalCatIDAll,fileNameAll,path)
+                
+                #print out number of documents for (cat,level,model)
+                print group,"\t",category,"\t",indeks,"\t",percentageItem
+        
+                #######################    LABEL    #################
+
+#PARALEL PYTHON
 def runParallel():
     """
     Run comparison on n processors
@@ -420,7 +482,7 @@ def runParallel():
 
     for index in inputs:
         #print index
-        jobs.append(job_server.submit(createData, (index,), depfuncs = (dbQuery,createCorpusAndVectorModel,getCategoryLabel,removeStopWords,removePunct,dbQuery,errorMessage,getCategoryListLevel,), modules = ("math", "sys", "time", "csv", "os", "string", "pp","gensim","MySQLdb","gensim.corpora","gensim.models","re","nltk.corpus","nltk.stem","itertools","urlparse","gc",)))
+        jobs.append(job_server.submit(createData, (index,), depfuncs = (dbQuery,createCorpusAndVectorModel,getCategoryLabel,removeStopWords,removePunct,dbQuery,errorMessage,getCategoryListLevel,createDir,), modules = ("math", "sys", "time", "csv", "os", "string", "pp","gensim","MySQLdb","gensim.corpora","gensim.models","re","nltk.corpus","nltk.stem","itertools","urlparse","gc",)))
     
     for job in jobs:
         result = job()
@@ -431,13 +493,12 @@ def runParallel():
     print "Time elapsed: ", time.time() - start_time, "s"
 
 #main UI
-
 def main():
     """
     Functions:
         1. createData(category)
         2. runParallel()
-        3. getMainCat()
+        7. getMainCat()
             Anything else to stop
      """
     print main.__doc__
@@ -445,14 +506,12 @@ def main():
     var = raw_input("Choose function: ")
         
     if var == "1":
-        myFile= open( "createMemoryAnalyzer.txt", "w") 
-        #sys.stdout= myFile
         print createData.__doc__
         createData("Regional")
     elif var == "2":
         print runParallel.__doc__
         runParallel()
-    elif var == "3":
+    elif var == "7":
         getMainCat.__doc__
         print getMainCat()
     else:

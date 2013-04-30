@@ -41,7 +41,6 @@ class ShevaDB:
             print "Error dbQuery %d: %s" % (e.args[0],e.args[1])
             sys.exit(1)
 
-
     def errorMessage(self,msg):
         print msg
         sys.exit(1)
@@ -51,3 +50,12 @@ class ShevaDB:
         for table in tables: 
             sql = "TRUNCATE TABLE  %s" %(table)
             self.dbQuery(sql)
+
+    def getMainCat():
+        """
+        Returns main categories from ODP; input for PP pipeline
+        """
+        sqlMainCategories = "select distinct(Title) from dmoz_categories where dmoz_categories.categoryDepth = 1 and dmoz_categories.filterOut = 0"
+        mainCatRS = self.dbQuery(sqlMainCategories)
+        mainCat = tuple([x[0] for x in mainCatRS])
+        return mainCat
