@@ -23,9 +23,9 @@ lista = ["1","2","3"]
 listaT = ("1","2","3")
 nekiString ="aaaaaaaaaaaaa"
 
-"""
-print ShevaUtils().checkIfList(nekiStgring)
+
+print ShevaUtils().checkIfList(nekiString)
 print ShevaUtils().checkIfList(lista)
 print ShevaUtils().checkIfList(listaT)
-"""
-print ShevaUtils().write2CSV(nekiString,1,1)
+
+

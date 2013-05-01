@@ -51,3 +51,15 @@ _utils/old/
 UML/
 .settings/
 _initalData/
+
+#root files
+.project
+.gitignore*
+__init__.py*
+MANIFEST
+setup.py
+
+
+
+
+

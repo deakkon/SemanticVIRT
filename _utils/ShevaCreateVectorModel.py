@@ -39,7 +39,7 @@ class ShevaVect:
     
     def __init__(self):
         #logging
-        logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+        #logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
         self.manualStopWords = []
         self.listType = []
     
@@ -238,35 +238,3 @@ class ShevaVect:
             
         #return values 
         return fatherIDLevel
-    
-    def main():
-        """
-        Functions:
-            1.vectorizeDocument(document)
-            2.createCorpusAndVectorModel(documents, outputFormat=1, modelFormat=1, fileName ="")
-            3.getCategoryLabel(sqlQuery,fileName)
-        """ 
-        print main.__doc__
-    
-        var = raw_input("Choose function to run: ")
-            
-        if var == "1":
-            print vectorizeDocument.__doc__
-            var1 = "Input text to vectorize"
-            print vectorizeDocument(var1)
-        elif var == "2":
-            print createCorpusAndVectorModel.__doc__
-            print "No input parameters needed. Works with dummy data to show functionality."
-            createCorpusAndVectorModel()
-        elif var == "3":
-            print getCategoryLabel.__doc__
-            var1 = raw_input("Input SQl query")
-            var2 = raw_input("fileName for the file to be created")
-            print getCategoryLabel(var1,var2)           
-        else:
-            print "Hm, ", var," not supported as an options"
-            sys.exit(1)
-        sys.exit(0)
-            
-    if __name__ == '__main__':    
-        main()
