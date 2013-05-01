@@ -29,124 +29,137 @@ Version 0.2
 
 #imports0
 import logging, sys, csv, os, string
+import gensim
 from gensim import corpora, models
 #from python.utils.textPrepareFunctions import removePunct, removeStopWords 
 #from python.utils.databaseODP import dbQuery, errorMessage
 from ShevaDB import ShevaDB
+#from ShevaTPF import ShevaTPF
 
 
 class ShevaVect:
-    
+    """
     def __init__(self):
         #logging
         #logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
         self.manualStopWords = []
         self.listType = []
-    
+    """
     #functions
-    def vectorizeDocument(document):
-        document = [removeStopWords(removePunct(document, 1))] 
+    def vectorizeDocument(self, data):
+        """
+        1. document -> prepared data for data creation
+        """
+        #create dictionary
+        dictionary = gensim.corpora.Dictionary(data)
+        dictFN = "%sdict/%s.dict" %(path,fileName)
+        dictionary.save(dictFN)        
         dictionary = corpora.Dictionary(document)
-        
-        #creating different corpus formats
         bow_document = [dictionary.doc2bow(text) for text in document]
         return bow_document
     
-    def createCorpusAndVectorModel(sqlQuery="", outputFormat=1, modelFormat=1, fileName =""):
+    def createCorpus(self,path,fileName,data,outputFormat):
+       #create corpora data for use in creating a vector model representation for furher use
+        corpora = "%scorpus/%s"%(path,fileName)
+        if outputFormat == 1:
+            saveCorpora = "%s.mm"%(corpora)
+            gensim.corpora.MmCorpus.serialize(saveCorpora, data)
+        elif outputFormat == 2:
+            saveCorpora = "%s.svmlight"%(corpora)
+            gensim.corpora.SvmLightCorpus.serialize(saveCorpora, data)
+        elif outputFormat == 3:
+            saveCorpora = "%s.lda-c" %(corpora)
+            gensim.corpora.BleiCorpus.serialize(saveCorpora, data)
+        elif outputFormat == 4:
+            saveCorpora = "%s.low"%(corpora) 
+            gensim.corpora.LowCorpus.serialize(saveCorpora, data)
+        else:
+            errorMessage("Unknown corpus type identificator")
+
+    
+    def createModel(self,path,fileName,data,modelFormat):
+        #save model to disk -> model of all documents that are going to be compared against
+        model = "%smodels/%s"%(path,fileName)
+        if modelFormat == 1:
+            tfidf = gensim.models.TfidfModel(data)
+            saveModel = "%s.tfidf_model"%(model)
+            tfidf.save(saveModel)
+        elif modelFormat == 2:
+            lsi = gensim.models.LsiModel(data)
+            saveModel = "%s.lsi" %(model)
+            lsi.save(saveModel)
+        elif modelFormat == 3:
+            lda = gensim.models.LdaModel(data)
+            saveModel = "%s.lda"%(model)
+            lda.save(saveModel)
+        else:
+            errorMessage("createTrainingModel: Something went wrong with the type identificator")
+    
+    def createCorpusAndVectorModel(self,data, fileName, path, outputFormat=1, modelFormat=1):
         """
         Input parameters: sqlQueryResults="", outputFormat=1, modelFormat=1, fileName =""
-            1. sqlQueryResults -> if "" exit, textual column to be analyzed first parameter in query
-            2. outputFormat definition:     1 -> MmCorpus (default)
+            1. data     -> prepared data (removed all stopwrods etc) to save to models, corpus, dictionary type list of lists
+                           each document list element of data list                            
+            3. fileName -> name to save file, dynamically assigned by caller function (E.G. 0.1_arts_6)
+            3. path     ->  location to save dictionary, corpus and model files
+            4. outputFormat definition:     1 -> MmCorpus (default)
                                             2 -> SvmLightCorpus
                                             3 -> BleiCorpus
                                             4 -> LowCorpus
-            3. modelFormat:                 1 -> tfidf_model (default)
+            5. modelFormat:                 1 -> tfidf_model (default)
                                             2 -> lsi
-                                            3 -> lda
-            4. fileName -> if "" use dummy name
-                                                                                                                    
-                
+                                            3 -> lda                                                                                                                            
         Output data: saved dictionary, corpus and model files of chosen format to disk, to respected directories
         """
-        #variables
-        data = [] 
         
-        #create file names to save
-        if fileName == "":
-            fileName = "defaultCollection"
-        
-        #type TEST PRINT
-        #print type(sqlQuery)
-        
-        #default data
-        if sqlQuery == "":
-            sys.exit("No query mate. Function createCorpusAndVectorModel")
-        elif type(sqlQuery) is str:
-            sqlQueryResults = dbQuery(sqlQuery)
-        elif type(sqlQuery) is tuple:
-            sqlQueryResults = sqlQuery
-        else:
-            print type(sqlQuery)
-            print "ERROR createVectorModel createCorpusAndVectorModel "
-            sys.exit(1)
-             
-        
-        #iteration through supplied documents
-        for row in sqlQueryResults:
-            #noPunct = ""
-            #dataNLTK = nltk.clean_html(row[1])
-            #soup = BeautifulSoup(row[1])
-            #print "NLTK clean_html ", dataNLTK
-            #print "BS4 ",soup.get_text()
-            #noPunct = removePunct(row[0],1)
-            data.append(removeStopWords(row[0]))
-                
-        #print "Stop words ",data
-        #print data
         #create dictionary
-        dictionary = corpora.Dictionary(data)
-        dictFN = "dictionaries/"+fileName+".dict"
+        dictionary = gensim.corpora.Dictionary(data)
+        dictFN = "%sdict/%s.dict" %(path,fileName)
         dictionary.save(dictFN)
-        #print dictionary.token2id
-            
+        
         #creating dictionary and corpus  files in different matrix formats    
         bow_documents = [dictionary.doc2bow(text) for text in data]
     
+        self.createCorpus(path,fileName, bow_documents, outputFormat)
+        self.createModel(path,fileName, bow_documents, modelFormat)
+        
+        """
         #create corpora data for use in creating a vector model representation for furher use
+        corpora = "%scorpus/%s"%(path,fileName)
         if outputFormat == 1:
-            saveFN = "corpusFiles/"+fileName+".mm"
-            corpora.MmCorpus.serialize(saveFN, bow_documents)
+            saveCorpora = "%s.mm"%(corpora)
+            gensim.corpora.MmCorpus.serialize(saveCorpora, bow_documents)
         elif outputFormat == 2:
-            saveFN = "corpusFiles/"+fileName+".svmlight"
-            corpora.SvmLightCorpus.serialize(saveFN, bow_documents)
+            saveCorpora = "%s.svmlight"%(corpora)
+            gensim.corpora.SvmLightCorpus.serialize(saveCorpora, bow_documents)
         elif outputFormat == 3:
-            saveFN = "corpusFiles/"+fileName+".lda-c"
-            corpora.BleiCorpus.serialize(saveFN, bow_documents)
+            saveCorpora = "%s.lda-c" %(corpora)
+            gensim.corpora.BleiCorpus.serialize(saveCorpora, bow_documents)
         elif outputFormat == 4:
-            corpora.LowCorpus.serialize(saveFN, bow_documents)
-            saveFN = "corpusFiles/"+fileName+".low" 
+            saveCorpora = "%s.low"%(corpora) 
+            gensim.corpora.LowCorpus.serialize(saveCorpora, bow_documents)
         else:
-            errorMessage("Something went wrong with the type identificator")
+            errorMessage("Unknown corpus type identificator")
         
         #save model to disk -> model of all documents that are going to be compared against
+        model = "%smodels/%s"%(path,fileName)
         if modelFormat == 1:
-            tfidf = models.TfidfModel(bow_documents)
-            saveFN = "models/"+fileName+".tfidf_model"
-            tfidf.save(saveFN)
+            tfidf = gensim.models.TfidfModel(bow_documents)
+            saveModel = "%s.tfidf_model"%(model)
+            tfidf.save(saveModel)
         elif modelFormat == 2:
-            #lsi
-            lsi = models.LsiModel(bow_documents)
-            saveFN = "models/"+fileName+".lsi"
-            lsi.save(saveFN)
+            lsi = gensim.models.LsiModel(bow_documents)
+            saveModel = "%s.lsi" %(model)
+            lsi.save(saveModel)
         elif modelFormat == 3:
-            #lsi
-            lda = models.LdaModel(bow_documents)
-            saveFN = "models/"+fileName+".lda"
-            lda.save(saveFN)
+            lda = gensim.models.LdaModel(bow_documents)
+            saveModel = "%s.lda"%(model)
+            lda.save(saveModel)
         else:
-            errorMessage("createTrainingModel: Something went wrong with the type identificator")       
-            
-    def getCategoryLabel(sqlQuery,fileName):
+            errorMessage("createTrainingModel: Something went wrong with the type identificator")
+        """
+
+    def getCategoryLabel(self,sqlQuery,fileName):
         """
         sqlQuery -> query to be executed or query result set
         fileName -> file to save labels returned by the query
@@ -158,7 +171,7 @@ class ShevaVect:
         if sqlQuery == "":
             sys.exit("No query mate. Function getCategoryLabel")
         elif type(sqlQuery) is str:
-            sqlQueryResults = dbQuery(sqlQuery)
+            sqlQueryResults = ShevaDB().dbQuery(sqlQuery)
         elif type(sqlQuery) is tuple:
             sqlQueryResults = sqlQuery
         else:
@@ -211,7 +224,7 @@ class ShevaVect:
         #return categoryLabels 
     
             
-    def returnFatherIDs(sqlQuery):
+    def returnFatherIDs(self,sqlQuery):
         """
         Group catid, on specific depth level,  based on their fatherID values
         sql query -> fatherID first level 
@@ -223,7 +236,7 @@ class ShevaVect:
         if sqlQuery == "":
             sys.exit("No query mate. Function getCategoryLabel")
         elif type(sqlQuery) is str:
-            sqlQueryResults = dbQuery(sqlQuery)
+            sqlQueryResults = ShevaDB().dbQuery(sqlQuery)
         elif type(sqlQuery) is tuple:
             sqlQueryResults = sqlQuery
         else:

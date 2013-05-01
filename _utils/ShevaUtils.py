@@ -1,5 +1,6 @@
 import sys
 from sys import path
+import os
 import csv 
 import collections
 from ShevaDB import ShevaDB
@@ -71,20 +72,57 @@ class ShevaUtils:
                 directories.append(files)
         return directories
     
-    def createDir(self, type,model):
-        #basic directory for grouping type: type
-        path = "classificationModels/%s/" %(type)
-        if not os.path.isdir(path):
-            os.mkdir(path)
+    def createDir(self, rootDir,groupType,model):
+        try:
+            #basic directory for grouping type: type
+            path = "%s/%s/" %(rootDir,groupType)
+            if not os.path.isdir(path):
+                os.mkdir(path)
+        
+            #basic directory for model, based on % of data being analyzed
+            modelPath = "%s/%s/"%(path,model)
+            if not os.path.isdir(modelPath):
+                os.mkdir(modelPath)
+                
+            #path to dict, model, corpusFiles directory, sim, labels, origCATID directories
+            pathSubDir = ["dict/","models/","corpus/","originalID/","sim/"]
+            for pathItem in pathSubDir:
+                checkPath = "%s%s" %(modelPath,pathItem)
+                if not os.path.isdir(checkPath):
+                    os.mkdir(checkPath)
+        except ValueError:
+            print "Oops!  Directory creation not working. %s,\t,%s,\t,%s" %(rootDir,groupType,model)
     
-        #basic directory for model, based on % of data being analyzed
-        modelPath = "%s/%s/"%(path,model)
-        if not os.path.isdir(modelPath):
-            os.mkdir(modelPath)
+    def createDirOne(self,dir):
+        if not os.path.isdir(dir):
+            os.mkdir(dir)
             
-        #path to dict, model, corpusFiles directory, sim, labels, origCATID directories
-        pathSubDir = ["dict/","models/","corpusFiles/","origCATID/","sim/"]
-        for pathItem in pathSubDir:
-            checkPath = "%s%s" %(path,pathItem)
-            if not os.path.isdir(checkPath):
-                os.mkdir(checkPath)
+    def setLimit(self,percentageItem,data):
+        
+        percentageLevel = int(percentageItem * int((len(data))))
+        if percentageLevel == 0:
+            percentageLevel = 1        
+        
+        return percentageLevel
+
+    def getCategoryListLevel(self, data, fileName, path):
+        """
+        catID: original cadID while creating data
+        fileName: fileName for saving
+        dataset: % model of data
+        """
+        #create csv
+        resultsSavePath = "%soriginalID/%s.csv" %(path,fileName)
+        summaryFile  = open(resultsSavePath, "wb")
+        csvResults = csv.writer(summaryFile, delimiter=',',quoting=csv.QUOTE_ALL)
+        csvResults.writerow(('modelRowNumber','original_ID'))
+    
+        for i in list(enumerate(data)):
+            #print i
+            if str(i[1]) == "e":
+                print "Es in the house:\t",i[0],"\t",i[1]
+            else:
+                csvResults.writerow((i[0],i[1]))
+        
+        summaryFile.close()
+        #gc.collect()

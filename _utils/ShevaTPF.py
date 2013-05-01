@@ -60,7 +60,7 @@ class ShevaTPF:
     
     def stripHTMLTags(self, text):
         if isinstance(text, types.ListType):
-            text = " ".join(text)
+            text = " ".join(str(text))
 
         # apply rules in given order!
         rules = [

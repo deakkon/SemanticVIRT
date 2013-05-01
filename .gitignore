@@ -46,6 +46,7 @@ pip-log.txt
 *.bmp
 
 #directories
+.git/
 classification(H1)/old/
 _utils/old/
 UML/
@@ -58,8 +59,3 @@ _initalData/
 __init__.py*
 MANIFEST
 setup.py
-
-
-
-
-

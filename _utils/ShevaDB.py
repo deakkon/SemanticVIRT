@@ -51,7 +51,7 @@ class ShevaDB:
             sql = "TRUNCATE TABLE  %s" %(table)
             self.dbQuery(sql)
 
-    def getMainCat():
+    def getMainCat(self):
         """
         Returns main categories from ODP; input for PP pipeline
         """
@@ -59,3 +59,12 @@ class ShevaDB:
         mainCatRS = self.dbQuery(sqlMainCategories)
         mainCat = tuple([x[0] for x in mainCatRS])
         return mainCat
+    
+    def getCategoryDepth(self,category):
+        depthQuery = "select max(categoryDepth) from dmoz_combined where mainCategory = '%s' and filterOut = 0" %(category)
+        maxDebthRS = self.dbQuery(depthQuery)
+        #print maxDebthRS, type(maxDebthRS), maxDebthRS[0]
+        maxDebth = maxDebthRS[0]
+        #maxDebth = int(maxDebth[0])
+        ranger = [x for x in range(2,maxDebth+1)]
+        return ranger
