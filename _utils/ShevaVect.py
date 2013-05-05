@@ -111,53 +111,17 @@ class ShevaVect:
                                             3 -> lda                                                                                                                            
         Output data: saved dictionary, corpus and model files of chosen format to disk, to respected directories
         """
-        
+
         #create dictionary
         dictionary = gensim.corpora.Dictionary(data)
         dictFN = "%sdict/%s.dict" %(path,fileName)
         dictionary.save(dictFN)
-        
+
         #creating dictionary and corpus  files in different matrix formats    
         bow_documents = [dictionary.doc2bow(text) for text in data]
-    
+
         self.createCorpus(path,fileName, bow_documents, outputFormat)
         self.createModel(path,fileName, bow_documents, modelFormat)
-        
-        """
-        #create corpora data for use in creating a vector model representation for furher use
-        corpora = "%scorpus/%s"%(path,fileName)
-        if outputFormat == 1:
-            saveCorpora = "%s.mm"%(corpora)
-            gensim.corpora.MmCorpus.serialize(saveCorpora, bow_documents)
-        elif outputFormat == 2:
-            saveCorpora = "%s.svmlight"%(corpora)
-            gensim.corpora.SvmLightCorpus.serialize(saveCorpora, bow_documents)
-        elif outputFormat == 3:
-            saveCorpora = "%s.lda-c" %(corpora)
-            gensim.corpora.BleiCorpus.serialize(saveCorpora, bow_documents)
-        elif outputFormat == 4:
-            saveCorpora = "%s.low"%(corpora) 
-            gensim.corpora.LowCorpus.serialize(saveCorpora, bow_documents)
-        else:
-            errorMessage("Unknown corpus type identificator")
-        
-        #save model to disk -> model of all documents that are going to be compared against
-        model = "%smodels/%s"%(path,fileName)
-        if modelFormat == 1:
-            tfidf = gensim.models.TfidfModel(bow_documents)
-            saveModel = "%s.tfidf_model"%(model)
-            tfidf.save(saveModel)
-        elif modelFormat == 2:
-            lsi = gensim.models.LsiModel(bow_documents)
-            saveModel = "%s.lsi" %(model)
-            lsi.save(saveModel)
-        elif modelFormat == 3:
-            lda = gensim.models.LdaModel(bow_documents)
-            saveModel = "%s.lda"%(model)
-            lda.save(saveModel)
-        else:
-            errorMessage("createTrainingModel: Something went wrong with the type identificator")
-        """
 
     def getCategoryLabel(self,sqlQuery,fileName):
         """

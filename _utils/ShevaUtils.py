@@ -98,12 +98,10 @@ class ShevaUtils:
             os.mkdir(dir)
             
     def setLimit(self,percentageItem,data):
-        
-        percentageLevel = int(percentageItem * int((len(data))))
-        if percentageLevel == 0:
-            percentageLevel = 1        
-        
-        return percentageLevel
+        length = (percentageItem*len(data))/100
+        if length == 0:
+            length = 1
+        return length
 
     def getCategoryListLevel(self, data, fileName, path):
         """

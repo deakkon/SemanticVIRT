@@ -1,5 +1,5 @@
 #import libraries
-import sys, re, nltk, os, string, glob, urlparse, types
+import sys, re, nltk, os, string, glob, urlparse, types, collections
 from nltk.stem import WordNetLemmatizer, PorterStemmer, LancasterStemmer
 from nltk.corpus import names
 from nltk.corpus import stopwords
@@ -11,22 +11,52 @@ from bs4 import BeautifulSoup
 from bs4 import BeautifulStoneSoup
 
 class ShevaTPF:
-    """
+    
     def __init__(self):
-        print "Calling parent constructor"
-        self.text = text
-        self.typeModus = typeModus
-    """
-
-    def string2list(self, text):
-        sentence = []
-        if type(text) is str:
-            sentence = re.compile('\w+').findall(text)
-        elif type(text) is list:
-            sentence = text
+        """
+        Works with nested lists (list of lists: [['str1','str2','str3',...,'strn'],[],[],[]]
+        """
+        self.table = string.maketrans("","")
+    
+    
+    def checkList(self,text):
+        if isinstance(x, types.ListType):
+            pass
         else:
-            sys.exit("Error with data types. removePunct. textPrepareFunctions")
+            sys.exit("Passed argument is not string. ShevaTPF.checkList.")
+
+    def getUniqueTokens(self, text):
+        sentence = []
+        merged = list(itertools.chain.from_iterable(text))
+        #print merged
+        count = collections.Counter(merged)
+        sentence.extend([elt.lower() for elt,count in count.most_common() if count == 1])
         return sentence
+    
+    def removeUniqueTokens(self,text, nestedList):
+        sentence = []
+        sentence = [item.lower() for item in text if item.lower() not in self.getUniqueTokens(nestedList)]
+        return sentence
+    
+    def removePunctuation(self,text):
+        sentence = []
+        sentence = [s.translate(self.table, string.punctuation) for s in text]
+        return sentence
+    
+    def removeSpecialHTML(self,text):
+        sentence = []
+
+        # replace special strings
+        special = {'&nbsp;' : ' ', '&amp;' : '&', '&quot;' : '"','&lt;'   : '<', '&gt;'  : '>'
+        }
+        
+        for item in text:
+            for (k,v) in special.items():
+                item = item.replace (k, v)
+            sentence.append(item)
+            #print item
+        
+        return sentence 
 
     def removeNames(self, text):
         sentence = []
@@ -49,7 +79,6 @@ class ShevaTPF:
         return sentence
 
     def removeHtmlTags(self, text):
-        
         if isinstance(text, types.ListType): 
             text = " ".join(text)
 
@@ -57,38 +86,6 @@ class ShevaTPF:
         sentence = sentence.encode('utf8')
         sentence = sentence.split()
         return sentence
-    
-    def stripHTMLTags(self, text):
-        if isinstance(text, types.ListType):
-            text = " ".join(str(text))
-
-        # apply rules in given order!
-        rules = [
-        { r'>\s+' : u'>'},                  # remove spaces after a tag opens or closes
-        { r'\s+' : u' '},                   # replace consecutive spaces
-        { r'\s*<br\s*/?>\s*' : u'\n'},      # newline after a <br>
-        { r'</(div)\s*>\s*' : u'\n'},       # newline after </p> and </div> and <h1/>...
-        { r'</(p|h\d)\s*>\s*' : u'\n\n'},   # newline after </p> and </div> and <h1/>...
-        { r'<head>.*<\s*(/head|body)[^>]*>' : u'' },     # remove <head> to </head>
-        { r'<a\s+href="([^"]+)"[^>]*>.*</a>' : r'\1' },  # show links instead of texts
-        { r'[ \t]*<[^<]*?/?>' : u'' },            # remove remaining tags
-        { r'^\s+' : u'' }                   # remove spaces at the beginning
-        ]
-        
-        for rule in rules:
-            for (k,v) in rule.items():
-                regex = re.compile (k)
-                text  = regex.sub (v, text)
-        
-        # replace special strings
-        special = {'&nbsp;' : ' ', '&amp;' : '&', '&quot;' : '"','&lt;'   : '<', '&gt;'  : '>'
-        }
-        
-        for (k,v) in special.items():
-            text = text.replace (k, v)
-        
-        text = str(text)
-        return text.split()
 
     def removeStopWords(self, text, mode=1):
         """
@@ -127,19 +124,24 @@ class ShevaTPF:
         sentence = [stemmer.stem(wordItem) for wordItem in text]
         return sentence
     
-    def returnClean(self,sentence,typeModus):
-
-        sentence = self.string2list(sentence)
-        #print sentence
-        sentence = self.stripHTMLTags(sentence)
-        #print sentence
-        sentence = self.removeHtmlTags(sentence)
-        #print sentence
-        sentence = self.removeNames(sentence)
-        #print sentence
-        sentence = self.removeAN(sentence)
-        #print sentence
-        sentence = self.removeStopWords(sentence,typeModus)
-        #print sentence
-        sentence = self.returnStem(sentence)
-        return sentence
+    def returnClean(self,text,typeModus):
+        
+        contentLenght = range(0,len(text))
+        
+        for i in contentLenght:
+            sentence = text[i]
+            sentence = self.removeSpecialHTML(sentence)
+            #print sentence
+            sentence = self.removePunctuation(sentence)
+            #print sentence
+            sentence = self.removeHtmlTags(sentence)
+            #print sentence
+            sentence = self.removeNames(sentence)
+            #print sentence
+            sentence = self.removeAN(sentence)
+            #print sentence
+            sentence = self.removeStopWords(sentence,typeModus)
+            #print sentence
+            sentence = self.returnStem(sentence)
+            text[i] = sentence
+        return text
