@@ -68,6 +68,8 @@ class createDataLimit:
             self.rootDir = str(rootDir)
         else:
             sys.exit("Wrong 'rootDir' parameter in createData.__init__")
+            
+            
     
     def createData(self, category):
         """
