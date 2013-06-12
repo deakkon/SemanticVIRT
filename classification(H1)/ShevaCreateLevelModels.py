@@ -203,8 +203,6 @@ class createDataLevel:
                 """
             del sqlQueryResults
             gc.collect()
-                    
-
 
 #PARALEL PYTHON
 #def runParallel():

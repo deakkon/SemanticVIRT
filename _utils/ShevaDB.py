@@ -68,3 +68,36 @@ class ShevaDB:
         #maxDebth = int(maxDebth[0])
         ranger = [x for x in range(2,maxDebth+1)]
         return ranger
+    
+    def getSimilarityDocuments(self, category, groupType, limit, depth="", level=""):
+        """
+        Get documents from DB, for classification testing. 
+        """
+        sqlRandomResults = []
+        if depth != "" and level != "":
+            sys.exit("Bro, you gotta chose one! ShevaDB.getSimilarityDB_Documents")
+        elif depth != "" and level == "":
+            sqlRandom = "SELECT Description, catid, fatherid from dmoz_combined where mainCategory = '%s' and categoryDepth = '%s'" %(category,depth)
+        elif level != "" and depth == "":
+            sqlRandom = "SELECT Description, catid, fatherid from dmoz_combined where mainCategory = '%s' limit '%s'" %(category,level)
+        else:
+            sqlRandom = "SELECT Description, catid, fatherid from dmoz_combined where mainCategory = '%s'"
+
+        sqlResults = self.dbQuery(sqlRandom)
+
+        if sqlResults == 0:
+            sys.exit("ShevaDB.getSimilarityDocuments.")
+
+        if len(sqlResults) > int(limit):
+            indices = random.sample(xrange(len(sqlResults)), int(limit))
+            sqlRandomResults=[sqlResults[i] for i in indices]
+        else:
+            sqlRandomResults = sqlResults
+            
+        #different data for different grouping
+        if groupingType != "FATHERID":
+            randomItems = [operator.itemgetter(0,1)(i) for i in sqlRandomResults]
+        else:
+            randomItems = [operator.itemgetter(0,2)(i) for i in sqlRandomResults]
+
+        return randomItems

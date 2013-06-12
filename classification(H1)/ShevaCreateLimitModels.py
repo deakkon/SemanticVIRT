@@ -40,7 +40,7 @@ import re
 import itertools
 import gc
 
-class createDataLevel:
+class createDataLimit:
     
     def __init__(self,type,rootDir):
         """
@@ -113,14 +113,9 @@ class createDataLevel:
                     
                 #get unique values
                 if group == "GENERAL":
-                    #percentageLevel = self.shevaUtils.setLimit(percentageItem,sqlQueryResultsLevel)
                     finalContent = [[item for item in row[0].split()] for row in sqlQueryResultsLimit]
-                    #var += "Original words:\t%s\n" %(finalContent)
                     originalCatID = [row[1] for row in sqlQueryResultsLimit]
-                    #var += "Original IDs:\t%s\n" %(originalCatID)
                     dataCategoryLevel.extend(self.shevaTPF.returnClean(finalContent,1))
-                    #var += "Processed words:\t%s\n" %(dataCategoryLevel)
-                    #print finalContent,"\t",len(finalContent)
                 else:
                     unique = []
                     for row in sqlQueryResultsLimit:
@@ -129,15 +124,9 @@ class createDataLevel:
 
                     #prepare rows with uniq for document in model
                     for uniq in unique:
-                        #var += "ID:\t%s\n" %(uniq)
                         tempUnique = []
                         tempUnique = [row[0].split() for row in sqlQueryResultsLimit if row[1] == uniq]
-                        #percentageLevel = self.shevaUtils.setLimit(percentageItem,tempUnique)
-                        #tempUnique = [item.split() for item in tempUnique]
-                        #print tempUnique
                         mergedContent = [i for i in itertools.chain.from_iterable(tempUnique)]
-                        #print mergedContent
-                        #var += "Original words:\t%s\n" %(mergedContent)
                         finalContent.append(mergedContent)
                         originalCatID.append(uniq)
                     dataCategoryLevel.extend(self.shevaTPF.returnClean(finalContent,1))
@@ -168,53 +157,44 @@ class createDataLevel:
                 print "Done with:\t",group,"\t",category,"\t","\t",percentageItem
                 #######################    LABEL    #################
 
-"""
-#PARALEL PYTHON
-def runParallel():
-    # tuple of all parallel python servers to connect with
-    ppservers = ()
-    #ppservers = ("10.0.0.1",)
-    
-    if len(sys.argv) > 1:
-        ncpus = int(sys.argv[1])
-        # Creates jobserver with ncpus workers
-        job_server = pp.Server(ncpus, ppservers=ppservers)
-    else:
-        # Creates jobserver with automatically detected number of workers
-        job_server = pp.Server(ppservers=ppservers)
-    
-    print "Starting pp with", job_server.get_ncpus(), "workers"
-    start_time = time.time()
-    
-    #initialize and start
-    rootDirectory = raw_input("Input root directory to store files (keyboard input): ")
+# tuple of all parallel python servers to connect with
+ppservers = ()
+#ppservers = ("10.0.0.1",)
 
-    #print dataModel.GROUPTYPE
-    #print dataModel.percentageList
-    #print dataModel.rootDir
+if len(sys.argv) > 1:
+    ncpus = int(sys.argv[1])
+    # Creates jobserver with ncpus workers
+    job_server = pp.Server(ncpus, ppservers=ppservers)
+else:
+    # Creates jobserver with automatically detected number of workers
+    job_server = pp.Server(ppservers=ppservers)
 
+print "Starting pp with", job_server.get_ncpus(), "workers"
+start_time = time.time()
 
-    #start PP
-    jobs = []
-    inputs = ShevaDB().getMainCat()
-    for index in inputs:
-        print index
-        dataModel = createData(2,rootDirectory)
-        print dataModel.GROUPTYPE
-        print dataModel.percentageList
-        print dataModel.rootDir
-        jobs.append(job_server.submit(dataModel.createData, 
-                                      (index,),
-                                      depfuncs = (),
-                                      modules = ("time","classification_createModels","ShevaDB","ShevaTPF","ShevaUtils","ShevaVect",)))
-    
-    for job in jobs:
-        result = job()
-        if result:
-            break
-    #prints
-    job_server.print_stats()
-    print "Time elapsed: ", time.time() - start_time, "s"
-"""
-dataModel = createDataLevel(1,"level1")
-dataModel.createData("News")
+#initialize and start
+rootDirectory = raw_input("Input root directory to store files (keyboard input): ")
+#print "%s\n%s\n%s\n" %(dataModel.GROUPTYPE,dataModel.percentageList,dataModel.rootDir)
+
+#start PP[]
+jobs = []
+inputs = ShevaDB().getMainCat()
+#inputs =["Regional"]
+for index in inputs:
+    print index
+    dataModel = createDataLimit(1,rootDirectory)
+    print dataModel.GROUPTYPE
+    print dataModel.percentageList
+    print dataModel.rootDir
+    jobs.append(job_server.submit(dataModel.createData, 
+                                  (index,),
+                                  depfuncs = (),
+                                  modules = ("time","ShevaCreateLimitModels","ShevaDB","ShevaTPF","ShevaUtils","ShevaVect","gc","itertools",)))
+
+for job in jobs:
+    result = job()
+    if result:
+        break
+#prints
+job_server.print_stats()
+print "Time elapsed: ", time.time() - start_time, "s"

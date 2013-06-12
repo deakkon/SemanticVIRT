@@ -102,25 +102,3 @@ class ShevaUtils:
         if length == 0:
             length = 1
         return length
-
-    def getCategoryListLevel(self, data, fileName, path):
-        """
-        catID: original cadID while creating data
-        fileName: fileName for saving
-        dataset: % model of data
-        """
-        #create csv
-        resultsSavePath = "%soriginalID/%s.csv" %(path,fileName)
-        summaryFile  = open(resultsSavePath, "wb")
-        csvResults = csv.writer(summaryFile, delimiter=',',quoting=csv.QUOTE_ALL)
-        csvResults.writerow(('modelRowNumber','original_ID'))
-    
-        for i in list(enumerate(data)):
-            #print i
-            if str(i[1]) == "e":
-                print "Es in the house:\t",i[0],"\t",i[1]
-            else:
-                csvResults.writerow((i[0],i[1]))
-        
-        summaryFile.close()
-        #gc.collect()
