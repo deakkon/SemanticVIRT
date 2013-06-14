@@ -1,8 +1,12 @@
-class ShevaWrite:
+import csv
+
+class ShevaCSV:
     
-    def __init__(self,path,data):
+    def __init__(self):
+        """
         self.path = path
         self.data = data
+        """
         
     def write2CSV(self, fileName, path):
         """
@@ -11,7 +15,7 @@ class ShevaWrite:
         fileName: string
         path: where to save
         """
-        self.checkIfList(self.data)
+        self.checkIfList(self)
         writeLabels = []
         for row in self.data:
             for i in row:
@@ -45,7 +49,7 @@ class ShevaWrite:
         path: path to store csv files
         """
         #create csv
-        resultsSavePath = "%s/origCATID/%s.csv" %(path,fileName)
+        resultsSavePath = "%sorigCATID/%s.csv" %(path,fileName)
         originalCSV  = open(resultsSavePath, "wb")
         csvResults = csv.writer(summaryFile, delimiter=',',quoting=csv.QUOTE_ALL)
         csvResults.writerow(('model row','CATID'))

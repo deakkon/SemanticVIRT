@@ -28,7 +28,7 @@ from ShevaDB import ShevaDB
 from ShevaTPF import ShevaTPF
 from ShevaUtils import ShevaUtils
 from ShevaVect import ShevaVect
-
+from ShevaCSV import ShevaCSV
 #PYTHON MODULES
 #import math
 import time
@@ -41,7 +41,7 @@ import pp
 #import itertools
 import gc
 
-class createDataLevel:
+class createDataSingleLevel:
     
     def __init__(self,type,rootDir):
         """
@@ -55,7 +55,7 @@ class createDataLevel:
             self.percentageList = [25, 50, 75, 100]
         elif type == 2:
             self.GROUPTYPE = ["GENERAL"]
-            self.percentageList = [25]
+            self.percentageList = [5]
         else:
             sys.exit("Wrong 'type' parameter in createData.__init__")
         
@@ -63,6 +63,7 @@ class createDataLevel:
         self.shevaTPF = ShevaTPF()
         self.shevaUtils = ShevaUtils()
         self.shevaVect = ShevaVect()
+        self.shevaCSV = ShevaCSV()
         
         if rootDir != "":
             self.shevaUtils.createDirOne(str(rootDir))
@@ -99,7 +100,7 @@ class createDataLevel:
                 dataCategoryLevelAll = []
                 dataCategoryLabelAll = []
                 originalCatIDAll = []
-                dataCategorySingleAll = []
+                dataCategorySingleAll = [[]]
                 
                 path = "%s/%s/%s/" %(self.rootDir,group,percentageItem)
                 self.shevaUtils.createDir(self.rootDir,group,percentageItem)
@@ -154,14 +155,13 @@ class createDataLevel:
                             finalContent.append(mergedContent)
                             originalCatID.append(uniq)
                         dataCategoryLevel.extend(self.shevaTPF.returnClean(finalContent,1))
-                        #var += "Processed words:\t%s\n" %(dataCategoryLevel)
 
                     self.shevaUtils.createDir(self.rootDir, group, percentageItem)
 
                     ##########            FILE NAMES             #################
                     fileNameAll = "%s_%s_1_%s" %(str(percentageItem),category,str(indeks))
                     fileNameLevel = "%s_%s_%s" %(str(percentageItem),category,str(indeks))
-                    fileNameSingleAll = "%s_%s_%s_single" %(str(percentageItem),category,str(indeks))
+                    fileNameSingleAll = "%s_%s_%s" %(str(percentageItem),category,str(indeks))
 
                     ##########    PRINT OUT ORIGINAL AND PROCESSED DATA  #################
                     """
@@ -171,18 +171,18 @@ class createDataLevel:
                     """
                     
                     ##########   ORIGINAL DESCRIPTION AND VECTORIZATION  #################
-                    self.shevaVect.createCorpusAndVectorModel(dataCategoryLevel,fileNameLevel,path)
+                    #self.shevaVect.createCorpusAndVectorModel(dataCategoryLevel,fileNameLevel,path)
                     dataCategoryLevelAll.extend(dataCategoryLevel)
-                    self.shevaVect.createCorpusAndVectorModel(dataCategoryLevelAll, fileNameAll,path)
+                    #self.shevaVect.createCorpusAndVectorModel(dataCategoryLevelAll, fileNameAll,path)
                     
                     #single model for all documents
-                    #dataCategorySingleAll.append([x for sublist in dataCategoryLevelAll for x in sublist])
-                    #createCorpusAndVectorModel(dataCategorySingleAll, percentageItem, fileName=fileNameSingleAll)
+                    dataCategorySingleAll[0].extend([x for sublist in dataCategoryLevelAll for x in sublist])
+                    self.shevaVect.createCorpusAndVectorModel(dataCategorySingleAll, fileNameSingleAll, path)
                     
                     ##########   ORIGINAL CATEGORIES ID   #################
-                    self.shevaUtils.getCategoryListLevel(originalCatID,fileNameLevel,path)
+                    #self.shevaUtils.getCategoryListLevel(originalCatID,fileNameLevel,path)
                     originalCatIDAll.extend(originalCatID)
-                    self.shevaUtils.getCategoryListLevel(originalCatIDAll,fileNameAll,path)
+                    #self.shevaCSV.getCategoryListLevel(originalCatIDAll,fileNameAll,path)
                     
                     #print out number of documents for (cat,level,model)
                     print "Done with:\t",group,"\t",category,"\t",indeks,"\t",percentageItem
@@ -235,7 +235,7 @@ inputs = ShevaDB().getMainCat()
 #inputs =["Regional"]
 for index in inputs:
     print index
-    dataModel = createDataLevel(2,rootDirectory)
+    dataModel = createDataSingleLevel(1,rootDirectory)
     print dataModel.GROUPTYPE
     print dataModel.percentageList
     print dataModel.rootDir
@@ -251,3 +251,9 @@ for job in jobs:
 #prints
 job_server.print_stats()
 print "Time elapsed: ", time.time() - start_time, "s"
+
+"""
+rootDirectory = "testSingle"
+dataModel = createDataSingleLevel(2,rootDirectory)
+dataModel.createData("Arts")
+"""
