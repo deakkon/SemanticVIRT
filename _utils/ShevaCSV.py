@@ -102,4 +102,28 @@ class ShevaCSV:
                 originalRow = row[1]
                 f.close()
                 return originalRow
-        f.close()        
+        f.close()
+        
+    def getIDfromModel(self, fileName):
+        """
+        RETURN: unique ID values from filename
+        """
+        data = []
+        r = csv.reader(open(fileName))
+        headers = r.next()
+        for fields in r:
+            if fields[1] not in data:
+                data.append(fields[1])
+        return data
+    
+    def getModelCSV(self, modelFileName):
+        """
+        RETURN: all (modelRow,originalID) from filename
+        """
+        #csv original id from model
+        f = open(modelFileName, "rb")
+        header = ["modelRowNumber","original_ID"]
+        readerTemp = csv.DictReader(f,header)
+        reader = {row['modelRowNumber']:row['original_ID'] for row in readerTemp}
+        f.close()
+        return reader

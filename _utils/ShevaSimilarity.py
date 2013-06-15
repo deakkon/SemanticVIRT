@@ -25,7 +25,7 @@ class ShevaSimilarity:
         Input: 
             sqlQuery to be executed, first parameter being textual data to convert to BoW
             
-        Output parameters:
+        Returns:
             BoW representation of documents returned from sqlQuery, list of lists
         """
         #variables

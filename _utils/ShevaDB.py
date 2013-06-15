@@ -1,4 +1,10 @@
-import MySQLdb, sys
+#imports
+import MySQLdb 
+import sys
+
+#USER DEFINED MODULES
+sys.path.append("/home/jseva/SemanticVIRT/_utils/")
+from ShevaCSV import ShevaCSV
 
 class ShevaDB:
     def __init__(self):
@@ -101,3 +107,20 @@ class ShevaDB:
             randomItems = [operator.itemgetter(0,2)(i) for i in sqlRandomResults]
 
         return randomItems
+    
+    def getDBDocuments(self, category):
+        """
+        Get ALL documents from category
+        """
+        
+        sqlCategoryDocuments = "SELECT Description, catid, fatherid from dmoz_combined where mainCategory = '%s'" %(category)
+        sqlResults = self.dbQuery(sqlCategoryDocuments)
+        return sqlResults
+        
+    
+    def getSampleDocuments(self, category, depth, id, sampleSize):
+        """
+        Ge all original id's form cat/level and take sample size from them
+        return sample documents
+        """
+        pass

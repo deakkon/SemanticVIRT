@@ -6,18 +6,6 @@ Created on 9.1.2013.
 PhD Candidate 
 Faculty of Organization and Informatics
 University of Zagreb
-
-Functions:
-    1. dbQuery(sql)
-    2. errorMessage(msg)
-    3. removePunct(text)
-    4. removeStopWords(text, mode=1)
-    5. createCorpusAndVectorModel(data, dataSet, fileName ="", outputFormat=1, modelFormat=1)
-    6. getCategoryLabel(categoryLabels,fileName, dataSet)
-    7. getCategoryListLevel(catID, fileName, dataset)
-    8. getMainCat()
-    9. createData(category)
-    10. runParallel()
 '''
 #imports
 import sys
