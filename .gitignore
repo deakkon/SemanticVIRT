@@ -48,6 +48,7 @@ pip-log.txt
 #directories
 .git/
 classification(H1)/old/
+classification(H1)/tempSim/
 _utils/old/
 UML/
 .settings/
