@@ -107,7 +107,7 @@ class ShevaSimilarity:
             tmpSim = 'tempSim/%s' %(fileName)
             index = gensim.similarities.Similarity(tmpSim,model[corpus],num_features=len(dictionary))
             
-        return (index, model, dictionary)
+        return (index, model, dictionary, corpus.num_docs)
     
     def convert2VSM(self, data, VSM):
         """
