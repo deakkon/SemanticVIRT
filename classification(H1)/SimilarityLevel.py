@@ -10,7 +10,6 @@ University of Zagreb
 #imports
 import sys
 import operator
-import random
 
 #USER DEFINED MODULES
 sys.path.append("/home/jseva/SemanticVIRT/_utils/")
@@ -35,8 +34,8 @@ class SimilarityLevel:
             self.GROUPTYPE = ["CATID","FATHERID","GENERAL"]
             self.percentageList = [25, 50, 75, 100]
         elif type == 2:
-            self.GROUPTYPE = ["CATID","FATHERID","GENERAL"]
-            self.percentageList = [25]
+            self.GROUPTYPE = ["FATHERID"]
+            self.percentageList = [25, 50, 75, 100]
         else:
             sys.exit("Wrong 'type' parameter in createData.__init__")
         
@@ -57,20 +56,27 @@ class SimilarityLevel:
         
         ranger = self.shevaDB.getCategoryDepth(category)
         dbData = self.shevaDB.getDBDocuments(category)
-        ranger = ["2","3","4"]
+
         for group in self.GROUPTYPE:
+            print "####################################################################"
             for percentage in self.percentageList:
+                print "####################################################################"
                 for depth in ranger:
+                    #variables
+                    sim = []
+                    vec_bow = []
+
                     print "####################################################################"
                     print category, group, percentage, depth
                     #path & csv file
                     path = "%s%s/%s/" %(self.rootDir,group,percentage)
                     fileName = "%s_%s_1_%s" %(percentage,category,depth)
                     IODfilePath = "%soriginalID/%s.csv" %(path,fileName)
-                    print IODfilePath
+                    #print IODfilePath
                     #get data from original ID csv; unique ID
+                    allCategoryDataOID = self.shevaCSV.getModelCSV(IODfilePath)
                     categoryDataOID = self.shevaCSV.getIDfromModel(IODfilePath)
-                    
+
                     #different data for different grouping
                     if group != "FATHERID":
                         categoryData = [list(operator.itemgetter(0,1)(i)) for i in dbData if str(i[1]) in categoryDataOID]
@@ -80,73 +86,24 @@ class SimilarityLevel:
                     #get sim index, model, dict
                     index, tfidfModel, dictionary, corpusSize = self.shevaSimilarity.getSimilarityIndex(path,fileName)
                     
-                    
-                    #get sample size
-                    print "CS:",corpusSize
-                    sampleSize = int((self.testSize * corpusSize)/100)
-                    print "SS:",sampleSize
-                    if sampleSize == 0:
-                        sampleSize = 1
-                    
-                    #get sample from all documents
-                    if len(categoryData) > int(sampleSize):
-                        #get random elements
-                        indices = random.sample(xrange(len(categoryData)), int(sampleSize))
-                        categoryData = [categoryData[i] for i in indices]
-                        #random documents if nr of documents < than sampleSize 
-                        categoryDataOID = [str(item[1]) for item in categoryData]
-                        categoryData=[item[0].split() for item in categoryData]
-                    else:
-                        categoryDataOID = [str(item[1]) for item in categoryData]
-                        categoryData=[item[0].split() for item in categoryData]
+                    #return sample from original data
+                    categoryDataOID, categoryData = self.shevaSimilarity.getSample(corpusSize,self.testSize,categoryData)
+                    #print "Testing data size:\t", len(categoryData),"\t",len(categoryDataOID)
 
-                    print "Testing data size:\t", len(categoryData),"\t",len(categoryDataOID)
-                    
                     #calculate similarites
                     cleanText = self.shevaTPF.returnClean(categoryData,1)
                     contentLenght = range(0,len(cleanText))
-                    vec_bow = []
-                    for i in contentLenght:
-                        vec_bow.append(dictionary.doc2bow(cleanText[i]))
+                    vec_bow = [dictionary.doc2bow(cleanText[i]) for i in contentLenght]
                     vec_bow = self.shevaSimilarity.convert2VSM(vec_bow,tfidfModel)
-                    sim = []
-                    sim = self.shevaSimilarity.calculateSimilarity(index,vec_bow,0.4)
-                    
-                    #document ID in model
-                    allCategoryDataOID = self.shevaCSV.getModelCSV(IODfilePath)
+                    sim = self.shevaSimilarity.calculateSimilarity(index,vec_bow,0.1)
 
-                    #input, output variables
-                    returnedCategoryID = []      
-                    lookingFor = []              
-                    for comparisonDocumentID, row in zip(categoryDataOID, sim):
-                        #print comparisonDocumentID, row
-                        for item in row:
-                            #print "Looking for: %s\t Found: %s\t Similarity:%s" %(comparisonDocumentID,allCategoryDataOID[str(item[0])],item[1])
-                            lookingFor.append(comparisonDocumentID)
-                            returnedCategoryID.append(allCategoryDataOID[str(item[0])])
-                            
-                    #print lookingFor
-                    #print found
-                    print "Input ID:\t ",len(lookingFor),"\tOutput ID:\t",len(returnedCategoryID)
-                    if len(returnedCategoryID) > 0:
-                        precision,recall, F1 =  self.shevaClassificationMetrics.computeClassificationMetrics(lookingFor,returnedCategoryID)
-                        print "Precision:\t",precision
-                        print "Recall\t",recall
-                        print "F1:\t",F1
-                    else:
-                        print "Unable 2 compute since len(returnedCategoryID) = ", len(returnedCategoryID)
-                        precision =recall = F1 = 0
-                        print "Precision:\t",precision
-                        print "Recall\t",recall
-                        print "F1:\t",F1
-                    
-                    
-                    #all rows in model
-                    
-                    #analyze results
-                    #TO DO
-
-
+                    #calcualte IR measures
+                    cPrecision, cRecall, cF1 = self.shevaClassificationMetrics.computeClassificationMetrics(categoryDataOID, allCategoryDataOID, sim)
+                    print "All data measures :\t\tPrecision:\t",cPrecision,"\t\tRecall\t",cRecall,"\t\tF1:\t",cF1
+                    cPrecisionR, cRecallR, cF1R = self.shevaClassificationMetrics.computeClassificationMetricsRelative(categoryDataOID, allCategoryDataOID, sim)
+                    print "Relative (with or) data measures :\t\tPrecision:\t",cPrecisionR,"\t\tRecall\t",cRecallR,"\t\tF1:\t",cF1R
+                    cPrecisionE, cRecallE, cF1E = self.shevaClassificationMetrics.computeClassificationMetricsExclusive(categoryDataOID, allCategoryDataOID, sim)
+                    print "Exclusive (with and) data measures :\t\tPrecision:\t",cPrecisionE,"\t\tRecall\t",cRecallE,"\t\tF1:\t",cF1E                    
                     
 similarityLevel = SimilarityLevel(2,10)
 similarityLevel.calculateLevelSimilarity("Arts")

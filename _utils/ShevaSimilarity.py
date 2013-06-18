@@ -11,6 +11,7 @@ from ShevaVect import ShevaVect
 #SYS IMPORTS
 import gensim
 import csv
+import random 
 
 class ShevaSimilarity:
     
@@ -106,7 +107,7 @@ class ShevaSimilarity:
         else:
             tmpSim = 'tempSim/%s' %(fileName)
             index = gensim.similarities.Similarity(tmpSim,model[corpus],num_features=len(dictionary))
-            
+
         return (index, model, dictionary, corpus.num_docs)
     
     def convert2VSM(self, data, VSM):
@@ -150,3 +151,27 @@ class ShevaSimilarity:
         reader = {row['modelRowNumber']:row['original_ID'] for row in readerTemp}
         f.close()
         return reader
+    
+    def getSample(self,corpusSize,testSize,categoryData):
+        #get sample size
+        #print "CS:",corpusSize
+        sampleSize = int((testSize * corpusSize)/100)
+        #print "SS:",sampleSize
+        if sampleSize == 0:
+            sampleSize = 1
+            
+        categoryDataOID = []
+        
+        #get sample from all documents
+        if len(categoryData) > int(sampleSize):
+            #get random elements
+            indices = random.sample(xrange(len(categoryData)), int(sampleSize))
+            categoryData = [categoryData[i] for i in indices]
+            #random documents if nr of documents < than sampleSize 
+            categoryDataOID = [str(item[1]) for item in categoryData]
+            categoryData=[item[0].split() for item in categoryData]
+        else:
+            categoryDataOID = [str(item[1]) for item in categoryData]
+            categoryData=[item[0].split() for item in categoryData]
+            
+        return (categoryDataOID,categoryData)

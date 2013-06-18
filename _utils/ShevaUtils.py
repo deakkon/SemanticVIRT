@@ -17,7 +17,7 @@ class ShevaUtils:
         if type(data) is not list and type(data) is not tuple:
             sys.exit("Wrong filetype: needed iterable")
     
-    def getUniqueItems(self, inlist, indeks=""):
+    def getUniqueItems(self, inlist, indeks):
         """
         Return uniqe values from column indeks from either list or csv file inlist
         """
