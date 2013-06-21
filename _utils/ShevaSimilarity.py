@@ -95,6 +95,7 @@ class ShevaSimilarity:
         corpusPath = "%scorpus/%s.mm" % (path,fileName)
         dictPath = "%sdict/%s.dict" % (path,fileName)
         modelPath = "%smodels/%s.tfidf_model" % (path,fileName)
+        #print corpusPath,dictPath,modelPath
     
         #open needed files
         corpus = gensim.corpora.MmCorpus(corpusPath)

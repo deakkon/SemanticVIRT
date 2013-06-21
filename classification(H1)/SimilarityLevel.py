@@ -85,7 +85,7 @@ class SimilarityLevel:
                         
                     #get sim index, model, dict
                     index, tfidfModel, dictionary, corpusSize = self.shevaSimilarity.getSimilarityIndex(path,fileName)
-                    
+
                     #return sample from original data
                     categoryDataOID, categoryData = self.shevaSimilarity.getSample(corpusSize,self.testSize,categoryData)
                     #print "Testing data size:\t", len(categoryData),"\t",len(categoryDataOID)
@@ -99,11 +99,12 @@ class SimilarityLevel:
 
                     #calcualte IR measures
                     cPrecision, cRecall, cF1 = self.shevaClassificationMetrics.computeClassificationMetrics(categoryDataOID, allCategoryDataOID, sim)
-                    print "All data measures :\t\tPrecision:\t",cPrecision,"\t\tRecall\t",cRecall,"\t\tF1:\t",cF1
+                    print "All data measures :\t\t\t\tPrecision:\t",cPrecision,"\t\tRecall\t",cRecall,"\t\tF1:\t",cF1
                     cPrecisionR, cRecallR, cF1R = self.shevaClassificationMetrics.computeClassificationMetricsRelative(categoryDataOID, allCategoryDataOID, sim)
                     print "Relative (with or) data measures :\t\tPrecision:\t",cPrecisionR,"\t\tRecall\t",cRecallR,"\t\tF1:\t",cF1R
                     cPrecisionE, cRecallE, cF1E = self.shevaClassificationMetrics.computeClassificationMetricsExclusive(categoryDataOID, allCategoryDataOID, sim)
-                    print "Exclusive (with and) data measures :\t\tPrecision:\t",cPrecisionE,"\t\tRecall\t",cRecallE,"\t\tF1:\t",cF1E                    
+                    print "Exclusive (with and) data measures :\t\tPrecision:\t",cPrecisionE,"\t\tRecall\t",cRecallE,"\t\tF1:\t",cF1E
+
                     
 similarityLevel = SimilarityLevel(2,10)
 similarityLevel.calculateLevelSimilarity("Arts")

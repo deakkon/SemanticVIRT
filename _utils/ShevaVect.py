@@ -215,3 +215,10 @@ class ShevaVect:
             
         #return values 
         return fatherIDLevel
+    
+    def getDictionaryItems(self,dict):
+        """
+        List of unique words in dict (gensim dictionary) 
+        """
+        #return dict.keys()
+        return sorted(dict.token2id.keys())

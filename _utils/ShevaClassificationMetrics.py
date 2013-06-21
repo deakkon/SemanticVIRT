@@ -18,14 +18,17 @@ class ShevaClassificationMetrics:
         
         for comparisonDocumentID, row in zip(testingOID, similarity):
             for item in row:
-                lookingFor.append(int(comparisonDocumentID))
-                returnedCategoryID.append(int(modelOID[str(item[0])]))
+                lookingFor.append(str(comparisonDocumentID).strip())
+                returnedCategoryID.append(str(modelOID[str(item[0])]).strip())
+
+        if len(lookingFor) == 2 or len(returnedCategoryID) == 2:
+            print "Test ID length:",len(lookingFor),"\t\t","Returned Model ID length:",len(returnedCategoryID)
+            #,"\n",lookingFor,"\n",returnedCategoryID
 
         if len(returnedCategoryID) > 0:
-            print "Test ID length:",len(lookingFor),"\t\t","Returned Model ID length:",len(returnedCategoryID),"\n",lookingFor,"\n",returnedCategoryID
-            precision = precision_score(lookingFor, returnedCategoryID)
-            recall = recall_score(lookingFor, returnedCategoryID)
-            F1 = f1_score(lookingFor, returnedCategoryID)
+            precision = precision_score(lookingFor, returnedCategoryID, pos_label=None)
+            recall = recall_score(lookingFor, returnedCategoryID, pos_label=None)
+            F1 = f1_score(lookingFor, returnedCategoryID, pos_label=None)
         else:
             precision = recall = F1 = 0
             
@@ -45,14 +48,18 @@ class ShevaClassificationMetrics:
         for comparisonDocumentID, row in zip(testingOID, similarity):
             for item in row:
                 if (int(modelOID[str(item[0])]) ==  int(comparisonDocumentID)) or (item[1] == 1.0):
-                    lookingFor.append(int(comparisonDocumentID))
-                    returnedCategoryID.append(int(modelOID[str(item[0])]))
+                    lookingFor.append(str(comparisonDocumentID).strip())
+                    returnedCategoryID.append(str(modelOID[str(item[0])]).strip())
 
+        if len(lookingFor) == 2 or len(returnedCategoryID) == 2:
+            print "Test ID length:",len(lookingFor),"\t\t","Returned Model ID length:",len(returnedCategoryID)
+            #,"\n",lookingFor,"\n",returnedCategoryID
+        
+        
         if len(returnedCategoryID) > 0:
-            print "Test ID length:",len(lookingFor),"\t\t","Returned Model ID length:",len(returnedCategoryID),"\n",lookingFor,"\n",returnedCategoryID
-            precision = precision_score(lookingFor, returnedCategoryID)
-            recall = recall_score(lookingFor, returnedCategoryID)
-            F1 = f1_score(lookingFor, returnedCategoryID)
+            precision = precision_score(lookingFor, returnedCategoryID, pos_label=None)
+            recall = recall_score(lookingFor, returnedCategoryID, pos_label=None)
+            F1 = f1_score(lookingFor, returnedCategoryID, pos_label=None)
         else:
             precision = recall = F1 = 0
 
@@ -72,14 +79,17 @@ class ShevaClassificationMetrics:
         for comparisonDocumentID, row in zip(testingOID, similarity):
             for item in row:
                 if (int(modelOID[str(item[0])]) ==  int(comparisonDocumentID)) and (item[1] == 1.0):
-                    lookingFor.append(int(comparisonDocumentID))
-                    returnedCategoryID.append(int(modelOID[str(item[0])]))
+                    lookingFor.append(str(comparisonDocumentID).strip())
+                    returnedCategoryID.append(str(modelOID[str(item[0])]).strip())
+        
+        if len(lookingFor) == 2 or len(returnedCategoryID) == 2:
+            print "Test ID length:",len(lookingFor),"\t\t","Returned Model ID length:",len(returnedCategoryID)
+            #,"\n",lookingFor,"\n",returnedCategoryID
         
         if len(returnedCategoryID) > 0:
-            print "Test ID length:",len(lookingFor),"\t\t","Returned Model ID length:",len(returnedCategoryID),"\n",lookingFor,"\n",returnedCategoryID
-            precision = precision_score(lookingFor, returnedCategoryID)
-            recall = recall_score(lookingFor, returnedCategoryID)
-            F1 = f1_score(lookingFor, returnedCategoryID)
+            precision = precision_score(lookingFor, returnedCategoryID, pos_label=None)
+            recall = recall_score(lookingFor, returnedCategoryID, pos_label=None)
+            F1 = f1_score(lookingFor, returnedCategoryID, pos_label=None)
         else:
             precision = recall = F1 = 0
             

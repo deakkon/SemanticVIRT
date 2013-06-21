@@ -18,7 +18,6 @@ class ShevaTPF:
         """
         self.table = string.maketrans("","")
     
-    
     def checkList(self,text):
         if isinstance(x, types.ListType):
             pass
