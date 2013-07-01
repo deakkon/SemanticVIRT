@@ -16,6 +16,7 @@ class ShevaUtils:
     def checkIfList(self, data):
         if type(data) is not list and type(data) is not tuple:
             sys.exit("Wrong filetype: needed iterable")
+            
     
     def getUniqueItems(self, inlist, indeks):
         """

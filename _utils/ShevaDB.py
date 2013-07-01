@@ -1,10 +1,11 @@
 #imports
 import MySQLdb 
 import sys
+#import redis
 
 #USER DEFINED MODULES
-sys.path.append("/home/jseva/SemanticVIRT/_utils/")
-from ShevaCSV import ShevaCSV
+#sys.path.append("/home/jseva/SemanticVIRT/_utils/")
+#from ShevaCSV import ShevaCSV
 
 class ShevaDB:
     def __init__(self):
@@ -18,6 +19,7 @@ class ShevaDB:
             db = MySQLdb.connect(self.host, self.user, self.passwd, self.database)
             db.autocommit(True)
             return db
+
 
         except MySQLdb.Error, e:
             print "Error dbConnect %d: %s" % (e.args[0],e.args[1])
@@ -116,6 +118,15 @@ class ShevaDB:
         sqlCategoryDocuments = "SELECT Description, catid, fatherid from dmoz_combined where mainCategory = '%s'" %(category)
         sqlResults = self.dbQuery(sqlCategoryDocuments)
         return sqlResults
+    
+    def getDBDocumentsDepth(self, category, depth):
+        """
+        Get ALL documents from category
+        """
+        
+        sqlCategoryDocuments = "SELECT Description, catid, fatherid from dmoz_combined where mainCategory = '%s' and categoryDepth = '%i'" %(category, depth)
+        sqlResults = self.dbQuery(sqlCategoryDocuments)
+        return sqlResults    
         
     
     def getSampleDocuments(self, category, depth, id, sampleSize):
@@ -124,3 +135,7 @@ class ShevaDB:
         return sample documents
         """
         pass
+    
+    def createREDIS(self):
+        r = redis.Redis(host='localhost', port=6379, db=0)
+        return r

@@ -10,14 +10,19 @@ from lxml import html
 from bs4 import BeautifulSoup
 from bs4 import BeautifulStoneSoup
 
+
 class ShevaTPF:
+    
     
     def __init__(self):
         """
         Works with nested lists (list of lists: [['str1','str2','str3',...,'strn'],[],[],[]]
         """
         self.table = string.maketrans("","")
-    
+        self.male_names =  [name.lower() for name in nltk.corpus.names.words('male.txt')] 
+        self.female_names = [name.lower() for name in nltk.corpus.names.words('female.txt')] 
+        self.stopwords = nltk.corpus.stopwords.words('english')
+
     def checkList(self,text):
         if isinstance(x, types.ListType):
             pass
@@ -33,12 +38,12 @@ class ShevaTPF:
         return sentence
     
     def removeUniqueTokens(self,text, nestedList):
-        sentence = []
-        sentence = [item.lower() for item in text if item.lower() not in self.getUniqueTokens(nestedList)]
+        #sentence = []
+        sentence = [item for item in text if item not in self.getUniqueTokens(nestedList)]
         return sentence
     
     def removePunctuation(self,text):
-        sentence = []
+        #sentence = []
         sentence = [s.translate(self.table, string.punctuation) for s in text]
         return sentence
     
@@ -46,35 +51,26 @@ class ShevaTPF:
         sentence = []
 
         # replace special strings
-        special = {'&nbsp;' : ' ', '&amp;' : '&', '&quot;' : '"','&lt;'   : '<', '&gt;'  : '>'
-        }
+        special = {'&nbsp;' : ' ', '&amp;' : '&', '&quot;' : '"','&lt;'   : '<', '&gt;'  : '>'}
         
         for item in text:
             for (k,v) in special.items():
                 item = item.replace (k, v)
-            sentence.append(item)
+            sentence.append(item.lower())
             #print item
         
         return sentence 
 
     def removeNames(self, text):
-        sentence = []
-        #name files
-        male_names = nltk.corpus.names.words('male.txt')
-        male_names = [name.lower() for name in male_names]
-        female_names = nltk.corpus.names.words('female.txt')
-        female_names = [name.lower() for name in female_names]
-        #remove names
-        sentence = [item.lower() for item in text if (item not in male_names and item not in female_names)]
-        #return names
+        sentence = [item for item in text if (item not in self.male_names and item not in self.female_names)]
         return sentence
 
     def removeAN(self, text):
         sentence = []
         allTheLetters = [x for x in string.lowercase]
-        sentence = [x.lower() for x in text]
-        sentence = [item for item in sentence if item not in allTheLetters]
-        sentence = [item for item in sentence if not item.isdigit()]
+        #sentence = [x for x in text]
+        sentence = [item for item in text if item not in allTheLetters]
+        sentence = [item for item in text if not item.isdigit()]
         return sentence
 
     def removeHtmlTags(self, text):
@@ -95,10 +91,10 @@ class ShevaTPF:
             2 = stop words from file stopWords.txt (default)
         Output: stemmed (Porter stemmer) list of words that are not defined as stopwords, type list
         """
-        sentence = []
+        #sentence = []
 
         if mode == 1:
-            stopwords = nltk.corpus.stopwords.words('english')
+            stopwords = self.stopwords
         elif mode == 2:
             stopwordsFile = open('stopWords.txt','r')
             stopwords = [i.strip() for i in stopwordsFile.readlines()]
@@ -106,11 +102,11 @@ class ShevaTPF:
         else:
             sys.exit("False flag -> second parameter must be \n 1, if you want to use nltk based set of stopwrods \n 2, if you want to use file based set of stopwords \n")        
     
-        sentence = [w for w in text if w.lower() not in stopwords]
+        sentence = [w for w in text if w not in stopwords]
         return sentence
     
     def returnStem(self, text, typeModus=1):
-        sentence = []
+        #sentence = []
         if typeModus == 1:
             stemmer = PorterStemmer()
         elif typeModus == 2:

@@ -23,6 +23,7 @@ Implementing Gensim Python modules for IR implementation, tested on newsletter c
 
 Version 0.2
     Working with sql queries 
+    
 '''
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-

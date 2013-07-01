@@ -1,4 +1,10 @@
+#improt
 import csv
+import sys
+
+#Sheva import
+#sys.path.append("/home/jseva/SemanticVIRT/_utils/")
+#from ShevaDB import ShevaDB
 
 class ShevaCSV:
     
@@ -7,6 +13,8 @@ class ShevaCSV:
         self.path = path
         self.data = data
         """
+        #self.shevaDB = ShevaDB()
+        
         
     def write2CSV(self, fileName, path):
         """
@@ -124,6 +132,22 @@ class ShevaCSV:
         f = open(modelFileName, "rb")
         header = ["modelRowNumber","original_ID"]
         readerTemp = csv.DictReader(f,header)
+        readerTemp.next()
         reader = {row['modelRowNumber']:row['original_ID'] for row in readerTemp}
         f.close()
         return reader
+    """
+    def getModelCSV_REDIS(self,modelFileName):
+        redisServer = self.shevaDB.createREDIS()
+        f = open(modelFileName, "rb")
+        header = ["modelRowNumber","original_ID"]
+        readerTemp = csv.DictReader(f,header)
+        readerTemp.next()        
+        for item in readerTemp:
+            #print item
+            #print item['modelRowNumber']
+            redisServer.hset("bucket:" + str(int(int(item['modelRowNumber'])/100)), item['modelRowNumber'] ,item['original_ID'])
+        f.close()
+        return redisServer
+    """
+        
