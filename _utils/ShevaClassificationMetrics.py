@@ -25,11 +25,12 @@ class ShevaClassificationMetrics:
         
         returnedCategoryID = []
         lookingFor = []
+        
         for comparisonDocumentID, row in izip(testingOID, similarity):
             if len(row) != 0:
                 maxTempSorted = row[0]
                 lookingFor.append(comparisonDocumentID)
-                returnedCategoryID.append(modelOID[str(maxTempSorted[0])])                  
+                returnedCategoryID.append(modelOID[str(maxTempSorted[0])])
             else:
                 lookingFor.append(comparisonDocumentID)
                 returnedCategoryID.append("0")
@@ -38,6 +39,9 @@ class ShevaClassificationMetrics:
             precision, recall, F1, _ = precision_recall_fscore_support(lookingFor, returnedCategoryID, pos_label=None, average='weighted')
         else:
             precision = recall = F1 = 0
+
+        returnedCategoryID = []
+        lookingFor = []
             
         return (precision,recall, F1)
         
@@ -72,6 +76,9 @@ class ShevaClassificationMetrics:
         else:
             precision = recall = F1 = 0
 
+        returnedCategoryID = []
+        lookingFor = [] 
+
         return (precision,recall, F1)
      
     def computeClassificationMetricsExclusive(self, testingOID, modelOID, similarity):
@@ -96,9 +103,7 @@ class ShevaClassificationMetrics:
                 foundMatch = False
                 
                 for temp in row[:granica]:
-                    #modelRowIDItem = modelOID.hget("bucket:" + str(int(temp[0]/100)), temp[0])
                     modelRowIDItem = modelOID[str(temp[0])]
-                    #print "temp[0]: ",type(temp[0]),"\tcomparisonDocumentID:",type(comparisonDocumentID),"\tmodelOID[str(temp[0])]",type(modelOID[str(temp[0])])
                     if modelRowIDItem ==  comparisonDocumentID:
                         lookingFor.append(comparisonDocumentID)
                         returnedCategoryID.append(modelRowIDItem)
@@ -115,6 +120,9 @@ class ShevaClassificationMetrics:
             precision, recall, F1, _ = precision_recall_fscore_support(lookingFor, returnedCategoryID, pos_label=None, average='weighted')
         else:
             precision = recall = F1 = 0
+
+        returnedCategoryID = []
+        lookingFor = [] 
 
         return (precision,recall, F1)
 

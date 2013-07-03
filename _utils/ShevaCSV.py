@@ -124,6 +124,7 @@ class ShevaCSV:
                 data.append(fields[1])
         return data
     
+    #@profile
     def getModelCSV(self, modelFileName):
         """
         RETURN: all (modelRow,originalID) from filename

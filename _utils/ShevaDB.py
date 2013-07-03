@@ -1,6 +1,7 @@
 #imports
 import MySQLdb 
 import sys
+import random
 #import redis
 
 #USER DEFINED MODULES
@@ -27,7 +28,7 @@ class ShevaDB:
 
     def dbDisconnect(self,connection):
         connection.close()
-    
+
     def dbQuery(self,sql):
         con = self.dbConnect()
 
@@ -74,8 +75,15 @@ class ShevaDB:
         #print maxDebthRS, type(maxDebthRS), maxDebthRS[0]
         maxDebth = maxDebthRS[0]
         #maxDebth = int(maxDebth[0])
-        ranger = [x for x in range(2,maxDebth+1)]
+        ranger = [x for x in range(4,maxDebth+1)]
         return ranger
+    
+    def getCategorymaxDepth(self,category):
+        depthQuery = "select max(categoryDepth) from dmoz_combined where mainCategory = '%s' and filterOut = 0" %(category)
+        maxDebthRS = self.dbQuery(depthQuery)
+        #print maxDebthRS, type(maxDebthRS), maxDebthRS[0]
+        maxDebth = maxDebthRS[0]
+        return maxDebth 
     
     def getSimilarityDocuments(self, category, groupType, limit, depth="", level=""):
         """
@@ -139,3 +147,29 @@ class ShevaDB:
     def createREDIS(self):
         r = redis.Redis(host='localhost', port=6379, db=0)
         return r
+    
+    #@profile
+    def getSample(self,corpusSize,testSize,category,debth, group):
+        #get sample size
+        #print "CS:",corpusSize
+        sampleSize = int((testSize * corpusSize)/100)
+        #print "SS:",sampleSize
+        if sampleSize == 0:
+            sampleSize = 1
+
+        categoryDataOID = []
+        #dbData = self.getDBDocumentsDepth(category,debth)
+        if group != "FATHERID":
+            sqlCategoryDocuments = "SELECT Description, catid from dmoz_combined where mainCategory = '%s' and categoryDepth <= '%i' limit %i" %(category, debth, sampleSize)
+        else:
+            sqlCategoryDocuments = "SELECT Description, fatherid from dmoz_combined where mainCategory = '%s' and categoryDepth <= '%i' limit %i" %(category, debth, sampleSize)
+             
+        dbData = self.dbQuery(sqlCategoryDocuments)
+        print dbData
+        for item in dbData:
+            print item
+
+        categoryDataOID = [str(item[1]) for item in dbData]
+        dbData=[item[0].split() for item in dbData]
+
+        return (categoryDataOID,dbData)

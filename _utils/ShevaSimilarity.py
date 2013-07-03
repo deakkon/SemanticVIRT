@@ -15,14 +15,14 @@ import random
 import os
 
 class ShevaSimilarity:
-    
+    #@profile
     def __init__(self):
         self.shevaDB = ShevaDB()
         self.shevaTPF = ShevaTPF()
         self.shevaUtils = ShevaUtils()
         self.shevaVect = ShevaVect()
 
-
+    #@profile
     def prepareComparisonDocuments(self, sqlQuery):
         """
         Input: 
@@ -92,32 +92,31 @@ class ShevaSimilarity:
                     notAllDone = True 
 
     #@profile
-    def getSimilarityIndex(self,path,fileName):        
+    def getSimilarityIndex(self,path, fileName, grouping):
         ####################        PATHS TO GENSIM FILES  ##########################
         corpusPath = "%scorpus/%s.mm" % (path,fileName)
         dictPath = "%sdict/%s.dict" % (path,fileName)
         modelPath = "%smodels/%s.tfidf_model" % (path,fileName)
         indexDir = "%sindexFiles/" %(path)
-        indexPath = "%sindexFiles/%s.index" % (path,fileName)
-        #print corpusPath,dictPath,modelPath
+        indexPath = "%sindexFiles/%s_%s.index" % (path, grouping, fileName)
     
         #open needed files
         corpus = gensim.corpora.MmCorpus(corpusPath)
         dictionary = gensim.corpora.Dictionary.load(dictPath)
         model = gensim.models.TfidfModel.load(modelPath)
         
-        #if os.path.exists(indexPath):
-            #index = gensim.similarities.Similarity.load(indexPath)
-        #else:
+        if os.path.exists(indexPath):
+            index = gensim.similarities.Similarity.load(indexPath)
+        else:
             #create index dir
-        self.shevaUtils.createDirOne(indexDir)
-        #create index and save
-        tmpSim = 'tempSim/%s' %(fileName)
-        index = gensim.similarities.Similarity(tmpSim,model[corpus],num_features=len(dictionary))
-        index.save(indexPath)
+            self.shevaUtils.createDirOne(indexDir)
+            tmpSim = 'tempSim/%s_%s' %(grouping, fileName)
+            index = gensim.similarities.Similarity(tmpSim,model[corpus],num_features=len(dictionary))
+            index.save(indexPath)
 
         return (index, model, dictionary, corpus.num_docs)
     
+    #@profile
     def convert2VSM(self, data, VSM):
         """
         Convert data (as list of lists) to VSM (list of lists)
@@ -152,7 +151,7 @@ class ShevaSimilarity:
             simarr.extend([tmpSim])
         return simarr
         
-    
+    #@profile
     def getOIDfromModel(self, path, fileName):
         iodPath = "%soriginalID/%s.csv" % (path,fileName)
         f = open(iodPath, "rb") # don't forget the 'b'!
@@ -161,27 +160,3 @@ class ShevaSimilarity:
         reader = {row['modelRowNumber']:row['original_ID'] for row in readerTemp}
         f.close()
         return reader
-    
-    def getSample(self,corpusSize,testSize,categoryData):
-        #get sample size
-        #print "CS:",corpusSize
-        sampleSize = int((testSize * corpusSize)/100)
-        #print "SS:",sampleSize
-        if sampleSize == 0:
-            sampleSize = 1
-
-        categoryDataOID = []
-        
-        #get sample from all documents
-        if len(categoryData) > int(sampleSize):
-            #get random elements
-            indices = random.sample(xrange(len(categoryData)), int(sampleSize))
-            categoryData = [categoryData[i] for i in indices]
-            #random documents if nr of documents < than sampleSize 
-            categoryDataOID = [str(item[1]) for item in categoryData]
-            categoryData=[item[0].split() for item in categoryData]
-        else:
-            categoryDataOID = [str(item[1]) for item in categoryData]
-            categoryData=[item[0].split() for item in categoryData]
-            
-        return (categoryDataOID,categoryData)
