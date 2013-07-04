@@ -208,8 +208,8 @@ for category in inputs:
     #ranger = 3  
     for group in GROUPTYPE:
         for p in percentageList:
-            #if ShevaDB().getNumberOfRows(category, group, p, ranger) == 0:
-            similarityLevel =  SimilarityLevel(10)
-            similarityLevel.calculateLevelSimilarity(category, ranger, p, group)
-            del similarityLevel
-            gc.collect()
+            if ShevaDB().getNumberOfRows(category, group, p, ranger) == 0:
+                similarityLevel =  SimilarityLevel(10)
+                similarityLevel.calculateLevelSimilarity(category, ranger, p, group)
+                del similarityLevel
+                gc.collect()
