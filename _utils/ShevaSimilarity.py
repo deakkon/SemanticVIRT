@@ -3,10 +3,9 @@ import sys
 
 #USER DEFINED MODULES
 sys.path.append("/home/jseva/SemanticVIRT/_utils/")
-from ShevaDB import ShevaDB
-from ShevaTPF import ShevaTPF
-from ShevaUtils import ShevaUtils
-from ShevaVect import ShevaVect
+#from ShevaTPF import ShevaTPF
+#from ShevaUtils import ShevaUtils
+#from ShevaVect import ShevaVect
 
 #SYS IMPORTS
 import gensim
@@ -15,22 +14,27 @@ import random
 import os
 
 class ShevaSimilarity:
-    #@profile
+    
     def __init__(self):
-        self.shevaDB = ShevaDB()
-        self.shevaTPF = ShevaTPF()
-        self.shevaUtils = ShevaUtils()
-        self.shevaVect = ShevaVect()
+        #self.shevaTPF = ShevaTPF()
+        #self.shevaUtils = ShevaUtils()
+        #self.shevaVect = ShevaVect()
+        print "ShevaSimilarity created"
+        
+    def __del__(self):
+        print ' ShevaSimilarity destroyed'
 
+    """
+    MOVED TO SHEVADB
     #@profile
     def prepareComparisonDocuments(self, sqlQuery):
-        """
+
         Input: 
             sqlQuery to be executed, first parameter being textual data to convert to BoW
             
         Returns:
             BoW representation of documents returned from sqlQuery, list of lists
-        """
+
         #variables
         originalID = []
         bowReturn = []    
@@ -51,6 +55,7 @@ class ShevaSimilarity:
         bowReturn.extend(self.shevaTPF.returnClean(content))
         originalID = [row[1] for row in sqlQueryResults]
         return (bowReturn,originalID)
+    """
     
     def getOriginalRowFromModel(self, modelRow, modelDocument):
         """
@@ -109,7 +114,7 @@ class ShevaSimilarity:
             index = gensim.similarities.Similarity.load(indexPath)
         else:
             #create index dir
-            self.shevaUtils.createDirOne(indexDir)
+            #self.shevaUtils.createDirOne(indexDir)
             tmpSim = 'tempSim/%s_%s' %(grouping, fileName)
             index = gensim.similarities.Similarity(tmpSim,model[corpus],num_features=len(dictionary))
             index.save(indexPath)

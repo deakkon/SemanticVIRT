@@ -9,12 +9,10 @@ import sys
 class ShevaCSV:
     
     def __init__(self):
-        """
-        self.path = path
-        self.data = data
-        """
-        #self.shevaDB = ShevaDB()
+        print "ShevaCSV created"
         
+    def __del__(self):
+        print 'ShevaCSV destroyed'
         
     def write2CSV(self, fileName, path):
         """

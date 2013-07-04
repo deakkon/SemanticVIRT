@@ -11,6 +11,12 @@ from itertools import izip
 #from ShevaCSV import ShevaCSV
 
 class ShevaClassificationMetrics:
+    
+    def __init__(self):
+        print "ShevaClassificationMetrics created"
+    
+    def __del__(self):
+        print 'ShevaClassificationMetrics destroyed'       
 
     #@profile
     def computeClassificationMetrics(self, testingOID, modelOID, similarity):

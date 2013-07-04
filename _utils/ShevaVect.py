@@ -32,10 +32,6 @@ Version 0.2
 import logging, sys, csv, os, string
 import gensim
 from gensim import corpora, models
-#from python.utils.textPrepareFunctions import removePunct, removeStopWords 
-#from python.utils.databaseODP import dbQuery, errorMessage
-from ShevaDB import ShevaDB
-#from ShevaTPF import ShevaTPF
 
 
 class ShevaVect:
@@ -126,6 +122,7 @@ class ShevaVect:
 
     def getCategoryLabel(self,sqlQuery,fileName):
         """
+        MOVED TO SHEVADB
         sqlQuery -> query to be executed or query result set
         fileName -> file to save labels returned by the query
         """
@@ -191,6 +188,7 @@ class ShevaVect:
             
     def returnFatherIDs(self,sqlQuery):
         """
+        MOVED TO SHEVADB
         Group catid, on specific depth level,  based on their fatherID values
         sql query -> fatherID first level 
         Returns fatherID on level x    

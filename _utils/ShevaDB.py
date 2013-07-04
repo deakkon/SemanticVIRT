@@ -2,11 +2,6 @@
 import MySQLdb 
 import sys
 import random
-#import redis
-
-#USER DEFINED MODULES
-#sys.path.append("/home/jseva/SemanticVIRT/_utils/")
-#from ShevaCSV import ShevaCSV
 
 class ShevaDB:
     def __init__(self):
@@ -14,6 +9,10 @@ class ShevaDB:
         self.user= "root"
         self.passwd = "root"
         self.database= "dmoz"
+        print "ShevaDB created"
+        
+    def __del__(self):
+        print 'ShevaDB destroyed'        
     
     def dbConnect(self):
         try:
@@ -165,11 +164,138 @@ class ShevaDB:
             sqlCategoryDocuments = "SELECT Description, fatherid from dmoz_combined where mainCategory = '%s' and categoryDepth <= '%i' limit %i" %(category, debth, sampleSize)
              
         dbData = self.dbQuery(sqlCategoryDocuments)
-        print dbData
-        for item in dbData:
-            print item
+
 
         categoryDataOID = [str(item[1]) for item in dbData]
         dbData=[item[0].split() for item in dbData]
 
         return (categoryDataOID,dbData)
+    
+    def getNumberOfRows(self, category, group, limit, depth):
+        sqlQuery = "SELECT count(*) from analysis_results where category = '%s' and groupingType = '%s' and limitValue = '%s' and levelDepth = '%s'" %(category, group, limit, depth)        
+        dbData = self.dbQuery(sqlQuery)
+        #print dbData[0], type(dbData[0])
+        return int(dbData[0])
+    
+    #@profile
+    def prepareComparisonDocuments(self, sqlQuery):
+        """
+        Input: 
+            sqlQuery to be executed, first parameter being textual data to convert to BoW
+            
+        Returns:
+            BoW representation of documents returned from sqlQuery, list of lists
+        """
+        #variables
+        originalID = []
+        bowReturn = []    
+        
+        #check sqlQuery
+        if sqlQuery == "":
+            sys.exit("No query mate @ ShevaLevelSIM.prepareComparisonDocuments()")
+        elif type(sqlQuery) is str:
+            sqlQueryResults = self.dbQuery(sqlQuery)
+        elif type(sqlQuery) is tuple or type(sqlQuery) is list:
+            sqlQueryResults = sqlQuery
+        else:
+            print type(sqlQuery)
+            print "Error @ ShevaLevelSIM.prepareComparisonDocuments() "
+            sys.exit(1)
+            
+        content= [[item for item in row[0].split()] for row in sqlQueryResults]
+        bowReturn.extend(self.shevaTPF.returnClean(content))
+        originalID = [row[1] for row in sqlQueryResults]
+        return (bowReturn,originalID)
+    
+    def getCategoryLabel(self,sqlQuery,fileName):
+        """
+        sqlQuery -> query to be executed or query result set
+        fileName -> file to save labels returned by the query
+        """
+        #variables
+        categoryLabels = []
+        
+        #default data
+        if sqlQuery == "":
+            sys.exit("No query mate. Function getCategoryLabel")
+        elif type(sqlQuery) is str:
+            sqlQueryResults = ShevaDB().dbQuery(sqlQuery)
+        elif type(sqlQuery) is tuple:
+            sqlQueryResults = sqlQuery
+        else:
+            print type(sqlQuery)
+            print "error createVectorModel getCategoryLabel "
+            sys.exit(1)
+        
+        #print executed query
+        #print sqlQuery
+            
+        #iteration through documents   
+        for row in sqlQueryResults:
+            if type(row) is not long:
+                #print type(row)," :: ",type(row[0]), row[0]
+                #missing: remove stop words, punctuation, names
+                categoryLabels.append(removeStopWords(row[0]))   
+                #categoryLabels.append(str(row[0]))
+            
+        #print sqlQueryResults
+        #categoryLabels = [row[0] for row in sqlQueryResults]
+        #print categoryLabels
+        """
+        dictionary = corpora.Dictionary(categoryLabels)
+        dictFN = "labels/"+fileName+".dict"
+        dictionary.save(dictFN)
+        """
+    
+        #path to save the file    
+        if os.path.realpath(__file__)== "/home/jseva/SemanticVIRT/python/utils/createVectorModel.py":
+            fileName = "../H1/labels/"+fileName+".csv"
+        else:
+            fileName = "labels/"+fileName+".csv"    
+        
+        out = csv.writer(open(fileName,"w"), delimiter=',',quoting=csv.QUOTE_ALL)
+        
+        writeLabels = []
+        #append to file
+        print string.letters
+        for row in categoryLabels:
+            print row
+            #print type(row)
+            #print len(row)
+            for i in row:            
+                if i != "" or i.lower() not in string.letters.lower():
+                    #print i.lower()
+                    #out.writerow(i)
+                    writeLabels.append(i.lower())
+        print writeLabels
+        out.writerow(writeLabels)
+        #return categoryLabels 
+        
+    def returnFatherIDs(self,sqlQuery):
+        """
+        MOVED TO SHEVADB
+        Group catid, on specific depth level,  based on their fatherID values
+        sql query -> fatherID first level 
+        Returns fatherID on level x    
+        """
+        #variables
+        fatherIDLevel = []
+        
+        if sqlQuery == "":
+            sys.exit("No query mate. Function getCategoryLabel")
+        elif type(sqlQuery) is str:
+            sqlQueryResults = ShevaDB().dbQuery(sqlQuery)
+        elif type(sqlQuery) is tuple:
+            sqlQueryResults = sqlQuery
+        else:
+            print type(sqlQuery)
+            print "yaba daba doo createVectorModel getCategoryLabel "
+            sys.exit(1)
+            
+        #iterate through returned
+        for row in sqlQueryResults:
+            #print row[0]
+            fatherIDLevel.append(row[0])
+            
+        #return values 
+        return fatherIDLevel

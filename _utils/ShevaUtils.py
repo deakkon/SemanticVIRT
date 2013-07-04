@@ -3,7 +3,7 @@ from sys import path
 import os
 import csv 
 import collections
-from ShevaDB import ShevaDB
+#from ShevaDB import ShevaDB
 
 class ShevaUtils:
 
@@ -11,7 +11,10 @@ class ShevaUtils:
         """
         this.baza = ShevaDB()
         """
-        pass
+        print "ShevaUtils created"
+    
+    def __del__(self):
+        print 'ShevaUtils destroyed'    
         
     def checkIfList(self, data):
         if type(data) is not list and type(data) is not tuple:
@@ -66,22 +69,22 @@ class ShevaUtils:
         name = "testData_classificationModels/%s/%s.png" %(model,name)
         plt.savefig(name)
     
-    def returnDirectoryList(self, path):
+    def returnDirectoryList(self, diskPath):
         directories = []
-        for files in os.listdir(path): 
-            if os.path.isdir(os.path.join(path,files)):
+        for files in os.listdir(diskPath): 
+            if os.path.isdir(os.path.join(diskPath,files)):
                 directories.append(files)
         return directories
     
     def createDir(self, rootDir,groupType,model):
         try:
             #basic directory for grouping type: type
-            path = "%s/%s/" %(rootDir,groupType)
-            if not os.path.isdir(path):
-                os.mkdir(path)
+            diskPath = "%s/%s/" %(rootDir,groupType)
+            if not os.path.isdir(diskPath):
+                os.mkdir(diskPath)
         
             #basic directory for model, based on % of data being analyzed
-            modelPath = "%s/%s/"%(path,model)
+            modelPath = "%s/%s/"%(diskPath,model)
             if not os.path.isdir(modelPath):
                 os.mkdir(modelPath)
                 

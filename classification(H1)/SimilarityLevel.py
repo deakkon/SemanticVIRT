@@ -12,6 +12,9 @@ import sys
 import pp
 import gc
 import time
+import weakref
+import pprint
+#gc.set_debug(gc.DEBUG_LEAK)
 
 #USER DEFINED MODULES
 sys.path.append("/home/jseva/SemanticVIRT/_utils/")
@@ -20,14 +23,16 @@ from ShevaCSV import ShevaCSV
 from ShevaTPF import ShevaTPF
 from ShevaSimilarity import ShevaSimilarity
 from ShevaClassificationMetrics import ShevaClassificationMetrics
+from ShevaUtils import ShevaUtils
 
 class SimilarityLevel:   
     #@profile 
-    def __init__(self, type, testSize):
+    def __init__(self, testSize):
         """
         INPUT:
             type = full data (1) or training data (2)
             testSize = % of model size (nr of documents in model) to test with
+        """
         """
         #percentage of data to be used for model build
         if type == 1:
@@ -38,17 +43,23 @@ class SimilarityLevel:
             #self.percentageList = [25, 50, 75, 100]
         else:
             sys.exit("Wrong 'type' parameter in createData.__init__")
+        """
         
+        print "SimilarityLevel created"
         #Sheva Objects
         self.shevaDB = ShevaDB()
         self.shevaTPF = ShevaTPF()
-        self.shevaSimilarity = ShevaSimilarity()
-        self.shevaCSV = ShevaCSV()
-        self.shevaClassificationMetrics = ShevaClassificationMetrics()
+        self.shevaSimilarity =  ShevaSimilarity()
+        self.shevaCSV =  ShevaCSV()
+        self.shevaClassificationMetrics =  ShevaClassificationMetrics()
+        self.shevaUtils =  ShevaUtils()
         
         #SimilarityLevel Variables        
         self.rootDir = "LevelModels/"
         self.testSize = testSize
+
+    def __del__(self):
+        print 'SimilarityLevel destroyed'                  
             
     #@profile
     def calculateLevelSimilarity(self, category, debth, percentage, group):
@@ -75,6 +86,8 @@ class SimilarityLevel:
         #categoryDataOID = self.shevaCSV.getIDfromModel(IODfilePath)
 
         #get sim index, model, dict
+        indexDir = "%sindexFiles/" %(path)
+        self.shevaUtils.createDirOne(indexDir)
         index, tfidfModel, dictionary, corpusSize = self.shevaSimilarity.getSimilarityIndex(path, fileName, group)
         
         #return sample from original data
@@ -85,12 +98,7 @@ class SimilarityLevel:
         cleanTextBoW = [dictionary.doc2bow(cleanText[i]) for i in range(0, len(cleanText))]
         vec_bow = self.shevaSimilarity.convert2VSM(cleanTextBoW, tfidfModel)
         simCalculation = self.shevaSimilarity.calculateSimilarity(index, vec_bow, 0.1)
-        
-        print "cleanText: ", sys.getsizeof(cleanText)
-        print "cleanTextBoW: ", sys.getsizeof(cleanTextBoW)
-        print "vec_bow: ", sys.getsizeof(vec_bow)
-        print "simCalculation: ", sys.getsizeof(simCalculation)
-        
+
         #calcualte IR measures
         cPrecision, cRecall, cF1 = self.shevaClassificationMetrics.computeClassificationMetrics(categoryDataOID, allCategoryDataOID, simCalculation)
         print "All data measures :\t\t\t\tPrecision:\t", cPrecision, "\t\tRecall\t", cRecall, "\t\tF1:\t", cF1
@@ -113,7 +121,7 @@ class SimilarityLevel:
         cleanText = []
         cleanTextBoW = []
         vec_bow = []
-        
+        """
         del index
         del tfidfModel
         del dictionary
@@ -124,14 +132,27 @@ class SimilarityLevel:
         del categoryDataOID
         del categoryData
         del dbData
-        del self.shevaDB
-        del self.shevaTPF
-        del self.shevaSimilarity
-        del self.shevaClassificationMetrics
-        del self.shevaCSV
         gc.collect()
+        """
+        #del self.shevaDB
+        #del self.shevaTPF
+        #del self.shevaSimilarity
+        #del self.shevaCSV
+        #del self.shevaClassificationMetrics
+        #del self.shevaCSV
         
-
+        n = gc.collect()
+        print 'Unreachable objects:', n
+        print 'Garbage:', 
+        pprint.pprint(gc.garbage)
+        while gc.garbage:
+            del gc.garbage[0]
+        n = gc.collect()
+        print 'Unreachable objects:', n
+        print 'Garbage:', 
+        pprint.pprint(gc.garbage) 
+        
+"""
 #PARALLEL PYTHON IMPLEMENTATION
 ppservers = ()
 
@@ -149,7 +170,7 @@ start_time = time.time()
 #start PP[]
 jobs = []
 inputs = ShevaDB().getMainCat()
-percentageList = [25, 50, 75, 100]
+percentageList = [100, 75, 50, 25]
 GROUPTYPE = ["CATID", "FATHERID", "GENERAL"]
 #inputs = ["Arts"]
 
@@ -161,11 +182,12 @@ for category in inputs:
         #for level in ranger:
         for p in percentageList:
             similarityLevel = SimilarityLevel(1,10)
-            jobs.append(job_server.submit(similarityLevel.calculateLevelSimilarity, 
-                                          (category,ranger,p,group),
-                                          depfuncs = (),
-                                          modules = ("gc","time","pp","time","sys","operator","SimilarityLevel","ShevaClassificationMetrics","ShevaDB","ShevaTPF","ShevaCSV","ShevaSimilarity")))
-            print "Queing: ",category,"\t",ranger,"\t",p
+            if ShevaDB().getNumberOfRows(category, group, p, ranger) == 0:
+                jobs.append(job_server.submit(similarityLevel.calculateLevelSimilarity, 
+                                              (category,ranger,p,group),
+                                              depfuncs = (),
+                                              modules = ("gc","time","pp","time","sys","operator","SimilarityLevel","ShevaClassificationMetrics","ShevaDB","ShevaTPF","ShevaCSV","ShevaSimilarity")))
+                print "Queing: ",category,"\t",ranger,"\t",p
 
 for i in xrange(len(jobs)):
     jobs[i]()    
@@ -173,15 +195,21 @@ for i in xrange(len(jobs)):
 
 #prints
 job_server.print_stats()
-print "Time elapsed: ", time.time() - start_time, "s"          
-
+print "Time elapsed: ", time.time() - start_time, "s"
 """
+
 #testing initialization
-ranger = ShevaDB().getCategorymaxDepth("Regional")
 percentageList = [25, 50, 75, 100]
 GROUPTYPE = ["CATID", "FATHERID", "GENERAL"]
-for group in GROUPTYPE:
-    for p in percentageList:
-        similarityLevel = SimilarityLevel(1, 10)
-        similarityLevel.calculateLevelSimilarity("Regional", ranger, p, group)
-"""
+inputs = ShevaDB().getMainCat()
+inputs = ["Games"]
+for category in inputs:
+    ranger = ShevaDB().getCategorymaxDepth(category)  
+    #ranger = 3  
+    for group in GROUPTYPE:
+        for p in percentageList:
+            #if ShevaDB().getNumberOfRows(category, group, p, ranger) == 0:
+            similarityLevel =  SimilarityLevel(10)
+            similarityLevel.calculateLevelSimilarity(category, ranger, p, group)
+            del similarityLevel
+            gc.collect()

@@ -22,6 +22,10 @@ class ShevaTPF:
         self.male_names =  [name.lower() for name in nltk.corpus.names.words('male.txt')] 
         self.female_names = [name.lower() for name in nltk.corpus.names.words('female.txt')] 
         self.stopwords = nltk.corpus.stopwords.words('english')
+        print "ShevaTPF created"
+        
+    def __del__(self):
+        print 'ShevaTPF destroyed'        
 
     def checkList(self,text):
         if isinstance(x, types.ListType):
