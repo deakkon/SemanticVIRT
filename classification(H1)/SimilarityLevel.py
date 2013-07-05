@@ -26,7 +26,7 @@ from ShevaClassificationMetrics import ShevaClassificationMetrics
 from ShevaUtils import ShevaUtils
 
 class SimilarityLevel:   
-    #@profile 
+    #@profile w
     def __init__(self, testSize):
         """
         INPUT:
@@ -103,17 +103,17 @@ class SimilarityLevel:
         cPrecision, cRecall, cF1 = self.shevaClassificationMetrics.computeClassificationMetrics(categoryDataOID, allCategoryDataOID, simCalculation)
         print "All data measures :\t\t\t\tPrecision:\t", cPrecision, "\t\tRecall\t", cRecall, "\t\tF1:\t", cF1
         sqlClassic = "INSERT INTO analysis_results (category, groupingType, limitValue, levelDepth, testSize, measureType, P, R, F1) VALUES ('%s', '%s', '%s', '%i', '%i', '%s','%f','%f','%f')" % (category,group,percentage,debth,self.testSize, "computeClassificationMetrics",cPrecision, cRecall, cF1)
-        self.shevaDB.dbQuery(sqlClassic)
+        #self.shevaDB.dbQuery(sqlClassic)
 
         cPrecisionR, cRecallR, cF1R = self.shevaClassificationMetrics.computeClassificationMetricsRelative(categoryDataOID, allCategoryDataOID, simCalculation)
         print "Relative (with or) data measures :\t\tPrecision:\t", cPrecisionR, "\t\tRecall\t", cRecallR, "\t\tF1:\t", cF1R
         sqlRelative = "INSERT INTO analysis_results (category, groupingType, limitValue, levelDepth, testSize,measureType, P, R, F1) VALUES ('%s', '%s', '%s', '%i', '%i', '%s','%f','%f','%f')" % (category,group,percentage,debth,self.testSize, "computeClassificationMetricsRelative",cPrecisionR, cRecallR, cF1R)
-        self.shevaDB.dbQuery(sqlRelative)
+        #self.shevaDB.dbQuery(sqlRelative)
         
         cPrecisionE, cRecallE, cF1E = self.shevaClassificationMetrics.computeClassificationMetricsExclusive(categoryDataOID, allCategoryDataOID, simCalculation)
         print "Exclusive (with and) data measures :\t\tPrecision:\t", cPrecisionE, "\t\tRecall\t", cRecallE, "\t\tF1:\t", cF1E
         sqlExclusive = "INSERT INTO analysis_results (category, groupingType, limitValue, levelDepth,testSize, measureType, P, R, F1) VALUES ('%s', '%s', '%s', '%i', '%i', '%s','%f','%f','%f')" % (category,group,percentage,debth,self.testSize, "computeClassificationMetricsExclusive",cPrecisionE, cRecallE, cF1E)
-        self.shevaDB.dbQuery(sqlExclusive)
+        #self.shevaDB.dbQuery(sqlExclusive)
 
         #trying to figure out the memory thing. needs speed-up in performance otherwise... 
         dbData = []
@@ -121,25 +121,25 @@ class SimilarityLevel:
         cleanText = []
         cleanTextBoW = []
         vec_bow = []
-        """
+        
         del index
         del tfidfModel
         del dictionary
         del corpusSize
-        del sim
+        del simCalculation
         del vec_bow
         del allCategoryDataOID
         del categoryDataOID
         del categoryData
         del dbData
-        gc.collect()
-        """
-        #del self.shevaDB
-        #del self.shevaTPF
-        #del self.shevaSimilarity
-        #del self.shevaCSV
-        #del self.shevaClassificationMetrics
-        #del self.shevaCSV
+        #gc.collect()
+        
+        del self.shevaDB
+        del self.shevaTPF
+        del self.shevaSimilarity
+        del self.shevaCSV
+        del self.shevaClassificationMetrics
+        del self.shevaUtils
         
         n = gc.collect()
         print 'Unreachable objects:', n
@@ -199,17 +199,20 @@ print "Time elapsed: ", time.time() - start_time, "s"
 """
 
 #testing initialization
+start_time = time.time()
 percentageList = [25, 50, 75, 100]
 GROUPTYPE = ["CATID", "FATHERID", "GENERAL"]
 inputs = ShevaDB().getMainCat()
-inputs = ["Games"]
+inputs = ["News"]
 for category in inputs:
     ranger = ShevaDB().getCategorymaxDepth(category)  
     #ranger = 3  
     for group in GROUPTYPE:
         for p in percentageList:
-            if ShevaDB().getNumberOfRows(category, group, p, ranger) == 0:
-                similarityLevel =  SimilarityLevel(10)
-                similarityLevel.calculateLevelSimilarity(category, ranger, p, group)
-                del similarityLevel
-                gc.collect()
+            #if ShevaDB().getNumberOfRows(category, group, p, ranger) == 0:
+            similarityLevel =  SimilarityLevel(10)
+            similarityLevel.calculateLevelSimilarity(category, ranger, p, group)
+            del similarityLevel
+            gc.collect()
+            
+print "Time elapsed: ", time.time() - start_time, "s"

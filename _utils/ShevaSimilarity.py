@@ -2,7 +2,7 @@
 import sys
 
 #USER DEFINED MODULES
-sys.path.append("/home/jseva/SemanticVIRT/_utils/")
+#sys.path.append("/home/jseva/SemanticVIRT/_utils/")
 #from ShevaTPF import ShevaTPF
 #from ShevaUtils import ShevaUtils
 #from ShevaVect import ShevaVect
@@ -12,6 +12,7 @@ import gensim
 import csv
 import random
 import os
+import numpy
 
 class ShevaSimilarity:
     
@@ -150,10 +151,18 @@ class ShevaSimilarity:
         #simIndex.num_best = treshold
         #return simIndex[data]
 
-        for similarities in simIndex[data]:
+        for similarities in simIndex[data]:            
+            tmp = numpy.where(similarities > 0.1)[0]
+            new_indices = tmp.take(numpy.argsort(similarities.take(tmp)))
+            tmpSim = zip(new_indices, similarities.take(new_indices))[::-1]
+            
+            """
             tmpSim = [sim for sim in enumerate(similarities) if sim[1] > treshold]
             tmpSim = sorted(tmpSim, key=lambda x: x[1], reverse=True)
-            simarr.extend([tmpSim])
+            #print type(tmpSim)
+            """
+            simarr.append(tmpSim)
+            tmpSim = []
         return simarr
         
     #@profile
