@@ -3,6 +3,8 @@ from sys import path
 import os
 import csv 
 import collections
+from collections import OrderedDict
+from math import fabs
 #from ShevaDB import ShevaDB
 
 class ShevaUtils:
@@ -10,11 +12,15 @@ class ShevaUtils:
     def __init__(self):
         """
         this.baza = ShevaDB()
-        """
         print "ShevaUtils created"
+        """
+        pass
     
     def __del__(self):
-        print 'ShevaUtils destroyed'    
+        """
+        print 'ShevaUtils destroyed'
+        """
+        pass
         
     def checkIfList(self, data):
         if type(data) is not list and type(data) is not tuple:
@@ -106,3 +112,39 @@ class ShevaUtils:
         if length == 0:
             length = 1
         return length
+    
+    def euclidean(self, x,y):
+        sumSq=0.0
+        #print "x:", x
+        #print "y:", y
+        #add up the squared differences
+        for i in range(len(x)):
+            #print "x[i]", x[i], type(x[i])
+            #print "y[i]", y[i], type(y[i])
+            sumSq+=(x[i]-y[i])**2
+     
+        #take the square root of the result
+        return (sumSq**0.5)
+    
+    def explodeList(self, list, delimiter):
+        pass
+    
+    def analyzeRecommendationDict(self, dict1, dict2):
+        
+        results = OrderedDict()
+        
+        for key in dict1.keys():
+            cat1 = dict1[key]
+            cat2 = dict2[key]
+            
+            if len(cat1) == len(cat2):
+                catLen = 0
+                for i in range(len(cat1)):
+                    catLen += fabs(cat1[i]-cat2[i])
+            else:
+                catLen = -1
+
+            results[key] = catLen
+    
+        return results
+    

@@ -13,7 +13,6 @@ from bs4 import BeautifulStoneSoup
 
 class ShevaTPF:
     
-    
     def __init__(self):
         """
         Works with nested lists (list of lists: [['str1','str2','str3',...,'strn'],[],[],[]]
@@ -124,7 +123,14 @@ class ShevaTPF:
         return sentence
     
     def returnClean(self,text,typeModus):
+        """
+        INPUT: 
+            text: list of list, list element single document
+        OUTPUT:
+            list of lists, list element cleaned single document
+        """
         
+        print "Started cleaning"
         contentLenght = range(0,len(text))
         
         for i in contentLenght:
@@ -143,4 +149,8 @@ class ShevaTPF:
             #print sentence
             sentence = self.returnStem(sentence)
             text[i] = sentence
+            #print "Done with %s out of %s" %(str(i),str(contentLenght))
+            #print sentence, i
+        
+        print "Done with cleaning"
         return text

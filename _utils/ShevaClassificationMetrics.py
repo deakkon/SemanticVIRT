@@ -18,7 +18,7 @@ class ShevaClassificationMetrics:
     def __del__(self):
         print 'ShevaClassificationMetrics destroyed'       
 
-    #@profile
+    ##@profile
     def computeClassificationMetrics(self, testingOID, modelOID, similarity):
         """
         Get first item by similarity
@@ -52,7 +52,7 @@ class ShevaClassificationMetrics:
         return (precision,recall, F1)
         
         
-    #@profile    
+    ##@profile    
     def computeClassificationMetricsRelative(self, testingOID, modelOID, similarity):
         """
         Get items with sim == 1
@@ -132,3 +132,47 @@ class ShevaClassificationMetrics:
 
         return (precision,recall, F1)
 
+    def computeClassificationMetricsCumulative(self, testingOID, modelOID, similarity):
+        """
+        Get items with LookupID == modelID
+        INPUT:
+            testingOID -> list of original ID values from testing documents
+            modelOID -> dictionary, original model ID at model row nr. 
+            similarity -> similarity returned from testingDocuments vs modelDocuments
+        OUTPUT: precision, recall, f1 masures for defined input
+        """
+        returnedCategoryID = []
+        lookingFor = []
+
+        for comparisonDocumentID, row in izip(testingOID, similarity):
+            if len(row) != 0:
+                
+                granica = int(len(row)*0.1)
+                if granica == 0:
+                    granica = 1
+                
+                foundMatch = False
+                
+                for temp in row[:granica]:
+                    modelRowIDItem = modelOID[str(temp[0])]
+                    if modelRowIDItem ==  comparisonDocumentID:
+                        lookingFor.append(comparisonDocumentID)
+                        returnedCategoryID.append(modelRowIDItem)
+                        foundMatch = True
+                        
+                if foundMatch == False:
+                    lookingFor.append(comparisonDocumentID)
+                    returnedCategoryID.append("0")
+            else:
+                lookingFor.append(comparisonDocumentID)
+                returnedCategoryID.append("0")
+
+        if len(returnedCategoryID) > 0:
+            precision, recall, F1, _ = precision_recall_fscore_support(lookingFor, returnedCategoryID, pos_label=None, average='weighted')
+        else:
+            precision = recall = F1 = 0
+
+        returnedCategoryID = []
+        lookingFor = [] 
+
+        return (precision,recall, F1)

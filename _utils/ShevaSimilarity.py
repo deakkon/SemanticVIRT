@@ -100,6 +100,7 @@ class ShevaSimilarity:
     #@profile
     def getSimilarityIndex(self,path, fileName, grouping):
         ####################        PATHS TO GENSIM FILES  ##########################
+        #print "Started to calculate similarities"
         corpusPath = "%scorpus/%s.mm" % (path,fileName)
         dictPath = "%sdict/%s.dict" % (path,fileName)
         modelPath = "%smodels/%s.tfidf_model" % (path,fileName)
@@ -110,8 +111,13 @@ class ShevaSimilarity:
         corpus = gensim.corpora.MmCorpus(corpusPath)
         dictionary = gensim.corpora.Dictionary.load(dictPath)
         model = gensim.models.TfidfModel.load(modelPath)
-        
+        """
+        print "corpus.num_docs:", corpus.num_docs
+        print "corpus.num_terms:", corpus.num_terms
+        print "corpus.num_nnz:", corpus.num_nnz
+        """
         if os.path.exists(indexPath):
+            #print "exists"
             index = gensim.similarities.Similarity.load(indexPath)
         else:
             #create index dir
@@ -119,7 +125,8 @@ class ShevaSimilarity:
             tmpSim = 'tempSim/%s_%s' %(grouping, fileName)
             index = gensim.similarities.Similarity(tmpSim,model[corpus],num_features=len(dictionary))
             index.save(indexPath)
-
+        
+        #print "finished calculating similarities"
         return (index, model, dictionary, corpus.num_docs)
     
     #@profile
@@ -133,8 +140,10 @@ class ShevaSimilarity:
         RETURN: 
             BoW in VSM
         """
+        #print "started with vsm conversion"
         vsmConverted = []
         vsmConverted = [VSM[item] for item in data]
+        #print "done with vsm conversion"
         return vsmConverted
 
     #@profile
@@ -146,24 +155,116 @@ class ShevaSimilarity:
         RETURN:
             enumerated similarites with sim > treshold (default = 0.1)
         """
+        #print "started similarity calucaltions"
         simarr = []
+        
         #built in enumeration with best n documents returned
-        #simIndex.num_best = treshold
-        #return simIndex[data]
-
-        for similarities in simIndex[data]:            
+        simIndex.num_best = 1000
+        #simIndex.chunksize=1
+        """
+        for similarities in simIndex[data]:
+            #print similarities
             tmp = numpy.where(similarities > 0.1)[0]
             new_indices = tmp.take(numpy.argsort(similarities.take(tmp)))
             tmpSim = zip(new_indices, similarities.take(new_indices))[::-1]
-            
-            """
-            tmpSim = [sim for sim in enumerate(similarities) if sim[1] > treshold]
-            tmpSim = sorted(tmpSim, key=lambda x: x[1], reverse=True)
+    
+            #tmpSim = [sim for sim in enumerate(similarities) if sim[1] > treshold]
+            #tmpSim = sorted(tmpSim, key=lambda x: x[1], reverse=True)
             #print type(tmpSim)
-            """
+
             simarr.append(tmpSim)
             tmpSim = []
+            
+        """
+
+        similarities = []
+        tmpSim = []
+
+        #a = 0
+        for dox in data:
+            #a += 1
+            #print "Document nr ", a
+            similarities = simIndex[dox]
+            #print similarities
+            tmpSim = [sim for sim in similarities if sim[1] > treshold]
+            simarr.append(tmpSim)
+            tmpSim = []
+            similarities = []
+
+        #print "Done with similarity calucaltions"
         return simarr
+    
+    def calculateSimilarityCumulative(self, simIndex, data, treshold=0.1):
+        """
+        INPUT:
+            simIndex: similarity index form comparison
+            data: VSM representation of cleaned BoW data as list of lists
+        RETURN:
+            cumulative similarity sum with sim > treshold (default = 0.1)
+        """
+        simarr = []
+        
+        #built in enumeration with best n documents returned
+        simIndex.num_best = 1000
+        similarities = []
+        tmpSim = []
+
+        for dox in data:
+            tmpSim = []
+            similarities = []
+            similarities = simIndex[dox]
+            tmpSim = [sim[1] for sim in similarities if sim[1] > treshold]
+            if len(tmpSim) > 0:
+                simarr.extend(tmpSim)
+        return sum(simarr)
+
+
+    #@profile
+    def calculateSimilarityDocumentClassification(self, simIndex, data, treshold=0.0):
+        """
+        INPUT:
+            simIndex: similarity index form comparison
+            data: VSM representation of cleaned BoW data as list of lists
+        RETURN:
+            enumerated similarites with sim > treshold (default = 0.1)
+        """
+        #print "started similarity calucaltions"
+        simarr = []
+        
+        #built in enumeration with best n documents returned
+        simIndex.num_best = 1000
+        #simIndex.chunksize=1
+        """
+        for similarities in simIndex[data]:
+            #print similarities
+            tmp = numpy.where(similarities > 0.1)[0]
+            new_indices = tmp.take(numpy.argsort(similarities.take(tmp)))
+            tmpSim = zip(new_indices, similarities.take(new_indices))[::-1]
+    
+            #tmpSim = [sim for sim in enumerate(similarities) if sim[1] > treshold]
+            #tmpSim = sorted(tmpSim, key=lambda x: x[1], reverse=True)
+            #print type(tmpSim)
+
+            simarr.append(tmpSim)
+            tmpSim = []
+            
+        """
+
+        similarities = []
+        tmpSim = []
+
+        #a = 0
+        for dox in data:
+            #a += 1
+            #print "Document nr ", a
+            similarities = simIndex[dox]
+            #print similarities
+            tmpSim = [sim for sim in similarities if sim[1] > treshold]
+            simarr.append(tmpSim)
+
+        #print "Done with similarity calucaltions"
+        return simarr
+
         
     #@profile
     def getOIDfromModel(self, path, fileName):

@@ -196,11 +196,6 @@ class createDataSingleLevel:
                 del dataCategoryLabelAll
                 del originalCatIDAll
                 del dataCategorySingleAll
-                gc.collect()
-                """
-                f = open('document.txt', 'w')
-                f.write(var)
-                """
             del sqlQueryResults
             gc.collect()
 

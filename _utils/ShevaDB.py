@@ -9,10 +9,11 @@ class ShevaDB:
         self.user= "root"
         self.passwd = "root"
         self.database= "dmoz"
-        print "ShevaDB created"
+        #print "ShevaDB created"
         
     def __del__(self):
-        print 'ShevaDB destroyed'        
+        #print 'ShevaDB destroyed'
+        pass
     
     def dbConnect(self):
         try:
@@ -149,9 +150,13 @@ class ShevaDB:
     
     #@profile
     def getSample(self,corpusSize,testSize,category,debth, group):
+        print "started sampling" 
         #get sample size
         #print "CS:",corpusSize
         sampleSize = int((testSize * corpusSize)/100)
+        if sampleSize > 10000:
+            sampleSize = 10000
+
         #print "SS:",sampleSize
         if sampleSize == 0:
             sampleSize = 1
@@ -168,8 +173,51 @@ class ShevaDB:
 
         categoryDataOID = [str(item[1]) for item in dbData]
         dbData=[item[0].split() for item in dbData]
-
+        
+        print "ended sampling"
         return (categoryDataOID,dbData)
+    
+    def getSample8020(self,corpusSize,testSize,category,debth, group):
+        print "started sampling"
+        """
+        Take the last 20% of data from selected limit model and return prepared data
+        """
+        
+        categoryDataOID = []
+        #dbData = self.getDBDocumentsDepth(category,debth)
+        if group != "FATHERID":
+            sqlCategoryDocuments = "SELECT Description, catid from dmoz_combined where mainCategory = '%s' and categoryDepth <= '%i' limit %i" %(category, debth, corpusSize)
+        else:
+            sqlCategoryDocuments = "SELECT Description, fatherid from dmoz_combined where mainCategory = '%s' and categoryDepth <= '%i' limit %i" %(category, debth, corpusSize)
+             
+        dbData = self.dbQuery(sqlCategoryDocuments)
+
+
+        categoryDataOID = [str(item[1]) for item in dbData[testSize:]]
+        dbData=[item[0].split() for item in dbData[testSize:]]
+        
+        print "ended sampling"
+        return (categoryDataOID,dbData)    
+
+    
+    def getSampleLimit(self, category, debth, group, limit):
+        print "started sampling" 
+
+        categoryDataOID = []
+        #dbData = self.getDBDocumentsDepth(category,debth)
+        if group != "FATHERID":
+            sqlCategoryDocuments = "SELECT Description, catid from dmoz_combined where mainCategory = '%s' and categoryDepth <= '%i' limit %i" %(category, debth, limit)
+        else:
+            sqlCategoryDocuments = "SELECT Description, fatherid from dmoz_combined where mainCategory = '%s' and categoryDepth <= '%i' limit %i" %(category, debth, limit)
+             
+        dbData = self.dbQuery(sqlCategoryDocuments)
+
+
+        categoryDataOID = [str(item[1]) for item in dbData]
+        dbData=[item[0].split() for item in dbData]
+        
+        print "ended sampling"
+        return (categoryDataOID,dbData)    
     
     def getNumberOfRows(self, category, group, limit, depth):
         sqlQuery = "SELECT count(*) from analysis_results where category = '%s' and groupingType = '%s' and limitValue = '%s' and levelDepth = '%s'" %(category, group, limit, depth)        
@@ -299,3 +347,13 @@ class ShevaDB:
             
         #return values 
         return fatherIDLevel
+    
+    def getLabels(self,catID):
+        originalLables = []
+        self.database = "dmoz"
+        for item in catID:
+            sqlLabel = "select Title from dmoz_categories where catid = %s" %(item)
+            result = self.dbQuery(sqlLabel)
+            originalLables.append(result[0])
+        return originalLables
+            
